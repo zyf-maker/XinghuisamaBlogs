@@ -121,12 +121,12 @@ export default function ClientTOC({ toc }: { toc: TocItem[] }) {
   if (!toc || toc.length === 0) return null;
 
   return (
-    <div className="bg-white/60 dark:bg-slate-800/50 backdrop-blur-xl rounded-3xl p-6 border border-white/40 dark:border-white/10 shadow-xl sticky top-28 transition-colors duration-700 max-h-[75vh] overflow-y-auto custom-scrollbar">
-      <h3 className="font-black text-slate-900 dark:text-white mb-4 border-l-4 border-indigo-500 pl-2 text-sm uppercase tracking-widest">
+    <div className="bg-[var(--surface)] rounded-lg p-6 border border-[var(--line-strong)] sticky top-28 transition-colors duration-700 max-h-[75vh] overflow-y-auto custom-scrollbar">
+      <h3 className="font-black text-[var(--ink)] mb-4 border-l-4 border-[var(--line-strong)] pl-2 text-sm uppercase tracking-widest">
         Table of Contents
       </h3>
       <nav className="flex flex-col gap-2 relative">
-        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-slate-200 dark:bg-slate-700/50 rounded-full"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[var(--surface-alt)] rounded-full"></div>
 
         {toc.map((item, index) => {
           // 视觉上：扒掉超链接，完美展示 "3.万度"
@@ -140,15 +140,10 @@ export default function ClientTOC({ toc }: { toc: TocItem[] }) {
             <button
               key={index}
               onClick={(e) => scrollToHeading(e, safeId)}
-              className={`text-left text-sm transition-all duration-300 line-clamp-2 cursor-pointer relative pl-4
-                ${item.level === 1 ? 'font-bold mt-2' : ''}
-                ${item.level === 2 ? 'ml-2' : ''}
-                ${item.level === 3 ? 'ml-4 text-xs' : ''}
-                ${isActive ? 'text-indigo-600 dark:text-indigo-400 font-bold scale-105 origin-left' : 'text-slate-500 hover:text-indigo-500 dark:text-slate-400 dark:hover:text-indigo-400'}
-              `}
+              className={`text-left text-sm transition-all duration-300 line-clamp-2 cursor-pointer relative pl-4 ${item.level === 1 ? 'font-bold mt-2' : ''} ${item.level === 2 ? 'ml-2' : ''} ${item.level === 3 ? 'ml-4 text-xs' : ''} ${isActive ? 'text-[var(--accent)] font-bold scale-105 origin-left' : 'text-[var(--accent)] hover:text-[var(--accent)]'}`}
             >
               {isActive && (
-                <span className="absolute left-[-5px] top-[50%] -translate-y-[50%] w-[6px] h-[6px] rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]"></span>
+                <span className="absolute left-[-5px] top-[50%] -translate-y-[50%] w-[6px] h-[6px] rounded-full bg-[var(--accent)]"></span>
               )}
               {displayText}
             </button>

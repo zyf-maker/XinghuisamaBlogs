@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="THE BUND AT DUSK">
+  <rect width="640" height="480" fill="#f6f4f0"/>
+  <rect width="640" height="480" fill="url(#g)"/>
+  <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#16150f" stroke-opacity=".07" stroke-width="1"/></pattern></defs>
+  <rect x="60" y="200" width="26" height="40" fill="#16150f" fill-opacity="0.1"/><rect x="100" y="147" width="26" height="93" fill="#16150f" fill-opacity="0.18"/><rect x="140" y="94" width="26" height="146" fill="#16150f" fill-opacity="0.26"/><rect x="180" y="151" width="26" height="89" fill="#16150f" fill-opacity="0.1"/><rect x="220" y="98" width="26" height="142" fill="#16150f" fill-opacity="0.18"/><rect x="260" y="155" width="26" height="85" fill="#16150f" fill-opacity="0.26"/><rect x="300" y="102" width="26" height="138" fill="#16150f" fill-opacity="0.1"/><rect x="340" y="159" width="26" height="81" fill="#16150f" fill-opacity="0.18"/><rect x="380" y="106" width="26" height="134" fill="#16150f" fill-opacity="0.26"/><rect x="420" y="163" width="26" height="77" fill="#16150f" fill-opacity="0.1"/><rect x="460" y="110" width="26" height="130" fill="#16150f" fill-opacity="0.18"/><rect x="500" y="167" width="26" height="73" fill="#16150f" fill-opacity="0.26"/><path d="M40 240 H560" stroke="#a8432b" stroke-width="2"/>
+  <text x="50" y="400" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#74705f">31.2°N 121.5°E</text>
+  <text x="50" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="1" fill="#16150f">THE BUND AT DUSK</text>
+  <rect x="50" y="60" width="34" height="3" fill="#a8432b"/>
+</svg>

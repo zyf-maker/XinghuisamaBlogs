@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="SOLVENT BOX">
+  <rect width="640" height="480" fill="#f6f4f0"/>
+  <rect width="640" height="480" fill="url(#g)"/>
+  <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#16150f" stroke-opacity=".07" stroke-width="1"/></pattern></defs>
+  <g stroke="#a8432b" stroke-width="2" fill="none"><circle cx="144" cy="90" r="6"/><circle cx="208" cy="90" r="6"/><circle cx="272" cy="90" r="6"/><circle cx="336" cy="90" r="6"/><circle cx="80" cy="142" r="6"/><circle cx="144" cy="142" r="6"/><circle cx="208" cy="142" r="6"/><circle cx="272" cy="142" r="6"/><circle cx="336" cy="142" r="6"/><circle cx="80" cy="194" r="6"/><circle cx="144" cy="194" r="6"/><circle cx="208" cy="194" r="6"/><circle cx="272" cy="194" r="6"/><circle cx="336" cy="194" r="6"/><path d="M80 90 L144 90 L208 142 L272 90 L336 142 L400 90" stroke-opacity=".55"/></g>
+  <text x="50" y="400" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#74705f">TIP3P · 300 K</text>
+  <text x="50" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="1" fill="#16150f">SOLVENT BOX</text>
+  <rect x="50" y="60" width="34" height="3" fill="#a8432b"/>
+</svg>

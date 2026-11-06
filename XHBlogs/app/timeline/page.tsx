@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 import PageTransition from '../../components/PageTransition';
 import { siteConfig } from '../../siteConfig';
 import TimelineClient from '../../components/TimelineClient';
-// 🌟 1. 引入 ToastProvider 喵！
+// ToastProvider
 import { ToastProvider } from '../../components/ToastProvider';
 
 export const metadata = {

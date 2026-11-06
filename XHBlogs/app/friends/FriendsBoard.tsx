@@ -37,26 +37,23 @@ export default function FriendsBoard() {
   return (
     <div className="w-full max-w-5xl mx-auto px-3 sm:px-10 py-6 md:py-10 relative z-10 scroll-smooth mt-20 md:mt-10">
 
-      {/* 顶部导航与标题 */}
-      <div className="mb-8 md:mb-12 flex flex-col items-center md:items-start">
-        <div className="w-full flex justify-start mb-4 md:mb-6">
+      {/* 页首 */}
+      <div className="mb-8 md:mb-10 border-b border-[var(--line)] pb-8 md:pb-9">
+        <div className="mb-5 flex justify-start">
           <BackButton />
         </div>
-        <div className="text-center md:text-left w-full px-2 md:px-0">
-          <h1 className="text-2xl md:text-4xl font-black text-slate-900 dark:text-white mb-2 md:mb-4 tracking-widest drop-shadow-sm uppercase">
-            云端引力
-          </h1>
-          <p className="text-xs md:text-base text-slate-600 dark:text-slate-400 font-serif">
-            那些散落在赛博宇宙各处的有趣灵魂与神经节点。
-          </p>
-        </div>
+        <p className="eyebrow">Links · {friendsData.length} 个</p>
+        <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">友链</h1>
+        <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">
+          一些常读的站、常开的工具，以及常联系的人。
+        </p>
       </div>
 
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5"
       >
         {friendsData.map((friend) => (
           <motion.div key={friend.id} variants={itemVariants} className="h-full">
@@ -64,32 +61,25 @@ export default function FriendsBoard() {
               href={friend.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block h-full rounded-2xl md:rounded-3xl bg-white/60 dark:bg-slate-800/50 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-lg md:shadow-xl overflow-hidden transition-all duration-500 hover:-translate-y-1 md:hover:-translate-y-2 hover:scale-[1.02] group relative p-3 md:p-6"
+              className="group relative flex h-full flex-col justify-between gap-4 rounded-md border border-[var(--line)] bg-[var(--surface)] p-4 transition-colors hover:border-[var(--line-strong)] md:p-5"
             >
-              {/* 卡片底部的动态光晕 */}
-              <div
-                className="absolute -bottom-10 -right-10 w-24 h-24 md:w-32 md:h-32 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-                style={{ backgroundColor: friend.themeColor }}
-              ></div>
-
-              <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-5 relative z-10 mb-2 md:mb-4">
-
-                <div className="w-10 h-10 md:w-16 md:h-16 rounded-full p-[2px] md:p-1 bg-gradient-to-tr from-indigo-500/50 to-purple-500/50 shadow-sm md:shadow-md group-hover:rotate-[360deg] transition-transform duration-1000 ease-in-out flex-shrink-0">
-                  <img src={friend.avatar} alt={friend.name} className="w-full h-full rounded-full object-cover bg-white" />
-                </div>
-
-                <div className="flex-1 overflow-hidden w-full">
-                  <h2 className="text-sm md:text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors truncate">
+              <div className="flex items-start gap-3">
+                <img
+                  src={friend.avatar}
+                  alt={friend.name}
+                  className="h-9 w-9 shrink-0 rounded-full border border-[var(--line)] bg-[var(--surface-alt)] object-cover"
+                />
+                <div className="min-w-0 flex-1">
+                  <h2 className="truncate font-serif text-[15px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                     {friend.name}
                   </h2>
-                  <div className="text-[9px] md:text-xs font-bold text-indigo-500/70 dark:text-indigo-400/70 tracking-widest uppercase mt-0.5 md:mt-1 flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-                    Online
-                  </div>
+                  <p className="mt-0.5 truncate font-mono text-[10px] tracking-[0.08em] text-[var(--muted)]">
+                    {friend.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                  </p>
                 </div>
               </div>
 
-              <p className="text-[10px] md:text-sm text-slate-700 dark:text-slate-300 font-serif leading-snug md:leading-relaxed line-clamp-2 md:line-clamp-3 relative z-10">
+              <p className="line-clamp-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">
                 {friend.description}
               </p>
             </a>
@@ -99,70 +89,74 @@ export default function FriendsBoard() {
 
       {/* 申请友链引导区 */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-14 md:mt-20 bg-white/40 dark:bg-slate-800/40 backdrop-blur-xl border border-white/50 dark:border-slate-700/50 rounded-2xl md:rounded-3xl p-5 md:p-8 max-w-3xl mx-auto text-center shadow-lg md:shadow-xl relative"
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="mt-14 border-t border-[var(--line)] pt-10 md:mt-20"
       >
-        <h2 className="text-lg md:text-2xl font-black text-slate-900 dark:text-white mb-2 md:mb-4 tracking-wider">
-          ✨ 建立神经连接
-        </h2>
-        <p className="text-xs md:text-base text-slate-600 dark:text-slate-400 font-serif mb-4 md:mb-6">
-          欢迎各位大佬交换友链！请一键复制下方格式，并在底部的 Gitalk 留言板申请：
-        </p>
+        <div className="grid gap-8 md:grid-cols-[1fr_320px] md:gap-12">
+          <div>
+            <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+              <h2 className="font-serif text-lg font-bold text-[var(--ink)]">交换友链</h2>
+              <a href="#gitalk-container" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+                去留言 →
+              </a>
+            </div>
+            <p className="mt-4 max-w-xl text-[13px] leading-[1.9] text-[var(--ink-soft)]">
+              复制下面这段格式，在页面底部的留言区提交即可。我会在一两天内加上。
+            </p>
+            <div className="relative mt-5 max-w-md rounded-md border border-[var(--line)] bg-[var(--surface-alt)] p-4">
+              <pre className="whitespace-pre-wrap break-all pr-9 font-mono text-[11px] leading-relaxed text-[var(--ink)]">
+                {applyFormat}
+              </pre>
+              <button
+                onClick={handleCopy}
+                className="absolute right-2 top-2 rounded border border-[var(--line)] bg-[var(--surface)] p-1.5 text-[var(--ink-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                title="一键复制"
+              >
+                {isCopied ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-3.5 w-3.5 text-[var(--accent)]">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-3.5 w-3.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 019.75 12.375v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
 
-        {/* 代码展示框 & 一键复制按钮 */}
-        <div className="relative bg-slate-100/60 dark:bg-slate-900/60 rounded-xl md:rounded-2xl p-4 md:p-5 text-left inline-block w-full max-w-md border border-slate-200/50 dark:border-slate-700/50 group overflow-hidden">
-          <pre className="font-mono text-[10px] md:text-sm text-slate-700 dark:text-slate-300 whitespace-pre-wrap break-all pr-8 md:pr-10">
-            {applyFormat}
-          </pre>
-
-          <button
-            onClick={handleCopy}
-            className="absolute top-2 right-2 md:top-3 md:right-3 p-1.5 md:p-2 rounded-lg bg-white/80 dark:bg-slate-800/80 hover:bg-indigo-500 hover:text-white dark:hover:bg-indigo-500 transition-all duration-300 shadow-sm backdrop-blur-sm"
-            title="一键复制"
-          >
-            {isCopied ? (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 md:w-4 md:h-4 text-green-500">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3.5 h-3.5 md:w-4 md:h-4 text-slate-500 hover:text-white">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
-              </svg>
-            )}
-          </button>
-        </div>
-
-        <div className="mt-6 md:mt-8">
-          <a
-            href="#gitalk-container"
-            className="inline-block px-6 py-2.5 md:px-8 md:py-3 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white rounded-full text-sm md:text-base font-bold tracking-widest transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-indigo-500/30"
-          >
-            前往留言区申请 👇
-          </a>
+          <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-5">
+            <p className="eyebrow">Rules</p>
+            <ul className="mt-3 space-y-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">
+              <li>站点内容以原创为主，能正常访问。</li>
+              <li>不接受纯采集站、导航站与广告站。</li>
+              <li>加上后我会回访，长期不更新会移除。</li>
+            </ul>
+            <div className="mt-4 hairline" />
+            <p className="mt-4 font-mono text-[10.5px] leading-relaxed text-[var(--muted)]">
+              也可以直接邮件或在 GitHub 上找我。
+            </p>
+          </div>
         </div>
       </motion.div>
 
-      {/* Gitalk 评论区 */}
+      {/* 评论区 */}
       <motion.div
         id="gitalk-container"
-        className="mt-12 md:mt-16 scroll-mt-24 px-2 md:px-0"
+        className="mt-14 scroll-mt-24 border-t border-[var(--line)] pt-10 md:mt-20"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.6 }}
       >
-        <div className="flex items-center justify-center gap-2 md:gap-3 mb-4 md:mb-6">
-          <span className="w-8 md:w-12 h-[1px] bg-slate-300 dark:bg-slate-700"></span>
-          <h3 className="text-sm md:text-xl font-bold text-slate-800 dark:text-gray-200 tracking-widest uppercase">
-            终端留言板
-          </h3>
-          <span className="w-8 md:w-12 h-[1px] bg-slate-300 dark:bg-slate-700"></span>
+        <div className="mb-5 flex items-baseline justify-between">
+          <h3 className="font-serif text-lg font-bold text-[var(--ink)]">留言</h3>
+          <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">COMMENTS</span>
         </div>
 
-        {/* 渲染评论组件 */}
         <Comments />
       </motion.div>
 

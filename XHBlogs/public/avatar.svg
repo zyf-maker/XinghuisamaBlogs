@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" fill="#16150f"/>
+  <circle cx="80" cy="80" r="58" fill="none" stroke="#a8432b" stroke-width="1"/>
+  <circle cx="80" cy="80" r="47" fill="none" stroke="#f6f4f0" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="80" y="97" text-anchor="middle" font-family="'Noto Serif SC', 'Songti SC', serif" font-size="46" font-weight="700" fill="#f6f4f0" letter-spacing="2">逸群</text>
+</svg>

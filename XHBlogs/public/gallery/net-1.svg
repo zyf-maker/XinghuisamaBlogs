@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="MESSAGE PASSING">
+  <rect width="640" height="480" fill="#f6f4f0"/>
+  <rect width="640" height="480" fill="url(#g)"/>
+  <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#16150f" stroke-opacity=".07" stroke-width="1"/></pattern></defs>
+  <line x1="70" y1="80" x2="470" y2="150" stroke="#16150f" stroke-opacity=".18" stroke-width="1"/><line x1="270" y1="80" x2="70" y2="220" stroke="#16150f" stroke-opacity=".18" stroke-width="1"/><line x1="470" y1="80" x2="270" y2="220" stroke="#16150f" stroke-opacity=".18" stroke-width="1"/><line x1="70" y1="150" x2="470" y2="220" stroke="#16150f" stroke-opacity=".18" stroke-width="1"/><circle cx="70" cy="80" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="270" cy="80" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="470" cy="80" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="70" cy="150" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="270" cy="150" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="470" cy="150" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="70" cy="220" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="270" cy="220" r="7" fill="#a8432b" fill-opacity=".85"/> <circle cx="470" cy="220" r="7" fill="#a8432b" fill-opacity=".85"/>
+  <text x="50" y="400" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#74705f">LAYER 03</text>
+  <text x="50" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="1" fill="#16150f">MESSAGE PASSING</text>
+  <rect x="50" y="60" width="34" height="3" fill="#a8432b"/>
+</svg>

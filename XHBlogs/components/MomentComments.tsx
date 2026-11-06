@@ -18,6 +18,13 @@ export default function MomentComments({ id }: MomentCommentsProps) {
     // 清空重载，防止 React 严格模式下重复渲染
     containerRef.current.innerHTML = '';
 
+    // 🛡️ 未配置 Gitalk 凭证时直接跳过，避免前端抛错影响页面
+    if (!siteConfig.gitalkConfig.clientID || !siteConfig.gitalkConfig.repo) {
+      containerRef.current.innerHTML =
+        '<div style="text-align:center;opacity:.6;font-size:13px;padding:24px 0">说说评论区尚未配置。</div>';
+      return;
+    }
+
     const gitalk = new Gitalk({
       clientID: siteConfig.gitalkConfig.clientID,
       clientSecret: siteConfig.gitalkConfig.clientSecret,
@@ -77,7 +84,7 @@ export default function MomentComments({ id }: MomentCommentsProps) {
         .moment-gitalk .gt-header-textarea:focus {
           min-height: 80px !important; /* 点击后展开 */
           background: rgba(255, 255, 255, 0.8) !important;
-          border-color: #6366f1 !important; /* 激活时变色 */
+          border-color: var(--accent) !important; /* 激活时变色 */
         }
         .dark .moment-gitalk .gt-header-textarea {
           background: rgba(255, 255, 255, 0.05) !important;
@@ -91,7 +98,7 @@ export default function MomentComments({ id }: MomentCommentsProps) {
           padding: 0.3em 1rem !important;
           font-size: 12px !important;
           border-radius: 6px !important;
-          background: #6366f1 !important;
+          background: var(--accent) !important;
           border: none !important;
         }
 

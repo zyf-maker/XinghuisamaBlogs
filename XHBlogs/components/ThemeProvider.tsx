@@ -1,49 +1,34 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from 'react';
 
-const ThemeContext = createContext({ isDark: true, toggleTheme: () => {} });
+const ThemeContext = createContext({ isDark: false, toggleTheme: () => {} });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  // 默认设为 true，这样在读取到配置前，如果是夜间模式就不会闪烁
-  const [isDark, setIsDark] = useState(true);
+  // 站点主视觉是「暖纸」，暗色是可选皮肤；默认走浅色，避免首屏闪黑
+  const [isDark, setIsDark] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // 标记组件已挂载，避免 hydration 报错
     setMounted(true);
-
-    // 从 localStorage 读取真实状态
     const savedTheme = localStorage.getItem('blog-theme');
-    // 如果没有记录，默认给深色模式（流萤飞舞）
-    const isDarkMode = savedTheme !== 'light';
+    const isDarkMode = savedTheme === 'dark';
     setIsDark(isDarkMode);
-
-    const root = document.documentElement;
-    if (isDarkMode) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', isDarkMode);
+    document.documentElement.style.colorScheme = isDarkMode ? 'dark' : 'light';
   }, []);
 
-  // 极其重要：监听 isDark 状态，只要它变了，立刻强制更新 html 标签，防止路由切换丢失
   useEffect(() => {
     if (!mounted) return;
-    const root = document.documentElement;
-    if (isDark) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', isDark);
+    document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
   }, [isDark, mounted]);
 
   const toggleTheme = () => {
-    const newDark = !isDark;
-    setIsDark(newDark);
-    localStorage.setItem('blog-theme', newDark ? 'dark' : 'light');
+    const next = !isDark;
+    setIsDark(next);
+    localStorage.setItem('blog-theme', next ? 'dark' : 'light');
   };
 
-  // 在客户端挂载完成前，为了防止闪屏，先隐藏内容
   if (!mounted) {
     return <div className="invisible">{children}</div>;
   }

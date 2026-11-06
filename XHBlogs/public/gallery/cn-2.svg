@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="SUBWAY LINE 2">
+  <rect width="640" height="480" fill="#f6f4f0"/>
+  <rect width="640" height="480" fill="url(#g)"/>
+  <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#16150f" stroke-opacity=".07" stroke-width="1"/></pattern></defs>
+  <path d="M50 90 C 200 50, 360 130, 550 80" fill="none" stroke="#16150f" stroke-opacity="0.15" stroke-width="2"/><path d="M50 120 C 200 80, 360 160, 550 110" fill="none" stroke="#16150f" stroke-opacity="0.2" stroke-width="3"/><path d="M50 150 C 200 110, 360 190, 550 140" fill="none" stroke="#16150f" stroke-opacity="0.25" stroke-width="1"/><path d="M50 180 C 200 140, 360 220, 550 170" fill="none" stroke="#16150f" stroke-opacity="0.3" stroke-width="2"/><path d="M50 210 C 200 170, 360 250, 550 200" fill="none" stroke="#16150f" stroke-opacity="0.35" stroke-width="3"/><path d="M50 240 C 200 200, 360 280, 550 230" fill="none" stroke="#16150f" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="50" y="400" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#74705f">23:41</text>
+  <text x="50" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="1" fill="#16150f">SUBWAY LINE 2</text>
+  <rect x="50" y="60" width="34" height="3" fill="#a8432b"/>
+</svg>

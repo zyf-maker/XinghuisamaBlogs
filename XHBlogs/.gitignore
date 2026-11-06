@@ -45,3 +45,6 @@ next-env.d.ts
 *.connection.json
 __pycache__/
 *.py[cod]
+
+.vercel
+.env*

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="RMSF PROFILE">
+  <rect width="640" height="480" fill="#f6f4f0"/>
+  <rect width="640" height="480" fill="url(#g)"/>
+  <defs><pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#16150f" stroke-opacity=".07" stroke-width="1"/></pattern></defs>
+  <path d="M60 210 L60 190 L80 162 L100 143 L120 139 L140 150 L160 171 L180 183 L200 160 L220 147 L240 147 L260 160 L280 180 L300 177 L320 160 L340 152 L360 155 L380 168 L400 187 L420 174 L440 161 L460 157 L480 162 L500 176 L520 187" fill="none" stroke="#a8432b" stroke-width="2.5"/><path d="M60 210 H540" stroke="#16150f" stroke-opacity=".35"/>
+  <text x="50" y="400" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#74705f">RESIDUE 1-128</text>
+  <text x="50" y="436" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="1" fill="#16150f">RMSF PROFILE</text>
+  <rect x="50" y="60" width="34" height="3" fill="#a8432b"/>
+</svg>

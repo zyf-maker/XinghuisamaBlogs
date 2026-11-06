@@ -1,163 +1,326 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import Link from 'next/link';
+import fs from "fs";
+import path from "path";
+import Link from "next/link";
+import matter from "gray-matter";
 
-import Navbar from '../components/Navbar';
-import DailyBriefing from '../components/DailyBriefing';
-import PageTransition from '../components/PageTransition';
-import SearchBar from '../components/SearchBar';
-import { siteConfig } from '../siteConfig';
-import CloudPlayer from '../components/CloudPlayer';
-import ThemeToggleBlock from '../components/ThemeToggleBlock';
-import ProfileCard from '../components/ProfileCard';
-import SiteDashboard from '../components/SiteDashboard';
-import { albums } from '../data/albums';
-import LyricBar from '../components/LyricBar';
-import { ToastProvider } from '../components/ToastProvider';
+import Navbar from "../components/Navbar";
+import PageTransition from "../components/PageTransition";
+import MiniPlayer from "../components/MiniPlayer";
+import HomeClock from "../components/HomeClock";
+import { siteConfig } from "../siteConfig";
+import { friendsData } from "../data/friends";
+import { projectsData } from "../data/projects";
 
-import LatestPostsCarousel from '../components/LatestPostsCarousel';
-import LatestChatterCarousel from '../components/LatestChatterCarousel';
-import DanmakuBackground from '../components/DanmakuBackground';
+type Post = {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  tags: string[];
+};
 
-function formatUpdateTime(dateString: string) {
-  if (!dateString || dateString === '1970-01-01') return '刚刚更新';
-  try {
-    const d = new Date(dateString);
-    if (isNaN(d.getTime())) return dateString;
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    const hours = String(d.getHours()).padStart(2, '0');
-    const mins = String(d.getMinutes()).padStart(2, '0');
-    if (hours === '00' && mins === '00') return `${year}.${month}.${day}`;
-    return `${year}.${month}.${day} ${hours}:${mins}`;
-  } catch { return dateString; }
+function readMarkdown(dir: string) {
+  const full = path.join(process.cwd(), dir);
+  if (!fs.existsSync(full)) return [];
+  return fs
+    .readdirSync(full)
+    .filter((f) => f.endsWith(".md"))
+    .map((file) => {
+      const { data, content } = matter(fs.readFileSync(path.join(full, file), "utf8"));
+      return {
+        slug: file.replace(/\.md$/, ""),
+        title: (data.title as string) || "无题",
+        description: (data.description as string) || content.trim().slice(0, 68),
+        date: (data.date as string) || "1970-01-01",
+        tags: Array.isArray(data.tags) ? (data.tags as string[]) : [],
+      };
+    })
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
+function short(date: string) {
+  const d = new Date(date);
+  if (Number.isNaN(d.getTime())) return date;
+  return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`;
+}
+
+const sections = [
+  { href: "/timeline", label: "文章", desc: "长文与笔记归档" },
+  { href: "/chatter", label: "随笔", desc: "短记录与即时判断" },
+  { href: "/projects", label: "项目", desc: "代码与工具" },
+  { href: "/about", label: "关于", desc: "我在做什么" },
+];
+
 export default function Home() {
-  const postsDirectory = path.join(process.cwd(), 'posts');
-  let allPosts: any[] = [];
-  try {
-    if (fs.existsSync(postsDirectory)) {
-      const fileNames = fs.readdirSync(postsDirectory).filter(f => f.endsWith('.md'));
-      allPosts = fileNames.map(fileName => {
-        const fullPath = path.join(postsDirectory, fileName);
-        const { data, content } = matter(fs.readFileSync(fullPath, 'utf8'));
-        const rawDate = data.date || '1970-01-01';
-        return {
-          slug: fileName.replace(/\.md$/, ''),
-          ...data,
-          title: data.title || '',
-          description: data.description || '',
-          content: content || '',
-          date: rawDate,
-          formattedDate: formatUpdateTime(rawDate)
-        };
-      }).sort((a, b) => {
-        const dateA = new Date(a.date).getTime();
-        const dateB = new Date(b.date).getTime();
-        if (dateB !== dateA) return dateB - dateA;
-        return b.slug.localeCompare(a.slug);
-      });
-    }
-  } catch (e) {}
-  const top5Posts = allPosts.length > 0 ? allPosts.slice(0, 5) : [{ slug: 'none', title: '暂无文章', description: '快去写第一篇吧！', cover: siteConfig.defaultPostCover, date: '', formattedDate: '' }];
-
-  const chattersDirectory = path.join(process.cwd(), 'chatters');
-  let allChatters: any[] = [];
-  try {
-    if (fs.existsSync(chattersDirectory)) {
-      const chatterFiles = fs.readdirSync(chattersDirectory).filter(f => f.endsWith('.md'));
-      allChatters = chatterFiles.map(fileName => {
-        const fullPath = path.join(chattersDirectory, fileName);
-        const { data, content } = matter(fs.readFileSync(fullPath, 'utf8'));
-        const rawDate = data.date || '1970-01-01';
-        const cover = data.cover || 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop';
-        return { slug: fileName.replace(/\.md$/, ''), title: data.title || '碎片记录', description: data.description || content.substring(0, 60), cover: cover, date: rawDate, formattedDate: formatUpdateTime(rawDate) };
-      }).sort((a, b) => {
-        const dateA = new Date(a.date).getTime();
-        const dateB = new Date(b.date).getTime();
-        if (dateB !== dateA) return dateB - dateA;
-        return b.slug.localeCompare(a.slug);
-      });
-    }
-  } catch (e) {}
-  const top5Chatters = allChatters.length > 0 ? allChatters.slice(0, 5) : [{ slug: 'none', title: '暂无记录', description: '记录一段思绪...', cover: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop', date: '', formattedDate: '' }];
-
-  const chatterCount = allChatters.length;
-  const realPhotoCount = albums.reduce((total, album) => total + album.photos.length, 0);
-  const latestAlbum = albums.length > 0 ? albums[0] : { id: '', title: '照片墙', description: '查看摄影', cover: siteConfig.photoWallImage, date: '' };
+  const posts = readMarkdown("posts") as Post[];
+  const chatters = readMarkdown("chatters") as Post[];
+  const latest = posts.slice(0, 4);
+  const latestChatter = chatters.slice(0, 3);
+  const projects = projectsData.slice(0, 3);
 
   return (
-    <ToastProvider>
-      <div className="min-h-screen relative pb-10">
-        <Navbar />
-        <PageTransition>
-          {/* 🌟 调整整体容器的内边距，适应手机端更小的屏幕 */}
-          <div className="w-full max-w-6xl mx-auto mt-24 sm:mt-28 px-4 sm:px-6 lg:px-10 relative z-10">
-            <SearchBar posts={allPosts} />
+    <div className="min-h-screen">
+      <Navbar />
 
-            <main className="flex flex-col gap-6 w-full mt-6">
-              {/* 第一行：个人信息 + 播放器 */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full">
-                {/* 手机上占满1列，电脑上占7列 */}
-                <div className="col-span-1 lg:col-span-7 flex flex-col">
-                    <ProfileCard postCount={allPosts.length} chatterCount={chatterCount} photoCount={realPhotoCount}/>
-                </div>
-                {/* 手机上占满1列，电脑上占5列 */}
-                <div className="col-span-1 lg:col-span-5 flex flex-col">
-                    <CloudPlayer/>
-                </div>
-              </div>
+      <PageTransition>
+        <main className="mx-auto w-[92%] max-w-5xl pb-24">
+          {/* ── 卷首 ── */}
+          <header className="border-b border-[var(--line)] pb-14 pt-16 sm:pt-20">
+            <div className="flex items-center justify-between">
+              <p className="eyebrow">Journal · {siteConfig.authorEn}</p>
+              <HomeClock since={siteConfig.buildDate} />
+            </div>
 
-              {/* 歌词栏 */}
-              <div className="w-full mt-[-10px]"><LyricBar/></div>
+            <h1 className="mt-10 font-serif text-[2.6rem] font-black leading-[1.1] tracking-tight text-[var(--ink)] sm:text-[3.6rem]">
+              {siteConfig.title}
+            </h1>
 
-              {/* 第二行：文章轮播 + 照片墙 + 说说 + 主题切换 */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full">
+            <p className="mt-5 max-w-2xl font-serif text-[15px] leading-[1.9] text-[var(--ink-soft)] sm:text-base">
+              {siteConfig.bio}
+            </p>
 
-                {/* 左侧：文章轮播 (电脑端占4列，手机端排最上面) */}
-                <div className="col-span-1 lg:col-span-4 flex flex-col min-h-[300px]">
-                  <LatestPostsCarousel posts={top5Posts} />
-                </div>
+            <p className="mt-3 font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">{siteConfig.slogan}</p>
 
-                {/* 右侧：组合面板 (电脑端占8列) */}
-                <div className="col-span-1 lg:col-span-8 flex flex-col gap-6">
+            <div className="mt-9 flex flex-wrap items-center gap-x-3 gap-y-3 text-[13px]">
+              {sections.map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="group inline-flex items-center gap-2 border border-[var(--line)] px-3.5 py-1.5 text-[var(--ink-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                >
+                  {s.label}
+                  <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">{s.desc}</span>
+                </Link>
+              ))}
+            </div>
+          </header>
 
-                  {/* 照片墙大海报 */}
-                  <Link href="/photowall" className="w-full rounded-3xl bg-white/40 dark:bg-slate-800/50 backdrop-blur-md border border-white/40 dark:border-white/10 shadow-xl overflow-hidden transition-all duration-700 hover:scale-[1.02] relative group min-h-[200px] sm:min-h-[220px] flex-shrink-0">
-                    <img src={latestAlbum.cover} className="w-full h-full absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-105 opacity-90"/>
-                    <div className="absolute inset-0 bg-black/30 dark:bg-black/50 group-hover:bg-black/10 transition-colors duration-500"></div>
-                    <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 right-6">
-                      <h3 className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2 underline decoration-pink-400">{latestAlbum.title}</h3>
-                      <p className="text-white/90 text-sm sm:text-lg line-clamp-1">{latestAlbum.description}</p>
-                    </div>
+          <div className="grid gap-12 pt-14 lg:grid-cols-[1fr_300px] lg:gap-14">
+            {/* ── 左栏 ── */}
+            <div className="min-w-0">
+              <section>
+                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">最近文章</h2>
+                  <Link href="/timeline" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+                    ALL {posts.length} →
                   </Link>
+                </div>
 
-                  {/* 底层网格：说说轮播 + 主题切换器 */}
-                  {/* 手机上单列，平板上分3列比例分布 */}
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full flex-1">
-                    <div className="sm:col-span-2 flex flex-col min-h-[200px]">
-                      <LatestChatterCarousel chatters={top5Chatters} />
-                    </div>
-                    <div className="sm:col-span-1 flex flex-col min-h-[120px]">
-                      <ThemeToggleBlock />
-                    </div>
+                {latest.length === 0 ? (
+                  <p className="py-10 text-[13px] text-[var(--muted)]">还没有文章。</p>
+                ) : (
+                  <ol className="divide-y divide-[var(--line)]">
+                    {latest.map((post, i) => (
+                      <li key={post.slug}>
+                        <Link href={`/posts/${post.slug}`} className="group flex gap-4 py-6 sm:gap-6">
+                          <span className="w-6 shrink-0 pt-1 font-mono text-[11px] text-[var(--muted)]">
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+                          <div className="min-w-0 flex-1">
+                            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                              <h3 className="font-serif text-[17px] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                                {post.title}
+                              </h3>
+                              <span className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)]">{short(post.date)}</span>
+                            </div>
+                            <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--ink-soft)]">{post.description}</p>
+                            {post.tags.length > 0 && (
+                              <div className="mt-2.5 flex flex-wrap gap-1.5">
+                                {post.tags.slice(0, 4).map((tag) => (
+                                  <span key={tag} className="tag">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </Link>
+                      </li>
+                    ))}
+                  </ol>
+                )}
+              </section>
+
+              <section className="mt-14">
+                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">{siteConfig.chatterTitle}</h2>
+                  <Link href="/chatter" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+                    ALL →
+                  </Link>
+                </div>
+                <ul className="divide-y divide-[var(--line)]">
+                  {latestChatter.map((c) => (
+                    <li key={c.slug}>
+                      <Link href={`/chatter/${c.slug}`} className="group block py-5">
+                        <div className="flex items-baseline justify-between gap-4">
+                          <h3 className="font-serif text-[15px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                            {c.title}
+                          </h3>
+                          <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">{short(c.date)}</span>
+                        </div>
+                        <p className="mt-1 line-clamp-1 text-[12.5px] text-[var(--ink-soft)]">{c.description}</p>
+                      </Link>
+                    </li>
+                  ))}
+                  {latestChatter.length === 0 && <li className="py-8 text-[13px] text-[var(--muted)]">还没有随笔。</li>}
+                </ul>
+              </section>
+
+              <section className="mt-14">
+                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">项目</h2>
+                  <Link href="/projects" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+                    ALL →
+                  </Link>
+                </div>
+                <ul className="divide-y divide-[var(--line)]">
+                  {projects.map((p) => (
+                    <li key={p.id} className="py-5">
+                      <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="group block">
+                        <div className="flex items-baseline justify-between gap-4">
+                          <h3 className="font-serif text-[15px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                            {p.name}
+                          </h3>
+                          <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">GITHUB ↗</span>
+                        </div>
+                        <p className="mt-1 line-clamp-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">{p.description}</p>
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {p.tags.map((t) => (
+                            <span key={t} className="tag">
+                              {t}
+                            </span>
+                          ))}
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+
+              <section className="mt-14">
+                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">友链</h2>
+                  <Link href="/friends" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+                    ALL →
+                  </Link>
+                </div>
+                <ul className="divide-y divide-[var(--line)]">
+                  {friendsData.slice(0, 4).map((f) => (
+                    <li key={f.id}>
+                      <a
+                        href={f.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-baseline justify-between gap-4 py-4"
+                      >
+                        <div className="min-w-0">
+                          <span className="font-serif text-[14px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                            {f.name}
+                          </span>
+                          <span className="ml-3 text-[12px] text-[var(--muted)]">{f.description}</span>
+                        </div>
+                        <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">↗</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </div>
+
+            {/* ── 右栏 ── */}
+            <aside className="space-y-6">
+              <MiniPlayer />
+
+              <div className="card p-5">
+                <p className="eyebrow">Profile</p>
+                <div className="mt-3 flex items-center gap-3">
+                  <img src={siteConfig.avatarUrl} alt={siteConfig.authorName} className="h-12 w-12 rounded-full border border-[var(--line)]" />
+                  <div>
+                    <p className="font-serif text-[15px] font-bold text-[var(--ink)]">{siteConfig.authorName}</p>
+                    <p className="mt-0.5 text-[11.5px] text-[var(--muted)]">{siteConfig.authorTitle}</p>
                   </div>
-
+                </div>
+                <div className="mt-4 hairline" />
+                <dl className="mt-4 space-y-2 font-mono text-[11px] text-[var(--muted)]">
+                  <div className="flex justify-between">
+                    <dt>文章</dt>
+                    <dd className="text-[var(--ink-soft)]">{posts.length}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt>随笔</dt>
+                    <dd className="text-[var(--ink-soft)]">{chatters.length}</dd>
+                  </div>
+                  <div className="flex justify-between">
+                    <dt>项目</dt>
+                    <dd className="text-[var(--ink-soft)]">{projectsData.length}</dd>
+                  </div>
+                </dl>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {siteConfig.social?.github && (
+                    <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" className="btn-ghost px-3 py-1.5 text-[12px]">
+                      GitHub ★
+                    </a>
+                  )}
+                  <Link href="/about" className="btn-accent px-3 py-1.5 text-[12px]">
+                    关于我
+                  </Link>
                 </div>
               </div>
 
-              {/* 每日选刊：位于首页内容矩阵下方 */}
-              <DailyBriefing />
+              <div className="card p-5">
+                <p className="eyebrow">Bookmarks</p>
+                <ul className="mt-3 space-y-2.5">
+                  <li>
+                    <a
+                      href="http://111.230.230.103/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center justify-between text-[13px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
+                    >
+                      <span>简白 · 中文简历工具</span>
+                      <span className="font-mono text-[10px] text-[var(--muted)]">↗</span>
+                    </a>
+                  </li>
+                  <li>
+                    <Link href="/photowall" className="group flex items-center justify-between text-[13px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]">
+                      <span>相册</span>
+                      <span className="font-mono text-[10px] text-[var(--muted)]">↗</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/music" className="group flex items-center justify-between text-[13px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]">
+                      <span>音乐</span>
+                      <span className="font-mono text-[10px] text-[var(--muted)]">↗</span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
-              {/* 底部数据面板 */}
-              <div className="w-full mt-4"><SiteDashboard/></div>
-            </main>
+              <div className="card-flat p-5">
+                <p className="eyebrow">Colophon</p>
+                <p className="mt-3 text-[12px] leading-relaxed text-[var(--muted)]">
+                  Next.js · React · Tailwind CSS。标题用思源宋体，正文用无衬线，单一朱砂色作为强调。
+                </p>
+              </div>
+            </aside>
           </div>
-        </PageTransition>
-      </div>
-    </ToastProvider>
+        </main>
+      </PageTransition>
+
+      <footer className="border-t border-[var(--line)]">
+        <div className="mx-auto flex w-[92%] max-w-5xl flex-col items-start justify-between gap-3 py-8 sm:flex-row sm:items-center">
+          <p className="font-mono text-[10.5px] tracking-[0.16em] text-[var(--muted)]">
+            © {new Date().getFullYear()} {siteConfig.title} · {siteConfig.authorEn}
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {siteConfig.footerBadges?.map((b) => (
+              <span key={b.name} className="tag">
+                {b.name}
+              </span>
+            ))}
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 }
