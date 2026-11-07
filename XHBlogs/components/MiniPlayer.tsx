@@ -30,7 +30,7 @@ export default function MiniPlayer() {
 
   if (isLoading) {
     return (
-      <div className="card p-5">
+      <div className="glass glass-sheen p-5">
         <p className="eyebrow">Stereo</p>
         <p className="mt-3 font-mono text-[11px] text-[var(--muted)]">连接中 …</p>
       </div>
@@ -39,7 +39,7 @@ export default function MiniPlayer() {
 
   if (!playlist.length || !currentSong) {
     return (
-      <div className="card p-5">
+      <div className="glass glass-sheen p-5">
         <p className="eyebrow">Stereo</p>
         <p className="mt-3 text-[13px] text-[var(--muted)]">歌单尚未配置。</p>
       </div>
@@ -47,7 +47,7 @@ export default function MiniPlayer() {
   }
 
   return (
-    <div className="card overflow-hidden">
+    <div className="glass glass-sheen overflow-hidden">
       <div className="flex items-center gap-4 border-b border-[var(--line)] p-4">
         <img
           src={currentSong.cover}

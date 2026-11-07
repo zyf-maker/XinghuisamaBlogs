@@ -43,21 +43,83 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="w-screen overflow-x-hidden min-h-full flex flex-col relative bg-[var(--paper)] text-[var(--ink)]">
+      <body className="w-full overflow-x-hidden min-h-full flex flex-col relative bg-[var(--paper)] text-[var(--ink)]">
         <ThemeProvider>
           <MusicProvider>
-            {/* 极淡的纸纹网格：只在顶部有存在感，不抢内容 */}
-            <div
-              aria-hidden="true"
-              className="fixed inset-0 z-0 pointer-events-none opacity-40"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, var(--line) 1px, transparent 1px), linear-gradient(to bottom, var(--line) 1px, transparent 1px)",
-                backgroundSize: "80px 80px",
-                maskImage: "radial-gradient(circle at 50% 0%, rgba(0,0,0,0.6), transparent 70%)",
-                WebkitMaskImage: "radial-gradient(circle at 50% 0%, rgba(0,0,0,0.6), transparent 70%)",
-              }}
-            />
+            {/* 背景层：玻璃要「像玻璃」，背后必须有东西可采样。
+                底色略提亮、光斑压低不透明度、网格减淡 ——
+                目标是「有内容可透，但不抢正文」，而不是把整页刷成彩色。 */}
+            <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(146deg, #efe9dd 0%, #ece4d6 36%, #eae2d4 62%, #eee8dc 100%)",
+                }}
+              />
+              <div
+                className="absolute -left-[22vw] -top-[26vh] h-[74vw] w-[74vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(198,74,42,0.52) 0%, rgba(198,74,42,0.22) 34%, rgba(198,74,42,0) 66%)",
+                  filter: "blur(46px)",
+                }}
+              />
+              <div
+                className="absolute -right-[20vw] top-[10vh] h-[68vw] w-[68vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(52,104,142,0.46) 0%, rgba(52,104,142,0.2) 36%, rgba(52,104,142,0) 68%)",
+                  filter: "blur(50px)",
+                }}
+              />
+              {/* 这两团压在正文栏下面：卡片必须「有事可采」，
+                  否则玻璃只会是一块比纸更白的板子。 */}
+              <div
+                className="absolute left-[8vw] top-[34vh] h-[46vw] w-[46vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(206,96,50,0.56) 0%, rgba(206,96,50,0.24) 40%, rgba(214,120,66,0) 72%)",
+                  filter: "blur(44px)",
+                }}
+              />
+              <div
+                className="absolute right-[10vw] top-[58vh] h-[42vw] w-[42vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(52,110,150,0.54) 0%, rgba(52,110,150,0.22) 40%, rgba(74,124,148,0) 72%)",
+                  filter: "blur(42px)",
+                }}
+              />
+              <div
+                className="absolute bottom-[-26vh] left-[18vw] h-[62vw] w-[62vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(206,164,74,0.42) 0%, rgba(206,164,74,0.16) 38%, rgba(206,164,74,0) 70%)",
+                  filter: "blur(46px)",
+                }}
+              />
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to right, rgba(22,21,15,0.062) 1px, transparent 1px), linear-gradient(to bottom, rgba(22,21,15,0.062) 1px, transparent 1px)",
+                  backgroundSize: "64px 64px",
+                  maskImage:
+                    "radial-gradient(ellipse at 50% 28%, rgba(0,0,0,0.95), rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
+                  WebkitMaskImage:
+                    "radial-gradient(ellipse at 50% 28%, rgba(0,0,0,0.95), rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
+                }}
+              />
+              {/* 极细噪点，避免大面积渐变出现色带 */}
+              <div
+                className="absolute inset-0 opacity-[0.16] mix-blend-multiply"
+                style={{
+                  backgroundImage:
+                    "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")",
+                }}
+              />
+            </div>
 
             <div className="relative z-10 flex-1 flex flex-col">{children}</div>
 

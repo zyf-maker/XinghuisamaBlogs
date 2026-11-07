@@ -11,8 +11,8 @@
   --surface: #fffefb;
   --surface-alt: #efebe4;
   --ink: #16150f;
-  --ink-soft: #3d3a33;
-  --muted: #74705f;
+  --ink-soft: #322f27;
+  --muted: #5c5848;
   --line: rgba(22, 21, 15, 0.1);
   --line-strong: rgba(22, 21, 15, 0.24);
   --accent: #a8432b;
@@ -22,6 +22,18 @@
   --warn: #8a6318;
   --err: #a33a2e;
   --shadow-hairline: 0 1px 0 rgba(22, 21, 15, 0.04);
+
+  /* 液态玻璃：半透明底 + 背景虚化 + 边缘高光 */
+  --glass-bg: rgba(255, 255, 255, 0.3);
+  --glass-bg-strong: rgba(255, 254, 251, 0.66);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-edge: rgba(255, 255, 255, 0.72);
+  --glass-spec-top: rgba(255, 255, 255, 0.95);
+  --glass-spec-bottom: rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 14px 32px -24px rgba(22, 21, 15, 0.45), 0 1px 3px -2px rgba(22, 21, 15, 0.2);
+  --glass-blur: 24px;
+
+  --glass-tint: rgba(120, 160, 200, 0.06);
   --font-serif-cn: var(--font-serif), "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
   --font-sans-cn: var(--font-geist-sans), "Inter", system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-code: var(--font-geist-mono), "JetBrains Mono", "Cascadia Code", ui-monospace, monospace;
@@ -33,7 +45,7 @@
   --surface-alt: #1a1a1d;
   --ink: #f3f1ec;
   --ink-soft: #d7d3ca;
-  --muted: #8b877e;
+  --muted: #9c978c;
   --line: rgba(243, 241, 236, 0.12);
   --line-strong: rgba(243, 241, 236, 0.3);
   --accent: #d97757;
@@ -43,6 +55,15 @@
   --warn: #d6a44c;
   --err: #e0796b;
   --shadow-hairline: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+  /* 深色下玻璃不能太白，否则整块发灰 */
+  --glass-bg: rgba(24, 24, 27, 0.55);
+  --glass-bg-strong: rgba(24, 24, 27, 0.78);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-edge: rgba(255, 255, 255, 0.1);
+  --glass-spec-top: rgba(255, 255, 255, 0.26);
+  --glass-spec-bottom: rgba(255, 255, 255, 0.04);
+  --glass-shadow: 0 20px 50px -28px rgba(0, 0, 0, 0.9), 0 2px 10px -6px rgba(0, 0, 0, 0.7);
 }
 
 @theme inline {
@@ -122,6 +143,67 @@
     background-color: transparent;
     border: 1px solid var(--line);
     border-radius: 10px;
+  }
+
+  /* ── 液态玻璃 / 毛玻璃 ────────────────────────────────
+     做法参考 Apple Liquid Glass 的 CSS 近似：半透明底 +
+     背景虚化 + 顶部内高光 + 一圈极细的亮边。
+     真正要「像玻璃」，关键在于背后得有东西可采样——
+     所以 layout 里加了一层低饱和的暖色光斑，别删。 */
+  .glass {
+    position: relative;
+    background-color: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(165%);
+    backdrop-filter: blur(var(--glass-blur)) saturate(165%);
+    border: 1px solid var(--glass-edge);
+    border-radius: 14px;
+    box-shadow:
+      inset 0 1px 0 var(--glass-spec-top),
+      inset 0 -1px 0 var(--glass-spec-bottom),
+      0 0 0 1px rgba(22, 21, 15, 0.035),
+      var(--glass-shadow);
+  }
+
+  /* 更实的玻璃：导航栏、悬浮条用，文字对比度更稳 */
+  .glass-bar {
+    background-color: var(--glass-bg-strong);
+    -webkit-backdrop-filter: blur(16px) saturate(170%);
+    backdrop-filter: blur(16px) saturate(170%);
+  }
+
+  /* 玻璃上的斜向反光，加在需要「一片高光」的块上 */
+  .glass-sheen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.24) 0%,
+      rgba(255, 255, 255, 0.04) 26%,
+      rgba(255, 255, 255, 0) 46%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    mix-blend-mode: overlay;
+  }
+
+  /* 滚动视差：轻微放大背景，避免玻璃「贴死」在纸面上 */
+  .glass-inset {
+    box-shadow:
+      inset 0 1px 0 var(--glass-spec-top),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+      0 1px 2px rgba(22, 21, 15, 0.06);
+  }
+
+  /* 极淡的玻璃：内容和纸面混在一起，只留一点亮度差 */
+  .glass-flat {
+    background-color: var(--glass-bg);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    backdrop-filter: blur(14px) saturate(150%);
+    border: 1px solid var(--glass-edge);
+    border-radius: 14px;
+    box-shadow: inset 0 1px 0 var(--glass-spec-top);
   }
 
   /* 章节小标签：全大写 + 字距 */
@@ -248,6 +330,37 @@
   overflow-x: auto;
 }
 .prose pre code { background: transparent; color: #d6d9e0; padding: 0; font-size: 0.86em; }
+
+/* highlight.js 的默认注释色 #5c6370 在 #14161a 上只有 3:1，压着读很吃力。
+   统一抬亮一档：注释 / 关键字 / 字符串 / 数字 分别给不同明度，
+   保证深底上最小对比度也在 4.5:1 以上。 */
+.prose pre code .hljs-comment,
+.prose pre code .hljs-quote { color: #9aa2b1; font-style: italic; }
+.prose pre code .hljs-keyword,
+.prose pre code .hljs-selector-tag,
+.prose pre code .hljs-literal,
+.prose pre code .hljs-type { color: #c8a2ff; }
+.prose pre code .hljs-string,
+.prose pre code .hljs-regexp,
+.prose pre code .hljs-addition { color: #9dd6a0; }
+.prose pre code .hljs-number,
+.prose pre code .hljs-symbol,
+.prose pre code .hljs-bullet { color: #f0c07a; }
+.prose pre code .hljs-title,
+.prose pre code .hljs-name,
+.prose pre code .hljs-section,
+.prose pre code .hljs-selector-id,
+.prose pre code .hljs-selector-class { color: #89c8f0; }
+.prose pre code .hljs-attr,
+.prose pre code .hljs-attribute,
+.prose pre code .hljs-variable,
+.prose pre code .hljs-template-variable { color: #e2c08d; }
+.prose pre code .hljs-built_in,
+.prose pre code .hljs-meta { color: #7ecfd6; }
+.prose pre code .hljs-deletion { color: #e0796b; }
+.prose pre code .hljs-emphasis { font-style: italic; }
+.prose pre code .hljs-strong { font-weight: 600; }
+
 .prose hr { border-color: var(--line); }
 .prose table { border-collapse: collapse; }
 .prose th, .prose td { border: 1px solid var(--line); padding: 0.5rem 0.75rem; }

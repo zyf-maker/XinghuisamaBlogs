@@ -8,6 +8,7 @@ import { useTheme } from './ThemeProvider';
 
 const navLinks = [
   { name: '首页', href: '/' },
+  { name: '知识库', href: '/ai' },
   { name: '文章', href: '/timeline' },
   { name: '随笔', href: '/chatter' },
   { name: '手记', href: '/moments' },
@@ -40,12 +41,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-colors duration-300 ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? 'bg-[var(--paper)]/92 border-b border-[var(--line)]'
+          ? 'glass-bar border-b border-[var(--line)]'
           : 'bg-transparent border-b border-transparent'
       }`}
-      style={{ backdropFilter: scrolled ? 'saturate(140%) blur(10px)' : undefined }}
     >
       <div className="mx-auto flex h-16 w-[92%] max-w-6xl items-center justify-between">
         {/* 品牌 */}
@@ -84,7 +84,7 @@ export default function Navbar() {
             type="button"
             onClick={toggleTheme}
             aria-label={isDark ? '切换到浅色' : '切换到深色'}
-            className="flex h-9 w-9 items-center justify-center rounded-md border border-[var(--line)] text-[var(--ink-soft)] transition-colors hover:border-[var(--line-strong)] hover:text-[var(--accent)]"
+            className="flex h-11 w-11 items-center justify-center rounded-md border border-[var(--line)] text-[var(--ink-soft)] transition-colors hover:border-[var(--line-strong)] hover:text-[var(--accent)]"
           >
             {isDark ? (
               <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.7">
@@ -104,7 +104,7 @@ export default function Navbar() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label="菜单"
-            className="flex h-9 w-9 items-center justify-center rounded-md border border-[var(--line)] text-[var(--ink-soft)] transition-colors hover:border-[var(--line-strong)] md:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-md border border-[var(--line)] text-[var(--ink-soft)] transition-colors hover:border-[var(--line-strong)] md:hidden"
           >
             <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
               {open ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}

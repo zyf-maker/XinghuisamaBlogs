@@ -10,6 +10,8 @@ import HomeClock from "../components/HomeClock";
 import { siteConfig } from "../siteConfig";
 import { friendsData } from "../data/friends";
 import { projectsData } from "../data/projects";
+import { aiCategories } from "../data/aiCategories";
+import { getStats } from "../lib/aiDocs";
 
 type Post = {
   slug: string;
@@ -45,6 +47,7 @@ function short(date: string) {
 }
 
 const sections = [
+  { href: "/ai", label: "知识库", desc: "AI 相关的工作笔记" },
   { href: "/timeline", label: "文章", desc: "长文与笔记归档" },
   { href: "/chatter", label: "随笔", desc: "短记录与即时判断" },
   { href: "/projects", label: "项目", desc: "代码与工具" },
@@ -57,6 +60,7 @@ export default function Home() {
   const latest = posts.slice(0, 4);
   const latestChatter = chatters.slice(0, 3);
   const projects = projectsData.slice(0, 3);
+  const aiStats = getStats();
 
   return (
     <div className="min-h-screen">
@@ -86,7 +90,7 @@ export default function Home() {
                 <Link
                   key={s.href}
                   href={s.href}
-                  className="group inline-flex items-center gap-2 border border-[var(--line)] px-3.5 py-1.5 text-[var(--ink-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                  className="glass-inset group inline-flex items-center gap-2 rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] px-3.5 py-1.5 text-[var(--ink-soft)] backdrop-blur-md transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
                 >
                   {s.label}
                   <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">{s.desc}</span>
@@ -98,7 +102,42 @@ export default function Home() {
           <div className="grid gap-12 pt-14 lg:grid-cols-[1fr_300px] lg:gap-14">
             {/* ── 左栏 ── */}
             <div className="min-w-0">
+              {/* 知识库入口：这里是整个站的重心，放在最前 */}
               <section>
+                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">AI 知识库</h2>
+                  <Link href="/ai" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+                    {aiStats.docs} 篇 →
+                  </Link>
+                </div>
+
+                <Link href="/ai" className="glass glass-sheen group mt-5 block p-6 transition-transform duration-300 hover:-translate-y-0.5">
+                  <div className="flex items-baseline justify-between">
+                    <p className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">
+                      KNOWLEDGE BASE · {aiStats.categories} GROUPS
+                    </p>
+                    <span className="font-mono text-[10px] text-[var(--muted)] transition-colors group-hover:text-[var(--accent)]">
+                      进入 ↗
+                    </span>
+                  </div>
+                  <p className="mt-3 font-serif text-[17px] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                    从模型基础到产品变形的八组笔记
+                  </p>
+                  <p className="mt-2 text-[12.5px] leading-[1.85] text-[var(--ink-soft)]">
+                    分词、采样、上下文、提示词、工具调用、检索、评测、选型与变现。
+                    每篇都从一个具体问题出发，给出可执行的参数和踩过的坑。
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {aiCategories.map((c) => (
+                      <span key={c.slug} className="tag">
+                        {c.name}
+                      </span>
+                    ))}
+                  </div>
+                </Link>
+              </section>
+
+              <section className="mt-14">
                 <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
                   <h2 className="font-serif text-lg font-bold text-[var(--ink)]">最近文章</h2>
                   <Link href="/timeline" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
@@ -231,7 +270,7 @@ export default function Home() {
             <aside className="space-y-6">
               <MiniPlayer />
 
-              <div className="card p-5">
+              <div className="glass glass-sheen p-5">
                 <p className="eyebrow">Profile</p>
                 <div className="mt-3 flex items-center gap-3">
                   <img src={siteConfig.avatarUrl} alt={siteConfig.authorName} className="h-12 w-12 rounded-full border border-[var(--line)]" />
@@ -267,7 +306,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="card p-5">
+              <div className="glass glass-sheen p-5">
                 <p className="eyebrow">Bookmarks</p>
                 <ul className="mt-3 space-y-2.5">
                   <li>
@@ -296,7 +335,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="card-flat p-5">
+              <div className="glass-flat p-5">
                 <p className="eyebrow">Colophon</p>
                 <p className="mt-3 text-[12px] leading-relaxed text-[var(--muted)]">
                   Next.js · React · Tailwind CSS。标题用思源宋体，正文用无衬线，单一朱砂色作为强调。

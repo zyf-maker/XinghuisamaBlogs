@@ -120,10 +120,10 @@ export default function PhotoWallClient() {
                         />
                         <div
                           className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                          style={{ background: "linear-gradient(to top, rgba(20,22,26,0.86), rgba(20,22,26,0) 65%)" }}
+                          style={{ background: "linear-gradient(to top, rgba(16,18,22,0.94), rgba(16,18,22,0) 62%)" }}
                         >
-                          <span className="font-mono text-[11px] tracking-[0.14em] text-[#f7f5f0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
-                            {album.photos.length} 张 · 展开
+                          <span className="font-mono text-[11px] tracking-[0.14em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]">
+                            展开相册 →
                           </span>
                         </div>
                       </div>
@@ -133,7 +133,9 @@ export default function PhotoWallClient() {
                           <h2 className="font-serif text-[16px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                             {album.title}
                           </h2>
-                          <span className="shrink-0 font-mono text-[10px] tracking-[0.1em] text-[var(--muted)]">{album.date}</span>
+                          <span className="shrink-0 font-mono text-[10px] tracking-[0.1em] text-[var(--muted)]">
+                            {album.date} · {album.photos.length} 张
+                          </span>
                         </div>
                         <p className="mt-1.5 line-clamp-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">{album.description}</p>
                       </div>

@@ -26,6 +26,14 @@ export const friendsData: Friend[] = [
     themeColor: "rgba(22, 21, 15, 0.08)",
   },
   {
+    id: "ai-guide",
+    name: "AI 编程学习指南 · 鱼皮",
+    url: "https://github.com/liyupi/ai-guide",
+    description: "选题方向的参考：把 AI 编程的资料按学习路径组织起来，两万多 star。",
+    avatar: "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    themeColor: "rgba(22, 21, 15, 0.08)",
+  },
+  {
     id: "self",
     name: "逸群不凡",
     url: "https://xinghuisama-blogs-sandy.vercel.app",

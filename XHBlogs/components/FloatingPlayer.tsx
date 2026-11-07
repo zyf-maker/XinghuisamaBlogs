@@ -34,7 +34,7 @@ export default function FloatingPlayer() {
         }}
         initial={false}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="flex items-center gap-3 bg-[var(--surface)] border border-[var(--line-strong)] p-2 pr-4 rounded-full transition-colors duration-700 cursor-grab active:cursor-grabbing"
+        className="glass glass-sheen flex items-center gap-3 p-2 pr-4 rounded-full transition-colors duration-700 cursor-grab active:cursor-grabbing"
       >
 
         {/* 旋转的光碟封面 */}
