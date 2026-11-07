@@ -47,8 +47,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <ThemeProvider>
           <MusicProvider>
             {/* 背景层：玻璃要「像玻璃」，背后必须有东西可采样。
-                底色略提亮、光斑压低不透明度、网格减淡 ——
-                目标是「有内容可透，但不抢正文」，而不是把整页刷成彩色。 */}
+                底色 + 几团大范围光斑 + 极细噪点，不画网格线：
+                网格在 backdrop-filter 后面会被虚化成一片灰雾，
+                既压低了文字对比度，又让人以为整页「蒙了一层」。
+                靠光斑的明暗过渡提供采样内容就够了。 */}
             <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
               <div
                 className="absolute inset-0"
@@ -97,18 +99,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   background:
                     "radial-gradient(circle at 50% 50%, rgba(206,164,74,0.42) 0%, rgba(206,164,74,0.16) 38%, rgba(206,164,74,0) 70%)",
                   filter: "blur(46px)",
-                }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(to right, rgba(22,21,15,0.062) 1px, transparent 1px), linear-gradient(to bottom, rgba(22,21,15,0.062) 1px, transparent 1px)",
-                  backgroundSize: "64px 64px",
-                  maskImage:
-                    "radial-gradient(ellipse at 50% 28%, rgba(0,0,0,0.95), rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
-                  WebkitMaskImage:
-                    "radial-gradient(ellipse at 50% 28%, rgba(0,0,0,0.95), rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.15) 100%)",
                 }}
               />
               {/* 极细噪点，避免大面积渐变出现色带 */}

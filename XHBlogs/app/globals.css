@@ -171,7 +171,9 @@
     backdrop-filter: blur(16px) saturate(170%);
   }
 
-  /* 玻璃上的斜向反光，加在需要「一片高光」的块上 */
+  /* 玻璃上的斜向反光，加在需要「一片高光」的块上。
+     反光画在内容之上，强度必须很小：早期用 0.24 的 overlay 斜向渐变，
+     整张卡片像蒙了层雾，正文对比度被吃掉一截。现在只保留一丝。 */
   .glass-sheen::after {
     content: "";
     position: absolute;
@@ -180,12 +182,12 @@
     pointer-events: none;
     background: linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.24) 0%,
-      rgba(255, 255, 255, 0.04) 26%,
-      rgba(255, 255, 255, 0) 46%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.02) 22%,
+      rgba(255, 255, 255, 0) 40%,
       rgba(255, 255, 255, 0) 100%
     );
-    mix-blend-mode: overlay;
+    mix-blend-mode: soft-light;
   }
 
   /* 滚动视差：轻微放大背景，避免玻璃「贴死」在纸面上 */

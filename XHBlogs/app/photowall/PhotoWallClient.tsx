@@ -122,7 +122,7 @@ export default function PhotoWallClient() {
                           className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                           style={{ background: "linear-gradient(to top, rgba(16,18,22,0.94), rgba(16,18,22,0) 62%)" }}
                         >
-                          <span className="font-mono text-[11px] tracking-[0.14em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.85)]">
+                          <span className="rounded-sm bg-[rgba(16,18,22,0.86)] px-2 py-1 font-mono text-[11px] tracking-[0.14em] text-white">
                             展开相册 →
                           </span>
                         </div>
