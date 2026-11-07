@@ -25,6 +25,33 @@ export type AiCategoryWithDocs = AiCategory & {
   docs: AiDoc[];
 };
 
+/**
+ * 传给客户端组件（左栏目录）的轻量结构。
+ * 绝不能把 body 一起序列化下去：一篇正文几 KB，几十篇就会把 RSC payload 撑到 MB 级。
+ */
+export type AiDocBrief = Omit<AiDoc, "body">;
+
+export type AiCategoryBrief = {
+  slug: string;
+  name: string;
+  en: string;
+  docs: AiDocBrief[];
+};
+
+export function toBrief(categories: AiCategoryWithDocs[]): AiCategoryBrief[] {
+  return categories.map((c) => ({
+    slug: c.slug,
+    name: c.name,
+    en: c.en,
+    docs: c.docs.map(({ body, ...rest }) => rest),
+  }));
+}
+
+/** 左栏专用：全部分类的目录树，不含正文 */
+export function getAllCategoryBriefs(): AiCategoryBrief[] {
+  return toBrief(getAllCategories());
+}
+
 const CONTENT_ROOT = path.join(process.cwd(), "content", "ai");
 
 function toNumber(value: unknown, fallback: number): number {

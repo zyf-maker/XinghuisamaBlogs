@@ -4,10 +4,10 @@ import { notFound } from "next/navigation";
 
 import PageHeader from "../../../components/PageHeader";
 import SidebarNav from "../../../components/ai/SidebarNav";
-import { getAllCategories, getCategoryWithDocs } from "../../../lib/aiDocs";
+import { getAllCategoryBriefs, getCategoryWithDocs } from "../../../lib/aiDocs";
 
 export function generateStaticParams() {
-  return getAllCategories().map((c) => ({ category: c.slug }));
+  return getAllCategoryBriefs().map((c) => ({ category: c.slug }));
 }
 
 export async function generateMetadata({
@@ -30,7 +30,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
   const cat = getCategoryWithDocs(category);
   if (!cat) notFound();
 
-  const categories = getAllCategories();
+  const categories = getAllCategoryBriefs();
   const totalMinutes = cat.docs.reduce((n, d) => n + d.readingTime, 0);
 
   return (

@@ -4,10 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-import type { AiCategoryWithDocs } from "../../lib/aiDocs";
+import type { AiCategoryBrief } from "../../lib/aiDocs";
 
 type Props = {
-  categories: AiCategoryWithDocs[];
+  categories: AiCategoryBrief[];
   /** 当前所在分类，用于展开 */
   activeCategory?: string;
 };

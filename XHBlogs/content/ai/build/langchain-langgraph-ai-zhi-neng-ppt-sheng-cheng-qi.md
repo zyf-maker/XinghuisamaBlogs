@@ -1,0 +1,159 @@
+---
+title: "LangChain + LangGraph - AI 智能 PPT 生成器项目实战"
+summary: "这是一套以 AI 工程化 + 工作流 + 异步任务编排为核心的全栈项目教程，基于 Python FastAPI + LangChain + LangGraph + python-pptx + React 开发。用户只需要输入一句主题、粘贴一"
+order: 33
+level: "进阶"
+tags: ["项目实战", "转载", "AI"]
+updated: "2026-09-02"
+readingTime: 5
+author: "程序员鱼皮"
+source: "https://github.com/liyupi/ai-guide"
+---
+
+> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《LangChain + LangGraph - AI 智能 PPT 生成器项目实战》，作者 程序员鱼皮。
+> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
+
+这是一套以 AI 工程化 + 工作流 + 异步任务编排为核心的全栈项目教程，基于 Python FastAPI + LangChain + LangGraph + python-pptx + React 开发。用户只需要输入一句主题、粘贴一段长文本，或者上传一份文档，就能先得到一份可修改的 PPT 大纲，然后并发生成完整页面，最终导出原生可编辑的 PPTX 文件。
+
+项目代码免费开源：https://github.com/yuyuanweb/ai-ppt-generator
+
+完整视频教程 + 文字教程（预计 5 ~ 7 天学完）：https://www.codefather.cn/course/2091823677833220098
+
+![](https://pic.yupi.icu/pine/image-20260820135911354.png)
+
+
+## 项目介绍
+
+做 PPT 这件事，最烦人的不是排版，而是从 0 到 1 的那一步 —— 主题有了、资料也有了，但面对一张空白的幻灯片，就是不知道该怎么组织。
+
+市面上的 AI PPT 工具不少，但大多有两个通病：一是直接甩给你一份完整的 PPT，中间没有任何可以干预的环节，不满意只能重新生成；二是导出的文件本质上是一张张图片，拿到手之后一个字都改不了。
+
+这个项目就是冲着这两个痛点来的。用户输入主题、长文本或者上传文档，系统先生成一份结构化大纲，标题、页面目标、核心要点都能改，确认之后再并发生成每一页，最后导出的是每个元素都能继续编辑的原生 PPTX 文件。
+
+更重要的是，这套项目的骨架可以复用到任何「AI 生成结构化文档」的场景。把 PPT 换成简历、周报、教案、产品需求文档，整套异步生成 + 结构化编辑 + 导出校验的流程都是通用的。
+
+![](https://pic.yupi.icu/pine/image-20260820140224805.png)
+
+
+## 项目功能演示
+
+1）多种输入方式，自动生成大纲
+
+项目支持从主题、长文本和文档三种入口创建 PPT，用户可以自由控制页数、排版模式、文字量、语气和目标受众。
+
+系统不会跳过用户直接生成最终页面，而是先生成一份结构化的大纲，包括每页的标题、页面目标和核心要点，你可以随意修改内容、增删页面、调整顺序，确认满意后再开始生成。
+
+![](https://pic.yupi.icu/pine/image-20260820140051873.png)
+
+
+2）异步并发生成，实时推送进度
+
+一份 10 页的 PPT 如果串行调用模型，很容易让用户等上一分钟以上。项目把每一页拆成独立的任务，通过 ARQ Worker 并发执行，用 Redis 保存任务状态并传递事件，前端通过 SSE 实时接收生成进度。
+
+生成过程中，已经完成的页面可以立即预览，失败的页面可以单独重试，用户也可以随时软取消剩余任务，不需要整份重来。
+
+![](https://pic.yupi.icu/pine/generation-progress.png)
+
+
+3）功能完善的在线编辑器
+
+生成完成后进入在线编辑器，左侧是页面缩略图，中间是 16:9 的画布区域，右侧提供 AI 修改、主题切换、版式选择和图片管理四个面板。
+
+文字内容支持直接编辑，灵活排版的页面可以拖动分隔线调整内容块尺寸，也支持跨容器移动和更换排布方式。切换主题后，Web 预览和 PPTX 导出会读取同一份主题数据，保证效果完全一致。
+
+![](https://pic.yupi.icu/pine/image-20260820140224805.png)
+
+
+4）原生可编辑的 PPTX 导出
+
+AI 输出的文字长度不可预测，直接导出很容易出现文字溢出、缺页或整页被渲染成图片的问题。项目在导出前会自动检查结构、文字占用、数字来源和页面边界，将问题分成 error 和 warning 两个级别，error 会阻断导出，warning 则提醒用户核对但允许继续。
+
+通过检查后，后端用 python-pptx 逐块构造文本框、表格、图表和图片，再回读生成的文件进行验证。最终得到的 PPTX 不是一张铺满全页的截图，而是每个元素都能继续修改的原生对象。
+
+![](https://pic.yupi.icu/pine/image-20260820140247637.png)
+
+
+## 功能梳理
+
+该项目功能完整，涵盖用户项目管理、输入解析、大纲生成、页面生成、在线编辑、主题布局、图片管线、导出质量检查 8 大模块，覆盖了一个 AI 生成类产品从输入到交付的完整链路。
+
+![](https://pic.yupi.icu/pine/project-feature-modules.png)
+
+
+## 项目收获
+
+本项目选题新颖，紧跟 AI 工程化时代，以实用工具 + 完整工程为导向。区别于增删改查的烂大街项目，这套教程讲解的是一个经过市场验证的完整项目，重点不是带你照着代码从零敲一遍，而是把每个关键决策背后的动机、替代方案和踩坑讲清楚。
+
+项目内容精炼，不到一周就能学完，涵盖 Python 后端 + LangChain + LangGraph + React + 企业级 AI 应用开发，学完后在 AI 工程化、异步编排、文档渲染、前端编辑器、工程质量 5 个方向都能获得完整实践。
+
+从这个项目中你可以学到：
+
+- 如何基于 LangChain LCEL 和 `with_structured_output` 实现 AI 结构化输出，保证模型输出始终可用？
+- 如何基于 LangGraph 构建自纠环工作流，系统性提升单页生成质量？
+- 如何设计 AI 工具调用机制，让模型通过 `bind_tools` 调用编辑工具修改页面？
+- 如何使用 ARQ + asyncio.Semaphore 实现页级并发生成，控制模型调用频率？
+- 如何通过 Redis pub/sub + SSE 实现实时进度推送和断线重连恢复？
+- 如何设计内容、布局、主题三分离的数据模型，让 Web 和 PPTX 同源渲染？
+- 如何用 python-pptx 构造原生可编辑的 PPTX，处理中文字体和 emoji？
+- 如何用受约束的 contenteditable 实现结构化编辑器，保证光标稳定？
+- 如何通过 revision 乐观锁 + 按页串行保存队列处理编辑冲突？
+- 如何用 FontTools 做字形级文字溢出检测，配合 warning / error 分级门禁？
+- 如何从 OpenAPI 生成前端 TypeScript 类型，消灭前后端接口不一致？
+- 如何用布局树 + solver 实现灵活排版，并保证前后端求解器双端一致？
+
+这个项目特别适合：
+
+- 想系统学习 AI 工程化，把模型 Demo 做成可交付产品的同学
+- 想实战 LangChain、LangGraph 等主流 AI 应用开发框架的同学
+- 想补齐 Python 后端 + React 前端全栈能力的同学
+- 想找一个技术含量高、可以直接当毕设和简历项目的同学
+
+
+## 核心业务流程
+
+项目的核心业务流程非常清晰，能够帮你理清 AI 工程化项目的开发思路。
+
+整个流程从注册登录开始，经过创建项目、输入主题或材料、生成并确认大纲、并发生成页面、在线编辑、质量检查，最终导出 PPTX 文件。
+
+![](https://pic.yupi.icu/pine/core-business-flow-v2.png)
+
+这条链路上最值得琢磨的是两个环节。一个是「先大纲后页面」的两段式生成，把用户的干预点放在成本最低的位置；另一个是导出前的质量检查，用分级门禁拦住那些会让 PPT 直接没法用的问题。
+
+
+## 技术选型
+
+本项目以 Python FastAPI + LangChain / LangGraph + React 为核心，前后端分离，综合运用了多种主流的 AI 应用开发和工程化技术。
+
+![](https://pic.yupi.icu/pine/ep01-technology-stack-hd.png)
+
+前端：React + TypeScript SPA、结构化编辑器（受约束的 contenteditable）、SSE 实时进度接收、OpenAPI 自动生成 TypeScript 类型
+
+后端：Python + FastAPI Web 框架、ARQ 异步任务队列、Redis 任务状态与 pub/sub、asyncio.Semaphore 并发控制、分层架构（API 层、领域层、工作流层、渲染层）
+
+AI 相关：LangChain 结构化输出、LangGraph 自纠环工作流、`bind_tools` AI 工具调用、大模型页面生成与修改
+
+文档渲染：python-pptx 原生 PPTX 构造、FontTools 字形级溢出检测、内容 / 布局 / 主题三分离数据模型、布局树 + solver 灵活排版引擎
+
+
+## 架构设计
+
+本项目采用前后端分离 + 异步 Worker 架构。前端是 React + TypeScript SPA，后端是 FastAPI + ARQ Worker 服务，通过 REST API + SSE 通信。
+
+后端内部按照 API 层、领域层、工作流层、渲染层分层，耗时的 AI 任务通过 ARQ 异步队列和 Redis pub/sub 来管理。内容、布局、主题三种数据通过 `shared/` 目录下的 JSON 文件前后端物理共享，保证 Web 预览和 PPTX 导出的效果完全一致。
+
+![](https://pic.yupi.icu/pine/system-architecture-final.png)
+
+完整视频教程 + 文字教程（预计 5 ~ 7 天学完）：https://www.codefather.cn/course/2091823677833220098
+
+
+## 推荐资源
+
+1）鱼皮 AI 导航网站：[AI 资源大全、最新 AI 资讯、免费 AI 教程](https://ai.codefather.cn)
+
+2）编程导航学习圈：[学习路线、编程教程、实战项目、求职宝典、交流答疑](https://www.codefather.cn)
+
+3）程序员面试八股文：[实习/校招/社招高频考点、企业真题解析](https://www.mianshiya.com)
+
+4）程序员写简历神器：[专业模板、丰富例句、直通面试](https://www.laoyujianli.com)
+
+5）1 对 1 模拟面试：[实习/校招/社招面试拿 Offer 必备](https://ai.mianshiya.com)

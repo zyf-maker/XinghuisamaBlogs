@@ -4,11 +4,11 @@ import { notFound } from "next/navigation";
 
 import SidebarNav from "../../../../components/ai/SidebarNav";
 import AiToc from "../../../../components/ai/AiToc";
-import { getAllCategories, getCategoryWithDocs, getDoc, getNeighbours } from "../../../../lib/aiDocs";
+import { getAllCategoryBriefs, getCategoryWithDocs, getDoc, getNeighbours } from "../../../../lib/aiDocs";
 import { extractToc, renderMarkdown } from "../../../../lib/markdown";
 
 export function generateStaticParams() {
-  return getAllCategories().flatMap((c) => c.docs.map((d) => ({ category: c.slug, slug: d.slug })));
+  return getAllCategoryBriefs().flatMap((c) => c.docs.map((d) => ({ category: c.slug, slug: d.slug })));
 }
 
 export async function generateMetadata({
@@ -37,7 +37,7 @@ export default async function AiDocPage({
   const cat = getCategoryWithDocs(category);
   if (!doc || !cat) notFound();
 
-  const categories = getAllCategories();
+  const categories = getAllCategoryBriefs();
   const { prev, next } = getNeighbours(category, slug);
   const html = await renderMarkdown(doc.body);
   const toc = extractToc(doc.body);
