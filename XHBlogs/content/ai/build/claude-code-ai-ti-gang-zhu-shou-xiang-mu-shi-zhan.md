@@ -3,15 +3,12 @@ title: "Claude Code - AI 提肛助手项目实战"
 summary: "本项目是一个 AI 驱动的提肛运动助手网站，提供科学的分级训练课程、动画引导、语音播报，还支持摄像头姿态检测和 AI 纠正建议。全程使用 Claude Code + DeepSeek V4 开发。"
 order: 17
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Code - AI 提肛助手项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个 AI 驱动的提肛运动助手网站，提供科学的分级训练课程、动画引导、语音播报，还支持摄像头姿态检测和 AI 纠正建议。全程使用 Claude Code + DeepSeek V4 开发。
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 关键是这玩意随时随地都能做，太适合我了！
 
-![](https://pic.yupi.icu/1/ybzj.jpg)
+![](/imgs/89cabf492a1bb72b.jpg)
 
 但我自己是个「运动白痴」，所以想到能不能通过 AI 编程，开发个「提肛助手」，帮助大家科学地进行盆底肌训练，傻子也能练对。
 
@@ -48,7 +45,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 5）查看训练打卡日历和统计图表。
 
-![](https://pic.yupi.icu/1/image-20260429104714827.png)
+![](/imgs/6b8a6063287029cc.png)
 
 
 ## 方案设计
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 因为这个项目唯一需要服务端的地方就是代理一下 AI 接口调用，使用 Next.js 的 API Route 完全能搞定，没必要拆成前后端分离，越简单越好。
 
-![](https://pic.yupi.icu/1/tgang-helper-design.jpg)
+![](/imgs/859df13ac9d1db65.jpg)
 
 
 ## 环境准备
@@ -76,13 +73,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 除了基础的代码生成，还能使用工具和 Skills 技能包、连接 MCP 外部服务、用 Plugins 插件扩展能力，甚至搞多智能体协作，扩展性很强。
 
-![](https://pic.yupi.icu/1/image-20260429110454017.png)
+![](/imgs/a7f73b6d553413d4.png)
 
 安装 Claude Code 很简单。
 
 首先确保你的电脑有 Node.js 环境和 npm 软件依赖安装工具，没有的话，直接到 [Node 官网](https://nodejs.org/en/download) 下载傻瓜式安装包就好：
 
-![](https://pic.yupi.icu/1/1777341714221-67b76f0e-c816-410b-adc0-e445074efc46.png)
+![](/imgs/8f95aab0423b7425.png)
 
 无论使用什么操作系统，都可以通过 npm，一行命令来安装 Claude Code：
 
@@ -90,11 +87,11 @@ source: "https://github.com/liyupi/ai-guide"
 npm install -g @anthropic-ai/claude-code
 ```
 
-![](https://pic.yupi.icu/1/1777341807032-be0f1d99-4e97-4be6-80de-de7c32846d41.png)
+![](/imgs/a5a2b9a9e076df55.png)
 
 安装完成后，输入 `claude` 命令进入对话界面，首次需要登录才能正常使用：
 
-![](https://pic.yupi.icu/1/1777341971646-93bcacc7-143d-4f86-8d2a-bf17d288db9f.png)
+![](/imgs/83c515a4ef7335df.png)
 
 但估计很多同学没有 Anthropic 的国外订阅账号，所以我们要切换为国产模型。
 
@@ -107,7 +104,7 @@ Claude Code 本身是支持切换模型的，你可以通过「修改环境变�
 
 比如 [DeepSeek 的 API 文档](https://api-docs.deepseek.com/zh-cn/guides/coding_agents) 里就有现成的接入方法：
 
-![](https://pic.yupi.icu/1/1777342329147-99094795-9da9-40b7-aa25-a566fc762c54.png)
+![](/imgs/f9ef16a7a2656b3f.png)
 
 不过我更推荐用一个开源工具 **CC Switch**，能够可视化地管理 Claude Code、Codex、Gemini CLI 等 AI 编程工具的配置，一键切换不同的模型供应商。内置了 50 多个供应商预设，不用自己手动改配置文件。
 
@@ -115,7 +112,7 @@ Claude Code 本身是支持切换模型的，你可以通过「修改环境变�
 
 按照官方中文文档，根据操作系统选择对应的安装方式：
 
-![](https://pic.yupi.icu/1/1777342571992-7b055f5f-3d27-4463-8247-4fe9bc315690.png)
+![](/imgs/f4dd0285aa9e5746.png)
 
 Mac 用户可以通过命令行安装：
 
@@ -124,35 +121,35 @@ brew tap farion1231/ccswitch
 brew install --cask cc-switch
 ```
 
-![](https://pic.yupi.icu/1/1777342701813-0dc223c6-8c13-49ce-8434-aa00bfc6d08e.png)
+![](/imgs/855a2cf7d92707e4.png)
 
 安装完成后，运行软件进入主界面，添加模型供应商：
 
-![](https://pic.yupi.icu/1/1777342816975-d7e89ce3-3b26-4237-a728-5478fbe86a47.png)
+![](/imgs/011b73ed162e779d.png)
 
 选择 DeepSeek：
 
-![](https://pic.yupi.icu/1/1777342881212-d0591f6e-c88e-4912-8cf5-62b7f1bfac17.png)
+![](/imgs/cfdf6b8f2c9e88ae.png)
 
 填写 API Key，需要从 [DeepSeek 开放平台](https://platform.deepseek.com) 获取。
 
-![](https://pic.yupi.icu/1/1777342981319-1e6c85a9-5063-42e2-bae9-0406886578d9.png)
+![](/imgs/a8c624710ad7970d.png)
 
 我这里把主模型设置为 DeepSeek-V4-Pro，相比 DeepSeek-V4-Flash 模型，Agent 能力和复杂推理更强。
 
 然后点右下角保存：
 
-![](https://pic.yupi.icu/1/1777343299981-c370c8ff-b24a-460a-891e-e08bc1efcf54.png)
+![](/imgs/467f55be3e848873.png)
 
 可以在上图中看到 Claude Code 的 JSON 配置文件，其实 CC Switch 就是帮你可视化地修改各 AI 工具的配置文件，省去手动编辑 JSON 的麻烦。
 
 最后，启用 DeepSeek 模型：
 
-![](https://pic.yupi.icu/1/1777343334412-73a61961-5d7e-4fbb-a0e0-691f5d867b48.png)
+![](/imgs/eef23459f0c19400.png)
 
 然后重新进入 Claude Code，随便输入一句话，AI 能给出回复，说明切换模型成功：
 
-![](https://pic.yupi.icu/1/1777343427500-46c84648-4f92-4ed4-85ab-4af0b34f465e.png)
+![](/imgs/d9ce3ca46caf3f16.png)
 
 
 ### 安装扩展
@@ -178,19 +175,19 @@ Frontend Design 是 Anthropic 官方的前端美化技能，可以让 AI 生成�
 /plugin marketplace add anthropics/skills
 ```
 
-![](https://pic.yupi.icu/1/1777344066799-72c95f99-82bc-46ff-92f5-02cf6d21b1b9-20260429113524910.png)
+![](/imgs/207a257eddbefa05.png)
 
 输入 `/plugins`，在 Discover 菜单栏中，选中 `example-skills` 并按回车，安装官方的示例技能合集：
 
-![](https://pic.yupi.icu/1/1777344221815-19f8cc7d-e608-4cf6-a8a9-05fa3dafab04.png)
+![](/imgs/89b6951efdcb0575.png)
 
 输入 `/reload-plugins` 重载一下插件：
 
-![](https://pic.yupi.icu/1/1777344303461-6af1d179-4328-4892-83b4-a48f1af3c32d.png)
+![](/imgs/d8102bb2ae554833.png)
 
 输入 `/skills` 查看已安装的技能，可以看到 `frontend-design` 已经就位了：
 
-![](https://pic.yupi.icu/1/1777344408094-9d8e06b5-a216-443e-a7ec-70dd78cb80d0.png)
+![](/imgs/3ec4b7e82d6cb3fe.png)
 
 之后在对话框中输入 `/frontend-design` 就能主动触发这个技能，让 AI 美化前端页面。同时还自动装上了 `webapp-testing` 自动化测试技能，后面也用得上。
 
@@ -205,19 +202,19 @@ Firecrawl 是联网搜索和网页抓取工具，让 AI 开发前先搜索最新
 npx -y firecrawl-cli@latest init --all --browser
 ```
 
-![](https://pic.yupi.icu/1/1777258212308-8c83d23e-338e-4ec2-b1c0-05f54a22a36e-20260429113525121.png)
+![](/imgs/7f7087d1f0a51687.png)
 
 执行后，会自动打开浏览器，要在弹出的页面中点击授权：
 
-![](https://pic.yupi.icu/1/1777258069152-2d7fdb02-64e2-440b-bcbd-6254b07fb74e-20260429113525154.png)
+![](/imgs/3b4227d00acb3e5d.png)
 
 安装完成后，会自动注册 12 个 Firecrawl 相关技能：
 
-![](https://pic.yupi.icu/1/1777258235867-0f6f08f5-4791-4b66-84b7-50936912540d-20260429113525186.png)
+![](/imgs/3ebc18bbe2e4492d.png)
 
 在 Claude Code 的技能管理中，就能看到新添加的 Firecrawl 相关技能了：
 
-![](https://pic.yupi.icu/1/1777344739629-f15409cf-6a43-4f96-a9bd-be72f7c0f795.png)
+![](/imgs/770b7cda3f3bab15.png)
 
 
 #### 3、安装 Context7
@@ -232,27 +229,27 @@ npx ctx7@latest setup
 
 它会问是安装 MCP 服务还是 CLI + Skills，这里我选择 CLI + Skills。你会发现，现在越来越多工具已经从 MCP 转向 CLI + Skills 的方式了：
 
-![](https://pic.yupi.icu/1/1777258448310-41f86ec3-26e1-476e-aed5-4913c8116d21-20260429113525253.png)
+![](/imgs/28a51c14624fa067.png)
 
 同样在弹出的网页中授权，不用自己获取和输入 API Key，太方便了！
 
-![](https://pic.yupi.icu/1/1777258547209-dc872280-09eb-4bd9-ad45-2e412382002d-20260429113525305.png)
+![](/imgs/315ec3f909c0c77c.png)
 
 然后选择要给哪个 AI 编程工具安装，我选择为 Claude Code 安装：
 
-![](https://pic.yupi.icu/1/1777344820438-9397de28-5658-4f0c-8cbe-8ed350beb84a.png)
+![](/imgs/97ea1b1be698a374.png)
 
 安装成功后，可以在技能管理中看到 `find-docs` 技能：
 
-![](https://pic.yupi.icu/1/1777344978229-17483cf7-a0fd-4a5f-93cf-5865f96eab41.png)
+![](/imgs/ef9abfdfabe24752.png)
 
 当然，你也可以选择安装 MCP Server 的方式：
 
-![](https://pic.yupi.icu/1/1777345106455-e31fd005-3cc6-45ac-a9d5-7dfafd30c7f4.png)
+![](/imgs/daa3a5f6e89ec500.png)
 
 安装后，在 Claude Code 中输入 `/mcp` 命令，就能看到安装好的 MCP 了，比自己手动配置方便太多了！
 
-![](https://pic.yupi.icu/1/1777345145401-72377bd2-2388-4f3b-bd8f-a31a76ecc676.png)
+![](/imgs/c31ecf17c4729022.png)
 
 至此，环境准备完成！下次开发项目时，就不用再重复准备了~
 
@@ -261,7 +258,7 @@ npx ctx7@latest setup
 
 新建一个 `tgang-helper` 项目文件夹，在终端中用 `cd` 进入该目录，然后输入 `claude` 命令打开 Claude Code：
 
-![](https://pic.yupi.icu/1/1777346556569-10234894-8a0e-4efe-98cb-a9d14b122279.png)
+![](/imgs/a074da166a778c5a.png)
 
 然后输入提示词。这里分享一下我实际用的完整提示词，给大家参考：
 
@@ -303,7 +300,7 @@ npx ctx7@latest setup
 
 给 AI 发送提示词前，我按 Shift + Tab 进入了自动接受编辑模式，AI 创建、修改、删除文件和执行命令都不用我逐一确认了，更省事儿。但是有一定风险，大家按需使用：
 
-![](https://pic.yupi.icu/1/1777346788040-741dcad6-7e89-416d-ba95-7d603ad697b6.png)
+![](/imgs/d66773265ae1f8e8.png)
 
 把上述提示词发送给 AI，接下来就是漫长的等待了。
 
@@ -311,25 +308,25 @@ AI 开始自主开发，先搜索技术文档，然后规划项目结构，创�
 
 过程中 AI 可能需要确认工具调用，比如它想通过 Context7 获取最新的 MediaPipe 技术文档，可以选择「Yes, and don't ask again」，以后就不用反复确认了：
 
-![](https://pic.yupi.icu/1/1777346850967-af94d579-7bb7-4e15-a250-d54dd513a593.png)
+![](/imgs/caa28ec4112e01c2.png)
 
 过了 20 多分钟，AI 自主完成了开发，还自动运行了项目：
 
-![](https://pic.yupi.icu/1/1777348979066-ad363834-ffea-424e-89e7-d581a933105e.png)
+![](/imgs/9edaf8a2eed0bf11.png)
 
 然后 AI 用 `webapp-testing` 技能，编写了自动化测试脚本，自动打开浏览器测试应用：
 
-![](https://pic.yupi.icu/1/1777349013499-cef79455-9bb9-4e0c-8c0e-8ee4c6a64f25.png)
+![](/imgs/2fda9e2380a91a86.png)
 
 经过 31 分钟后，任务终于完成了，比我上次用 GPT-5.5 开发同量级的项目慢了差不多 2 倍。这期间我不仅做了 1 组提肛，还吃了个饭。
 
-![](https://pic.yupi.icu/1/1777349057921-d3174644-8481-4505-9640-4853f8f905fd.png)
+![](/imgs/b8640d460f004a98.png)
 
 从 AI 的总结可以看到，它实现了完整的功能，包括 7 套训练课程、呼吸圈动画、SVG 人体图、语音指导、姿态检测、AI 建议、训练记录和统计图表，一把梭全给整上了。
 
 输入 `/context` 可以查看当前上下文使用情况，已经用了 9.4 万 tokens，占总容量的 47%：
 
-![](https://pic.yupi.icu/1/1777349331672-bfbc8216-5edb-4645-866c-76ac1a36c36a.png)
+![](/imgs/7788b2d56eee1048.png)
 
 你可能会好奇，DeepSeek V4 官方说支持 100 万 tokens 上下文，为什么 Claude Code 里显示上限才 200K？
 
@@ -346,61 +343,61 @@ AI 开始自主开发，先搜索技术文档，然后规划项目结构，创�
 
 AI 很快创建好了，还贴心地检查了 `.gitignore`，确认 `.env` 文件不会被提交到 Git：
 
-![](https://pic.yupi.icu/1/1777349272456-95ce7d9c-6e91-48f9-ba76-cb96c6cec3f5.png)
+![](/imgs/b17f006528cc3da8.png)
 
 打开 `.env.local` 文件，填上从 DeepSeek 开放平台获取的 API Key：
 
-![](https://pic.yupi.icu/1/1777349474695-3ded1d25-8709-461b-81d9-051520e7adac.png)
+![](/imgs/fde987010b28445b.png)
 
 然后在浏览器中打开页面。
 
 你别说，这个风格我挺喜欢的，很简洁清爽，配色也是健康积极的风格。就是那个 Logo 我没太看明白，求大家给我解释一下。。。
 
-![](https://pic.yupi.icu/1/1777349549522-a0bcefd1-754d-4af3-b89c-6ca67e1d76b7.png)
+![](/imgs/e3ef2907cb1a5c1d.png)
 
 我先选男性、入门难度，打开语音指导和摄像头姿态检测。
 
 好家伙，入门课程还不止一种，有「盆底激活」和「日常快速·3 分钟唤醒」两个选项。先从男性入门开始吧：
 
-![](https://pic.yupi.icu/1/1777358526114-0db8c685-376b-4bc1-8c52-f19cc07182ea.png)
+![](/imgs/9e9e381a4ee914dc.png)
 
 进入训练界面，有一个火柴人动画引导我的姿势。还有一个呼吸动画，可以让我跟随节奏操作，收紧、放松交替进行：
 
-![](https://pic.yupi.icu/1/1777358544658-ed5ad867-29cb-4e70-8dc5-7d637abfa74e.png)
+![](/imgs/28115e7d48bdc965.png)
 
 打开摄像头后，MediaPipe Pose 会实时检测我的姿态，发现问题就把姿势数据发给 DeepSeek 模型。这里有个小技巧，姿态纠正这种简单的建议不需要用 Pro 模型，用 V4-Flash 响应更快、成本更低。
 
-![](https://pic.yupi.icu/1/1777358609700-a6f75a7d-0d7e-4f05-a48a-87c63538318c-20260429113525969.png)
+![](/imgs/7b8eab0fbd3a2e99.png)
 
 比如它发现我的身体是歪的，就给出了纠正建议，比如「身体歪斜会影响发力，请先摆正骨盆。想象头顶有根线轻轻上提，让脊柱自然直立」，也是让我体验了一把健身房私教。。。
 
-![](https://pic.yupi.icu/1/1777358872878-89017863-7920-4a60-9876-d390f8075e36.png)
+![](/imgs/516982992d8a511e.png)
 
 我试着调整了一下姿势，它马上又给了新的反馈，说「试着双脚踩实地面，骨盆摆正。轻轻收紧盆底肌，保持脊柱中立」：
 
-![](https://pic.yupi.icu/1/1777358938592-94465606-6470-4400-82f4-a8816f7d96ee.png)
+![](/imgs/56a2ed25ba407993.png)
 
 到了持续收缩环节，它又提醒我放松肩膀，说「肩膀放松下沉，想象肩胛骨滑向后腰。轻轻呼气，感受盆底自然上提」。
 
-![](https://pic.yupi.icu/1/1777358994159-34179e8a-ac7b-4f51-9433-4e02784e8728.png)
+![](/imgs/2eb5a67bf83082fd.png)
 
 测试过程中，我又做了几组提肛。这已经不是 Vibe Coding 了，我管这叫 **TGang Coding**，边提肛边编程，身体工作两不误，岂不美哉？
 
 现在的我，已经可以挑战「男性进阶·力量强化」了，10 分钟 7 组动作。AI 在这个模式下也能准确检测到身体歪斜和重心不稳的问题：
 
-![](https://pic.yupi.icu/1/1777359368736-475ff9a5-b6c6-4032-a330-c57946095f7e.png)
+![](/imgs/16597e7328972793.png)
 
-![](https://pic.yupi.icu/1/1777359434842-5d4caa9e-66b0-43cd-bfde-4c50b1e4121f.png)
+![](/imgs/b4e507d4067c02d5.png)
 
 完成训练后，可以在训练记录页面看到打卡热力图和统计数据，坚持就是胜利！
 
-![](https://pic.yupi.icu/1/1777359021697-c7dd735b-76dc-41da-9416-136fb22d7681-20260429113526343.png)
+![](/imgs/8855a37333ae6760.png)
 
 说实话，一段提示词就让 AI 一把梭出了整个项目，核心功能基本可用，DeepSeek V4 的效果还是不错的。
 
 不过实际跑起来还是有一些小 Bug，比如呼吸动画的收紧放松节奏跟实际训练动作对不上，快速收缩模式下动画一直显示「收紧」不切换到「放松」，还有 AI 姿态建议的调用时机没控制好，导致频繁请求。
 
-![](https://pic.yupi.icu/1/1777357933266-a1f1febe-edc3-4710-8504-8ddf440a8ddc.png)
+![](/imgs/8c158e90a8a409b0.png)
 
 这些都是在测试过程中逐步发现的。上面演示的效果，其实是我又跟 AI 对话了 10 轮左右、修复了这些问题之后的结果：
 
@@ -410,7 +407,7 @@ AI 很快创建好了，还贴心地检查了 `.gitignore`，确认 `.env` 文�
 
 另外，过程中一定要随时关注上下文的容量。我修完这几轮 Bug 后，上下文已经涨到了 62%：
 
-![](https://pic.yupi.icu/1/1777358465249-dbc18a92-6c77-471d-a15e-4f79a7837a67-20260429113526400.png)
+![](/imgs/2e42a1baa3ebcaba.png)
 
 上下文一旦快满了，AI 就可能忘记之前改过什么，甚至写出跟之前矛盾的代码。
 
@@ -431,13 +428,13 @@ AI 很快创建好了，还贴心地检查了 `.gitignore`，确认 `.env` 文�
 
 先在 Claude Code 中用 `/usage` 命令看看 tokens 消耗情况：
 
-![](https://pic.yupi.icu/1/1777359631006-6a630d28-fda7-426d-9b7d-e188b8fdf9b5.png)
+![](/imgs/8258c05f1f1b289a.png)
 
 Claude Code 统计显示，这次开发总花费 18.13 美元，消耗了几十万 tokens。
 
 还可以进入 Stats 趋势分析，看看自己的使用习惯：
 
-![](https://pic.yupi.icu/1/1777359683244-29aecdd9-9ce9-4ff0-b072-71e58338fbf0.png)
+![](/imgs/db54ef20e6fbfd24.png)
 
 什么，这么个项目竟然花了 100 多元？！
 
@@ -445,11 +442,11 @@ Claude Code 自带的费用统计可能不太准确，建议直接到 DeepSeek �
 
 我一看，几百次请求，竟然消耗了 2500 多万 tokens！
 
-![](https://pic.yupi.icu/1/1777359821224-7aa241e7-c2a3-4740-8808-289422131b76.png)
+![](/imgs/38ee74b3d356cd0f.png)
 
 实际一看，只花了 **5.44 元**，舒服了~
 
-![](https://pic.yupi.icu/1/1777359775291-dca79c0d-6053-4721-ab50-6a2bb2895d04.png)
+![](/imgs/e7f06d0aa1bce2a3.png)
 
 这么多 tokens 里绝大部分是输入缓存命中的。因为 Claude Code 每次跟模型对话时，会把之前的上下文一起发过去，但如果内容跟上次一样，DeepSeek 会命中缓存，缓存价格只有正常输入的几分之一。
 

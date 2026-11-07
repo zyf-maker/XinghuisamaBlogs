@@ -3,15 +3,12 @@ title: "AI 编程技术入门指南"
 summary: "掌握 AI 开发框架，成为企业招聘的香饽饽"
 order: 4
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-04-30"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 编程技术入门指南》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -33,11 +30,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 [Spring AI](https://docs.spring.io/spring-ai/reference/getting-started.html) 是 Spring 官方推出的 AI 开发框架，经过 2 年的沉淀，在 2025 年 5 月正式发布了 1.0 版本。
 
-![Spring AI 1.0 发布](https://pic.yupi.icu/1/1747881171718-91ac3eb5-049b-4510-8012-6736c40c9c95.png)
+![Spring AI 1.0 发布](/imgs/d54ed3f7ba471b36.png)
 
 Spring AI 的优势在于 **更容易和主流 Java 开发框架 Spring 集成**，上手难度较低。它提供了很多现成的方法来帮我们提高开发 AI 应用的效率，比如快速对接大模型、保存会话上下文、对接向量数据库实现 RAG 等等。
 
-![Spring AI 架构](https://pic.yupi.icu/1/1743563460857-95800757-867c-4e8a-ba7c-dd490d09fcbd.png)
+![Spring AI 架构](/imgs/fa8254156da285b8.png)
 
 Spring AI 的核心特性包括：
 
@@ -132,7 +129,7 @@ AI 云服务就是其他企业为我们部署了 AI 大模型，通过 API 接�
 
 比如阿里云百炼、火山引擎、硅基流动、OpenAI 等等。
 
-![AI 云服务](https://pic.yupi.icu/1/1743563631799-46ff94d5-d51b-4dc5-b6cf-dec28bdcdb39.png)
+![AI 云服务](/imgs/c076d66167f5df3d.png)
 
 咱们程序员需要重点掌握的是：
 
@@ -148,7 +145,7 @@ AI 云服务就是其他企业为我们部署了 AI 大模型，通过 API 接�
 
 本地部署大模型其实并不难，只需要使用 [Ollama 工具](https://ollama.com/) 就可以一键部署各种主流的开源模型。
 
-![Ollama](https://pic.yupi.icu/1/1743563719547-bbed1c54-d1f1-496f-afc2-d755c3538732.png)
+![Ollama](/imgs/b8938ea6c472ce58.png)
 
 唉，但部署大模型的难度不在于技术啊，主要是没算力啊！不然我也给我们团队的 [编程导航](https://codefather.cn) 和 [面试鸭](https://www.mianshiya.com) 都来一套鱼皮大模型了。
 
@@ -164,7 +161,7 @@ AI 云服务就是其他企业为我们部署了 AI 大模型，通过 API 接�
 
 先通过文本嵌入模型，将企业各种文档转化为向量，存入向量数据库；当用户提问时，系统在向量数据库检索相关向量数据，找到最相似文档片段，和问题一起输入大模型处理。这样一来，大模型能够基于企业真实数据作答，更准确贴合实际。
 
-![RAG 流程](https://pic.yupi.icu/1/1743563751814-4123230c-c4b8-458f-bf8b-070c7550dd54.png)
+![RAG 流程](/imgs/7db97c05bf29a846.png)
 
 关于 RAG 能学的知识可太多了，比如主流的向量数据库 Milvus 和 PGVector、文档的抽取 / 转换 / 加载、索引的构建、查询策略的优化等等。**这也是 AI 企业面试的重点！**
 
@@ -176,11 +173,11 @@ AI 云服务就是其他企业为我们部署了 AI 大模型，通过 API 接�
 - 结构化增强：GraphRAG（知识图谱支持跨文档推理）、Text-to-SQL RAG（自然语言翻译成 SQL 查数据库）
 - 智能体驱动：Agentic RAG（AI Agent 自主决策检索策略）、Multi-Agent RAG（多个专职 Agent 协作）
 
-![](https://pic.yupi.icu/1/1776651602499-afc9fc4b-6105-4b96-a3cd-a6681bf69480-20260430225809480.png)
+![](/imgs/072a32c6028d8331.png)
 
 对于初学者，建议从 Naive RAG 开始，发现哪个环节不够好，再针对性引入进阶方案。生产环境推荐 Hybrid Search + Reranking 作为基础配置。如果数据源多且复杂，可以考虑 Agentic RAG。
 
-![](https://pic.yupi.icu/1/1776652755436-d1f52895-b98a-4e33-8c86-6ce0322ace05-20260430225845924.png)
+![](/imgs/94900301d534150a.png)
 
 主流的 RAG 开发工具和框架包括 LangChain / LangGraph、LlamaIndex、以及一体化平台 Dify 和 RAGFlow 等，感兴趣的同学可以进一步了解。
 
@@ -191,7 +188,7 @@ AI 云服务就是其他企业为我们部署了 AI 大模型，通过 API 接�
 
 比如做个智能导购系统，顾客既可以输入文字描述想要的商品，系统也能识别顾客上传的商品图片，甚至可以理解顾客通过语音提出的购物需求。
 
-![多模态](https://pic.yupi.icu/1/1743563981663-8c9f4746-03dc-4b32-8477-ba9a9042922c.png)
+![多模态](/imgs/04c010e670b6735f.png)
 
 想开发多模态应用，咱们要学习模态转换技术，比如文本转语音（TTS）、语音转文本（STT）、光学字符识别（OCR）等。不过这些都有现成的工具库或者云服务，掌握调用方法就行。
 
@@ -200,13 +197,13 @@ AI 云服务就是其他企业为我们部署了 AI 大模型，通过 API 接�
 
 MCP（Model Context Protocol，模型上下文协议）可以理解为提供给 AI 的各种服务，AI 利用这些服务能够实现更强大的功能。
 
-![MCP](https://pic.yupi.icu/1/1743563832927-7a2df71f-acc1-47c4-9135-e7d888749dbc.png)
+![MCP](/imgs/a15ef8151c6d8d8a.png)
 
 如何在项目中接入别人的 MCP 服务，来增强自己的项目能力；以及如何开发自己的 MCP 服务，让别人的项目使用，都是必须要学习的。
 
 现在使用 Spring AI 等开发框架就可以开发 MCP 服务，而且甚至有高手做了个 [网站](http://mcpify.ai/)，能够一句话创建自己的 MCP 服务，这真的是泰裤辣。
 
-![MCP 生成](https://pic.yupi.icu/1/1743563865750-bbd02b74-2a56-49a9-963f-e633c1484fe5.png)
+![MCP 生成](/imgs/66189638f1cce43d.png)
 
 
 ### ReAct 智能体
@@ -215,11 +212,11 @@ ReAct 是一种构建智能体的开发范式，目的是打造能够依据推�
 
 它的开发过程会涉及到任务规划、工具调用、交互 I/O、异常处理等知识。尤其是工具调用，可以通过 Function Call 或 MCP 实现像天气查询、文件读写、网页运行、信息检索、终端命令执行等功能。
 
-![ReAct 智能体](https://pic.yupi.icu/1/1743563922663-0096045d-8a99-4202-b30d-df77a341e697.png)
+![ReAct 智能体](/imgs/cafee4563e93c099.png)
 
 就拿开发视频网站为例，用户说了 “帮我开发一个 Dilidili 视频网站并部署上线” 的指令时，智能体首先会深入理解任务内容，通过推理梳理出一系列执行步骤，包括明确需求、设计方案、搭建框架、生成代码、部署上线等。接下来，智能体就会调用相应的工具来执行这些行动。
 
-![智能体工作流](https://pic.yupi.icu/1/1743564028474-638e6414-9a22-4350-80f3-7bf174dd0f77.png)
+![智能体工作流](/imgs/85b2c20113bbf26e.png)
 
 
 ## 四、AI 工具链
@@ -231,7 +228,7 @@ ReAct 是一种构建智能体的开发范式，目的是打造能够依据推�
 
 比如主流的低代码 AI 开发平台 [Dify](https://dify.ai/)，可以让我们通过拖拉拽的方式构建自己的 AI 智能体，创建知识库并导入自己的文档，搭建复杂的工作流等等。就哪怕你不会写代码，都能用它搞出复杂的 AI 应用。
 
-![Dify](https://pic.yupi.icu/1/1743564064922-03f6365b-a712-47d9-be55-4867b848a269.png)
+![Dify](/imgs/1979d39ee1f0e03b.png)
 
 
 ### 工具库
@@ -256,7 +253,7 @@ ReAct 是一种构建智能体的开发范式，目的是打造能够依据推�
 
 当然，想快速部署服务，Docker 容器化技术也是必须要学习的，就像 APP 的安装包一样，能够轻松分发和部署你的应用程序。
 
-![Docker](https://pic.yupi.icu/1/1743564338228-ffc55f7b-7bcd-40df-a10b-4accfb666379.png)
+![Docker](/imgs/e1d5269c1ef740a6.png)
 
 
 ## 五、学习资源推荐
@@ -270,7 +267,7 @@ ReAct 是一种构建智能体的开发范式，目的是打造能够依据推�
 
 网址：https://www.codefather.cn/learn
 
-![AI 学习路线](https://pic.yupi.icu/1/image-20250912152042459.png)
+![AI 学习路线](/imgs/e7cbf07ecde419bb.png)
 
 
 ### 2、AI 项目实战
@@ -301,7 +298,7 @@ ReAct 是一种构建智能体的开发范式，目的是打造能够依据推�
 
 网址：https://ai.codefather.cn
 
-![](https://pic.yupi.icu/1/image-20260109121412266.png)
+![](/imgs/7b40df45821fa6bf.png)
 
 里面除了各种教程资料外，也重点给大家分享了很多 AI 工具的具体应用场景，比如接入办公软件提升效率、帮你做自媒体、AI 批量制作视频等，希望帮助大家举一反三，找到新的思路。
 

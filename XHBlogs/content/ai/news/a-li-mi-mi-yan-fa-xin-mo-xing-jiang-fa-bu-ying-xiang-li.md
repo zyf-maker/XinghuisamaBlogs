@@ -3,17 +3,14 @@ title: "阿里秘密研发新模型将发布，影响力指标成最重要考核
 summary: "阿里秘密研发新模型将发布，影响力指标成最重要考核，由程序员鱼皮整理。"
 order: 51
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《阿里秘密研发新模型将发布，影响力指标成最重要考核》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![](https://n.sinaimg.cn/spider20250402/233/w660h373/20250402/a01e-a4802005500d2ed9f7a06ea175bd3084.jpg)
+![](/imgs/68710822612f0491.jpg)
 
 出品｜虎嗅商业消费组
 

@@ -3,15 +3,12 @@ title: "OpenClaw 模型选择与切换"
 summary: "给龙虾选脑子，全局切换和临时切换一网打尽"
 order: 9
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-20"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 模型选择与切换》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。选一个好模型非常重要，它直接决定了你的小龙虾有多聪明。这篇教程教你怎么选模型、怎么切换模型。
 
@@ -24,7 +21,7 @@ OpenClaw 支持几十家模型服务商，包括 Anthropic（Claude）、OpenAI�
 
 可以到 [PinchBench](https://pinchbench.com/) 查看 OpenClaw 模型排行榜，看看各模型在 OpenClaw 场景下的实际表现，不过仅供参考。
 
-![](https://pic.yupi.icu/1/image-20260310164932093.png)
+![](/imgs/3b79dd8ae45b8873.png)
 
 不太建议新手一上来就用国外大模型，价格贵，而且网络访问也不太稳定。国产的智谱（GLM）、Kimi、Qwen 是不错的选择，价格便宜、速度快、中文能力也够用，先拿这些练手，等玩熟了再按需切换到更强的模型。
 
@@ -38,15 +35,15 @@ OpenClaw 支持几十家模型服务商，包括 Anthropic（Claude）、OpenAI�
 
 输入 `openclaw config` 命令，选择配置 Model 模型，选择相应的大模型即可，比如我这里用 Moonshot AI 的 Kimi-k2.5 模型：
 
-![](https://pic.yupi.icu/1/1773813259463-5c6e94bf-edde-4fef-8643-cea4d1f02b0c.png)
+![](/imgs/49e11ce43102d641.png)
 
 这就配置完成了，还可以通过 config 继续修改其他配置：
 
-![](https://pic.yupi.icu/1/1773813033619-ab5b7715-5281-4e76-9676-0c9f43e3410d.png)
+![](/imgs/379bf2c0f85d0cde.png)
 
 回到界面验证一下，切换模型成功生效了：
 
-![](https://pic.yupi.icu/1/1773813527996-e90b63ea-1412-47f8-b1aa-f3d3da214073.png)
+![](/imgs/5e3eda1722417d40.png)
 
 可以通过命令查看模型的状态：
 
@@ -54,11 +51,11 @@ OpenClaw 支持几十家模型服务商，包括 Anthropic（Claude）、OpenAI�
 openclaw models status
 ```
 
-![](https://pic.yupi.icu/1/1773814465973-33bc05c3-3656-47fe-9fdc-3e7415758a0b.png)
+![](/imgs/46545f2ada376a52.png)
 
 其实命令本质上就是帮你修改了 OpenClaw 工作空间的核心配置文件 `openclaw.json`，添加了新模型，并且设置为了小龙虾的默认模型，还把之前的模型设置为了降级模型。
 
-![](https://pic.yupi.icu/1/1773813576949-88548239-e52a-46be-a124-6d810e545c95.png)
+![](/imgs/6d29be725c12401b.png)
 
 还有一些其他的命令，按需使用即可：
 
@@ -76,14 +73,14 @@ openclaw models set-image zai/glm-5
 openclaw models fallbacks add 提供商/模型
 ```
 
-![](https://pic.yupi.icu/1/1773815234026-a4b9af0d-a0b6-4ecc-820e-ea6de86eb76e.png)
+![](/imgs/b9e55648c3a425ce.png)
 
 
 ### 其他方法 - 不推荐
 
 还有其他切换模型的方法。你可以通过 Web UI 界面修改，或者手动修改这个配置文件：
 
-![](https://pic.yupi.icu/1/1773813700732-2a6faa56-3f91-4da0-bc7f-d6d4dd4810bf.png)
+![](/imgs/e33d899c147d3f25.png)
 
 但是要重启网关，否则可能不会生效：
 
@@ -91,7 +88,7 @@ openclaw models fallbacks add 提供商/模型
 openclaw gateway restart
 ```
 
-![](https://pic.yupi.icu/1/1773813866547-9f2d57b8-21ca-4fd1-a766-20dfe8072a01.png)
+![](/imgs/f3d6e2df88dfeffc.png)
 
 个人不推荐使用这些方式，麻烦，还容易出错。
 
@@ -99,9 +96,9 @@ openclaw gateway restart
 
 比如我的小龙虾直接把配置文件搞崩了，它还感觉挺美的！
 
-![](https://pic.yupi.icu/1/1773814311334-9c308e07-4125-4d02-9279-f2d736df2f95.png)
+![](/imgs/6dde00a6f203ffe1.png)
 
-![改错了配置文件](https://pic.yupi.icu/1/1773814246339-ae621fc5-774d-49bc-aa3e-3d97c8d4824b.png)
+![改错了配置文件](/imgs/fb2adc5f9e4e53bf.png)
 
 
 ## 临时切换模型
@@ -110,11 +107,11 @@ openclaw gateway restart
 
 可以直接在聊天框中输入 `/model list` 查看可用的模型列表：
 
-![](https://pic.yupi.icu/1/1773816609174-e77da8bd-6569-4c80-aae6-86c15a98ef0f.png)
+![](/imgs/38a0e107d2f37b36.png)
 
 然后输入 `/model <模型服务商/模型名称>` 切换模型：
 
-![](https://pic.yupi.icu/1/1773816655106-bf00f0af-042f-4f9f-a277-2c2cef2b934d.png)
+![](/imgs/4fd640e2b8daf4c7.png)
 
 这样切换模型只会影响当前会话，不改全局默认配置，其他会话不受影响。
 

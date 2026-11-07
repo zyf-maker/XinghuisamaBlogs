@@ -3,15 +3,12 @@ title: "Vibe Coding 五大核心心法"
 summary: "五个最重要的思维方式，让你从入门到精通"
 order: 2
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-04-30"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 五大核心心法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 今天我要分享的，就是 Vibe Coding 中最重要的 5 个核心心法。这些心法来自我自己的实践经验，也参考了很多社区高手的总结。学会它们，你的 Vibe Coding 水平会有质的飞跃。
 
-![](https://pic.yupi.icu/1/waytovibecoding%E5%A4%A7.jpeg)
+![](/imgs/6f3e2266cb6ced63.jpg)
 
 
 ## 心法一、Planning is Everything
@@ -90,17 +87,17 @@ AI 会开始问你一系列问题，比如：
 
 所以，规划就是你的地基。在屎山代码形成之前，你要先确定好整体的结构和方向。这样才能避免后期返工。
 
-![](https://pic.yupi.icu/1/shitcode.png)
+![](/imgs/a1627959e718b30f.png)
 
 正因为规划至关重要，现在很多 AI 编程工具都提供了 Plan Mode（规划模式），帮你先生成规划，人工确认后再生成代码。
 
 比如 Cursor 的规划模式：
 
-![Cursor 规划模式](https://pic.yupi.icu/1/image-20260104170011408.png)
+![Cursor 规划模式](/imgs/3ebab02d07df3cc7.png)
 
 在 Claude Code 中，可以按两次 `Shift + Tab` 进入计划模式。
 
-![](https://pic.yupi.icu/1/image-20260109143426848.png)
+![](/imgs/19af63738638bae8.png)
 
 在这个模式下，你可以和 Claude 来回讨论，直到对它的计划满意。然后切换到自动接受编辑模式，让 Claude 一次性完成任务，不用反复确认每个编辑。
 
@@ -321,7 +318,7 @@ AI 虽然很强大，但它不是魔法。它不可能一次就完全理解你�
 
 程序员朋友们应该最能理解，一个描述不清楚的产品经理会让你有多痛苦。
 
-![](https://pic.yupi.icu/1/d2fea61b927529d4c3a4007e7c36379f.jpeg)
+![](/imgs/a3382b0d9f0c5e10.jpg)
 
 
 ## 心法的实际应用
@@ -407,7 +404,7 @@ AI 可能会问你：
 
 其实，这些心法的本质都是在强调同一件事 —— 你才是工程的主导者，AI 只是你手中的工具。这种理念在业界被称为 Harness Engineering 驾驭工程，关于它的完整定义和核心模块，可以阅读本教程的《Vibe Coding 概念大全》深入了解。
 
-![](https://pic.yupi.icu/1/2_harness_horse.png)
+![](/imgs/877b7b1f6f1adb88.png)
 
 记住，Vibe Coding 不只是让 AI 写代码，更重要的是你如何引导 AI，如何管理整个开发过程。掌握了这些心法，你就能从一个 "会用 AI" 的人，变成一个 "用好 AI" 的人。
 

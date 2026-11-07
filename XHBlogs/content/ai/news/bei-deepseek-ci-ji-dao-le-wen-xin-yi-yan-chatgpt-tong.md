@@ -3,15 +3,12 @@ title: "被DeepSeek刺激到了？文心一言、ChatGPT同时宣布：免费！
 summary: "共收录 2 条 AI 行业资讯，如百度；人工智能等。"
 order: 3
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《被DeepSeek刺激到了？文心一言、ChatGPT同时宣布：免费！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 两大闭源大模型都要全面免费了。DeepSeek影响加速外溢，AI竞逐再度向“价格战”逼近，文心一言、ChatGPT同时宣布将免费。
 

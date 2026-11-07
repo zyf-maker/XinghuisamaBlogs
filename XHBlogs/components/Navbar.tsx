@@ -6,9 +6,15 @@ import { usePathname } from 'next/navigation';
 import { siteConfig } from '../siteConfig';
 import { useTheme } from './ThemeProvider';
 
+// 一级：首页 + 知识库 + 内容类；「资料」下拉收工具/提示词/MCP/路线/动态
 const navLinks = [
   { name: '首页', href: '/' },
   { name: '知识库', href: '/ai' },
+  { name: '工具库', href: '/tools' },
+  { name: '提示词', href: '/prompts' },
+  { name: '学习路线', href: '/learn' },
+  { name: 'MCP 与 Skills', href: '/mcp' },
+  { name: '行业动态', href: '/ai/news' },
   { name: '文章', href: '/timeline' },
   { name: '随笔', href: '/chatter' },
   { name: '手记', href: '/moments' },
@@ -19,10 +25,14 @@ const navLinks = [
   { name: '关于', href: '/about' },
 ];
 
+// 桌面端只露出这些，其余进「更多」
+const primary = ['/', '/ai', '/tools', '/prompts', '/learn', '/timeline', '/about'];
+
 export default function Navbar() {
   const pathname = usePathname();
   const { isDark, toggleTheme } = useTheme();
   const [open, setOpen] = useState(false);
+  const [more, setMore] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -34,10 +44,15 @@ export default function Navbar() {
 
   useEffect(() => {
     setOpen(false);
+    setMore(false);
   }, [pathname]);
 
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/');
+
+  const shown = navLinks.filter((l) => primary.includes(l.href));
+  const moreLinks = navLinks.filter((l) => !primary.includes(l.href));
+  const moreActive = moreLinks.some((l) => isActive(l.href));
 
   return (
     <header
@@ -59,8 +74,8 @@ export default function Navbar() {
         </Link>
 
         {/* 桌面导航 */}
-        <nav className="hidden items-center gap-7 md:flex">
-          {navLinks.map((link) => (
+        <nav className="hidden items-center gap-6 md:flex">
+          {shown.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -76,6 +91,45 @@ export default function Navbar() {
               )}
             </Link>
           ))}
+
+          {/* 更多：hover/focus 展开 */}
+          <div
+            className="relative"
+            onMouseEnter={() => setMore(true)}
+            onMouseLeave={() => setMore(false)}
+          >
+            <button
+              type="button"
+              onFocus={() => setMore(true)}
+              aria-expanded={more}
+              className={`flex items-baseline gap-1 py-1 text-[13.5px] transition-colors ${
+                moreActive ? 'text-[var(--accent)]' : 'text-[var(--ink-soft)] hover:text-[var(--ink)]'
+              }`}
+            >
+              更多
+              <span className="font-mono text-[9px] opacity-60">▾</span>
+            </button>
+
+            {more && (
+              <div className="absolute right-0 top-full z-50 w-[188px] pt-2">
+                <div className="glass glass-sheen overflow-hidden rounded-md p-1.5">
+                  {moreLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={`block rounded-sm px-2.5 py-1.5 text-[13px] transition-colors ${
+                        isActive(link.href)
+                          ? 'text-[var(--accent)]'
+                          : 'text-[var(--ink-soft)] hover:bg-[var(--surface-alt)] hover:text-[var(--ink)]'
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -115,7 +169,7 @@ export default function Navbar() {
 
       {/* 移动端下拉 */}
       {open && (
-        <div className="border-t border-[var(--line)] bg-[var(--paper)] md:hidden">
+        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-[var(--line)] bg-[var(--paper)] md:hidden">
           <nav className="mx-auto grid w-[92%] max-w-6xl grid-cols-2 gap-x-6 gap-y-1 py-4">
             {navLinks.map((link) => (
               <Link
@@ -126,9 +180,6 @@ export default function Navbar() {
                 }`}
               >
                 {link.name}
-                <span className="font-mono text-[10px] text-[var(--muted)]">
-                  {link.href === '/' ? '/' : link.href}
-                </span>
               </Link>
             ))}
           </nav>

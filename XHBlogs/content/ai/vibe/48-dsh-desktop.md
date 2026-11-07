@@ -10,28 +10,25 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek Harness 桌面端上手教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 DeepSeek 开源的 Harness 工具 DSH，核心理念是「一切皆插件」，发布没多久 GitHub 就冲到了 20 万 Star。
 
-![](https://pic.yupi.icu/1/image-20260814133452050.png)
+![](/imgs/eceef0e558e2ccff.png)
 
 不过官方发布的时候只提供了命令行和 Web 两种使用方式，你得先装好 Node.js 环境，在终端里敲命令启动，再用浏览器访问。对很多小白来说，这个门槛就不太友好了。
 
 所以 Harness 才开源没几天，社区开发者就做出了好几个桌面客户端。其中最火的是 dsh-desktop，拿了 2 万多个 Star，支持 Windows 和 macOS，双击安装就能用。
 
-![](https://pic.yupi.icu/1/image-20260914141040145.png)
+![](/imgs/a4dd9d3db4383b62.png)
 
 有意思的是，DeepSeek 官方自己其实也在做桌面端。我在官方 deepseek-harness 仓库里发现多了一个 `apps/desktop` 目录，是一个基于 Electron 的桌面应用，包名叫 `@deepseek-ai/dsh-desktop`，连打包签名、自动更新的流程都写好了。
 
-![](https://pic.yupi.icu/1/image-20260914141137144.png)
+![](/imgs/1cbbf594f1e34a67.png)
 
 DeepSeek 没有发过任何公告、推文和博客，就是悄悄把代码合进了 master 分支，很符合它低调的风格。
 
-![](https://pic.yupi.icu/1/ekQ76-5cmxZtT3cSz0-q9.jpg.medium%E4%B8%AD.jpeg)
+![](/imgs/8ec8e1518599c1a0.jpg)
 
 一开始官方没放安装包，想体验只能自己拉源码编译。又过了十来天，网友在 DeepSeek 自家的下载域名里扒出了桌面端的更新清单和安装包，现在已经可以双击安装了。
 
@@ -64,7 +61,7 @@ DeepSeek 没有发过任何公告、推文和博客，就是悄悄把代码合�
 
 很简单，直接问 AI。我让 DeepSeek Harness 用最简单直接的方式告诉我怎么获取：
 
-![](https://pic.yupi.icu/1/DeepSeek%20%E6%A1%8C%E9%9D%A2%E7%AB%AF%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80.png)
+![](/imgs/900bcf6a25bcbe4a.png)
 
 原理是这样的：桌面端内置了自动更新功能，每隔 10 分钟左右就会去官方服务器读取一份更新清单文件，清单里写着最新的版本号和安装包地址。所以我们不用猜文件名，直接打开这份清单看一眼就行：
 
@@ -79,13 +76,13 @@ DeepSeek 没有发过任何公告、推文和博客，就是悄悄把代码合�
 
 第一眼看上去，桌面端的界面跟 DeepSeek Harness 网页版几乎一模一样。
 
-![](https://pic.yupi.icu/1/image-20260925114849312.png)
+![](/imgs/070c6e6073346ef2.png)
 
 我翻了下仓库里 `apps/desktop` 目录的源码，桌面端是在完整的 DSH 网页应用外面套了一层 Electron 壳，界面用的是同一套前端代码。Electron 是一个专门开发跨平台桌面应用的开源框架，VS Code、Discord 这些知名应用都是用它做的。
 
 套壳的好处是，桌面端的对话记录和配置都跟网页版互通。两者读写的是电脑上同一个 `~/.dsh` 数据目录，我之前在网页版里创建的工作区、聊过的会话都还在，配置好的第三方模型也能直接切换使用。
 
-![](https://pic.yupi.icu/1/image-20260925114952442.png)
+![](/imgs/fc60012710b1817f.png)
 
 
 
@@ -93,17 +90,17 @@ DeepSeek 没有发过任何公告、推文和博客，就是悄悄把代码合�
 
 新版本的 DSH 在左侧菜单栏加了一个「插件」入口，里面内置了 7 个官方插件，包括智能体团队、自动授权审查、语音输入、终端、Agent 循环、子智能体和网页搜索。比如开启智能体团队插件后，就能让多个 Agent 分工协作，还带有共享的任务看板。
 
-![](https://pic.yupi.icu/1/image-20260925115111756.png)
+![](/imgs/f9ff866aad51a359.png)
 
 除了官方插件，你还可以点击右上角的「添加插件」，直接输入 GitHub 仓库地址来安装第三方插件。
 
 比如我装了一个社区开发者做的 dsh-web 全家桶插件，它把一大批网页端的增强插件聚合到了一起：
 
-![](https://pic.yupi.icu/1/image-20260925120209230.png)
+![](/imgs/8f07341cbd887f31.png)
 
 装好之后，聊天背景换成了二次元插画，右下角还多了一个看板娘。你喜欢么？
 
-![](https://pic.yupi.icu/1/image-20260925120552178.png)
+![](/imgs/19fffdf6f9926d7a.png)
 
 更多好玩的插件，可以阅读本教程编程工具板块 DeepSeek Harness 目录中的《DeepSeek Harness 精选插件推荐》。
 
@@ -113,11 +110,11 @@ DeepSeek 没有发过任何公告、推文和博客，就是悄悄把代码合�
 
 桌面端和网页版在 UI 上还是有点差别的。最明显的是左下角可以直接登录 DeepSeek 账号，查看充值余额、查询用量，还能直接充值。
 
-![](https://pic.yupi.icu/1/image-20260925115411636.png)
+![](/imgs/3816a4219969c9b0.png)
 
 登录账号之后，模型列表里会多出一组「DeepSeek 账号」模型，可以直接用账号里的余额跑任务，不用再去开放平台单独申请 API Key 了。对新手来说，这一步能省掉不少麻烦。
 
-![](https://pic.yupi.icu/1/image-20260925122901728.png)
+![](/imgs/96042b3c719813a1.png)
 
 能看出来，DeepSeek 这次是真的打算好好做桌面端了。账号登录、首次使用引导、自动更新这些面向普通用户的功能都安排上了，安装包还用公司证书做了签名。
 
@@ -167,11 +164,11 @@ pnpm run dev:desktop
 
 这一步会先编译整个项目，再自动下载 Electron。过一会儿就能看到一个 Electron 窗口弹出来，在设置里填好 API Key 就能开始用了。
 
-![](https://pic.yupi.icu/1/image-20260914142733986.png)
+![](/imgs/027a68f58bc4a804.png)
 
 我试了一下，跟 AI 对话、文件操作、工具调用、插件管理这些功能都是正常的。
 
-![](https://pic.yupi.icu/1/image-20260914142649640.png)
+![](/imgs/fcf4fd0f0d1d977c.png)
 
 
 
@@ -187,7 +184,7 @@ pnpm run dev:desktop
 
 而官方桌面端完全没有开任何端口。它用了一套自定义的 `dsh-app://` 协议来传输数据，Electron 主进程和 DSH 后端之间通过进程管道直接通信，请求和响应走的是分帧字节流，生命周期控制则走 Node IPC。也就是说，从网络层面来看，你的 Harness 对外界是完全不可见的。
 
-![安全性对比](https://pic.yupi.icu/1/01_%E5%AE%98%E6%96%B9%E7%89%88vs%E7%A4%BE%E5%8C%BA%E7%89%88%E6%A1%8C%E9%9D%A2%E7%AB%AF%E5%AE%89%E5%85%A8%E6%80%A7%E5%AF%B9%E6%AF%94_compressed_v2.png)
+![安全性对比](/imgs/4503c13a84154796.png)
 
 另一个区别是 **版本绑定**。
 

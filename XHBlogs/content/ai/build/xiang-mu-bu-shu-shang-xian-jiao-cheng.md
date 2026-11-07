@@ -3,15 +3,12 @@ title: "项目部署上线教程"
 summary: "在前面的文章中，我们学习了如何开发各种项目。但是如果项目只能在本地运行，那就太可惜了。这篇文章，我会教你如何把项目部署到互联网上，让全世界的人都能访问。"
 order: 7
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-01"
 readingTime: 15
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《项目部署上线教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -41,7 +38,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 好好好，合着我只要提个一句话需求，写代码和部署都不用我来干了，让我退化是吧？
 
-![](https://pic.yupi.icu/1/1752213314439-7925d7ba-0d1d-46f1-9f70-b1d391ac854d.png)
+![](/imgs/60544e614ec2bc32.png)
 
 下面就来带大家实操一下，让 AI 帮我生成并部署个人博客网站。
 
@@ -59,19 +56,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 EdgeOne 是腾讯云提供的 CDN 加速服务，可以把用户的网站资源缓存到离用户最近的边缘节点，提升网站性能。
 
-![](https://pic.yupi.icu/1/1752216739540-3dbb9132-3ae0-4a5d-9949-2a4299663c39.png)
+![](/imgs/1231df55773acef1.png)
 
 EdgeOne Pages 是基于这个 CDN 的网站部署服务，可以让你轻松地将网站部署到 CDN 上，并且得到公开访问地址，完全不需要自己搭建服务器。
 
-![](https://pic.yupi.icu/1/1752216784265-0a71fe3a-7944-40b2-b5ce-87215df060fe.png)
+![](/imgs/7e71b07b403b8aae.png)
 
 MCP 则是目前很火的模型上下文协议，让 AI 模型能够轻松地使用各种工具来增强能力，完成更复杂的任务。
 
-![](https://pic.yupi.icu/1/1752216828838-510154d5-6a89-4089-84b9-fadeccb9d724.png)
+![](/imgs/4bca8f0fe30ca23b.png)
 
 EdgeOne Pages MCP 的作用就显而易见了 —— 给 AI 提供网站部署工具，这也是一个比较热门的 MCP。
 
-![](https://pic.yupi.icu/1/1752217054075-0f149a76-9e42-482e-ae26-e23762c7ad1e.png)
+![](/imgs/78dcc8906947d1fe.png)
 
 
 #### 快速实战
@@ -80,22 +77,22 @@ EdgeOne Pages MCP 的作用就显而易见了 —— 给 AI 提供网站部署�
 
 首先到 [EdgeOne 控制台](https://console.cloud.tencent.com/edgeone/pages) 开通 Pages 服务：
 
-![](https://pic.yupi.icu/1/1752209404627-3a3193d9-4c94-4f80-ad02-435ff22f16ed.png)
+![](/imgs/1905dd7ae05fff6e.png)
 
 开通服务后，默认进入了项目管理页面，我们先不急着创建项目：
 
-![](https://pic.yupi.icu/1/1752209421726-11d8eff7-7bdd-4a85-accf-c70f74ead15a.png)
+![](/imgs/0371646908744c35.png)
 
 由于等下要通过 MCP 完成网站部署，所以要先获取 API Token，作为调用服务的凭证：
 
-![](https://pic.yupi.icu/1/1752209504079-6741bbd0-438e-48a4-86be-6eddfc3efa83.png)
+![](/imgs/b8aae9cbc66cddce.png)
 
 
 2）配置 MCP
 
 新建一个项目文件夹 `yupi-blog`，在 Cursor 中打开，然后进入设置，添加 MCP 服务：
 
-![](https://pic.yupi.icu/1/1752209949437-369134bc-303b-46fc-bca1-e1a57a335f82.png)
+![](/imgs/0348278f10ccf360.png)
 
 将这段配置复制粘贴到 MCP 配置文件中：
 
@@ -116,11 +113,11 @@ EdgeOne Pages MCP 的作用就显而易见了 —— 给 AI 提供网站部署�
 
 注意要把 API Token 改成你自己的，并且把注释删除掉，否则会报错：
 
-![](https://pic.yupi.icu/1/1752210048110-15bf78cc-da14-4f7f-b9d5-3ec510332bf7.png)
+![](/imgs/8115b6c4e6ffe0d6.png)
 
 正常情况下，你会看到 MCP 服务成功加载，绿了绿了！
 
-![](https://pic.yupi.icu/1/1752211512400-a59c2010-8701-4b75-80d9-014ad03e8b4a.png)
+![](/imgs/713b25518592a238.png)
 
 这个服务提供了 2 个工具：
 
@@ -131,11 +128,11 @@ EdgeOne Pages MCP 的作用就显而易见了 —— 给 AI 提供网站部署�
 
 如果你没有 NPX 命令、或者 Node.js 版本过低（最好不要低于 20），都会导致工具无法加载。
 
-![](https://pic.yupi.icu/1/1752211437222-1400be90-e460-4948-b7f3-45a6a78ffe7d.png)
+![](/imgs/9669a75bcfd18e83.png)
 
 这时，你只需要到 [官网安装 Node.js](https://nodejs.org/zh-cn)，会自动帮你安装 NPM 和 NPX 工具：
 
-![](https://pic.yupi.icu/1/1752209643527-73a7c2cc-046c-4faa-8531-2a22da95d4bd.png)
+![](/imgs/c4dd07ecc9f89769.png)
 
 如果没有自动安装 NPX 工具，那就用 NPM 包管理工具安装 NPX：
 
@@ -155,15 +152,15 @@ npm i -g npx
 
 查看 AI 的思考过程，它已经想到要使用 EdgeOne Pages 去部署网站了：
 
-![](https://pic.yupi.icu/1/1752211869664-b74dc4d9-57b1-4bb7-9f02-703112b613eb.png)
+![](/imgs/59583b7add61002f.png)
 
 很快网站就生成并部署完成，可以看到 AI 调用了 MCP 部署 HTML 的工具，得到了访问地址：
 
-![](https://pic.yupi.icu/1/1752212029384-16cfba8f-babb-49c0-9d41-3b76ee78eecf.png)
+![](/imgs/e91ab1d66052640f.png)
 
 直接打开网址就看到效果了，不要太方便！
 
-![](https://pic.yupi.icu/1/1752212096367-0a0fac32-118e-485a-9277-8dd507ff66d3.png)
+![](/imgs/d5fc97f93410d63a.png)
 
 不过目前生成的网站比较简单，就一个 HTML 页面，甚至没有在本地创建代码文件。
 
@@ -179,65 +176,65 @@ npm i -g npx
 @https://github.com/liyupi/
 ```
 
-![](https://pic.yupi.icu/1/1752212265608-6aa96245-199f-487f-9c57-bc2f0550cdf6.png)
+![](/imgs/191536c9fbda97c3.png)
 
 这次要等待的时间会比较久，鱼皮建议大家趁这个时间接杯水，起来活动活动。最近久坐不动，我感觉自己的肩膀已经硬如磐石了。
 
-![](https://pic.yupi.icu/1/1752217850836-e83f0d59-a657-4048-94cd-a515e960a4d7.png)
+![](/imgs/fd561db09362bf6b.png)
 
 我们会发现，虽然生成了一大堆代码，但是并没有自动部署，只是给出了部署建议：
 
-![](https://pic.yupi.icu/1/1752213747665-192b57be-90a5-44e4-92b1-5cd468394707.png)
+![](/imgs/bafd44ba1d462b2e.png)
 
 看一下 AI 的思考过程，原来是使用部署工具失败了：
 
-![](https://pic.yupi.icu/1/1752214113764-2afad6bc-5777-4e9e-b2d2-745476caadc2.png)
+![](/imgs/1ee7ad5ef74ee497.png)
 
 经过我的测试发现，如果想部署网站目录或压缩包，最好先在 Pages 网页版创建一个项目，然后让 MCP 把网站文件传到这个项目内。
 
 那就先利用官方提供的例子，随便部署一个网站：
 
-![](https://pic.yupi.icu/1/1752215857055-9a84b9d5-4787-4181-b054-8883884c34b2.png)
+![](/imgs/461153e7261a909d.png)
 
 修改项目的名称为 `yupi-blog`，直接点击 "开始部署" 就好：
 
-![](https://pic.yupi.icu/1/1752215971422-9e57abea-077a-4847-88b3-bd1cd1de4217.png)
+![](/imgs/6646de60805d8586.png)
 
 等待部署中，30 秒左右就好了：
 
-![](https://pic.yupi.icu/1/1752216002653-9d7c5127-642a-4b3c-b542-c9e6cfcd0dde.png)
+![](/imgs/3d6440041f8291cf.png)
 
 项目部署成功后，我们修改 Cursor MCP 的配置，填入刚刚创建的项目名称：
 
-![](https://pic.yupi.icu/1/1752216064120-e1e8e58e-0eaa-4b9c-814b-605c664c35a3.png)
+![](/imgs/e289aa841876cf0f.png)
 
 然后再跟 AI 对话，让它帮我部署网站目录：
 
-![](https://pic.yupi.icu/1/1752213933060-071efc16-a9ac-4333-8fd9-53beeeeedd90.png)
+![](/imgs/a743c6e0ee2b619f.png)
 
 可以看到这次 AI 成功执行了部署工具，并且得到了访问地址：
 
-![](https://pic.yupi.icu/1/1752216306792-fb4c2e9c-d600-4b7c-b3c4-d5ae02614974.png)
+![](/imgs/f693e28ce9c85af1.png)
 
 看下网站效果，还不错吧，很有科技感！
 
-![](https://pic.yupi.icu/1/1752216337356-667e0577-b0a5-4f44-b147-5bb3ab14824e.png)
+![](/imgs/3cce8f7ca3108fb3.png)
 
 不过要注意，生成的网站默认使用临时域名，有效期比较短：
 
-![](https://pic.yupi.icu/1/1752216364625-c93f7b26-133a-4aac-a849-77ee6840e6f1.png)
+![](/imgs/57d6a673a11db652.png)
 
 如果你有域名的话，建议配置一下自定义域名，就可以无限期访问啦~
 
-![](https://pic.yupi.icu/1/1752216408600-03b16e94-4668-4295-b7bb-2a07bc5592c7.png)
+![](/imgs/9a5179cea0ac72d3.png)
 
 怎么样，是不是很简单？等能够轻松在手机上使用 MCP 的时候，试想一下，你走在路上跟朋友聊天，朋友向你推荐了一位博主 —— 程序员鱼皮，你只需要跟 AI 说一句话，2 分钟后，就能给朋友访问介绍这个博主的网站，跟变魔术似的。
 
-![](https://pic.yupi.icu/1/1752218294278-9d31872f-e883-4736-a3f6-584ee31e9ad7.png)
+![](/imgs/57beb76307665831.png)
 
 值得一提的是，EdgeOne Pages 目前应该是免费的，真香了。
 
-![](https://pic.yupi.icu/1/1752216569752-fbd0f243-7d43-44de-af69-d3d6eb954f8a.png)
+![](/imgs/fb28d62e5a6bdbc5.png)
 
 
 ### 方式二、Vercel CLI + Skills 自动部署
@@ -248,11 +245,11 @@ npm i -g npx
 
 1）Netlify 是一个老牌的前端托管平台，内置了表单处理、身份验证等开箱即用的功能，免费额度也挺大方。
 
-![](https://pic.yupi.icu/1/1779164654949-9ccf2948-71b2-4e64-8e80-69304b3b5684.png)
+![](/imgs/029ddb69c77d5f64.png)
 
 2）Cloudflare Pages 背靠全球最大的 CDN 厂商 Cloudflare，全球访问速度快，而且免费额度夯爆了，每天 10 万次请求都不收费！
 
-![](https://pic.yupi.icu/1/1763643429297-d14df879-2841-47ee-92f7-448dbcbebbc1.png)
+![](/imgs/6e6a793bd94e876b.png)
 
 这些平台都支持从 GitHub 仓库导入项目并一键部署，也都提供了 Skills 或 MCP 来让 AI 编程工具自动完成部署操作。而且不只能部署纯静态页面，Next.js、Nuxt、Astro 这些全栈框架的网站也能直接丢上去，支持 SSR 服务端渲染。
 
@@ -262,28 +259,28 @@ npm i -g npx
 
 > 开源指路：[https://github.com/liyupi/codefather](https://github.com/liyupi/codefather) （template 分支）
 
-![](https://pic.yupi.icu/1/image-20260526190336965.png)
+![](/imgs/3efea89a0a39294f.png)
 
 
 #### 什么是 Vercel？
 
 先简单介绍一下 Vercel。它是目前海外最主流的网站部署平台，你把代码丢给它，它能帮你构建、托管、CDN 加速，还自动配好 HTTPS，完全不需要自己搭建服务器。而且跟 GitHub 深度集成，之后每次推送代码都会自动重新部署，非常省心。
 
-![](https://pic.yupi.icu/1/image-20260526190516543.png)
+![](/imgs/867432fb1ed8e9b9.png)
 
 为了让 AI 编程工具能帮我们操作 Vercel，Vercel 官方提供了 3 样东西：
 
 1）Vercel CLI 命令行工具：在终端里执行 `vercel` 命令就能完成部署，可以让 AI 帮你调用。
 
-![](https://pic.yupi.icu/1/01_CLI_%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E6%A6%82%E5%BF%B5%E5%9B%BE_-_%E7%BB%88%E7%AB%AF%E6%89%A7%E8%A1%8C%E9%83%A8%E7%BD%B2%E5%91%BD%E4%BB%A4_compressed_v3.png)
+![](/imgs/76622dd7a170fe06.png)
 
 2）Skills 技能包：Skill 是一种标准化的指令文件，相当于给 AI 看了一遍 Vercel 的部署教程。装了之后 AI 就知道完整的操作流程和最佳实践，遇到问题也知道怎么处理。
 
-![](https://pic.yupi.icu/1/02_Skills_%E6%8A%80%E8%83%BD%E5%8C%85%E6%A6%82%E5%BF%B5%E5%9B%BE_-_AI_%E5%AD%A6%E4%B9%A0%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B_compressed_v1.png)
+![](/imgs/cdde5af6becbbe51.png)
 
 3）MCP 模型上下文协议：让 AI 直接调用 Vercel 的 API 来管理项目，比如创建部署、配置环境变量等。
 
-![](https://pic.yupi.icu/1/03_MCP_%E6%A8%A1%E5%9E%8B%E4%B8%8A%E4%B8%8B%E6%96%87%E5%8D%8F%E8%AE%AE%E6%A6%82%E5%BF%B5%E5%9B%BE_-_AI_%E7%9B%B4%E6%8E%A5%E8%B0%83%E7%94%A8API_compressed_v3.png)
+![](/imgs/77ce4cf8bf5c998b.png)
 
 我们这里主要用 **CLI + Skills** 的组合来演示。相比 MCP，Skills 不需要额外配置服务端，而且一次安装后，各种 AI 编程工具都能直接用。
 
@@ -294,7 +291,7 @@ npm i -g npx
 
 首先到 [Vercel 官网](https://vercel.com) 注册账号，建议直接用 GitHub 账号登录，这样后面导入项目会很方便：
 
-![](https://pic.yupi.icu/1/image-20260526181239984.png)
+![](/imgs/3ee072ba8ade25f4.png)
 
 
 **2、安装 Vercel CLI**
@@ -307,18 +304,18 @@ Vercel 提供了命令行工具，可以让我们通过终端完成部署。
 npm i -g vercel@latest
 ```
 
-![](https://pic.yupi.icu/1/image-20260526181611414.png)
+![](/imgs/023fbef2c94908e7.png)
 
 安装完之后，在终端执行 `vercel login`，并且在弹出的网页中完成登录认证：
 
-![](https://pic.yupi.icu/1/image-20260526181842915.png)
+![](/imgs/86e9245b212f75e0.png)
 
 
 **3、安装 Vercel Skills**
 
 接下来给 AI 编程工具装上 Vercel 的部署技能 `deploy-to-vercel`。装了之后，AI 在帮你部署的时候就能自动检测项目状态、选择最佳的部署方式、生成预览链接。
 
-![](https://pic.yupi.icu/1/image-20260526182147054.png)
+![](/imgs/a7db856b4a14b0bc.png)
 
 打开终端，输入下列命令，可以安装 Vercel 团队提供的多个技能：
 
@@ -328,29 +325,29 @@ npx skills add vercel-labs/agent-skills
 
 你可以自己选择要安装哪些技能，这里我就单选一个部署技能：
 
-![](https://pic.yupi.icu/1/image-20260526183143004.png)
+![](/imgs/e1b9b85f3cfce40c.png)
 
 技能默认会被安装到大多数 AI 编程工具都支持的 `.agents/skills` 目录下，你也可以安装在特定 AI 编程工具的技能目录下，比如安装到 Claude Code 支持的 `.claude/skills` 目录：
 
-![](https://pic.yupi.icu/1/image-20260526183209335.png)
+![](/imgs/d7673d950260655c.png)
 
 最后，选择「全局安装」还是「当前项目下安装」，我一般选择全局，省的每个项目都要单独装一遍。
 
-![](https://pic.yupi.icu/1/image-20260526183233033.png)
+![](/imgs/fdd2fc57ba6d25e9.png)
 
 安装成功后，你的 AI 编程工具（Cursor、Claude Code、Codex 等）就会自动加载这些技能，在 AI 需要的时候帮你用上。
 
-![](https://pic.yupi.icu/1/image-20260526185018067.png)
+![](/imgs/df19b593923af879.png)
 
 除了技能之外，你也可以配置 Vercel 的 MCP 服务，二选一就好。
 
 直接进入 [Vercel MCP 的官方文档](https://vercel.com/docs/agent-resources/vercel-mcp#cursor)，点击「Add to Cursor」按钮：
 
-![](https://pic.yupi.icu/1/image-20260526183455202.png)
+![](/imgs/d0fb3efb6cf8fe23.png)
 
 会自动跳转到 Cursor 的设置页面，点击 Install 就能完成安装了，然后完成授权即可，非常傻瓜式：
 
-![](https://pic.yupi.icu/1/image-20260526183551677.png)
+![](/imgs/c7d0abccf52146ff.png)
 
 
 **4、让 AI 帮你部署**
@@ -365,7 +362,7 @@ npx skills add vercel-labs/agent-skills
 /deploy-to-vercel 帮我把当前项目部署到 Vercel
 ```
 
-![](https://pic.yupi.icu/1/image-20260526190722865.png)
+![](/imgs/0ec42e9442947739.png)
 
 AI 会自动帮你完成以下操作：
 
@@ -374,19 +371,19 @@ AI 会自动帮你完成以下操作：
 3. 如果是第一次部署，AI 会自动帮你创建 Vercel 项目并完成关联
 4. 等待构建完成，最后把访问链接给你（中间遇到报错还会自主修复）
 
-![](https://pic.yupi.icu/1/image-20260526185430526.png)
+![](/imgs/b89ebb201c27c11f.png)
 
 很快就部署完成了，AI 会返回一个类似 `xxx.vercel.app` 的链接：
 
-![](https://pic.yupi.icu/1/image-20260526191822790.png)
+![](/imgs/8bdf0eb0806b934a.png)
 
 直接打开网址就能看到效果了，不要太方便！
 
-![](https://pic.yupi.icu/1/image-20260526191905247.png)
+![](/imgs/0d620ad7323d373a.png)
 
 还可以在 Vercel 后台查看和管理已经部署的网站：
 
-![](https://pic.yupi.icu/1/image-20260526192240545.png)
+![](/imgs/2ef9eb070199d58f.png)
 
 对了，如果你的项目需要配置环境变量（比如 AI 模型的 API Key），在部署前告诉 AI 就行。
 
@@ -394,11 +391,11 @@ AI 会自动帮你完成以下操作：
 
 AI 会通过 Vercel CLI 帮你配好，部署时自动生效。
 
-![](https://pic.yupi.icu/1/image-20260526192019075.png)
+![](/imgs/ecc98de0c7b47aed.png)
 
 你也可以在 Vercel 网页控制台手动添加，效果是一样的。
 
-![](https://pic.yupi.icu/1/image-20260526192407716.png)
+![](/imgs/22c75b70c8ac7653.png)
 
 
 **5、后续更新**
@@ -407,7 +404,7 @@ AI 会通过 Vercel CLI 帮你配好，部署时自动生效。
 
 如果想发布到正式的生产环境（带正式域名那种），直接跟 AI 说，让它帮你执行 `vercel --prod` 命令就好。
 
-![](https://pic.yupi.icu/1/image-20260526192529434.png)
+![](/imgs/7a3ee3a0eafca8fb.png)
 
 
 **6、配置自定义域名（可选）**
@@ -416,7 +413,7 @@ Vercel 默认给你的是 `.vercel.app` 结尾的域名，不太优雅。
 
 如果你有自己的域名，可以在 Vercel 控制台绑定，比如之前给自己做的「互联网数字墓园项目 - 挂了么」绑定了个域名：
 
-![](https://pic.yupi.icu/1/image-20260526193603736.png)
+![](/imgs/184dc96aea3253ce.png)
 
 添加域名后，AI 会引导你完成 DNS 配置，绑定成功后 Vercel 还会自动帮你配好 HTTPS 证书。
 
@@ -434,7 +431,7 @@ Vercel 的优点是个人项目完全免费，部署速度极快（一般 1 ~ 2 
 
 2）创建项目，可以直接绑定 GitHub 并选择已经托管的项目，点击 "Deploy" 部署按钮：
 
-![](https://pic.yupi.icu/1/image-20260109111323983.png)
+![](/imgs/971e05f6fa93a9a6.png)
 
 3）等待 1 ~ 2 分钟，项目就上线了！
 
@@ -451,7 +448,7 @@ npm i -g vercel@latest
 
 然后，直接在想部署的项目文件夹下输入 `vercel` 命令，就能部署当前项目了：
 
-![](https://pic.yupi.icu/1/1752218682107-8c8457e4-3fbe-40d8-afb8-f6cb0691beee.png)
+![](/imgs/68b53a3420852200.png)
 
 让 AI 完成自动部署的方法也很简单，你只需要在提示词中告诉 AI “你可以使用 vercel 命令行工具完成网站部署”，聪明如它，一定能帮你完成任务。
 
@@ -466,7 +463,7 @@ npm i -g vercel@latest
 
 使用方法巨简单，在 GitHub 创建仓库并上传网站文件后，直接在仓库设置中启用 GitHub Pages：
 
-![](https://pic.yupi.icu/1/image-20260109111917547.png)
+![](/imgs/1c7b859c154b2b95.png)
 
 然后就能通过 `username.github.io/repo-name` 访问了。适合个人主页、项目文档、简单的静态网站。
 
@@ -491,7 +488,7 @@ GitHub Pages 的限制是只能部署静态网站，不能运行后端代码。�
 
 这个过程对于纯新手来说会有点儿复杂，但可以使用宝塔面板或 1Panel 这样的可视化管理工具，大大简化操作。这些面板提供了图形化界面，不需要记复杂的命令，点点鼠标就能完成配置。
 
-![](https://pic.yupi.icu/1/1736821032080-4be9c9e5-6dfe-434b-8db8-7eb8d7068a16.png)
+![](/imgs/88010aa842fc9996.png)
 
 云服务器部署的优点是你有完全的控制权，可以随时调整配置，而且更稳定。缺点是需要一定的编程或运维知识，而且服务器需要付费（一般每月几十到几百元不等）。
 
@@ -546,11 +543,11 @@ Docker 的优点是环境一致性好，不会出现 “在我电脑上能跑，
 
 目前比较推荐的方式是使用 **AI Agent 托管平台**，比如腾讯云的 [EdgeOne Makers](https://pages.edgeone.ai/zh/document/product-introduction)。这类平台把模型网关、对话记忆、联网搜索、链路追踪等能力都帮你准备好了，你只需要专注写 Agent 的业务逻辑，其他的交给平台处理就行。
 
-![](https://pic.yupi.icu/1/image-20260629150206869.png)
+![](/imgs/704ae855f77da0f9.png)
 
 平台默认帮你对接了主流大模型，提供一定免费的 Token 额度，支持一键切换 DeepSeek、GPT、Claude 等不同模型。而且内置了很多现成的 Agent 应用模板，覆盖 OpenAI SDK、Claude SDK、LangGraph、CrewAI 等主流框架，JS 和 Python 都能用，选个模板就能快速起步。
 
-![](https://pic.yupi.icu/1/image-20260629150435803.png)
+![](/imgs/2939ab9bb1e1ba0d.png)
 
 
 ### 部署方式
@@ -561,7 +558,7 @@ Docker 的优点是环境一致性好，不会出现 “在我电脑上能跑，
 
 最简单的方式是直接在 EdgeOne Makers 控制台选一个 Agent 模板，关联 GitHub 仓库，点击创建部署。系统会自动帮你初始化项目、安装依赖、构建部署，几十秒就能拿到一个可访问的 AI Agent 应用。
 
-![](https://pic.yupi.icu/1/image-20260629150459022.png)
+![](/imgs/ea85f85616f9cdfd.png)
 
 **方式二、本地开发 + AI 自动部署**
 
@@ -575,19 +572,19 @@ Docker 的优点是环境一致性好，不会出现 “在我电脑上能跑，
 npx skills add TencentEdgeOne/edgeone-makers-tools
 ```
 
-![](https://pic.yupi.icu/1/image-20260629151510758.png)
+![](/imgs/7a7b96b5b4e1f6d0.png)
 
 2）在 AI 编程工具中调用 `/makers-agents` 技能，描述你的 Agent 需求，AI 会自动按照平台规范写代码。
 
-![](https://pic.yupi.icu/1/image-20260629151608806.png)
+![](/imgs/281af641ee5957ce.png)
 
 3）开发完成后，调用 `/makers-deploy` 技能让 AI 帮你一键部署，几秒钟就能拿到线上访问地址。
 
-![](https://pic.yupi.icu/1/image-20260629152913807.png)
+![](/imgs/9585002aec95add1.png)
 
 上面这套流程走下来，从写代码到部署上线，不到 20 分钟就能搞定。而且部署之后如果想切换模型，只需要在控制台改一个环境变量重新部署就行，完全不用动代码。
 
-![](https://pic.yupi.icu/1/image-20260629153737524.png)
+![](/imgs/e5dc03c8d8f1612f.png)
 
 感兴趣的同学可以阅读本教程项目实战板块中的《EdgeOne Makers - AI 副业点子验证器项目实战》，里面有从 0 到上线的完整开发部署流程演示。也可以看对应的视频版：https://bilibili.com/video/BV1jU756mE1x
 
@@ -598,7 +595,7 @@ npx skills add TencentEdgeOne/edgeone-makers-tools
 
 CDN（内容分发网络）就是把你的网站内容缓存到全球各地的服务器上，用户访问时会自动选择离他最近的服务器，大大提高加载速度。
 
-![](https://pic.yupi.icu/1/1763643073516-5248d56c-bf7d-4537-b8f8-681a104626d9.png)
+![](/imgs/4810c2c3648cfa04.png)
 
 [Cloudflare](https://www.cloudflare.com/zh-cn/) 提供免费的 CDN 服务，优势是：
 
@@ -612,7 +609,7 @@ CDN（内容分发网络）就是把你的网站内容缓存到全球各地的�
 
 也可以直接使用 Cloudflare 提供的 Pages 页面部署能力，直接上传自己的代码，交给它一键部署并白票免费的域名，更方便~
 
-![](https://pic.yupi.icu/1/1763643412558-4d499b46-5e16-4f83-9df7-06a85175df35.png)
+![](/imgs/7148fc5bdd0af4ba.png)
 
 如果你的网站部署在 Vercel 或 Netlify 上，它们本身就有 CDN 加速，不需要额外配置 Cloudflare。但如果你是自己租服务器部署，强烈建议用 Cloudflare 加速。
 

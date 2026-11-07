@@ -3,15 +3,12 @@ title: "团队研发规范"
 summary: "企业级研发规范实践指南"
 order: 12
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《团队研发规范》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 还有朋友表示：鱼皮别拿咱当外人，把你们公司的研发规范发来看看？
 
-![研发规范](https://pic.yupi.icu/1/image-20240419140208921.png)
+![研发规范](/imgs/66cf363d8bbd31d6.png)
 
 可以，必须安排！
 

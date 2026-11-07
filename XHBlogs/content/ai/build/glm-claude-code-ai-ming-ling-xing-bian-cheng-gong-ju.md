@@ -3,15 +3,12 @@ title: "GLM + Claude Code - AI 命令行编程工具项目实战"
 summary: "本项目将带你用纯 Vibe Coding 的方式，利用 Claude Code 开发一个对标 Claude Code 的 AI 命令行编程工具 Yupi Code。"
 order: 24
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GLM + Claude Code - AI 命令行编程工具项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目将带你用纯 Vibe Coding 的方式，利用 Claude Code 开发一个对标 Claude Code 的 AI 命令行编程工具 Yupi Code。
 
@@ -23,31 +20,31 @@ source: "https://github.com/liyupi/ai-guide"
 
 大家好，我是程序员鱼皮。最近朋友开始学习 AI 编程了（被我带的），她听说 Claude Code 这个 AI 编程工具很牛掰，结果试了下发现得要国外的 Claude 账号才能登陆。
 
-![](https://pic.yupi.icu/1/1766562559951-d1371bb9-99d3-467a-aeec-421cd12eb3bb.png)
+![](/imgs/54208c49d1ecf5a0.png)
 
 然后她就骂骂咧咧地跟我吐槽。
 
 于是我开玩笑地说：别难过了，要不我给你做一个 Claude Code 算了？
 
-![](https://pic.yupi.icu/1/1766562773776-4a34c38c-c95b-4eb9-8b02-81ca86133188.png)
+![](/imgs/1f92df88ab0804fc.png)
 
 结果，她当真了！
 
 我 ↓
 
-![](https://pic.yupi.icu/1/1766562833168-97c7d4fc-bfe5-4a09-9215-dcfbdb546cb4.png)
+![](/imgs/456440d1b426f096.png)
 
 没办法，只能试一试了。
 
 正好这两天国产 AI 大模型 GLM-4.7 发布了，我看网上很多博主都在吹什么 “国内最强的编程模型”、“最强的开源模型”、“Claude 的最佳平替”，甚至说是超过了 GPT-5.2 和 Claude Sonnet 4.5。
 
-![](https://pic.yupi.icu/1/1766563074181-1ee8e12d-2868-4b23-b993-c0e61800565e.png)
+![](/imgs/f835d143df8cef6a.png)
 
 你说国产最强也就算了，超过 Claude 这我能信么？
 
 那正好，我就尝试用 GLM-4.7 来做个自己的 AI 编程工具吧，对标 Claude Code 那种的，看看 GLM-4.7 到底几斤几两。
 
-![](https://pic.yupi.icu/1/1766551074508-575a037d-174a-43d2-bbfe-e223082fc665.png)
+![](/imgs/843a1cb25400d9a5.png)
 
 接下来，就让我们一起 **用 GLM-4.7 + Claude Code** 开发一个 **基于 GLM-4.7 的仿 Claude Code** 的 AI 编程工具。
 
@@ -61,7 +58,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 版本控制 => 防止后续改动出问题
 - 优化能力 => 支持更多对标 Claude Code 的功能，比如联网搜索、流式输出、深度思考等
 
-![](https://pic.yupi.icu/1/1766549738919-9e627293-954a-4f39-8625-d1dcb1835cbc.jpeg)
+![](/imgs/d20e83da22d4a991.jpg)
 
 
 ## 环境准备
@@ -79,34 +76,34 @@ npm install -g @anthropic-ai/claude-code
 
 然后执行 `claude` 命令打开程序，默认是需要登录 Claude 账号的，否则无法使用：
 
-![](https://pic.yupi.icu/1/1764145940075-ace6fd24-a09c-41c0-b400-1cffc394fc8a.png)
+![](/imgs/ffafea04003e3fac.png)
 
 
 不过没关系，让我们把它背后的 AI 大模型换成国内的 GLM-4.7。首先进入 `{用户目录}/.claude` 目录，创建一个 `settings.json` 配置文件： 
 
-![](https://pic.yupi.icu/1/1764146110361-06e13de5-7de4-4fc5-9533-3651447d5e19.png)
+![](/imgs/baee36d912d9a3b7.png)
 
 
 然后修改配置文件中的内容如下，记得替换成你自己的 API Key：
 
-![](https://pic.yupi.icu/1/1764146125955-3029843c-26b8-4628-b2b7-a9d8abb2aef1.png)
+![](/imgs/55bbce06c35fe36a.png)
 
 
 API Key 直接到智谱开发平台获取即可：
 
 指路：https://bigmodel.cn/
 
-![](https://pic.yupi.icu/1/1766552195823-7f90ead2-3e07-4eb4-92e2-7ef12c591e61.png)
+![](/imgs/15e81aa5ba4f2a15.png)
 
 
 接下来就可以愉快地使用了~
 
-![](https://pic.yupi.icu/1/1766549578200-7189d326-db17-4edd-9e27-2d9da3af06cf.png)
+![](/imgs/19c0cfa41e221e48.png)
 
 
 除了这种方式外，官方文档还提供了更简单的方式，直接使用自动化助手，按照指引就能完成环境配置：
 
-![](https://pic.yupi.icu/1/1766552079851-2cd903df-febb-4860-98fc-51c1143b4105.png)
+![](/imgs/b217ce47b312da62.png)
 
 
 ## 技术调研
@@ -123,15 +120,15 @@ API Key 直接到智谱开发平台获取即可：
 
 让我们依次测试一下，首先是网页搜索能力，紧跟时事：
 
-![](https://pic.yupi.icu/1/1766541771159-00bcb3ee-422b-4895-9ab6-15e5ad44937e.png)
+![](/imgs/c32b24bf8a7dec97.png)
 
 测试网页读取能力，让它来读取我们编程导航网站的信息：
 
-![](https://pic.yupi.icu/1/1766485091937-8555eddf-7301-4161-92d9-4f19251cf9d1.png)
+![](/imgs/4267a92dbd9dc647.png)
 
 测试图片理解能力，我给 AI 传了一张 “从夯到拉排行榜的背景图”：
 
-![](https://pic.yupi.icu/1/1766552716828-cc3c5015-a220-44c4-9c99-9ea6e6cc9a2e.png)
+![](/imgs/621124f88fa8e6b0.png)
 
 AI 的理解还是很准确的，具体文字也读取出来了。
 
@@ -142,7 +139,7 @@ OK，几个能力都满足要求，下面让我们进入方案设计和开发阶
 
 先创建一个干净的项目目录 `yupi-code`，打开终端并进入该目录：
 
-![](https://pic.yupi.icu/1/1766545100781-86907b5b-56df-42de-a36f-21b2738102cd.png)
+![](/imgs/74ec72f146c4a3f8.png)
 
 
 然后输入提示词：
@@ -153,66 +150,66 @@ OK，几个能力都满足要求，下面让我们进入方案设计和开发阶
 
 一般来说，整个项目的第一句提示词是最重要的，如果我要开发一个复杂的商业项目，肯定会好好打磨一下这句提示词，少说写个几百字（之前看过我 [AI 程序员技术练兵场项目](https://mp.weixin.qq.com/s/cd7K9WQiOkP7AJglZ1b1Ng) 的同学应该知道）。
 
-![](https://pic.yupi.icu/1/1766553004293-19edef3f-ab54-4275-83fa-d5d78ed1a8ce.png)
+![](/imgs/fa0e4ec42051140b.png)
 
 但测试 AI 模型时，我喜欢反其道而行之，站在大多数用户的角度，故意输入一句简单的提示词，看看 AI 能不能引导我来生成满足需求的项目。
 
 果然，AI 判断这是一个复杂的项目，想要进入 **计划模式** —— 先明确需求、设计方案再开发。
 
-![](https://pic.yupi.icu/1/1766545143400-e5909edc-d015-4ed8-8a98-c1428a5807e4.png)
+![](/imgs/5b577337cf89f4f9.png)
 
 
 然后我们需要通过选择来明确需求，并让 AI 生成方案。
 
 Claude Code 的交互做的还是不错的，先选择编程语言，建议老老实实选 AI 推荐的第一个：
 
-![](https://pic.yupi.icu/1/1766545700277-0a92c7af-af6a-4bf3-b045-b35a8810fe82.png)
+![](/imgs/e8cdc35a87e5225e.png)
 
 
 接下来是选择项目要具有的功能。如果是以前，我可能会先让 AI 只开发基础对话功能，跑通流程后再添加其他功能。
 
 但现在我对 AI 有了更多的信心，**咱就把所有功能全都选上，干就完了！**
 
-![](https://pic.yupi.icu/1/1766545748726-b5bcf0c2-1650-409d-9cfb-56874d80e7aa.png)
+![](/imgs/e0430e7baec86a83.png)
 
 
 其他设置就不多说了：
 
-![](https://pic.yupi.icu/1/1766545906676-50ffc0ba-404a-42e0-af0e-c4797a5d5d77.png)
+![](/imgs/652c52f279a8dea0.png)
 
 
 选择完成后，AI 给出了详细的实现计划，一定要仔细阅读：
 
-![](https://pic.yupi.icu/1/1766546189349-27a4a8d7-92c0-4cf4-931e-e98e304736c9.png)
+![](/imgs/8a901e587356b4e7.png)
 
 
 你可以直接执行，或者给 AI 进一步的指导。比如我让 AI 生成的应用去调用智谱 Coding Plan 套餐的 BASE URL，能节约一些成本，并且给 AI 提供了一个官方的 API 文档，便于 AI 生成准确的代码。
 
-![](https://pic.yupi.icu/1/1766546246817-adc95f50-246d-4c9c-b0cd-35f6433c9b40.png)
+![](/imgs/2e19fbb50d9ba670.png)
 
 
 确认后开始执行，AI 会先调用内置的工具来搜索和解析文档：
 
-![](https://pic.yupi.icu/1/1766546433884-517bb8d9-8eb0-4a44-bd9c-0b0591af4184.png)
+![](/imgs/cedccd1ba1c8dc11.png)
 
 
 然后 AI 列出了一个 Todo List，并且一步步生成代码和文档：
 
-![](https://pic.yupi.icu/1/1766546471145-170595b6-05b5-440e-a208-671c362eb002.png)
+![](/imgs/167b2f560a7596f4.png)
 
 
 这期间如果你发现有严重的问题，比如发现 AI 生成的代码已经完全偏离预期了，那么就尽早暂停或者人工输入提示词来引导 AI。如果发现 AI 只是有一小块代码生成的不对，我的建议是先忍着，反正最后 AI 大概率会自己发现问题并修复。
 
 过了大概十几分钟后，AI 生成完成，还告诉了我使用方法：
 
-![](https://pic.yupi.icu/1/1766546800949-d8f28864-141e-477e-af98-a25bf02d99e7.png)
+![](/imgs/58b478dd82df14b6.png)
 
 
 可惜我根本懒得看，我直接把 API Key 交给 AI 帮我运行不就好了？
 
 Vibe Coding 开发模式下，我多自己做一件事，都是对 AI 的不尊重。
 
-![](https://pic.yupi.icu/1/1766553290398-ad4d9c90-f804-4f46-b040-c65f821897d0.png)
+![](/imgs/a63d87675e1b874e.png)
 
 输入提示词：
 
@@ -223,7 +220,7 @@ Vibe Coding 开发模式下，我多自己做一件事，都是对 AI 的不尊�
 
 然后，翻车了。。。
 
-![](https://pic.yupi.icu/1/1766546943625-ae073ada-da33-429a-bbf8-a642f50204dd.png)
+![](/imgs/2be5f8ce4acd4aee.png)
 
 
 不慌，直接让 AI 自己检查并修复错误。而且为了使用方便，应该提供一个快速启动脚本，能够让我像运行 Claude Code 一样，一行命令启动 AI 编程工具。
@@ -237,18 +234,18 @@ Vibe Coding 开发模式下，我多自己做一件事，都是对 AI 的不尊�
 
 几分钟后，AI 修复完成，并且提供了一个 `yupicode` 脚本：
 
-![](https://pic.yupi.icu/1/1766547157316-1e78081d-7d98-43c2-8fc6-37f40dcd1d81.png)
+![](/imgs/6444ecf068b85306.png)
 
 
 我打开一个新的终端，然后运行 `yupicode` 脚本，尝试和 AI 对话：
 
-![](https://pic.yupi.icu/1/1766488187720-0dedd977-3663-4146-8fc6-bd5e8d65a7ea.png)
+![](/imgs/3d6709df8fb7618a.png)
 
 你别说，效果还不错啊！
 
 还像 Claude Code 一样提供了一些命令，比如清空对话历史、查看帮助之类的：
 
-![](https://pic.yupi.icu/1/1766488215355-476254ae-1fdd-44fe-94a7-939621a5b3f3.png)
+![](/imgs/af31038b7591f2fb.png)
 
 
 看到这里，我感觉项目已经基本可用了。建议给项目上个 Git 来版本控制，防止后面的改动出问题。
@@ -261,12 +258,12 @@ Vibe Coding 开发模式下，我多自己做一件事，都是对 AI 的不尊�
 现在项目已经基本可用了，帮我提交一个 git 版本，防止后续改动出问题
 ```
 
-![](https://pic.yupi.icu/1/1766547719776-e4ca2495-158d-441e-b995-d2e3b475187b.png)
+![](/imgs/03954bc41c9ffec5.png)
 
 
 测试下来，目前的 Yupi Code 还有一些不足之处，比如不支持搜索：
 
-![](https://pic.yupi.icu/1/1766488309079-9e05324c-b780-4476-b7a1-09e0b0a12ed4.png)
+![](/imgs/d971f1503fd596f6.png)
 
 接下来就让我们优化项目，增加更多 Claude Code 支持的能力。
 
@@ -282,12 +279,12 @@ Vibe Coding 开发模式下，我多自己做一件事，都是对 AI 的不尊�
 ```
 
 
-![](https://pic.yupi.icu/1/1766547400820-047db1e2-dee7-4bb3-875c-3c3d03d7bf60.png)
+![](/imgs/87f920284f73096e.png)
 
 
 很快 AI 就添加了新功能，重新打开 yupicode 来验证下，正常生效了：
 
-![](https://pic.yupi.icu/1/1766542072968-2a635280-4f04-41c7-9e72-b149b503b18e.png)
+![](/imgs/c04c2d6323e3ec63.png)
 
 
 2）下面再优化下 AI 回复的效果，目前是卡一会儿然后直接输出完整回答，需要调整为流式输出的打字机效果。
@@ -301,7 +298,7 @@ Vibe Coding 开发模式下，我多自己做一件事，都是对 AI 的不尊�
 
 AI 很快就搞定了：
 
-![](https://pic.yupi.icu/1/1766547560315-96b3044c-21d4-4017-b3b2-8e6c599fdfac.png)
+![](/imgs/256be9d8220b9a46.png)
 
 
 3）GLM-4.7 进一步强化了交错式思考能力，引入 **保留式思考** 和 **轮级思考**，让复杂任务执行更稳、更可控。我们也应该让 Yupi Code 输出模型的思考信息、工具调用信息等等，帮助用户了解情况。
@@ -313,12 +310,12 @@ AI 很快就搞定了：
 ```
 
 
-![](https://pic.yupi.icu/1/1766547838246-0de4e1a6-46e7-4fa0-9f69-2cc6c137d941.png)
+![](/imgs/cfd5d4004d20c039.png)
 
 
 测试一下优化后的效果，比如 “介绍一下鱼皮的 AI 导航网站”，能很清晰地看到思考过程：
 
-![](https://pic.yupi.icu/1/1766491085646-e55d65e2-f1f4-4de5-9b2e-a580f6671fab.png)
+![](/imgs/14c1461421ebfa87.png)
 
 
 ## 大功告成
@@ -332,12 +329,12 @@ AI 很快就搞定了：
 ```
 
 
-![](https://pic.yupi.icu/1/1766491627903-c7a8401b-a029-4f60-86c2-583459f60098.png)
+![](/imgs/6bdc0765f48a6df0.png)
 
 
 效果如图，画风还是不错的，但要是之后大模型能自动生成图片插画并添加到网站中，就更好了。
 
-![](https://pic.yupi.icu/1/1766492330648-78beb8fe-20f5-4577-9a5a-9c6844b15ba1.png)
+![](/imgs/a14ae10fab98951b.png)
 
 
 再来开发个仿真的电子黑板，提示词：
@@ -347,12 +344,12 @@ AI 很快就搞定了：
 ```
 
 
-![](https://pic.yupi.icu/1/1766543009945-1be675f7-2cb1-43ce-9794-36cfa3cf9f87.png)
+![](/imgs/01dac217eb0d14cc.png)
 
 
 圣诞节了，鱼皮给大家画颗圣诞树，还附赠一个小礼物，这怎么能不算是程序员的浪漫呢~
 
-![](https://pic.yupi.icu/1/1766548114861-81c8b4d2-b7fc-4134-8722-264edf56f229.png)
+![](/imgs/49e748130a29b62e.png)
 
 
 ------
@@ -368,7 +365,7 @@ OK，这就是我 **利用国产的 AI 大模型 GLM-4.7 + Claude Code** 开发�
 
 不过毕竟现在的 Yupi Code 是 AI 一把梭的，还有很多能优化完善的地方。如果后面有时间，大家也感兴趣的话，说不定我会好好打磨打磨这个工具把它开源出来。我的终极目标是，让基于 **AI 大模型 GLM-4.7 + Claude Code** 开发的基于 **GLM-4.7 的 Yupi Code** 编程工具，能够开发出一个基于 **GLM-4.7 的** 编程工具，比如 Yupi Son Code。我认为好的 AI 工具就是要能做到无限套娃，疯狂自举！
 
-![](https://pic.yupi.icu/1/1766549948743-c5e1340a-5b3d-4419-b5df-c2fd4a5c2c7f.jpeg)
+![](/imgs/848b28f3de820e42.jpg)
 
 听懂掌声~
 

@@ -3,15 +3,12 @@ title: "面试官问「AI 应用怎么开发」，别说只会调 API！"
 summary: "最近有个学员跟我说，他去面试的时候，面试官问了一个问题：如果让你开发一个 AI 应用，你会怎么做？"
 order: 102
 level: "入门"
-tags: ["概念大全", "转载", "AI"]
+tags: ["概念大全"]
 updated: "2026-07-21"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《面试官问「AI 应用怎么开发」，别说只会调 API！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 最近有个学员跟我说，他去面试的时候，面试官问了一个问题：如果让你开发一个 AI 应用，你会怎么做？
 
@@ -25,11 +22,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 但实际上，调 API 只是最基础的一种方式。从最底层的 HTTP 请求，到官方 SDK 封装，到功能齐全的开发框架，再到拖拽式的低代码平台，还有一种鲜为人知的隐藏模式，AI 应用开发的模式已经非常丰富了。
 
-![](https://pic.yupi.icu/1/01_%E5%B0%81%E9%9D%A2%E5%9B%BE-5%E7%A7%8DAI%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F%E6%A6%82%E8%A7%88_compressed_v1.png)
+![](/imgs/b630b5c506a554ae.png)
 
 今天鱼皮就给大家一次性讲清楚，目前主流的 **5 种 AI 应用开发模式** 到底是什么、怎么用、各自适合什么场景。每种模式我都会给一段简单的代码示例，帮你快速理解。搞懂这些，不仅面试的时候能应对自如，用 AI 编程做项目的时候也能知道该往技术栈里加什么。
 
-![](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E7%9A%84AI%E5%AF%BC%E8%88%AA-AI%E5%B7%A5%E5%85%B7%E7%94%A8%E6%B3%95%E5%A4%A7%E5%85%A8.png)
+![](/imgs/c83fa04c96fa80c3.png)
 
 
 ## 一、HTTP API 直接调用
@@ -40,7 +37,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这就像打电话给一个专家咨询问题。你得自己拨号码（拼接 API 地址）、报上身份（传入密钥）、把问题描述清楚（构造请求体），然后等专家回答完再自己记录下来（解析响应）。**虽然每一步都得自己来，但你对整个过程有完全的掌控。**
 
-![](https://pic.yupi.icu/1/02_HTTP_API%E7%9B%B4%E6%8E%A5%E8%B0%83%E7%94%A8-%E6%89%93%E7%94%B5%E8%AF%9D%E7%B1%BB%E6%AF%94_compressed_v1.png)
+![](/imgs/d28105700a69c27b.png)
 
 不管你用什么编程语言，只要能发 HTTP 请求，就能调用 AI 大模型。所以这是所有大模型服务商都支持的最基本的调用方式。
 
@@ -93,7 +90,7 @@ curl https://api.anthropic.com/v1/messages \
 
 实际开发 AI 应用的时候，你还需要了解请求和响应中各个字段的含义。最核心的是 `messages` 字段，也就是你跟 AI 的对话消息列表；此外还有 `temperature` 控制回答的随机性、`max_tokens` 限制回答长度、响应里的 `usage` 字段能告诉你这次调用消耗了多少 Token 等等。各家平台一般都会提供详细的 API 文档，照着文档来就行。
 
-![](https://pic.yupi.icu/1/image-20260511153354301.png)
+![](/imgs/20b353d4d1d30ff0.png)
 
 大模型的 API 一般会提供两种调用方式。一种是普通请求，一问一答，等 AI 生成完整个回答后一次性返回。另一种是流式请求，如果你想实现一个字一个字往外蹦的打字机效果，就需要用到 **SSE（Server-Sent Events）** 流式传输协议，让服务端把生成的内容一段一段地推送给你。用法也不复杂，一般只需要在请求参数里把 `stream` 设置为 `true` 就行了。
 
@@ -134,11 +131,11 @@ for line in response.iter_lines():
 
 如果 HTTP API 是自己拨号打电话，那 SDK 就像装了一个智能通讯 APP。你只管说话，APP 帮你自动拨号、接通、录音、整理成文字，你拿到手的直接就是现成的答案。
 
-![](https://pic.yupi.icu/1/03_%E5%AE%98%E6%96%B9SDK%E8%B0%83%E7%94%A8-%E6%99%BA%E8%83%BD%E9%80%9A%E8%AE%AFAPP%E7%B1%BB%E6%AF%94_compressed_v2.png)
+![](/imgs/4f3820f10a187c37.png)
 
 目前 OpenAI、Anthropic、Google、阿里云百炼、智谱等主流大模型服务商都提供了多语言的 SDK，覆盖 Python、Java 等常用语言。
 
-![](https://pic.yupi.icu/1/image-20260511153849051.png)
+![](/imgs/9702c2db6de66724.png)
 
 SDK 的本质就是对 HTTP 请求的封装，所以前面提到的 OpenAI 兼容格式在 SDK 层面同样适用。比如 DeepSeek 兼容 OpenAI 的协议，那你直接用 OpenAI 的 SDK，改个参数就能调用 DeepSeek 模型了。
 
@@ -189,7 +186,7 @@ SDK 解决了 **怎么方便地调模型** 的问题，但企业中的 AI 应用
 
 打个比方，SDK 相当于给你提供了发动机、轮胎、方向盘这些零件，你得自己一个一个装配；AI 开发框架相当于直接给你一辆半成品车，底盘、车架、电路都搭好了，你只需要决定外观和内饰就能上路。
 
-![](https://pic.yupi.icu/1/04_AI%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6-%E6%B1%BD%E8%BD%A6%E7%BB%84%E8%A3%85%E7%B1%BB%E6%AF%94_compressed_v1.png)
+![](/imgs/e49ca08bccca5c15.png)
 
 下面以 Python 和 Java 为例，列举几个主流的 AI 开发框架，之后你在 AI 编程时看到这些技术名词，就不会感到陌生了。
 
@@ -245,7 +242,7 @@ result = agent.invoke(
 
 Java 生态还有 Spring 官方推出的 Spring AI 以及阿里的 Spring AI Alibaba，深度融入 Spring Boot 生态，适合 Java 后端开发者快速上手。
 
-![](https://pic.yupi.icu/1/image-20260511154445018.png)
+![](/imgs/e1150d5b78bc06e9.png)
 
 另外我觉得 **Vercel AI SDK** 也值得大家关注，它是 TypeScript 生态的 AI 开发框架，提供了 20 多个模型供应商的统一接口，特别适合前端和全栈开发者。
 
@@ -258,13 +255,13 @@ Java 生态还有 Spring 官方推出的 Spring AI 以及阿里的 Spring AI Ali
 
 打个比方，低代码平台就像搭积木。大模型是一块积木，知识库是一块积木，工具调用是一块积木，每块积木都是现成的，你只需要决定怎么拼接、拼成什么形状就好了。
 
-![](https://pic.yupi.icu/1/05_%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0-%E6%90%AD%E7%A7%AF%E6%9C%A8%E7%B1%BB%E6%AF%94_compressed_v1.png)
+![](/imgs/5fe52de3ac9f2d41.png)
 
 Dify 是典型的低代码 AI 开发平台，它支持通过可视化界面搭建 AI 聊天助手、工作流、知识库问答等应用，还能一键接入各种大模型。
 
 它最大的优势是开源、可私有化部署，企业想把数据放在自己服务器上也没问题。
 
-![](https://pic.yupi.icu/1/1743564064922-03f6365b-a712-47d9-be55-4867b848a269.png)
+![](/imgs/1979d39ee1f0e03b.png)
 
 在 Dify 上搭一个 AI 聊天助手，大概就这么几步：
 
@@ -286,7 +283,7 @@ Dify 是典型的低代码 AI 开发平台，它支持通过可视化界面搭�
 
 如果说前面那些方式都是你自己动手干活，那么使用 AI 编程工具的 SDK 相当于你雇了一个会写代码的 AI 程序员。你只需要告诉它做什么，它会自动读文件、分析代码、完成开发。
 
-![](https://pic.yupi.icu/1/06_AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7SDK-%E9%9B%87%E4%BD%A3AI%E7%A8%8B%E5%BA%8F%E5%91%98%E7%B1%BB%E6%AF%94_compressed_v3.png)
+![](/imgs/6c68b60d097b1e8a.png)
 
 以 Cursor SDK 为例，允许你在 TypeScript / Node.js 代码中直接调用 Cursor 的 AI Agent。
 
@@ -296,15 +293,15 @@ Dify 是典型的低代码 AI 开发平台，它支持通过可视化界面搭�
 npm install @cursor/sdk
 ```
 
-![](https://pic.yupi.icu/1/image-20260511141833488.png)
+![](/imgs/28458124c384e6a8.png)
 
 然后登录 [Cursor Dashboard](https://cursor.com/dashboard/integrations)，在 Integrations 页面生成一个 API Key 并保存下来，后面代码里需要用它来验证身份。
 
-![](https://pic.yupi.icu/1/image-20260511141405454.png)
+![](/imgs/71acf6b9c17620a6.png)
 
 假设我本地有一个「创作选题获取器」项目，里面用 AGENTS.md 定义了选题获取的工作流规则，还安装了 frontend-design 前端设计技能。
 
-![](https://pic.yupi.icu/1/image-20260511154340593.png)
+![](/imgs/da4004d4bef1286d.png)
 
 现在我想让 AI 帮我获取今天的热门选题，并生成一个漂亮的网页报告。
 
@@ -342,15 +339,15 @@ node main.js
 
 运行后你会在终端看到一连串事件输出，比如 Agent 开始执行。
 
-![](https://pic.yupi.icu/1/image-20260511151359126.png)
+![](/imgs/759356016a6711ed.png)
 
 从日志里可以清晰地看到 Agent 的整个执行过程：它先用 `glob` 工具扫描了项目目录，然后用 `read` 工具依次读取了 AGENTS.md 工作流规则和 frontend-design 的 SKILL.md 技能说明，接着通过 `shell` 工具调用了项目里的热点获取脚本进行联网搜索，从 GitHub、Hacker News 等 6 个平台采集了 70 条热门话题，再通过 `edit` 命令生成了一个近千行代码的 HTML 网页报告。
 
-![](https://pic.yupi.icu/1/image-20260511151132128.png)
+![](/imgs/61e64a16ff54f1aa.png)
 
 最后 Agent 还自动打开了浏览器，让你直接查看生成的选题报告。
 
-![](https://pic.yupi.icu/1/image-20260511150909122.png)
+![](/imgs/556f8cff7ef476db.png)
 
 你会发现，整个过程和在 Cursor 编辑器里跟 AI 对话一模一样。但区别在于，现在你是用代码来调用它的，这意味着你可以把它嵌入到 CI/CD 流水线、自动化脚本、甚至自己的产品里。普通的大模型 SDK 只能帮你生成文本，而 AI 编程工具的 SDK 能帮你直接操作代码库、调用工具、生成文件。
 
@@ -392,7 +389,7 @@ const result = await Agent.prompt(
 
 **选择的核心原则是：用最少的成本解决当前的问题。** 能拖拽解决的，就别写代码；能用框架搞定的，就别自己造轮子；能用 SDK 的，就别手撸 HTTP。
 
-![](https://pic.yupi.icu/1/07_5%E7%A7%8D%E6%A8%A1%E5%BC%8F%E5%AF%B9%E6%AF%94%E6%80%BB%E7%BB%93-%E9%87%91%E5%AD%97%E5%A1%94%E5%9B%BE_compressed_v1.png)
+![](/imgs/df584abc68cd41f8.png)
 
 不过如果你是在学习阶段，我建议反过来，从 HTTP API 开始，一步步往上走。这样对每一层的原理都能有清晰的理解，后面用更高层的工具也不会一头雾水。
 

@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Code 封号机制和应对方案》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 学 AI 编程的同学，多半都听说过 Claude Code 封号这件事。很多人稳定用了一年的号突然翻车，甚至有百人规模的公司被整个团灭。
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 直到国外开发者对 Claude Code 做了逆向工程，才发现它在客户端里藏了一套隐蔽的用户标记系统。
 
-![](https://pic.yupi.icu/1/image-20260701120931639.png)
+![](/imgs/00a055b084947cc3.png)
 
 这篇文章我会用傻子都能懂的方式讲清楚三件事：Claude Code 到底是怎么识别用户的、之前那波大规模封号是怎么发生的、以及如果你也想稳定地用上强模型，有哪些现实的应对方案。
 
@@ -33,11 +30,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 先简单概括一下思路：Claude Code 会读取你电脑上的本地信息，然后用一种肉眼完全看不到的方式，给你发送给服务器的每一个请求打上「这个人是中国用户」的隐形标记，传回 Anthropic 的服务器。
 
-![](https://pic.yupi.icu/1/02_%E6%95%B4%E4%BD%93%E6%A3%80%E6%B5%8B%E6%9C%BA%E5%88%B6%E6%A6%82%E8%A7%88%EF%BC%9AClaude_Code%E5%A6%82%E4%BD%95%E6%A0%87%E8%AE%B0%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7_compressed_v3.png)
+![](/imgs/517a67f8a17f607e.png)
 
 根据多位独立研究者的验证，这套检测机制有一个触发条件，就是你必须设置了一个叫 `ANTHROPIC_BASE_URL` 的环境变量，把 Claude Code 的请求指向了非官方的 API 地址。换句话说，如果你直接连的是官方的 `api.anthropic.com`，这套标记机制不会激活。
 
-![](https://pic.yupi.icu/1/03_%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6%EF%BC%9AANTHROPIC_BASE_URL%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_compressed_v3.png)
+![](/imgs/74cfc688f4779964.png)
 
 但问题是，国内大多数用户都需要通过中转站来用 Claude Code，所以很多中国开发者都设置了这个变量，也都会被这套机制检查到。
 
@@ -53,13 +50,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 而绝大多数中国开发者虽然切换了网络，但一般不会去改电脑时区，毕竟还要正常看时间和日历，所以这条路径几乎能命中所有人。
 
-![](https://pic.yupi.icu/1/04_%E8%AF%86%E5%88%AB%E8%B7%AF%E5%BE%84%E4%B8%80%EF%BC%9A%E7%B3%BB%E7%BB%9F%E6%97%B6%E5%8C%BA%E6%A3%80%E6%B5%8B_compressed_v2.png)
+![](/imgs/64157015d0ee3f45.png)
 
 **第二条路径，把你的中转地址跟一份域名黑名单做比对。**
 
 因为国内访问不了 Claude 的官方 API，很多开发者和公司都是通过中转站来调用的。Claude Code 会把你在 `ANTHROPIC_BASE_URL` 里填的地址提取出来，跟一份内置的域名名单做匹配。
 
-![](https://pic.yupi.icu/1/05_%E8%AF%86%E5%88%AB%E8%B7%AF%E5%BE%84%E4%BA%8C%EF%BC%9A%E5%9F%9F%E5%90%8D%E9%BB%91%E5%90%8D%E5%8D%95%E5%8C%B9%E9%85%8D%E6%9C%BA%E5%88%B6_compressed_v3.png)
+![](/imgs/822aafca0bd3ade6.png)
 
 这份名单本身也是被混淆加密存储的，被逆向之后发现一共有 **147 个域名**。
 
@@ -67,7 +64,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 上来就是中国顶级域名 `cn`，直接腰斩。紧接着是百度、阿里、字节等国内大厂的域名，而且连阿里和百度的内网域名都没放过。此外 DeepSeek、智谱等几乎所有国内 AI 公司的域名和关键词也在名单里，剩下的大头就是各种 API 中转服务的域名了。
 
-![](https://pic.yupi.icu/1/image-20260701122013567.png)
+![](/imgs/0fb8b850163edac5.png)
 
 
 
@@ -94,7 +91,7 @@ Today's date is 2026-06-30.
 
 这四个字符长得一模一样，你在编辑器和终端里根本看不出区别。但在机器层面，它们是完全不同的编码值。
 
-![](https://pic.yupi.icu/1/09_%E9%9A%90%E5%86%99%E6%9C%AF%E6%89%8B%E6%B3%95%E4%BA%8C%EF%BC%9A%E5%9B%9B%E7%A7%8DUnicode%E5%8D%95%E5%BC%95%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB_compressed_v2.png)
+![](/imgs/6b28544b11533bb8.png)
 
 这种手法叫做 **隐写术**，就是把秘密信息藏在看起来完全正常的内容里。就像你写了一封普通的信，但其中某些字母用了不同品牌的墨水，收件人用特殊仪器一扫就能读出暗号，而你拿着信怎么看都觉得一切正常。
 
@@ -118,7 +115,7 @@ Today's date is 2026-06-30.
 
 消息迅速传遍了推特、微信群和各种技术社区，甚至连闲鱼上都有人在卖教程。
 
-![](https://pic.yupi.icu/1/image-20260729100925685.png)
+![](/imgs/853b9f5c65bc097a.png)
 
 到底是怎么回事呢？
 
@@ -130,7 +127,7 @@ Today's date is 2026-06-30.
 
 两个漏洞叠在一起，就成了零元购。
 
-![](https://pic.yupi.icu/1/01_%E4%B8%A4%E4%B8%AA%E6%BC%8F%E6%B4%9E%E5%8F%A0%E5%8A%A0%E5%AF%BC%E8%87%B4%E9%9B%B6%E5%85%83%E8%B4%AD%E7%9A%84%E5%8E%9F%E7%90%86%E5%9B%BE_compressed_v1.png)
+![](/imgs/4a82c2f12eb40335.png)
 
 就好比一家自助餐厅的收银系统出了 Bug，门口的闸机不需要付款就能打开，这不得有一堆人涌进去吃霸王餐？据说当天好几家 API 中转站直接打出了跳楼价折扣，毕竟人人都能零元购了，谁还花钱找中间商。
 
@@ -152,7 +149,7 @@ Today's date is 2026-06-30.
 
 有人认为这不算间谍软件，只是一种反滥用的合规措施；但更多人认为，在用户完全不知情的情况下搞隐蔽标记，就是不对。
 
-![](https://pic.yupi.icu/1/image-20260701121820094.png)
+![](/imgs/fe977b0191870172.png)
 
 我的看法是这样的：Claude Code 不是一个普通的聊天软件，它运行在你的终端里，拥有文件系统权限，能读写你的代码和配置，甚至能执行各种 Shell 命令。开发者把这么大的信任给了它，结果它背着你在每一条请求里偷偷夹带私货，这种事情一旦被发现，大家以后用它的时候心里都会有根刺，总想着它是不是还在背后搞别的小动作。
 
@@ -182,13 +179,13 @@ Today's date is 2026-06-30.
 
 如果你预算有限，Codex + GPT 系列模型是目前性价比和智能都比较均衡的选择。OpenAI 经常赠送重置额度，很多办公自动化、网站开发任务的完成度都不错。
 
-![](https://pic.yupi.icu/1/image-20260729102157381.png)
+![](/imgs/0899198e4330a68d.png)
 
 **方案三：用国产模型，别有偏见。**
 
 国产模型这一年进步飞快，很多场景已经不比国外的差了。比如 Kimi K3 做前端开发和视觉效果很强，DeepSeek V4 性价比极高、很适合做 AI 应用开发项目的底层模型，GLM-5 系列的全栈开发能力也很能打。具体怎么选，可以阅读本教程编程工具板块中的《AI 模型选择指南》。
 
-![Kimi K3 开发的前端网站](https://pic.yupi.icu/1/1784181917700-09e53717-bbf1-42c1-9f4e-c17413ace9f1-20260717144616347.png)
+![Kimi K3 开发的前端网站](/imgs/f1123994aa506348.png)
 
 **方案四：预算充足就走官方合作方。**
 

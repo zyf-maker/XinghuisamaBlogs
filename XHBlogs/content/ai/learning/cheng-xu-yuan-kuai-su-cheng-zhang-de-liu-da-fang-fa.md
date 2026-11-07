@@ -3,15 +3,12 @@ title: "程序员快速成长的六大方法"
 summary: "工作中如何快速成长，突破职业瓶颈"
 order: 10
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-04-30"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《程序员快速成长的六大方法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 跑，快跑！
 
-![](https://pic.yupi.icu/1/image-20250815104851768.png)
+![](/imgs/76896a7236185cbb.png)
 
 开个玩笑，既然工作不能带给你成长，那就自己学习呗，纯把工作当做是金钱和劳动的交易就好。
 
@@ -48,7 +45,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 像今年我们还打造了完全免费的 AI 交流圈，大家可以没事儿来刷一刷：https://ai.codefather.cn
 
-![](https://pic.yupi.icu/1/image-20260109121412266-20260113154640560.png)
+![](/imgs/476e98a319f04a50.png)
 
 
 ## 二、持续学习新技术
@@ -91,7 +88,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 实际上你别说 3 年，我都不记得自己 1 个月前写了什么代码。
 
-![忘记代码](https://pic.yupi.icu/1/image-20250815104740029.png)
+![忘记代码](/imgs/c0140864b5aec4bf.png)
 
 **经验积累是决定你后续的路能走多远、走多稳的一个重要因素**。
 
@@ -131,7 +128,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 像鱼皮自己有个有趣的习惯，我会 "口遁"，有时候想记录了，直接掏出手机叭叭一通乱说，利用语音转文字快速记录。实不相瞒，有些文章都是我口遁出来的，看过我直播的同学应该也知道，给我个话题，我叭叭能给你说一大堆有的没的。
 
-![口遁](https://pic.yupi.icu/1/image-20250815104416663.png)
+![口遁](/imgs/30080130eaae8e15.png)
 
 其次，为什么要拆成碎片？是因为每个碎片它都是可复用的。你之后想做一个自己的项目了，你就打开整理的知识碎片列表看一看。比如说这个项目，能不能给它加一个全局权限管理？能不能加个缓存？如果发现能加，那就点进具体的知识碎片，看看我之前是怎么做的就好了。
 

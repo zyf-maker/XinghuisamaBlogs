@@ -3,15 +3,12 @@ title: "3 小时做游戏，10 天狂赚 28 万！程序员用 AI 躺赚？"
 summary: "大家好，我是程序员鱼皮。"
 order: 12
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《3 小时做游戏，10 天狂赚 28 万！程序员用 AI 躺赚？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -27,11 +24,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 马斯克也亲自下场点赞，感叹这实在是“泰酷辣”！
 
-![img](https://pic.yupi.icu/yuyi/1741230448152-362341d5-23b1-446f-abd6-d8ad87c143dd.png)
+![img](/imgs/33a3bdbcf1cfd051.png)
 
 这款疯狂吸金的“一人游戏”长这样：
 
-![img](https://pic.yupi.icu/yuyi/1741248280343-ab70b052-6f8a-4c99-8e7f-0f8798d6261b.gif)
+![img](/imgs/7f5fccff8b88db53.gif)
 
 很多小伙伴看到之后可能要大呼：就这？！
 
@@ -45,7 +42,7 @@ Levels 本身是一名独立开发者，在此之前，他就曾靠开发的数�
 
 这一切还得从他制作一个“空中交通管制广播”网站说起，在这个项目里，Levels 接触到了内置强大的 AI 编程助手的代码编辑器 Cursor。一番体验之后，小哥也是立刻爱上了：
 
-![img](https://pic.yupi.icu/yuyi/1741249832510-b22ea3ea-827f-4c65-8a0e-982a0457495f.png)
+![img](/imgs/ce7147727aa1a3bd.png)
 
 有一天他突然冒出了这样一个念头：“为什么不让 Cursor 直接帮我做个飞行模拟器？”
 
@@ -53,7 +50,7 @@ Levels 本身是一名独立开发者，在此之前，他就曾靠开发的数�
 
 经过简单的调试后，一个初步可运行的飞行游戏诞生了，还包括简单的跑道、海滩、陆地等场景。**“整个飞行模拟器，其实就一个 HTML 文件！”**
 
-![img](https://pic.yupi.icu/yuyi/1741250001933-eb17bd01-8c8c-4197-ad72-4315bb9add5b.png)
+![img](/imgs/b1f6ff19b52f8492.png)
 
 试玩地址：https://fly.pieter.com/
 
@@ -63,7 +60,7 @@ Levels 本身是一名独立开发者，在此之前，他就曾靠开发的数�
 
 又比如当代码超过 3000 行并且全都塞在 fly.html 的文件里时，Cursor 出现了一些问题。他的反馈直接吸引了 Cursor 联合创始人 @mntruell，专门赶来提出了一系列建议。
 
-![img](https://pic.yupi.icu/yuyi/1741249958669-5b58d233-1185-410b-837d-e7044025c350.png)
+![img](/imgs/5e84f72d5597ba26.png)
 
 在网友的帮助和见证下，Levels 更是利用 Grok-3 从 0 搭建了一个 WebSocket 服务器，以**每秒 10 次的频率**接收并更新所有玩家的在线位置。据说在服务器运行的高峰期，它竟然能同时支持近 2000 名玩家在线。
 
@@ -71,7 +68,7 @@ Levels 本身是一名独立开发者，在此之前，他就曾靠开发的数�
 
 要知道，以往没有 AI 辅助的传统游戏开发中，以上这些功能和数据很可能需要花费数周的时间来调试！
 
-![img](https://pic.yupi.icu/yuyi/1741239437727-1770a274-ed8c-4ea8-9f44-5b9c80e4aade.png)
+![img](/imgs/9c7a1d71e3d6c05f.png)
 
 在 Levels 的管理下，不同的 AI 工具就像他手下的员工，还是团队合作分工型的：
 
@@ -91,7 +88,7 @@ Levels 本身是一名独立开发者，在此之前，他就曾靠开发的数�
 
 首先，在做出这款游戏之前，Levels 并不是默默无名的 nobody，光是在 X 平台他的粉丝就有 60 多万。
 
-![img](https://pic.yupi.icu/yuyi/1741248423828-69fad298-8b65-4841-a13a-c9ee92f13f5c.png)
+![img](/imgs/73902f3bd5f15611.png)
 
 Levels 并不是计算机科班出身，大学学的是工商管理。毕业后，他曾带着变卖家具换来的4000欧元，辗转曼谷、巴厘岛等地，过上了数字游民的生活。但创业项目接连失败，最终负债累累，不得不回到荷兰父母家的阁楼。
 
@@ -99,7 +96,7 @@ Levels 并不是计算机科班出身，大学学的是工商管理。毕业后�
 
 虽然其中大部分都失败了，但终于在第11个月的出现了转机——Nomad List，一个为数字游民推荐城市的平台。显然，这也是 Levels 从自身经历出发找到了的一个需求痛点。
 
-![img](https://pic.yupi.icu/yuyi/1741251268664-604dda64-bf95-4294-b637-6dafce5f3a13.png)
+![img](/imgs/2a398f22ce82164c.png)
 
 随后他推出的配套求职平台 Remote OK，恰逢疫情催生远程办公浪潮，成为硅谷巨头采购职位的首选。这两个项目给他带来了超过百万美元的年收入。
 
@@ -109,7 +106,7 @@ Levels 并不是计算机科班出身，大学学的是工商管理。毕业后�
 
 后续还计划将部分黄金广告位提价至 5000 美元/月，甚至规划 10 万美元/月的"超级广告位"。
 
-![img](https://pic.yupi.icu/yuyi/1741248665936-0f6b3f54-a8a4-48a9-a916-f49d0e62a535.gif)
+![img](/imgs/187a52c14e098806.gif)
 
 再加上 Levels 是个玩转流量的高手，狠狠拿捏了 AI 热点。
 

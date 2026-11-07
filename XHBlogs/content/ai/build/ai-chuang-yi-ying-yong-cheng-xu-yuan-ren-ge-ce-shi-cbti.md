@@ -3,15 +3,12 @@ title: "AI 创意应用 - 程序员人格测试 CBTI 项目"
 summary: "本项目是一个程序员专属的人格测试网站 CBTI（Coder Behavior Type Indicator），用 30 道编程相关的趣味题目测出你的编程人格类型。全程使用 Cursor + Claude 进行 Vibe Coding，1 小"
 order: 11
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 创意应用 - 程序员人格测试 CBTI 项目》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个程序员专属的人格测试网站 CBTI（Coder Behavior Type Indicator），用 30 道编程相关的趣味题目测出你的编程人格类型。全程使用 Cursor + Claude 进行 Vibe Coding，1 小时内完成开发上线。
 
@@ -29,7 +26,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 比如我测试出来自己是「握草人」，可能是我还不够抽象？这个人格的解读我都读不懂……
 
-![](https://pic.yupi.icu/1/image-20260413134621011.png)
+![](/imgs/b64dba824de66657.png)
 
 我看完就想：握草？这个网站为啥能火啊？现在用 AI 编程做这种测试小网站还不简单？要不我也来一个？
 
@@ -37,13 +34,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 👉🏻 在线体验：https://cbti.codefather.cn
 
-![](https://pic.yupi.icu/1/image-20260413135126605.png)
+![](/imgs/4f1a21fc227078d9.png)
 
 用 30 道题测出你的编程人格，而且代码完全开源。
 
 👉🏻 开源地址：https://github.com/liyupi/cbti-test
 
-![](https://pic.yupi.icu/1/image-20260413135149352.png)
+![](/imgs/8d253ca33b72c1dc.png)
 
 
 ## CBTI 是什么？
@@ -60,7 +57,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 写个 TODO，虽然大概率会变成遗书
 - 写技术方案，排进迭代里
 
-![](https://pic.yupi.icu/1/image-20260413135743602.png)
+![](/imgs/940b1a9e76fda5a2.png)
 
 2）周五 5:59 群里弹消息，线上炸了。你？
 
@@ -68,7 +65,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 先看看严重不严重
 - 秒回 “我看看”，打开监控面板
 
-![](https://pic.yupi.icu/1/image-20260413135805157.png)
+![](/imgs/f8ebf9c0b149f81e.png)
 
 而且现在 AI 编程也很火嘛，我也与时俱进加了相关的题。比如 Cursor/Copilot 到期了公司不报销，你？
 
@@ -76,15 +73,15 @@ source: "https://github.com/liyupi/ai-guide"
 - 找找免费替代品
 - 秒续！求求再给我点 tokens！
 
-![](https://pic.yupi.icu/1/image-20260413135847877.png)
+![](/imgs/4a96973ea60a935d.png)
 
 我自己测出来是 HACK 野生黑客，座右铭是「又不是不能用.jpg」。个人觉得还挺准，毕竟在 AI 编程时代，我搞过很多 Vibe Coding 的小项目，确实是百无禁忌、能跑就行，做完一个就去搞下一个。
 
-![](https://pic.yupi.icu/1/image-20260413140345748.png)
+![](/imgs/3325f9276ecad95f.png)
 
 测试结果共有 28 种人格，命名全是跟编程相关的，比如什么 SUDO 万能管理员、NULL 空指针、CTRL-C 复制粘贴工程师、996 卷王之王、404 隐身人、VIBE 氛围程序员等等。另外还设计了一个隐藏人格 ☕ JAVA 咖啡因驱动开发者，能触发的朋友应该是有点儿东西的……
 
-![](https://pic.yupi.icu/1/image-20260413135603390.png)
+![](/imgs/215820b9d4f4db17.png)
 
 
 ## 完整开发过程
@@ -101,22 +98,22 @@ source: "https://github.com/liyupi/ai-guide"
 
 并且给 CBTI 定了方向：面向编程，要有科学依据和实用价值，同时具备抽象整活和流量传播属性。
 
-![](https://pic.yupi.icu/1/image-20260413140817081.png)
+![](/imgs/cdc2e38cffe9ec37.png)
 
 然后 AI 就直接完成了初始网站的开发和测试：
 
-![](https://pic.yupi.icu/1/image-20260413141043674.png)
+![](/imgs/ae00c7bd2ffb07d6.png)
 
 
 **2、内容反复迭代**
 
 AI 初版生成的人格代码都差不多，看着毫无辨识度，于是我让它全网搜索程序员相关的热梗，一遍遍重做人格体系。
 
-![](https://pic.yupi.icu/1/image-20260413141131319.png)
+![](/imgs/dac89313db184624.png)
 
 这个阶段来来回回改了很多版，最后我把人格从最初十几种扩展到了 27 种，引入了 AI 编程这个新维度，题目内容也从正经八百改成了口语化、有共鸣的风格。
 
-![](https://pic.yupi.icu/1/image-20260413141241183.png)
+![](/imgs/bdee70b6e8ef46ec.png)
 
 
 **3、UI 设计优化**
@@ -125,11 +122,11 @@ AI 初版生成的人格代码都差不多，看着毫无辨识度，于是我�
 
 我直接跟它说主页尽量简洁，一句 Slogan 再加一个「开始测试」按钮就够了。
 
-![](https://pic.yupi.icu/1/image-20260413141547295.png)
+![](/imgs/09fe982b4ca227ef.png)
 
 配色换成橙色系，再用 frontend-design 这个 Agent Skill 来优化整体视觉效果。答题页面也加了答题卡、进度条、快速跳题这些交互细节。
 
-![](https://pic.yupi.icu/1/image-20260413141630018.png)
+![](/imgs/685f248ce6a72b5d.png)
 
 
 **4、人格图片制作**
@@ -142,26 +139,26 @@ AI 初版生成的人格代码都差不多，看着毫无辨识度，于是我�
 
 注意，这里有个小技巧，我不是让 AI 分别给 28 个角色都生成一段提示词，那样又费时又烧钱。而是分为 2 批，每批 14 个人物放在 **同一张图片** 里生成。这样只需要使用 2 段提示词，生成 2 张图就够了。
 
-![](https://pic.yupi.icu/1/image-20260413141753739.png)
+![](/imgs/c17e5ce8f55bbdb7.png)
 
 效果还不错吧：
 
-![](https://pic.yupi.icu/1/image-20260413142143210.png)
+![](/imgs/e173f1f9c590604b.png)
 
 然后让 AI 自己去理解这张完整的图片，写 Python 脚本来切割图片、压缩调整尺寸、移除空白背景等等，最后得到了 28 个角色图片。
 
-![](https://pic.yupi.icu/1/image-20260413142347871.png)
+![](/imgs/06133c097df4f3b2.png)
 
 
 **5、更多功能完善**
 
 确保题目内容和网站功能正常运行后，我还优化了很多网站的细节，加了分享文案、Canvas 渲染的分享海报、五维雷达图、隐藏人格彩蛋这些功能。
 
-![](https://pic.yupi.icu/1/image-20260413142811945.png)
+![](/imgs/6988fa02891fa9df.png)
 
 由于网站本身功能并不复杂，每个功能我都是无脑让 AI 生成，所以过程中也遇到了一些问题，比如分享海报一开始字太小、二维码没生成、后来又太大，调了好几轮才满意。
 
-![](https://pic.yupi.icu/1/image-20260413142903376.png)
+![](/imgs/819b6c06e6e5a036.png)
 
 
 **6、部署上线和验证**
@@ -170,11 +167,11 @@ AI 初版生成的人格代码都差不多，看着毫无辨识度，于是我�
 
 我用了 EdgeOne Pages 这个 MCP，只需要跟 AI 对话，AI 会自动执行 Next.js 框架的 build 命令把代码导出为静态的 HTML 网页，然后部署网页到腾讯云 EdgeOne Pages 服务，1 分钟就完成了部署上线。
 
-![](https://pic.yupi.icu/1/image-20260413143449058.png)
+![](/imgs/669c64a521f6a44a.png)
 
 可以在腾讯云 EdgeOne Pages 控制台查看到已上线的项目，还可以自定义域名：
 
-![](https://pic.yupi.icu/1/image-20260413143532414.png)
+![](/imgs/f76fc9aa2a025cf7.png)
 
 上线之后，我再让 AI 自主跑了一遍所有流程，确认上线后的功能也能正常使用，并且 30 道题能覆盖全部 28 种人格。
 

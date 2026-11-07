@@ -3,15 +3,12 @@ title: "3秒让DeepSeek写出爆款小红书"
 summary: "不会用AI写笔记？直接套这个6步公式！"
 order: 27
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2026-10-22"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《3秒让DeepSeek写出爆款小红书》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 不会用AI写笔记？直接套这个6步公式！
 

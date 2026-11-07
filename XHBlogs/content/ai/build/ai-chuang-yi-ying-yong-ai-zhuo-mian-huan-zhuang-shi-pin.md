@@ -3,15 +3,12 @@ title: "AI 创意应用 - AI 桌面换装视频技能项目"
 summary: "本项目是一个有趣的 AI 创意应用，用 AI 逐帧拆解一条爆款的「桌面换装」视频，提炼出提示词模板，再封装成一个可复用的 Skill 技能。之后你只要跟 AI 说一句需求，它就会一步步问清楚角色、场景、造型和台词，自动生成完整的视频提示词，"
 order: 16
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-09-28"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 创意应用 - AI 桌面换装视频技能项目》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个有趣的 AI 创意应用，用 AI 逐帧拆解一条爆款的「桌面换装」视频，提炼出提示词模板，再封装成一个可复用的 Skill 技能。之后你只要跟 AI 说一句需求，它就会一步步问清楚角色、场景、造型和台词，自动生成完整的视频提示词，甚至直接调用 API 帮你出片。
 
@@ -27,21 +24,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 最近 AI 桌面换装视频突然爆火，Twitter 上随便一条就是百万播放。
 
-![](https://pic.yupi.icu/1/image-20260920170337945.png)
+![](/imgs/afacbb646ccbb768.png)
 
 视频里一个虚拟角色坐在电脑桌面上，你让她换什么衣服她就换什么衣服，还能对话。
 
-![](https://pic.yupi.icu/1/image-20260920170454985.png)
+![](/imgs/63070a4c72055fa0.png)
 
 为了锻炼自己的 AI 视频制作技术，我也搞了一条试试。
 
-![我的成品](https://pic.yupi.icu/1/ai-outfit-my-cover-30cf2337.jpg)
+![我的成品](/imgs/7a0dcac8534170cd.jpg)
 
 怎么样，是不是精准复刻了原版的风格？
 
 三套造型切换，有对白声音、有特效字幕，全程模拟电脑桌面录屏的风格，30 秒一镜到底。
 
-![三套造型对比](https://pic.yupi.icu/1/ai-outfit-my-outfits-ac1b0ebd.jpg)
+![三套造型对比](/imgs/ffeb9fc580d6ce87.jpg)
 
 这是怎么做到的呢？其实非常简单！
 
@@ -54,7 +51,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 开源指路：https://github.com/liyupi/ai-desktop-outfit-video
 
-![](https://pic.yupi.icu/1/image-20260920170757343.png)
+![](/imgs/02766ac8a419b282.png)
 
 这个技能的玩法很简单：你跟 AI 说一句话描述需求，AI 就会帮你自动生成一段完整的 AI 视频生成提示词，然后复制到任意 AI 视频工具里就能出片，不用自己写又臭又长的提示词。
 
@@ -71,37 +68,37 @@ source: "https://github.com/liyupi/ai-guide"
 
 AI 就会像产品经理一样主动询问你的需求：
 
-![](https://pic.yupi.icu/1/image-20260920171149900.png)
+![](/imgs/96dc9bc1a5121daa.png)
 
 1）主角是谁
 
 默认是中国古典鹅蛋脸美人。你如果有自己喜欢的角色，可以直接描述，也可以上传一张参考图。比如我先用 ChatGPT 生成了一张参考图，并提供给 AI：
 
-![](https://pic.yupi.icu/1/image-20260920171349335.png)
+![](/imgs/c6f790ed32ca4f36.png)
 
 2）视频场景
 
 默认是深蓝灰色调的房间，我跟 AI 说把场景改成安静的小酒吧。
 
-![](https://pic.yupi.icu/1/image-20260920171410725.png)
+![](/imgs/6ad9ddf2e083c797.png)
 
 3）三套换装造型
 
 我随便说了水手服、洛丽塔、白领制服：
 
-![](https://pic.yupi.icu/1/image-20260920171427059.png)
+![](/imgs/ceef9669b95d3493.png)
 
 4）视频台词
 
 如果你不喜欢默认的台词，可以让 AI 帮你修改为适配你需求的文案。
 
-![](https://pic.yupi.icu/1/image-20260920171453286.png)
+![](/imgs/a4b8884fd7e75c85.png)
 
 5）风格档位
 
 最后 AI 会让你选软、中、硬三档风格强度。建议选保守一点的档位，否则很容易触发视频平台的内容审核，白白浪费积分。
 
-![](https://pic.yupi.icu/1/image-20260920171540549.png)
+![](/imgs/c8e4816171c71ca8.png)
 
 几个问题问完，AI 就直接输出了一段完整的提示词。在这个技能的开源项目中有完整版的参考提示词。
 
@@ -118,32 +115,32 @@ AI 就会像产品经理一样主动询问你的需求：
 
 建议先用 720p 来试，1080p 的积分消耗真的太贵了！等效果满意了再上高清。
 
-![](https://pic.yupi.icu/1/image-20260920172129168.png)
+![](/imgs/cdc37160d76dcdde.png)
 
 然后等 AI 生成完，一段桌面换装视频就出来了。
 
-![换装效果](https://pic.yupi.icu/1/ai-outfit-demo-50ac0eb2.gif)
+![换装效果](/imgs/d7a64d83625deac2.gif)
 
-![](https://pic.yupi.icu/1/image-20260920171949536.png)
+![](/imgs/6f857cce522e0305.png)
 
 
 ## 进阶：直接调 API 生成
 
 除了手动复制提示词之外，这个技能还支持直接调用 Seedance 2.5 的 API 来生成视频。当然，你换成其他 AI 视频生成模型的 API 也是 OK 的。
 
-![](https://pic.yupi.icu/1/image-20260920172415722.png)
+![](/imgs/7750253f06b6f891.png)
 
 只需要去火山引擎官网获取一个 API Key，提供给 AI 就行了。
 
-![](https://pic.yupi.icu/1/image-20260920172311293.png)
+![](/imgs/e3b44bb613e88d09.png)
 
 AI 会直接帮你调用 API 生成视频并下载到本地，全程不用你自己打开任何 AI 视频生成工具。
 
-![](https://pic.yupi.icu/1/image-20260920172431523.png)
+![](/imgs/4c9785fb84430419.png)
 
 生成的效果也是非常理想的：
 
-![](https://pic.yupi.icu/1/image-20260920172622298.png)
+![](/imgs/feff8b896cb3356b.png)
 
 有了这个技能，你可以自定义主角、场景、台词、造型，一条爆款风格的视频就这样被轻轻松松复刻出来了！
 
@@ -157,39 +154,39 @@ AI 会直接帮你调用 API 生成视频并下载到本地，全程不用你自
 
 我直接找到爆火的原版视频，丢给 AI，让它帮我逐帧分析视频的画面和声音，并生成简单直接的提示词。
 
-![](https://pic.yupi.icu/1/image-20260920172821653.png)
+![](/imgs/21604f4f6756cfb4.png)
 
 注意，这段提示词中我用到了 `/grill-me` 技能，AI 如果没充分理解需求，就会主动找我人工确认。关于这个技能的用法，可以阅读本教程经验技巧板块中的《用 grill-me 让 AI 拷问你的需求》。
 
 看看，这是 AI 逐帧分析的画面：
 
-![逐帧分析](https://pic.yupi.icu/1/ai-outfit-original-sheet-6a258812.jpg)
+![逐帧分析](/imgs/bb3d1ad8fb3cc66b.jpg)
 
 AI 帮我拆出来了整条视频最核心的「机关」。比如镜头全程一动不动，人物站起来的时候镜头不跟，只拍到腰部以下，看起来就像真的是电脑桌面壁纸。还有每次换装前都要留一秒钟的空沙发镜头，避免衣服在身上直接变形。
 
-![机位机关四格](https://pic.yupi.icu/1/ai-outfit-my-keyframes-16dfa0a5.jpg)
+![机位机关四格](/imgs/f5ccf1b55f73a343.jpg)
 
 
 ### 2、生成提示词模板并测试
 
 AI 拆解明白之后，帮我生成了一段简洁的提示词模板：
 
-![](https://pic.yupi.icu/1/image-20260920173054153.png)
+![](/imgs/26c8602a6908eb2d.png)
 
 然后我直接把提示词拿到即梦里测试，结果非常顺利，一把就出了满意的效果。
 
-![](https://pic.yupi.icu/1/image-20260920173236362.png)
+![](/imgs/a098191e49a304e9.png)
 
 
 ### 3、封装成技能并开源
 
 测试没问题之后，我就让 AI 把整个工作流封装成了一个可复用的 Skill 技能。从提问流程、提示词模板到 API 调用脚本，全部是 AI 自动生成的。
 
-![](https://pic.yupi.icu/1/image-20260920173339446.png)
+![](/imgs/3de55acda17c95f8.png)
 
 最后我让 AI 帮我把这个技能开源到 GitHub 上，并且自动生成了一个有图有文、甚至有 GIF 动图演示的项目 README 文件。真的爽！
 
-![](https://pic.yupi.icu/1/image-20260920173454398.png)
+![](/imgs/64c114c5bbc08d09.png)
 
 这也得益于现在的 AI 模型 Agent 能力和视觉理解能力越来越强了。整个过程从拆片、写提示词、测试、封装技能到开源发布，全程几乎都是 AI 在干活，我只需要做决策和验收。
 

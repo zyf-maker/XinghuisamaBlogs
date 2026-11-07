@@ -4,7 +4,7 @@ import path from "path";
 
 import { getAllDocs } from "../lib/aiDocs";
 
-const BASE = "https://xinghuisama-blogs-sandy.vercel.app";
+const BASE = process.env.SITE_URL || "https://xinghuisama-blogs-sandy.vercel.app";
 
 function markdownSlugs(dir: string): string[] {
   const full = path.join(process.cwd(), dir);

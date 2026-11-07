@@ -3,21 +3,18 @@ title: "WPS里装上deepseek，简直就是办公神器"
 summary: "不得不说，将DeepSeek-R1接入WPS真的惊呆我了！这意味着什么？简单来说，文档编辑从“手动挡”进化成了“自动挡”！不管是生成内容、优化表达，甚至是逻辑推理分析，AI都能直接帮你搞定，爽到飞起！"
 order: 9
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《WPS里装上deepseek，简直就是办公神器》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 不得不说，将DeepSeek-R1接入WPS真的惊呆我了！这意味着什么？简单来说，文档编辑从“手动挡”进化成了“自动挡”！不管是生成内容、优化表达，甚至是逻辑推理分析，AI都能直接帮你搞定，爽到飞起！
 
 今天就来给大家聊聊，如何在WPS里接入 **DeepSeek-R1**，一步步带你从零配置到实战，让AI真正成为你的文档处理助手。
 
-![img](https://pic4.zhimg.com/v2-e1cdeb2a05c46c9e58d572625828ff0d_1440w.jpg)
+![img](/imgs/3c3b249369b43194.png)
 
 ## **为什么要在WPS里接入DeepSeek-R1？**
 
@@ -39,7 +36,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 可以去官网申请：**[https://www.deepseek.com](https://link.zhihu.com/?target=https%3A//www.deepseek.com)**
 
-![img](https://pic1.zhimg.com/v2-6625a31c5f9a3ca230d2ab288c861a7c_1440w.jpg)
+![img](/imgs/0e95bb39e1f14836.png)
 
 ### **方案二：腾讯云提供的DeepSeek-R1 API Key**
 
@@ -55,18 +52,18 @@ source: "https://github.com/liyupi/ai-guide"
 
 - 打开 **WPS**，随便新建一个文档。
 
-![img](https://pic1.zhimg.com/v2-cf631f098a495ffdc97652252245b2ba_1440w.jpg)
+![img](/imgs/6ba385ccd581a50e.png)
 
 - 点击 **文件** → **选项** → **自定义功能区**。
 - 在右侧的功能区列表中，找到 **“工具”**，勾选它。
 
-![img](https://picx.zhimg.com/v2-033ed49bdcbc159f2e8119ae26b442e5_1440w.jpg)
+![img](/imgs/4cf1eac674df2567.png)
 
 - 点击 **“确定”**，保存设置。
 
 ### **2. 配置信任中心**
 
-![img](https://pic2.zhimg.com/v2-01dce0e341193d040bbf09332ae389e9_1440w.jpg)
+![img](/imgs/2fa607ffc14c0c08.png)
 
 1. 在 WPS 中，点击 **文件** → **选项** → **信任中心**。
 2. 选择 **“信任中心设置”** → **“宏安全性”**。
@@ -76,21 +73,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 - 在 WPS 顶部菜单栏，点击 **工具** → **开发工具** → **切换到VB环境**，然后 **重启WPS**。
 
-![img](https://pica.zhimg.com/v2-5a6465ca1c5a62c416b02717eb4d07e0_1440w.jpg)
+![img](/imgs/dc1e9facf8ab4bc3.png)
 
-![img](https://pic4.zhimg.com/v2-7e60dd67f7e9fc3e5cff268c377379fb_1440w.jpg)
+![img](/imgs/ec7e8301e5ba4482.png)
 
 - 重启后，点击 **VB编辑器**。
 
-![img](https://pic1.zhimg.com/v2-ab5f13cc0586bbe57eec0c23e86859e6_1440w.jpg)
+![img](/imgs/fb12cd505b404650.png)
 
 - 在弹出的 **VB编辑器窗口**，点击 **插入** → **模块**。
 
-![img](https://pic2.zhimg.com/v2-d4c90ca66c85f699d358204495170c45_1440w.jpg)
+![img](/imgs/846f97452bea2b5a.png)
 
 - 复制以下代码到编辑区里，并把 `your_api_key_here` 换成你申请到的API Key：
 
-![img](https://pic2.zhimg.com/v2-bcaf2cf70d14d7ebfa39bbc62f580383_1440w.jpg)
+![img](/imgs/871743a35e3cd663.png)
 
 **保存代码**，关闭 VB 编辑器。
 
@@ -226,15 +223,15 @@ End Sub
 - 回到 WPS 主界面，点击 **文件** → **选项** → **自定义功能区**。
 - 在右侧列表里，**新建一个组**，命名为 **DeepSeek**。
 
-![img](https://pic3.zhimg.com/v2-d15fc50116854bf516e8a9dc8d3c6bd2_1440w.jpg)
+![img](/imgs/7c2e0acd3464ae33.png)
 
 - 在左侧命令列表里，找到 **宏**，然后选中刚刚创建的 **GetAIResponse**。
 
-![img](https://picx.zhimg.com/v2-d19f1d9b11d202aa1a00cfe155b05d95_1440w.jpg)
+![img](/imgs/aec1b9333c4fd9b6.png)
 
 - 点击 **添加**，然后右键重命名为 **生成**。
 
-![img](https://pic3.zhimg.com/v2-7eb4daf84cc1fbccc9e1d082ceaf5b7c_1440w.jpg)
+![img](/imgs/3f31e82488d3d8ac.png)
 
 - 点击 **确定**，保存设置。
 
@@ -246,7 +243,7 @@ End Sub
 - **选中这句话**。
 - 点击刚刚创建的 **生成** 按钮。
 
-![img](https://pica.zhimg.com/v2-c8590788c3ab7a2ba605d395b6e864ca_1440w.jpg)
+![img](/imgs/1a55e26c07e78a09.png)
 
 - **等待几秒**，AI会自动生成一段完整的分析，并直接插入到文档中！
 
@@ -259,7 +256,7 @@ End Sub
 - **点击“文件” → “另存为”**。
 - **在文件类型里选择** “Microsoft Word 带宏的模板文件（*.dotm）”。
 
-![img](https://pica.zhimg.com/v2-7755f8d9dcfa76caade4411060b53104_1440w.jpg)
+![img](/imgs/372932a4d91691a0.png)
 
 - **保存到WPS的模板文件夹**（通常是这个路径）：C:\Users\用户名\AppData\Roaming\kingsoft\wps\startup
 

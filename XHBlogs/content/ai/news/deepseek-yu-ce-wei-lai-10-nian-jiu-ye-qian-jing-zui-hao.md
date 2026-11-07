@@ -3,15 +3,12 @@ title: "DeepSeek预测：未来10年，就业前景最好的10个专业"
 summary: "DeepSeek预测：未来10年，就业前景最好的10个专业，由程序员鱼皮整理。"
 order: 26
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek预测：未来10年，就业前景最好的10个专业》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 以下是DeepSeek基于行业趋势、技术发展及社会需求综合分析得出的 **未来10年就业前景最好的10个专业** 预测：
 
@@ -159,7 +156,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 建议学生以 **“核心硬技能+跨界软实力+持续学习力”** 构建竞争壁垒，同时保持对 **技术伦理和社会需求** 的深度思考。
 
-![图片](https://inews.gtimg.com/news_bt/Okon2ggRhBUSsZxCW2DWDtbHgUGDVphsYZWMPIdMUfSAwAA/641)
+![图片](/imgs/297e657d8a5d0320.webp)
 
 DeepSeek给出的
 

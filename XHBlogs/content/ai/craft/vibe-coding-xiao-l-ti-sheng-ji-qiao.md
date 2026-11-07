@@ -3,15 +3,12 @@ title: "Vibe Coding 效率提升技巧"
 summary: "让你的 AI 开发效率提升 10 倍"
 order: 6
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-10-22"
 readingTime: 18
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 效率提升技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -46,7 +43,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 比如我之前让 AI 生成个图片压缩工具，光文档给我生成一大堆……
 
-![](https://pic.yupi.icu/1/ai%E7%94%9F%E6%88%90%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7.png)
+![](/imgs/e2459bfa1869b26c.png)
 
 要在提示词中明确告诉 AI：只给我核心代码，不要写注释、文档、测试，不要做总结！
 
@@ -65,11 +62,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 比如你要实现一个复杂的功能，不确定哪个方案更好。可以同时让 Claude、GPT 等 AI 各给一个方案：
 
-![](https://pic.yupi.icu/1/image-20251030220104045.png)
+![](/imgs/cbfe44bf09737168.png)
 
 你呢，就坐等这些 AI 赛马，谁先干好用谁的、谁质量高用谁的，能避免在错误的方案上浪费时间。这个方法特别适合不确定哪个技术方案更好时、重要功能需要多重保障时、想学习不同 AI 的思路时。
 
-![](https://pic.yupi.icu/1/image-20251030220120394.png)
+![](/imgs/82f6a971888f234d.png)
 
 即使你不用 Cursor，也可以手动实现类似的效果：把同一个需求分别发给 ChatGPT、Claude、Gemini 等大模型，然后对比它们的答案，选择最好的或综合它们的优点。
 
@@ -77,7 +74,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 并行 Agent 的底层其实依赖 Git WorkTree（工作树）技术。WorkTree 可以让一个仓库同时拥有多个独立的工作目录，每个目录对应不同的分支，让多个 AI 各自在独立的文件夹里干活，互不干扰，开发完再用 Git 合并代码。
 
-![](https://pic.yupi.icu/1/image-20260410143527245.png)
+![](/imgs/f346afc2f83fc8f4.png)
 
 
 ### 多开实例提升效率
@@ -88,7 +85,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 可以在终端中同时运行多个 Claude Code 实例，将标签页编号为 1 ~ 5（或者有意义的标题），通过系统通知来了解哪个 Claude 需要人工输入。这样你可以充分利用等待时间，一个 AI 在思考时，你可以切换到另一个继续工作。
 
-![](https://pic.yupi.icu/1/image-20260109143109753.png)
+![](/imgs/ec81b3cf6faf8497.png)
 
 2）网页端和本地同时进行
 
@@ -126,7 +123,7 @@ AI 对话相关：
 
 更多最新的默认键盘快捷键以 [官方文档](https://cursor.com/cn/docs/configuration/kbd) 为主：
 
-![](https://pic.yupi.icu/1/image-20260104192219087.png)
+![](/imgs/02f4f6602ee14d8f.png)
 
 
 ### VS Code 常用快捷键
@@ -150,7 +147,7 @@ AI 对话相关：
 
 掌握这些快捷键，你的编辑速度会快很多。更多最新的默认键盘快捷键以 [官方文档](https://code.visualstudio.com/docs/reference/default-keybindings) 为主：
 
-![](https://pic.yupi.icu/1/image-20260104192832985.png)
+![](/imgs/50f7fe230cc1e16f.png)
 
 
 ### AI 编程工具的斜杠命令
@@ -169,7 +166,7 @@ Cursor 的 IDE 桌面版主要通过模式切换来操作，CLI 命令行版本�
 
 你还可以在项目的 `.cursor/commands` 目录下创建自定义命令，把常用的提示词保存成命令，需要时直接调用。全局命令放在 `~/.cursor/commands/` 目录下，所有项目都能使用。
 
-![](https://pic.yupi.icu/1/image-20260525210127342.png)
+![](/imgs/65ae4ed60617c6cd.png)
 
 
 #### Claude Code 的常用命令
@@ -183,7 +180,7 @@ Claude Code 的命令系统更加丰富，有 50 多个内置命令，这里我�
 - `/review` 让多个子代理并行审查代码，找 Bug 和逻辑错误
 - `/batch` 并行派出多个子 Agent，各自在独立工作树中处理子任务
 
-![](https://pic.yupi.icu/1/image-20260519171514784.png)
+![](/imgs/fa95fb3be2454f49.png)
 
 这些命令的好处是，你不用每次都写完整的提示词，只需要输入一个简短的命令，AI 就知道你要做什么。
 
@@ -202,7 +199,7 @@ Claude Code 的命令系统更加丰富，有 50 多个内置命令，这里我�
 
 Claude Code 可以自动识别哪些子任务是独立的，然后分派子 Agent 并行处理。每个子 Agent 有自己独立的上下文空间，完成后只把结果摘要返回给主会话，保持主对话的整洁。
 
-![](https://pic.yupi.icu/1/image-20260519183337674.png)
+![](/imgs/e3ba05a1cccec2c7.png)
 
 你不需要手动配置，只要在提示词中暗示任务可以并行，Claude 就会自动派出子 Agent：
 
@@ -222,11 +219,11 @@ Claude 会自动拆分成 5 ~ 30 个独立任务，每个在自己的工作树�
 
 用 `/tasks` 命令可以随时查看当前有哪些子 Agent 在运行、各自的进度如何：
 
-![](https://pic.yupi.icu/1/image-20260519183357190.png)
+![](/imgs/544925a35b2ac165.png)
 
 除了 Claude Code，Cursor 和 Codex 也支持类似的并行 Agent 能力。比如 Cursor 可以用 `/worktree` 让 Agent 在隔离分支中工作，`/best-of-n` 用不同模型各做一遍同一个任务来对比效果；Codex 则通过「工作树」模式让多个 Agent 互不干扰地并行开发。
 
-![](https://pic.yupi.icu/1/1779334724648-9782f94d-4251-4c76-929d-f790a527bc1f.png)
+![](/imgs/c3922a9ad7a8ee3c.png)
 
 
 ## 四、AI 增强工具 - MCP 与 Agent Skills
@@ -240,11 +237,11 @@ MCP（Model Context Protocol 模型上下文协议）是由 Anthropic 推出的�
 
 简单来说，MCP 就像 AI 的 USB 接口。就像 USB 接口让各种设备（键盘、鼠标、U 盘）都能用同一种方式连接电脑一样，MCP 让各种外部工具（文件管理、数据库、搜索引擎等）都能用同一种方式连接 AI，不用为每个工具单独写一套对接代码。
 
-![](https://pic.yupi.icu/1/1746710765234-c974bda8-666e-45b3-adc4-ace97cbb8c0a.png)
+![](/imgs/9f67a0874ce68848.png)
 
 开发者不需要为每个 AI 工具单独开发连接器，只需要按照 MCP 标准开发一次，就能被所有支持 MCP 的 AI 工具使用：
 
-![](https://pic.yupi.icu/1/1746677838632-9278e62b-c850-4d3c-a835-297ccbe2061a.png)
+![](/imgs/49f0922b023f7ccf.png)
 
 MCP 生态已经非常成熟，有上万个公开的 MCP 服务器。这里推荐几个特别能提升 Vibe Coding 效率的：
 
@@ -266,11 +263,11 @@ MCP 生态已经非常成熟，有上万个公开的 MCP 服务器。这里推�
 
 Agent Skills 是 Anthropic 推出的一套开放标准，可以把复杂的工作流程封装成一个「技能」，AI 遇到匹配的任务时自动调用，不用你每次都写一大堆提示词。
 
-![](https://pic.yupi.icu/1/1769306811193-2ee3acbc-5e36-46c2-8d08-b2682494fb56.png)
+![](/imgs/f0f1a9289ea4d3de.png)
 
 Skills 的核心优势是 **按需加载**，只有当任务匹配时才会加载到上下文中，平时不占用空间。这比把所有规则都塞进一个 AGENTS.md 文件要高效得多。
 
-![](https://pic.yupi.icu/1/07_Skills%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD_compressed_v1.png)
+![](/imgs/744ff37a92e5538f.png)
 
 目前 Claude Code、Cursor、Codex 都支持统一的 Agent Skills 格式。每个技能就是一个文件夹，核心是一个 `SKILL.md` 描述文件：
 
@@ -291,7 +288,7 @@ Skills 存放位置：
 
 比如你安装了一个 `frontend-design` 技能后，以后让 AI 做网站，它会自动应用这个技能来生成更有设计感的页面，告别千篇一律的蓝紫渐变色：
 
-![](https://pic.yupi.icu/1/1769601745340-d621e29c-76f7-4a8f-af01-7271d88c5272-20260128202014218.png)
+![](/imgs/d975a094d7621f5e.png)
 
 
 ## 五、AI Agent 自动化
@@ -315,7 +312,7 @@ Skills 存放位置：
 
 设置 goal 之后，每轮结束会有一个轻量评估模型检查条件是否满足，没满足就自动开始下一轮，满足了才停下来。
 
-![](https://pic.yupi.icu/1/image-20260519191842661.png)
+![](/imgs/b0444006d740a4ce.png)
 
 特别适合的场景：
 - 模块迁移：把旧 API 调用全部迁移到新版本，直到编译通过
@@ -346,11 +343,11 @@ Skills 存放位置：
 并根据图片内容自动完善图片的中文名称
 ```
 
-![](https://pic.yupi.icu/1/1779342459042-ee4814b3-80d9-43a8-9e66-349c75755193.png)
+![](/imgs/da5f2f966f8d0f81.png)
 
 AI 会自动根据图片内容给文件起一个能看懂的名字，以后再也不用对着一堆乱七八糟的文件名抓瞎了：
 
-![](https://pic.yupi.icu/1/1779328685443-8a79452f-bca6-43a7-aa29-c498d28c9e2c.png)
+![](/imgs/59714f7c7111a99b.png)
 
 你还可以结合 Skills 和插件一起用，比如每周自动生成周报 PPT、每日整理学习笔记并同步到 Notion 等等。
 
@@ -363,7 +360,7 @@ AI 会自动根据图片内容给文件起一个能看懂的名字，以后再�
 /loop 5m 检查项目前后端的部署状态
 ```
 
-![](https://pic.yupi.icu/1/image-20260519184353594.png)
+![](/imgs/df8f9a697b2a2592.png)
 
 适合用在等部署完成、等 CI 跑完、定期检查日志有没有异常之类的场景。
 
@@ -425,7 +422,7 @@ Git 是目前最主流的分布式版本控制系统（Version Control System）
 
 GitHub Actions 是 GitHub 提供的自动化工作流工具，可以在代码提交、Pull Request 等事件触发时自动执行任务。比如每次推送代码时自动运行测试、自动部署到服务器、自动发布新版本等，这样就不用每次都手动操作了。
 
-![利用 GitHub Actions 自动部署网站](https://pic.yupi.icu/1/1774937463974-f0f1cf86-da67-40ee-8cf9-abee42b66807.png)
+![利用 GitHub Actions 自动部署网站](/imgs/25ab974b6020598a.png)
 
 配置 GitHub Actions 很简单，只需要在项目的 `.github/workflows` 目录下创建一个 YAML 配置文件，编写 GitHub Actions 自动化 CI/CD（持续集成/持续部署）的脚本代码：
 
@@ -458,7 +455,7 @@ jobs:
 
 GitHub Actions 还有更多玩法，比如鱼皮开源的 [AI 知识库项目](https://github.com/liyupi/ai-guide) 利用它自动把文章的修改同步到网站。
 
-![](https://pic.yupi.icu/1/image-20260104221153167.png)
+![](/imgs/322e9ce3d9f25e18.png)
 
 
 ### 适合所有人的效率工作流
@@ -467,7 +464,7 @@ GitHub Actions 还有更多玩法，比如鱼皮开源的 [AI 知识库项目](h
 
 1）使用零代码平台：如果你不想处理这些复杂的配置，可以直接使用 Lovable 等零代码平台。它们会自动处理构建、测试、部署等流程，你只需要专注于功能开发。
 
-![](https://pic.yupi.icu/1/lovable.png)
+![](/imgs/81f6ae6065cb8a5c.png)
 
 2）利用 AI 生成配置：如果需要配置文件，直接让 AI 帮你生成。
 
@@ -475,11 +472,11 @@ GitHub Actions 还有更多玩法，比如鱼皮开源的 [AI 知识库项目](h
 
 AI 会给你完整的配置，你复制粘贴就行。
 
-![](https://pic.yupi.icu/1/1774940470510-d1d080c2-1b43-40f8-a4c8-da6b99baceba.png)
+![](/imgs/c6201b8a7fccfa3f.png)
 
 3）使用一键部署：很多平台（比如 Vercel、Netlify、EdgeOne Pages）支持一键部署项目，连接 GitHub 仓库后，每次推送代码就会自动触发部署，不需要额外配置。甚至还可以利用 MCP 让 AI 帮你直接完成部署，连部署平台都不用自己登录。
 
-![](https://pic.yupi.icu/1/1752212029384-16cfba8f-babb-49c0-9d41-3b76ee78eecf.png)
+![](/imgs/e91ab1d66052640f.png)
 
 
 ## 六、代码复用和模块化
@@ -567,7 +564,7 @@ export async function copyToClipboard(text: string): Promise<boolean> {
 
 1）按 `Cmd/Ctrl + Shift + P` 打开命令面板，输入 "Snippets"，选择 "Configure Snippets"：
 
-![](https://pic.yupi.icu/1/image-20260104214112119.png)
+![](/imgs/64ea59479ad2374d.png)
 
 2）然后选择对应的语言（如 typescriptreact.json），就可以添加自定义片段了。
 
@@ -595,11 +592,11 @@ export async function copyToClipboard(text: string): Promise<boolean> {
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260104214219382.png)
+![](/imgs/1b04a2ef3e01b92f.png)
 
 配置完成后，输入 `rfc` 再按 Tab，就能快速生成组件模板。
 
-![](https://pic.yupi.icu/1/image-20260104214331581.png)
+![](/imgs/4310234a330c01ad.png)
 
 
 ### 建立代码库
@@ -723,15 +720,15 @@ OPENAI_API_KEY=
 
 可以把你的模板项目放在 GitHub 上，设置为 `Template repository` 模板仓库。
 
-![](https://pic.yupi.icu/1/image-20260104215020646.png)
+![](/imgs/fc5d346c7eff6ed0.png)
 
 这样创建新项目时，点击 `Use this template` 就能快速复刻项目模板了：
 
-![](https://pic.yupi.icu/1/image-20260104215101657.png)
+![](/imgs/6a7525dc0823ec86.png)
 
 除了自己创建模板，你还可以使用别人的模板。在 GitHub 上搜索 "react template"、"nextjs starter" 等关键词，能找到很多优秀的模板项目。优先选择 Star 数多、更新活跃的项目。
 
-![](https://pic.yupi.icu/1/image-20260104215329685.png)
+![](/imgs/d2c41a9cbbbf784f.png)
 
 然后点击 "Use this template" 就能基于它创建自己的项目。这样能站在巨人的肩膀上，节省大量配置时间。
 

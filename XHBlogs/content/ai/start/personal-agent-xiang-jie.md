@@ -3,15 +3,12 @@ title: "Personal Agent 详解"
 summary: "搞懂 Personal Agent 是什么、和其他 AI 产品有什么区别，再以 Grok Bot 为例上手体验"
 order: 105
 level: "入门"
-tags: ["概念大全", "转载", "AI"]
+tags: ["概念大全"]
 updated: "2026-10-22"
 readingTime: 15
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Personal Agent 详解》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -21,13 +18,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 到了 10 月，连民间开发者都给 DeepSeek 做了一个 DeepSeek Bot 插件。
 
-![](https://pic.yupi.icu/1/deepseek-bot.png)
+![](/imgs/d82b548d1d4f39fc.png)
 
 短短两个月，几家 AI 巨头扎堆发布了同一类产品，而且宣传语基本都是雷同的，无非就是什么：有自己的电脑、24 小时在线、像同事一样给它派活。
 
 它们有一个共同的名字，叫 **Personal Agent**。
 
-![](https://pic.yupi.icu/1/image-20261012132748630.png)
+![](/imgs/d40c98f0c46d4616.png)
 
 我的第一反应是：蛤？又炒新概念？
 
@@ -37,7 +34,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 怎么突然大家都在做？
 
-![](https://pic.yupi.icu/1/image-20261012132905197.png)
+![](/imgs/b85a93207a1be0ff.png)
 
 如果你也有类似的问题，请接着看下去。
 
@@ -66,7 +63,7 @@ Personal Agent 就是这样一个 AI 助理。
 >
 > 我能连接你的应用，比如邮箱和日历，像你一样使用它们。
 
-![Grok Bot 的自我介绍](https://pic.yupi.icu/1/personalagent-03-connect-gmail-18335b66.png)
+![Grok Bot 的自我介绍](/imgs/d3989215664615a8.png)
 
 一个合格的 Personal Agent 通常有 4 个特点：
 
@@ -78,7 +75,7 @@ Personal Agent 就是这样一个 AI 助理。
 
 4）一直在线。你可以给它安排定时任务，你关掉电脑它也照样干活，有了结果会主动来找你。
 
-![Personal Agent 的 4 个特点](https://pic.yupi.icu/1/personalagent-ai-01-four-features-84552259.jpg)
+![Personal Agent 的 4 个特点](/imgs/9bbc99a9c3d48ead.jpg)
 
 你负责睡觉，它负责干活，这大概就是打工人梦想中的生活吧。
 
@@ -89,7 +86,7 @@ Personal Agent 就是这样一个 AI 助理。
 
 我用「招人」来打个比方，你一看就懂了。
 
-![三类 AI 产品的区别](https://pic.yupi.icu/1/personalagent-ai-02-three-levels-b605147c.jpg)
+![三类 AI 产品的区别](/imgs/ae8ed3a1df8cd833.jpg)
 
 
 ### 聊天 AI - 只动嘴的顾问
@@ -98,7 +95,7 @@ Personal Agent 就是这样一个 AI 助理。
 
 比如我让 ChatGPT 帮忙给客户回一封项目延期的邮件，它很快就写好了一份措辞得体的模板。但复制内容、打开邮箱、填好收件人、点击发送，这些事还是得我自己来。
 
-![聊天 AI 只负责写，发送还得自己来](https://pic.yupi.icu/1/personalagent-28-chatgpt-chat-8ad184e5.png)
+![聊天 AI 只负责写，发送还得自己来](/imgs/4a068333c04c143b.png)
 
 而且大多数时候都是你先开口，你不找它，它也不会主动找你。
 
@@ -109,7 +106,7 @@ Personal Agent 就是这样一个 AI 助理。
 
 你给它布置一个任务，它会自己拆解步骤、读写文件、执行命令，最后把结果交给你。比如腾讯的 WorkBuddy，可以在你授权的目录里直接读写本地文件，帮你整理资料、生成文档、表格和 PPT。
 
-![WorkBuddy 读取本地文件夹里的数据，生成分析报告（图源：WorkBuddy 官网）](https://pic.yupi.icu/1/personalagent-29-workbuddy-local-files-abeff388.png)
+![WorkBuddy 读取本地文件夹里的数据，生成分析报告（图源：WorkBuddy 官网）](/imgs/e231738e387aef0a.png)
 
 不过它更像一个用你的电脑干活的实习生。你交代一个任务，它干完这一单就结束了，下次找它还得重新交代，而且干活期间你得一直开着电脑。
 
@@ -128,13 +125,13 @@ Personal Agent 在这个基础上又往前走了一步，它更像一个长期�
 
 拿 Meta 的 Muse 来说，它运行在一台专属的云端安全虚拟机里，你可以直接在 Muse App 里给它发消息派活。它能在后台同时推进好几件事，头像下方会实时显示它正在忙什么，还会把你的长期目标拆成计划，一项项跟进。
 
-![Muse 的任务动态和目标追踪（图源：Meta）](https://pic.yupi.icu/1/personalagent-30-muse-ui-fc29f6fe.png)
+![Muse 的任务动态和目标追踪（图源：Meta）](/imgs/45018248652bdc27.png)
 
 OpenAI 的 Dots 也是一样的思路。它由 GPT-6 Astra 模型驱动，同样有自己的云电脑，还能通过插件连接 4000 多个应用。
 
 官方演示里有个内容创作者的例子，新的访谈稿一到，Dot 就挑好了适合剪成短视频的片段，准备了节目笔记，还起草了社交媒体文案，全部等你确认之后再发布。
 
-![Dots 帮创作者准备访谈内容（图源：OpenAI）](https://pic.yupi.icu/1/personalagent-31-dots-ui-45b1149f.jpg)
+![Dots 帮创作者准备访谈内容（图源：OpenAI）](/imgs/2be2e398f0325312.jpg)
 
 **桌面端 Agent 是你拿来用的工具，Personal Agent 是替你干活的人。** 这就是两者最本质的区别。
 
@@ -151,7 +148,7 @@ OpenClaw 是一个开源的个人 AI 助理，你可以把它部署在自己的�
 
 路透社的报道还提到，Meta 的 Muse 就是参考 OpenClaw 打造的。
 
-![OpenClaw](https://pic.yupi.icu/1/1773231001520-f08121d8-de2c-4586-9af2-42cb0c728961-20260311204057246.png)
+![OpenClaw](/imgs/57ca7aff30274340.png)
 
 Hermes Agent 则是 Nous Research 开源的「自我进化」智能体，最大的特点是能从完成过的任务里自动总结出技能，下次遇到类似的活儿直接复用，越用越聪明。
 
@@ -163,7 +160,7 @@ OpenClaw 和 Hermes Agent 就像毛坯房，空间大、很自由，但你得自
 
 而且它们直接跑在你的电脑或服务器上，权限一旦给大了就容易翻车。之前就有 Meta 的 AI 安全总监让 OpenClaw 帮忙处理工作邮箱，结果它把 200 多封邮件全删了，她喊停都没用，最后只能冲回电脑前强行终止。
 
-![OpenClaw 删邮件翻车](https://pic.yupi.icu/1/1773226898839-daf98185-d4e7-48dd-bd34-5e7082b72c09-20260311204057389.png)
+![OpenClaw 删邮件翻车](/imgs/47fdbd87e71837c7.png)
 
 专门研究 AI 安全的人都被 AI 坑了，换成我们普通人，恐怕早就裂开了。。。
 
@@ -171,7 +168,7 @@ Grok Bot、Muse、Dots 这些大厂产品就像精装房，拎包入住。下载
 
 **代价就是你的数据和记忆都放在厂商的云上，模型也由厂商说了算。**
 
-![](https://pic.yupi.icu/1/personalagent-ai-03-rough-vs-furnished-31c6ef42.jpg)
+![](/imgs/8e036c23fb194d0d.jpg)
 
 再打个更接地气的比方，OpenClaw 相当于买只活龙虾回家自己养、自己做，Grok Bot 这些就相当于直接下馆子，点一份厨师做好的龙虾。
 
@@ -179,7 +176,7 @@ Grok Bot、Muse、Dots 这些大厂产品就像精装房，拎包入住。下载
 
 DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Harness（DeepSeek 官方的桌面端 Agent 工具）做的一个开源插件。在 DeepSeek Harness 的插件页面里添加一下就能装好，然后就可以创建多个有名字、有人设的 Bot，接入飞书、微信等聊天软件，背后用什么模型也能随便换。
 
-![DeepSeek Bot 安装文档](https://pic.yupi.icu/1/personalagent-26-deepseekbot-28af3921.png)
+![DeepSeek Bot 安装文档](/imgs/2032ba353ae02eac.png)
 
 它的记忆存在用 Git 管理的 Markdown 文件里，Bot 每次记住了什么、改了什么都能查得一清二楚。不过它运行在你自己的电脑或服务器上，想让它 24 小时在线，还得自己准备一台不关机的机器。
 
@@ -196,7 +193,7 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 **毕竟一个助理跟了你半年，谁还舍得换呢？**
 
-![争夺你的数字分身](https://pic.yupi.icu/1/personalagent-ai-05-super-entry-d045bfac.jpg)
+![争夺你的数字分身](/imgs/9a6d122616d1e02c.jpg)
 
 
 ## Grok Bot 上手体验
@@ -212,7 +209,7 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 下载安装后打开 Grok Bot，就能看到一段动画指引。第一句话就是「Grok Bot 有自己的电脑，工作方式和你一样」，一上来就把核心卖点亮出来了。
 
-![](https://pic.yupi.icu/1/personalagent-01-onboarding-b5ccaf33.png)
+![](/imgs/a6a3d906b6f6507d.png)
 
 走完指引，Grok Bot 会立刻帮你创建好第一个 Bot，然后跟你打招呼，问你想怎么称呼它。
 
@@ -220,11 +217,11 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 我给它取名叫「鱼皮的狗」，它也很爽快地接受了这个名字。。。
 
-![](https://pic.yupi.icu/1/personalagent-02-name-bot-5f10dd12.png)
+![](/imgs/88530577b5f85700.png)
 
 接着它会做个自我介绍，然后引导你连接邮箱，Gmail 和 Outlook 都支持。点一下授权按钮，在浏览器里登录邮箱账号，它就能帮你读邮件、写草稿了。
 
-![引导连接邮箱](https://pic.yupi.icu/1/personalagent-32-gmail-connect-65f521b0.png)
+![引导连接邮箱](/imgs/6ed3daff3ce9f7a0.png)
 
 它还特意强调了「没有你的同意，什么都不会发出去」，敏感操作都会先找你确认。
 
@@ -233,7 +230,7 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 点击左下角的「连接应用」，可以看到 Grok Bot 内置了大量的应用连接，并且按照通信、设计、代码、数据等类别整理好了。
 
-![应用市场](https://pic.yupi.icu/1/personalagent-04-marketplace-45a1fdf6.png)
+![应用市场](/imgs/9a8a3a5c5824d29d.png)
 
 常用的 Gmail、Outlook、Google 日历、Slack、X 都有，设计类有 Figma、Canva，开发类有 Vercel、Cloudflare、Supabase、Sentry 等等。
 
@@ -241,13 +238,13 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 我先把 X 连上了，后面追热点和复盘数据都要用到它。
 
-![连接 X](https://pic.yupi.icu/1/personalagent-05-x-auth-5e0a44e7.png)
+![连接 X](/imgs/985852dcac858e4b.png)
 
 另外我还看到一个「邮箱」连接，可以给 Bot 分配一个 Grok Bot 专属域名下的邮箱地址，相当于让 AI 助理有了一个自己的工作邮箱。用它来接收注册验证码、收据和新闻简报都很合适，收到邮件后还能通过例行任务唤醒 Bot 去处理。
 
 我已经给自己抢到了 yupi 的邮箱前缀，好名字先到先得，大家抓紧去抢注呀！
 
-![](https://pic.yupi.icu/1/image-20261012135541399.png)
+![](/imgs/c5bb5c8c5142d8f5.png)
 
 
 ### 3、用 X 追热点和复盘数据
@@ -256,13 +253,13 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 它上来就问我最想让它先帮忙做哪类事，给了写代码、刷 X 追技术热点、内容创作、日常杂事这几个选项。
 
-![新建 Bot](https://pic.yupi.icu/1/personalagent-06-new-bot-fbe422a3.png)
+![新建 Bot](/imgs/1cbab83b63beaed6.png)
 
 我选了刷 X 追热点，方向选 AI 和大模型。
 
 没过多久，它就整理出了 X 上过去一天 AI 圈讨论最多的几件事，每条后面都附上了原帖链接。
 
-![X 热点简报](https://pic.yupi.icu/1/personalagent-07-x-hot-42f40e7d.png)
+![X 热点简报](/imgs/01356722df25e52f.png)
 
 紧接着它问我，要不要每天定时发一份这样的简报。我选了每天早上 9 点，它就直接创建了一个「每日 AI 简报」的例行任务。
 
@@ -270,7 +267,7 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 接下来，我让它帮我复盘一下过去 3 天的发帖数据。
 
-![复盘发帖数据](https://pic.yupi.icu/1/personalagent-08-x-review-6a570795.png)
+![复盘发帖数据](/imgs/9922eb5b76c9e253.png)
 
 它很快统计出我过去 3 天发了 28 条主帖，总浏览量约 12.7 万，还挑出了表现最好的 5 条和表现偏弱的几条，最后给出了几条观察。
 
@@ -278,7 +275,7 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 好家伙，这比我自己翻后台数据看得还透彻，AI 太适合用来分析数据了！
 
-![](https://pic.yupi.icu/1/image-20261012135941086.png)
+![](/imgs/1764e71018bd4b9c.png)
 
 复盘完之后，它又问我要不要每周一自动复盘一次上周的数据？
 
@@ -286,27 +283,27 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 点开 Bot 的详情页，可以看到它名下已经有 2 个例行任务了，分别是工作日早上 9:04 的 AI 简报和每周一早上 9:05 的发帖复盘。
 
-![例行任务](https://pic.yupi.icu/1/personalagent-09-routines-fca93a65.png)
+![例行任务](/imgs/495726a76c8d3821.png)
 
 我顺手给这个 Bot 改名叫「X 助手」，然后又试了试它的创作能力。
 
 我让它分析我的 X 主页，生成一张最符合我个人特点的照片。它根据我发过的内容画了一张「鱼皮的工作台」，桌上有跑着 AI 编程 Agent 的笔记本、录视频用的补光灯和麦克风、记满选题的本子，甚至还摆了一只小鱼公仔当吉祥物，细节拉满。
 
-![生成工作台图片](https://pic.yupi.icu/1/personalagent-11-gen-image-eba5daec.png)
+![生成工作台图片](/imgs/a3d975ab5198261e.png)
 
 不过当我要求它生成一张有我本人形象的写实照片时，它明确拒绝了。哪怕我说主页上有自己的真实照片，它也坚持不生成真实人物的照片，建议我用自己的照片去合成。这个安全边界守得还挺严的。
 
-![拒绝生成真人照片](https://pic.yupi.icu/1/personalagent-12-refuse-real-photo-9cfd5767.png)
+![拒绝生成真人照片](/imgs/795b6bf7cdef789d.png)
 
 最后我又给它出了个难题，让它根据我最新发布的 20 个帖子，生成一条热点速览视频。
 
 几分钟后，它真的交付了一条 60 多秒的竖屏视频。不过效果挺一般的，就是每页长得都一样的 PPT。
 
-![热点速览视频](https://pic.yupi.icu/1/personalagent-14-video-play-09f2cb6e.png)
+![热点速览视频](/imgs/0732447e1a22129f.png)
 
 而且它原本说要带中文配音，结果中文语音服务连接失败了，最后交付的是无声版本。
 
-![视频交付说明](https://pic.yupi.icu/1/personalagent-13-video-done-bee59f0f.png)
+![视频交付说明](/imgs/3e642ceffefd62a5.png)
 
 
 ### 4、Bot 的云电脑
@@ -315,11 +312,11 @@ DeepSeek Bot 并非 DeepSeek 官方出品，它是社区开发者给 DeepSeek Ha
 
 在 Bot 详情页切换到「电脑」标签，就能打开这台云电脑。点开后会先显示「正在唤醒」，稍等十几秒就能进入桌面。
 
-![切换到「电脑」标签，唤醒云电脑](https://pic.yupi.icu/1/personalagent-33-cloud-waking-065f05ae.png)
+![切换到「电脑」标签，唤醒云电脑](/imgs/b4a39c9f87b751bb.png)
 
 进入桌面后，你可以看到 Chrome 浏览器、文件管理器和终端，这些就是 Grok Bot 给 AI 准备的基础工作环境。
 
-![Bot 的云电脑](https://pic.yupi.icu/1/personalagent-10-cloud-computer-cfda38b7.png)
+![Bot 的云电脑](/imgs/f6ac7b2d6a8c5f14.png)
 
 Bot 可以用浏览器打开网页、登录网站，用终端执行命令、跑脚本，用文件系统保存资料和成果。哪怕是没有提供 API 和 MCP 的网站，它也能像人一样一步步点击操作。
 
@@ -336,19 +333,19 @@ Bot 可以用浏览器打开网页、登录网站，用终端执行命令、跑�
 
 于是我新建了一个叫「每日热点」的 Bot。它先问我想重点盯哪类热点，我把 AI 和编程圈、科技互联网、全网综合热搜、X 上的热门讨论全都选上了，推送时间定在每天早上 9 点。
 
-![每日热点 Bot](https://pic.yupi.icu/1/personalagent-15-daily-hot-ask-a4d5bc4f.png)
+![每日热点 Bot](/imgs/e0135d792e325dd4.png)
 
 跟前面一样，它立刻创建好了例行任务，还问我要不要先看看今天的热点。
 
 我说「想看」，几分钟后，一份按板块整理好的热点简报就发过来了，每条都附带了信息来源。
 
-![每日热点简报](https://pic.yupi.icu/1/personalagent-17-daily-hot-brief-78c01075.png)
+![每日热点简报](/imgs/ce5d510991da8dbf.png)
 
 在聊天窗口里看长内容还是不太方便，于是我又让它整理成一个 HTML 网页。
 
 它很快生成了一个网页文件，可以直接在 Grok Bot 里预览，在手机上看也没问题。
 
-![热点网页](https://pic.yupi.icu/1/personalagent-18-daily-hot-html-ea278343.png)
+![热点网页](/imgs/3cfa0b462cde2419.png)
 
 到这一步已经挺好用了，但还不是我想要的效果。
 
@@ -360,27 +357,27 @@ Bot 可以用浏览器打开网页、登录网站，用终端执行命令、跑�
 
 这时 Grok Bot 弹出了一个权限确认，询问是否允许 Bot 在我的本地电脑上运行命令：
 
-![本地命令权限确认](https://pic.yupi.icu/1/personalagent-19-local-permission-478e255e.png)
+![本地命令权限确认](/imgs/42056d598a57a0cd.png)
 
 Grok Bot 的云电脑和你面前的这台电脑是分开的，只有你开启权限并同意之后，Bot 才能在你的电脑上执行命令。这个权限在设置里也能随时修改，而且即使开启了，自动审核也会先检查所有操作。
 
-![本地电脑权限设置](https://pic.yupi.icu/1/personalagent-23-computer-settings-5f44b301.png)
+![本地电脑权限设置](/imgs/f80678618388640f.png)
 
 授权之后，它先把选题获取器的脚本和规则文档复制到了云电脑上，然后参照我的抓取脚本和选题标准，重新设计了每日热点的来源和筛选方式。
 
 大概等了 10 分钟，新版每日热点就做好了。
 
-![新版每日热点交付](https://pic.yupi.icu/1/personalagent-20-local-done-13461cb1.png)
+![新版每日热点交付](/imgs/bba2c6d1466aaf89.png)
 
 这一版用的是我那套抓取脚本，从 14 个数据源一共抓到 347 条内容，再按我的选题评估标准和受众画像逐条打分。
 
 网页开头是今日推荐选题 TOP 5，每条都标注了值得做、可考虑或者仅了解，还给出了一句话的创作角度，非常 nice~
 
-![新版每日热点网页](https://pic.yupi.icu/1/personalagent-21-daily-hot-v2-35b9a065.png)
+![新版每日热点网页](/imgs/e7b95dc08cf683b3.png)
 
 从现在起，我的选题工作流可以在云端 24 小时运行。就算我电脑关机、出门旅游，每天早上 9 点也能准时收到一份按我的标准筛选好的选题简报。
 
-![本地工作流搬上云](https://pic.yupi.icu/1/personalagent-ai-06-local-to-cloud-afeba296.jpg)
+![本地工作流搬上云](/imgs/969a094e97b1a811.jpg)
 
 之前我带大家做过一个 AI 热点监控工具的实战项目（可以阅读本教程项目实战板块「AI 实用工具」分类中的《GitHub Copilot - AI 热点监控工具项目实战》），从数据抓取、AI 分析到消息推送，要写不少代码。
 
@@ -397,7 +394,7 @@ Grok Bot 背后用的不只是自家的 Grok 模型。2026 年 10 月 7 日，�
 
 要知道，2026 年 2 月 Anthropic 宣布融资的时候，马斯克还在 X 上公开骂它「misanthropic and evil」（反人类又邪恶）。这才过了 8 个月，就为了让产品好用，把人家的模型请进了自家产品，真香定律虽迟但到啊。
 
-![](https://pic.yupi.icu/1/image-20261012140834030.png)
+![](/imgs/8676c587e5511158.png)
 
 不过 Grok Bot 没有提供模型选择器，每个任务用哪个模型由官方自动决定。
 
@@ -407,7 +404,7 @@ Grok Bot 背后用的不只是自家的 Grok 模型。2026 年 10 月 7 日，�
 
 我前面做了那么多事，又是追热点又是复盘，还生成了图片和视频、搭了一套每日热点，打开设置一看，每周额度才用掉了 1%。
 
-![用量与账单](https://pic.yupi.icu/1/personalagent-22-usage-2e3ce72f.png)
+![用量与账单](/imgs/de0842bce6aa50d3.png)
 
 不过我订阅的是 Cursor Ultra，送的额度会多一点。
 
@@ -415,7 +412,7 @@ Grok Bot 背后用的不只是自家的 Grok 模型。2026 年 10 月 7 日，�
 
 而且 Grok Bot 还能直接调用 Cursor 的云端 Agent 去写代码。官方教程里就演示过，让 Bot 先从各个渠道收集需求、整理好提示词，再交给 Cursor 的云端 Agent 去开发，这样两边的优势都用上了。
 
-![Grok Bot 启动 Cursor 云端 Agent 开发 Demo（图源：Grok Bot 官方教程）](https://pic.yupi.icu/1/personalagent-34-grokbot-cursor-agent-5eb7c81e.jpg)
+![Grok Bot 启动 Cursor 云端 Agent 开发 Demo（图源：Grok Bot 官方教程）](/imgs/2bb6fc988e138195.jpg)
 
 
 ## 我的使用感受
@@ -447,6 +444,6 @@ Personal Agent 则把这件事反了过来。你不用每次都去找它，它�
 
 那就别用。
 
-![](https://pic.yupi.icu/1/015.webp)
+![](/imgs/9c5d3f9f5ba2d084.webp)
 
 想了解更多相关概念，比如 Background Agent、Hermes Agent、OpenClaw，可以翻翻本板块中的《Vibe Coding 概念大全》。

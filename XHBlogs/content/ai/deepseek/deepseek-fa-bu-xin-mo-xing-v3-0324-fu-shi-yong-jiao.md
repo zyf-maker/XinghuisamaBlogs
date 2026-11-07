@@ -3,28 +3,25 @@ title: "DeepSeek 发布新模型 V3-0324，附使用教程"
 summary: "鱼皮的免费 AI 知识库：https://ai.codefather.cn"
 order: 10
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 发布新模型 V3-0324，附使用教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 昨天深夜，DeepSeek 突然发布新模型！
 
 没有预告，没有跑分，直接在 Hugging Face 上发布了 V3 模型更新版本——DeepSeek V3-0324，而且又是开源的。
 
-![image-20250325142041956](https://pic.yupi.icu/yuyi/image-20250325142041956.png)
+![image-20250325142041956](/imgs/6debf068143d4a8e.png)
 
 据了解，这次更新后的 V3 不仅延续了之前在性能和成本效益上的卓越表现，还在复杂提示处理、编程能力以及数学推理方面有不错的表现。
 
 尤其是在编码能力这一块，X 上有一名叫 Xeophon 的 AI 研究员称：“**它现已超越（Claude）Sonnet 3.5**，是一个最佳的非推理模型。”
 
 
-![image-20250325143245841](https://pic.yupi.icu/yuyi/image-20250325143245841.png)
+![image-20250325143245841](/imgs/99f380929ac6907e.png)
 
 ## 体验方式
 
@@ -34,36 +31,36 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 官网地址：https://chat.deepseek.com
 
-![image-20250325143144328](https://pic.yupi.icu/yuyi/image-20250325143144328.png)
+![image-20250325143144328](/imgs/2fc3d0cf26222639.png)
 
 此外，第三方平台 OpenRouter 也火速提供了最新的 DeepSeek-V3-0324 模型支持。大家可以选择用 OpenRouter+ChatWise 进行体验。
 
 **第一步**，登陆 OpenRouter 官网（https://openrouter.ai），选择 Deepseek-V3 的新模型。
 
-![image-20250325143957243](https://pic.yupi.icu/yuyi/image-20250325143957243.png)
+![image-20250325143957243](/imgs/4bdcab6f253d89d3.png)
 
 **第二步**，进去之后根据图片提示，选择创建 API。
 
-![image-20250325144644023](https://pic.yupi.icu/yuyi/image-20250325144644023.png)
+![image-20250325144644023](/imgs/69d058d1a2d80cde.png)
 
-![image-20250325144943681](https://pic.yupi.icu/yuyi/image-20250325144943681.png)
+![image-20250325144943681](/imgs/15da54754c4dac7b.png)
 
 **第三步**，自定义命名，完成  API 创建。
 
-![image-20250325145143444](https://pic.yupi.icu/yuyi/image-20250325145143444.png)
+![image-20250325145143444](/imgs/1d739132e46b48a7.png)
 
 **第四步**，将你创建好的 Key 复制下来。
 
-![image-20250325145234335](https://pic.yupi.icu/yuyi/image-20250325145234335.png)
+![image-20250325145234335](/imgs/94fb76a8d0578b90.png)
 
 **第五步**，前往 ChatWise 官网（https://chatwise.app）下载并安装应用
 
-![image-20250325145409406](https://pic.yupi.icu/yuyi/image-20250325145409406.png)
+![image-20250325145409406](/imgs/c9a402186a28c8bd.png)
 
 **第六步**，点击左下角“设置”，找到提供商里的 OpenRouter，将刚刚复制的内容粘贴过来。
 
-![image-20250325145522389](https://pic.yupi.icu/yuyi/image-20250325145522389.png)
+![image-20250325145522389](/imgs/d878c7eaf6cded70.png)
 
 最后，回到主页，点击“选择模型”，使用 DeeSeek-V3-0324 即可开始体验啦！目前是完全免费的。
 
-![image-20250325145634246](https://pic.yupi.icu/yuyi/image-20250325145634246.png)
+![image-20250325145634246](/imgs/798d20b62402c875.png)

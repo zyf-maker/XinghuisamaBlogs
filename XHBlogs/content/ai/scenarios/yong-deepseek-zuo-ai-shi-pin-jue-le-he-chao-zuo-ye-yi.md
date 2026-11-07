@@ -3,21 +3,18 @@ title: "用 deepseek 做 AI 视频，绝了，和抄作业一样简单！"
 summary: "2025 既是蛇年，又是国内 AI 全面崛起的元年。"
 order: 19
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《用 deepseek 做 AI 视频，绝了，和抄作业一样简单！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 2025 既是蛇年，又是国内 AI 全面崛起的元年。
 
 今年春节大家都被 deepseek 刷屏了，这个突然跳出来的黑马，不仅让国人大吃一惊，还把美国搞“地震”了。什么英伟达、Meta、OpenAI，此刻那是如临大敌、如坐针毡、如芒在背、如鲠在喉...
 
-![img](https://pic.yupi.icu/yuyi/1739501873622-c21924f9-e530-4c9b-961d-9900e10e575b.webp)
+![img](/imgs/dc8c79157d7d2992.webp)
 
 更让我们舒畅的是，deepseek 竟然限制了除 86 开头的手机号之外的注册...要知道之前只有别人限制我们啊，这下可真是提气！
 
@@ -51,7 +48,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 Deepseek 直接生成了一个表格，旁白、字幕都有了
 
-![img](https://pic.yupi.icu/yuyi/1739501873598-cf144997-c328-45f5-9e26-c1f639860f09.webp)
+![img](/imgs/d9b40ec57f3efe09.webp)
 
 其中画面描述部分阿杰认为太简单了，于是又提了一个要求
 
@@ -59,33 +56,33 @@ Deepseek 直接生成了一个表格，旁白、字幕都有了
 
 不得不说 deepseek 的理解力太强了，它的回复没有废话，直接生成 midjourney 咒语。作为一个专业玩 AI 绘画的玩家，这些咒语写的太好了，关键除了后面的参数，每个咒语还会添加一些环境、风格词，还不重复。比如"emerald green, misty white and golden accents"，"realistic skin texture and leaf details, Fujifilm XT4 photo style"
 
-![img](https://pic.yupi.icu/yuyi/1739501873590-3208b95a-5b2f-4461-8698-2252b7e87b43.webp)
+![img](/imgs/32d4214648eaab79.webp)
 
 只要把提示词放到 midjourney 里就能直接出图了，这太无脑了！
 
 航拍视角的云雾茶园，晨光穿过茶树枝叶
 
-![img](https://pic.yupi.icu/yuyi/1739501873606-22dfd3fb-242f-4945-82fb-7b3ea2590e67.webp)
+![img](/imgs/2019485710b6b03c.webp)
 
 特写采茶人双手采摘嫩芽的慢动作
 
-![img](https://pic.yupi.icu/yuyi/1739501873618-88b1d098-bcb2-4ff1-a8ae-74eefebfd89a.webp)
+![img](/imgs/0938292e9284f221.webp)
 
 茶艺表演慢镜头（热水冲入茶碗，茶叶舒展）
 
-![img](https://pic.yupi.icu/yuyi/1739501874033-c49f5fb7-5642-4571-8063-349bb99ae1f2.webp)
+![img](/imgs/0c459a985558bf9d.webp)
 
 产品展示
 
-![img](https://pic.yupi.icu/yuyi/1739501874003-3c2e7ece-02d2-4f49-a7f3-5ef0e30cb9e4.webp)
+![img](/imgs/e2f3f359119e97c3.webp)
 
 第一人称视角：热茶倒入白瓷杯，蒸气升腾
 
-![img](https://pic.yupi.icu/yuyi/1739501874041-33df3465-b0ab-4f3e-ab21-f576dca46772.webp)
+![img](/imgs/5e09a2469fd2ecb7.webp)
 
 全景：茶桌摆放在山水间，茶杯旁出现购买二维码
 
-![img](https://pic.yupi.icu/yuyi/1739501874033-a461a796-2c92-4bea-b67b-e7dba5fa3297.webp)
+![img](/imgs/4b23e0f33087d6ec.webp)
 
 有了 deepseek，以后做 AI 视频的效率得起飞啊！
 
@@ -93,7 +90,7 @@ Deepseek 直接生成了一个表格，旁白、字幕都有了
 
 相比之下，GPT-4o 给出的结果就不是那么太好了。画面描述就只是描述，并没有和 midjourney 有什么关系，且单个画面中会出现多个动作，比如 6-9 秒的画面描述太过复杂，一个画面是无法全部呈现的。
 
-![img](https://pic.yupi.icu/yuyi/1739501874089-522c2fb0-2dc5-4195-a699-0d46432ede55.webp)
+![img](/imgs/acbcb69123b81510.webp)
 
 这么一对比，deepseek 确实完胜啊。
 

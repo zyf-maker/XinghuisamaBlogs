@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek Harness 三大进阶玩法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近 DeepSeek Harness（DSH）真是太火了！之前我在本教程编程工具板块「DeepSeek Harness」目录中的《DeepSeek Harness 保姆级入门教程》里教过大家如何安装使用，还在《DeepSeek Harness 精选插件推荐》中盘点过一批超火的 DSH 插件。
 
-![](https://pic.yupi.icu/1/image-20260814143547057.png)
+![](/imgs/b3959f9e100fdd20.png)
 
 不过显然大家对这些玩法并不满足，所以这篇文章我会继续分享 DSH 的 3 大进阶玩法：
 
@@ -27,7 +24,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这套组合拳打下来，让你的黑色鲸鱼直接起飞！
 
-![](https://pic.yupi.icu/1/1786708419-deepseek%E5%A4%A7%E8%82%A5%E9%B2%B8.jpeg)
+![](/imgs/7c45335559bb4214.jpg)
 
 
 
@@ -37,11 +34,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 如果你用过 Codex 或者 Cursor，那么你对斜杠命令应该并不陌生，比如 Codex 中的 `/compact`、`/plan` 等命令，你不需要每次都写一大段提示词，敲一下就能快速执行某一项操作。
 
-![](https://pic.yupi.icu/chengfang/082403DSH.png)
+![](/imgs/6edd06d2de4c8685.png)
 
 DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面就会弹出当前已经注册的命令列表。
 
-![](https://pic.yupi.icu/chengfang/082402DSH.png)
+![](/imgs/9c08f6770aa26a86.png)
 
 因为在 DSH 中，一切皆插件。这些命令同样由插件提供，因此不同版本、不同配置下，菜单里的命令可能略有区别。
 
@@ -55,7 +52,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 如果一个任务已经做了很久，但又不想重新开启会话，就可以用它给你的大肥鱼「减减肥」了。既能让 AI 更专注，又能省下不必要的 Token 消耗。
 
-![](https://pic.yupi.icu/chengfang/082404DSH.png)
+![](/imgs/8be37c6c7703cb13.png)
 
 
 
@@ -63,7 +60,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 输入 `/export`，DSH 可以直接把当前对话框内容打包下载。
 
-![](https://pic.yupi.icu/chengfang/082414DSH.png)
+![](/imgs/dfaa59f00be9f179.png)
 
 命令执行成功后，浏览器会自动下载一个 zip 压缩包，里面是完整的对话记录。当你想保存对话，或者把 AI 的回答整理成文档时，就不用再一个一个地从聊天窗口里复制粘贴了。
 
@@ -77,7 +74,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 /goal 重构项目的登录模块，并补齐测试和迁移说明
 ```
 
-![](https://pic.yupi.icu/chengfang/082405DSH.png)
+![](/imgs/cb7109f4e9700abd.png)
 
 `/goal` 还提供了几种控制目标的用法：
 
@@ -89,7 +86,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 /goal clear
 ```
 
-![](https://pic.yupi.icu/chengfang/082407DSH.png)
+![](/imgs/268996a120835f07.png)
 
 其中，单独输入 `/goal` 可以查看当前目标。`edit` 用来修改目标，`pause` 和 `resume` 分别用来暂停和恢复目标，`clear` 用来清除当前目标。
 
@@ -105,7 +102,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 计划模式会引导 DSH 先了解项目、整理方案并交给你确认，等你同意了才开始动手。
 
-![](https://pic.yupi.icu/chengfang/082408DSH.png)
+![](/imgs/5d14c4123e3be282.png)
 
 不需要继续规划时，可以通过 `/plan off` 命令退出。
 
@@ -117,7 +114,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 直接输入 `/permission`，就能查看并切换当前对话的权限设置。
 
-![](https://pic.yupi.icu/chengfang/082409DSH.png)
+![](/imgs/16642e67df066645.png)
 
 但其实在 Web 界面，点一下输入框旁边的权限按钮就能切换，所以这个命令更适合习惯终端操作的用户，在 `/permission` 命令后面直接跟上权限预设就可以了。
 
@@ -133,7 +130,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 如果你在使用 DSH 的过程中碰到了 Bug 或者哪个交互用着别扭，随手敲一行就直接给大肥鱼反馈了。不过要注意，只有开启了相应的遥测能力，反馈才会继续传给官方；遥测关闭时，内容只留在本地。
 
-![](https://pic.yupi.icu/chengfang/082410DSH.png)
+![](/imgs/c8f2089dc08e448f.png)
 
 
 
@@ -155,7 +152,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 运行成功后，重启一下 `dsh web`，在任意 Git 项目对话框中输入 `/repo` 命令，来看看效果。
 
-![](https://pic.yupi.icu/chengfang/082413DSH.png)
+![](/imgs/55d571d53ac59c76.png)
 
 当前分支和最近 3 次提交直接就出来了，很方便吧~
 
@@ -171,7 +168,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 装上工具之后就不一样了，`read` 是它的眼睛，能看文件；`bash` 是它的手，能敲命令；`write` 是它的笔，能把结果写进项目。这时候 AI 才从「嘴强王者」变成真正能动手干活的帮手。
 
-![](https://pic.yupi.icu/chengfang/082444DSH.png)
+![](/imgs/bd9049bdf3a04a9c.png)
 
 
 
@@ -181,7 +178,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 除了这三个核心工具之外，还有几个高频工具。比如 `glob` 和 `grep` 负责查找文件和搜索内容，`todo_write` 让 AI 自己维护一份任务清单，`ask_user_question` 会在 AI 拿不准的时候回头问你确认，`web_search` 负责联网搜索信息，`skill` 用来调用预设的技能流程。
 
-![](https://pic.yupi.icu/chengfang/082445DSH.png)
+![](/imgs/a1298c65eb1d2c8a.png)
 
 工具数量会随着版本和插件变化，因此不用记住这些。
 
@@ -199,7 +196,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 **Skill** 更像一份操作手册，解决的是「这件事应该怎么做」的问题。Skill 本身不会凭空增加系统权限，它的作用是告诉模型该按什么流程干活、什么时候该调用哪些工具。
 
-![](https://pic.yupi.icu/chengfang/082446DSH.png)
+![](/imgs/d05cc5125a319fda.png)
 
 举个例子，`write` 是一支笔，提供写文件的能力。安装这支笔的模块就是插件，而文章的「写作教程」就是 Skill，用来教 AI 应该如何使用这支笔写出更好的文章。
 
@@ -211,7 +208,7 @@ DSH 也是类似的套路。当你在对话框中输入 `/` 的时候，界面�
 
 但问题来了，如果每需要一个新工具，都得自己写插件，那也太麻烦了。。。
 
-![](https://pic.yupi.icu/chengfang/082417DSH.png)
+![](/imgs/f79ea147e55e056e.png)
 
 好在很多工具早就有人做好了，我们只需要通过 MCP 拿来用就行。
 
@@ -219,11 +216,11 @@ MCP 全称 Model Context Protocol 模型上下文协议，你可以把它理解�
 
 现在社区里已经有大量现成的 MCP 服务了，比如我的 [鱼皮 AI 导航](https://ai.codefather.cn) 专门整理了优质的 MCP 资源大全，还支持分类搜索，找起来很方便。
 
-![](https://pic.yupi.icu/yuyi/image-20260320155129046.png)
+![](/imgs/d6ea46a75a59508c.png)
 
 这里我拿一个最简单的例子来演示效果。我给 DSH 接入了一个文件系统 MCP，然后让它读取演示目录中的文档。
 
-![](https://pic.yupi.icu/chengfang/082416DSH.png)
+![](/imgs/6cf8caefbef89a51.png)
 
 DSH 很快调用了 `mcp__files__read_text_file` 这个工具，成功读取了文件内容，还总结出了这只大肥鱼刚刚解锁的能力。
 
@@ -239,15 +236,15 @@ DSH 提供了一个叫做 Creator Mode 创造模式的运行模式，在这个�
 
 比如我让它创建一个 `word_count` 工具，接收一段文字，返回字符数、行数和单词数。
 
-![](https://pic.yupi.icu/chengfang/082420DSH.png)
+![](/imgs/021fea43b7d777bb.png)
 
 插件运行成功后，`word_count` 会真正加入当前进程的工具列表。
 
-![](https://pic.yupi.icu/chengfang/082425DSH.png)
+![](/imgs/a87dd47b353bf3c2.png)
 
 接下来再给它一段文字，模型就能调用刚刚创造出来的工具了。
 
-![](https://pic.yupi.icu/chengfang/082424DSH.png)
+![](/imgs/ecfbdf18313c4eeb.png)
 
 工具调用卡片上真的出现了 `word_count`，并且成功返回了字符数、行数和单词数。
 
@@ -263,7 +260,7 @@ DSH 提供了一个叫做 Creator Mode 创造模式的运行模式，在这个�
 
 既然一个 Agent 忙不过来，那就多叫几个，打造一支 AI 军团。
 
-![](https://pic.yupi.icu/1/1159_S.jpg)
+![](/imgs/68d8cab1b61e8a40.jpg)
 
 DSH 内置了几种多 Agent 工具，主 Agent 可以把复杂任务拆成相对独立的部分，再根据依赖关系选择并行或者分阶段处理，最后汇总结果。
 
@@ -275,25 +272,25 @@ DSH 一共内置了 4 个 Agent 派活工具和 3 个后台管理工具，先从
 
 `subagent` 会创建一个拥有独立上下文的后台子 Agent，它不会看到父会话的任何对话历史，适合处理和主任务无关的独立工作。任务完成后，结果会回到父会话。
 
-![](https://pic.yupi.icu/chengfang/082433DSH.png)
+![](/imgs/247105942e2e3c36.png)
 
 `subagent_fork` 跟 `subagent` 的用法差不多，区别在于 `subagent_fork` 会把父会话中已经完成的对话内容一并带给子 Agent，让它从一开始就拥有前文信息。
 
 比如我没有重新提供完整的审查报告，只让 AI 根据刚才的结果整理一段总结。从总结内容里能看出来，它确实拿到了上一次 `subagent` 的审查报告。
 
-![](https://pic.yupi.icu/chengfang/082434DSH.png)
+![](/imgs/5dce0f1965af8236.png)
 
 `workflow` 同样是一个内置的 Agent 工具，它可以在一段脚本中定义多个任务，让它们并行执行，等所有结果全部返回后再统一汇总。
 
 我让 AI 同时完成变更总结、风险检查和测试清单三个任务，它等到三个 Agent 全部完成后，才交给第四个 Agent 整理成发布前的总结清单。
 
-![](https://pic.yupi.icu/chengfang/082435DSH.png)
+![](/imgs/b629cd157b39d384.png)
 
 最后一个派活工具是 `ralph`，它比较特殊，每一轮都会换一个全新的子 Agent 来继续推进同一个目标，目的是防止同一个 Agent 越干越钻牛角尖。每轮之间只靠一份结构化的交接报告传递进展，不会继承上一轮的对话历史，相当于换个人从新的角度重新审视问题。
 
 我让它执行 3 轮，检查最近的一次仓库提交，并反馈给我风险清单。结果第二轮的 Agent 修正了第一轮的优先级判断，还合并了重复内容、补上了第一轮遗漏的问题。第二轮干完以后，它直接判定目标已完成，第三轮都省了。
 
-![](https://pic.yupi.icu/chengfang/082436DSH.png)
+![](/imgs/38dd9d297f81839b.png)
 
 除了派活，DSH 还提供了 3 个后台管理工具，方便你随时掌握子 Agent 的状态。
 
@@ -301,7 +298,7 @@ DSH 一共内置了 4 个 Agent 派活工具和 3 个后台管理工具，先从
 
 我先启动一个子 Agent 审查代码，通过 `list_agents` 看到它正在运行。接着用 `send_message` 让它重点检查触控区域和减弱动效的实现，最后用 `interrupt_agent` 停止当前任务，Agent 的状态也从 `running` 变成了 `idle`。
 
-![](https://pic.yupi.icu/chengfang/082437DSH.png)
+![](/imgs/b7a0041422e23fce.png)
 
 需要注意，`interrupt_agent` 只是中断当前这一轮任务，并不会销毁这个子 Agent。已经排队的消息也不会自动消失，之后你还可以继续用 `send_message` 找它干活。
 
@@ -321,7 +318,7 @@ Agent Teams 是一个社区开发的多 Agent 协作插件，可以让 DSH 同�
 
 > 开源仓库：https://github.com/NanmiCoder/dsh-agent-teams
 
-![](https://pic.yupi.icu/chengfang/036DSH.png)
+![](/imgs/69cb7f041cc363b8.png)
 
 插件的安装方法很简单，输入一条命令就能装好：
 
@@ -331,7 +328,7 @@ dsh plugin --profile web add @nanmicoder/dsh-agent-teams@latest
 
 当然，你也可以直接把开源地址丢给 AI，让它帮你安装：
 
-![](https://pic.yupi.icu/chengfang/082439DSH.png)
+![](/imgs/5aa77e596f062d55.png)
 
 来试试看，我要用它检查一个前端项目，创建了 3 个成员 Agent，分别负责三个方向：
 
@@ -345,15 +342,15 @@ dsh plugin --profile web add @nanmicoder/dsh-agent-teams@latest
 
 Captain 负责拆分任务、分配工作，最后统一汇总结果。下面的成员 Agent 则各自处理不同方向的问题。右边的活动面板能直接看到 3 个 Agent 同时在工作，等它们各自检查完成，结果会统一回到 Captain，由 Captain 汇总并给出最终报告。
 
-![](https://pic.yupi.icu/chengfang/14DSH.png)
+![](/imgs/758e9dbe3718fb86.png)
 
 更牛的是，这支 Agent 团队做完一次任务后不会马上消失，后面还能继续复用。
 
-![](https://pic.yupi.icu/chengfang/013DSH.png)
+![](/imgs/9ca93d8229e772eb.png)
 
 这一轮检查结束后，我又追问了一个 WebGL 降级的问题，并且指定只让 frontend 成员继续处理。结果活动面板里真的只有它重新进入了工作状态，另外两个成员没有被重复调度。
 
-![](https://pic.yupi.icu/chengfang/014DSH.png)
+![](/imgs/a9bee431f5f6d10e.png)
 
 这也是 Agent Teams 和临时派几个子 Agent 最大的区别。Agent Teams 不只是派活，它还提供了成员管理、任务依赖、自动调度、持久化状态和实时活动面板，更像是一套完整的 AI 团队管理系统。
 

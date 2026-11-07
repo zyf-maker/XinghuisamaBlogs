@@ -3,15 +3,12 @@ title: "OpenClaw 接入 QQ 和飞书"
 summary: "把 OpenClaw 接入手机聊天软件，随时随地养虾"
 order: 7
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-24"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 接入 QQ 和飞书》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -28,43 +25,43 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://q.qq.com/qqbot/openclaw/index.html
 
-![](https://pic.yupi.icu/1/image-20260310152123827.png)
+![](/imgs/50b4c1d9aa911b45.png)
 
 点击「创建机器人」，直接秒出！
 
-![](https://pic.yupi.icu/1/image-20260310152325274.png)
+![](/imgs/473f39cc96005fb3.png)
 
 创建完成后，手机 QQ 立刻就会收到小龙虾打招呼的消息：
 
-![](https://pic.yupi.icu/1/image-20260310153005879.png)
+![](/imgs/c2000b49d63ae090.png)
 
 然后可以修改机器人的头像、昵称等信息，给你的龙虾起个好听的名字吧~
 
-![](https://pic.yupi.icu/1/image-20260310152409339.png)
+![](/imgs/e686011e9c96760e.png)
 
 接下来是最关键的一步。页面上会显示三条配置命令，你只需要依次复制这 3 条命令到终端（PowerShell）中执行就可以了。
 
 注意命令中包含你的密钥信息，不要泄露给别人！
 
-![](https://pic.yupi.icu/1/image-20260310152443829.png)
+![](/imgs/43622e604de8026d.png)
 
 到终端中依次执行命令：
 
-![](https://pic.yupi.icu/1/image-20260310152544861.png)
+![](/imgs/4ab2536bfa3b16f4.png)
 
 接入成功后，你可以在 OpenClaw 的网页控制台的「频道」（Channels）板块看到已经接入了 QQ 机器人渠道：
 
-![](https://pic.yupi.icu/1/image-20260310152846134.png)
+![](/imgs/5ff2908a1beeaba2.png)
 
 现在，掏出手机试试吧！
 
 直接在 QQ 上给小龙虾发消息下达任务，比如让它查看电脑配置、或者帮你写一篇文章。完成速度很快，而且支持 Markdown 格式输出，阅读体验不错：
 
-![](https://pic.yupi.icu/1/image-20260310153115908.png)
+![](/imgs/1cd1b87c000b755c.png)
 
 如果你好奇它背后做了些什么，可以在 OpenClaw 的网页控制台中查看跟 QQ 机器人的完整对话记录：
 
-![](https://pic.yupi.icu/1/image-20260310152754120.png)
+![](/imgs/c0b66aae2db1105b.png)
 
 
 ## 接入飞书
@@ -80,37 +77,37 @@ source: "https://github.com/liyupi/ai-guide"
 npx -y @larksuite/openclaw-lark-tools install
 ```
 
-![](https://pic.yupi.icu/1/1773815583908-7eaec4f6-7f56-47f2-9e12-45d0d2a329ae.png)
+![](/imgs/a71c2427f58fa79c.png)
 
 然后直接在命令行中用飞书扫码对接机器人（Windows 的 PowerShell 无法正常显示二维码，需要改为使用自带的 CMD 命令行）。
 
 通过手机操作来创建机器人就好，整个流程非常傻瓜式：
 
-![](https://pic.yupi.icu/1/1773815929716-12c2bc15-90e2-4409-ac3f-c4cab84c1167.png)
+![](/imgs/1916d633d96233f3.png)
 
 操作完成后，在命令行能看到配置飞书机器人成功，在 OpenClaw 网页控制台的频道模块也能看到新增了 Feishu 频道：
 
-![](https://pic.yupi.icu/1/1773815823665-dd4a0c51-09cb-4476-9173-e4a45b9de00f.png)
+![](/imgs/d05e7751c3ab922a.png)
 
 你会在飞书收到应用审批的消息，进入管理后台审核即可：
 
-![](https://pic.yupi.icu/1/1773815955358-857f8503-79c6-42bf-8938-c2f35eb64e0d.png)
+![](/imgs/23e66bb05526b1d4.png)
 
 点击审核通过，通过后机器人会自动发布上线：
 
-![](https://pic.yupi.icu/1/1773816002775-07a84fbf-e296-4d46-bca8-da9d0eb73a74.png)
+![](/imgs/bc167ea20fb07d64.png)
 
 然后在飞书搜索你的机器人名称：
 
-![](https://pic.yupi.icu/1/1773816125248-a6eb33dd-986e-4aa9-8f81-29dc7ca6642f.png)
+![](/imgs/04ea8224cd053b74.png)
 
 进入聊天，先发送 `/feishu auth` 授权，傻瓜式操作：
 
-![](https://pic.yupi.icu/1/1773816193729-5290671b-02be-4cae-9f44-a2efce40c77e.png)
+![](/imgs/ff9492447aa670e6.png)
 
 然后跟小龙虾打个招呼，能够成功收到小龙虾回复的消息：
 
-![](https://pic.yupi.icu/1/1773816269856-bd61502c-0b6d-4d75-aea1-810838cbe4d4.png)
+![](/imgs/4d80133d2a1800db.png)
 
 飞书插件还支持开启流式响应，实现打字机效果。打开终端，执行命令：
 
@@ -118,11 +115,11 @@ npx -y @larksuite/openclaw-lark-tools install
 openclaw config set channels.feishu.streaming true
 ```
 
-![](https://pic.yupi.icu/1/1773816381282-45c2d6e2-8c82-46d9-9682-0bfab7d0e1a2.png)
+![](/imgs/abf2b5fd9a3fa328.png)
 
 配置之后，体验比之前好了不少：
 
-![](https://pic.yupi.icu/1/1773816481362-bfbdd84f-8385-4174-8c81-34dbc2e0ee3b.png)
+![](/imgs/094a6fb31078e062.png)
 
 
 ### 方式二：手动创建飞书机器人
@@ -139,19 +136,19 @@ openclaw config set channels.feishu.streaming true
 
 > 指路：https://open.feishu.cn/app
 
-![](https://pic.yupi.icu/1/1773296607372-9fd70bce-3491-4704-8905-9d3ea4de6242.png)
+![](/imgs/65b677b117bcbb19.png)
 
 填写应用名称和描述，给你的机器人起个好听的名字：
 
-![](https://pic.yupi.icu/1/1773296500510-ea79d7b3-bb4b-403b-bcdc-d9a05eb38490.png)
+![](/imgs/3a25ca490ffea91d.png)
 
 创建完成后进入应用详情页，在「添加应用能力」中点击添加机器人能力：
 
-![](https://pic.yupi.icu/1/1773296726095-512cdb41-f5fb-428e-9ed8-69bb1347d51c.png)
+![](/imgs/90785ac53d8e1071.png)
 
 然后进入左侧「权限管理」页面开通权限：
 
-![](https://pic.yupi.icu/1/1773296803932-ec256465-793c-4c2d-92f7-74badd59a1f2.png)
+![](/imgs/e3b9e7c44ec12a74.png)
 
 如果你的飞书里没有敏感信息，可以直接把 `im:`、`contact:`、`file:` 等相关的权限全勾上。如果需要精细控制权限，最少只需要开通 `im:message`、`im:chat`、`contact:user.base:readonly` 这 3 个。
 
@@ -189,23 +186,23 @@ openclaw config set channels.feishu.streaming true
 }
 ```
 
-![](https://pic.yupi.icu/1/1773298009798-41cb86da-b623-4473-aa4e-2dd9841c8836.png)
+![](/imgs/96f94928284055e6.png)
 
 权限配置完成后，点击「创建版本」发布应用：
 
-![](https://pic.yupi.icu/1/1773298097229-3cea39d0-3ad3-45d5-863f-cc026b5ea53d.png)
+![](/imgs/e6bf74fcd5bf6d76.png)
 
 填写版本号和更新说明、按需选择是否对外共享，然后申请线上发布：
 
-![](https://pic.yupi.icu/1/1773298202460-f8a03417-88dc-4d2d-8f2b-281930136c0d.png)
+![](/imgs/b2c4ec58ee87ba8b.png)
 
 进入飞书管理后台审核通过即可：
 
-![](https://pic.yupi.icu/1/1773298275930-0bd44fab-0947-4df9-8dda-f60cf5e41ce2.png)
+![](/imgs/de438b93612c5fb2.png)
 
 审核通过后，回到应用的「凭证与基础信息」页面，获取 App ID 和 App Secret，复制保存好，下一步要用。注意这俩是你机器人的钥匙，千万不要泄露给别人！
 
-![](https://pic.yupi.icu/1/1773298520178-5a6bdfd0-a8f0-41e4-8ad6-5ab762e44060.png)
+![](/imgs/8c4b29878af8471a.png)
 
 **2）OpenClaw 添加飞书频道**
 
@@ -215,19 +212,19 @@ openclaw config set channels.feishu.streaming true
 openclaw channels add
 ```
 
-![](https://pic.yupi.icu/1/1773299051612-cb1dfc8a-df1d-4bca-9509-e73e57363924.png)
+![](/imgs/48e1c269dcf5528e.png)
 
 跟着向导一步步操作就好。先选择 Feishu 频道，然后输入 App Secret 和 App ID，连接模式选择 WebSocket 长连接，国内用户选择 Feishu 频道：
 
-![](https://pic.yupi.icu/1/1773299210452-5c321afe-a7ce-4299-963a-4d0e49a81cd1.png)
+![](/imgs/19d4ff1077b42d08.png)
 
 然后配置私聊的访问控制方式，建议选择配对码模式，更安全：
 
-![](https://pic.yupi.icu/1/1773299304526-e041393a-a688-4b70-b33c-4ab5be46d5db.png)
+![](/imgs/808007524fddfb35.png)
 
 对接完成后，在 OpenClaw 网页控制台的频道列表中就能看到飞书了：
 
-![](https://pic.yupi.icu/1/1773299448414-826b13d2-768a-46e4-bdb0-c2b10449ec5a.png)
+![](/imgs/7e17740ab87013f2.png)
 
 **3）配置飞书事件**
 
@@ -235,21 +232,21 @@ openclaw channels add
 
 回到飞书开发者后台，进入「事件与回调」配置，开启长连接的事件订阅方式：
 
-![](https://pic.yupi.icu/1/1773299570311-6142efd0-a693-413b-a377-8be1dc06b6ae.png)
+![](/imgs/fb848e2bdabcfd00.png)
 
 然后添加事件，至少要添加「接收消息」（`im.message.receive_v1`）这一项：
 
-![](https://pic.yupi.icu/1/1773299742014-c26249e1-54f9-484f-a478-0c44755648f6.png)
+![](/imgs/de93c1d37c2d811c.png)
 
 配置好事件后，别忘了最关键的一步 —— 发布新版本！改了配置不发布是不会生效的，很多人就卡在这一步：
 
-![](https://pic.yupi.icu/1/1773299833600-04aad379-5b84-4b8d-a766-1fad16990586.png)
+![](/imgs/1a26648234960e8a.png)
 
 **4）私聊配对**
 
 在飞书中搜索你创建的机器人，进入私聊，随便说一句话。发送第一条消息后，机器人会返回一个配对码：
 
-![](https://pic.yupi.icu/1/1773300030650-4dfd39ba-4ed0-49c8-ba59-d530ba3f59b2.png)
+![](/imgs/a0bd6cf0869a8859.png)
 
 在终端中执行命令完成配对，把 `<配对码>` 替换成你自己收到的那串配对码：
 
@@ -259,11 +256,11 @@ openclaw pairing approve feishu <配对码>
 
 执行成功后会提示配对完成：
 
-![](https://pic.yupi.icu/1/1773300229629-5037724e-ef68-40fb-b60e-8a30b5769a64.png)
+![](/imgs/d259eb89e2524fa4.png)
 
 配对成功后，再发一条消息试试，这次 AI 就能成功回复了！
 
-![](https://pic.yupi.icu/1/1773300290276-39d7d920-1692-4335-afde-2099a52131f1.png)
+![](/imgs/1adf74cac4cb51a2.png)
 
 **5）解锁多媒体能力**
 
@@ -277,7 +274,7 @@ openclaw pairing approve feishu <配对码>
 
 AI 会去读取飞书技能文档，学习怎么发送多媒体消息，之后你就可以让它拍照、录音、找文件，通通发到飞书：
 
-![](https://pic.yupi.icu/1/1773300442755-f6111ee9-d521-402d-8d3b-418e94952486.png)
+![](/imgs/8a15f50b7fcbfda8.png)
 
 
 ## 实用小技巧
@@ -289,7 +286,7 @@ AI 会去读取飞书技能文档，学习怎么发送多媒体消息，之后�
 
 直接在对话框里输入 `/new`，可以清空上下文开启一段新对话，让 AI 更专注当前任务，还能节省 Tokens 费用。
 
-![](https://pic.yupi.icu/1/1773302809726-13ddf456-ca4a-4efa-b755-6fce84f1ae4a.png)
+![](/imgs/f49edde1eee07a26.png)
 
 
 ### 2、斜杠命令 /verbose 开启调试模式
@@ -298,7 +295,7 @@ AI 会去读取飞书技能文档，学习怎么发送多媒体消息，之后�
 
 比如让 AI 打开网站并截图，能够看到它通过编写 JS 脚本、打开了浏览器并执行截图的过程：
 
-![](https://pic.yupi.icu/1/1773303846475-f9662a4e-377b-43d1-95ed-16c789948ee2.png)
+![](/imgs/8fd0f09b32878783.png)
 
 
 ## 写在最后

@@ -3,15 +3,12 @@ title: "Cursor 迎来了强大的对手，Augment Code 实测"
 summary: "共收录 6 条 AI 行业资讯，如Anthropic；Claude Sonnet 3.7等。"
 order: 64
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor 迎来了强大的对手，Augment Code 实测》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## Augment Code 介绍
 
@@ -25,13 +22,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 另外，目前 Augment Agent 通过结合 [Anthropic](https://zhida.zhihu.com/search?content_id=256145915&content_type=Article&match_order=1&q=Anthropic&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NDQ1NDcyMjEsInEiOiJBbnRocm9waWMiLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoyNTYxNDU5MTUsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.s-Qlz5_gQXKB-83ew6fdNuoqCgOSZ69vCoaXwefWdcQ&zhida_source=entity) 的 [Claude Sonnet 3.7](https://zhida.zhihu.com/search?content_id=256145915&content_type=Article&match_order=1&q=Claude+Sonnet+3.7&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NDQ1NDcyMjEsInEiOiJDbGF1ZGUgU29ubmV0IDMuNyIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjI1NjE0NTkxNSwiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.Ks9wyI53nxEYvxg3d-2qBm9e_IipirNvX86aSq5yKeM&zhida_source=entity) 和 [OpenAI](https://zhida.zhihu.com/search?content_id=256145915&content_type=Article&match_order=1&q=OpenAI&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NDQ1NDcyMjEsInEiOiJPcGVuQUkiLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoyNTYxNDU5MTUsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.dos4DrsF8bBrrMJP56gBcEBaRRvD_smBaFOX4vPO-s8&zhida_source=entity) 的 [O1 推理模型](https://zhida.zhihu.com/search?content_id=256145915&content_type=Article&match_order=1&q=O1+%E6%8E%A8%E7%90%86%E6%A8%A1%E5%9E%8B&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NDQ1NDcyMjEsInEiOiJPMSDmjqjnkIbmqKHlnosiLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoyNTYxNDU5MTUsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.JukcV5qUlsKbGMIXftuvbN_W1ZFODYvuca55rKQbIew&zhida_source=entity)，在 SWE-bench verified 基准测试中取得了最高分，达到第 1 名（在真实任务上达到 65.4%）。
 
-![](https://pic4.zhimg.com/v2-853df9931204536656d9bcc20e9b6b41_1440w.jpg)
+![](/imgs/b4f0937a2df15bff.png)
 
 ### **简介**
 
 Augment 是一款开发者 AI 平台，它能帮助你理解代码、调试问题并快速交付，因为它理解你的代码库。使用聊天、下一编辑和代码补全功能，让你更高效地完成任务。
 
-![](https://pic3.zhimg.com/v2-81ff73655aec503a4c5d199c65d23ab6_1440w.jpg)
+![](/imgs/1f8cbf23b9185e77.png)
 
 核心宣传点：
 
@@ -47,7 +44,7 @@ Augment 是一款开发者 AI 平台，它能帮助你理解代码、调试问�
 
 目前提供了 `vscode` 扩展、`[JetBrains IDEs](https://plugins.jetbrains.com/plugin/24072-augment)` 插件、`VIM` 这三种使用方式，下面通过安装 `vscode` 扩展来使用。
 
-![](https://pic3.zhimg.com/v2-07c20988b2528ebc2afaf0ae4e252586_1440w.jpg)
+![](/imgs/2870596ffaca7bf3.png)
 
 安装成功之后，需要进行登陆，登陆成功之后就可以使用了；目前测试下来 `remote` 模式的 `vscode` 登陆不上，本地的可以。
 
@@ -57,7 +54,7 @@ Augment 是一款开发者 AI 平台，它能帮助你理解代码、调试问�
 
 1.  1\. 先导入一个项目；导入之后它就会进行索引整个项目
 
-![](https://pic4.zhimg.com/v2-e32ef7b78fe5e1806f8eb21a169b6877_1440w.jpg)
+![](/imgs/f37a6ddfb4c40e3c.png)
 
 `vllm` 最核心的就是 `PagedAttention` 的原理，但是从之前看过一些介绍来看，只是明白了，但还不知道是如何实现的。
 
@@ -65,27 +62,27 @@ Augment 是一款开发者 AI 平台，它能帮助你理解代码、调试问�
 
 ### 问出了第一个问题：介绍`PagedAttention`
 
-![](https://pic1.zhimg.com/v2-61eae47f81f8ff0f103bbab2460587ee_1440w.jpg)
+![](/imgs/7199fb54e0422b6e.png)
 
 1.  1\. 核心架构，这个我去看了代码确实是对的，在 `vllm/attention/backends` 目录下的 `abstract.py` 文件中有这个抽象类的定义。还提到了它有多个实现类，这个有点问题，真实的实现类比这个多，比如缺少 `CPUMLABackend` 等等，还有好几个。
 
-![](https://picx.zhimg.com/v2-4a590484b0469126da5eadcc1a669f83_1440w.jpg)
+![](/imgs/cc8227b24e60c89c.png)
 
 1.  1\. 讲了主要实现类以及文件位置 `PagedAttention` 都是对的。
 
-![](https://pic1.zhimg.com/v2-01b8530c85a4c9a7f6d2c51aba8198c0_1440w.jpg)
+![](/imgs/dd1bf416bc0128c8.png)
 
 1.  1\. 突然讲到了 `KV Cache` 管理，有点奇怪。
 
-![](https://picx.zhimg.com/v2-8b011e657689ee491bfbba7f559127fd_1440w.jpg)
+![](/imgs/590100ae69422005.png)
 
 1.  1\. `Attention` 的计算实现 `forward_decode` 。提到有两种模式 `Decode` 和 `Prefix` ，对应的就是 `forward_decode` 和 `forward_prefix` 这两个函数。
 
-![](https://pic3.zhimg.com/v2-171799c5d28eac69ee4fe2a0cde2875a_1440w.jpg)
+![](/imgs/d8951e15336569b7.png)
 
 1.  1\. 后面又补充了说支持很多硬件，算是给第一点进行补充，
 
-![](https://pic1.zhimg.com/v2-1a0b724040dbfde5dd24c931656d1e74_1440w.jpg)
+![](/imgs/86361ea853fe4372.png)
 
 这个问题问下来算是对这块的代码基本有一个了解了；比直接看确实强很多
 
@@ -101,15 +98,15 @@ Augment 是一款开发者 AI 平台，它能帮助你理解代码、调试问�
 
 1.  1\. 第一点另我意外的是它居然真的去下载文件回来进行查看了。因为它需要知道这个模型架构的类型，就需要读取 `config.json` 文件，在 `chat` 模式下都是给我乱说的。
 
-![](https://pic1.zhimg.com/v2-d4e5a7b16ed3e52c7737d0788709a8ae_1440w.jpg)
+![](/imgs/619f29ed506c886d.png)
 
 1.  1\. 然后它列出了执行计划，涉及到四个步骤；第一步这个模型架构就描述对了。
 
-![](https://pic1.zhimg.com/v2-2894c4649381edfa199861a5e613eb56_1440w.jpg)
+![](/imgs/334f9f2ad760bc91.png)
 
 1.  2\. 它给我实现出来了，我直接进行测试一下，而且它还贴心的给了测试文件。
 
-![](https://pic1.zhimg.com/v2-f6f1d2e5dae15a48a046f1d613ae1f1e_1440w.jpg)
+![](/imgs/dd019a2eff596ef4.png)
 
 尝试运行之后发现还不能跑，有 bug，也可能和它训练时候的 `vllm` 版本代码有关，导入的很多包路径都有问题。
 
@@ -123,15 +120,15 @@ Augment 是一款开发者 AI 平台，它能帮助你理解代码、调试问�
 
 1.  1\. 小程序
 
-![](https://pic3.zhimg.com/v2-ee83116db8d8fd6d83744eea172aa012_1440w.jpg)
+![](/imgs/cdc7157a1aaece18.png)
 
 1.  2\. 后端自动给我启动之后调用 API 报错了，说明前端已经自动给我添加这个实现了。
 
-![](https://pic3.zhimg.com/v2-257c1054a7de5c4540505c8285e97eaa_1440w.jpg)
+![](/imgs/7f3fbb787552ae78.png)
 
 1.  3\. 我本地没有数据库，让它给我用 docker 启动并且创建表
 
-![](https://picx.zhimg.com/v2-03888823ffe6478848e3de50a2e7148f_1440w.jpg)
+![](/imgs/ca54d152905f8e6d.png)
 
 ## 对比 Cursor
 

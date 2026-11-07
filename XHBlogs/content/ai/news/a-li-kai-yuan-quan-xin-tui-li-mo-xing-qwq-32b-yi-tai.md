@@ -3,33 +3,30 @@ title: "阿里开源全新推理模型 QwQ-32B，一台 Mac 就能实现顶级�
 summary: "阿里开源全新推理模型 QwQ-32B，一台 Mac 就能实现顶级推理能力，由程序员鱼皮整理。"
 order: 29
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《阿里开源全新推理模型 QwQ-32B，一台 Mac 就能实现顶级推理能力》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 QwQ-32B 在数学推理、编程能力等问题解决方面表现出色。
 
-![](https://image.deeptechchina.com/article/2025030617482916990.jpg?imageView2/2/w/504/h/280)
+![](/imgs/459f69f7860680f2.png)
 
 3 月 6 日，阿里巴巴旗下的 Qwen 团队用一条题为《QwQ-32B：拥抱强化学习的力量》的博文公布了全新的开源大型推理模型 QwQ-32B（Qwen-with-Questions）， **这款仅有 320 亿参数的模型通过强化学习技术，在多项基准测试中展现出与拥有 6710 亿参数（激活参数 37B）的 DeepSeek-R1 相媲美的性能。**
 
-![](https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/c542f1bf17b649cba8ea19d6ce711565~tplv-obj.image?lk3s=ef143cfe&traceid=20250306174815379FC88CD6E60CAAFA41&x-expires=2147483647&x-signature=xdR2Wp5WbD9B%2BWT2FX%2F0vW6lqD8%3D)图丨相关博文（来源：Qwen）
+![](/imgs/39bc46bd2922fd1f.png)图丨相关博文（来源：Qwen）
 
 **QwQ-32B 在数学推理、编程能力等问题解决方面表现出色。** 根据官方发布的基准测试结果，在数学推理基准 AIME24 上，QwQ-32B 达到了 79.5 分，几乎与 DeepSeek-R1 的 79.8 分持平，远超 OpenAI o1-mini 的 63.6 分，也超过了 DeepSeek-R1 蒸馏到 Llama-70B 和 Qwen-32B 的版本（分别为 70.0 和 72.6 分）。
 
 在编程能力方面，QwQ-32B 在 LiveCodeBench 上获得了 63.4 分，接近 DeepSeek-R1 的 65.9 分，明显优于 o1-mini 的 53.8 分和蒸馏模型。在 LiveBench 测试中，QwQ-32B 得分 73.1，与 DeepSeek-R1 的 71.6 分相当，且大幅领先于 o1-mini 的 59.1 分。在 IFEval 和 BFCL 上，也略微超过了 R1。
 
-![](https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/ff7bf02edeb64585b4d6e43175a8ba79~tplv-obj.image?lk3s=ef143cfe&traceid=20250306174815379FC88CD6E60CAAFA41&x-expires=2147483647&x-signature=kRHH16M0%2BB8mfN2sveulfBXBdDw%3D)图丨基准测试结果（来源：Qwen）
+![](/imgs/286b84135f6b5018.png)图丨基准测试结果（来源：Qwen）
 
 Hugging Face 的 Vaibhav Srivastav 在评测后发表评论： **“QwQ-32B 在 Hyperbolic Labs 支持下的推理速度‘快得惊人’，完全可与顶级模型媲美。”**“在 Apache 2.0 许可下，它成功击败了 DeepSeek-R1 和 OpenAI o1-mini。”
 
-![](https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/0685ce5b6c544138b63d22dc91836c61~tplv-obj.image?lk3s=ef143cfe&traceid=20250306174815379FC88CD6E60CAAFA41&x-expires=2147483647&x-signature=RM7ELIeQ6JwYUUBeDetxW3IqDIA%3D)图丨相关推文（来源：X）
+![](/imgs/b95b08d3d898bdcf.png)图丨相关推文（来源：X）
 
 不过，有部分用户反应，QwQ-32B 有时会出现过度思考的问题，哪怕是很简单的问题也会生成大量的思维链（比如在经典的“Strawberry”问题上，它会输出近七万字的思维链），导致其输出结果的速度较慢。
 
@@ -61,6 +58,6 @@ https://qwenlm.github.io/zh/blog/qwq-32b/
 
 2025 年 03 月 05 日
 
-![](https://image.deeptechchina.com/article/2021081911453445027.jpg)
+![](/imgs/ffd31345bff02842.jpg)
 
 > 来源：www.mittrchina.com

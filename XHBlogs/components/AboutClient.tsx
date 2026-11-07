@@ -1,5 +1,6 @@
 "use client";
 
+import { asset } from "../lib/base";
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpen, MessageSquare, Sparkles, Activity } from 'lucide-react';
@@ -133,7 +134,7 @@ export default function AboutClient({
 
       <div className="px-5 sm:px-8 md:px-16 pb-10 md:pb-16 relative">
         <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-[var(--line)] overflow-hidden -mt-12 md:-mt-16 relative z-20 bg-[var(--surface)]">
-          <img src={siteConfig.avatarUrl} alt="avatar" className="w-full h-full object-cover" />
+          <img src={asset(siteConfig.avatarUrl)} alt="avatar" className="w-full h-full object-cover" />
         </div>
 
         {/* 🌟 核心修复区：手机端排版优雅适配 */}
@@ -262,7 +263,7 @@ export default function AboutClient({
                         className="flex flex-col md:flex-row md:items-center gap-3 bg-[var(--surface)] p-4 rounded-lg border border-[var(--line-strong)] transition-all group-hover:-translate-y-1 cursor-pointer block relative overflow-hidden"
                       >
                         <div className="flex items-center gap-3 w-full md:w-auto">
-                          <img src={siteConfig.avatarUrl} alt="author" className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-[var(--line)] shrink-0" />
+                          <img src={asset(siteConfig.avatarUrl)} alt="author" className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-[var(--line)] shrink-0" />
 
                           <div className="flex flex-col flex-1 min-w-0">
                             <div className="flex items-center gap-2">

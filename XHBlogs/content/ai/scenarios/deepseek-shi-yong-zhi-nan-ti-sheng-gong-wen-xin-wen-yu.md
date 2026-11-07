@@ -3,15 +3,12 @@ title: "DeepSeek使用指南：提升公文、新闻与广告文案写作效率�
 summary: "随着技术的不断发展，AI写作工具在各个领域的应用愈发广泛，其中DeepSeek作为新兴的AI创作助手，因其出色的表现引起了极大的关注。春节期间，该工具不仅在中国市场上脱颖而出，还引发了全球AI技术的热议。本文将围绕DeepSeek的应用场景"
 order: 33
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek使用指南：提升公文、新闻与广告文案写作效率的三大技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 随着技术的不断发展，AI写作工具在各个领域的应用愈发广泛，其中DeepSeek作为新兴的AI创作助手，因其出色的表现引起了极大的关注。春节期间，该工具不仅在中国市场上脱颖而出，还引发了全球AI技术的热议。本文将围绕DeepSeek的应用场景及其写作技巧进行深入探讨，帮助用户更有效地掌握这一强大的工具。
 

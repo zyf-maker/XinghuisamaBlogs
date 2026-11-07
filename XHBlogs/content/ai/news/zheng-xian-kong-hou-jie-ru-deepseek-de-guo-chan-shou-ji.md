@@ -3,17 +3,14 @@ title: "争先恐后接入DeepSeek的国产手机，它们的自研大模型怎�
 summary: "争先恐后接入DeepSeek的国产手机，它们的自研大模型怎么办？，由程序员鱼皮整理。"
 order: 16
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《争先恐后接入DeepSeek的国产手机，它们的自研大模型怎么办？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![](https://img.36krcdn.com/hsossms/20250212/v2_19e6187cb220427982fe02392f6ce62e@46958_oswg55096oswg1080oswg719_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/c76e112383d2c81b.jpg)
 
 蛇年春节以来，一场名为DeepSeek的大模型“飓风”开始席卷科技界，手机公司堪称其中反映最迅速的行业之一。 
 
@@ -53,7 +50,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在一个技术论坛中，多位用户分享了其使用荣耀手机唤起DeepSeek，并用后者解答几何、排列等数学问题，以及解读网络热梗的使用体验，一位用户讲道：“思考时间比较长，但是答对了，感觉是满血版。” 
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_42e183cc93f347619206f066178da0b4@46958_oswg92733oswg456oswg1000_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/4c75f2bc5a06995e.jpg)
 
 荣耀手机唤起DeepSeek解决数学问题，图源/公开网络  
 
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 而中兴通讯旗下的努比亚则在2月10日表示不满足于仅仅内嵌一个对话入口、采用简单的“智能体方案”接入，而是要“更深度地将DeepSeek内嵌至系统中，并且是6710亿参数量的全尺寸嵌入”，目前仍在内测阶段。 
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_ad6e9f5156094370b16ccaafd22150a5@46958_oswg170186oswg1058oswg518_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/0cde5a4b73f9393e.jpg)
 
 图源/努比亚技术有限公司总裁倪飞个人微博 
 
@@ -75,7 +72,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 杭州算法工程师湫湫向「电厂」分析道，除了对话机器人之外，目前市面上已经可以看到有开发者基于DeepSeek搭建的许多ToC服务，可用于个人日程事务管理、实时翻译、辅助阅读、智能配置视频字幕……“未来这些能力如果能够引入手机，相比单一的对话智能体能够产生更大的用户价值，也蕴含着更多商机”，她讲道，而这无疑需要手机企业与DeepSeek完成更加深度的融合。 
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_5e010c38d5d3414da93b84dead0cabc3@46958_oswg185091oswg1080oswg701_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/cc09ad89e118bef8.jpg)
 
 
 还有人认为，DeepSeek R1 技惊四座的亮相，以及手机玩家们所展现出的热情迎合，更说明着后者重注AI大模型自研的现状可能被改变。 
@@ -96,7 +93,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 就在市场卷起DeepSeek飓风、迎来一场从科技企业遍及用户者的AI狂欢的同时，许多人已经以DeepSeek为标杆，在进行着一场无声的“冲刺”。 
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_96fc4ba06ef24546960a8274081a48fb@46958_oswg67496oswg1080oswg1351_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/f4e3b147508244f3.jpg)
 
 华裔AI科学家、斯坦福大学首位红杉讲席教授李飞飞  
 

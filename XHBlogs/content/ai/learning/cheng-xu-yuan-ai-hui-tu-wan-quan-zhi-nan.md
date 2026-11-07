@@ -3,15 +3,12 @@ title: "程序员 AI 绘图完全指南"
 summary: "1 分钟生成架构图，告别手工画图"
 order: 5
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-10-22"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《程序员 AI 绘图完全指南》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -30,7 +27,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这样就能够借助 AI 的创意和工具的能力自由地生成图片。
 
-![AI 画图原理](https://pic.yupi.icu/1/1748414656182-9580e13e-97bd-4013-8361-ee19b200c0f7.png)
+![AI 画图原理](/imgs/cdc4f65a17bbc6c8.png)
 
 虽然目前主流的 AI 大模型和工具都能实现画图功能，但我强烈建议使用 **Cursor 工具搭配 Claude 最新的旗舰模型（比如 Opus 5.5）**，效果最佳。
 
@@ -61,11 +58,11 @@ Mermaid 是目前最流行的文本绘图工具，语法简单直观，被 GitHu
 
 放到 Cursor 等 AI 工具中执行，AI 会生成 Mermaid 代码。然后你可以把代码复制到支持 Mermaid 的工具中查看效果，比如语雀、Typora、或者在线的 [Mermaid 渲染网站](https://mermaid-live.nodejs.cn/edit)。
 
-![Mermaid 流程图](https://pic.yupi.icu/1/1748414916480-1151faa7-a03d-49b0-82b0-ba321211456e.png)
+![Mermaid 流程图](/imgs/9f32df4ae790cea0.png)
 
 很多 AI 聊天助手内置了 Mermaid 渲染工具，能直接看到效果并下载：
 
-![AI 内置渲染](https://pic.yupi.icu/1/1748415298510-f1389787-6859-4cf6-b0c7-fe6712acf57a.png)
+![AI 内置渲染](/imgs/920d00b0307e3719.png)
 
 Mermaid 还支持多种图表类型，比如时序图、甘特图、饼图、Git 分支图、架构图等。
 
@@ -87,7 +84,7 @@ PlantUML 是另一个强大的文本绘图工具，特别擅长绘制 UML 图、
 
 AI 会生成专业的 PlantUML 代码，同样放到语雀的文本绘图、或者 [PlantUML 渲染网站](https://www.plantuml.com/plantuml/uml/) 中，都可以看到效果。
 
-![PlantUML 类图](https://pic.yupi.icu/1/image-20250530125534018.png)
+![PlantUML 类图](/imgs/b1b32899e79d1309.png)
 
 
 ### 如何选择？
@@ -122,7 +119,7 @@ AI 会生成专业的 PlantUML 代码，同样放到语雀的文本绘图、或�
 
 AI 会生成完整的网站，包含各种图表，还是挺炫酷的吧~
 
-![数据大屏](https://pic.yupi.icu/1/1748417511003-49c81cc8-618e-4810-b94d-ebcfbb48885d.png)
+![数据大屏](/imgs/31b55948f2f32ad1.png)
 
 你可以直接按需截图，得到图片；还可以通过 [Codepen](https://codepen.io/) 等网站运行工具将生成的网站快速分享给其他人。
 
@@ -143,7 +140,7 @@ SVG 是可缩放的矢量图形，可以无限缩放而不失真，非常适合�
 
 AI 生成的 SVG 代码可以直接保存为 SVG 文件在浏览器内打开。
 
-![SVG 架构图](https://pic.yupi.icu/1/1748419703308-c3e3ab06-bfd0-4d3e-8bd9-6315fe9e3dde.png)
+![SVG 架构图](/imgs/7e2d428d245570c9.png)
 
 
 ## 三、专业绘图工具 - Draw.io
@@ -154,17 +151,17 @@ AI 生成的 SVG 代码可以直接保存为 SVG 文件在浏览器内打开。
 
 还有个大火的开源项目 [next-ai-draw-io](https://github.com/DayuanJiang/next-ai-draw-io)，可以直接通过 AI 对话来生成和编辑 draw.io 图片，短短几天就涨了 6k star！
 
-![AI Draw.io](https://pic.yupi.icu/1/1765425690148-db18c63c-6666-4a0b-a681-0ad4a5c061c3.png)
+![AI Draw.io](/imgs/9cff4d82f1b12e28.png)
 
 这个项目支持在线体验，你可以完全从 0 开始画图，比如画一个流程图，演示 RAG 的工作原理。AI 会自动生成 Draw.io 绘图代码，很快精美的流程图就搞定了！
 
 ⭐️ 建议观看视频演示：https://bilibili.com/video/BV18NmnB4EeM
 
-![RAG 流程图](https://pic.yupi.icu/1/1765425750546-988f6dd9-552b-403f-a1ea-f8866c309663.png)
+![RAG 流程图](/imgs/332a4c93abc228a3.png)
 
 然后你可以利用 Draw.io 自身强大的绘图能力手动修改任意元素、或者是改变风格样式。也可以通过 AI 对话让它帮你修改，比如改成动画连接线，逼格一下子就上来了。
 
-![动画连接线](https://pic.yupi.icu/1/1765425815484-e879ea8a-d40a-4857-baab-4124c3eedcee.png)
+![动画连接线](/imgs/a8f0d2ff2a3cd10b.png)
 
 
 ### 生成各种技术图
@@ -175,7 +172,7 @@ AI 生成的 SVG 代码可以直接保存为 SVG 文件在浏览器内打开。
 提示词：绘制电商平台的微服务架构图
 ```
 
-![微服务架构图](https://pic.yupi.icu/1/1765425829760-5337eb51-a51a-4327-a1e0-66b6f4ce2176.png)
+![微服务架构图](/imgs/826ba2d73ef9c3b8.png)
 
 UML 类图：
 
@@ -183,7 +180,7 @@ UML 类图：
 提示词：用 UML 类图展示用户管理模块的设计
 ```
 
-![UML 类图](https://pic.yupi.icu/1/1765425843465-53ebe0d1-0df4-46b1-8b27-1bdd98333f5d.png)
+![UML 类图](/imgs/be3a3e886b2e9e77.png)
 
 ER 图：
 
@@ -191,7 +188,7 @@ ER 图：
 提示词：绘制在线教育平台的数据库 ER 图
 ```
 
-![ER 图](https://pic.yupi.icu/1/1765425852509-4685b9ff-9c86-430c-9e7e-fd1f75877c51.png)
+![ER 图](/imgs/6d29e7ff7869b85e.png)
 
 时序图：
 
@@ -199,7 +196,7 @@ ER 图：
 提示词：用时序图展示用户登录的交互过程
 ```
 
-![时序图](https://pic.yupi.icu/1/1765425862905-cab2301b-77c2-47e4-adc1-6d7c617cd33b.png)
+![时序图](/imgs/46d2ebea0ace8dc4.png)
 
 这些通通不在话下，帮你节省大把的时间和毛发~
 
@@ -212,7 +209,7 @@ ER 图：
 提示词：使用 AWS 图标生成 CDN 架构图
 ```
 
-![AWS 架构图](https://pic.yupi.icu/1/1765426030861-27a70a15-559b-4540-9177-5e5f66d120b0.png)
+![AWS 架构图](/imgs/0c0c3ec66abf0589.png)
 
 可以使用原生 SVG 动画标签，给整个绘图增加缩放和路径动画：
 
@@ -220,7 +217,7 @@ ER 图：
 提示词：演示 DDOS 攻击，使用 SVG 的 <animateMotion> 和 <animateTransform type="scale"> 增加缩放和路径动画
 ```
 
-![动画效果](https://pic.yupi.icu/1/1765425981962-4a730008-8a64-4805-adfc-a63a983e4fde.png)
+![动画效果](/imgs/05ffe7a40df83846.png)
 
 还可以自己上传一个草图，比如我用文本模型生成的 Mermaid 流程图，让 AI 帮我替换为更美观的样式风格：
 
@@ -230,11 +227,11 @@ ER 图：
 
 效果还不错吧！
 
-![优化后的图](https://pic.yupi.icu/1/1765426075534-26f6f2a7-8ee9-421f-ad10-4910b2b7df34.png)
+![优化后的图](/imgs/316d23d458d39fa3.png)
 
 最后导出为各种图片或文档格式，美滋滋~
 
-![导出格式](https://pic.yupi.icu/1/1765268527840-a3717305-7bba-4533-8595-c92c21bcd021.png)
+![导出格式](/imgs/eee36ae8267bd5b4.png)
 
 
 ### 本地部署
@@ -243,7 +240,7 @@ ER 图：
 
 所以我建议下载开源代码到本地，按照官方文档的说法 [配置自己的大模型](https://github.com/DayuanJiang/next-ai-draw-io/blob/main/docs/cn/ai-providers.md) 来运行；或者用 Docker 一键启动，想怎么用就怎么用。
 
-![Docker 部署](https://pic.yupi.icu/1/1765426188076-914514ec-c5cd-4ac5-8ca7-e09f0808801e.png)
+![Docker 部署](/imgs/8b17a93ca14d83ce.png)
 
 
 ## 四、思维导图
@@ -274,7 +271,7 @@ AI 会生成这样的 Markdown 格式：
 
 将这个 Markdown 文件直接导入 XMind，就能生成结构清晰的思维导图啦！
 
-![思维导图](https://pic.yupi.icu/1/1748422118001-752df2f4-d369-46b8-8e16-cd96191d554f.png)
+![思维导图](/imgs/bf9e46440e5826f7.png)
 
 
 ## 五、AI 绘图技巧
@@ -294,14 +291,14 @@ AI 会生成这样的 Markdown 格式：
 
 生成结果如图，是不是很像？
 
-![仿照生成](https://pic.yupi.icu/1/1748424880583-92c573bc-fdb2-45d0-b4e0-d2590ea069c5.png)
+![仿照生成](/imgs/f7c1811ee20efab4.png)
 
 
 ### 技巧 2、截图标注，精准修改
 
 如果你对 AI 生成的图的有些地方不满意，你可以截图并在需要修改的地方画红圈标注，然后告诉 AI 如何修改。
 
-![标注修改](https://pic.yupi.icu/1/1748424987920-e61af63a-b688-4cf8-8cd5-e05df1d412c9.png)
+![标注修改](/imgs/188503eac6fcc63c.png)
 
 
 ### 技巧 3、配置专业的系统预设
@@ -340,7 +337,7 @@ AI 生成的效果很大程度上取决于输入的提示词，所以要让 AI �
 
 如果你觉得本期内容对你有帮助，别忘了点赞收藏。学编程、对 AI 感兴趣的朋友欢迎关注鱼皮，在我免费开源的 [AI 知识库](https://ai.codefather.cn) 中也汇总了大量 AI 知识和教程干货，希望对大家有帮助。
 
-![](https://pic.yupi.icu/1/image-20260109121412266-20260113153648943.png)
+![](/imgs/aef9330d55a3755f.png)
 
 
 ## 推荐资源

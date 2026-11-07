@@ -3,70 +3,66 @@ title: "全新AI表格，来了！"
 summary: "共收录 3 条 AI 行业资讯，如全新AI表格，来了！；![等。"
 order: 77
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《全新AI表格，来了！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
-本文转载自： [全新AI表格，来了！](https://mp.weixin.qq.com/s/NAOnSJa-kRtEloC9XcPv1A)
+[![](/imgs/c8426512aef075c2.webp)](https://demo.aliwork.com/o/7-8-5)
 
-[![](https://pic.code-nav.cn/post_picture/1610518142000300034/swr81HYsj0PLCObq.webp)](https://demo.aliwork.com/o/7-8-5)
+![](/imgs/2344a0b5535b566e.jpg)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/POS2PJK7nlrz7SFG.jpg)
+![](/imgs/92ccbc0d706e510d.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/nePfR86bGxKPBie3.webp)
-
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/nCGiYvXtWdICymfz.webp)
+![](/imgs/31a0ad955b476724.webp)
 
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/rxmyxv6t7bncsg2Y.webp)
+![](/imgs/1ae179eebb616256.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/yM7cXuCDaiTGJ63T.webp)
+![](/imgs/11714f6b6f38d3ef.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/coEFCIC0weRklx5D.webp)
+![](/imgs/f174b7868491ce88.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/27HxJahSPmvS7udG.webp)
+![](/imgs/131e846f5ea341f6.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/YMuzV4NJ77zhYgNw.webp)
+![](/imgs/df6c674ac7b07965.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/jWqNpK5gy1DvQgd7.webp)
+![](/imgs/84d52aa958a378e5.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/zvmHhjrpDNYPCjzj.webp)
+![](/imgs/c06e04ff174411a9.webp)
 
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/qCWhC4pi6me7Q8pZ.webp)
+![](/imgs/c6eb1c195af137d1.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/8fMXochnS8AcCvW6.webp)
+![](/imgs/6c9e1d55e0788a16.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/uQyShOjZG5kcYQW8.webp)
+![](/imgs/61d9210b8b4f07e3.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/VMaxTQrlJKoH591E.webp)
+![](/imgs/ae25dbe785d5a387.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/eI7mBnjNe9LsBKmo.jpg)
+![](/imgs/a4e88042a69add43.jpg)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/YyohxHkQKF43aBDQ.webp)
+![](/imgs/b8d0963e506981ce.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/gsAicbWWrqO33YsB.webp)
+![](/imgs/9741893ff164e9e0.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/OtMMqwJWinNJeNCP.webp)
+![](/imgs/20a3e0cf420a3ab6.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/PhBOCm5D67yOVWde.webp)
+![](/imgs/3170c8c5e50fbe81.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/LVshMQppyhVB8hCV.webp)
+![](/imgs/d65a87524632bb60.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/Th2Q9ukB46w8wgzr.jpg)
+![](/imgs/e60587d189e05109.jpg)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/A5Xxt1V5WZnmPF2A.webp)
+![](/imgs/b1004ee451d2bce9.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/hLUI90KghS0KuRmt.webp)
+![](/imgs/645367c99b41a89d.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/cMSE8EPkUGenaVYG.webp)
+![](/imgs/67fe9615df14639c.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/nWEEYLvy1AfIqwto.jpg)
+![](/imgs/23c496b7fb6a0f76.jpg)
 
-[![](https://pic.code-nav.cn/post_picture/1610518142000300034/McAFZEE7i9LcSeNv.webp)](https://demo.aliwork.com/o/7-8-5)
+[![](/imgs/effc565b42c0b8c3.webp)](https://demo.aliwork.com/o/7-8-5)

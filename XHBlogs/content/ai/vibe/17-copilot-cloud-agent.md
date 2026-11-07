@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GitHub Copilot 云端 AI 自动开发实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 本文介绍如何利用 GitHub Copilot Coding Agent 在云端自动完成从需求分析到全栈开发、测试、部署上线、代码审查、Issue 处理、定时任务的全流程。全程不需要打开 IDE，在 GitHub 网页版即可完成。
 
 大家好，我是程序员鱼皮。
@@ -21,13 +18,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 主题是「带你看 GitHub Copilot 的另一面：智能体装机，不只在 IDE」。这名字是大会方包装的，说实话我自己看着都一头雾水。。。
 
-![](https://pic.yupi.icu/1/image-20260422215325862.png)
+![](/imgs/4211061fdf2825d1.png)
 
 简单来说就是：**手把手教大家如何用 GitHub + Copilot，打造属于自己的 AI 智能体。**
 
 真没想到有这么多人来听分享，看来大家对这个选题确实很感兴趣。
 
-![](https://pic.yupi.icu/1/mmexport1776762414702_%E5%89%AF%E6%9C%AC.jpg)
+![](/imgs/246d3ca01f912179.jpg)
 
 这篇文章就是演讲的完整文字版，希望能给大家一些启发和帮助。
 
@@ -47,7 +44,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 没有工作空间，角色无处定义、记忆无处存储、技能无处挂载。
 
-![](https://pic.yupi.icu/1/image-20260423162031832.png)
+![](/imgs/b83b285c885ae1d2.png)
 
 除了自己的电脑之外，还有其他的工作空间吗？
 
@@ -59,7 +56,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我把它称为「给虾」：
 
-![](https://pic.yupi.icu/1/image-20260423162442682.png)
+![](/imgs/3a5634ac15271f85.png)
 
 接下来我会一步步演示，如何利用 GitHub 搭建一个超级智能体，不需要打开 IDE，也能完成从需求分析到全栈开发、测试、文档生成、部署上线、SEO 优化、代码审查、自动处理 Issues、定时任务的全流程。
 
@@ -69,17 +66,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 打开 GitHub 网页版，你会发现 GitHub Copilot 的对话入口随处可见，已经融入到 GitHub 的各个角落了。
 
-![](https://pic.yupi.icu/1/1774936826720-d8fb03a7-3f53-4674-8d37-d1abbd873565.png)
+![](/imgs/970da930dcb90e17.png)
 
 我们先新建一个叫 `github-claw` 的仓库，作为 AI 智能体的工作空间。
 
 创建仓库时就可以填入初始化的提示词，这其实就是我们给这只 AI 小龙虾注入灵魂的过程。
 
-![](https://pic.yupi.icu/1/1774936859388-895eba7a-1a5a-45d8-b510-b2c2b5402efa.png)
+![](/imgs/80f4c33a21fc6ecc.png)
 
 在开始之前，建议先从右上角进入 GitHub Copilot 的设置，开启联网搜索功能，这样 AI 能获取更新的信息。
 
-![](https://pic.yupi.icu/1/image-20260423162530594.png)
+![](/imgs/a6bc91461abd7b9d.png)
 
 然后我们填入初始化 Agent 的提示词。这段提示词定义了龙虾的角色、行为规则和记忆机制：
 
@@ -107,19 +104,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 可以看到，Copilot 自动初始化了一个工作空间，还自动集成了 GitHub 的 MCP 工具：
 
-![](https://pic.yupi.icu/1/1774937227476-47848347-e4ba-4d4f-855f-b5921ea4eb59.png)
+![](/imgs/5fc7d2a08fc8c6cf.png)
 
 任务完成后，它会自动创建一个 PR。我们人工检查一下，没问题就合并。
 
-![](https://pic.yupi.icu/1/1774937109998-7080c68f-b049-4fe9-9c4d-860a0ddf2484.png)
+![](/imgs/bccb0008b378e89b.png)
 
 对了，如果你发现有「网络连接失败」的提示，是因为 Copilot coding agent 默认有防火墙限制。需要到仓库设置里关闭防火墙：
 
-![](https://pic.yupi.icu/1/1774937329485-d4936387-abd0-464a-b808-a20f8cf6167d.png)
+![](/imgs/3b76c2e5c43358ea.png)
 
 Agent 初始化完成后，你可以跟它打个招呼，它会通过文档获取到记忆：
 
-![](https://pic.yupi.icu/1/image-20260423162709389.png)
+![](/imgs/a67bd7a6a09d6a0e.png)
 
 
 
@@ -137,29 +134,29 @@ Agent 初始化好了，接下来让它干活。
 
 Copilot 会通过 GitHub MCP 获取我的开源项目信息，然后自动开始开发网站：
 
-![](https://pic.yupi.icu/1/1774937381654-bde29eb7-3d0f-4869-a065-f7ddb09950dd.png)
+![](/imgs/17ff3918e5df2146.png)
 
 生成代码后，它还会自动执行代码检查，发现问题就自主修复：
 
-![](https://pic.yupi.icu/1/1774937517424-6099472c-eb6c-4688-a02d-79b3ed37ca8e.png)
+![](/imgs/fb99d0f081d3dda5.png)
 
 接着它会自动创建 GitHub Actions 工作流，利用 GitHub Pages 完成静态网站的部署：
 
-![](https://pic.yupi.icu/1/1774937463974-f0f1cf86-da67-40ee-8cf9-abee42b66807.png)
+![](/imgs/25ab974b6020598a.png)
 
 合并 PR 后，还需要进入仓库设置里的 GitHub Pages，选择「从工作流部署」（注意仓库必须是公开的）：
 
-![](https://pic.yupi.icu/1/1774937811979-b3b187f8-f23c-42b1-be46-363d9f9a2457.png)
+![](/imgs/1a226700c4efd5e6.png)
 
 然后手动触发一次工作流，后续每次推送代码都会自动触发部署：
 
 > 注意检查 workflow 里的分支名配置，要和你仓库的默认分支一致（比如 `master` 还是 `main`）。
 
-![](https://pic.yupi.icu/1/1774937756522-a4fd8522-7891-4e7c-9825-67a6473dbb3a.png)
+![](/imgs/3a75c7c5a481ff86.png)
 
 成功部署后，页面就可以正常访问了：
 
-![](https://pic.yupi.icu/1/1774937885356-5d43735f-8c35-42de-a89e-b868612e5448.png)
+![](/imgs/9b8c2be70f3c433a.png)
 
 
 
@@ -169,7 +166,7 @@ Copilot 会通过 GitHub MCP 获取我的开源项目信息，然后自动开始
 
 当我命令它用技能时，它反而自己造了一个，这就不对了。
 
-![](https://pic.yupi.icu/1/1774937618640-576f8005-f62f-44f4-9483-e1734d8555cd.png)
+![](/imgs/a6c6eddfdd2d5f41.png)
 
 所以我们需要新开一个对话，通过提示词教会 AI 如何正确发现、安装和使用技能：
 
@@ -194,7 +191,7 @@ Copilot 会通过 GitHub MCP 获取我的开源项目信息，然后自动开始
 
 AI 顺利完成了任务，制定了技能标准：
 
-![](https://pic.yupi.icu/1/1774937972667-4d367cc1-d71d-43fe-ae68-3431b6d2108a.png)
+![](/imgs/dd5a7f991e441d76.png)
 
 搞定了技能规范，接下来让 AI 正确安装并使用 `UI-UX-PRO-MAX` 技能来优化网站：
 
@@ -202,19 +199,19 @@ AI 顺利完成了任务，制定了技能标准：
 帮我废弃掉原来错误的 UI-UX-PRO-MAX 技能，安装正确的 UI-UX-PRO-MAX 技能，并利用这个技能优化之前的 ai-guide 导航网站
 ```
 
-![](https://pic.yupi.icu/1/1774938123134-4f172cad-2ba2-402e-82e6-625db01ca36b.png)
+![](/imgs/06754613a64008d7.png)
 
 这次成功了！AI 智能体从 GitHub 上正确复制了技能目录，并用技能优化了网站的 UI：
 
-![](https://pic.yupi.icu/1/1774938261001-a8f8d0ea-313a-4782-bb5c-bd049d535b6d.png)
+![](/imgs/0a9e11acbdbdde06.png)
 
 页面移除了多余的 Emoji，看起来更专业了：
 
-![](https://pic.yupi.icu/1/1774938307530-07362fac-fdd8-4e2f-9c72-0a1319022029.png)
+![](/imgs/bc9b9ae3b1228aca.png)
 
 更重要的是，它还更新了 `AGENTS.md` 工作流、记忆和任务文件，实现了 AI 智能体的进化，之后它就能自己发现和使用技能了：
 
-![](https://pic.yupi.icu/1/1774938201747-77528d03-8fbc-4ef0-9221-160f06ae49b2.png)
+![](/imgs/47b085cc5d3a7192.png)
 
 
 
@@ -224,7 +221,7 @@ AI 顺利完成了任务，制定了技能标准：
 
 这里有个小技巧，先人工挑选一个靠谱的 AI 生图技能，然后到 [鱼皮 AI 导航](https://ai.codefather.cn/) 上找一个你喜欢的绘图风格提示词模板，一起提供给 AI 参考。
 
-![](https://pic.yupi.icu/1/1774938362506-65f5400c-e58c-49e0-a717-5f1df6306c65.png)
+![](/imgs/943b5d8aa042c023.png)
 
 给 AI 的提示词：
 
@@ -238,17 +235,17 @@ AI 生图的风格参考下面的提示词模板：@已经复制的模板
 
 AI 完成任务后会请求一个生图 API Key，我们到 Google AI Studio 上获取后发给 AI。它会注重安全性，仅临时使用这个密钥：
 
-![](https://pic.yupi.icu/1/1774938470660-ee788099-bace-4a0b-8f2b-326de0caf773.png)
+![](/imgs/79f7493b3f169a4d.png)
 
 AI 智能体成功调用技能，生成了图文并茂的文档：
 
-![](https://pic.yupi.icu/1/1774938669310-fbbb62dd-a10d-4ef7-8ade-4ae3630f33e8.png)
+![](/imgs/2e14302941ae94bc.png)
 
 不过这次它误改了网站首页的文件。没关系，通过 PR 我们发现了这个问题，不合并就行，再让 AI 自主修复。
 
 这里也提醒大家：**虽然 AI 写代码能力很强了，但代码审查依然很重要。**
 
-![](https://pic.yupi.icu/1/1774938796668-8b82900c-1f40-44f7-89d3-e4f03af3cea7.png)
+![](/imgs/e8e710f8b0f21d99.png)
 
 
 
@@ -266,19 +263,19 @@ AI 智能体成功调用技能，生成了图文并茂的文档：
 
 GitHub Copilot 整合了 Claude 等多个模型，可以直接在云端启动不同的 AI 来完成任务：
 
-![](https://pic.yupi.icu/1/1774938911290-462333f6-8107-485d-ae36-f1417eff0cc0.png)
+![](/imgs/f60d4ef54bc1504b.png)
 
 直接在网页端爽用 Claude 模型：
 
-![](https://pic.yupi.icu/1/1774938853796-04e68bed-2f7d-42cb-9206-0c237f26f288.png)
+![](/imgs/3c1ee316a6018f21.png)
 
 很快 AI 就完成了 SEO 优化，网站更容易被搜索引擎收录了：
 
-![](https://pic.yupi.icu/1/1774939165853-dc11c5a9-ee7a-4462-8d24-3fd3b4947ebe.png)
+![](/imgs/c4fcc2ad4b2e558f.png)
 
 效果如图，网页上增加了一堆搜索关键词：
 
-![](https://pic.yupi.icu/1/1774939208320-445dfdcb-c527-49bf-acf7-e24571e42584.png)
+![](/imgs/62ff95e5aad34dba.png)
 
 可以看出，我们的 AI 智能体已经能够熟练运用各种技能了。之后你再新开一个对话，就可以直接使用已经安装好的技能，把 GitHub 当成安全隔离的「电脑空间」来用。
 
@@ -302,11 +299,11 @@ GitHub Copilot 整合了 Claude 等多个模型，可以直接在云端启动不
 
 AI 会自己完成环境安装、前后端开发、自动化测试、文档生成，全流程一条龙：
 
-![](https://pic.yupi.icu/1/1774939363314-a5d0a2ae-6cc8-43f2-b7d2-85e8a491cfe4.png)
+![](/imgs/414a076a4634dc17.png)
 
 注意，这些全部都是在云端执行的。哪怕你把网页、网络甚至电脑都关了，也不影响它继续工作。
 
-![](https://pic.yupi.icu/1/1774939462978-9bc438e5-22d2-4d30-9d5b-3d8dd24bfa22.png)
+![](/imgs/4232c7fea7a68af8.png)
 
 
 
@@ -320,7 +317,7 @@ AI 会自己完成环境安装、前后端开发、自动化测试、文档生�
 
 开发完成后，你可以在 AI 工作的对话框中点击「Open in VS Code」，或者用 Copilot CLI 在本地接管项目：
 
-![](https://pic.yupi.icu/1/image-20260423163857167.png)
+![](/imgs/f2de1252dd9c0f8c.png)
 
 VS Code 接管项目后，会自动克隆仓库到本地并打开。
 
@@ -332,11 +329,11 @@ VS Code 接管项目后，会自动克隆仓库到本地并打开。
 
 它会自动创建 Python 虚拟环境，关键步骤会找你确认（比如安装依赖和执行命令），非常安全：
 
-![](https://pic.yupi.icu/1/1774939577513-adc4908e-bd05-43a4-834d-efad1f629026.png)
+![](/imgs/7eaf6a03a8e07ed9.png)
 
 然后人工打开浏览器测试，有问题再让 AI 修复就好：
 
-![](https://pic.yupi.icu/1/1774939621027-32a61479-57ec-4022-b090-a5fba6d92a5b.png)
+![](/imgs/a4cc7040bbb2fe9f.png)
 
 
 
@@ -346,7 +343,7 @@ VS Code 接管项目后，会自动克隆仓库到本地并打开。
 
 Codespaces 是 GitHub 提供的云端开发环境，可以在浏览器里直接编辑代码、运行项目，体验和本地 VS Code 几乎一样。
 
-![](https://pic.yupi.icu/1/image-20260423163948284.png)
+![](/imgs/6a0fa0d3208b992d.png)
 
 需要先让 AI 帮忙创建 Codespaces 所需的配置，这样创建环境后就会自动完成初始化并运行项目：
 
@@ -354,23 +351,23 @@ Codespaces 是 GitHub 提供的云端开发环境，可以在浏览器里直接�
 请继续为这个项目补全 GitHub Codespaces 开发环境配置，创建 .devcontainer/ 相关文件，使其适配这个前后端项目，并确保在创建 Codespace 后能够自动安装前后端依赖、安装 FFmpeg、初始化必要环境、自动启动 Vue 前端与 Python 后端，并正确转发访问端口。
 ```
 
-![](https://pic.yupi.icu/1/1774939729545-f819f0c7-1e67-45bf-bb74-2716aa60f694.png)
+![](/imgs/e67592f911197dc0.png)
 
 AI 创建了所需的配置文件：
 
-![](https://pic.yupi.icu/1/1774939782308-e572175e-b55e-4934-8273-00e617db2cef.png)
+![](/imgs/25f02582c1156403.png)
 
 然后在 GitHub 上创建 Codespace：
 
-![](https://pic.yupi.icu/1/image-20260423164046377.png)
+![](/imgs/5a582d0ffcb87f8e.png)
 
 创建完成后，正常情况下可以直接访问前端和后端（注意前端请求后端的地址可能需要调整）：
 
-![](https://pic.yupi.icu/1/1774939972660-85faf67a-ec86-4bb4-be10-a533fe2432de.png)
+![](/imgs/f2be219769f6e0ca.png)
 
 如果访问不了，也可以进入 Codespace 的终端手动执行启动脚本（注意脚本的执行路径要正确）：
 
-![](https://pic.yupi.icu/1/1774939912870-37b0f3dc-354b-4aef-ac68-58bc21e85513.png)
+![](/imgs/cfa69a9760c60796.png)
 
 你看，这个操作界面是不是和本地的 VS Code 一样？而且还能直接在网页版里使用 Copilot。
 
@@ -386,23 +383,23 @@ AI 创建了所需的配置文件：
 
 Copilot coding agent 开发的代码，本身就会自动执行一轮代码审查：
 
-![](https://pic.yupi.icu/1/1774921510223-3b174e66-582c-4a50-a663-a686d4d0cefb.png)
+![](/imgs/a6c67ebe14c8d81c.png)
 
 同时还会自动执行安全检测：
 
-![](https://pic.yupi.icu/1/1774921537750-a468dece-3396-4d8c-8753-06b0fbb61054.png)
+![](/imgs/f04a41acc581f51c.png)
 
 此外，你还可以在仓库设置中开启对所有 PR 的自动审查。
 
-![](https://pic.yupi.icu/1/1774925532564-80308560-a96c-41b8-9a02-80a21fcda515.png)
+![](/imgs/ec86144e95e0656a.png)
 
 把 Copilot 当成你的「同事」就好，只要把它加为 Reviewer，就会自动触发审查：
 
-![](https://pic.yupi.icu/1/1774925617582-16064bd0-af9e-4684-ae16-0acc54570b3d.png)
+![](/imgs/c927c392e67473b6.png)
 
 审查结果还支持快捷修复，你可以根据它的建议直接采纳修改，一键提交。也可以通过自定义指令来调整审查的侧重点：
 
-![](https://pic.yupi.icu/1/1774940063359-5b4cc05e-d016-4c0c-83df-ab3b95ca35cf.png)
+![](/imgs/002d691a6c8c90ee.png)
 
 
 
@@ -410,13 +407,13 @@ Copilot coding agent 开发的代码，本身就会自动执行一轮代码审�
 
 把 GitHub Copilot 当成你的同事，只要在 PR 中把它设置为 Reviewers，就会触发代码审查：
 
-![](https://pic.yupi.icu/1/1774940168717-5cae3ea3-3868-4bf1-900c-e98bdfeb1373.png)
+![](/imgs/d621dfc714f84a25.png)
 
 你也可以在 PR 的评论里直接 `@copilot`，比如让它把端口号恢复成原样。
 
 这种方式更适合让 Copilot 根据审查意见直接改代码、修复 Bug：
 
-![](https://pic.yupi.icu/1/1774940212269-3c0f640b-b461-4992-8a8b-4355a5ae0b51.png)
+![](/imgs/25602f4acd596c51.png)
 
 
 
@@ -432,15 +429,15 @@ GitHub Copilot 官方支持让 Copilot coding agent 接手 Issue、自动创建 
 
 操作很简单，进入一个 Issue，把它分配给 Copilot 就行：
 
-![](https://pic.yupi.icu/1/1774940337943-ba0b6ed8-872f-4745-b934-64d4f0fbb14b.png)
+![](/imgs/5ac15179f79cacd6.png)
 
 Copilot 会自动创建一个 PR：
 
-![](https://pic.yupi.icu/1/1774940372286-4be19b2d-2d7d-4860-afef-4f3314321c48.png)
+![](/imgs/bd36d66b613558bf.png)
 
 同时创建一个工作会话来分析和修复这个 Issue：
 
-![](https://pic.yupi.icu/1/1774940395478-6e05f7f7-f5ea-4c9b-bbf3-912bfe585612.png)
+![](/imgs/a5b7ef53c87a945f.png)
 
 
 
@@ -458,11 +455,11 @@ Copilot 会自动创建一个 PR：
 请直接完成所需的 GitHub Actions 工作流、必要配置和说明，优先采用简洁、稳定的实现方式。
 ```
 
-![](https://pic.yupi.icu/1/1774940470510-d1d080c2-1b43-40f8-a4c8-da6b99baceba.png)
+![](/imgs/c6201b8a7fccfa3f.png)
 
 不过需要注意的是，自动生成的脚本可能会有问题，比如只回复了却没有真正分配给 Copilot 去修复：
 
-![](https://pic.yupi.icu/1/1774940518174-d623cbc5-ae7a-4258-babc-34fb7d42d6db.png)
+![](/imgs/619ab66ee5f61a63.png)
 
 这时候可以再让 AI 根据官方文档修复。核心要注意几点：
 
@@ -474,17 +471,17 @@ Copilot 会自动创建一个 PR：
 另外，请顺手优化这个工作流的结构：opened 事件只负责自动回复，labeled + bug 事件只负责分配给 Copilot，保证整体逻辑更清晰稳定。
 ```
 
-![](https://pic.yupi.icu/1/1774940559765-faff3598-81bb-4a7d-a4fd-e9a0024644a8.png)
+![](/imgs/5f57c068f34cc545.png)
 
 而且这里需要用户级别的 Personal Access Token（PAT），不能用默认的 GITHUB_TOKEN。
 
 先到 GitHub 申请 PAT，开通相应的仓库权限：
 
-![](https://pic.yupi.icu/1/1774940613065-a66b1fc9-09cf-47ad-ad5e-57dd4618490c.png)
+![](/imgs/43355d860eb9aeee.png)
 
 然后把密钥存放到仓库的 Secrets 中，在工作流脚本中通过 `secrets.COPILOT_ASSIGN_TOKEN` 引用：
 
-![](https://pic.yupi.icu/1/1774940688587-7e6f019d-9df1-4af5-b808-233ee3ec15ee.png)
+![](/imgs/f1339633d9fd25d8.png)
 
 引用 token 的示例代码如下：
 
@@ -498,7 +495,7 @@ Copilot 会自动创建一个 PR：
 
 然后我只要提一个打了 `bug`  标签的 Issue，就会触发 GitHub Actions，自动把 Bug 分配给 AI 处理：
 
-![](https://pic.yupi.icu/1/1774940722288-25f2ee1e-d20d-46c5-869a-bee8fcb69d00.png)
+![](/imgs/558d0b7db6c9b00a.png)
 
 
 
@@ -522,15 +519,15 @@ OpenClaw 的一大亮点是可以执行定时任务，那咱们的 “给虾” 
 
 当然，你还可以选择对接更多第三方渠道，比如邮件、Telegram 等：
 
-![](https://pic.yupi.icu/1/1774940782165-e1ce8ae7-2ab1-4982-a48c-1e9c5791db3b.png)
+![](/imgs/bec0656e918b6bc2.png)
 
 任务完成，创建了定时触发的 GitHub 工作流：
 
-![](https://pic.yupi.icu/1/1774940824191-a0b449e3-d16f-4784-9894-2b2835361853.png)
+![](/imgs/6cccc5ec1b3fdf83.png)
 
 之后，每天会自动生成一份 AI 科技日报：
 
-![](https://pic.yupi.icu/1/1774940877163-c8368494-3a99-45d4-a98b-7cfb7ed6e12a.png)
+![](/imgs/39cedab2c5abc907.png)
 
 注意，GitHub Actions 的 schedule 定时触发会有延迟，官方文档也说明了在高负载时段（尤其是每小时开头）可能延迟甚至丢弃任务，所以不适合对执行时间要求精准的场景。
 
@@ -558,17 +555,17 @@ https://github.com/anthropics/skills/tree/main/skills/skill-creator
 - 编码开发、部署、网站生成与项目推进
 ```
 
-![](https://pic.yupi.icu/1/1774941001296-f6cfe046-91a8-477f-814e-944c4ce5ca10.png)
+![](/imgs/7f766f975081dc70.png)
 
 封装好的 `github-claw` 技能被单独放到了一个干净的分支：
 
-![](https://pic.yupi.icu/1/1774941046143-f9f04ebf-6c68-41f1-b037-6f9b6f50cae2.png)
+![](/imgs/d7a32d6a3cd20fd9.png)
 
 这样一来，以后任何人只要新建一个 GitHub 仓库，安装上这个技能，就能立刻拥有一只自己的 AI 小龙虾了。
 
 > GitHub Claw 项目开源：https://github.com/liyupi/github-claw
 
-![](https://pic.yupi.icu/1/1774941138078-6a086446-9193-4b43-9847-9232401f9854.png)
+![](/imgs/6e7920cad9f73bd5.png)
 
 
 
@@ -580,7 +577,7 @@ https://github.com/anthropics/skills/tree/main/skills/skill-creator
 
 而且因为 GitHub Copilot 深度融合在网页端，以上所有任务都可以通过手机打开 GitHub 网页或 GitHub Mobile App 完成，随时随地使用。
 
-![](https://pic.yupi.icu/1/image-20260423165139146.png)
+![](/imgs/55b3c0cfd67a1508.png)
 
 Copilot 的优势在于：
 
@@ -590,7 +587,7 @@ Copilot 的优势在于：
 
 3）多模型灵活选择：GitHub 提供了多个模型供选择，可以根据不同任务类型适配最合适的模型，节省成本。
 
-![](https://pic.yupi.icu/1/image-20260423165247440.png)
+![](/imgs/2ee8e0a1521b7de0.png)
 
 
 
@@ -612,7 +609,7 @@ Copilot 的优势在于：
 
 比如我的 AI 热点监控工具项目，就是完全利用 GitHub Copilot 在 IDE 中开发出来的。
 
-![](https://pic.yupi.icu/1/image-20260423165402802.png)
+![](/imgs/b8b859b480af49a0.png)
 
 如果你想系统学习 GitHub Copilot 的使用方法，可以阅读本教程编程工具板块中的《AI IDE 插件》和同板块「工具实战」中的《VSCode + GitHub Copilot：微软全家桶的 AI 编程实战》。
 

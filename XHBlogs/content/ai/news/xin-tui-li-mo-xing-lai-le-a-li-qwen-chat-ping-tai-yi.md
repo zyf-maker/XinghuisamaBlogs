@@ -3,15 +3,12 @@ title: "新推理模型来了！阿里 Qwen Chat 平台已上线“深度思考�
 summary: "共收录 2 条 AI 行业资讯，如时代财经；新浪财经 APP等。"
 order: 41
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《新推理模型来了！阿里 Qwen Chat 平台已上线“深度思考”功能，支持联网搜索》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 新推理模型来了！  阿里 Qwen Chat 平台已上线“深度思考”功能，支持联网搜索
 
@@ -28,7 +25,7 @@ QWQ 是类似 DeepSeek R1 和 kimi 的推理模型，QwQ 可同时支持深度�
 
 值得注意的是，在发布该新功能的同时，通义千问团队表示其获得了 qwen.ai 域名，用户可以通过 chat.qwen.ai 访问千问聊天。
 
-![](https://n.sinaimg.cn/spider20250225/630/w748h682/20250225/e659-16588f57769dd35c91a54096782b61ec.jpg)
+![](/imgs/5f0bfb00d610476e.jpg)
 
 与 DeepSeek 类似，Qwen Chat 的交互界面左下方有深度思考（QWQ）和联网搜索两个选项，点亮这两个选项后，Qwen Chat 就可以执行同 DeepSeek 一样的功能。
 

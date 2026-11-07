@@ -3,15 +3,12 @@ title: "云端部署 OpenClaw"
 summary: "5 分钟在云服务器上搭建 24 小时在线的 AI 员工"
 order: 5
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-10-22"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《云端部署 OpenClaw》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -30,15 +27,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://cloud.baidu.com/product/BCC/moltbot.html
 
-![](https://pic.yupi.icu/1/image-20260209143722677.png)
+![](/imgs/fdf6b48a22202326.png)
 
 这个活动是每天限量的，新老用户都能参与，没想到我运气不错，羊毛被我薅到了哈哈：
 
-![](https://pic.yupi.icu/1/image-20260209143544557.png)
+![](/imgs/71df4a6126230a1e.png)
 
 稍等片刻，服务器就初始化完成了。
 
-![](https://pic.yupi.icu/1/image-20260209143600373.png)
+![](/imgs/a76df6bf738136c2.png)
 
 点击「一键部署 OpenClaw」按钮，就能跳转到服务器管理页面。
 
@@ -48,7 +45,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 注意，镜像一定要选择 OpenClaw 应用镜像，套餐选择 2 核 4GB 就妥妥够用了。
 
-![](https://pic.yupi.icu/1/image-20260209144440798.png)
+![](/imgs/e0df8ae8fdfcde27.png)
 
 结算之后会自动创建服务器，然后跟前面一样，能够进入到服务器管理页面。
 
@@ -61,7 +58,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 页面会提示你需要开通千帆大模型、云助手等几个服务。不用一个个去找，直接点「一键开通」，同意协议就搞定了。
 
-![](https://pic.yupi.icu/1/image-20260209144927875.png)
+![](/imgs/908c2668d662de2c.png)
 
 
 **3）放通防火墙端口**
@@ -70,7 +67,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 点击「一键放行」按钮就好：
 
-![](https://pic.yupi.icu/1/image-20260209145239379.png)
+![](/imgs/3118c80084e3d63e.png)
 
 
 **4）选择 AI 模型**
@@ -79,11 +76,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 可以直接在页面下拉选择你想要的模型，国产的主流大模型基本都支持（比如 DeepSeek），选完点击「应用」就行。
 
-![](https://pic.yupi.icu/1/image-20260209145623840.png)
+![](/imgs/0f932c58f667ee0e.png)
 
 系统会自动帮你创建调用大模型的 API 密钥，并且把配置全部搞定。
 
-![](https://pic.yupi.icu/1/image-20260209145857028.png)
+![](/imgs/d01f678da1ba841e.png)
 
 等执行成功，你的 OpenClaw 就可以正常使用了。
 
@@ -96,15 +93,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 点击页面下方的「获取网站地址」：
 
-![](https://pic.yupi.icu/1/image-20260209150158108.png)
+![](/imgs/1db8c51c2633b6e2.png)
 
 然后打开链接进入 OpenClaw 网页端：
 
-![](https://pic.yupi.icu/1/image-20260209150316824.png)
+![](/imgs/eac8214cf7ab38b4.png)
 
 现在你就可以直接在网页上跟 OpenClaw 对话了，比如先给他取个名字吧，我这里叫他为「鱼皮的天苟」：
 
-![](https://pic.yupi.icu/1/image-20260209150631021.png)
+![](/imgs/3eab757459c292a9.png)
 
 可以看到，AI 自动更新了自己的身份，并且会一直保留这段记忆。之后，你可以通过不断地对话来训练 AI，让他成为你最得力的助手。
 

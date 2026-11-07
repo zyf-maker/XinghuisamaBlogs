@@ -3,17 +3,13 @@ title: "闭源主力选手拥抱开源？OpenAI 被曝最快下周推开源 AI �
 summary: "共收录 3 条 AI 行业资讯，如闭源主力选手拥抱开源？OpenAI 被曝最快下周推开源 AI 模型，o3 mini 级推理能力；咩咩洋等。"
 order: 74
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《闭源主力选手拥抱开源？OpenAI 被曝最快下周推开源 AI 模型，o3 mini 级推理能力》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [闭源主力选手拥抱开源？OpenAI 被曝最快下周推开源 AI 模型，o3 mini 级推理能力](https://www.ithome.com/0/867/065.htm)
 
 感谢IT之家网友 [咩咩洋](https://m.ithome.com/html/app/open.html?url=ithome%3A%2F%2Fuserpage%3Fid%3D1520790) 的线索投递！
 
@@ -27,7 +23,7 @@ IT之家注：OpenAI 是闭源 AI 模型的典型代表，此前仅公布过语�
 
 消息称在过去几个月时间里，OpenAI 已邀请开发者和研究人员测试该模型，并公开征求 AI 社区的反馈。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/NLpZX5kJFLOWHRRs.webp "闭源主力选手拥抱开源？OpenAI 被曝最快下周推开源 AI 模型，o3 mini 级推理能力")
+![](/imgs/4da216d85544fcac.webp "闭源主力选手拥抱开源？OpenAI 被曝最快下周推开源 AI 模型，o3 mini 级推理能力")
 
 如果这款开源模型真的落地，那么将会是 OpenAI 自 2019 年发布 GPT-2 以来，也是自 2023 年与微软签订独家云服务提供商协议以来，OpenAI 首次推出开源语言模型。
 

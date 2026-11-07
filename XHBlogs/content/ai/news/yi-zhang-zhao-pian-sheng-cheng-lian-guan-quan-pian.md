@@ -3,15 +3,12 @@ title: "一张照片生成连贯全片！Runway Gen-4 深夜发布，终于捅�
 summary: "一张照片生成连贯全片！Runway Gen-4 深夜发布，终于捅破 AI 视频多年的天花板，由程序员鱼皮整理。"
 order: 58
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《一张照片生成连贯全片！Runway Gen-4 深夜发布，终于捅破 AI 视频多年的天花板》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 「深度思考」成为模型的标配，Manus 这样会干活的 Agent   也开始介入我们的工作流，GPT-4o 的生图功能让每个人都能作出媲美专业的的风格。
 
@@ -41,7 +38,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 生成式视觉特效：提供快速、可控的视频特效，可与实拍和传统特效无缝融合。
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_8a85cbb9738048a0b5c10c171dc28a34@1200352198_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/acb51575d8418bdf.jpg)
 
 Runway 联合创始人兼 CEO Cristóbal Valenzuela Barrera 在 X 平台发文称：
 
@@ -59,7 +56,7 @@ Runway 联合创始人兼 CEO Cristóbal Valenzuela Barrera 在 X 平台发文�
 
 他们为臭鼬设定了两个关键标记点，精确控制其移动路径——先移动到场景一侧，再折返回来，成功营造出「寻找」的动态感。
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_273e08d729084c0eb6779a5679535e17@1200352198_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/69fd102f27e0c6cf.jpg)
 
 「就像所有伟大的动画一样，你可以在角色设计和场景移动中看到丰富的表现力，」团队成员解释道，「同一角色在不同场景、不同光照条件下保持一致性，同时能够表现不同的情绪和动作。」
 
@@ -73,7 +70,7 @@ GVFX 的技术核心在于其高效性和适应性。
 
 用户只需提供简单的视觉参考或文字描述，例如角色的动作、场景的氛围或特定的特效需求，Gen-4 便能在短时间内生成高质量的视频片段。
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_6476ad9e951740af919795d13261b325@1200352198_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/2881f7e4de0f8291.jpg)
 
 一个具体的应用案例是 Runway 团队在演示中展示的「木制玩具」场景。
 
@@ -81,7 +78,7 @@ Runway 团队成员拿出一个木制玩具，用手机拍摄照片后导入 Gen
 
 挑选其中一张，挑选一张，并为画面添加了行人从玩具前走过的动画效果。「你可以将这个玩具放在任何地方——山脉中、沙漠里，基本上你想做什么都可以。」
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_720bed44df7a4488aa324527b86d0492@1200352198_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/9465e528a79ac9d7.jpg)
 
 《牛群》是一部扣人心弦短片，讲述了一名年轻男子在夜晚被追赶穿越一片牛群的故事。仅凭 Gen-4 和几张简单的图像参考，Runway 团队构建了角色的每个镜头以及雾气弥漫的牛群场景。
 
@@ -91,13 +88,13 @@ Runway 团队成员拿出一个木制玩具，用手机拍摄照片后导入 Gen
 
 这个案例展现了 Gen-4 如何利用一致的角色、物体和环境贯穿多个场景。创作者可以从一个精心设计的角色入手，构建氛围与外观，再生成全新图像，并为不同镜头和视角提供多样变化。
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_206d981c7ae7440db025d19ac0345f61@1200352198_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/a6817d3c7ed603f8.jpg)
 
 Gen-4 对现实物理世界的理解达到了新高度。
 
 《纽约》短片将纽约不同区域的真实照片结合动物的真实照片，清晰地展示了 Gen-4 对物理、动物重量、它们如何在表面移动以及与环境互动方式的理解。
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_33f95212998c4257a723f076dcbcbeaa@1200352198_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/04a56e4b687ae238.jpg)
 
 复杂的创意作品往往从一个简单的构想开始。
 
@@ -115,7 +112,7 @@ Runway 将利用狮门影业超过两万部影视作品的资料库，包括《�
 
 一支好的钢笔不会让作家思考墨水流动的物理原理，优秀的 AI 创作工具也不应让导演分心于算法细节。
 
-![](https://img.36krcdn.com/hsossms/20250401/v2_ad6c4261e25e4d38957083cf183b35c6@1200352198_oswg234510oswg888oswg518_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/5bf1ff49d5949b41.jpg)
 
 Valenzuela 也指出，公司在训练其模型时，更多地参考了电影行业的术语，而不是过去的方式，目的是让使用该模型的电影制作人在编写提示时能够更加自然。
 

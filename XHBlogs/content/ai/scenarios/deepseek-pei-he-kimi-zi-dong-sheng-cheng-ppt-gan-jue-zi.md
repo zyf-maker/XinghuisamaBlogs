@@ -3,15 +3,12 @@ title: "DeepSeek配合KIMI，自动生成PPT，感觉自己要失业了！"
 summary: "之前跟大家分享了如何将DeepSeek放在Excel表格中，有粉丝就能到能用DeepSeek来生成PPT吗？"
 order: 7
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek配合KIMI，自动生成PPT，感觉自己要失业了！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 之前跟大家分享了如何将DeepSeek放在Excel表格中，有粉丝就能到能用DeepSeek来生成PPT吗？
 
@@ -29,23 +26,23 @@ KIMI智能助手来生成PPT是因为它完全免费，并且质量可以，当�
 
 生成完毕后，右下角点击复制按钮，将PPT大纲做一下复制
 
-![img](https://pic.yupi.icu/yuyi/1739501529227-44280232-2245-4b88-83ad-4811ad894591.webp)
+![img](/imgs/a585443248c8d098.webp)
 
 ### 二、KIMI生成PPT
 
 随后来到KIMI的官网，我们需要登录下才能使用PPT生成的功能，这个就不再赘述了，扫码就行，登录后在右侧点击KIMI+，就会显示很多的工具，我们要在其中找到【PP助手】点击
 
-![img](https://pic.yupi.icu/yuyi/1739501530167-23938970-e4be-4955-8d45-93f4f03a949b.webp)
+![img](/imgs/08df34f1c162e4e5.webp)
 
 点击后会显示一个新的对话窗口，我们需要将刚才复制的PPT大纲丢给KIMI，让它根据大纲来润色，润色之后点击左下角的【一键生成PPT】就能来到PPT的生成窗口
 
-![img](https://pic.yupi.icu/yuyi/1739501529237-94f57270-cfeb-43d6-a5cc-4032b2640ce6.webp)
+![img](/imgs/be08e4b2c20fe0dc.webp)
 
 ### 三、主题选择
 
 我们需要在下方选择下自己需要的【主题】、【设计风格】、【配色方案】，选择完毕后在左上角点击【生成PPT】KIMI就会根据数据自动生成PPT，这个效果是动态的，PPT会自动生成，看到这一步，不得不感叹AI发展的太快了！
 
-![img](https://pic.yupi.icu/yuyi/1739501532264-66fdeb30-5a43-40ca-85b5-de29a939f972.webp)
+![img](/imgs/20b51563abb11491.webp)
 
 ### 四、修改导出
 
@@ -55,7 +52,7 @@ KIMI智能助手来生成PPT是因为它完全免费，并且质量可以，当�
 
 最后点击保存，导出PPT即可，至此PPT就生成完毕了。
 
-![img](https://pic.yupi.icu/yuyi/1739501536252-a1622899-c010-4f00-b367-d455ceccf1ef.webp)
+![img](/imgs/5ebc3f53693da365.webp)
 
 
 > 来源：https://mp.weixin.qq.com/s/AxItCfkZRGmbpOUCycQgvQ

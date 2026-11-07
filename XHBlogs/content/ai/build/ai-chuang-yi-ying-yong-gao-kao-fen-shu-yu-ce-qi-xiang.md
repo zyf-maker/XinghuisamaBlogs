@@ -3,15 +3,12 @@ title: "AI 创意应用 - 高考分数预测器项目实战"
 summary: "本项目是一个有趣的 AI 高考分数预测器，支持科学预测、玄学预测、心理预测、社交预测等多种预测方式。"
 order: 12
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 创意应用 - 高考分数预测器项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个有趣的 AI 高考分数预测器，支持科学预测、玄学预测、心理预测、社交预测等多种预测方式。
 
@@ -27,7 +24,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 体验地址：[https://gaokao.codefather.cn](https://gaokao.codefather.cn/)
 
-![](https://pic.yupi.icu/1/1749196072689-c78e6eb5-3446-4071-a40a-28946ac6f2f8.png)
+![](/imgs/7c9002155b87e203.png)
 
 这可是来自未来的 AI 黑科技，可以预测高考分数。是不是听起来就很厉害？很离谱？
 
@@ -35,7 +32,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 **推荐观看视频演示，效果更佳：**[https://bilibili.com/video/BV1wqTTzoEoo](https://www.bilibili.com/video/BV1wqTTzoEoo)
 
-![](https://pic.yupi.icu/1/1749196043750-928b991a-5a28-4fd1-a02c-a4e83740668f.png)
+![](/imgs/accefad90a3117f6.png)
 
 有 4 种预测方式，每一种都非常炸裂。
 
@@ -43,23 +40,23 @@ source: "https://github.com/liyupi/ai-guide"
 
 来试试看！
 
-![](https://pic.yupi.icu/1/1749137873952-46d3d94b-7193-40d7-a7b3-9654e1a28c89.png)
+![](/imgs/e97b26ade815a8d9.png)
 
 怎么样，预测的是不是很准确呢？它预测我能考上顶尖院校，清华大学耶！
 
-![](https://pic.yupi.icu/1/1749137431241-eb102e40-9bce-4159-98de-55a7d2bb2a81.png)
+![](/imgs/fa4b7cde280b639e.png)
 
 我当年高考要是有这个好东西，不得支棱起来？
 
-![](https://pic.yupi.icu/1/1749196106729-172a1359-5072-4773-a0e2-cb87dc54d6fa.jpeg)
+![](/imgs/307bb2b4941b131d.jpg)
 
 你还可以下载证书的高清大图，无论是和亲朋好友们分享你的喜悦、还是做朋友圈最亮的崽，通通满足，这也是分数预测器的神奇功效。
 
-![](https://pic.yupi.icu/1/1749196116388-607732bb-f48a-4961-8ec6-f6f715691ef5.jpeg)
+![](/imgs/8319b548b7cedf06.jpg)
 
 再来试试【玄学预测】，所谓玄学，就是一种很玄的学问，信则有，不信则无。这是融合古代智慧与现代占卜学的神秘预测，传承紫微斗数、奇门遁甲、周易八卦，结合现代星象学与血型心理学来预测你的命运和学业运势。来吧，输入你的姓名、星座、血型、生肖、还有最关键的出生日期，来吧！
 
-![](https://pic.yupi.icu/1/1749137831527-c5a50c49-36b9-44bb-ad3f-f7c6dc64a596.png)
+![](/imgs/165a1f1519892d85.png)
 
 “
 
@@ -83,39 +80,39 @@ source: "https://github.com/liyupi/ai-guide"
 
 哇，结果又是清华大学，我只能说我命中注定好吧！
 
-![](https://pic.yupi.icu/1/1749137995189-dbdc4416-67c0-42d7-a974-a965230285d3.png)
+![](/imgs/0e6850847c9d1dce.png)
 
 再来试试我最最最引以为豪的【量子力学预测】，基于薛定谔方程与波函数理论，运用量子纠缠原理分析多重宇宙概率，突破传统预测的时空限制。
 
-![](https://pic.yupi.icu/1/1749138175465-f3983ac6-303d-4e4b-9a6f-16184b40cc6b.png)
+![](/imgs/6139bf09d3ac2bdb.png)
 
 只要点击按钮，就能启动量子计算引擎，通过波函数坍塌确定你的高考分数在多重宇宙中的分布。
 
-![](https://pic.yupi.icu/1/1749138183051-34ce35ff-3144-4799-afc4-fa12e3af8f7d.png)
+![](/imgs/9a4d0810e8a756a2.png)
 
 要来了，要来了！
 
-![](https://pic.yupi.icu/1/1749138203811-544cb676-863b-460b-b39e-398374cb2df2.png)
+![](/imgs/05de8f9702016d90.png)
 
 果不其然，又是清华大学！真是天命难为啊！（我发誓我在程序中加了随机逻辑）
 
-![](https://pic.yupi.icu/1/1749138273388-e579158e-cd4a-45a4-bde4-0551c815b493.png)
+![](/imgs/36dbf72c74da3747.png)
 
 来看看详细分析，原来我的学习状态处于多重叠加态、原来我的潜能存在量子涨落、原来我就是传说中的学霸，原来我就是名校的光！
 
-![](https://pic.yupi.icu/1/1749138286782-f94e0b50-15c3-4980-8300-3ebe0504375c.png)
+![](/imgs/457b7cdfcff715e8.png)
 
 最后我们再来试试传统古法的预测方式【快速预测】，这是 **传承千年** 的神秘占卜术，这是通过灵性感应连接宇宙能量场才能得到的天机。。。
 
-![](https://pic.yupi.icu/1/1749138468801-0f4dc174-f55a-49f7-9cae-15ee5987fcef.png)
+![](/imgs/67532a10c0c6bf62.png)
 
 这特么就是抽签！来一根，bro~
 
-![](https://pic.yupi.icu/1/1749138486223-848f5962-bcdd-4faf-b2ff-27bb3d994098.png)
+![](/imgs/d43ddddc65c20cd2.png)
 
 浇给！最后一次测试结果依然是清华大学，而且这次 **剑指满分**，说实话我觉得清华已经有点满足不了我了。。。
 
-![](https://pic.yupi.icu/1/1749138501970-7306098c-3c4c-4c44-b56c-840c19b7d4bd.png)
+![](/imgs/cad631645ec49293.png)
 
 怎么样，感受到我这个高考分数预测器的强大了吧？真的，我强烈推荐大家 **高考前测一测**，保证让你信心大增！
 

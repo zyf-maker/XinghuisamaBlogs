@@ -3,15 +3,12 @@ title: "AI写小说怎么写？deepseek帮你写小说教程"
 summary: "真正的网文作者，不是喊打喊杀要禁止AI，而是学会用AI辅助自己的创作。"
 order: 32
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI写小说怎么写？deepseek帮你写小说教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 真正的网文作者，不是喊打喊杀要禁止AI，而是学会用AI辅助自己的创作。
 

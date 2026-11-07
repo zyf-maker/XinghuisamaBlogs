@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Codex 主题定制教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 今天在 AI 交流群刷到一件挺有意思的事，居然有人在咸鱼卖 Codex 的主题皮肤？
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 而且还真有不少人买？？？
 
-![](https://pic.yupi.icu/1/1784208749956-7d531c30-1965-49b6-8ea1-b4bfb9614cd2.png)
+![](/imgs/82d9b8b56fb0d9da.png)
 
 这让我想起来，搜狗当年靠输入法皮肤就赚了好几个亿。没想到现在 AI 编程工具 Codex 一火，同样的生意逻辑很快就被人跑通了。
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 开源指路：https://github.com/Fei-Away/Codex-Dream-Skin
 
-![](https://pic.yupi.icu/1/image-20260716214544049.png)
+![](/imgs/cf50019266b0647f.png)
 
 这个项目的作用就是让你的 Codex 从默认的白底黑字变成任何你想要的样子，不仅仅能自定义背景图，像配色方案、装饰元素、侧栏、输入框、建议卡这些都能改。
 
@@ -39,19 +36,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 首当其冲的是美女主题，这谁看了不迷糊？
 
-![](https://pic.yupi.icu/1/1784208357649-d460e25e-e0e2-44e7-a725-eb87040de868.png)
+![](/imgs/00f2a638718cfc00.png)
 
 然后是财神爷主题，换成这个皮肤干活都有劲儿了吧？
 
-![](https://pic.yupi.icu/1/1784208375262-951cb396-a283-4ec6-b3b9-cec4e9b450be.png)
+![](/imgs/1816c227fc4ac7e6.png)
 
 还有初音未来主题，你很难想象这竟然是一个 AI 工具？
 
-![](https://pic.yupi.icu/1/1784208390753-d02b6c7d-58dc-4183-a397-03bbe073cf19.png)
+![](/imgs/acfa0fd4a465d056.png)
 
 还有我个人最最最喜欢的 kun 哥，和偶像一起 Vibe Coding，美滋滋~
 
-![](https://pic.yupi.icu/1/1784208397884-4677f133-2cb7-49f8-853b-ee034a03021d.png)
+![](/imgs/576bcd61721569dc.png)
 
 注意，所有原生控件（侧栏、输入框、项目选择器）都还能正常点击操作，不是简单贴一张假截图上去糊弄人的。
 
@@ -67,7 +64,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我自己试着用 Codex + GPT 5.6 做了一套火影忍者宇智波佐助的主题，整个过程分享给大家。
 
-![](https://pic.yupi.icu/1/1784207621768-328cf53a-9040-4aff-ab34-31345f1cbb5b-20260716221035511.png)
+![](/imgs/13ca84866f92a946.png)
 
 首先打开 Codex，直接跟 AI 说：
 
@@ -77,7 +74,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 AI 会自动把仓库克隆下来，检查你的运行环境（Node.js 版本、系统平台等），然后执行安装脚本。
 
-![](https://pic.yupi.icu/1/1784207655690-1954481c-4005-4f35-b79d-54ef80ea605b.png)
+![](/imgs/5da54c196b1e4f31.png)
 
 安装完成后，AI 会先帮你用项目自带的默认主题跑一遍，确保环境没问题。
 
@@ -93,7 +90,7 @@ AI 会自动把仓库克隆下来，检查你的运行环境（Node.js 版本、
 
 GPT 5.6 可以直接生图（就是比较慢），它帮我生成了一套完整的佐助主题素材，包括佐助与须佐能乎的宽屏背景、宇智波透明纹章、侧栏暗纹、千鸟雷电角饰，还有最重要的万花筒写轮眼。
 
-![](https://pic.yupi.icu/1/1784207704853-20f3956a-9e10-49e7-b1d0-e5e1a3cac81a.png)
+![](/imgs/326ddcf2768fe757.png)
 
 生成完毕后 AI 会自动把素材应用到 Codex 上。
 
@@ -105,7 +102,7 @@ GPT 5.6 可以直接生图（就是比较慢），它帮我生成了一套完整
 好像还有些文字显示的配色是有问题的
 ```
 
-![](https://pic.yupi.icu/1/1784207724134-00b62172-2e55-49f8-bc75-d27e46427461.png)
+![](/imgs/9d1fde161457904b.png)
 
 整个过程下来，从零到一套完整的自定义主题，操作上几乎没什么门槛，就是跟 AI 对话而已。可惜有点慢，大部分时间是在等 AI 生图和调色。
 
@@ -119,7 +116,7 @@ GPT 5.6 可以直接生图（就是比较慢），它帮我生成了一套完整
 
 整个注入过程只走你自己电脑的本机地址，不涉及任何外部网络通信，也不会修改 Codex 官方的 `.app` 安装包和代码签名，只是在界面层面加了一层视觉效果。想恢复的时候让 AI 帮忙跑一下项目自带的 Restore 脚本就行，一条命令回到原样，不影响后续正常更新。
 
-![](https://pic.yupi.icu/1/01_Codex%E6%8D%A2%E8%82%A4%E5%8E%9F%E7%90%86%EF%BC%9AElectron%E5%BA%94%E7%94%A8%E9%80%9A%E8%BF%87CDP%E5%9C%A8%E6%9C%AC%E6%9C%BA%E6%B3%A8%E5%85%A5CSS_JS%E5%AE%9E%E7%8E%B0%E6%8D%A2%E8%82%A4_compressed_v1.png)
+![](/imgs/1213e8bcb86a5580.png)
 
 
 
@@ -127,7 +124,7 @@ GPT 5.6 可以直接生图（就是比较慢），它帮我生成了一套完整
 
 除了主题换肤，Codex 的桌面宠物也支持自定义，感兴趣的同学可以参考[这篇教程](https://mp.weixin.qq.com/s/i9iLg_AG7rODCFa34vCVfA)。自己动手，丰衣足食~
 
-![](https://pic.yupi.icu/1/1777952393166-c0044771-8017-4e51-a4b5-9ac9a8905a71-20260716221036540.png)
+![](/imgs/8a32849637500a9f.png)
 
 Codex 的生态正在快速发展，主题定制只是其中一个玩法。如果你想了解 Codex 的更多用法，可以阅读本教程编程工具板块 Codex 目录中的《Codex：AI 桌面应用保姆级教程》，里面有从安装到实战的完整指南。
 

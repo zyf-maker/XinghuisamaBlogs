@@ -3,21 +3,18 @@ title: "DeepSeek V4 Flash Vision 视觉能力实测 - 8 个场景"
 summary: "蓝色大肥鱼终于能看图了，用 8 个场景实测 DeepSeek 视觉模型到底行不行"
 order: 7
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek V4 Flash Vision 视觉能力实测 - 8 个场景》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近 DeepSeek 的活可真是太多了，我对老 D 真是又爱又恨的。。
 
-![](https://pic.yupi.icu/hackdeacon/20260824135821040.jpg?imageSlim)
+![](/imgs/962373e550504778.jpg)
 
 先是 7 月底放出了 V4 Flash 模型正式版，紧接着 8 月又上线 V4 Pro 正式版，还涨了一波价。与此同时还发布了自家的 AI 工具 DeepSeek Harness，一切皆插件，可玩性极强。
 
@@ -27,7 +24,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 太好了，蓝色大肥鱼终于能看图了，不用安装任何识图插件，迈出了原生多模态能力的第一步。
 
-![](https://pic.yupi.icu/1/HHX3vV5akAAjiNO.jpg)
+![](/imgs/aba6b44569ed6e28.jpg)
 
 那这双「鱼眼」的能力到底怎么样呢？
 
@@ -38,7 +35,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这次测试我主要用的是 DeepSeek Harness（DSH）来接入视觉模型，还没用过的朋友建议先阅读本教程编程工具板块「DeepSeek Harness」目录中的《DeepSeek Harness 保姆级入门教程》，这里我不再重复讲了。
 
-![](https://pic.yupi.icu/1/image-20260814133452050.png)
+![](/imgs/eceef0e558e2ccff.png)
 
 首先需要将 DSH 升级到最新版本，如果你是通过 `npm` 进行安装的 DSH，通过以下命令进行升级：
 
@@ -48,93 +45,93 @@ npm update -g @deepseek-ai/dsh
 
 升级完成后，运行 `dsh -V` 命令，确认版本号是否为最新。然后接入 DeepSeek 官方的 API，就可以切换到最新的视觉模型了。
 
-![](https://pic.yupi.icu/hackdeacon/20260824143815328.png?imageSlim)
+![](/imgs/3d68300c613036d3.png)
 
 
 ### 1、OCR 文字识别测试
 
 环境准备就绪，先来个开胃菜。我找了一张由 GPT Image 生成的发票，里面故意包含了一处错误，看看视觉模型能不能找出其中的猫腻。
 
-![](https://pic.yupi.icu/hackdeacon/20260824144403931.png?imageSlim)
+![](/imgs/29f874e82ac66fda.png)
 
 在 DSH 中，你可以直接把图片拖进输入框：
 
-![](https://pic.yupi.icu/hackdeacon/20260824144629708.png?imageSlim)
+![](/imgs/a5179c5a8c462f16.png)
 
 除了拖拽，DSH 也支持通过图片链接或复制粘贴的方式添加图片。
 
-![](https://pic.yupi.icu/hackdeacon/20260824145429084.png?imageSlim)
+![](/imgs/99ce92fb8f79e72a.png)
 
 识别结果非常精准，而且我并没有告诉 AI 要找出其中的错误，它也顺便把问题给指出来了，好评。
 
-![](https://pic.yupi.icu/hackdeacon/20260824150221467.png?imageSlim)
+![](/imgs/3e18990178ffeb5c.png)
 
 看来 OCR 文字识别能力没什么问题，毕竟早在去年 DeepSeek 开源的 OCR 模型就已经很强了。
 
-![](https://pic.yupi.icu/hackdeacon/20260824154026794.png?imageSlim)
+![](/imgs/34563ce11b989acb.png)
 
 我把同样的图片丢给国外顶尖的 Claude Opus 5 模型，它同样主动找出了发票中的问题。
 
-![](https://pic.yupi.icu/hackdeacon/20260825002126582.png?imageSlim)
+![](/imgs/9a53db08ce418da3.png)
 
 
 ### 2、身份识别
 
 接下来我把 DeepSeek 的亲爹梁文锋的照片发给 AI，看看它能不能认出来。
 
-![](https://pic.yupi.icu/1/%E5%BC%80%E6%BA%90%E5%9C%A3%E4%BA%BA%E6%A2%81%E6%96%87%E9%94%8B%E4%B8%AD.jpeg)
+![](/imgs/35ef8fe447bd0994.jpg)
 
 结果模型思考了 1 分 29 秒后，信心满满地告诉我，照片中的人物是泡泡玛特的 CEO 王宁：
 
-![](https://pic.yupi.icu/hackdeacon/20260824153346551.png?imageSlim)
+![](/imgs/d640b4d5ef952d93.png)
 
 也有其他网友让 DeepSeek 视觉模型来识别梁文锋的照片，有识别出张雪峰的、有识别出张一鸣的、还有识别出是 Kimi 创始人杨植麟的，一个比一个离谱。。
 
-![](https://pic.yupi.icu/hackdeacon/20260824161138841.png?imageSlim)
+![](/imgs/4b03e60852a06f23.png)
 
 同时我也让 Opus 5 来识别这张照片，结果它出于肖像权考虑，直接拒绝识别人物。。。
 
-![](https://pic.yupi.icu/hackdeacon/20260824155010701.png?imageSlim)
+![](/imgs/6fa4a3a9165f1538.png)
 
 然后我又把自己的照片丢给 AI，看看它会把我认成谁呢？
 
-![](https://pic.yupi.icu/hackdeacon/20260824162343744.png?imageSlim)
+![](/imgs/4b1b99f08cc29e87.png)
 
 结果试了几次，这个视觉模型在 DSH 里死活认不出我，放心了放心了。
 
-![](https://pic.yupi.icu/hackdeacon/20260824162911655.png?imageSlim)
+![](/imgs/26f49376cf72e45b.png)
 
 其实早在今年四月底，DeepSeek 网页版就灰度上线了「识图模式」，到六月份全量开放，并且可以免费使用。而这次 V4-Flash-Vision-Exp 模型的上线，则是将视觉能力正式开放到了 API 层面，开发者通过 DSH 等工具就能直接调用了。
 
-![](https://pic.yupi.icu/hackdeacon/20260825100521703.png?imageSlim)
+![](/imgs/a0bc81c5e15d34b5.png)
 
 我在 DeepSeek 网页的识图模式中又试了一次，特地关闭了联网搜索，结果居然把我认成了王俊凯。。。
 
-![](https://pic.yupi.icu/hackdeacon/20260825124513534.png?imageSlim)
+![](/imgs/25758c5bc15b2164.png)
 
 我又让 AI 识别一次，这次我是杀马特教父，不是哥们？
 
-![](https://pic.yupi.icu/hackdeacon/20260824163143560.png?imageSlim)
+![](/imgs/c7b95aa4a134e6c4.png)
 
 看来人物身份识别这一块的能力算是《梁了》。那就换个对象，来测试一下 AI 能不能认出最近因为抽象而爆火的「牛来」。
 
-![](https://pic.yupi.icu/1/%25E7%2589%259B%25E6%259D%25A5%25E5%259B%25BE%25E7%2589%2587.jpg)
+![](/imgs/bf877e566fad8247.jpg)
 
 视觉模型一开始只能识别出图片中的基本元素，不过它竟然能看出来这是一张 AI 生成的图，还挺厉害的。
 
-![](https://pic.yupi.icu/hackdeacon/20260824164405990.png?imageSlim)
+![](/imgs/015a88c69e3721f7.png)
 
 我再让 AI 联网搜索相关内容后，它才成功说出了「牛来」：
 
-![](https://pic.yupi.icu/hackdeacon/20260824165116246.png?imageSlim)
+![](/imgs/72c4f4863eff95fd.png)
 
 Claude Opus 5 模型同样需要联网搜索辅助，才能认出这是「牛来」。
 
-![](https://pic.yupi.icu/hackdeacon/20260825092328139.png?imageSlim)
+![](/imgs/904fac286ee0def4.png)
 
 既然身份识别对 AI 来说有点吃力，那么我们降低一下难度，来测试一下 DeepSeek 认不认识自己。
 
-![](https://pic.yupi.icu/hackdeacon/20260824165500367.png?imageSlim)
+![](/imgs/dd4f22b5f9cdd78a.png)
 
 看来大肥鱼还是认得出自己的，不过回答中的模型型号已经是远古时期的了。
 
@@ -145,23 +142,23 @@ Claude Opus 5 模型同样需要联网搜索辅助，才能认出这是「牛来
 
 如果你不太了解 iPhone 产品线，看看这些年出的 Pro Max 机型，你会发现，外观不能说极其相似，只能说几乎一模一样。
 
-![](https://pic.yupi.icu/hackdeacon/20260824170611862.png?imageSlim)
+![](/imgs/10e8178510c8aa7a.png)
 
 于是，我把 iPhone 11 Pro Max 到 16 Pro Max 这几款外观极其相似的机型，再加上比较有辨识度的 iPhone 17 Pro Max 和 iPhone Air，一共 8 款机型放到一张图里，打乱顺序，看看 DeepSeek 视觉模型能不能正确识别出来。
 
-![](https://pic.yupi.icu/hackdeacon/20260824173214990.png?imageSlim)
+![](/imgs/3ed4bf9117c87092.png)
 
 结果 DeepSeek 视觉模型的正确率只有 62.5%，猜对了 5 个，猜错了 3 个。错的这三款刚好是外观相似度最高的 14 Pro Max、15 Pro Max 和 16 Pro Max。有意思的是，它明明参考了每一代 iPhone 的经典壁纸来辅助判断，居然还是猜错了。
 
-![](https://pic.yupi.icu/hackdeacon/20260824174033241.png?imageSlim)
+![](/imgs/6c333b182eb05f54.png)
 
 而我使用 DeepSeek 网页版的识图模式，居然全对！
 
-![](https://pic.yupi.icu/hackdeacon/20260824174601168.png?imageSlim)
+![](/imgs/4cadeb408b4c3fc4.png)
 
 Claude Opus 5 这边也是不吃压力，一次全对。
 
-![](https://pic.yupi.icu/hackdeacon/20260824224913882.png?imageSlim)
+![](/imgs/5f5ac5fe228cef05.png)
 
 
 ### 4、找不同小游戏
@@ -170,38 +167,38 @@ Claude Opus 5 这边也是不吃压力，一次全对。
 
 简单来说就是找不同的游戏，来看看 DeepSeek 视觉模型能找出几处不同。
 
-![](https://pic.yupi.icu/hackdeacon/20260824181020776.png?imageSlim)
+![](/imgs/da03a4d51e5fbdad.png)
 
 花费了将近 4 分钟，DeepSeek 视觉模型把 8 处不同全部都找出来了。
 
-![](https://pic.yupi.icu/hackdeacon/20260824181241660.png?imageSlim)
+![](/imgs/771a9989778fca72.png)
 
 跟标准答案一模一样，还是很厉害的：
 
-![](https://pic.yupi.icu/hackdeacon/20260824181744160.png?imageSlim)
+![](/imgs/6528c55d07f9f872.png)
 
 Opus 5 也找出了所有不同，还标记了出来，不过耗时更长，花了 5 分 44 秒。
 
-![](https://pic.yupi.icu/hackdeacon/20260824182025908.png?imageSlim)
+![](/imgs/12e421e3973805d9.png)
 
 
 ### 5、图片转 ASCII
 
 识别和找不同都测完了，接下来让视觉模型做个有意思的小玩意吧。我让 AI 识别图片中的鲸娘，然后转成 ASCII 码形式展示。
 
-![](https://pic.yupi.icu/hackdeacon/20260824191124223.png?imageSlim)
+![](/imgs/bda84854a2a69bb3.png)
 
 DeepSeek 视觉模型生成出来的效果还算可以，再调整一下细节就完美了，比如深色模式版本下的裙子白色部分不应该是留空，而是填充，防止穿帮。
 
-![](https://pic.yupi.icu/hackdeacon/20260824222029528.png?imageSlim)
+![](/imgs/72e3b291217b4edf.png)
 
 并且 DeepSeek 视觉模型生成的版本带有「方块字符」选项，方块字符的展示效果更加完美，但也存在深色模式下穿帮的问题。
 
-![](https://pic.yupi.icu/hackdeacon/20260824221817721.png?imageSlim)
+![](/imgs/ebea32d2e9cc49c6.png)
 
 对比一下 Opus 5 生成出来的效果，深色模式也出现了留空穿帮问题，不过 Opus 5 的整体细节会更好。
 
-![](https://pic.yupi.icu/hackdeacon/20260824221131943.png?imageSlim)
+![](/imgs/7d8c05d902b542a5.png)
 
 
 ### 6、报错截图测试
@@ -210,17 +207,17 @@ DeepSeek 视觉模型生成出来的效果还算可以，再调整一下细节�
 
 我让 AI 生成了一个带有 Bug 的 Vue 项目，然后把报错截图丢给视觉模型，看看能不能一次性解决。
 
-![](https://pic.yupi.icu/hackdeacon/20260825125052487.png?imageSlim)
+![](/imgs/ef66e8936b300c83.png)
 
 看起来报错一大堆，但实际上要解决的问题很简单，就是代码漏写了 `import` 语句，加上有个文件缺失，导致项目启动失败，需要改动的地方很少。
 
 DeepSeek 视觉模型只用了 49 秒就解决了报错问题，还顺便发现了项目里的其他 bug。
 
-![](https://pic.yupi.icu/hackdeacon/20260825103133747.png?imageSlim)
+![](/imgs/e3105a620148c5b3.png)
 
 Opus 5 更快，只花了 33 秒就搞定了。
 
-![](https://pic.yupi.icu/hackdeacon/20260825104549261.png?imageSlim)
+![](/imgs/ddb106feae8f6edd.png)
 
 看来让 AI 改 Bug 这件事真的已经没什么难度了。
 
@@ -231,56 +228,56 @@ Opus 5 更快，只花了 33 秒就搞定了。
 
 我让视觉模型识别并复刻 [面试鸭刷题神器](https://www.mianshiya.com) 的热门面试题库页面。
 
-![](https://pic.yupi.icu/hackdeacon/20260824233200734.png?imageSlim)
+![](/imgs/3f9da2a40a9d5ea6.png)
 
 DeepSeek 视觉模型花了 4 分 30 秒完成任务。
 
-![](https://pic.yupi.icu/hackdeacon/20260824233252743.png?imageSlim)
+![](/imgs/c472ea7ea444d89f.png)
 
 效果不算完美，而且识别错了好几处内容。居然把「开刷」识别成了「剑别」？？？
 
 旁边的「热门」也识别成了「部门」，右上角搜索框左边还莫名其妙多了个「人工审题 🔥」。
 
-![](https://pic.yupi.icu/hackdeacon/20260824233617910.png?imageSlim)
+![](/imgs/30c3a1cc48195bf7.png)
 
 前面我还刚夸过 DeepSeek 的 OCR 能力，没想到这次翻车了。。
 
 Opus 5 这边只花了 2 分钟就完成了，虽然有些细节不太一样，但好在整体没有夸张的错误。
 
-![](https://pic.yupi.icu/hackdeacon/20260824233946516.png?imageSlim)
+![](/imgs/275133d753ffeca2.png)
 
 
 ### 8、硬核逻辑测试
 
 最后来一个硬核测试。我让 GPT Image 出题并生成图片，让 DeepSeek 视觉模型来解题，最后把结果发回 GPT 来判断正误。
 
-![](https://pic.yupi.icu/hackdeacon/20260825000506117.png?imageSlim)
+![](/imgs/d10b130d4106def4.png)
 
 GPT 出的题目是一张电商运营数据报表，既考验视觉模型的 OCR 文字识别能力，又考验它对图表中数据关系和业务逻辑的理解。
 
-![](https://pic.yupi.icu/hackdeacon/20260825092800074.png?imageSlim)
+![](/imgs/df9578830e16ecc4.png)
 
 这么复杂的问题，DeepSeek 视觉模型只用了 2 分 46 秒就完成了回答。
 
 我把 DeepSeek 的回答结果发回 GPT，让它来评价打分。
 
-![](https://pic.yupi.icu/hackdeacon/20260825093024613.png?imageSlim)
+![](/imgs/17fc0f74dc316f37.png)
 
 GPT 给出的评价是「整体很强」，满分 10 分给到了 8 分。扣的两分主要是因为存在推断过头和 OCR 识别失误的问题。
 
-![](https://pic.yupi.icu/hackdeacon/20260825093607632.png?imageSlim)
+![](/imgs/fce0351211d8f7bd.png)
 
 而 GPT 对 Opus 5 的评价是「明显更强」。
 
-![](https://pic.yupi.icu/hackdeacon/20260825100044279.png?imageSlim)
+![](/imgs/76caac3c22876214.png)
 
 我让 GPT 总结了 Opus 5 哪些方面比 DeepSeek 视觉模型更强，大家自己看看吧：
 
-![](https://pic.yupi.icu/hackdeacon/20260825100230160.png?imageSlim)
+![](/imgs/418249ca9435b649.png)
 
 看来蓝色大肥鱼还需要继续练习呀。
 
-![](https://pic.yupi.icu/1/DeepSeek%20%E5%8F%88%E9%94%99%E4%BA%86%E8%A1%A8%E6%83%85%E5%8C%85%E5%B0%8F.jpeg)
+![](/imgs/26f1bf4e54c2e057.jpg)
 
 
 ## 写在最后
@@ -293,7 +290,7 @@ DeepSeek-V4-Flash-Vision-Exp 当时还只是一个试验性模型（后续更新
 
 根据官方文档，DeepSeek 的图片处理成本非常低，一张图最多折算 384 个输入 token，计费价格与 V4 Flash 一致。按高峰时段、缓存未命中的最高价来算，一张图大约只要 0.12 分，远不到 1 分钱，这价格可以说是基本白送了。
 
-![](https://pic.yupi.icu/hackdeacon/20260825104944950.png?imageSlim)
+![](/imgs/7e45c7a04bd19f58.png)
 
 不过也不得不承认，这款模型在 OCR 识别和逻辑推理上确实还有不足，希望正式版能有所改善。
 

@@ -3,15 +3,12 @@ title: "AI 应用开发面试必知必会"
 summary: "AI 开发不只是调个接口这么简单"
 order: 6
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 应用开发面试必知必会》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 但有朋友可能会觉得：“AI 应用开发？**不就是调个接口么？有什么难的？**”
 
-![调个接口](https://pic.yupi.icu/1/image-20250912144702279.png)
+![调个接口](/imgs/b0e2745a46b488d2.png)
 
 还真的是应了那句话 —— 你知道的越少，以为自己知道的越多。
 
@@ -35,7 +32,7 @@ AI 应用开发也是一样的，调个接口的确可以实现一些需求，�
 
 ⭐️ 推荐观看视频版：https://bilibili.com/video/BV1qgHezFEaR
 
-![面试视频](https://pic.yupi.icu/1/image-20250912151414330.png)
+![面试视频](/imgs/4d9ac58990c29d06.png)
 
 
 ## 一、真实面试案例
@@ -100,7 +97,7 @@ AI 应用开发也是一样的，调个接口的确可以实现一些需求，�
 
 小王：。。。（沉默是今晚的康桥）
 
-![沉默](https://pic.yupi.icu/1/image-20250912151532157.png)
+![沉默](/imgs/5c54de9481672e6a.png)
 
 点评：实际上，工程层面有很多方法可以处理工具调用幻觉，比如添加幻觉处理策略、大模型参数调整、提示词优化、异常捕获等等。
 
@@ -205,7 +202,7 @@ AI 应用开发也是一样的，调个接口的确可以实现一些需求，�
 
 题库地址：https://www.mianshiya.com/bank/1906189461556076546
 
-![AI 面试题库](https://pic.yupi.icu/1/1747894904199-e795908c-638e-4d29-afd5-c8127db010f3.png)
+![AI 面试题库](/imgs/7ba04bcce6edad66.png)
 
 每道题目都有详细的参考答案和知识点标签，帮你系统地准备面试。
 
@@ -223,7 +220,7 @@ AI 应用开发也是一样的，调个接口的确可以实现一些需求，�
 - 简历押题：根据你的简历预测面试官可能会问的问题
 - 详尽的复盘报告：从多个维度评估你的表现，指出改进方向
 
-![面多多](https://pic.yupi.icu/1/1762828151843-64eeef2c-a7ac-454a-a1c9-14c4b131f8cd.gif)
+![面多多](/imgs/0f0e65614d725706.gif)
 
 新人福利：注册就送 200 能量值，可以免费体验 1 次沉浸式综合面试，或 1 次专项面试 + 1 次简历押题。
 
@@ -270,7 +267,7 @@ AI 应用开发也是一样的，调个接口的确可以实现一些需求，�
 
 在 [编程导航](https://www.codefather.cn) 上，我也带大家做了多套 AI 项目教程，涵盖了几乎所有的 AI 开发技术。
 
-![](https://pic.yupi.icu/1/2%20%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%8E%9F%E5%88%9B%E9%A1%B9%E7%9B%AE.png)
+![](/imgs/d64b52743a8094ea.png)
 
 
 ## 写在最后

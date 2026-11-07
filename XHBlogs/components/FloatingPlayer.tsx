@@ -18,7 +18,8 @@ export default function FloatingPlayer() {
   if (!isMounted || isLoading || !currentSong) return null;
 
   // 【核心修复】：判断是否在首页。在首页时我们让它隐身，但不销毁它！
-  const isHidden = pathname === '/';
+  // 只在「用户真的在放歌」时浮出来，否则它会压住正文右栏的内容。
+  const isHidden = pathname === '/' || !isPlaying;
 
   return (
     <div className="fixed bottom-6 right-6 z-[9999]" style={{ pointerEvents: 'none' }}>

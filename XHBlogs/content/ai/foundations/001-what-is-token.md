@@ -3,7 +3,7 @@ title: "什么是 token：从分词器到上下文窗口"
 summary: "从分词器的切分规则讲到上下文窗口的预算方式，解释中文为什么更费 token，以及工程里怎么估算成本与延迟。"
 order: 1
 level: "入门"
-tags: ["token", "分词器", "上下文窗口", "成本估算"]
+tags: ["token", "分词器", "上下文窗口"]
 updated: "2026-11-05"
 readingTime: 4
 ---

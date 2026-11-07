@@ -3,15 +3,12 @@ title: "OpenClaw 保姆级教程导读"
 summary: "从零开始玩转 OpenClaw，手把手带你养出最强小龙虾 🦞"
 order: 1
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-24"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 保姆级教程导读》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 

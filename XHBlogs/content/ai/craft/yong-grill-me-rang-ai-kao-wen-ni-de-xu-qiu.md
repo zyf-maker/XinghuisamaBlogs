@@ -3,15 +3,12 @@ title: "用 grill-me 让 AI 拷问你的需求"
 summary: "全网安装量前 3 的神级 Skill，核心内容居然只有几句话"
 order: 17
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-08-07"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《用 grill-me 让 AI 拷问你的需求》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 它就是 `/grill-me`，一个让 AI 反过来拷问你的技能。
 
-![](https://pic.yupi.icu/1/image-20260723152045658.png)
+![](/imgs/9e15a53cdbe6eadb.png)
 
 在如今新 Skill 层出不穷、已经跟鱼皮头发一样卷的时候，这个只有几句话的 Skill 凭什么能杀出重围呢？
 
@@ -34,7 +31,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 grill-me 这个技能 **只有一个文件**，文件里写的全部内容就是下面这些。
 
-![](https://pic.yupi.icu/1/image-20260723152345728.png)
+![](/imgs/f337f55a7a5d5baf.png)
 
 翻译过来是这样的：
 
@@ -59,53 +56,53 @@ grill-me 这个技能 **只有一个文件**，文件里写的全部内容就是
 npx skills add https://github.com/mattpocock/skills --skill grill-me
 ```
 
-![](https://pic.yupi.icu/1/image-20260723153039655.png)
+![](/imgs/27cf4e973ce171cd.png)
 
 装好之后，随便打开一个 AI 编程工具，我这里以 Cursor 为例。
 
 我给 AI 提出了一个很模糊的需求，并且使用 `/grill-me` 技能：
 
-![](https://pic.yupi.icu/1/image-20260723163922362.png)
+![](/imgs/0a9907e90432f4d0.png)
 
 执行！AI 先思考了一下，然后开始一步步拷问我。
 
 首先 AI 问我要做的东西具体是指什么，同时给出了它的建议。我甚至不用自己组织需求描述，直接回复「你的建议是对的」就好。
 
-![](https://pic.yupi.icu/1/image-20260723160208826.png)
+![](/imgs/25701af83b3e5c95.png)
 
 然后 AI 问我要把这个东西做成什么形态，并提供了几个选项。我觉得做成 Web 应用更方便，直接输入序号 3。
 
-![](https://pic.yupi.icu/1/image-20260723160307350.png)
+![](/imgs/629ebe417755070e.png)
 
 接着 AI 问我需要哪些功能。正常来说应该先从核心功能开始做，但我觉得这些需求都不复杂，AI 应该能一把梭，所以贪心一点，我全都要！
 
-![](https://pic.yupi.icu/1/image-20260723160350655.png)
+![](/imgs/b0cd9728c7d0800c.png)
 
 需求明确之后，AI 开始询问技术方案。这里我选了 Electron 桌面端应用，因为可以直接访问本地文件，用起来更方便。
 
-![](https://pic.yupi.icu/1/image-20260723160407860.png)
+![](/imgs/c8ceeec4ee6013a0.png)
 
 然后 AI 就开始跟我依次确认具体的技术细节了，比如用什么开发框架、什么组件库、怎么存储数据之类的。
 
-![](https://pic.yupi.icu/1/image-20260723160433659.png)
+![](/imgs/dbb3a17520f390c8.png)
 
 不了解 AI 说的技术、或者没什么特别想法的时候，直接按照 AI 的建议来就行。
 
 「接受你的建议」可能是我整个过程里说得最多的一句话。
 
-![](https://pic.yupi.icu/1/image-20260723160454385.png)
+![](/imgs/1c355b0e4d042e3f.png)
 
 经过了十多轮问答，很多我之前根本没想到的细节都被 AI 逼着想清楚了。最后 AI 给出了一份完整的方案总结，等我确认后就启动开发。
 
-![](https://pic.yupi.icu/1/image-20260723160528631.png)
+![](/imgs/16eda1bf2762b70a.png)
 
 确认之后，我让 AI 直接开始写代码。因为前面已经把需求和方案讨论得足够清楚了，AI 写代码的过程比直接让它猜需求顺畅不少。
 
-![](https://pic.yupi.icu/1/image-20260723160626764.png)
+![](/imgs/816723ac6d3bcc11.png)
 
 10 分钟左右，一个管理 Skill 的桌面应用就搞定了。
 
-![](https://pic.yupi.icu/1/image-20260723161102168.png)
+![](/imgs/f7cb86a781669311.png)
 
 回过头看整个过程，你会发现，这不正是企业开发中的经典流程吗？
 
@@ -132,7 +129,7 @@ npx skills add https://github.com/mattpocock/skills --skill grill-me
 
 「给出推荐答案」这个要求是作者后来特意加上去的。如果 AI 不给建议，你还得自己想半天怎么回答；有了推荐答案之后，如果你表示认同，直接说 yes 就行，对话效率高了很多。
 
-![grill-me 的四层设计思想](https://pic.yupi.icu/1/01_grill-me%E5%9B%9B%E5%B1%82%E8%AE%BE%E8%AE%A1%E6%80%9D%E6%83%B3%E5%85%A8%E6%99%AF%E5%9B%BE_compressed_v2.png)
+![grill-me 的四层设计思想](/imgs/6989b65fd37fce4f.png)
 
 这个技能让我想到了程序员界的「小黄鸭调试法」，就是在桌上放一只橡皮鸭，把你的想法一步步讲给它听，讲着讲着就能发现自己思路里的漏洞。grill-me 相当于给你一只会追问、会推荐、还能自己查资料的智能赛博鸭鸭。
 
@@ -143,7 +140,7 @@ npx skills add https://github.com/mattpocock/skills --skill grill-me
 
 它不仅能应用到 AI 编程，还能用到你日常生活中需要做决策的任何场景，比如规划学习路线、选择电脑配置、制定健康计划等等，都可以用同样的思路让 AI 来拷问你。
 
-![比如鱼皮用它来研究怎么让脑袋长毛](https://pic.yupi.icu/1/image-20260723170216222.png)
+![比如鱼皮用它来研究怎么让脑袋长毛](/imgs/e1d2e55e6877e04e.png)
 
 相信我，次数多了，你会爱上这种感觉，也能让你的逻辑思维更清晰。
 

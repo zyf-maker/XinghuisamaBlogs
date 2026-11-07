@@ -3,15 +3,12 @@ title: "项目研发流程选择"
 summary: "跑得快还是跑得稳？"
 order: 7
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-13"
 readingTime: 12
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《项目研发流程选择》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 发现有些辣条的制作过程是很 “先进” 的，不是全部靠工人来制作，而是有一条 **生产流水线** 。准备好原材料后，由机器依次完成混合、搅拌、切割、调味、炸制、冷却、包装等操作，而工人只需要监督就行。
 
-![](https://pic.yupi.icu/1/6f6e8ad610e6418e9556fb0fb95afda1.jpeg)
+![](/imgs/ef04e9dc3453d6a1.jpg)
 
 有了这么一套清晰的工序，整个生产辣条的过程就变得井然有序，工人（或机器）只需要一步一步做好自己的事情即可，整体效率更高；而且如果每个环节都经过充分的验证，辣条的质量和安全性也会更高。
 
@@ -46,7 +43,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我将大厂研发流程的步骤划分为几个阶段，用一张思维导图来概括，会更清晰一些：
 
-![大厂研发流程思维导图](https://pic.yupi.icu/1/3334dda0-2177-4816-bc91-94e7d3b77bde.png)
+![大厂研发流程思维导图](/imgs/4af39022fb3d8d49.png)
 
 如果用生产辣条来比喻研发项目。那么大公司研发项目的流程，就像是我开头提到的用 **标准流水线** 生产辣条的流程。
 
@@ -207,7 +204,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 把更多的时间都投入在研发上，主打一个快！
 
-![敏捷开发流程](https://pic.yupi.icu/1/image-20230712185656368.png)
+![敏捷开发流程](/imgs/c5d4d2df44770ff1.png)
 
 如果采用敏捷研发的方式来生产辣条，大概是这样的：
 
@@ -228,7 +225,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 答案是：小孩子才做选择，我全都要！
 
-![](https://pic.yupi.icu/1/image-20230712184257231.png)
+![](/imgs/4349152b7cf5ca82.png)
 
 首先，分析我们自身的实际情况：
 
@@ -240,7 +237,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 完整流程如下：
 
-![](https://pic.yupi.icu/1/image-20230712190738396.png)
+![](/imgs/9592951d159cddf2.png)
 
 我们希望网站开发在追求快速的同时，能够兼顾可扩展性和代码质量。因此，一方面我们在设计阶段投入了更多时间，采用更通用化的架构设计来支撑整个系统（比如使用微服务架构，独立拆分支付中心），从而能够应对未来的业务增长。
 
@@ -248,7 +245,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 代码审查界面：
 
-![代码审查](https://pic.yupi.icu/1/image-20230712193216012.png)
+![代码审查](/imgs/d7b4619c8b3c8f88.png)
 
 有同学可能会问了：为什么把测试验证阶段砍掉了？你们做产品都不测试么？
 

@@ -3,15 +3,12 @@ title: "技术选型实战指南"
 summary: "选对技术，事半功倍"
 order: 5
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-10-22"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《技术选型实战指南》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。本篇要分享的内容是 **技术选型**，是技术方向的朋友们必须要掌握的内容，也是做产品时在前期准备阶段必须要做的核心工作。
 
@@ -67,7 +64,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这很正常，因为大家在学习阶段，都是跟着网上的教程做项目，用什么技术、用哪个版本、甚至写什么代码，全部都是讲师给你提前规划好的。
 
-![](https://pic.yupi.icu/1/image-20230331134500590-20230706153049690-20230706153117049-20230706163222417.png)
+![](/imgs/add1287aea2a7863.png)
 
 但其实，并不是没有做技术选型，而是讲师帮你做了而已。讲师选择用什么技术带你做项目时，本质上也是在做技术选型，会结合市场需求、技术流行度等多方面因素。
 
@@ -173,7 +170,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 就像下面这样：
 
-![](https://pic.yupi.icu/1/image-20230706180955933.png)
+![](/imgs/63620c11d1fa8583.png)
 
 在大公司大项目中，技术选型一定要提供充分的依据和理由，才会得到上级或其他成员的认可。
 
@@ -199,7 +196,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 也是感谢人工智能技术的发展，现在想编写 Demo 快速验证，都不用自己写代码了，直接问 GPT 即可：
 
-![](https://pic.yupi.icu/1/image-20230706182008022.png)
+![](/imgs/d5a05199ddf2dc9e.png)
 
 
 如果我们的系统是老项目，需要重点关注新引入的技术和老项目依赖的兼容性。这个时候，编写最简 Demo 验证是非常有必要的，可以提前规避版本冲突。
@@ -275,7 +272,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 数据仅为示例参考，请以官方为准
 
-![](https://pic.yupi.icu/1/image-20230706195734818.png)
+![](/imgs/d0741f277fb0e54e.png)
 
 
 ### 5.3、对比选择
@@ -291,7 +288,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 确定了要使用的技术后，剩下的工作就很简单了。对于第三方提供的内容审核云服务，我们只需打开官方文档，就能找到现成的示例代码，下载到本地执行成功即可。
 
-![](https://pic.yupi.icu/1/image-20230706200934291.png)
+![](/imgs/a427c9bc93563bdb.png)
 
 
 ### 5.5、日常积累

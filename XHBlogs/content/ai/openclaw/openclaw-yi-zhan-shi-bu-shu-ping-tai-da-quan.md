@@ -3,15 +3,12 @@ title: "OpenClaw 一站式部署平台大全"
 summary: "各大厂商的傻瓜式 OpenClaw 部署方案汇总"
 order: 6
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-10-22"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 一站式部署平台大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -37,7 +34,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 属实是把营销玩明白了……
 
-![](https://pic.yupi.icu/1/640.jpeg)
+![](/imgs/bd5622c8f5e901a3.jpg)
 
 可以看到，云端部署小龙虾的价格已经卷到了个位数！
 
@@ -67,7 +64,7 @@ source: "https://github.com/liyupi/ai-guide"
 >
 > 内测申请：https://wj.qq.com/s2/25871229/abe7
 
-![](https://pic.yupi.icu/1/image-20260314140352682.png)
+![](/imgs/59200e6369406023.png)
 
 对于普通用户来说，微信就是最自然的入口，老人小孩都能用，这一点是腾讯天然的优势。
 
@@ -78,7 +75,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://autoglm.zhipuai.cn/autoclaw
 
-![](https://pic.yupi.icu/1/image-20260314140608293.png)
+![](/imgs/d0aea30ac5bc5a57.png)
 
 
 ### 3、猎豹 EasyClaw
@@ -91,7 +88,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://easyclaw.cn
 
-![](https://pic.yupi.icu/1/banner.png)
+![](/imgs/96954e0889f67df4.png)
 
 
 ### 4、腾讯 WorkBuddy
@@ -100,11 +97,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://www.codebuddy.cn/work
 
-![](https://pic.yupi.icu/1/image-20260314141108260.png)
+![](/imgs/de9fb443a36d024a.png)
 
 严格来说它不是 OpenClaw 的套壳，而是底层自研但完全兼容 OpenClaw 技能包。支持企业微信、QQ、飞书多平台遥控，内置混元、DeepSeek、GLM、Kimi 等多款模型可切换，新用户送 5000 Credits。
 
-![](https://pic.yupi.icu/1/image-20260314142502149.png)
+![](/imgs/5ef18078393c43af.png)
 
 
 ### 5、网易有道 LobsterAI
@@ -115,13 +112,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://lobsterai.youdao.com
 
-![](https://pic.yupi.icu/1/image-20260314141259527.png)
+![](/imgs/3f7afc58afdcb002.png)
 
 代码在 GitHub 上完全开源，适合想研究底层原理的开发者。
 
 > 仓库指路：https://github.com/netease-youdao/LobsterAI
 
-![](https://pic.yupi.icu/1/image-20260314141221546.png)
+![](/imgs/a212be927d68dd36.png)
 
 
 ### 6、OpenClaw 桌面版
@@ -132,7 +129,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 指路：https://openclawcn.net
 
-![](https://pic.yupi.icu/1/ai.jpg)
+![](/imgs/36e5e8fd46949bd4.jpg)
 
 另外听说小米也在搞手机端的 miclaw，还处于小规模封闭测试阶段，感兴趣的同学可以关注一下。
 

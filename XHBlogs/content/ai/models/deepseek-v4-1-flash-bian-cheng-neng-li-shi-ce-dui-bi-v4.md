@@ -3,15 +3,12 @@ title: "DeepSeek V4.1 Flash 编程能力实测 - 对比 V4 Pro 和 GLM-5.3-Flash
 summary: "便宜好几倍的 Flash 模型，把自家的 Pro 旗舰给干掉了"
 order: 10
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek V4.1 Flash 编程能力实测 - 对比 V4 Pro 和 GLM-5.3-Flash》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -19,11 +16,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 它是一个 552B 参数的 MoE 模型，采用了全新的模型结构，**原生支持多模态视觉理解**，而且直接开源了。
 
-![](https://pic.yupi.icu/1/image-20260910142322329.png)
+![](/imgs/b9d40a7e3dc9b722.png)
 
 这次更新力度很大。DeepSeek 网页版原来的快速、专家、识图 3 个模式直接合并成了一个入口，用户不需要再手动选模式了，AI 会根据任务复杂度自动调度，检测到图片就自动激活视觉能力。
 
-![](https://pic.yupi.icu/1/image-20260910140727245.png)
+![](/imgs/b7de9120b32b5af8.png)
 
 炸裂的是，DeepSeek 官方称：**V4.1 Flash 在性能、费用、速度、总用时等各项指标上已经全面超越 V4 Pro！**
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 那之后谁还会用 Pro 模型啊？
 
-![](https://pic.yupi.icu/1/image-20260910140651241-20260910150230183.png)
+![](/imgs/c18e0a618bfd314d.png)
 
 果不其然，官方已经下线了旧的 V4 Flash 和 V4 Flash Vision Exp 模型，而且 **9 月 14 日 12:00 之后 V4 Pro 也要正式下线**，到时候所有发给 `deepseek-v4-pro` 的请求全部自动路由到 V4.1 Flash，并且按 V4.1 Flash 的单价计费，一直持续到未来 V4.1 Pro 上线。
 
@@ -54,7 +51,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 如果你用的是 DeepSeek Harness，更新一下版本，V4.1 Flash 就可以直接在模型列表里选了，不需要额外配置。
 
-![](https://pic.yupi.icu/1/image-20260910143736881.png)
+![](/imgs/75cd2057373dda6b.png)
 
 如果你是通过 API 调用，现在模型名简化成了 `deepseek-flash`，不用修改 base_url。之前的 `deepseek-v4-flash` 和 `deepseek-v4-flash-vision-exp` 也会自动路由到新模型，不用改代码。
 
@@ -62,29 +59,29 @@ source: "https://github.com/liyupi/ai-guide"
 
 我在 V4.1 Flash 还处于内测阶段、Harness 还没有内置它的时候就是这么干的：启动 DeepSeek Harness 后，在网页左下角点击设置，编辑内置的 DeepSeek 模型配置。
 
-![](https://pic.yupi.icu/1/image-20260908182206435.png)
+![](/imgs/18d469f7d8c7d52f.png)
 
 然后点击「添加模型」，输入完整的模型名称并保存，之后就能在模型列表里选到它了：
 
-![](https://pic.yupi.icu/1/image-20260908182317019.png)
+![](/imgs/78b5ae9de2300816.png)
 
 但这么加有个坑。当时模型跑起来输出速度嘎嘎快，可它明明是原生多模态模型，Harness 里却显示「不支持图片」：
 
-![](https://pic.yupi.icu/1/image-20260908182600884.png)
+![](/imgs/8a60703eff576764.png)
 
 原因是手动添加的模型，工具默认按纯文本模型处理。解决办法是换一个允许自己勾选输入类型的工具，比如智谱的 ZCode。
 
 进入模型设置，添加一个 DeepSeek 的供应商，根据 [DeepSeek 官方的 API 文档](https://api-docs.deepseek.com/zh-cn/) 来填写信息就好：
 
-![](https://pic.yupi.icu/1/image-20260908182944707.png)
+![](/imgs/269b11c7137e9c51.png)
 
 点击添加模型，填写模型 ID，并且输入类型一定要把「图片」勾选上：
 
-![](https://pic.yupi.icu/1/image-20260908182917035.png)
+![](/imgs/36bbad22c5b93857.png)
 
 保存之后就能正常识图了：
 
-![](https://pic.yupi.icu/1/image-20260908183059167.png)
+![](/imgs/eb5efdf531422c39.png)
 
 现在 Harness 已经默认集成了 V4.1 Flash，上面这套手动配置在 Harness 里已经不需要了。但这个经验依然值得记住：**手动添加多模态模型时，一定要检查工具有没有开启图片输入能力**，否则模型的视觉能力用不上。以后哪家出了新模型而你的工具还没跟上，都可以照这个思路自己接。
 
@@ -97,7 +94,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 提示词很简单，我让 AI 做一个程序化 3D 城市生成器的网页应用，至少包含重庆、上海、西安、深圳、江南五种城市风格，切换风格之后建筑形态、色调和地形要有明显差异。编辑器布局和参数维度怎么设计我一个字都没提，让 AI 自己去搜官方那版的产品设计，在此基础上做中国版。
 
-![Case 1 提示词](https://pic.yupi.icu/1/v41flash-prompt-01-case1-city-20d8fcbe.png)
+![Case 1 提示词](/imgs/cfe1345314ed6b1d.png)
 
 来看看三个模型各自做出了什么效果。
 
@@ -108,42 +105,42 @@ V4.1 Flash 拿到任务后，先用 Firecrawl 联网搜索了官方 Showcase 的
 
 整个过程跑了 250 步，LLM 推理只花了 18 分钟，输出速度达到了每秒 287 tokens。不过工具调用花了 83 分钟，总用时被拉得比较长。
 
-![DeepSeek Harness 执行记录](https://pic.yupi.icu/1/1789015526296-9a5bcec8-5bca-4c74-95af-7092f10fee4c.png)
+![DeepSeek Harness 执行记录](/imgs/60bef207a1e0f5d0.png)
 
 看看成品效果。第一眼看上去感觉还不错，错综复杂的重庆山城给做出来了，右侧有完整的城市生成器控制面板，城市风格、布局参数、天际线、地块配比全都能自由调整。
 
-![V4.1 Flash · 重庆 8D 魔幻山城](https://pic.yupi.icu/1/1789018496987-c639a3c7-d174-4c44-bb9f-764d5cd14841.png)
+![V4.1 Flash · 重庆 8D 魔幻山城](/imgs/20e79bfeb3e5e9cc.png)
 
 通过拖拽和滚轮可以自由移动和放大视角，能看到更多细节，比如道路上行驶的车流。
 
 右侧面板里还能自由调整建筑密度、街区尺度、街道形态、商业和居住占比等等。
 
-![V4.1 Flash · 近景细节](https://pic.yupi.icu/1/1789018645828-5e511b8d-6015-4bb6-be6b-fc4080ff2b9b.png)
+![V4.1 Flash · 近景细节](/imgs/61e57e3a8ff46737.png)
 
 切换到上海，你能认出来中间那几栋最高的建筑么？
 
-![V4.1 Flash · 上海陆家嘴](https://pic.yupi.icu/1/1789018732575-e104e1c4-1674-49f6-a04f-5a18c8b60083.png)
+![V4.1 Flash · 上海陆家嘴](/imgs/118507923bbc6276.png)
 
 整体功能虽然完成了，但是精细度还差点儿意思。比如看看西安城市的效果，很难说一眼就能认出来是古都的感觉。
 
-![V4.1 Flash · 西安](https://pic.yupi.icu/1/1789018812425-453c5ef1-a39b-4ff4-8df5-233f648a23ca.png)
+![V4.1 Flash · 西安](/imgs/d175ceb268698c81.png)
 
 
 #### DeepSeek V4 Pro
 
 V4 Pro 的最大问题是没有视觉能力。AI 写完代码之后没办法自己截图看一眼效果对不对，只能通过调用子 Agent 让其他有视觉能力的模型帮忙验证。
 
-![V4 Pro 调用子 Agent 做视觉验证](https://pic.yupi.icu/1/1789010626465-82a545a8-065f-4809-bc67-a56f4b7919db.png)
+![V4 Pro 调用子 Agent 做视觉验证](/imgs/8c2e91ec6a2da21b.png)
 
 先看看重庆的效果，建模的精细度明显不如 V4.1 Flash，尤其是这个橙色的大桥，有点出戏。
 
-![V4 Pro · 重庆](https://pic.yupi.icu/1/1789018841571-c89bf0ff-36c6-4156-a137-94bb6969d087.png)
+![V4 Pro · 重庆](/imgs/4acaa0b36d56eee9.png)
 
 再切换到上海。
 
 额，这个东方明珠我怎么看怎么像糖葫芦，而且怎么还建在水上了呢？
 
-![V4 Pro · 上海](https://pic.yupi.icu/1/1789018912151-25853fa7-bed4-49bb-af4b-8ede025308d3.png)
+![V4 Pro · 上海](/imgs/bf84c450ed22e882.png)
 
 直接就是一个大失败啊！
 
@@ -154,15 +151,15 @@ V4 Pro 的最大问题是没有视觉能力。AI 写完代码之后没办法自�
 
 再看看 GLM-5.3-Flash 生成的效果，第一眼看上去还不错，建筑上的灯光效果做了出来，这个夕阳的氛围也挺有意境。
 
-![GLM-5.3-Flash · 重庆](https://pic.yupi.icu/1/1789019067642-e31ac978-4be5-440c-bcb1-73034409d5d7.png)
+![GLM-5.3-Flash · 重庆](/imgs/d7f7eab55c09799c.png)
 
 不过放大看细节就露馅了，有明显的穿模问题，画面中还有很多飞来飞去的小方块，不知道是什么东西。
 
-![GLM-5.3-Flash · 穿模细节](https://pic.yupi.icu/1/1789019199417-e3f625f5-69e7-43f9-a6d6-927403265e06.png)
+![GLM-5.3-Flash · 穿模细节](/imgs/b017ba89411da0ed.png)
 
 看看上海的东方明珠，我觉得比前两个略好一点，但也有明显的 Bug，塔尖凭空悬浮了，而且好多大楼直接建到了水上……
 
-![GLM-5.3-Flash · 上海](https://pic.yupi.icu/1/1789019273736-a9e2e207-ce99-4ac6-b20e-d2f402aecfb8.png)
+![GLM-5.3-Flash · 上海](/imgs/af3a70515d68e06d.png)
 
 看到这里，我个人认为 V4.1 Flash 的完成度和细节丰富度最高，GLM-5.3-Flash 的氛围感做得不错但细节 Bug 更多，可以说二者半斤八两吧。至于 V4 Pro 的效果，确实是三者之间最拉的。
 
@@ -171,11 +168,11 @@ V4 Pro 的最大问题是没有视觉能力。AI 写完代码之后没办法自�
 
 之前我用同一段提示词测 GPT-6 Astra 的时候，AI 只用了 18 分钟就交卷了，而且每种城市的精细度都非常高。
 
-![GPT-6 Astra · 重庆](https://pic.yupi.icu/1/gpt6astra-shizhan-case1-chongqing-default-583f7a6d.png)
+![GPT-6 Astra · 重庆](/imgs/8d01088abfad0846.png)
 
 整个的建模正确性也更高，可以说 GPT-6 Astra 完爆这三个 Flash 级模型，差距一眼就能看出来。
 
-![GPT-6 Astra · 上海](https://pic.yupi.icu/1/image-20260907101226542.png)
+![GPT-6 Astra · 上海](/imgs/8ad15974c9583c85.png)
 
 不过这也是理所应当的，毕竟 Astra 是全球顶级模型，价格贵了不知道多少倍，跟 Flash 模型比效果就有点欺负人了……完整测试过程可以阅读本板块中的《GPT-6 Astra 编程能力实测 - 4 个项目案例》。
 
@@ -184,7 +181,7 @@ V4 Pro 的最大问题是没有视觉能力。AI 写完代码之后没办法自�
 
 第二个项目考的是全栈工程能力。我让 AI 开发一个 AI 智能绘图工具，用户通过自然语言描述，AI 自动生成可编辑的流程图、架构图和思维导图，前端在 draw.io 编辑器的基础上二次开发，加上 AI 对话面板，支持连续对话修改图表。
 
-![Case 2 提示词](https://pic.yupi.icu/1/v41flash-prompt-02-case2-aidraw-42144832.png)
+![Case 2 提示词](/imgs/93c893bf704c9cca.png)
 
 
 #### DeepSeek V4.1 Flash
@@ -193,23 +190,23 @@ V4.1 Flash 先联网抓了 draw.io 官方的嵌入协议文档和 GitHub 仓库�
 
 打开成品页面，整个界面布局很有科技感，AI 把 draw.io 深度融合到了项目里，连产品名都自己取了一个叫 DrawMind。左侧是 AI 对话面板，右侧是完整的 draw.io 画布编辑器。
 
-![V4.1 Flash · DrawMind 首页](https://pic.yupi.icu/1/1789012864070-f9256e3e-fc41-4388-b763-49be5ae10771.png)
+![V4.1 Flash · DrawMind 首页](/imgs/a2f9b58e3d918069.png)
 
 我让 AI 画一个微服务电商系统的架构图，能实时看到 AI 的思考过程，而且输出速度非常快，20 秒左右就完成了。
 
-![V4.1 Flash · 生成中](https://pic.yupi.icu/1/1789012933290-e856d368-62bb-447a-be8e-175b6d24bf48.png)
+![V4.1 Flash · 生成中](/imgs/1eca4e2ded1c3aa6.png)
 
 画出来的架构图效果很好，分层清晰、节点整齐、没有错位，这点比之前用 V4 Pro 来画的要好不少。
 
-![V4.1 Flash · 架构图成品](https://pic.yupi.icu/1/1789013001286-4327f240-3b52-462c-be2b-75c5197c5d83.png)
+![V4.1 Flash · 架构图成品](/imgs/85d3516787afffd7.png)
 
 更关键的是连续对话修改的能力。我说「把业务服务层的背景改为红色」，AI 精准定位到了对应的元素并修改样式，右侧画布实时更新，改得又快又准。
 
-![V4.1 Flash · 连续对话修改](https://pic.yupi.icu/1/1789013041206-2776dff5-8dd8-4503-8656-705c22b3a9bd.png)
+![V4.1 Flash · 连续对话修改](/imgs/4c4c25e118e23c2a.png)
 
 我又试了一些其他类型的图，流程图、思维导图都能正常生成，没有出现生成失败的情况，比较稳定。
 
-![V4.1 Flash · 流程图](https://pic.yupi.icu/1/1789013613061-e2663679-e077-4c29-a500-59403af0b0b0.png)
+![V4.1 Flash · 流程图](/imgs/6d06a829fc7a7f33.png)
 
 
 #### GLM-5.3-Flash
@@ -218,19 +215,19 @@ V4.1 Flash 先联网抓了 draw.io 官方的嵌入协议文档和 GitHub 仓库�
 
 界面同样很有科技感，而且也成功把 draw.io 深度融合了进去：
 
-![GLM-5.3-Flash · NexusDraw 首页](https://pic.yupi.icu/1/1787801133687-b54b8101-9d8d-4906-8efe-f8e2aadc9768-20260910150233251.png)
+![GLM-5.3-Flash · NexusDraw 首页](/imgs/158787663bbd9a0e.png)
 
 生成架构图的效果也不错，分层清晰，但是有时候会有些连线错位的问题：
 
-![GLM-5.3-Flash · 架构图](https://pic.yupi.icu/1/1787802958402-ecb32209-a6d0-49cd-ae76-7ff7dc7d506f-20260910150233356.png)
+![GLM-5.3-Flash · 架构图](/imgs/0eaa44d21b97d909.png)
 
 同样支持连续对话修改：
 
-![GLM-5.3-Flash · 连续修改](https://pic.yupi.icu/1/1787801544563-e0bdc825-e2e6-42f3-9593-f60bf54bbebd-20260910150233416.png)
+![GLM-5.3-Flash · 连续修改](/imgs/e59c654b77cd9b00.png)
 
 不过多试几遍就会发现，偶尔会出现生成的 XML 跟 draw.io 不兼容的情况，画布上弹出解析报错，稳定性差了一些。
 
-![GLM-5.3-Flash · 偶尔报错](https://pic.yupi.icu/1/1787801854093-31b70fcb-d06c-489b-a258-15c74616257b-20260910150233582.png)
+![GLM-5.3-Flash · 偶尔报错](/imgs/6f5bc6ab2b29f855.png)
 
 
 #### DeepSeek V4 Pro
@@ -239,11 +236,11 @@ V4 Pro 做出来的版本就差了不少。
 
 最明显的问题是 draw.io 被很生硬地嵌入到了页面里，左下角的文字还出现了溢出，右侧画布默认显示的是一大坨空白和加载图标。
 
-![](https://pic.yupi.icu/1/1786947686035-f5dce2a4-5bc2-49b5-a4aa-ac592a06a214.png)
+![](/imgs/863594e1cc929080.png)
 
 AI 生成图表的功能是可以正常使用的，但是没有 AI 思考过程实时输出的能力，生成速度和准确度也都一般。
 
-![V4 Pro · 生成结果](https://pic.yupi.icu/1/1786947674690-a291172a-4f39-4db1-8e0f-4d6f867da64e-20260910150233676.png)
+![V4 Pro · 生成结果](/imgs/e55f2f6ee8a7c80d.png)
 
 简单总结一下，显然 V4.1 Flash 的整体完成度最高，draw.io 成功集成、生成速度快、连续对话修改精准，而且只花了 21 分钟。
 
@@ -262,7 +259,7 @@ V4 Pro 写完前端之后看不到自己画面长什么样，只能瞎猜或者�
 
 然后是 **速度**。我额外做了一个对比测试，让两个 DeepSeek 模型用相同的提示词各写一篇一万字的小说。
 
-![输出速度对比](https://pic.yupi.icu/1/1789015247562-b0676da6-da7f-42e3-b129-d12530995344.png)
+![输出速度对比](/imgs/33f8d1ca75994978.png)
 
 结果 V4.1 Flash 的输出速度达到了 160 TOK/s，V4 Pro 只有 50 TOK/s，差了整整 3 倍！
 
@@ -272,7 +269,7 @@ V4 Pro 写完前端之后看不到自己画面长什么样，只能瞎猜或者�
 
 V4 Pro 光是做一个 3D 城市生成器就花了大约 16 元，而 V4.1 Flash 开发完两个项目才花了不到 10 元，平均每个项目 5 元左右。
 
-![消费面板](https://pic.yupi.icu/1/1789014192812-1da76d9d-66a5-4f96-9c23-785fe592cd54.png)
+![消费面板](/imgs/dbb2589ed55de50e.png)
 
 另外 DeepSeek 同步下调了 Flash 系列的定价，依然是峰谷计费。空闲时段输入缓存命中 0.02 元 / 百万 token、未命中 1 元、输出 4 元，高峰时段翻倍。高峰时段是周一至周五的 9:00 ~ 12:00 和 14:00 ~ 18:00，其余时间都算空闲时段，所以把批量任务挪到晚上跑能省一半钱。
 
@@ -280,7 +277,7 @@ V4 Pro 光是做一个 3D 城市生成器就花了大约 16 元，而 V4.1 Flash
 
 我单方面不负责任地宣布：**梁神回归！**
 
-![](https://pic.yupi.icu/1/%25E5%25BE%25AE%25E4%25BF%25A1%25E5%259B%25BE%25E7%2589%2587_20260813151759_83_210.jpg)
+![](/imgs/c269aa706e5b0a84.jpg)
 
 
 ## V4 Pro 下线引发的争议
@@ -291,7 +288,7 @@ V4 Pro 光是做一个 3D 城市生成器就花了大约 16 元，而 V4.1 Flash
 
 结果反而遭到了一堆开发者的吐槽。很多人已经把 V4 Pro 接进了自己的线上产品，提示词、参数、业务逻辑全部是按 V4 Pro 的行为特征调过的，突然换一个模型底座，输出风格和能力边界都会变，线上产品可能直接出问题。
 
-![](https://pic.yupi.icu/1/image-20260910145222695.png)
+![](/imgs/ea559c14f7b837c9.png)
 
 还有人担心 V4.1 Flash 虽然跑分超过了 V4 Pro，但在自己的特定场景下不一定更好，「全面超越」和「我的场景也超越」是两回事。
 

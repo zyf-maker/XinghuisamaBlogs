@@ -3,15 +3,12 @@ title: "DeepSeek“金融朋友圈” 从“争先”到“恐后”，从“好
 summary: "DeepSeek“金融朋友圈” 从“争先”到“恐后”，从“好用”到“用好”，由程序员鱼皮整理。"
 order: 19
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek“金融朋友圈” 从“争先”到“恐后”，从“好用”到“用好”》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 截至2月11日，有北京银行、江苏银行、苏商银行、重庆农村商业银行等多家银行及国泰君安等头部券商“尝鲜”DeepSeek。恒生电子、金证股份、星环科技等金融科技服务公司的大模型服务也接入了DeepSeek。
 

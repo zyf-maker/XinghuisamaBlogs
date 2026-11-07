@@ -3,15 +3,12 @@ title: "日本如何看待Deepseek"
 summary: "日本如何看待Deepseek，由程序员鱼皮整理。"
 order: 11
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《日本如何看待Deepseek》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 Deepseek风靡中国，轰动世界，成为春节期间中国社会的一股滚滚向前的暖流，成为最提升我们中国人科技自信的一款AI产品。
 
@@ -23,7 +20,7 @@ Deepseek风靡中国，轰动世界，成为春节期间中国社会的一股滚
 
 但是文章也指出，随着参数数量和训练数据量的增加，成本、监管和性能方面的障碍也越来越高，DeepSeek能否真正成为OpenAI 和 Meta 的竞争对手，将是真正的考验。同时，最终是否能够被全球采用，将是未来面临的一大重大挑战。
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0214%2F09958c15j00srndwz0016d200u000k1g00it00cj.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/f220942ac73aa971.jpg)  
 
 野村综合研究所战略分析师長谷佳明在日本经济新闻上发表文章说，DeepSeek威胁了美国，而且以低成本、高性能，堪称“人工智能的人造卫星”，中国人工智能的创新力颠覆了人们的常识。
 
@@ -35,7 +32,7 @@ Deepseek风靡中国，轰动世界，成为春节期间中国社会的一股滚
 
 对于如何看待使用DeepSeek的安全风险问题，松尾教授认为：“是利用DeepSeek的开源还是使用其服务？根据使用方式的不同，风险也不同。开源可以下载程序并在本地运行。这样的话，数据不可能被发送到某个地方。另一方面，DeepSeek的APP服务在中国的服务器上运行。一旦输入数据，这些数据就会发送到中国的服务器，在中国进行处理并返回。这一点，不管对于中国的DeepSeek还是美国的OpenAI来说都一样。这是一个你对对方投以多大信任的问题。”
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0214%2F3cfa5c98j00srndwz0023d200sg00itg00it00cf.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/ff070cf3ec5250d9.jpg)  
 
 那么，日本政府目前是如何看待DeepSeek的呢？
 

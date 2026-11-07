@@ -3,15 +3,12 @@ title: "vivo与荣耀相继接入DeepSeek：AI深度融合引领手机创新潮�
 summary: "vivo与荣耀相继接入DeepSeek：AI深度融合引领手机创新潮流，由程序员鱼皮整理。"
 order: 28
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《vivo与荣耀相继接入DeepSeek：AI深度融合引领手机创新潮流》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 在智能手机技术快速发展的今天，人工智能的应用成为厂商竞争的核心焦点。近日，vivo正式宣布将深度融合其全新推出的满血版DeepSeek，而荣耀也宣布其DeepSeek-R1已经支持联网搜索。这一消息无疑为用户带来了新的期待：借助先进的AI技术，手机的搜索和智能服务能力将得到前所未有的提升。
 

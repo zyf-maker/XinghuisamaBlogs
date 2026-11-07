@@ -3,15 +3,12 @@ title: "需求分析和产品规划"
 summary: "想清楚要做什么，才能做得更好"
 order: 3
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-13"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《需求分析和产品规划》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。在做任何产品前，我们首先必须要做的一件事是 **需求分析**。
 
@@ -112,7 +109,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 相对正规一点，可以使用表格来搞一个需求排期表，记录下每个功能、模块、详情、优先级等信息
 
-![](https://pic.yupi.icu/1/image-20230704115312375.png)
+![](/imgs/cc93ab0a82cb7149.png)
 
 还可以使用 XMind 等思维导图工具，对需求进行一个层级的划分，不仅团队协作时会更清晰，做 PPT 拉融资的时候也会更好看一些。
 

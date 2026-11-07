@@ -3,15 +3,12 @@ title: "售价超 7000 元，Meta 想用眼镜取代 iPhone"
 summary: "售价超 7000 元，Meta 想用眼镜取代 iPhone，由程序员鱼皮整理。"
 order: 55
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《售价超 7000 元，Meta 想用眼镜取代 iPhone》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 据彭博社 4 月 2 日报道，Meta 正在加紧研发其高端智能眼镜，代号 Hypernova，计划在其中加入手势控制以及显示屏。
 
@@ -27,7 +24,7 @@ Meta 计划最早在今年年底推出此款眼镜，知情人士透露，Meta �
 
 界面上，主屏幕由水平排列的圆形图标组成，类似 Apple 设备或 Meta Quest 混合现实耳机上的应用程序底座。
 
-![](https://n.sinaimg.cn/sinakd20250402s/267/w640h427/20250402/a269-23c4ca011ecbf33aae0d0d654bf4699f.png)
+![](/imgs/48e0c9d31ca7b0a6.png)
 
 Meta Orion 眼镜原型机
 
@@ -51,6 +48,6 @@ Meta 于 2023 年九月发布了第二代入门级智能眼镜 Meta Ray-Ban，�
 
 本文系观察者网独家稿件，未经授权，不得转载。
 
-![](https://n.sinaimg.cn/finance/cece9e13/20240627/655959900_20240627.png)
+![](/imgs/c8f22ca11dd9284a.png)
 
 > 来源：新浪财经 APP，海量资讯、精准解读，尽在新浪财经 APP

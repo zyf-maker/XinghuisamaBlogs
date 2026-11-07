@@ -3,15 +3,12 @@ title: "DeepSeek 提示词基本法则"
 summary: "官方提供了一些 prompt ：https://api-docs.deepseek.com/zh-cn/prompt-library/"
 order: 15
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 提示词基本法则》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 DeepSeek作为前沿AI工具，其潜力远超“简单问答”——关键在于如何用精准的提示词（Prompt）激活它的“隐藏技能”。玩了一阵子DeepSeek，小编总结了各行业场景化模板到底层设计逻辑，“提问的艺术”十分有必要，不同的提问姿势，给出的答案往往会千差万别 ！！
 

@@ -3,17 +3,14 @@ title: "Model Context Protocol，看这一篇就够了"
 summary: "共收录 29 条 AI 行业资讯，如MCP (Model Context Protocol)，一篇就够了。；https://modelcontextprotocol.io/等。"
 order: 48
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Model Context Protocol，看这一篇就够了》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![MCP (Model Context Protocol)，一篇就够了。](https://picx.zhimg.com/v2-aa37ae29a25e9d39fc019de2fa8c6e75_1440w.jpg?source=172ae18b)
+![MCP (Model Context Protocol)，一篇就够了。](/imgs/5c6108501b9f4e9f.webp)
 
 最近 MCP 这个关键词逐渐活跃在我所浏览的一些文章及评论区中。突然发现我对它仅有粗糙的理解，我决定深入学习并记录一下。
 
@@ -37,11 +34,11 @@ MCP（Model Context Protocol，模型上下文协议）定义了应用程序和 
 
 所谓一图胜千言，我这里引用一些制作的非常精良的图片来帮助理解：
 
-![](https://pic4.zhimg.com/v2-3a242914e1f4958e631dd158e043b7c3_1440w.jpg)
+![](/imgs/a928495a40a80fe5.jpg)
 
 可以看出，MCP 就是以更标准的方式让 LLM Chat 使用不同工具，更简单的可视化如下图所示，这样你应该更容易理解“中间协议层”的概念了。Anthropic 旨在实现 LLM Tool Call 的标准。
 
-![](https://picx.zhimg.com/v2-9fe7fb51f264338a079a444eefa041b1_1440w.jpg)
+![](/imgs/c8eb506b23f430e9.jpg)
 
 mcp 简单理解
 
@@ -81,7 +78,7 @@ mcp 简单理解
 
 这里首先引用官方给出的架构图。
 
-![](https://pica.zhimg.com/v2-9d3681630ed930a8dc74d3b452c0cc94_1440w.jpg)
+![](/imgs/016426211e38b237.jpg)
 
 MCP 由三个核心组件构成：Host、Client 和 Server。让我们通过一个实际场景来理解这些组件如何协同工作：
 
@@ -95,7 +92,7 @@ MCP 由三个核心组件构成：Host、Client 和 Server。让我们通过一�
 
 这种架构设计使得 Claude 可以在不同场景下灵活调用各种工具和数据源，而开发者只需专注于开发对应的 MCP Server，无需关心 Host 和 Client 的实现细节。
 
-![](https://pic3.zhimg.com/v2-3f7ceba80b16ef134b27119308a04472_1440w.jpg)
+![](/imgs/d9a77467872cf1a5.jpg)
 
 ## 5\. 原理：模型是如何确定工具的选用的？
 
@@ -119,7 +116,7 @@ MCP 由三个核心组件构成：Host、Client 和 Server。让我们通过一�
 
 先给出一个简单可视化帮助理解：
 
-![](https://pic3.zhimg.com/v2-2bcd98f6541da0b6f14dc9082ee2dcda_1440w.jpg)
+![](/imgs/7a87f19caf1c116a.jpg)
 
 ### 5.1 模型如何智能选择工具？
 
@@ -473,7 +470,7 @@ MCP Inspector is up and running at http://localhost:5173
 
 之后进入到给出的链接中，你大概能按下图进行操作：
 
-![](https://pica.zhimg.com/v2-a5e671c689907229a1d86162597e2da4_1440w.jpg)
+![](/imgs/29ff546296cdc983.jpg)
 
 如果成功，你应该能像我一样看到对应的输出（ `Tool Result`）～
 
@@ -509,7 +506,7 @@ code ~/Library/Application\ Support/Claude/claude_desktop_config.json
 
 配置好后重启 Claude Desktop，如果没问题就能看到对应的 MCP Server 了。
 
-![](https://pic3.zhimg.com/v2-cb51fd06ef7663f05a5dd3da1aedeba2_1440w.jpg)
+![](/imgs/b98aee4847d4f83d.jpg)
 
 **Step7. 实际使用**
 
@@ -521,9 +518,9 @@ code ~/Library/Application\ Support/Claude/claude_desktop_config.json
 
 它可能会请求你的使用权限，如图一所示，你可以点击 `Allow for This Chat`
 
-![](https://pic2.zhimg.com/v2-44e6397dc33c38875198e62d6fcd4317_1440w.jpg)
+![](/imgs/925558742071a6e7.jpg)
 
-![](https://pic1.zhimg.com/v2-d99e12160a8ae3af75df8ddf7eddda24_1440w.jpg)
+![](/imgs/5b3e9f680037cff7.jpg)
 
 看起来我们 MCP Server 已经正常工作了！
 

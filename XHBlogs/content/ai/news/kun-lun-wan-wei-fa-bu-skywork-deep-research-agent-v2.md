@@ -3,23 +3,19 @@ title: "昆仑万维发布Skywork Deep Research Agent v2"
 summary: "共收录 2 条 AI 行业资讯，如昆仑万维发布Skywork Deep Research Agent v2；微信截图20250814135746.png等。"
 order: 96
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《昆仑万维发布Skywork Deep Research Agent v2》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [昆仑万维发布Skywork Deep Research Agent v2](https://news.aibase.com/zh/news/20505)
 
 在SkyWork AI技术发布周的第四天，昆仑万维集团宣布了一项重大升级:Skywork Deep Research Agent v2。这一升级标志着天工超级智能体（Skywork Super Agents）的核心引擎得到了显著增强，为用户带来了更多模态、更高质量和更高效的体验。
 
 Skywork Deep Research Agent自5月2日上线以来，已经在AI Office领域大幅改变了大模型的角色，通过skywork.ai平台为用户产出了大量信息密度极高的优质文档、PPT、表格以及其他交付物。新版本的Skywork Deep Research Agent v2引入了“多模态深度调研”Agent，首次整合了多模态检索、理解和生成，解决了传统Deep Research Agent产品依赖纯文本检索分析的局限。
 
-![微信截图_20250814135746.png](https://pic.code-nav.cn/post_picture/1610518142000300034/1G7GJWKLyp4EN9zX.webp "微信截图_20250814135746.png")
+![微信截图_20250814135746.png](/imgs/d6d819f0a2f35505.webp "微信截图_20250814135746.png")
 
 昆仑万维Skywork团队推出的“多模态深度调研”Agent，通过技术创新，实现了多模态信息检索能力的提升，包括多模态爬取技术MM-Crawler、长距离多模态信息收集、异步并行Multi-Agent多模态理解架构和多模态结果呈现能力。这些技术突破使得研究人员等用户能够一次性获得信息完整、节奏顺畅、视觉友好的深度报告。
 

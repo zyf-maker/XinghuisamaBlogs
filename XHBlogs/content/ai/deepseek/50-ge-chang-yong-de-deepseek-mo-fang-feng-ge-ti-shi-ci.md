@@ -3,15 +3,12 @@ title: "50个常用的DeepSeek模仿风格提示词，去AI味的大杀器"
 summary: "写出来的文章总是AI味很浓？"
 order: 11
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《50个常用的DeepSeek模仿风格提示词，去AI味的大杀器》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 写出来的文章总是AI味很浓？
 

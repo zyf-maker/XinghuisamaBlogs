@@ -3,17 +3,13 @@ title: "9B“小”模型干了票“大”的：性能超8倍参数模型，拿
 summary: "共收录 13 条 AI 行业资讯，如9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源；9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源等。"
 order: 83
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://www.qbitai.com/2025/07/303714.html)
 
 
 GLM-4.1V-9B-Thinking
@@ -27,13 +23,13 @@ GLM-4.1V-9B-Thinking
 
 毫无悬念地成为10B级别里**效果最好的VLM模型**；而在18项评测中，它都可以与自身8倍参数量的Qwen-2.5-VL-72B一较高下，甚至是超越的程度。
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/mpFVihGaazZMxacB.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/51ee7c2d97690306.webp)
 
 整体来看，GLM-4.1V-9B-Thinking之所以能够这般“以小搏大”，核心原因就是**会思考**：
 
 引入了**思维链**（Chain-of-Thought）推理机制，并通过**课程采样强化学习**（RLCS，Reinforcement Learning with Curriculum Sampling）来全面提升模型能力。
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/C32oGObfnYldqJlk.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/b451616459490427.webp)
 
 值得一提的是，在智谱这次发布新模型之际，浦东创投集团和张江集团对其进行了**10亿元投资**，并将于近期完成首次交割。
 
@@ -41,13 +37,13 @@ GLM-4.1V-9B-Thinking
 
 例如我们在不给提醒的情况下，先“喂”GLM-4.1V-9B-Thinking一幅名画：
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/g7rrKPpfcWlwN6CM.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/1cf6bf708ef67efc.webp)
 
 然后向它提问：
 
 > 这幅画中哪些元素违背物理规律？艺术家可能通过这些矛盾表达什么哲学思想？
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/1njqZCx0c3lOj51n.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/0cba3e07890be792.webp)
 
 可以看到，GLM-4.1V-9B-Thinking先是看出了这是西班牙超现实主义画家萨尔瓦多·达利创作的《记忆的永恒》；然后也道出了画作中存在违背物理的视觉符号等。
 
@@ -57,29 +53,29 @@ GLM-4.1V-9B-Thinking
 
 （PS：这道题很多大模型在之前都有出现过翻车。）
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/nX6EsOVavliqVSLB.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/ba3fa56f1f360cd7.webp)
 
 GLM-4.1V-9B-Thinking在思考片刻过后，就会给出一个简洁且精准的答案——**A**：
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/e0igVDblQ6A5Gh0d.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/c55e557444eecdd7.webp)
 
 再如此前同样让一众大模型“头疼”的看时钟和日期问题，我们也让GLM-4.1V-9B-Thinking试一试：
 
 > 看这张图，分别是什么时间和什么日期？
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/I96eAAYjIsvhwJqm.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/cfc6f50acc6be898.webp)
 
 在同时处理两个易出错的问题时，GLM-4.1V-9B-Thinking依旧是给出了相对准确答案（时间有一点小偏差，应该是10点11分）：
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/lQvM1eC0hEqFLYVx.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/6871d7e4bbd29b9a.webp)
 
 以及还有生活中比较有趣且实用的例子——**看手相**：
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/5SrAZbqALeAiWH0j.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/a13b0029838dde23.webp)
 
 有懂手相的小伙伴，也可以留言讨论GLM-4.1V-9B-Thinking看得是否准确哦~
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/gYbc1QVLAN3zbrs4.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/16f1e3cb6c86d792.webp)
 
 由此可见，GLM-4.1V-9B-Thinking在“边看边想”这件事已经达到了普通人的水准。
 
@@ -102,7 +98,7 @@ GLM-4.1V-9B-Thinking在思考片刻过后，就会给出一个简洁且精准的
 * 多层感知机适配器（MLP Projector）
 * 语言解码器（Language Decoder）
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/QCMRt214OzzcM3My.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/7754c1f577149a24.webp)
 
 **视觉编码器**就好比模型的 “眼睛”，团队给它选了AIMv2-Huge这个 “超级视力装备”。
 
@@ -161,7 +157,7 @@ GLM-4.1V-9B-Thinking在思考片刻过后，就会给出一个简洁且精准的
 
 团队采用“课程学习”的方式进行大规模强化训练，也就是先让模型从简单任务开始，逐步挑战更难的任务。通过这种由浅入深的训练策略，模型在实用性、准确性以及稳定性方面都有了明显的提升。
 
-![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](https://pic.code-nav.cn/post_picture/1610518142000300034/lmRbWkiVSUjGEfr3.webp)
+![9B“小”模型干了票“大”的：性能超8倍参数模型，拿下23项SOTA|智谱开源](/imgs/a7b5f58b22d78387.webp)
 
 最后，关于GLM-4.1V-9B-Thinking的论文、代码等也均已开源，感兴趣的小伙伴可以看看文末链接哦~
 
@@ -183,4 +179,3 @@ https://arxiv.org/abs/2507.01006
 [3]体验中心：https://www.bigmodel.cn/trialcenter/modeltrial/text?modelCode=glm-4.1v-thinking-flash
 
 
-*版权所有，未经授权不得以任何形式转载及使用，违者必究。*

@@ -3,15 +3,12 @@ title: "Vibe Coding 性能优化技巧"
 summary: "让你的应用跑得更快"
 order: 9
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-01-13"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 性能优化技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -41,7 +38,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 按 F12 打开开发者工具，切换到 Performance 性能标签，点击录制按钮，然后操作你的应用，最后停止录制。你会看到一个详细的性能报告，包括每个操作花了多少时间，哪些函数最慢，有没有卡顿等。
 
-![](https://pic.yupi.icu/1/image-20260105150358449.png)
+![](/imgs/cec086edb90a7fc2.png)
 
 如果你看不懂这些数据，没关系，可以截图给 AI，让它帮你分析：
 
@@ -54,7 +51,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 Chrome 自带的性能测试工具。在开发者工具的 Lighthouse 标签，点击 "分析网站加载情况"，它会给你的页面打分，并提供优化建议。
 
-![](https://pic.yupi.icu/1/image-20260105150513178.png)
+![](/imgs/947f2a22f3bf57c6.png)
 
 重点关注这几个指标：
 
@@ -62,7 +59,7 @@ Chrome 自带的性能测试工具。在开发者工具的 Lighthouse 标签，�
 - FID（First Input Delay）：首次输入延迟，应该在 100 毫秒内
 - CLS（Cumulative Layout Shift）：累积布局偏移，应该小于 0.1
 
-![](https://pic.yupi.icu/1/image-20260105150756392.png)
+![](/imgs/d2bd6203c21d4cc6.png)
 
 
 3）其他在线工具
@@ -190,7 +187,7 @@ const [user, posts, comments] = await Promise.all([
 
 缓存就像是把常用的东西放在手边，下次用的时候不用再去远处拿。比如你第一次查询用户信息需要 1 秒，如果把结果缓存起来，下次再查询同一个用户，0.01 秒就能拿到结果。
 
-![](https://pic.yupi.icu/1/cacheusage%E5%A4%A7.jpeg)
+![](/imgs/a5b8f6c077c71a14.jpg)
 
 AI 生成的代码一般不会主动添加缓存机制，导致每次都要重新获取相同的数据，浪费时间。
 
@@ -411,7 +408,7 @@ res.setHeader('Cache-Control', 'public, max-age=300');
 
 3）CDN 缓存：CDN（内容分发网络）就像在全国各地开了很多仓库，用户访问时从最近的仓库拿资源，比从总部拿要快得多。使用 CDN 来缓存和加速静态资源的分发，能大幅提升全球用户的访问速度。
 
-![](https://pic.yupi.icu/1/image-20260105153947917.png)
+![](/imgs/459ebb10e9380340.png)
 
 
 ### 异步处理

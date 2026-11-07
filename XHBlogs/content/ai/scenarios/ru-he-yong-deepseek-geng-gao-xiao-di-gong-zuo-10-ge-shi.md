@@ -3,19 +3,16 @@ title: "如何用DeepSeek更高效地工作：10个实用技巧"
 summary: "在当今快节奏的工作环境中，高效的工具和方法是提升生产力的关键。DeepSeek作为一款强大的智能助手，能够帮助用户快速获取信息、解决问题并优化工作流程。然而，如何最大限度地发挥DeepSeek的潜力，取决于用户如何与其互动。本文将结合10个"
 order: 4
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《如何用DeepSeek更高效地工作：10个实用技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 在当今快节奏的工作环境中，高效的工具和方法是提升生产力的关键。DeepSeek作为一款强大的智能助手，能够帮助用户快速获取信息、解决问题并优化工作流程。然而，如何最大限度地发挥DeepSeek的潜力，取决于用户如何与其互动。本文将结合10个实用技巧，深入探讨如何用DeepSeek更高效地工作。
 
-![img](https://pic.yupi.icu/yuyi/1739500637307-9d4dd4b6-f1c0-4a78-8003-e9cf1c361428.jpeg)
+![img](/imgs/1854d2a4b5d97bd0.jpg)
 
 ### 1. 明确具体的问题
 
@@ -34,7 +31,7 @@ DeepSeek的能力建立在对问题的准确理解上。因此，提出明确、
 
 **实践建议**：将大问题分解为小任务，逐步完成，既能提高效率，也能降低认知负担。
 
-![img](https://pic.yupi.icu/yuyi/1739500637394-2a457040-1a2d-4e84-86c3-f19f01cce77c.jpeg)
+![img](/imgs/be39a82e5add7cf0.jpg)
 
 ### 3. 提供背景信息
 
@@ -48,7 +45,7 @@ DeepSeek的回答质量很大程度上取决于你提供的上下文。例如，
 
 **实践建议**：根据你的需求，明确回答的深度、长度或语言风格，确保信息对你最有用。
 
-![img](https://pic.yupi.icu/yuyi/1739500637387-1d60279b-2404-4d2c-a47b-b9fa2bbdcbe4.jpeg)
+![img](/imgs/b93d8e031bc000b4.jpg)
 
 ### 5. 多用开放式问题
 
@@ -62,7 +59,7 @@ DeepSeek的回答质量很大程度上取决于你提供的上下文。例如，
 
 **实践建议**：不要害怕指出问题或提出改进建议，互动是优化结果的关键。
 
-![img](https://pic.yupi.icu/yuyi/1739500637545-cda98a54-1feb-4bc2-a44f-3b41f781f117.jpeg)
+![img](/imgs/9b80e8984051fc2d.jpg)
 
 ### 7. 利用多模态能力
 
@@ -88,7 +85,7 @@ DeepSeek的实时搜索能力可以帮助你获取最新的信息。例如，你
 
 **实践建议**：对于需要最新信息的任务，充分利用DeepSeek的实时搜索功能。
 
-![img](https://pic.yupi.icu/yuyi/1739500638103-187d0d62-c7de-42e0-9a99-e6499f4da582.jpeg)
+![img](/imgs/81dcb9380cd30d4b.jpg)
 
 DeepSeek作为一款智能助手，和文心一言一样，其潜力是巨大的，但如何高效地使用它，取决于用户的提问技巧和互动方式。通过明确问题、分步骤提问、提供背景信息、设定范围、多用开放式问题、及时反馈、利用多模态能力、保持耐心、尝试不同表达方式以及利用实时搜索能力，你可以最大限度地发挥DeepSeek的作用，提升工作效率。
 

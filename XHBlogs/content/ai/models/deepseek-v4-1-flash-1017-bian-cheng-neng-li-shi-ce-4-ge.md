@@ -3,15 +3,12 @@ title: "DeepSeek V4.1 Flash 1017 编程能力实测 - 4 个项目案例"
 summary: "能力更强、速度更快、花钱更少，一次没有短板的小版本更新"
 order: 9
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek V4.1 Flash 1017 编程能力实测 - 4 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -19,19 +16,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 距离上个月 V4.1 Flash 正式发布才一个多月，这次发布的版本号是 DeepSeek-V4.1-Flash-1017。网页端、APP 和 API 全部同步切换，**价格一分没涨**，权重也照样开源了。
 
-![](https://pic.yupi.icu/1/dsv41flash1017-%E5%AE%98%E6%96%B9-%E5%8F%91%E5%B8%83%E5%85%AC%E5%91%8A-6dec8875.png)
+![](/imgs/6e47fdd413c0219f.png)
 
 虽然官方说这只是一次小版本更新，但跑分涨得非常猛。
 
 AI 编程基准 DeepSWE 从上一版的 74.2 涨到了 77.0，**超过了 Claude Opus 5** 的 74.0；考察终端编程能力的 Terminal-Bench 4.0 从 31.2 涨到了 42.3，一口气涨了 11 分！
 
-![官方跑分](https://pic.yupi.icu/1/dsv41flash1017-%E5%AE%98%E6%96%B9-%E8%B7%91%E5%88%86%E8%A1%A8-b01d393e.png)
+![官方跑分](/imgs/43c8c7bf5457a177.png)
 
 不过纵览这张表里的 11 项测试基准，DeepSeek 对 Claude Opus 5 是 4 胜 7 负，HLE、Terminal-Bench、ProgramBench 这些项目 Opus 5 还是明显领先的。
 
 真正值得关注的是下面这张性能和成本对比图。
 
-![性能成本图](https://pic.yupi.icu/1/dsv41flash1017-%E5%AE%98%E6%96%B9-%E6%80%A7%E8%83%BD%E6%88%90%E6%9C%AC%E5%9B%BE-0ca753bd.png)
+![性能成本图](/imgs/4aef0218fbbd8615.png)
 
 1017 版本在 MAX 推理档位下，DeepSWE 每个任务的平均费用只要 1 块多，旧版 V4.1 Flash 在同一档位要 3 块多。
 
@@ -39,7 +36,7 @@ AI 编程基准 DeepSWE 从上一版的 74.2 涨到了 77.0，**超过了 Claude
 
 夸夸大肥鱼：
 
-![](https://pic.yupi.icu/1/dsv41flash1017-meme-%E6%9C%80%E5%BC%BA-7fb59d87.png)
+![](/imgs/45a19d91badb2111.png)
 
 这也是 DeepSeek 这次敢说「性能和费用的帕累托改进」的底气。
 
@@ -49,7 +46,7 @@ AI 编程基准 DeepSWE 从上一版的 74.2 涨到了 77.0，**超过了 Claude
 
 一是官方主打的「许愿式编程」。DeepSeek 说新模型用基于自反馈的强化学习训练，从零构建完整项目的能力提升了很多，尤其是游戏开发和 3D 建模，官方演示了故宫 3D 建模、网页赛车游戏、用 Godot 复刻《传送门 2》等案例，提示词都很短。
 
-![官方案例](https://pic.yupi.icu/1/dsv41flash1017-%E5%AE%98%E6%96%B9-case1-917dbd3f.gif)
+![官方案例](/imgs/f93f92b8f2482888.gif)
 
 二是开放了自研的 Search 和 Fetch 搜索接口，价格都是 5 元 / 千次。而且在 DeepSeek Harness、Claude Code、Codex 里用 DeepSeek API 时调用的服务端搜索，11 月 1 日之前还是免费的。
 
@@ -70,7 +67,7 @@ npx @deepseek-ai/dsh@next web
 
 升级之后，模型列表里的 DeepSeek-V4.1-Flash 后面会多一个 1017 的小标签。我用的是默认的 Max 推理档位、标准模式，访问权限全部放开。
 
-![模型选择](https://pic.yupi.icu/1/dsv41flash1017-dsh-01-%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9-45f5e0a9.png)
+![模型选择](/imgs/e88fc6978eb8f837.png)
 
 我在 DSH 里开了 4 个会话同时跑 4 个项目，每个会话一个独立的项目目录，全程不进行人工干预。
 
@@ -90,7 +87,7 @@ npx @deepseek-ai/dsh@next web
 
 为了能公平对比，提示词跟上次一字不差。编辑器布局和参数维度怎么设计我一个字都没提，让 AI 自己去搜 OpenAI 官方那版的产品设计，在此基础上做中国版。
 
-![Case 1 提示词](https://pic.yupi.icu/1/dsv41flash1017-prompt-01-case1-city-a310268c.png)
+![Case 1 提示词](/imgs/65967e34e4c61299.png)
 
 上次旧版 V4.1 Flash 跑这道题，前后用了 102 分钟、250 步。
 
@@ -98,43 +95,43 @@ npx @deepseek-ai/dsh@next web
 
 来看成品，AI 给项目取名叫「城脉」，朱砂印章配宋体标题，右边是完整的城市营造控制台。默认打开就是重庆的黄昏，两江交汇、依山层叠的高楼、跨江大桥和轻轨线路都做出来了，标注里还写着李子坝轻轨穿楼、解放碑。
 
-![新版重庆](https://pic.yupi.icu/1/dsv41flash1017-case1-new-chongqing-eb876a71.png)
+![新版重庆](/imgs/9a9e87ccb9163501.png)
 
 放大看细节，楼宇的灯光窗格、台地上的吊脚楼、穿过楼群的轻轨都清晰可见。
 
-![新版重庆近景](https://pic.yupi.icu/1/dsv41flash1017-case1-new-chongqing-zoom-65ee713e.png)
+![新版重庆近景](/imgs/e59ac1ab232cf9af.png)
 
 再对比一下上个月旧版 DeepSeek 做的重庆。
 
-![旧版 V4.1 Flash 重庆](https://pic.yupi.icu/1/1789018496987-c639a3c7-d174-4c44-bb9f-764d5cd14841.png)
+![旧版 V4.1 Flash 重庆](/imgs/20e79bfeb3e5e9cc.png)
 
 旧版的重庆是一大片方方正正的盒子楼，周围还飘着很多白色的小棍子，一看就是渲染出了问题。新版不光有了黄昏的氛围光，山体、台地、立交和楼群的层次也丰富了很多。
 
 切换到上海，上海中心、东方明珠、外滩沿江的石头建筑都有，江面上还有游船。
 
-![新版上海](https://pic.yupi.icu/1/dsv41flash1017-case1-new-shanghai-76775ed9.png)
+![新版上海](/imgs/cf1beeee4bc99824.png)
 
 不足之处也很明显，**东方明珠做得太小了**，淹没在楼群里，不认真找压根儿看不到，而且渲染也有明显的 Bug。
 
 这一点旧版反而做得更好，粉色的东方明珠一眼就能认出来，只不过也很丑就对了……
 
-![旧版 V4.1 Flash 上海](https://pic.yupi.icu/1/1789018732575-e104e1c4-1674-49f6-a04f-5a18c8b60083.png)
+![旧版 V4.1 Flash 上海](/imgs/118507923bbc6276.png)
 
 进步最大的是西安。
 
 上次我吐槽旧版的西安「很难一眼认出是古都」，旧版虽然也围了一圈城墙，但城里全是穿模的白色碎片，看不出是哪座城市。
 
-![旧版 V4.1 Flash 西安](https://pic.yupi.icu/1/1789018812425-453c5ef1-a39b-4ff4-8df5-233f648a23ca.png)
+![旧版 V4.1 Flash 西安](/imgs/d175ceb268698c81.png)
 
 这次新版做出了方方正正的明城墙、城门楼、钟楼、大雁塔和护城河，城内是低矮的合院，城外是现代楼宇，新旧层叠的感觉一下就出来了。
 
-![新版西安](https://pic.yupi.icu/1/dsv41flash1017-case1-new-xian-ad2877bc.png)
+![新版西安](/imgs/30f5b08594a23db0.png)
 
 深圳是紫黑天空 + 霓虹灯牌的赛博风，江南则是粉墙黛瓦、水巷、石拱桥和乌篷船，跟其他几座城市的反差非常明显。
 
-![新版深圳](https://pic.yupi.icu/1/dsv41flash1017-case1-new-shenzhen-4715dc39.png)
+![新版深圳](/imgs/39826799b00881bb.png)
 
-![新版江南](https://pic.yupi.icu/1/dsv41flash1017-case1-new-jiangnan-5ff9dc21.png)
+![新版江南](/imgs/161830c4751dfd16.png)
 
 同一段提示词，**新版做出来的已经是能认出城市的作品了，旧版更像是一堆方块加上满屏的穿模碎片**。
 
@@ -147,19 +144,19 @@ npx @deepseek-ai/dsh@next web
 
 我只用了几句话描述需求，让 AI 做一个 3D 版的地铁跑酷网页游戏，主角是背着电脑包赶末班地铁的程序员，躲避列车和路障、收集金币，越跑越快。除了要求「不使用任何外部素材」之外，技术栈和玩法细节全部放开，交给 AI 自己搞。
 
-![Case 2 提示词](https://pic.yupi.icu/1/dsv41flash1017-prompt-02-case2-subway-f70385c2.png)
+![Case 2 提示词](/imgs/bc9ecad21b26ea56.png)
 
 AI 给游戏取名《末班车》，开始界面看起来有模有样的，不过话说这个主角是施工队的大哥么？为啥程序员要带个黄色的头盔啊！
 
-![开始界面](https://pic.yupi.icu/1/dsv41flash1017-case2-01-menu-23bf8937.png)
+![开始界面](/imgs/232e93e63eb6c983.png)
 
 开局之后是三车道的隧道跑酷，左上角是金币数，中间是里程和时速，可以正常进行游戏，而且会越跑越快。
 
-![游戏开局](https://pic.yupi.icu/1/dsv41flash1017-case2-02-play-start-421571db.png)
+![游戏开局](/imgs/e6c6542f1dfee599.png)
 
 如果主角不小心撞车了，会弹出一个车票风格的结算界面，「代码还在，再赶一班」，这个文案有点儿意思。
 
-![结算车票](https://pic.yupi.icu/1/dsv41flash1017-case2-05-gameover-1fb1badc.png)
+![结算车票](/imgs/7b30a274f557422e.png)
 
 不过问题也有不少：一是障碍物太稀疏了，玩起来压力不够；二是主角形象塑造得一般；三是游戏过程中控制台一直在报音频参数的错误，虽然不影响玩，但说明 AI 的自测没覆盖到这一块。
 
@@ -170,7 +167,7 @@ AI 给游戏取名《末班车》，开始界面看起来有模有样的，不�
 
 第三个项目对标官方演示的故宫 3D 建模，我让 AI 用纯代码还原天坛祈年殿，三重檐、蓝色琉璃瓦、汉白玉三层圆台基这些特征都要有，支持旋转视角和日夜切换，并且要求它先联网查资料。
 
-![Case 3 提示词](https://pic.yupi.icu/1/dsv41flash1017-prompt-03-case3-temple-549590c8.png)
+![Case 3 提示词](/imgs/2f041f3785718589.png)
 
 这里我简单介绍一下 AI 的执行过程。
 
@@ -180,21 +177,21 @@ AI 先用 DSH 内置的联网搜索查了北京市公园管理中心和天坛公
 
 来看成品，这个效果真心不错！
 
-![祈年殿日景](https://pic.yupi.icu/1/dsv41flash1017-case3-01-day-315a0be9.png)
+![祈年殿日景](/imgs/ea0831d29c2d320a.png)
 
 整个画面全部都是靠代码画出来的，没有用任何外部模型和贴图。
 
 切换到「三重檐」视角，可以看清每一层的琉璃瓦垄和檐下彩画：
 
-![三重檐](https://pic.yupi.icu/1/dsv41flash1017-case3-02-roof-2111d984.png)
+![三重檐](/imgs/2064b5146678ef11.png)
 
 切换到夜景，殿内亮起暖光，跟深蓝色的屋顶形成对比，很有氛围感。
 
-![祈年殿夜景](https://pic.yupi.icu/1/dsv41flash1017-case3-04-night-0bce12ba.png)
+![祈年殿夜景](/imgs/7349e642e349f209.png)
 
 右上角还有一个「建筑档案」面板，可以看到更多信息和数据：
 
-![建筑档案](https://pic.yupi.icu/1/dsv41flash1017-case3-06-archive-abe51e27.png)
+![建筑档案](/imgs/34a9b25b7291a81e.png)
 
 单看这个案例，目前我还真挑不出明显的毛病。
 
@@ -207,7 +204,7 @@ AI 先用 DSH 内置的联网搜索查了北京市公园管理中心和天坛公
 
 这两个接口 10 月 17 日才刚发布，所以我要求 AI 先去查官方文档再开发：
 
-![Case 4 提示词](https://pic.yupi.icu/1/dsv41flash1017-prompt-04-case4-aisearch-047ec430.png)
+![Case 4 提示词](/imgs/70baea4c3fe67f85.png)
 
 AI 先抓取了 DeepSeek 官方的「网页搜索与抓取」文档，把接口地址、请求字段、返回字段都摸清楚了才动手。
 
@@ -215,33 +212,33 @@ AI 先抓取了 DeepSeek 官方的「网页搜索与抓取」文档，把接口�
 
 首页的设计非常有质感，标语也很贴切，就是没用的废话有点多，看着有点烧心：
 
-![问渠首页](https://pic.yupi.icu/1/dsv41flash1017-case4-01-home-45433fac.png)
+![问渠首页](/imgs/59c57818dc039f0a.png)
 
 我问了一个需要靠实时搜索来回答的问题，比如：DeepSeek V4.1 Flash 1017 这次更新了什么？
 
 右侧的「溯源实况」面板会实时展示 AI 拆出了哪几条检索方式、搜到了多少条结果、正在读哪几个网页，过程完全透明。
 
-![搜索过程](https://pic.yupi.icu/1/dsv41flash1017-case4-02-progress-e8ba53a3.png)
+![搜索过程](/imgs/6b92073438aa2f41.png)
 
 用了 13 秒，回答就生成好了，内容和官方公布的数据完全对得上，跑分还整理成了表格。
 
-![回答结果](https://pic.yupi.icu/1/dsv41flash1017-case4-03-answer-23ef0fc1.png)
+![回答结果](/imgs/087dc24395ff35d4.png)
 
 鼠标悬停在引用角标上，会显示来源网页的标题，点击就能跳转到原文。
 
-![引用角标](https://pic.yupi.icu/1/dsv41flash1017-case4-04-cite-e4399838.png)
+![引用角标](/imgs/fa924a073b005877.png)
 
 我又追问了一句：那它的 API 价格和调用方式有变化吗？
 
 这次只用 4.4 秒就答完了，明确给出了「没有变化」的结论，还补充了旧模型名会自动路由到新模型。
 
-![连续追问](https://pic.yupi.icu/1/dsv41flash1017-case4-05-followup-f9c66583.png)
+![连续追问](/imgs/fa8fa6aa45007841.png)
 
 从查文档到全栈开发，再到流式输出、引用跳转、连续追问，这个项目我没找到明显的 Bug，完成度很高。
 
 顺便说一下这个搜索接口本身的体验。我自己直接调了几次，Search 接口单次只要 0.4 秒左右，发布第二天我测的时候，相关新闻就已经收录了，每条结果还带有相关性打分和权威度分级。
 
-![接口实测](https://pic.yupi.icu/1/dsv41flash1017-api-search-fetch-29eaee2a.png)
+![接口实测](/imgs/f741f543a9d5f19d.png)
 
 但 Fetch 接口有个小问题，返回的 Markdown 正文里，`#`、`.`、`|` 这些符号全部被加上了反斜杠转义，喂给模型读问题不大，如果你想直接渲染到页面上，就得自己先处理一遍。
 
@@ -258,13 +255,13 @@ AI 先抓取了 DeepSeek 官方的「网页搜索与抓取」文档，把接口�
 
 我看了下其他博主的测评，跟我的感受一致。根据 Arena 的 WebDev 代码竞技场，10 月 18 日更新后，1017 拿到了 1670 分，是开源模型第一、总榜第 12。上个月的旧版只有 1619 分，总榜排在第 25 名。
 
-![WebDev 排行榜](https://pic.yupi.icu/1/dsv41flash1017-arena-webdev-fd9b6c1d.png)
+![WebDev 排行榜](/imgs/3c6f14019b5df25b.png)
 
 不过官方说的「输出更短」，我倒是没有很明显的感受。
 
 城市生成器这个测试中，新版的输出 Token 是 45.6 万，比旧版的 22.7 万还多了一倍。一方面可能是因为上次旧版用的是 high 档，这次 DSH 默认是 Max 档；另一方面是新版 DeepSeek 更多地通过截图检查效果，光这一个项目就看了 72 次截图，改了一轮又一轮。
 
-![城市生成器会话统计](https://pic.yupi.icu/1/dsv41flash1017-dsh-03-%E5%9F%8E%E5%B8%82%E7%BB%9F%E8%AE%A1-02f61a26.png)
+![城市生成器会话统计](/imgs/e79122900b1c3477.png)
 
 这跟社区里有人反馈的「新版很难自我满足」是一致的。
 
@@ -278,11 +275,11 @@ AI 先抓取了 DeepSeek 官方的「网页搜索与抓取」文档，把接口�
 
 打开 DeepSeek 开放平台的用量面板一看，4 个项目加上我自己调接口的测试，一共才花了 **12.81 元**，平均每个项目 3 块钱左右！
 
-![消费面板](https://pic.yupi.icu/1/dsv41flash1017-usage-%E4%BB%8A%E6%97%A5%E6%B6%88%E8%B4%B9-313ad71e.png)
+![消费面板](/imgs/e19ebdef2e5652f3.png)
 
 上个月旧版 V4.1 Flash 平均每个项目要 5 块钱左右，这次项目更复杂、Token 用得更多，单个项目反而更便宜了，非常香！
 
-![](https://pic.yupi.icu/1/dsv41flash1017-meme-API%E7%9C%9F%E9%A6%99-c7ac46f3.png)
+![](/imgs/d05dbc82041cba54.png)
 
 可惜的是，DeepSeek 还不出订阅套餐。对于 AI 编程重度用户来说，选择用 Coding 套餐的 GLM-5.3-Flash，价格可能比 DeepSeek 更有竞争力。
 

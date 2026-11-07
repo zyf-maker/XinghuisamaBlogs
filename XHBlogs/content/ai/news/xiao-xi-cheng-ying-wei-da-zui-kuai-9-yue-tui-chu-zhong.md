@@ -3,17 +3,13 @@ title: "消息称英伟达最快9月推出中国特供AI芯片 黄仁勋将访�
 summary: "消息称英伟达最快9月推出中国特供AI芯片 黄仁勋将访问中国，由程序员鱼皮整理。"
 order: 80
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《消息称英伟达最快9月推出中国特供AI芯片 黄仁勋将访问中国》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [消息称英伟达最快9月推出中国特供AI芯片 黄仁勋将访问中国](https://www.techweb.com.cn/it/2025-07-11/2963114.shtml)
 
 【TechWeb】7月11日消息，据外媒援引知情人士消息称，英伟达计划最早于今年9月推出一款专为中国设计的全新AI芯片，CEO黄仁勋计划访问北京，重申公司对中国市场的承诺。
 

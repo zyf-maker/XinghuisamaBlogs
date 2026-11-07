@@ -17,6 +17,10 @@ export type AiDoc = {
   tags: string[];
   updated: string;
   readingTime: number;
+  /** 原作者，没有就空 */
+  author: string;
+  /** 原始出处链接，没有就空 */
+  source: string;
   /** 去掉 frontmatter 后的正文，供检索与统计字数 */
   body: string;
 };
@@ -103,6 +107,8 @@ function readCategory(category: AiCategory): AiDoc[] {
       tags: toStringArray(data.tags),
       updated: (data.updated as string) || (data.date as string) || "",
       readingTime: toNumber(data.readingTime, Math.max(1, Math.round(content.length / 400))),
+      author: (data.author as string) || "",
+      source: (data.source as string) || "",
       body: content,
     });
   }

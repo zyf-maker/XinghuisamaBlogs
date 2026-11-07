@@ -3,15 +3,12 @@ title: "普通人如何通过炒股买基金赚到100万？"
 summary: "最近，DeepSeek火了，有人用它算命有人用它写论文，那是不是也可以用它来规划我们的投资呢？"
 order: 23
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《普通人如何通过炒股买基金赚到100万？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 最近，DeepSeek火了，有人用它算命有人用它写论文，那是不是也可以用它来规划我们的投资呢？
 
@@ -19,9 +16,9 @@ source: "https://github.com/liyupi/ai-guide"
 
 没想到DeepSeek的答案还是有点可行性的。
 
-![img](https://pic.yupi.icu/yuyi/1739500892089-89232de7-60b6-4033-a161-96362ebda422.webp)
+![img](/imgs/a0422e9b6be2a95a.webp)
 
-![img](https://pic.yupi.icu/yuyi/1739500892095-6cba5fe4-e93e-438b-9d8e-78f104707154.webp)
+![img](/imgs/09ae7fe5c5dc8589.webp)
 
 
 通过深度思考，DeepSeek给出了详细的投资方法：
@@ -88,7 +85,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 ### 第三步：构建投资组合（示例）
 
-![img](https://pic.yupi.icu/yuyi/1739500892019-6c965c41-5c6a-41cf-b478-111ee89a8632.webp)
+![img](/imgs/31ad6dceda6f7c4b.webp)
 
 第四步：风险控制与心态管理
 
@@ -147,13 +144,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 根据DeepSeek筛选基金的标准（基金经理任职超5年，年化收益＞15%；最大回撤＜30%；规模10-100亿），我们也通过天天基金APP的条件选基功能选出了符合条件的6只主动基金。
 
-![img](https://pic.yupi.icu/yuyi/1739500892063-e2f75594-edd6-48b2-8789-bc93d2efc07a.webp)
+![img](/imgs/941aa77af85a0144.webp)
 
 （图片来源：天天基金APP，规模数据统计截至2024/12/31，具体基金的相关风险、基金经理变更等情况详见各基金法律文件及公告，历史数据不代表未来，不作投资推荐）
 
 天天基金APP的指数宝里可以查询到各个指数当前的估值情况，智能定投也能够帮助我们及时止盈止损，提高效率，只需要在定投基金的时候开启智能定投并根据自己的需求修改止盈止损策略即可。
 
-| ![img](https://pic.yupi.icu/yuyi/1739500892094-377fb3c0-37f2-4799-b970-0b8495a6dd79.webp) | ![img](https://pic.yupi.icu/yuyi/1739500892854-a92cd658-c17d-4525-a9d0-8a798d2630d0.webp) |
+| ![img](/imgs/c962df424d843d17.webp) | ![img](/imgs/1ff3e3b23314c04a.webp) |
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 |                                                                                           |                                                                                           |
 

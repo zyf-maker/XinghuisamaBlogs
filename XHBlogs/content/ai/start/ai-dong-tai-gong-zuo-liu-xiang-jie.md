@@ -3,15 +3,12 @@ title: "AI 动态工作流详解"
 summary: "搞懂动态工作流的运作原理、技术架构，以及它在 AI 应用开发中的定位"
 order: 104
 level: "入门"
-tags: ["概念大全", "转载", "AI"]
+tags: ["概念大全"]
 updated: "2026-10-22"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 动态工作流详解》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -32,7 +29,7 @@ Anthropic 在 5 月底发布 Claude Opus 4.8 的时候，同步推出了 Claude 
 
 动态工作流是让 AI 自己编写编排脚本，把一个大任务拆成若干子任务，分发给数十到数百个并行子 Agent 执行，最后汇总验证结果的能力。
 
-![](https://pic.yupi.icu/1/01_%E5%8A%A8%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E6%A6%82%E5%BF%B5%E5%9B%BE-AI%E8%87%AA%E5%B7%B1%E7%BC%96%E6%8E%92%E5%AD%90Agent_compressed_v3.png)
+![](/imgs/b5bbd3791e044e01.png)
 
 注意，这里的关键词是 **让 AI 自己编写**。
 
@@ -46,7 +43,7 @@ Anthropic 在 5 月底发布 Claude Opus 4.8 的时候，同步推出了 Claude 
 
 动态工作流更像是你把需求丢给一个靠谱的技术总监，他自己去摇人、分活、盯进度、验收，最后给你交付结果。
 
-![](https://pic.yupi.icu/1/02_%E4%BC%A0%E7%BB%9F%E7%BC%96%E6%8E%92vs%E5%8A%A8%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AF%B9%E6%AF%94-%E9%A1%B9%E7%9B%AE%E7%BB%8F%E7%90%86vs%E6%8A%80%E6%9C%AF%E6%80%BB%E7%9B%91_compressed_v1.png)
+![](/imgs/19afda0d1179720e.png)
 
 
 ## Agent 系统的分类
@@ -55,7 +52,7 @@ Anthropic 在 5 月底发布 Claude Opus 4.8 的时候，同步推出了 Claude 
 
 早在 2024 年 12 月，Anthropic 就发布了一篇非常经典的工程博客，叫 Building Effective Agents。
 
-![](https://pic.yupi.icu/1/image-20260706185611910.png)
+![](/imgs/9c1963c9801d02e5.png)
 
 这篇文章把所有的 Agentic 系统分成了两大类。
 
@@ -85,7 +82,7 @@ Anthropic 在 5 月底发布 Claude Opus 4.8 的时候，同步推出了 Claude 
 
 一个 LLM 生成结果，另一个 LLM 负责评估和提供反馈，循环迭代直到质量达标。
 
-![](https://pic.yupi.icu/1/03_Anthropic%E4%BA%94%E7%A7%8DAgent%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%BC%8F%E6%A6%82%E8%A7%88-%E5%90%AB%E4%B8%AD%E6%96%87%E5%90%8D_compressed_v3.png)
+![](/imgs/ed94ccb2b105211e.png)
 
 你发现了吗？动态工作流本质上就是第 4 种模式 Orchestrator-Workers 的产品化实现。
 
@@ -139,13 +136,13 @@ Claude 会分析你的输入，理解任务的规模和复杂度，然后动态�
 
 整个过程中的进度是持续保存的，如果任务中途被打断，恢复后可以从断点继续，不需要从头开始。
 
-![](https://pic.yupi.icu/1/04_%E5%8A%A8%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%BF%90%E4%BD%9C%E6%9C%BA%E5%88%B6%E5%9B%9B%E9%98%B6%E6%AE%B5%E6%B5%81%E7%A8%8B_compressed_v3.png)
+![](/imgs/3433398e61021b0a.png)
 
 此外还有一个关键设计，这个 **编排的执行发生在对话上下文之外**。
 
 你可以这么理解，主对话窗口是你和技术总监沟通的会议室，而那些子 Agent 各自在独立的工位上干活。不管外面有多少人在并行工作，都不会挤占你会议室的空间。所以不管任务多大、涉及多少个子 Agent，都不会撑爆 Claude 的上下文窗口。这是它能处理跨越数百个文件的大规模任务的关键。
 
-![](https://pic.yupi.icu/1/05_%E4%B8%8A%E4%B8%8B%E6%96%87%E9%9A%94%E7%A6%BB-%E4%BC%9A%E8%AE%AE%E5%AE%A4vs%E7%8B%AC%E7%AB%8B%E5%B7%A5%E4%BD%8D%E6%AF%94%E5%96%BB_compressed_v1.png)
+![](/imgs/dc2d8e6517ffcb8f.png)
 
 
 ## 动态工作流实战案例
@@ -168,7 +165,7 @@ Anthropic 官方博客透露了大致的过程。
 
 整个过程中，人类开发者做的事情就是定义目标、确认方案、最后审查 PR。中间的具体实施全部由动态工作流自主完成。
 
-![](https://pic.yupi.icu/1/07_Bun%E8%AF%AD%E8%A8%80%E8%BF%81%E7%A7%BB%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E6%B5%81%E7%A8%8B_compressed_v3.png)
+![](/imgs/359c3146c45127eb.png)
 
 除了 Claude Code，现在国产工具也跟上了。比如智谱的 ZCode 推出了 Workflow 功能，在需求前加上 `/workflow`，AI 就会先写好工作流脚本、画出流程图给你确认，再调度一群子代理分工执行。我就用它调度了 105 个子代理，给整套教程的 380 篇文章做了一次「体检」，完整过程可以阅读本教程编程工具板块「工具实战」目录中的《ZCode：AI 办公工作台实测》。
 
@@ -208,7 +205,7 @@ Anthropic 官方博客透露了大致的过程。
 
 所以如果面试官问你这个问题，最准确的回答是，动态工作流是一种 **建立在强模型能力基础上的平台产品特性**。模型提供规划和决策的智能，平台提供并行执行和生命周期管理的基础设施，两者结合才构成完整的动态工作流。
 
-![](https://pic.yupi.icu/1/06_%25E6%25A8%25A1%25E5%259E%258B%25E8%2583%25BD%25E5%258A%259Bvs%25E5%25B9%25B3%25E5%258F%25B0%25E8%2583%25BD%25E5%258A%259B-%25E5%25A4%25A7%25E8%2584%2591+%25E5%259F%25BA%25E7%25A1%2580%25E8%25AE%25BE%25E6%2596%25BD_compressed_v1.png)
+![](/imgs/60d4c9820fb59e85.png)
 
 
 ## 和多 Agent 框架的区别

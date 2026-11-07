@@ -3,15 +3,12 @@ title: "OpenClaw 初始化和基础使用"
 summary: "给小龙虾取名、设性格，学会最常用的操作命令"
 order: 8
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-20"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 初始化和基础使用》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。OpenClaw 安装好了，也接入了手机聊天软件，但在正式开始干活之前，我们需要先给小龙虾做一些初始化设置，让它知道自己叫什么、是什么性格、怎么跟你说话。然后再学几个最常用的命令，日常使用就够了。
 
@@ -28,7 +25,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 搭配抓取网页内容的 FireCrawl MCP 和获取最新技术文档的 Context7 MCP 效果更佳。
 
-![](https://pic.yupi.icu/1/1773811267389-9e5d6802-8a2b-4f19-b8d1-a1a105d4db5e.png)
+![](/imgs/f32e8892b879a67a.png)
 
 之后遇到任何 OpenClaw 的问题，直接问 AI 就好了，它会基于官方文档给你最准确的回答，比你自己翻文档快多了。
 
@@ -43,7 +40,7 @@ source: "https://github.com/liyupi/ai-guide"
 你好，初始化
 ```
 
-![](https://pic.yupi.icu/1/1773811394086-a60fa9d7-dc71-46e2-9e39-c5b37567a8e7.png)
+![](/imgs/d65631c9f7029ffb.png)
 
 然后接下来的提示词非常重要，要来塑造小龙虾，建议包含：
 
@@ -65,11 +62,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 它会自动修改塑造龙虾相关的文件，比如 IDENTITY.md、USER.md 等：
 
-![](https://pic.yupi.icu/1/1773812165691-c84fa5ab-a010-4052-a11e-393e759f9945.png)
+![](/imgs/a03b704a58639c68.png)
 
 还会删除 BOOTSTRAP.md 文件，表示初始化完成：
 
-![](https://pic.yupi.icu/1/1773812295570-e1d62fd8-791f-4ad9-b9c9-bdb07c41ea43.png)
+![](/imgs/329574208bab2b0d.png)
 
 
 ## 小龙虾的结构
@@ -78,7 +75,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 刚刚提到的文件都是 AI 智能体的核心文件，相当于小龙虾的性格档案和工作手册。你可以像前面一样通过跟小龙虾对话让它自己修改文件，也可以在 Web 控制台的代理模块中直接查看和编辑 Agent 相关的 Files。
 
-![](https://pic.yupi.icu/1/1773812377226-58caeba6-2052-4d70-b834-75fadc6fdde1-20260319211751532.png)
+![](/imgs/68eb0a605e983d15.png)
 
 下面是小龙虾工作空间的完整目录结构：
 
@@ -129,21 +126,21 @@ OpenClaw 内置了几十个斜杠命令，但真正日常高频使用的就那�
 
 所以建议聊完一个话题就 `/new` 一下，省钱又高效。
 
-![](https://pic.yupi.icu/1/1773889665501-1ab22108-c878-46cb-b67d-b40b237079df-20260319201850132-20260319211753703.png)
+![](/imgs/e1a76b1b9010c013.png)
 
 2）`/stop` 立刻中断当前 AI 正在执行的操作。当你发现 AI 在跑偏的时候赶紧 `/stop`，别让它白白烧 Tokens，及时止损。
 
-![](https://pic.yupi.icu/1/1773889801802-19d51ef2-faee-40c9-acdc-ffbd6d8ae26a.png)
+![](/imgs/50b832bc0041a391.png)
 
 3）`/status` 查看当前会话状态（模型、token 用量等），可以快速了解还剩多少 Tokens：
 
-![](https://pic.yupi.icu/1/1773890179307-b03e74c5-1063-4a5e-9a78-7e65f1ec5bf8.png)
+![](/imgs/c507b45e99c215c4.png)
 
 4）`/context list` 或 `/context detail` 可以查看当前上下文里有什么，比如哪些文件占了多少空间。但其实一般用 `/status` 就够了。
 
 通过 `/context` 可以看到很多 Tokens 消耗源于 OpenClaw 内置的一堆文件，所以你让 OpenClaw 做太简单的工作是得不偿失的：
 
-![](https://pic.yupi.icu/1/1773889921543-0f3e6a25-4d53-44a4-ad15-66885ab839c7.png)
+![](/imgs/238b1b74122c712f.png)
 
 5）`/compact` 压缩当前上下文，省钱必备！
 
@@ -153,28 +150,28 @@ OpenClaw 内置了几十个斜杠命令，但真正日常高频使用的就那�
 /compact 只记得我让你做过什么，不用保留结果
 ```
 
-![](https://pic.yupi.icu/1/1773891173923-4c36b6ce-1c6b-4eea-8f2d-9586dae9c917.png)
+![](/imgs/8ab1d766254a4e2f.png)
 
 6）`/usage` 控制每条回复是否显示 Token 用量，参数有 `full`、`tokens`、`off`，我一般用 `tokens` 显示。
 
-![](https://pic.yupi.icu/1/1773892456543-fbdf8495-8481-46c2-b91b-a1edc7db5705.png)
+![](/imgs/9b00170b5740fe79.png)
 
 
 ### 思考和调试
 
 1）`/verbose` 显示详细的工具调用过程，对调试会很有帮助。如果你想看看 AI 到底在背后做了什么，打开它就一目了然：
 
-![](https://pic.yupi.icu/1/1773891620183-9da50f20-447c-497a-9f5a-b4117fdbb088.png)
+![](/imgs/bb8b71435a40a118.png)
 
 2）`/reasoning` 显示 AI 的推理过程，能看到它是怎么想的：
 
-![](https://pic.yupi.icu/1/1773891795631-5ac2a093-df2e-411e-bbff-a744112a79b9.png)
+![](/imgs/439bdb24a583d119.png)
 
 3）`/think` 设置 AI 思考深度。遇到难题用 `/think high` 让 AI 多想想，简单问题用 `/think low` 省 Token，不需要深度思考的场景用 `/think off` 直接关闭。
 
 4）`/fast` 快速模式，让 AI 回答更简短、更省 Token：
 
-![](https://pic.yupi.icu/1/1773891467320-1aceec93-c5d4-4912-b7a3-2d003632b9b6.png)
+![](/imgs/18de96ada2d0305d.png)
 
 5）`/btw` 问个临时小问题，不影响主对话上下文。
 
@@ -186,7 +183,7 @@ OpenClaw 内置了几十个斜杠命令，但真正日常高频使用的就那�
 
 除了上面这些常用的命令外，OpenClaw 还内置了工具和执行、频道和路由、子智能体管理、管理员命令等类别的斜杠命令，一般用不到。感兴趣的同学可以直接用 `/commands` 查看完整列表，不需要人工记这些命令。
 
-![](https://pic.yupi.icu/1/1773892216474-35860c0e-37ee-455f-9cf0-9494769eccc6-20260319211754432.png)
+![](/imgs/d99bf2cd4d0ca44e.png)
 
 
 ## 写在最后

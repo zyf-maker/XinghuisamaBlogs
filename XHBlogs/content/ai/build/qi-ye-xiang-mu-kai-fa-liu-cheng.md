@@ -3,15 +3,12 @@ title: "企业项目开发流程"
 summary: "揭秘大厂项目是如何诞生的"
 order: 10
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-06-04"
 readingTime: 16
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《企业项目开发流程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -21,13 +18,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 实话说，区别可大了！自己开发项目那是单打独斗，自己掌握命运，不会拖垮队友。但企业中开发项目是开团打本，大家是一根绳上的蚂蚱，每个人都会影响整个项目。
 
-![](https://pic.yupi.icu/5563/202311060822776.png)
+![](/imgs/99e3ff428d11a8f7.png)
 
 我自己光大学的时候就在几家公司实习过，不得不说，大厂和其他公司的研发流程也有很大的区别。对于大多数同学来说，如果没有在大厂工作过，对很多研发环节可能都是一无所知的。
 
 所以这篇文章就来揭秘一下大厂的项目研发流程，帮大家开拓思路。即使你现在用 Vibe Coding 做个人项目，了解企业的开发流程也能让你的项目更加规范和专业。而且，如果你将来想进入大厂工作，提前了解这些流程会让你更有竞争力。
 
-![](https://pic.yupi.icu/5563/202311060822458.png)
+![](/imgs/e4d41f46b62ad3bf.png)
 
 如果你想更直观地了解大厂项目开发流程，强烈推荐观看我的视频：[一线大厂项目是怎么做出来的](https://www.bilibili.com/video/BV11q4y1T7kY/)，结合视频和本文一起学习，效果更好。
 
@@ -36,7 +33,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 为了规范团队、保证项目的进展，大厂研发流程一般还是比较复杂的。可以分为很多个阶段，用一张思维导图来概括：
 
-![企业项目开发流程思维导图](https://pic.yupi.icu/roadmap/enterprise-project-development-process.png)
+![企业项目开发流程思维导图](/imgs/f2563dbcb3808961.png)
 
 需要注意的是，以上阶段并不是完全按从上到下的顺序执行，阶段间可能存在交叉，比如 **技术选型** 其实在 **设计阶段** 就应该考虑。
 
@@ -57,7 +54,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮心想：呕豁，完蛋！估计得做个新的项目了，又要开会了。
 
-![](https://pic.yupi.icu/5563/202311060822455.png)
+![](/imgs/4d3bbc5eeb599f0b.png)
 
 果然，没过多久，屏幕上弹出了一条 “欢迎加入会议” 的邀请。
 
@@ -81,7 +78,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 于是开始了经典的产品开发撕逼大战。。。
 
-![](https://pic.yupi.icu/5563/202311060822360.png)
+![](/imgs/11c23586e0417c94.png)
 
 而鱼皮正躲在角落冷静分析 **这个需求怎么做**，过了一会儿，提出了一种改动低、实现快的解决方案，平息了这场战争。
 
@@ -100,7 +97,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 于是开始了经典的产品开发撕逼大战。。。
 
-![](https://pic.yupi.icu/5563/202311060822785.png)
+![](/imgs/ffd0109f1df0a611.png)
 
 鱼皮：要不我们把这个需求拆解为功能 A 和功能 B，这周我先把功能 A 做了，功能 B 排到下周二测试，下周四上线？
 
@@ -122,7 +119,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮打开写文档软件和画图软件，开始梳理整个系统，从整体到局部，依次设计出系统的层次结构、各层间交互的接口和通讯方式、每层之间包含哪些重要模块、模块选择何种物理部署方式等。
 
-![知名框架 Dubbo 的架构设计](https://pic.yupi.icu/5563/202311060822027.png)
+![知名框架 Dubbo 的架构设计](/imgs/622e5a7605bd8cd7.png)
 
 现在有了 AI 工具的加持，我们可以用 AI 辅助生成架构图、分析架构方案的优缺点，甚至让 AI 帮我们做技术调研，大大提升设计效率。建议观看鱼皮分享的 [AI 画图保姆级指南和技巧分享视频](https://www.bilibili.com/video/BV1DP7JzAE7k/)。
 
@@ -154,7 +151,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在大公司中，为了保证测试的覆盖度、提高测试效率，一般是要设计测试用例的，比如：用户点击 “登录”，未传任何数据，期望结果是警告用户输入用户名和密码。
 
-![测试用例管理](https://pic.yupi.icu/5563/202311060822534.png)
+![测试用例管理](/imgs/fbb6e3c443a84f27.png)
 
 测试用例设计完后，需要其他同学一起来评审把关，而不是只交给测试同学。因为一个人很容易忽略掉很多测试细节，最好让更熟悉代码的开发同学一起帮忙补充。
 
@@ -194,7 +191,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮这次直接申请到了 2 万多一年的云数据库，真的是爽死了。
 
-![](https://pic.yupi.icu/5563/202311060822734.png)
+![](/imgs/ce7a45919612b56c.png)
 
 
 ### 环境准备
@@ -218,7 +215,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 前期准备完成后，这才到了程序员朋友们最熟悉的写代码环节，也是鱼皮最爱的环节。
 
-![](https://pic.yupi.icu/5563/202311060822531.png)
+![](/imgs/ae5f99f16ab93455.png)
 
 因为之前设计方案时需要保持冷静、仔细思考，没法边听歌儿边做；而方案设计好后，已经明确了该怎么做，写代码实现就很简单了，顶多是遇到一些坑，上网搜索去解决就好了。
 
@@ -247,7 +244,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 推荐大家使用 [AI 资源大全](https://ai.codefather.cn/) 中的工具，提升开发效率。
 
-![AI资源大全网站](https://pic.yupi.icu/1/AI%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%E7%BD%91%E7%AB%99.png)
+![AI资源大全网站](/imgs/e54cc5b761db0b13.png)
 
 
 ### 代码优化
@@ -261,7 +258,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮一般会为每个数据库读写函数和业务逻辑函数编写单元测试，像 Java 的话一般用 JUnit 等工具，还可以用 Jacoco 生成测试覆盖度报告。每次修改关键代码后，都要执行一遍单元测试，防止意外错误。
 
-![Jacoco 测试覆盖度报告](https://pic.yupi.icu/5563/202311060822942.png)
+![Jacoco 测试覆盖度报告](/imgs/d89badf035af8736.png)
 
 现在还可以用 AI 工具自动生成单元测试代码，省去很多重复劳动。
 
@@ -293,7 +290,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 每次只有一个面包，独立执行功能 A 和 B 都是允许的。但如果两个一起执行，后执行的那个功能就会报错。
 
-![](https://pic.yupi.icu/5563/202311060822513.png)
+![](/imgs/ac402e1a6403b3fc.png)
 
 
 ### 系统测试
@@ -334,7 +331,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 代码分支推送到远程之后，鱼皮发起了一个分支合并请求（MR 或 PR），希望把该分支的代码合并到主干分支（没问题的代码）。
 
-![发起新合并请求](https://pic.yupi.icu/5563/202311060822490.png)
+![发起新合并请求](/imgs/bb767ecf8bc3c3d4.png)
 
 
 ### 代码审查
@@ -356,7 +353,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 代码审查通过后，鱼皮的项目代码就可以发布上线啦。
 
-![](https://pic.yupi.icu/5563/202311060822491.png)
+![](/imgs/fdac3d030c759cd7.png)
 
 ### 打包构建
 
@@ -383,7 +380,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮曾天真地以为项目上线之后，就可以高枕无忧了。但后来发现，项目上线之后，同样需要保持警觉。虽然已经测试过，但仍然时不时会出现个预期之外的小 Bug，还是很考验心态的。
 
-![](https://pic.yupi.icu/5563/202311060823102.png)
+![](/imgs/a79889af67aa08f0.png)
 
 来看看上线之后，鱼皮做了哪些事呢？
 
@@ -413,7 +410,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 有的时候，用户自己都不能清楚地描述 Bug，而且历史 Bug 也不方便找到。所以公司内部一般会有事件反馈平台，产品等内部同学在接收到 Bug 时，会在该平台发布一个 Bug 事件，详细描述 Bug 出现的时间、状况、详情等，便于我们开发集中分析和处理问题。
 
-![事件反馈平台](https://pic.yupi.icu/5563/202311060823531.png)
+![事件反馈平台](/imgs/8b64ac21572e6665.png)
 
 
 ### 文档沉淀
@@ -517,4 +514,4 @@ source: "https://github.com/liyupi/ai-guide"
 
 加油，未来的爆款产品创始人们！💪
 
-![](https://pic.yupi.icu/1/%E5%8A%A0%E6%B2%B9%E8%A1%A8%E6%83%85%E5%8C%85.jpeg)
+![](/imgs/68ae03218c85cfa8.jpg)

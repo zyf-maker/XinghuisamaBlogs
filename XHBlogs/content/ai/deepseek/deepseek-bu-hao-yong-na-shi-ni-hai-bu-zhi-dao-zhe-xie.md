@@ -3,19 +3,16 @@ title: "DeepSeek不好用？那是你还不知道这些指令！"
 summary: "今天给大家整理的这35个实用提示词指令，让你的DeepSeek也能立刻变得好用起来，一起来看看吧！"
 order: 16
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek不好用？那是你还不知道这些指令！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 今天给大家整理的这35个实用提示词指令，让你的DeepSeek也能立刻变得好用起来，一起来看看吧！ 
 
-![img](https://pic.yupi.icu/yuyi/1739500038914-7946aa0b-99c8-461e-968c-e5d74908cf7a.png)
+![img](/imgs/115d9656c1bc7500.png)
 
 ## 使用方法 
 
@@ -40,19 +37,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 你学会了吗？
 
-![img](https://pic.yupi.icu/yuyi/1739500166090-f5cab190-6b07-4491-bc89-18ecc35266e8.png)
+![img](/imgs/8d7d3d03243d5e42.png)
 
-![img](https://pic.yupi.icu/yuyi/1739500183394-d4fbc2d1-0c69-4fab-a4ca-4306074db534.png)
+![img](/imgs/cf86dd80650cfc1b.png)
 
-![img](https://pic.yupi.icu/yuyi/1739500199791-0122da64-82f3-4251-bb06-d6f8780f6545.png)
+![img](/imgs/579adcd8564afc0b.png)
 
-![img](https://pic.yupi.icu/yuyi/1739500213999-44bee811-10b8-41de-89c5-8c55697bcd0c.png)
+![img](/imgs/1355a9036dcd843c.png)
 
-![img](https://pic.yupi.icu/yuyi/1739500227027-26eb1b30-65d9-46bb-ad55-d0e6da6c51e4.png)
+![img](/imgs/2cee7ac01ae13841.png)
 
-![img](https://pic.yupi.icu/yuyi/1739500239589-9a101ecc-fd13-46cb-91e8-bc36fe0bbfd2.png)
+![img](/imgs/325cb15aa55f8a3d.png)
 
-![img](https://pic.yupi.icu/yuyi/1739500252585-e9882f5b-d1b4-4080-89e2-a84d8cc3fc8a.png)
+![img](/imgs/8908ec889a1bf369.png)
 
 
 > 来源：小红书 @落樱

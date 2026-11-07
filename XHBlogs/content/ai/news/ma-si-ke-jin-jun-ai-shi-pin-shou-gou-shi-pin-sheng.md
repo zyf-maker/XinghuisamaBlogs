@@ -3,15 +3,12 @@ title: "马斯克进军 AI 视频，收购视频生成初创公司，4 人 13 �
 summary: "共收录 2 条 AI 行业资讯，如量子位；“量子位”等。"
 order: 38
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《马斯克进军 AI 视频，收购视频生成初创公司，4 人 13 个月打造类 Sora 模型》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 [量子位](https://36kr.com/user/1852809498)_·_ 2025 年 03 月 18 日 03:06
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 就在最近，xAI 收购了一家视频生成初创公司，这家仅 4 个人的公司过去两年打造出了 **Hotshot** 这款产品。
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_7f5104061e2f440f9066d9a275da5aa6@5888275_oswg297852oswg1080oswg1012_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/d053f56cac1c5f5c.jpg)
 
 据公告介绍，Hotshot 至今已有 3 款视频生成基础模型。被收购之后，目前已停止推出新的视频创作功能，而且用户过往创作的视频截止下载时间为 3 月 30 日。
 
@@ -32,11 +29,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 酷炫视频 AI 即将到来！
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_45717b4932e141709b7b5e840f78129b@5888275_oswg74482oswg1080oswg262_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/aabd65ab7508dfee.jpg)
 
 期待值被拉满的同时，众人也齐刷刷表达了对 Hotshot 团队的祝贺：
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_2f64139896864421956944279a2f9735@5888275_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/8db65bb48bd5e927.jpg)
 
 那么，这是一家怎样的团队呢？为什么它能被马斯克“看上”？
 
@@ -50,13 +47,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 从 Hotshot 官网公布的信息来看，这个 4 人小团队在两年时间里成功打造出了“Sora”模型。
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_5baf03210f0749b98d21f374594b07eb@5888275_oswg594954oswg1080oswg933_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/3746e98bbe44d181.jpg)
 
 4 人中有两位是联合创始人。
 
 联创&CEO **Aakash Sastry**（右边），和另一位联创&CTO **John Mullan**（左边）早在 2012 年就相识了。
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_1292e07f1531450ca807a43ec3b3fe91@5888275_oswg1052060oswg1024oswg1024_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/94a382a0b827596c.jpg)
 
 认识之前，前者正在构建一个视频聊天应用，后者正在尝试打造视觉通讯应用（visual communication apps）。
 
@@ -74,7 +71,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 基于开源的图片生成模型 Stable Diffusion，Hotshot 为用户免费提供个人、朋友甚至是名人的图片。
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_dbf6efe467424d26b4e6e0b104f3fa38@5888275_oswg318124oswg512oswg512_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/745d4c87fd7e523f.jpg)
 
 △
 
@@ -94,13 +91,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 按照 Hotshot 发布时的说法，在各种提示评估中， **70% 的情况下** 用户更喜欢 Hotshot 的结果，而不是其他开源文生视频模型。
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_93594c5e6d1e42f5b83f7081efae1a96@5888275_oswg482085oswg1080oswg949_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/385a31cd915944a1.jpg)
 
 另外，从 CEO Aakash Sastry 公布的消息来看，Hotshot 的投资者包括 Stripe 前高管 Lachy Groom、Reddit 联合创始人 Alexis Ohanian 以及 SV Angel 在内的风险投资机构。
 
 至于具体融资次数和规模，Hotshot 尚未公开披露，而且 **也不清楚整个 Hotshot 团队是否会集体加入 xAI**。
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_8de707ee0a9349b4a4735bde28d6fd5b@5888275_oswg1061216oswg1080oswg1873_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/7d245bdfafa133b1.jpg)
 
 ## **马斯克想开发自己的视频生成模型？**
 
@@ -108,7 +105,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 （指路原推文视频 15:02）
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_33b55972530e4a9aa536ecdb365a0abb@5888275_oswg991373oswg1080oswg1226_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/a20cec6ca1c7008b.jpg)
 
 对于自家的 Grok 模型一直没有视频生成功能这事儿，老马本人和用户都不太满意。
 
@@ -124,7 +121,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 不过不管怎样，对于我们普通用户来说，期待 Grok 的视频生成功能就完事了！
 
-![](https://img.36krcdn.com/hsossms/20250318/v2_51e8451b0c0a46bb974e9faae9555b43@5888275_oswg161844oswg1080oswg503_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/639b67f9b73e7264.jpg)
 
 参考链接：
 

@@ -3,15 +3,12 @@ title: "Gemini 4 Argon 编程能力实测 - 3 个项目案例"
 summary: "谷歌憋了 7 个月的旗舰模型，用 3 个项目看看它到底几斤几两"
 order: 12
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Gemini 4 Argon 编程能力实测 - 3 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这大半年里 Anthropic 和 OpenAI 轮番发旗舰，Google 只顾着更新 Flash，网友对它的评价 be like ↓
 
-![](https://pic.yupi.icu/1/remember-memes-like-these-geminis-come-a-long-way-v0-jbcgu9lt4a8f1.png)
+![](/imgs/b17943ae6fbf50d3.png)
 
 先看看新模型的价格。11 月 30 日之前是限时五折，每百万 token 输入 2 刀、输出 10 刀，之后恢复到 4 刀和 20 刀。
 
@@ -33,17 +30,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 再看能力。官方跑分表里跟 GPT-6 Astra、Claude Fable 5.1、Claude Opus 5.5 比了 19 项，Argon 拿了 14 项第一！
 
-![官方跑分总表](https://pic.yupi.icu/1/gemini4argon-%E5%AE%98%E6%96%B9-%E8%B7%91%E5%88%86%E6%80%BB%E8%A1%A8-82229abb.png)
+![官方跑分总表](/imgs/b51e56c28532cbe8.png)
 
 不过在编程能力上，Argon 并没有全胜。考察命令行编程能力的 Terminal-bench 4.0 上，Argon 只有 57.4%，比 Opus 5.5 低了整整 9 个点。
 
 有一说一，官方放出来的演示是真的唬人。比如这个巫师国际象棋，你看到的所有画面元素都是 Argon 自己完成的。
 
-![官方演示的巫师国际象棋](https://pic.yupi.icu/1/gemini4argon-%E5%AE%98%E6%96%B9-%E5%B7%AB%E5%B8%88%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B-%E6%92%AD%E6%94%BE%E7%94%BB%E9%9D%A2-0c93ac38.png)
+![官方演示的巫师国际象棋](/imgs/f53b3e1da7c13d5a.png)
 
 还有一个演示更夸张，Argon 把一张办公桌的照片，直接变成了一个能玩的微缩赛车游戏。
 
-![官方演示的桌面赛车](https://pic.yupi.icu/1/gemini4argon-%E5%AE%98%E6%96%B9-%E6%A1%8C%E9%9D%A2%E8%B5%9B%E8%BD%A6%E6%BC%94%E7%A4%BA-1f5d54d2.png)
+![官方演示的桌面赛车](/imgs/ccae32ae669898d2.png)
 
 看完这些，我对它的期待一下子就拉满了。
 
@@ -51,7 +48,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 老规矩，鱼皮实测启动！
 
-![](https://pic.yupi.icu/1/gemini4argon-%E8%A1%A8%E6%83%85%E5%8C%85-%E9%B2%B8%E9%B1%BC%E5%A8%98%E5%AE%9E%E6%B5%8B%E5%90%AF%E5%8A%A8-ba1f9253%E5%B0%8F.jpeg)
+![](/imgs/3fc810c98a7f0abc.jpg)
 
 这次实测 3 个项目，由浅入深分别为：
 
@@ -66,21 +63,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 提示词里我只要求 AI 先联网查资料、用 Context7 查 3D 库的最新文档，场景怎么搭、动画怎么编排全部放开交给 AI。
 
-![](https://pic.yupi.icu/1/gemini4argon-prompt-01-case1-3d-attention-14b9381a.png)
+![](/imgs/ceec5c51471bc669.png)
 
 AI 先用 Firecrawl 把注意力残差的原论文抓下来核对公式，又查了 Three.js 的文档，11 分钟左右就交卷了。
 
 来看成品。页面分成四幕，第一幕讲传统残差的毛病，用「64 层大楼的大锅汤」做比喻，越往上的楼层越膨胀，第 1 层的关键信息被稀释到只剩 1.6%。
 
-![](https://pic.yupi.icu/1/gemini4argon-case1-01-%E4%BC%A0%E7%BB%9F%E6%AE%8B%E5%B7%AE%E7%A8%80%E9%87%8A-b9ac4522.png)
+![](/imgs/653b3736bd6548bf.png)
 
 第二幕切换到注意力残差，第 15 层伸出一根紫色探针回头检索，从第 0 层架起一座金色光桥直达顶层，早期信息的保留率一下子拉到了 96.7%。
 
-![](https://pic.yupi.icu/1/gemini4argon-case1-02-%E5%85%A8%E9%87%8F%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%AE%8B%E5%B7%AE-49426211.png)
+![](/imgs/73e913cc5bcaca5f.png)
 
 最后一幕把两座塔并排对比，右侧还能切换不同的场景，拖动滑块就能实时看到每一层权重的变化。
 
-![](https://pic.yupi.icu/1/gemini4argon-case1-03-%E5%8F%8C%E5%A1%94%E5%AF%B9%E6%AF%94-26687cbf.png)
+![](/imgs/c26ed75a543db471.png)
 
 内容上倒是没啥毛病。
 
@@ -92,19 +89,19 @@ AI 先用 Firecrawl 把注意力残差的原论文抓下来核对公式，又查
 
 页面上满屏都是 Emoji 就更不用多说了……
 
-![](https://pic.yupi.icu/1/gemini4argon-case1-05-%E5%85%AC%E5%BC%8F%E6%BA%90%E7%A0%81%E5%92%8CEmoji-cb946aad.png)
+![](/imgs/c949e86e4afaf76e.png)
 
 手机端的适配也很一般，大家自己感受一下吧：
 
-![](https://pic.yupi.icu/1/gemini4argon-case1-04-%E7%A7%BB%E5%8A%A8%E7%AB%AF-9d12318b.png)
+![](/imgs/74f6a3fcc744f387.png)
 
 之前 Kimi K3 的版本干净利落，只有一排节点和金色弧线。
 
-![Kimi K3 的 3D 版本](https://pic.yupi.icu/1/1784181948833-d092b7b8-abc2-42c4-9c8c-bfcd38cef470-20260717144616007.png)
+![Kimi K3 的 3D 版本](/imgs/2bb414858a8656d6.png)
 
 Claude Opus 5 的版本同样做了两种残差的并排对比，而且画面布局更合理，更利于阅读。
 
-![Claude Opus 5 的 3D 版本](https://pic.yupi.icu/1/1785145067089-c8c05cfb-e1a3-4f3c-abe8-e3c30aa1390e.png)
+![Claude Opus 5 的 3D 版本](/imgs/46b6a12a4bd80302.png)
 
 论信息量，Argon 是三个里最多的。但显然，Opus 5 那一版更适合给人用。
 
@@ -113,11 +110,11 @@ Claude Opus 5 的版本同样做了两种残差的并排对比，而且画面布
 
 第二个项目我让 AI 复刻「以撒的结合」游戏。这道题的提示词同样跟测 Opus 5 时一模一样，难点在于角色、怪物、道具全部要用代码画出来，还要有随机地牢、道具系统和 Boss 战。
 
-![](https://pic.yupi.icu/1/gemini4argon-prompt-02-case2-roguelike-15f2146a.png)
+![](/imgs/08b1555775b87653.png)
 
 12 分钟后，AI 交卷了。开始界面有点儿原作的味道，哭唧唧的以撒对面站着第一层的 Boss 萌斯戳（我也不知道 AI 为啥要这么翻译）。
 
-![](https://pic.yupi.icu/1/gemini4argon-case2-01-%E5%BC%80%E5%A7%8B%E7%95%8C%E9%9D%A2-02562f6c.png)
+![](/imgs/3c2a17438301cf30.png)
 
 我翻了一下 AI 的自测脚本，发现 Boss 战和通关这几张截图，都是用调试接口直接传送到对应房间拍的。Boss 那张「激战」截图，是脚本先把 Boss 的血量改成 78、再挪到指定位置摆出来的，通关界面上的击杀数和存活时间也是脚本直接写进去的。
 
@@ -125,19 +122,19 @@ Claude Opus 5 的版本同样做了两种残差的并排对比，而且画面布
 
 战斗画面还不错，岩石、便便堆、小地图、属性面板一应俱全，四种小怪的走位方式各不相同。
 
-![](https://pic.yupi.icu/1/gemini4argon-case2-02-%E7%9C%9F%E7%8E%A9%E6%88%98%E6%96%97-19b0f05f.png)
+![](/imgs/d10cf0dbf1850d5b.png)
 
 清完房间会刷出道具，比如拿到「蟋蟀头」之后，以撒头上多了一个猫耳头套，攻击力从 3.5 涨到 6.6，眼泪也变成了三连发。
 
-![](https://pic.yupi.icu/1/gemini4argon-case2-03-%E6%8B%BF%E5%88%B0%E8%9F%8B%E8%9F%80%E5%A4%B4-5583ef80.png)
+![](/imgs/e7e12754c264e801.png)
 
 这就是 AI 自测时摆拍的那张 Boss 战，萌斯戳的造型倒是还原得挺到位。
 
-![](https://pic.yupi.icu/1/gemini4argon-case2-04-%E8%90%8C%E6%96%AF%E6%88%B3-ba14c47c.png)
+![](/imgs/1e7025efc64b14fc.png)
 
 然后就尴尬了，我的脚本进 Boss 房 2.5 秒后截了张图，发现萌斯戳已经被打死了……
 
-![](https://pic.yupi.icu/1/gemini4argon-case2-05-%E8%BF%9B%E9%97%A8%E7%A7%92%E6%9D%80Boss-8c9c6fdf.png)
+![](/imgs/5d8a32dda9de7347.png)
 
 不是哥们，115 滴血的 Boss，被三连发的眼泪两秒多就打没了？这是不是有点太简单了。
 
@@ -145,15 +142,15 @@ AI 自己没发现这个问题也不奇怪，因为它的自测从来没有从�
 
 最后小人儿触碰金箱通关，会弹出一个结算界面：
 
-![](https://pic.yupi.icu/1/gemini4argon-case2-06-%E7%9C%9F%E7%8E%A9%E9%80%9A%E5%85%B3-756d4535.png)
+![](/imgs/c153e9804714e908.png)
 
 再看看用同一段提示词的 Claude Opus 5 版本，房间里铺满了血迹和岩石，细节更丰富。
 
-![Claude Opus 5 开发的以撒游戏](https://pic.yupi.icu/1/1785146642381-79f6906f-4e68-4427-b72e-0aa3115e8233.png)
+![Claude Opus 5 开发的以撒游戏](/imgs/e76e80efea5ca899.png)
 
 之前 Kimi K3 做的版本就简陋多了。
 
-![Kimi K3 开发的以撒游戏](https://pic.yupi.icu/1/1784184823083-d46122a9-8b45-4719-a69d-c8eeda7906aa-20260717144631052.png)
+![Kimi K3 开发的以撒游戏](/imgs/3e73d9ed2aa90c67.png)
 
 整体来看，Argon 的美术还原度已经接近 Opus 5，比 Kimi K3 好了一大截。但是数值平衡完全没调，Boss 一碰就碎，可玩性大打折扣。
 
@@ -168,35 +165,35 @@ AI 自己没发现这个问题也不奇怪，因为它的自测从来没有从�
 
 这次我把工具全部拿掉。提示词里卡死了一条，不准用任何第三方库和外部素材，3D 渲染、物理碰撞、引擎声音全部从零手写。赛道怎么设计、桌面物件怎么建模，我一个字都没写。
 
-![](https://pic.yupi.icu/1/gemini4argon-prompt-03-case3-desk-racer-531e9e11.png)
+![](/imgs/5ea08b30f0c76e58.png)
 
 不到 11 分钟，AI 就交卷了。3400 多行代码里，矩阵运算、赛道曲线、着色器、漂移物理全是手写的，真的一个库都没用！
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-01-%E5%BC%80%E5%A7%8B%E7%95%8C%E9%9D%A2-c52cab94.png)
+![](/imgs/f52511368b278757.png)
 
 点击开始，起跑线上有黑白格和拱门，左边是逐个键帽建模的机械键盘，倒计时结束就能发车。
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-02-%E8%B5%B7%E8%B7%91%E5%80%92%E8%AE%A1%E6%97%B6-daf8b190.png)
+![](/imgs/e698b293c3866f8c.png)
 
 过弯时按住空格可以甩尾漂移，后轮会喷出白烟，右上角实时显示漂移角度。
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-03-%E8%BF%87%E5%BC%AF%E6%BC%82%E7%A7%BB-a6acb478.png)
+![](/imgs/ea6f93b6a4dd31a9.png)
 
 画面是方块风格，比如你看马克杯就是一个红色圆柱，跳台就是一块纯黄色的平板，离官方演示那种写实感差得远。
 
 但别忘了，这可是纯手写的 WebGL。
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-08-%E7%9C%9F%E8%B7%91%E5%86%B2%E5%9D%A1-d9ad73b3.png)
+![](/imgs/ce83048c59f1cf13.png)
 
 下图是 AI 自测时拍的成绩单，三圈的圈速、漂移积分、碰撞次数都有。
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-06-AI%E8%87%AA%E6%B5%8B%E7%9A%84%E6%88%90%E7%BB%A9%E5%8D%95-8668be89.png)
+![](/imgs/cebc1ba7af42054f.png)
 
 然而我翻代码时发现，**这张成绩单是假的！**
 
 AI 在游戏里给自己留了一个「演示结算」的口子，自测脚本先把车传送到终点，再把编好的三个圈速和写死的积分塞进去，实际上一圈都没跑过。
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-05-%E4%BC%AA%E9%80%A0%E6%88%90%E7%BB%A9%E5%8D%95%E7%9A%84%E4%BB%A3%E7%A0%81-a3032da4.png)
+![](/imgs/b79c1093e9325bdd.png)
 
 AI 确实用浏览器打开了游戏，也用键盘开了几段，每张截图都自己看过一遍。只不过它的测法是把车直接放到弯道口、键盘边上，开两秒就截图，相当于只抽查了几个片段。
 
@@ -204,7 +201,7 @@ AI 确实用浏览器打开了游戏，也用键盘开了几段，每张截图�
 
 于是我又让 AI 写了个自动驾驶脚本，只按方向键，真实跑完三圈。
 
-![](https://pic.yupi.icu/1/gemini4argon-case3-07-%E7%9C%9F%E8%B7%91%E4%B8%89%E5%9C%88%E6%88%90%E7%BB%A9%E5%8D%95-b6ac80f2.png)
+![](/imgs/373992b020b66b3e.png)
 
 好在游戏本身是真能玩的，计圈和结算都没问题。
 
@@ -219,7 +216,7 @@ AI 确实用浏览器打开了游戏，也用键盘开了几段，每张截图�
 
 跟其他顶级模型比，差距就在这个 **可交付性** 上。
 
-![](https://pic.yupi.icu/1/gemini4argon-%E6%B1%87%E6%80%BB-%E4%B8%89%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%97%AE%E9%A2%98-14bf6a91.png)
+![](/imgs/8d66434a6edc5352.png)
 
 当然进步也是有的。3 个项目的完成速度都不错，3D 和美术能力比以前的 Gemini 强了不少，以撒那个项目的画风接近 Opus 5 了。
 
@@ -231,7 +228,7 @@ AI 确实用浏览器打开了游戏，也用键盘开了几段，每张截图�
 
 我仔细看了一下，它们大多是在 Google 自家的 Antigravity 里接上 Blender，反复调了好几轮才做出来的，开头那个官方演示也是这样。跟我这种一段提示词、不给任何工具的测法，根本不是一回事。
 
-![](https://pic.yupi.icu/1/gemini4argon-%E5%AF%B9%E6%AF%94-%E5%AE%98%E6%96%B9%E8%B5%9B%E8%BD%A6%E5%92%8C%E6%88%91%E7%9A%84%E8%B5%9B%E8%BD%A6-db87bb8f.png)
+![](/imgs/b3cb6ff52417f181.png)
 
 也就是说，**用 Argon 的话，一定要自己验收，千万别把 AI 交上来的报告当成结论。**
 
@@ -239,7 +236,7 @@ AI 确实用浏览器打开了游戏，也用键盘开了几段，每张截图�
 
 答案是 4.55 刀，折合人民币 30 多块钱。
 
-![](https://pic.yupi.icu/1/gemini4argon-%E6%88%90%E6%9C%AC-Cursor%E7%94%A8%E9%87%8F%E6%98%8E%E7%BB%86-116792eb.png)
+![](/imgs/d75dd1999f5a6455.png)
 
 平均下来每个项目 10 块钱左右，跟上个月我用 Gemini 3.8 Flash 跑 3 个项目花的钱差不多。而且这还是五折价，11 月 30 日之后还得翻一倍。
 

@@ -3,15 +3,12 @@ title: "普通人能用DeepSeek做什么？20个实用建议"
 summary: "在春节期间，AI界的DeepSeek一直在刷频，霸屏了大半个公众号。很多对DeepSeek这家公司、创始人、AI天才少女、以及新的大模型设计方法的讨论和解读。也有各行各业自媒体人用DeepSeek进行应用的提问探索。"
 order: 5
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《普通人能用DeepSeek做什么？20个实用建议》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 在春节期间，AI界的DeepSeek一直在刷频，霸屏了大半个公众号。很多对DeepSeek这家公司、创始人、AI天才少女、以及新的大模型设计方法的讨论和解读。也有各行各业自媒体人用DeepSeek进行应用的提问探索。
 

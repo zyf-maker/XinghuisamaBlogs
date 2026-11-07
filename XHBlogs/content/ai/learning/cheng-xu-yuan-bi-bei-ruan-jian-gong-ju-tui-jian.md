@@ -3,15 +3,12 @@ title: "程序员必备软件工具推荐"
 summary: "3000+ 程序员效率工具合集，点击即用"
 order: 11
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-10-22"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《程序员必备软件工具推荐》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -23,14 +20,14 @@ source: "https://github.com/liyupi/ai-guide"
 
 👉 [点击获取 3000+ 程序员效率工具  codefather.cn/tool](https://codefather.cn/tool)
 
-![编程工具大全](https://pic.yupi.icu/1/1768143253671-cf32bba6-5f94-47af-a712-775994f46e7e.png)
+![编程工具大全](/imgs/47a6f0c2722613b9.png)
 
 
 ## 一、开发工具
 
 汇总 600+ 常用编程工具和资源，涵盖主流开发环境 IDEA、VS Code，开发框架资源文档 React、Vue，代码托管平台 GitHub、Gitee 和开源镜像清华源、华为源，大幅提高开发效率。
 
-![开发工具](https://pic.yupi.icu/1/1768143193782-ade60722-3e0a-4dcf-a593-6a0b7ff207ff.png)
+![开发工具](/imgs/4f817287a66793c9.png)
 
 
 ### 推荐工具 Top 5
@@ -60,7 +57,7 @@ Top 5：Navicat / DataGrip
 
 整理 1600+ AI 工具，包含 AI 编辑器 Cursor、Trae、AI 生图工具即梦、可灵 AI 和大模型平台 ChatGPT、Gemini、DeepSeek，让 AI 助力工作。
 
-![AI 工具](https://pic.yupi.icu/1/1768143200966-7774d9fb-7192-4c54-ba97-afdd93043624.png)
+![AI 工具](/imgs/61d45274de3c7ee0.png)
 
 
 ### 推荐 AI 工具
@@ -80,7 +77,7 @@ AI 视频工具：Runway、Pika、剪映
 
 提供从 0 到 1 的设计工具合集，产品原型设计 Axure、Draw.io，平面创意设计 Canva、稿定设计和配色工具 Coolors、Color Hunt，覆盖产品开发工作流。
 
-![设计工具](https://pic.yupi.icu/1/1768143231186-58d8b53c-e381-4299-927e-d67d6b123cfb.png)
+![设计工具](/imgs/85cae9765ee34045.png)
 
 
 ### 推荐设计工具
@@ -98,7 +95,7 @@ AI 视频工具：Runway、Pika、剪映
 
 精选测试和项目管理工具，包含自动化测试 Selenium、API 调试 Postman、Apifox 和主流项目管理平台禅道、Jira，助力团队高效协作和交付。
 
-![测试工具](https://pic.yupi.icu/1/1768143211764-bb836a41-79be-45d1-929c-b1a35bad9e36.png)
+![测试工具](/imgs/82ada52d678fecd8.png)
 
 
 ### 推荐工具
@@ -116,7 +113,7 @@ API 测试：Postman、Apifox、JMeter
 
 整合主流云平台与和运维部署工具，涵盖容器和运维 Docker、Nginx、边缘部署平台 Vercel、Cloudflare 和云服务平台阿里云、腾讯云、华为云。
 
-![运维工具](https://pic.yupi.icu/1/1768143207630-9254a72f-cd90-43bd-864f-fa252a6f1361.png)
+![运维工具](/imgs/0c4124803eb7cd40.png)
 
 
 ### 推荐工具
@@ -175,7 +172,7 @@ API 测试：Postman、Apifox、JMeter
 
 如果你也有推荐的宝藏工具，欢迎主动上传，我们会定期审核，通过后将和所有人分享，一起共建这个工具箱。
 
-![上传工具](https://pic.yupi.icu/1/1768143271059-9858718c-b0de-45f3-84c2-1f3d1319d127.png)
+![上传工具](/imgs/4d050ea6e8dadbdc.png)
 
 好工具，早发现、早使用。
 

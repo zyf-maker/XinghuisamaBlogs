@@ -3,15 +3,12 @@ title: "外资机构看DeepSeek：提振中国股市 机会藏在这些领域"
 summary: "外资机构看DeepSeek：提振中国股市 机会藏在这些领域，由程序员鱼皮整理。"
 order: 14
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《外资机构看DeepSeek：提振中国股市 机会藏在这些领域》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 近期，DeepSeek的热度仍在持续，相关概念股持续上涨。瑞银中国对中国AI概念股的跟踪显示，今年年初以来，这些股票上涨15%，跑赢了MSCI中国指数9%。
 

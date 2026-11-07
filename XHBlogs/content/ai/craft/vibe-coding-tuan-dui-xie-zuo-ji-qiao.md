@@ -3,15 +3,12 @@ title: "Vibe Coding 团队协作技巧"
 summary: "和其他人一起用 Vibe Coding 做项目"
 order: 12
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-01-13"
 readingTime: 12
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 团队协作技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -67,7 +64,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 光有文档还不够，很多人明明有文档就是不看，需要用工具来强制执行。
 
-![](https://pic.yupi.icu/1/image-20260105172241747.png)
+![](/imgs/ccb054cb1017eeec.png)
 
 ESLint 是代码检查工具，能自动发现代码中的问题和不规范的地方。
 
@@ -172,7 +169,7 @@ Cursor 提供了专门的 [团队版](https://cursor.com/cn/docs/account/teams)�
 
 团队管理员可以查看团队的 AI 使用情况，包括哪些成员使用最多、使用了哪些模型、花费了多少成本等。这能帮助优化团队的 AI 使用策略。
 
-![](https://pic.yupi.icu/1/cursor-dashboard.jpeg)
+![](/imgs/f5e8d91d1ffc787f.jpg)
 
 
 ### Claude 共享能力
@@ -183,7 +180,7 @@ Claude 提供了 [Projects 功能](https://www.anthropic.com/news/projects)，�
 
 可以为每个项目创建独立的知识库，上传项目相关的文档、代码、规范等。团队成员在这个项目中使用 Claude 时，AI 会自动参考这些知识，保持上下文一致。
 
-![](https://pic.yupi.icu/1/claudeprojectknowledge.png)
+![](/imgs/f50f54167f3d1f07.png)
 
 2）自定义指令
 
@@ -193,7 +190,7 @@ Claude 提供了 [Projects 功能](https://www.anthropic.com/news/projects)，�
 
 Claude Team 用户可以将优秀的对话分享到团队的活动流中。其他成员可以看到别人是如何使用 AI 的，学习不同的提问技巧和解决方案，提升整个团队的 AI 使用水平。
 
-![](https://pic.yupi.icu/1/claudeshare.jpeg)
+![](/imgs/a01e118207c60909.jpg)
 
 4）团队共享 `CLAUDE.md` 文件
 
@@ -296,7 +293,7 @@ Git 是一个版本控制系统，也是团队协作的核心工具。就像给�
 3. 经过审查后合并到 develop
 4. 定期将 develop 合并到 main
 
-![](https://pic.yupi.icu/1/gitcooperate%E5%A4%A7.jpeg)
+![](/imgs/abb08e805dbcde88.jpg)
 
 
 ### 提交规范
@@ -319,7 +316,7 @@ chore: 更新依赖包
 
 现在很多 AI 编程工具都支持生成提交信息，更容易遵循规范。
 
-![](https://pic.yupi.icu/1/image-20260105172920015.png)
+![](/imgs/4c5f5d87780da296.png)
 
 
 ### Pull Request 流程
@@ -335,7 +332,7 @@ Pull Request（简称 PR）是一种代码合并请求。当你在自己的分�
 
 这个流程虽然多了一步，但能大大提高代码质量。
 
-![](https://pic.yupi.icu/1/image-20260105173137083.png)
+![](/imgs/da3b06ad22311f29.png)
 
 
 ### 解决冲突
@@ -403,7 +400,7 @@ Cursor 提供了一个专门的代码审查工具叫 [BugBot](https://cursor.com
 
 你可以在 Cursor 中直接使用这个功能，让 AI 帮你做初步的代码审查。
 
-![](https://pic.yupi.icu/1/image-20260105173323498.png)
+![](/imgs/86b6d69e83b57264.png)
 
 
 #### Claude Code 自动化代码审查
@@ -455,7 +452,7 @@ AI 是你的编程搭档，你提需求，它写代码；你审查，它改进�
 
 我们团队就是用语雀知识库来共享文档的，每个人遇到的问题、总结的经验、学到的技巧都记录在上面，新人加入时直接看知识库就能快速上手。
 
-![](https://pic.yupi.icu/1/%E4%BD%BF%E7%94%A8%E7%9F%A5%E8%AF%86%E5%BA%93%E6%95%B0%E9%87%8F.png)
+![](/imgs/bc1e3fd935ac7ce2.png)
 
 
 ### 建立共享资源

@@ -3,15 +3,12 @@ title: "用Deepseek回答：如果有100万闲钱，几年内不用，该怎么�
 summary: "正月这几天，Deepseek可是个热词，我也很好奇，在手机上和电脑上都试着用它来回答我的各种问题。"
 order: 25
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《用Deepseek回答：如果有100万闲钱，几年内不用，该怎么理财？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 正月这几天，Deepseek可是个热词，我也很好奇，在手机上和电脑上都试着用它来回答我的各种问题。
 

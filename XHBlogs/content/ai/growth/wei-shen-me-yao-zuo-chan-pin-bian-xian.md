@@ -3,15 +3,12 @@ title: "为什么要做产品变现？"
 summary: "想清楚为什么做，才能做得更好"
 order: 2
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-09-02"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《为什么要做产品变现？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。在做一个产品前，我们首先要问清楚自己：**为什么要做它？**
 

@@ -10,16 +10,13 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Remotion：用 AI 编程做动画视频》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 AI 编程能做的事情远比你想象的多。除了做网站、做工具、做小程序，还能做动画视频！
 
 最近我发现一个很有意思的开源项目叫 [Remotion](https://github.com/remotion-dev/remotion)，能用写代码的方式做视频动画，在 GitHub 上星星很多。
 
-![](https://pic.yupi.icu/1/image-20260216222601866.png)
+![](/imgs/bdc6a504e79c7c87.png)
 
 你可能会问：用代码做视频？那不得累死？
 
@@ -30,7 +27,7 @@ AI 编程能做的事情远比你想象的多。除了做网站、做工具、�
 - AI 写代码
 - Remotion 把代码渲染成视频
 
-![官方给的动画成果展示](https://pic.yupi.icu/1/image-20260216223620684.png)
+![官方给的动画成果展示](/imgs/6b5cc9a58bb95872.png)
 
 下面我带大家完整走一遍流程，从安装到出片，全程手把手，保姆皮上线~
 
@@ -53,7 +50,7 @@ npx create-video@latest
 3. 是否使用 TailwindCSS > 用呗
 4. 是否添加 AI 智能体技能 > 这个一定要加！
 
-![](https://pic.yupi.icu/1/1770370961690-58c49ba5-aecf-4194-8f27-d2db91db6087.png)
+![](/imgs/2e92d8d397a9b731.png)
 
 添加了这个技能之后，你就可以通过 AI 对话的方式，让 AI 帮你用这个库做动画了。
 
@@ -68,21 +65,21 @@ npm install
 npm run dev
 ```
 
-![](https://pic.yupi.icu/1/1770372083166-73703f97-3ef2-4980-922d-0b3a0116245d.png)
+![](/imgs/c3b2e839a87a7ee4.png)
 
 打开浏览器，你会看到一个 **Web 端的视频剪辑工具**：
 
-![](https://pic.yupi.icu/1/1770372166367-c5facfbf-1829-4b03-8dde-5e86ed1064f2.png)
+![](/imgs/ad18cdb02edbe040.png)
 
 看看这界面，不知道的还以为是客户端软件呢！
 
 页面左侧展示了不同的视频片段，每个片段其实都是通过代码渲染出来的。你删掉一段代码，对应的视频就没了：
 
-![](https://pic.yupi.icu/1/1770372458099-64e9f878-ebf6-42b9-9c78-bde4e5fd40e2.png)
+![](/imgs/66485e008e2dec31.png)
 
 在代码编辑器中按 Ctrl+Z 撤回，视频又出来了。是不是挺神奇的？
 
-![](https://pic.yupi.icu/1/1770372446540-126bd94f-f484-4631-8813-086a27c05b50.png)
+![](/imgs/97910682540945ed.png)
 
 
 
@@ -92,7 +89,7 @@ npm run dev
 
 打开一个 AI 编程工具，我这里用的是 VS Code + GitHub Copilot AI 插件，选了最新的模型 Claude Opus，100 万上下文，还是很牛的。
 
-![](https://pic.yupi.icu/1/1770372617235-a5aef8ec-c45d-45fd-9673-e583892d97c3.png)
+![](/imgs/1f95cb010c2f3323.png)
 
 
 
@@ -106,15 +103,15 @@ npm run dev
 
 你会看到，AI 直接找到了我们之前安装的 **Remotion Best Practices** 技能包，它会让 AI 知道怎么用编程的方式做动画。
 
-![](https://pic.yupi.icu/1/1770373151980-28c9faa7-1d76-48cd-87f5-f75fbb748dbd.png)
+![](/imgs/8a1b708bc9eec2c9.png)
 
 然后它就开始编写动画代码了。等了一会儿，AI 完成了任务。
 
-![](https://pic.yupi.icu/1/1770373512515-abf6f754-1e68-4b64-a540-bc68261385d4.png)
+![](/imgs/c8cc6d68cad6f2c5.png)
 
 直接在浏览器中就能看到效果了，鱼头人 on the beat 🐟~
 
-![](https://pic.yupi.icu/1/1770373656918-73c8de55-5e4e-4ac0-9328-27ce1791cbd7.png)
+![](/imgs/6c5372f8abc71973.png)
 
 怎么说呢，有点太抽象了 bro！不过毕竟是第一个 Demo 嘛，我也没有太高的预期。下面我们来搞个更有意思的、鸡动人心的（要素察觉）。
 
@@ -132,15 +129,15 @@ npm run dev
 
 然后你猜怎么着，AI 居然识别出了「鸡你太美」这个梗！不是哥们。
 
-![](https://pic.yupi.icu/1/1770373956714-208a1770-bc85-4cc8-a5e8-64190b5fd645.png)
+![](/imgs/bfd51e48b219e60b.png)
 
 它说不需要我提供任何素材就能搞定，那就直接开干！
 
-![](https://pic.yupi.icu/1/1770374224644-1c139dc4-4816-4be4-902b-d6b9c6b32045.png)
+![](/imgs/d35c6f9519e4ba8e.png)
 
 等它一顿操作之后，做出来了一个新视频，来看看效果：
 
-![](https://pic.yupi.icu/1/1770374335310-abd1443e-daf5-4ab0-ba9a-c1377bc00743.png)
+![](/imgs/98500de9c3eaa86e.png)
 
 不是哥们，你管这玩意叫 “小鸡”？胳膊和腿儿都分离了啊！是不是有点太抽象了？？？
 
@@ -160,7 +157,7 @@ npm run dev
 
 AI 就会开始通过交互提问的方式来引导我，一步步告诉我该做什么。
 
-![](https://pic.yupi.icu/1/1770374563833-99fb5a74-a01e-4b03-a40e-6c524cf79f05.png)
+![](/imgs/59bf1bf1352c5942.png)
 
 AI 给出了方案，大概需要这些素材：
 
@@ -171,7 +168,7 @@ AI 给出了方案，大概需要这些素材：
 
 下面，我们根据指引依次来搞定这些素材。
 
-![](https://pic.yupi.icu/1/1770374728643-eae31379-ea6f-4d92-8a1a-1099cb982864.png)
+![](/imgs/70c864dc0042ff80.png)
 
 
 
@@ -179,7 +176,7 @@ AI 给出了方案，大概需要这些素材：
 
 这两个素材比较简单，自己手动找就好了，没啥好说的。
 
-![](https://pic.yupi.icu/1/1770374951228-b2004e7e-3c86-49ed-9dfa-2c9e58b4ba78-20260217230953964.png)
+![](/imgs/24200c4db4313deb.png)
 
 
 
@@ -191,7 +188,7 @@ AI 可以利用 Firecrawl Search 这个 MCP 工具来帮忙搜索网络图片。
 
 > 指路：[ai.codefather.cn/vibe](https://ai.codefather.cn/vibe)
 
-![鱼皮AI导航网站-免费AI编程教程](https://pic.yupi.icu/1/image-20260217223852396.png)
+![鱼皮AI导航网站-免费AI编程教程](/imgs/96cabc3450573560.png)
 
 我跟 AI 说：
 
@@ -201,11 +198,11 @@ AI 可以利用 Firecrawl Search 这个 MCP 工具来帮忙搜索网络图片。
 
 在我的威胁下，AI 乖乖听话，不仅找到了几张图，还说要帮我挑一个最好的，我都要感动哭了。
 
-![](https://pic.yupi.icu/1/1770375324834-9234ff52-46cc-431f-828b-c84c34292e91.png)
+![](/imgs/43b7946b64bfdaf7.png)
 
 虽然中间有一张图被抠得只剩一个人了（人工智障），但最终还是找到了能用的背景图。
 
-![](https://pic.yupi.icu/1/1770375487350-568ae132-e990-4c5a-90e2-f4e21aad6cd1.png)
+![](/imgs/e86490db6540cb1c.png)
 
 
 
@@ -213,7 +210,7 @@ AI 可以利用 Firecrawl Search 这个 MCP 工具来帮忙搜索网络图片。
 
 AI 推荐我用 [Suno AI](https://suno.com) 来生成人声，还提供了生成人声的提示词。
 
-![](https://pic.yupi.icu/1/1770375504060-d552ff39-19d6-4b3d-9943-86cc2ca40720.png)
+![](/imgs/9e477d31c5b5f25d.png)
 
 直接打开官网注册登录，选择 Simple 简易模式，把歌词和要求粘进去：
 
@@ -229,7 +226,7 @@ Crossover过掉你 无情暴扣
 
 然后点击创建，一次性生成了多个版本的 RAP 人声：
 
-![](https://pic.yupi.icu/1/1770376253976-b62c46b0-4c2c-49c5-bbaa-e12b8414254f.png)
+![](/imgs/3442bb8ab5092a0b.png)
 
 我听了一下，免费模型生成的效果居然还不错！直接下载 MP3 音频文件，倍速一下就能用了。
 
@@ -243,11 +240,11 @@ Crossover过掉你 无情暴扣
 素材放好了
 ```
 
-![](https://pic.yupi.icu/1/1770376293681-f824c758-5ecc-4e66-a3c3-92ccc1d9c4ac-20260217224715624.png)
+![](/imgs/f4c1d16b9caeff6c.png)
 
 然后 AI 就开始替换素材，稍等一会儿，AI 的大作就完成了。来看看最终效果：
 
-![](https://pic.yupi.icu/1/1770376707651-1829d201-8f85-495d-b2eb-a18c6fe96e3c.png)
+![](/imgs/89da9b21ea3eb95f.png)
 
 有了素材后，比之前纯靠 AI 生成 SVG 和 Emoji 的版本好了不少，背景图、背景音乐、RAP 人声、歌词动画都加上了。虽然还是有点生硬（比如中间的小鸡图片略显诡异），但整体已经有内味儿了。
 

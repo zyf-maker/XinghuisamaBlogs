@@ -3,15 +3,12 @@ title: "Gemini 2.5 Pro 实测：或将成为最实用的推理模型"
 summary: "Gemini 2.5 Pro 实测：或将成为最实用的推理模型，由程序员鱼皮整理。"
 order: 65
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Gemini 2.5 Pro 实测：或将成为最实用的推理模型》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 Google 最新旗舰语言模型 Gemini 2.5 Pro 的发布，被吉卜力工作室 AI 图像风波所掩盖。也许是吸取了之前失败发布的教训，Google 谨慎地将其描述为"我们最智能的 AI 模型"，而不像其他 AI 实验室那样宣称自己的新模型是世界最佳。
 

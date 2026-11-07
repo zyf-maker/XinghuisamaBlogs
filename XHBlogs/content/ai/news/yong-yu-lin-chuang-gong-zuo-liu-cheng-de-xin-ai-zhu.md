@@ -3,21 +3,18 @@ title: "用于临床工作流程的新 AI 助手，微软推出 Microsoft Dragon
 summary: "共收录 3 条 AI 行业资讯，如<mark data-type=institutions data-id=8a8ef293-102d-482f-a616-12a37827b3f9Microsoft</mark, antitrust, Alaily, FTC. Google；图片等。"
 order: 42
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《用于临床工作流程的新 AI 助手，微软推出 Microsoft Dragon Copilot》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![<mark data-type=institutions data-id=8a8ef293-102d-482f-a616-12a37827b3f9>Microsoft</mark>, antitrust, Alaily, FTC. Google](https://image.jiqizhixin.com/uploads/editor/247c3683-00a8-4d6a-aa97-bc77e6750b20/640.jpeg)
+![<mark data-type=institutions data-id=8a8ef293-102d-482f-a616-12a37827b3f9>Microsoft</mark>, antitrust, Alaily, FTC. Google](/imgs/undefined)
 
 在 HIMSS 2025 上，微软团队宣布推出了 Microsoft Dragon Copilot，这是一款全新的语音解决方案，可改变临床医生的工作方式。
 
-![图片](https://image.jiqizhixin.com/uploads/editor/ab7bd37e-ef53-4c2a-b25c-286f455b6d86/640.jpeg)
+![图片](/imgs/undefined)
 
 自 2022 年以近 200 亿美元收购临床文档公司  Nuance  以来，微软稳步将该业务打造为一套临床辅助工具，其中包括使用语音识别软件记录患者信息的 Dragon Medical One，以及人工智能支持的临床助理 DAX Copilot，这是一款人工智能支持的临床助理和决策支持工具。
 
@@ -25,7 +22,7 @@ Dragon Copilot 在这些技术的基础上进一步简化了文档编制、显�
 
 作为 Microsoft Cloud for Healthcare 的一部分，它建立在安全、现代的架构上，可以将临床生产力提升到新的高度，同时有助于提高临床医生的健康和患者体验，提高效率并改善财务影响。
 
-![A screenshot of Dragon Copilot's welcome page.](https://image.jiqizhixin.com/uploads/editor/2620d3aa-8622-448a-8fb9-a9970ba6ea51/640.jpeg)
+![A screenshot of Dragon Copilot's welcome page.](/imgs/undefined)
 
 Dragon 和 DAX Copilot 总经理 Ken Harper 表示，超过 60 万名临床医生使用 Dragon Medical One 记录了数十亿份患者记录，而 DAX Copilot 在过去一个月内为 600 家医疗机构生成了超过 300 万次医患对话。
 

@@ -3,15 +3,12 @@ title: "Vibe Coding 对话工程技巧"
 summary: "迭代式对话的艺术"
 order: 3
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-09-02"
 readingTime: 15
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 对话工程技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -56,7 +53,7 @@ AI：明白了。需要支持移动端吗？
 
 对话思维让你可以逐步明确需求，而不是一开始就要想清楚所有细节。这样更自然，也更容易得到好结果。
 
-![](https://pic.yupi.icu/1/promptvschat%E5%A4%A7.jpeg)
+![](/imgs/c088678c5ac75f88.jpg)
 
 
 ### 对话的好处
@@ -376,7 +373,7 @@ AI 第一次给出的答案往往不够完美。这时候，你需要通过追�
 
 更多的 AI 提示词模板可以在鱼皮的 [AI 资源导航网站](https://ai.codefather.cn/prompt) 获取：
 
-![](https://pic.yupi.icu/1/image-20260104174539349.png)
+![](/imgs/4cf3173675a26037.png)
 
 
 ## 七、常见的对话陷阱
@@ -405,7 +402,7 @@ AI 的记忆是有限的。不要假设它记得很久之前说过的话。
 
 不过很多 AI 编程工具会显示当前记忆容量，能帮你把控：
 
-![](https://pic.yupi.icu/1/image-20260104174741309.png)
+![](/imgs/f3c270e147ca0bd8.png)
 
 
 ### 陷阱 3、不要不测试就继续

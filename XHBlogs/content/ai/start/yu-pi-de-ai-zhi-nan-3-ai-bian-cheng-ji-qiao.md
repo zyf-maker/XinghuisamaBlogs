@@ -3,15 +3,12 @@ title: "鱼皮的 AI 指南 - 3、AI 编程技巧"
 summary: "https://www.bilibili.com/video/BV1i9Z8YhEja（共 1 条资讯链接）"
 order: 4
 level: "入门"
-tags: ["AI 指南", "转载", "AI"]
+tags: ["AI 指南"]
 updated: "2025-04-03"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《鱼皮的 AI 指南 - 3、AI 编程技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 其实现在很多程序员朋友对 AI 还是持怀疑态度的，觉得 AI 是不是只能做点儿小网站、小项目。我之前也是这么想的，直到我纯用 AI、完全不写代码地做了一个有几万行代码的大项目，我才发现 AI 的进化，远比我的想象更可怕。
 
@@ -23,7 +20,7 @@ Prompt 的质量直接决定了 AI 生成代码的准确性，也正因如此，
 
 首先我们要掌握最基本的 Prompt 优化技巧，比如明确 AI 的角色、提供具体的细节要求、拆解任务、提供示例等等，这里 [智谱 AI 开放平台的文档](https://open.bigmodel.cn/dev/guidelines/LanguageModels) 总结得不错，大家可以学习下。
 
-![](https://pic.yupi.icu/1/1743563253132-91a453b7-b090-4258-89de-aa98da404a30.png)
+![](/imgs/08bfef4ce8c8c206.png)
 
 此外，我更建议先把自己手写的 Prompt 扔给其他 AI，让它帮我生成一段质量更高的、结构化的需求文档，再喂给 Cursor 去生成网站，效果会更好。
 
@@ -65,7 +62,7 @@ Prompt 的质量直接决定了 AI 生成代码的准确性，也正因如此，
 
 4）版本控制。建议利用 Git 版本控制工具对代码进行管理，每正确生成一个功能后都提交一次版本，在每次 AI 生成新代码之后人工对比一下改动的文件，出了问题也能快速还原到之前的版本，防止代码丢失。
 
-![](https://pic.yupi.icu/1/1743563352611-61418c68-7c48-4bdd-8d97-941f40b9f98d.png)
+![](/imgs/13ebd526cd3b43e2.png)
 
 ### **3、其他技巧**
 

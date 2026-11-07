@@ -3,17 +3,13 @@ title: "「库克接班人」官宣退休：苹果二号人物，主导Apple Wat
 summary: "共收录 8 条 AI 行业资讯，如「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生；「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生等。"
 order: 73
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://www.qbitai.com/2025/07/306485.html)
 
 此番人事变动，被认为是「苹果历史上最重要的事件之一」
 
@@ -24,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这位COO*（首席运营官）*将在本月退休，结束自己在苹果27年的职业生涯。
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/Hg6RDFSDQVh7JaZP.jpg)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/00c468ee0cb251c6.jpg)
 
 威廉姆斯的继任者是Sabih Khan*（萨比赫·可汗）*，后者同样是苹果30年老兵。不过威廉姆斯领导下的苹果设计团队，将直接变为向库克汇报。
 
@@ -38,7 +34,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 2015年，他出任苹果COO。苹果现在的掌门人蒂姆·库克，就是从这一职位上升任CEO的。而过去10多年中，威廉姆斯也是仅次于库克的苹果第二号人物。
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/IweKbumvLcN7KZNC.webp)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/3972cc8a96ec614b.webp)
 
 苹果传奇设计师Jony Ive在2019年离职后，威廉姆斯接管了苹果的设计团队。他也负责苹果的供应链、Apple Watch工程开发，以及苹果健康项目。
 
@@ -62,7 +58,7 @@ source: "https://github.com/liyupi/ai-guide"
 >
 > 但苹果高管层更新换代的缓慢，导致谁能加入董事会成了一个难题。
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/hEy37ly8JqlduMKw.webp)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/c413188c7420dd2f.webp)
 
 威廉姆斯的退休也被视作苹果高层持续换血的延续。去年，长期担任苹果CFO的Luca Maestri已经卸任，为退休做准备。苹果前硬件工程主管Dan Riccio、长期任苹果市场营销主管的Phil Schiller也均在此列。
 
@@ -78,21 +74,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 > Jeff本来就参与了竞争，如果他失败了，离开也是情理中事。
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/rBnqyM7pU27lRuqi.webp)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/3ab5a26c2dfc7b93.webp)
 
 不少人认为，库克自己还是倾向于从运营部门寻找接班人。
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/9ucvkVeij9qeUZvc.webp)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/9b24f0e203a14e17.webp)
 
 但无疑在当下这个时代，随着苹果在AI方面的挣扎，以及消费科技领域市场对于新硬件产品的渴望，苹果自身面临的挑战，已不仅仅在运营之中。
 
 苹果的粉丝们期盼着下一位乔布斯。
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/qlOpNX8TqZfcqwgX.webp)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/c9a7f5737cec0d50.webp)
 
 但，怎么说呢，“那当然很好啦”~
 
-![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](https://pic.code-nav.cn/post_picture/1610518142000300034/D1g28e7JZhMJLQyn.jpg)
+![「库克接班人」官宣退休：苹果二号人物，主导Apple Watch诞生](/imgs/60b2c08a668ac425.jpg)
 
 你怎么看呢？
 
@@ -101,4 +97,3 @@ https://www.apple.com/newsroom/2025/07/apple-announces-chief-operating-officer-t
 
 — 完 —
 
-*版权所有，未经授权不得以任何形式转载及使用，违者必究。*

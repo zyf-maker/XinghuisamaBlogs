@@ -3,35 +3,32 @@ title: "程序员面试刷题神器"
 summary: "「面试鸭」（共 1 条资讯链接）"
 order: 8
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《程序员面试刷题神器》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。[「面试鸭」](https://mianshiya.com) 正式上线，终于有一个 **题目全、更新快、题解优质** 的面试刷题神器了！
 
 覆盖几乎所有主流编程方向，包括 Java 后端 / 前端 / AI / Python / C++ / Go / 运维 / 测试 / 系统设计 / 场景题 / 公司题库 / HR 面试，300+ 题库、10000+ 高频面试真题！支持网页、小程序、IDE、VSCode 插件多端使用。
 
-![](https://pic.yupi.icu/1/1768276081768-c7a167cb-f213-4e65-9be6-e6a1bce8199b.png)
+![](/imgs/d4371732b5a7a8a7.png)
 
 面试鸭网页端：https://mianshiya.com
 
 面试鸭小程序：
 
-![](https://pic.yupi.icu/1/1721460826037-d46052ac-87c8-4afe-8952-9bdde15121af.png)
+![](/imgs/ca801a04805baa67.png)
 
 面试鸭 IDE 插件：在 JetBrains IDE 中打开设置，找到 Plugins 插件，搜索 `mianshiya` 即可安装。
 
-![](https://pic.yupi.icu/1/1726648509017-ed809a2c-aab2-4a48-bd35-4affda7395b0.gif)
+![](/imgs/95177889388f39df.gif)
 
 面试鸭 VSCode 插件：在 VSCode/Cursor 中，打开拓展市场，搜索“`面试鸭`”或“`mianshiya`”，即可安装。
 
-![](https://pic.yupi.icu/1/1744178535494-59a54716-b16c-48df-9eb0-a05dc5c94baf.gif)
+![](/imgs/e4410907847f2418.gif)
 
 
 ## 为什么做面试鸭？
@@ -52,7 +49,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 想一想，面试的时候遇到你准备到的原题，那感觉有多爽~
 
-![](https://pic.yupi.icu/1/%25E9%259D%25A2%25E8%25AF%2595%25E9%25B8%25AD%25E9%25B1%25BC%25E7%259A%25AE%25E8%25A1%25A8%25E6%2583%2585%25E5%258C%25852.png)
+![](/imgs/2668a0318f3104e2.png)
 
 下面介绍面试鸭的优势，更推荐观看短视频介绍：https://bilibili.com/video/BV14E421w7dr/
 
@@ -67,19 +64,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 尤其是「沉浸模式」，一键隐藏页面里的其他元素，全身心投入刷题中，一题接着一题，根本停不下来。
 
-![](https://pic.yupi.icu/1/1768276245137-fb1ff126-5d7c-465d-8faf-bc99f7006b46.png)
+![](/imgs/b81e10007b7af276.png)
 
 新上线的【专项练习】和【测试一下】将那些高频面试题针对性地转化为选择题，**专治各种一看就会、一问就废**。
 
 尤其是那些容易被模糊的概念，哪些知识是真的掌握，哪些还需要加强巩固，测试一下就都清晰了。经常这么练习，还能**帮助你了解面试官的出题思路**，面试时候更加游刃有余。
 
-![](https://pic.yupi.icu/1/1768280270565-7e78a72d-2820-4b2d-bf99-8b2c9078b833.png)
+![](/imgs/ef35f9293ebc4aae.png)
 
 为了帮助大家愉快地摸鱼刷题，我们还推出了面试鸭 IDE  和 VSCode 插件。题库、题目列表都使用原生 UI 展示，**隐蔽性足够好**！还能自定义快捷键，一键打开 / 收起面板，葫芦娃的二娃来了，都发现不了我在摸鱼刷题～
 
 沉浸式隐蔽摸鱼刷题使用指南：[我做了个程序员面试刷题工具，帮你吊打面试官！沉浸式摸鱼刷题](https://www.bilibili.com/video/BV11hx5euEbD/)
 
-![](https://pic.yupi.icu/1/1726815401056-2d38260a-7d3e-42ec-a91a-5456913dc7d7.png)
+![](/imgs/9cc7dc64b7467b59.png)
 
 
 ### 2、题目全面，命中率高
@@ -93,7 +90,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 计算机基础：计算机网络、操作系统、设计模式
 - 更多扩展：SQL 编写、系统设计、线上问题排查、场景题、实战项目题库
 
-![](https://pic.yupi.icu/1/1768280169156-b6774dea-c701-4f0c-9266-74515075eb99.png)
+![](/imgs/28652142e216dda8.png)
 
 无论是面试各类公司的必考题目，还是你意想不到的冷门问题，我们的题库都一应俱全，而且 **面试命中率超高** ！
 
@@ -101,7 +98,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你可以按照自己的水平和简历情况去刷题，用更短的时间把握住面试重点，体验面试被问到原题的快感。
 
-![](https://pic.yupi.icu/1/1768276126616-2d8b6228-4d1a-42a9-bc3d-30bf93b7393b.png)
+![](/imgs/c4f7c59e727f4082.png)
 
 千万别再自己花费时间到网上整理题目、搜题解了！ **你浪费的这些时间，别人都可以多背很多题目了。**
 
@@ -112,7 +109,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 以 “如何设计 XX 系统” 之类的场景题为例，如果你没有类似的经验，就会一脸懵逼。那我们会先针对题目给出 **回答重点**，直击面试官腰子，然后结合实际经验给出更多 **扩展知识**，对着面试官打出一套组合拳。比如：
 
-![](https://pic.yupi.icu/1/1768276824962-f8ecc421-0f5b-4e0d-b819-6a7c3767580e.png)
+![](/imgs/b5decf20d45fef0c.png)
 
 就这一道题目鸭鸭就写了 3000 多字，还搭配了图片辅助理解、保证通俗易懂。这样一来，大家不仅仅是背题应付面试，而是 **真正能学到东西** ，全面提升技术视野、开发能力和面试经验。
 
@@ -120,7 +117,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 就比如下面这些题目，看看你都能答出来么？
 
-![](https://pic.yupi.icu/1/1768277075218-cfa8a973-ebdc-4209-960f-2c9c19a04881.png)
+![](/imgs/9f2e76788f70c7dc.png)
 
 
 ### 4、更新更频繁
@@ -129,7 +126,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 最近 AI 相关概念十分火热🔥，面试鸭也新增了 `AI 大模型原理和应用面试题库` ，很多题目是通过大厂真实面试收录来的，够与时俱进吧~ 而且还在持续不断地更新哦！
 
-![](https://pic.yupi.icu/1/1768277166472-c0ef52de-33b4-4c15-9a3f-8447ad60a5dd.png)
+![](/imgs/c106b46fe9acff6b.png)
 
 
 ## 邀请有赏
@@ -145,7 +142,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 访问 https://mianshiya.com 或者微信搜索面试鸭小程序，即可免费使用！
 
-![](https://pic.yupi.icu/1/1727242691135-17601986-9d1b-4d85-a031-457867491597.png)
+![](/imgs/9ae46d6365e8888f.png)
 
 目前所有的题目和题库都是免费可见的，但部分我们大厂面试官原创的题解是 **仅会员可见** 的，毕竟原创题解和开发系统都要消耗大量人力。
 
@@ -155,11 +152,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 目前面试鸭永久会员 **只需 129** ，会随着功能和内容的丰富持续涨价，正式价格预计是 399 以上，所以早入手早学习~ 我们会持续更新内容和系统功能，给大家最好的刷题体验，感谢大家入股，也欢迎大家监督鸭鸭改进。我们既然做了，不成功便成仁！
 
-![](https://pic.yupi.icu/1/1768276211775-371348a9-fe0a-48ae-830c-0730a5fd6baf.png)
+![](/imgs/6544fe73c64dc62e.png)
 
 
 ## 用户交流群
 
 有好的想法建议、反馈 Bug、需要什么功能或内容，都欢迎加入面试鸭用户交流群反馈哦：
 
-![](https://pic.yupi.icu/1/1721464673815-349cc85e-201d-413e-bef9-0028edb8196a.png)
+![](/imgs/effd2cce6e6bade3.png)

@@ -3,21 +3,18 @@ title: "OpenClaw 接入微信保姆级教程"
 summary: "微信终于能养龙虾了！安卓 iOS 都能用，1 分钟搞定"
 order: 18
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-10-22"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 接入微信保姆级教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 几天前，微信官方推出了 OpenClaw 小龙虾接入微信的插件「微信 ClawBot」，直接杀死了 “争夺养虾入口” 的比赛！
 
-![](https://pic.yupi.icu/1/%25E5%25BE%25AE%25E4%25BF%25A1%25E4%25BB%258B%25E5%2585%25A5openclaw.png)
+![](/imgs/e9d92d6dbf7efe36.png)
 
 但是刚开始只有 IOS 苹果手机才能用，我还跟同事开玩笑说：俺不是高贵的 “苹果人”，只能先望虾莫及了……
 
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我试了一下，接入非常简单，真的可以说是有手就行，直接在微信里跟小龙虾聊天、发图片、下任务，丝滑得一皮~
 
-![](https://pic.yupi.icu/1/image-20260324150329933.png)
+![](/imgs/a4887316bbef6765.png)
 
 下面，我来教大家如何把 OpenClaw 小龙虾接入微信，保姆皮已上线 ✅
 
@@ -36,7 +33,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 之前我写了一整套《OpenClaw 保姆级教程》，从安装到进阶玩法全覆盖，帮不少朋友成功养上了自己的小龙虾。
 
-![](https://pic.yupi.icu/1/%E5%9B%BE2-16%E6%AF%949OpenClaw%E7%9F%A5%E8%AF%86%E5%BA%93%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB.png)
+![](/imgs/9ccdf6e3319c74e1.png)
 
 你可以通过下面 3 种方法，快速安装 OpenClaw 并获取自己的小龙虾，每种方法在本教程中都有傻瓜式教程：
 
@@ -50,7 +47,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 Windows 可以搜索 PowerShell，并 **以管理员身份运行**；Mac 直接搜索 “终端” 并打开即可：
 
-![](https://pic.yupi.icu/1/image-20260324102432835.png)
+![](/imgs/067e5c6b1fb3248a.png)
 
 2）然后根据操作系统，在终端中输入一行命令，运行我给大家提供的「全自动安装脚本」：
 
@@ -70,17 +67,17 @@ curl -fsSL https://codefather.cn/openclaw_install/install-openclaw.sh | bash -s 
 
 3）接下来只需要等待片刻，脚本会自动帮你检测和安装环境，并安装 OpenClaw 程序本身。
 
-![](https://pic.yupi.icu/1/image-20260324115344988.png)
+![](/imgs/a7c797978d5ee88d.png)
 
 4）安装成功后，会引导你配置 AI 的大模型 API Key 密钥。
 
 推荐先用国产模型，比如智谱（zai）或者 Kimi（moonshot），用哪家的大模型，就到哪家的开放平台获取 API Key 即可。
 
-![](https://pic.yupi.icu/1/image-20260324140749942.png)
+![](/imgs/e88b347f5df299b7.png)
 
 5）最后，正常情况下，会自动打开 OpenClaw 管理网页，你的小龙虾前来报到：
 
-![](https://pic.yupi.icu/1/image-20260324102805104.png)
+![](/imgs/19006a6438286a62.png)
 
 如果你运行一键安装脚本出错了，可以尝试本教程的《02 本地安装 OpenClaw》手动安装。
 
@@ -91,23 +88,23 @@ curl -fsSL https://codefather.cn/openclaw_install/install-openclaw.sh | bash -s 
 
 首先打开微信，依次点击：我 → 设置 → 插件，能够看到微信 ClawBot 插件：
 
-![](https://pic.yupi.icu/1/image-20260324134224548.png)
+![](/imgs/79ffc8f48e8f69f3.png)
 
 不是哥们？这么多年了，就这一个插件嘛？
 
 也足以看出腾讯这波想拿下 AI 入口流量的野心了。
 
-![](https://pic.yupi.icu/1/HDnaD6IbEAMKVS0-20260322141650228.jpeg)
+![](/imgs/45b857b040c9752d.jpg)
 
 进入插件详情，可以看到官方给出了接入微信 ClawBot 的指引：
 
-![](https://pic.yupi.icu/1/Screenshot_20260324_094406_com.tencent_%E5%89%AF%E6%9C%AC.mm.jpg)
+![](/imgs/a4eef7de8d875e06.jpg)
 
 下面我们开始操作，依然是 1 分钟搞定！
 
 1）首先在安装了 OpenClaw 小龙虾的电脑上打开 CMD 终端。Windows 按 `Win + R` 键，然后输入 `cmd` 并回车：
 
-![](https://pic.yupi.icu/1/image-20260324113126474.png)
+![](/imgs/7c2c07fa0d1fc74e.png)
 
 2）打开终端后，执行这行命令，安装微信接入 OpenClaw 的插件：
 
@@ -117,15 +114,15 @@ npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 
 正常情况下，会显示一个连接码：
 
-![](https://pic.yupi.icu/1/image-20260324141342230.png)
+![](/imgs/c6a83b51317c1667.png)
 
 3）用手机扫一下，然后同意连接就好。操作完成后，终端会显示 “与微信连接成功”，就已经搞定了~
 
-![](https://pic.yupi.icu/1/image-20260324141941525.png)
+![](/imgs/b1f9aa2cbe408807.png)
 
 试一试通过微信和 OpenClaw 小龙虾对话吧，而且不需要什么配置，就能让它帮你分析图片、给你发送图片：
 
-![](https://pic.yupi.icu/1/image-20260324143907284.png)
+![](/imgs/8d489ba070583101.png)
 
 
 ### 常见错误
@@ -136,7 +133,7 @@ npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 
 这是因为 OpenClaw 官方插件仓库太火爆了，导致安装时可能会被限流：
 
-![](https://pic.yupi.icu/1/image-20260324104016363.png)
+![](/imgs/636f6f2a7237d856.png)
 
 解决方法是重试几次，或者等大家都睡着了再安装~
 
@@ -144,13 +141,13 @@ npx -y @tencent-weixin/openclaw-weixin-cli@latest install
 
 如果你用的是旧的 1.x 插件，又不小心安装了 >= 3.22 的 OpenClaw 版本，就会看到下面这个错误（最简单的办法是把微信插件升级到最新的 2.x 版本）：
 
-![](https://pic.yupi.icu/1/image-20260324110402003.png)
+![](/imgs/670501f3718a6f18.png)
 
 此时可以按照文档来回滚到之前的版本，执行几个命令就好：
 
 > 指路：https://clawfather.cn/install/updating
 
-![](https://pic.yupi.icu/1/image-20260324124003675.png)
+![](/imgs/06e0ccd2fdcb38de.png)
 
 
 ### 手动安装
@@ -188,11 +185,11 @@ openclaw gateway restart
 
 安装完插件后，你可以在 OpenClaw 的插件目录下找到 `openclaw-weixin` 相关的源码和 README.md 介绍文档，感兴趣的同学可以翻一翻：
 
-![](https://pic.yupi.icu/1/image-20260324143134753.png)
+![](/imgs/f7f9041c9d1c63ed.png)
 
 通过阅读这个文档，你可以了解到更多高级用法，比如多账号上下文隔离（让每个微信号的对话记忆互不干扰）、后端 API 协议（方便二次开发对接自己的服务）、CDN 媒体上传流程等：
 
-![](https://pic.yupi.icu/1/image-20260324144620649.png)
+![](/imgs/6f06e188bf82d154.png)
 
 接入微信只是第一步，想把小龙虾玩出花来，本教程的进阶部分（07-14 篇）涵盖了：
 

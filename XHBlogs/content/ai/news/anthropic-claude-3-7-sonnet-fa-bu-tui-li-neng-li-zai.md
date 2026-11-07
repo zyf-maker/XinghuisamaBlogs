@@ -3,22 +3,19 @@ title: "Anthropic Claude 3.7 Sonnet 发布：推理能力再进化，编码效�
 summary: "共收录 2 条 AI 行业资讯，如图片；图片等。"
 order: 17
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Anthropic Claude 3.7 Sonnet 发布：推理能力再进化，编码效率突破天际！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4dface4fdc350ad704f19a8f8704cf3264c55682-2880x1620.png&w=3840&q=75)
+![](/imgs/dfe6a022297e0197.webp)
 
 
 ## Claude 3.7 Sonnet：一个模型，两种思考模式，前沿推理触手可及
 
-![图片](https://pic.code-nav.cn/mianshiya/question_picture/1787766534229299201/XIawGkhN_image_mianshiya.png)
+![图片](/imgs/f40d6c98716bc8fd.png)
 
 Anthropic 此次发布的 Claude 3.7 Sonnet，最引人注目的创新点在于其 混合推理模式。正如人类大脑可以在快速反应和深度思考之间灵活切换，Claude 3.7 Sonnet 也具备了 标准 和 扩展思考 两种模式，真正实现了 「一个模型，两种思考方式」。
 
@@ -37,7 +34,7 @@ GitHub 集成全线升级： GitHub 集成已在所有 Claude 计划中开放，
 
 ## 基准测试再创新高：实力超越同类模型
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F654cf6680d32858dfba9af644f8c4a5b04425af1-2600x2360.png&w=3840&q=75)
+![](/imgs/e02147fbd0e12714.webp)
 
 Claude 3.7 Sonnet 的卓越性能，也在各大权威基准测试中得到了充分验证：
 
@@ -67,7 +64,7 @@ Claude Code 具备以下强大功能：
 - 测试编写与运行： 自动化测试流程，保障代码质量。
 - 代码提交与推送： 一键式代码管理，简化开发流程。
 - 命令行工具集成： 无缝对接现有开发环境。
-  ![图片](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4a4df6b6629f9814aec4eb9323028130f43a8d70-1920x1080.png&w=3840&q=75)
+  ![图片](/imgs/0fcfad44469000d9.webp)
 在实际应用中，Claude Code 可以帮助开发者：
 
 快速解释项目结构

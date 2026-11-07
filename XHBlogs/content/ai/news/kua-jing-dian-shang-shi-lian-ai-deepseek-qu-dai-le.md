@@ -3,15 +3,12 @@ title: "跨境电商试练 AI，DeepSeek 取代了 ChatGPT"
 summary: "跨境电商试练 AI，DeepSeek 取代了 ChatGPT，由程序员鱼皮整理。"
 order: 37
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《跨境电商试练 AI，DeepSeek 取代了 ChatGPT》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 “接下来半年我们会看到 AI 应用在国内的蓬勃发展，DeepSeek 会带来 AI 应用的枝繁叶茂。”聊起 DeepSeek，跨境电商商家钱大柱这样说道。
 
@@ -43,7 +40,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 钱大柱组建了二十多人的技术团队，有来自美国、澳大利亚的技术人才线上工作，就为了解决大量跨境中小卖家不愿花钱拍摄图片的痛点。这是一项堪比重新创业的投入项目，人工费用、算力租用成本等十分高昂。钱大柱即将推动 picballs 的商业化面世，预备定价会员费每月 29.8 元，可生成近 20 套图，“原来一套图的业内成本是 5000 元左右，周期是 2 周。现在只需要 5 分钟，成本 2 元。”
 
-![](https://imgcdn.yicai.com/uppics/images/2025/03/ddbcdd7fabb4758b192a5d5b23c8d8f9.jpg)
+![](/imgs/80652bbcdc11e38e.jpg)
 
 （钱大柱团队用 picballs 生成的图片）
 

@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《用好 CLAUDE.md，让你的 AI 编程效率翻倍！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近我发现一个现象，很多同学开始用 Claude Code、Cursor 这些 AI 编程工具了，但用了一阵子之后就开始抱怨：AI 怎么总是不听话？让它改个 Bug 反而引入三个新 Bug，让它加个功能结果技术栈都给换了。
 
-![](https://pic.yupi.icu/1/image-20260622164228939.png)
+![](/imgs/4ece905fbc0dbea9.png)
 
 这些问题的根源，往往不是 AI 笨，而是你没有给它足够的上下文。
 
@@ -29,7 +26,7 @@ AI 每次开始新会话，都是一张白纸。它不知道你的项目用的�
 
 必须有啊！就是今天要聊的 **CLAUDE.md**。
 
-![](https://pic.yupi.icu/1/image-20260320152009626.png)
+![](/imgs/58e147ebdd239db4.png)
 
 
 
@@ -41,7 +38,7 @@ Claude Code 每次启动会话时，都会自动读取这个文件，把里面�
 
 你可以把它理解为 **给 AI 写的「入职手册」**。就像新员工入职第一天，你会给他一份文档，介绍公司用什么技术、代码怎么写、测试怎么跑、有什么坑要注意。CLAUDE.md 干的就是这个事。
 
-![](https://pic.yupi.icu/1/01_CLAUDE.md%E6%98%AFAI%E7%9A%84%E5%85%A5%E8%81%8C%E6%89%8B%E5%86%8C_compressed_v1.png)
+![](/imgs/28329d348cdbf6e4.png)
 
 比如一个最简单的 CLAUDE.md 长这样：
 
@@ -75,7 +72,7 @@ AI 每次开始工作前都会先读一遍，然后所有生成的代码都会�
 
 必须要知道的是 AGENTS.md，它是一个跨工具的开放标准，由 OpenAI、Google、Cursor 等多家公司联合推出，目前已经有好万个开源项目在用，支持 30 多种 AI 编程工具。
 
-![](https://pic.yupi.icu/1/image-20260622190311465.png)
+![](/imgs/08aa14c80c47d2fb.png)
 
 Claude Code 虽然默认只读 CLAUDE.md，但你可以在 CLAUDE.md 里用一行 `@AGENTS.md` 把它导入进来，两边就打通了。
 
@@ -107,7 +104,7 @@ Claude Code 虽然默认只读 CLAUDE.md，但你可以在 CLAUDE.md 里用一�
 
 比如我的项目里有个特殊的 API 响应格式 `{ success, data, error }`，不写进规则的话，AI 每次都按自己的习惯来。写进去之后，Claude 就会自动遵循，不用我每次纠正。
 
-![](https://pic.yupi.icu/1/03_%E6%B2%A1%E6%9C%89vs%E6%9C%89CLAUDE.md%E7%9A%84%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![](/imgs/6dde2397b2a8437a.png)
 
 之前我在另一篇文章里提到过，规则文件在 50 行左右时遵循率可以达到 94%，但如果一股脑堆到 400 行，遵循率就掉到了 71%。
 
@@ -133,7 +130,7 @@ CLAUDE.md 的内容会在每次会话开始时加载到 AI 的上下文窗口中
 
 **所以写 CLAUDE.md 要像写简历一样，精炼再精炼。**
 
-![](https://pic.yupi.icu/1/08_%E6%8C%87%E4%BB%A4%E6%95%B0%E9%87%8Fvs%E9%81%B5%E5%BE%AA%E7%8E%87%E6%9B%B2%E7%BA%BF_compressed_v3.png)
+![](/imgs/26198ab5001e850c.png)
 
 对于每一行，问自己一个问题：删掉它 AI 会犯错吗？
 
@@ -160,7 +157,7 @@ CLAUDE.md 的内容会在每次会话开始时加载到 AI 的上下文窗口中
 - 详细的 API 文档（放别的地方，CLAUDE.md 里放链接就行）
 - 写干净的代码、注意性能这种废话
 
-![](https://pic.yupi.icu/1/09_%E8%AF%A5%E5%86%99vs%E4%B8%8D%E8%AF%A5%E5%86%99%E5%88%86%E7%B1%BB%E7%AD%9B%E9%80%89%E5%9B%BE_compressed_v2.png)
+![](/imgs/3214405b512d5897.png)
 
 像我做编程导航项目时，就把一些即使读代码也容易忽略的约定写进了 CLAUDE.md，比如 API 响应统一使用 `BaseResponse` 包装类、异常统一用 `BusinessException` 抛出。虽然 AI 深入分析代码也能发现这些模式，但写进规则之后能省掉它每次重新推断的过程，效率高很多。
 
@@ -179,7 +176,7 @@ CLAUDE.md 的内容会在每次会话开始时加载到 AI 的上下文窗口中
 - ❌ 不要用 any 类型 → ✅ 所有变量必须有明确的 TypeScript 类型定义
 - ❌ 不要在主分支直接提交 → ✅ 所有变更通过 feature 分支提交 PR
 
-![](https://pic.yupi.icu/1/04_%E7%99%BD%E7%86%8A%E6%95%88%E5%BA%94%E4%B8%8E%E6%AD%A3%E9%9D%A2%E6%8C%87%E4%BB%A4_compressed_v2.png)
+![](/imgs/d16ca6e5800f3ba7.png)
 
 
 
@@ -209,7 +206,7 @@ Claude Code 提供了 Hooks 机制，可以在 AI 操作的关键节点自动执
 
 **一句话总结就是，CLAUDE.md 负责建议，Hooks 负责强制操作。**
 
-![](https://pic.yupi.icu/1/05_CLAUDE.md%E5%BB%BA%E8%AE%AEvs_Hooks%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C_compressed_v3.png)
+![](/imgs/ea0fddf12fda50a6.png)
 
 
 
@@ -253,7 +250,7 @@ paths:
 
 这样 Claude 只在真正需要的时候才会去读取对应的文档，平时不占用上下文空间。
 
-![](https://pic.yupi.icu/1/06_%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8A%AB%E9%9C%B2%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD_compressed_v2.png)
+![](/imgs/1384b78869019419.png)
 
 CLAUDE.md 的 `@path` 导入语法支持相对路径和绝对路径，最多可以嵌套 4 层。
 
@@ -275,7 +272,7 @@ Claude 特别擅长给自己写规则，时间久了，你的 CLAUDE.md 就变�
 
 你随时可以用 `/memory` 命令查看和编辑这些记忆。
 
-![](https://pic.yupi.icu/1/image-20260622182614045.png)
+![](/imgs/02a26bee7a71d458.png)
 
 
 
@@ -291,7 +288,7 @@ Claude 特别擅长给自己写规则，时间久了，你的 CLAUDE.md 就变�
 
 在 Claude Code 中输入 `/init`，Claude 会自动分析你的代码库，生成一份包含构建命令、测试指令和项目规范的 CLAUDE.md。如果文件已经存在，它会建议改进而不是覆盖。
 
-![](https://pic.yupi.icu/1/image-20260622182756786.png)
+![](/imgs/edfcf7f9395de0d7.png)
 
 不过需要注意，自动生成的内容可能不够精确，毕竟 AI 只能看到你的代码成果，不理解背后的过程。
 
@@ -307,7 +304,7 @@ Claude 特别擅长给自己写规则，时间久了，你的 CLAUDE.md 就变�
 
 像我自己带团队做项目时，每次 Code Review 中发现 AI 犯的错误，都会让 Claude 把修正追加到 CLAUDE.md 里。做了一个月之后，这份文件已经沉淀了几十条非常有针对性的规则，新同事用 Claude Code 的时候上手也快了很多。
 
-![](https://pic.yupi.icu/1/10_AI%E7%BA%A0%E9%94%99%E6%B2%89%E6%B7%80%E6%AD%A3%E5%90%91%E5%BE%AA%E7%8E%AF_compressed_v2.png)
+![](/imgs/bd6ec17712edfe5a.png)
 
 
 
@@ -317,7 +314,7 @@ GitHub 上有个 awesome-claude-md 仓库，收录了 100 多个真实项目的 
 
 另外还有个 awesome-claude-code 仓库，整理了 Skills、Hooks、斜杠命令等 Claude Code 生态工具，也值得收藏。
 
-![](https://pic.yupi.icu/1/image-20260622184038586.png)
+![](/imgs/72ab0c07698a9005.png)
 
 有时间的话，可以让 AI 帮你分析一下这些案例，找个跟你项目技术栈接近的参考着写，比从零开始快多了。
 
@@ -359,7 +356,7 @@ Claude Code 的创始人推荐把 CLAUDE.md 用 Git 来管理，让团队成员�
 
 我们自己团队也是这么做的。像面试鸭后端项目的 AGENTS.md，里面沉淀了技术栈选型、Spring Boot 分层规范、统一响应格式、异常处理方式、数据库命名规则等约定。新同事入职直接看这份文件就能上手，Claude 也能自动遵循这些规范生成代码，省了大量沟通成本。
 
-![](https://pic.yupi.icu/1/image-20260622183444669.png)
+![](/imgs/561207c5ce559e05.png)
 
 
 
@@ -383,7 +380,7 @@ Claude Code 的创始人推荐把 CLAUDE.md 用 Git 来管理，让团队成员�
 
 4）如果某个操作必须在特定时机执行，比如每次提交前跑 lint，就不要靠 CLAUDE.md 了，改用 Hooks
 
-![](https://pic.yupi.icu/1/11_%E8%A7%84%E5%88%99%E4%B8%8D%E7%94%9F%E6%95%88%E6%8E%92%E6%9F%A5%E5%86%B3%E7%AD%96%E6%A0%91_compressed_v1.png)
+![](/imgs/5ee4fc93e5d26950.png)
 
 
 

@@ -3,15 +3,12 @@ title: "不装了！OpenAI力促特朗普对中国AI下死手，出台“AI出�
 summary: "共收录 3 条 AI 行业资讯，如芯片出口管制；发文等。"
 order: 31
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《不装了！OpenAI力促特朗普对中国AI下死手，出台“AI出口管制”》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 年初，DeepSeek横空出世，震撼世界。最开始，美国开放人工智能研究中心（OpenAI）强装镇定，其CEO奥特曼还赞扬“干得不错”“工作出色”。
 
@@ -27,7 +24,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 提案最开始，勒汉先是对美国总统特朗普一番吹捧，赞扬特朗普政府的AI计划万分正确，表示在“中国决心在2030年超越我们”之际，该计划可以确保“美国主导的、建立在民主原则上的AI可以继续战胜中国AI”。他说，这就是为什么最近发布的DeepSeek 模型如此值得关注的原因。
 
-![](https://i.guancha.cn/news/external/2025/03/14/20250314135402350.jpg "点击查看大图")
+![](/imgs/927cc9f9674a0bfb.jpg "点击查看大图")
 
 OpenAI政策提案文件截图
 
@@ -73,7 +70,7 @@ OpenAI政策提案文件截图
 
 奥特曼最初在社交媒体X上发文称，“DeepSeek-R1是一款令人印象深刻的模型，尤其是考虑到其性价比。显然，我们会推出更好的模型，而且有新竞争对手出现确实令人振奋！”2月11日，他再次赞赏DeepSeek在创建聊天机器人方面“工作出色”，尽管出现时机让他大吃一惊。
 
-![](https://i.guancha.cn/news/external/2025/03/14/20250314135310379.jpg "点击查看大图")
+![](/imgs/89d99d66114e2441.jpg "点击查看大图")
 
 OpenAI首席执行官萨姆·奥特曼 资料图
 

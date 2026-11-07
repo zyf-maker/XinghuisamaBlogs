@@ -3,15 +3,12 @@ title: "DeepSeek 开源项目"
 summary: "DeepSeek 开源项目——程序员鱼皮整理的 AI 指南。"
 order: 202
 level: "入门"
-tags: ["资源汇总", "转载", "AI"]
+tags: ["资源汇总"]
 updated: "2026-10-22"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 开源项目》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 官方开源
 

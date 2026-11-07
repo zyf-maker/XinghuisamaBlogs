@@ -3,21 +3,17 @@ title: "OpenAI 前 CTO的AI公司Thinking Machines Lab 获得 20 亿美元融资
 summary: "共收录 2 条 AI 行业资讯，如OpenAI 前 CTO的AI公司Thinking Machines Lab 获得 20 亿美元融资，估值达 120 亿美元；投资，融资，钱等。"
 order: 91
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2026-10-22"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenAI 前 CTO的AI公司Thinking Machines Lab 获得 20 亿美元融资，估值达 120 亿美元》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [OpenAI 前 CTO的AI公司Thinking Machines Lab 获得 20 亿美元融资，估值达 120 亿美元](https://news.aibase.com/zh/news/19708)
 
 AI 创业公司 Thinking Machines Lab（思维机器实验室）正式宣布完成由安德森・霍洛维茨基金领投的20亿美元种子轮融资。这一消息在硅谷引发了广泛关注，标志着该公司的估值已经达到120亿美元。这家由 OpenAI 前首席技术官米拉・穆拉蒂(Mira Murati)创办的公司，自成立不到一年便吸引了包括英伟达、AMD 等在内的多家知名投资者。
 
-![投资，融资，钱](https://pic.code-nav.cn/post_picture/1610518142000300034/iUGQOBhEnM4jOjOy.webp "投资，融资，钱 (图片来源图虫：已授站长之家使用)")
+![投资，融资，钱](/imgs/13e72d74bde0dc9f.webp "投资，融资，钱 (图片来源图虫：已授站长之家使用)")
 
 据了解，这笔融资不仅是思维机器实验室的里程碑，也是硅谷历史上规模最大的种子轮融资之一，反映出投资者对新兴 AI 项目的热情与期待。穆拉蒂在接受采访时表示，公司的首款产品将在未来几个月内发布，并将包括 “重要的开源项目”。她强调，这些产品将对研究人员及构建定制 AI 模型的创业公司起到支持作用。
 

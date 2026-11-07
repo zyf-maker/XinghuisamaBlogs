@@ -10,16 +10,13 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Codex Record & Replay：录制功能教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近，Codex 上线了一个新功能叫 **Record & Replay**，翻译过来就是「录制与回放」。
 
 很多 AI 圈儿的博主把这个功能吹上天了，搞的我也是心痒难耐，对这个功能期待值拉满了。
 
-![](https://pic.yupi.icu/1/image-20260624182546406.png)
+![](/imgs/d0602b3fd1494677.png)
 
 这篇我带大家体验一下这个新功能，然后聊聊它的适用场景和背后的原理。
 
@@ -35,7 +32,7 @@ Record & Replay 的思路是：先开启 **录制**，你在电脑上正常操�
 
 比如 Codex 官方演示了利用这个功能自动上传发布视频：
 
-![](https://pic.yupi.icu/1/image-20260624183321530.png)
+![](/imgs/96b28c948e05a77e.png)
 
 有点儿像那什么，比如我想教自己的小孩怎么搭好一套积木，我很难用语言给他讲清楚，于是亲自搭一遍积木让他在边上看着，他就会了。
 
@@ -53,7 +50,7 @@ Record & Replay 的思路是：先开启 **录制**，你在电脑上正常操�
 
 首先安装 Record & Replay 插件：
 
-![](https://pic.yupi.icu/1/image-20260624180222466.png)
+![](/imgs/4e5b41abc3db15e0.png)
 
 准备工作做好了，我来录一个试试。
 
@@ -68,13 +65,13 @@ Record & Replay 的思路是：先开启 **录制**，你在电脑上正常操�
 
 进入 Record & Replay 插件页面，点击「在对话中试用」：
 
-![](https://pic.yupi.icu/1/image-20260624180346459.png)
+![](/imgs/be877145b3f5a34a.png)
 
 Codex 会自动跳转到新对话页面，对话框里会默认填好一句提示词「Record my workflow and turn it into a reusable skill」，意思是录制我的工作流并生成一个可复用的技能。
 
 我在下面追加了一句自己的需求：我要自动下载 FLAC 格式的特定音乐。
 
-![](https://pic.yupi.icu/1/image-20260624180704842.png)
+![](/imgs/76370500a0930e8f.png)
 
 然后提交。
 
@@ -84,7 +81,7 @@ Codex 会自动跳转到新对话页面，对话框里会默认填好一句提�
 
 AI 读取技能后，会请求屏幕录制权限，批准之后，就可以开始演示了。
 
-![](https://pic.yupi.icu/1/image-20260624181052771.png)
+![](/imgs/a0fb797b58ab3f31.png)
 
 录制期间，Codex 会观察你的操作行为和窗口内容，一直持续到你手动停止录制。
 
@@ -100,7 +97,7 @@ Codex 会分析我刚才录制的操作，自动生成一个「音乐下载」 S
 
 这个 Skill 包含了几个关键信息：什么时候使用这个技能、需要哪些输入参数、具体的执行步骤、以及怎么验证任务完成了。
 
-![](https://pic.yupi.icu/1/image-20260624181345019.png)
+![](/imgs/03393829caae1ba9.png)
 
 
 
@@ -112,7 +109,7 @@ Skill 生成好了，接下来就可以愉快地使用了。
 
 Codex 会按照之前演示的操作路径，自动完成整个流程。
 
-![](https://pic.yupi.icu/1/image-20260624181451666.png)
+![](/imgs/89c673a12a7c2be6.png)
 
 
 
@@ -132,7 +129,7 @@ Codex 会按照之前演示的操作路径，自动完成整个流程。
 
 再比如整理数据报表时你会下意识选某种排序、调某种配色、跳过某些字段，这些隐性偏好你自己可能列举不全，但通过录制能全部捕获。还有那种横跨好几个应用、每个应用点好几层菜单的长链路流程，写几百字的提示词，不如录制 2 分钟。
 
-![](https://pic.yupi.icu/1/article-images/codex-record-replay/01_%E5%A4%8D%E6%9D%82%E6%B5%81%E7%A8%8B%E7%94%B5%E8%84%91%E6%93%8D%E4%BD%9C%E5%9C%BA%E6%99%AF_compressed_v2.png)
+![](/imgs/77c23f4b7165268c.png)
 
 不过可惜的是，我个人基本没有这些场景。大多数的操作通过让 AI 操作 CLI 命令行就能搞定，不比操作界面快多了？
 
@@ -148,7 +145,7 @@ Codex 会按照之前演示的操作路径，自动完成整个流程。
 
 不知道大家有没有用过按键精灵？我小时候拿它做自动打怪脚本来着。
 
-![](https://pic.yupi.icu/1/500fd9f9d72a6059c02bbf832834349b033bba74.jpg)
+![](/imgs/e39f7ace00201ebc.jpg)
 
 按键精灵录制的是死板的鼠标轨迹，比如坐标 (320, 450) 点击一下、等 500 毫秒、坐标 (180, 600) 再点一下。窗口位置稍微挪一下就全废了。
 
@@ -160,7 +157,7 @@ Codex 会按照之前演示的操作路径，自动完成整个流程。
 
 回放的时候也不是在机械地重放轨迹。Codex 会把 Skill 作为上下文加载，然后结合 Computer Use、浏览器操作、已安装的插件这些工具来执行。因为理解的是语义而不是坐标，所以理论上同一个 Skill 可以在不同的环境和工具组合下复用。
 
-![](https://pic.yupi.icu/1/article-images/codex-record-replay/02_Codex%E5%BD%95%E5%88%B6%E4%B8%A4%E9%98%B6%E6%AE%B5%E5%8E%9F%E7%90%86_compressed_v1.png)
+![](/imgs/ce87cfebbf0e0157.png)
 
 另外，生成的 Skill 是可以编辑的，你可以手动改 `SKILL.md`，也可以让 Codex 帮你进一步优化，调整到满意为止。
 

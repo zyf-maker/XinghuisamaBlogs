@@ -3,15 +3,12 @@ title: "OpenClaw 记忆管理与成本控制"
 summary: "管理 AI 的记忆、用 Git 备份、省钱技巧大全"
 order: 14
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-20"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 记忆管理与成本控制》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -31,7 +28,7 @@ OpenClaw 的记忆系统是基于纯 Markdown 文件的，非常直观。
 
 你可以在 Web 控制台的代理模块中查看这些记忆文件，也可以直接到 `~/.openclaw/workspace/` 目录下用文本编辑器打开查看。
 
-![](https://pic.yupi.icu/1/image-20260319205651111.png)
+![](/imgs/ee54822174a5276a.png)
 
 如果想让小龙虾失忆，方法也很简单：删除对应的记忆文件就好了。
 
@@ -44,7 +41,7 @@ OpenClaw 的记忆系统是基于纯 Markdown 文件的，非常直观。
 
 如果你想优化记忆管理的质量，可以安装 ontology 技能，它会帮你的小龙虾建立一个结构化的本地知识图谱，让记忆更有条理，而不是一股脑全塞在一个文件里。
 
-![](https://pic.yupi.icu/1/1773915071507-4fb69789-7878-4ec4-b369-b08b01ac4003.png)
+![](/imgs/eb7e4066e3a53e71.png)
 
 
 ## Git 管理配置文件
@@ -57,17 +54,17 @@ OpenClaw 的记忆系统是基于纯 Markdown 文件的，非常直观。
 你是 OpenClaw 专家，我正在学习使用 OpenClaw，请你完整分析官方文档 https://docs.openclaw.ai/，然后帮我利用 Git 来管理 ~/.openclaw 目录，起到备份的作用，注意要合理忽略一些不需要管理的文件
 ```
 
-![](https://pic.yupi.icu/1/1773914094278-80768659-0a00-4b26-83a2-04b224c47e1b.png)
+![](/imgs/0d7a8888985ab999.png)
 
 可以看到重要配置被 Git 托管了，出了问题可以快速还原：
 
-![](https://pic.yupi.icu/1/1773914374267-a3ddcc59-2f29-4a19-8301-4bb06337e205.png)
+![](/imgs/d911ff7edcd4ac6c.png)
 
 当然你也可以自己进入目录，手动执行命令完成初始化。
 
 需要注意的是，一定要先配好 `.gitignore` 文件来忽略不需要管理的内容（比如浏览器数据、媒体文件、会话日志、node_modules 等），避免提交太多无用文件。
 
-![](https://pic.yupi.icu/1/1773914135096-0cc52de9-0731-4b2e-a0d4-19c1a9bc91d3-20260319211801170.png)
+![](/imgs/036fbc4e09859d85.png)
 
 核心步骤如下（看不懂的同学跳过即可）：
 
@@ -107,7 +104,7 @@ git commit -m "init: OpenClaw 配置备份"
 我已经用 Git 托管了整个 openclaw 的工作目录，请你创建定时任务，之后每天凌晨 3 点进行一次提交，起到备份的作用
 ```
 
-![](https://pic.yupi.icu/1/1773914556135-f5b13e85-b9a9-4923-9100-d169b64dc37a.png)
+![](/imgs/c71f73992c4a3156.png)
 
 之后每天凌晨小龙虾会自动帮你提交一次配置快照，再也不怕 AI 手滑把配置搞崩了，随时可以通过 Git 回滚到任意历史版本。
 
@@ -139,13 +136,13 @@ OpenClaw 提供了很多命令和方法，可以帮你检查 OpenClaw 的状态�
 
 1）优先运行 `openclaw doctor` 健康检查，它会帮你扫描配置、频道、模型认证等各方面的问题：
 
-![](https://pic.yupi.icu/1/1773912981576-08e5d6a4-56e0-41bc-9780-f1b05a4d6cf0.png)
+![](/imgs/6904c8d0b9688ffe.png)
 
 然后输入 `openclaw doctor --fix` 可以自动修复发现的问题。
 
 2）`openclaw status` 查看运行状态，包括网关、频道、会话等所有信息：
 
-![](https://pic.yupi.icu/1/1773913110926-ce687f86-2724-4d4f-9b43-3e8de19d84b5.png)
+![](/imgs/f0b28a296a8569d8.png)
 
 3）`openclaw gateway start|stop|restart` 管理网关服务。
 
@@ -163,13 +160,13 @@ OpenClaw 提供了很多命令和方法，可以帮你检查 OpenClaw 的状态�
 
 前面我们也看到了，尤其是在玩多智能体的时候，了解 AI 的状态还是很重要的。万一某个 AI 执行卡住了，可以看下它到底在干神魔：
 
-![](https://pic.yupi.icu/1/1773913207492-38e2fea6-75d8-4577-ac3a-54322a52d552.png)
+![](/imgs/cf52879fc3fdb2f1.png)
 
 5）`openclaw logs --follow` 实时查看日志。
 
 估计大多数同学用不到，真出了控制台搞不定的问题后，再来看实时日志，然后把日志发给 AI，让 AI 帮你分析和解决吧~
 
-![](https://pic.yupi.icu/1/1773913345897-7e4a61cb-c2f1-488d-a469-c10bbfee496c.png)
+![](/imgs/46f80d062d633fea.png)
 
 对了，如果你还能跟小龙虾对话，也可以直接让它自我检查和修复问题。这也是使用 AI 智能体的小技巧：完成任务后让 AI 检查自己的输出，找边界情况和潜在问题。
 

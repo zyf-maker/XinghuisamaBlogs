@@ -3,17 +3,14 @@ title: "一文详解 DeepSeek 技术架构"
 summary: "在当今的 AI 领域，DeepSeek 无疑是一颗耀眼的明星，它以独特的技术和卓越的性能，吸引了全球无数开发者和研究者的目光，成为推动人工智能发展的重要力量。随着人工智能技术的飞速发展，大模型已成为行业竞争的焦点。DeepSeek 作为其中"
 order: 101
 level: "进阶"
-tags: ["技术解析", "转载", "AI"]
+tags: ["技术解析"]
 updated: "2026-10-22"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《一文详解 DeepSeek 技术架构》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![img](https://pic.yupi.icu/yuyi/1739515413170-7be71c79-af4b-43a8-996f-36d7d27b5c0d.png)
+![img](/imgs/82d900db50652c7c.png)
 
 
 在当今的 AI 领域，DeepSeek 无疑是一颗耀眼的明星，它以独特的技术和卓越的性能，吸引了全球无数开发者和研究者的目光，成为推动人工智能发展的重要力量。随着人工智能技术的飞速发展，大模型已成为行业竞争的焦点。DeepSeek 作为其中的佼佼者，凭借其先进的技术架构，在自然语言处理、对话交互等多个领域展现出了强大的能力。它的出现，不仅为用户带来了全新的体验，也为 AI 技术的发展开辟了新的道路。今天，就让我们一同深入探索 DeepSeek 的技术架构，揭开它神秘的面纱，看看它是如何在 AI 的舞台上大放异彩的。
@@ -45,7 +42,7 @@ DeepSeek 还采用了混合专家系统（MoE），这是一种将多个专家�
 
 关键技术革新：效率与拓展的双轮驱动
 
-![img](https://pic.yupi.icu/yuyi/1739504562233-cc8bf60d-2503-4c53-a46d-57300420e641.jpeg)
+![img](/imgs/a1ab017272653d8c.jpg)
 
 
 高效推理引擎：速度的飞跃

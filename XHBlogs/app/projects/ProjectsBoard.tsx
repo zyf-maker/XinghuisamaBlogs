@@ -22,7 +22,7 @@ export default function ProjectsBoard() {
   }, [searchQuery]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-10 py-10 relative z-10">
+    <div className="w-full relative z-10">
 
       {/* 页首 */}
       <div className="mb-10 border-b border-[var(--line)] pb-9">

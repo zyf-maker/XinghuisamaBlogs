@@ -3,15 +3,12 @@ title: "鱼皮的 AI 指南 - 0、开篇"
 summary: "https://www.bilibili.com/video/BV1i9Z8YhEja（共 1 条资讯链接）"
 order: 1
 level: "入门"
-tags: ["AI 指南", "转载", "AI"]
+tags: ["AI 指南"]
 updated: "2025-04-03"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《鱼皮的 AI 指南 - 0、开篇》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 AI 会淘汰程序员么？
 
@@ -27,7 +24,7 @@ AI 会不会淘汰程序员？这是学编程的朋友们非常关注的问题�
 
 假设 AI 是个能独立思考、有手有脚的数码宝贝。它很强，你让它写代码，它也能写，写得还比人更快更好；但是，它要是不听话，程序跑不起来、多写几个 Bug 都是小事，搞不好把你整个电脑都给烧了。而且一旦 AI 搞砸了、黑化了，往你的代码里加点小广告、加点 “老八秘制小汉堡”，谁跟着倒霉啊？还不是咱们这些使用者嘛？毕竟 AI 又不能代替人类去坐牢对吧。
 
-![](https://pic.yupi.icu/1/1743560615302-c65d6082-7385-4d57-8700-58fe410332cb.png)
+![](/imgs/0b1595aa9eb36d2d.png)
 
 而且你想，当年汽车取代马车，虽然车夫被淘汰，但是却催生了司机这个新岗位！
 

@@ -3,15 +3,12 @@ title: "DeepSeek宣布涨价！"
 summary: "DeepSeek宣布涨价！，由程序员鱼皮整理。"
 order: 25
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek宣布涨价！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 近日
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在美区下载榜上**超越了ChatGPT**
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0212%2Fa964c106j00srjqyu005jd200u001nbg00ij010m.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/dfa08e0c12020722.jpg)  
 
 接着就遭受**大规模恶意攻击**
 
@@ -41,7 +38,7 @@ DeepSeek旗下AI服务
 
 在**24小时内经历了多次宕机**
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0212%2Ff0971925j00srjqyu005vd200u000ebg00it008y.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/e514351648518ec6.jpg)  
 
 **紧接着**
 
@@ -59,13 +56,13 @@ DeepSeek旗下AI服务
 
 DeepSeek-V3等模型
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0212%2F549d5134j00srjqyv00i7d200u000r0g00it00gx.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/c3ec0f1b0e3efc15.jpg)  
 
 2月9日，DeepSeek-V3 API服务的45天优惠价格体验期已结束，从2月9日开始将调整为新的价格：**每百万输入tokens 0.5元（缓存命中）/2元（缓存未命中），每百万输出tokens 8元。**
 
 此前DeepSeek在优惠期内API价格为**每百万输入tokens 0.1元（缓存命中）/ 1元（缓存未命中），每百万输出tokens 2元。**
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0212%2F4d78b7ccj00srjqyw001fd200u000k0g00it00cj.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/ba34bfe9292275e0.jpg)  
 
 **阿里云百炼上线全尺寸模型**
 

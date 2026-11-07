@@ -3,15 +3,12 @@ title: "产品变现导读"
 summary: "从想法到收益，让你的产品真正产生价值"
 order: 1
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-09-02"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《产品变现导读》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 

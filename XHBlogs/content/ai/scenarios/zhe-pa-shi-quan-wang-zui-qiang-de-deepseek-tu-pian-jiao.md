@@ -3,15 +3,12 @@ title: "这怕是全网最强的 DeepSeek 图片教程吧，赶紧收藏了！"
 summary: "废话不多说，我们直接进入正题，讲讲如何让 DeepSeek 帮我们通过文字生成图片，及处理图片。"
 order: 20
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《这怕是全网最强的 DeepSeek 图片教程吧，赶紧收藏了！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 废话不多说，我们直接进入正题，讲讲如何让 DeepSeek 帮我们通过文字生成图片，及处理图片。
 
@@ -53,7 +50,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 DeepSeek 给我优化的内容如下：
 
-![img](https://pic.yupi.icu/yuyi/1739502355262-5b74867d-1b6b-415e-9759-381566fc8de9.webp)
+![img](/imgs/d145477bfb5b03ad.webp)
 
 怎么样，还行吧？😁
 
@@ -70,12 +67,12 @@ DeepSeek 给我优化的内容如下：
 如我要求 “将整个回答转为 svg 图片，要求配色简约” 后，DeepSeek 输出如下：
 
 
-![img](https://pic.yupi.icu/yuyi/1739502355232-875d596d-4ff7-48e8-9a98-bf4d24347d24.webp)
+![img](/imgs/023ddfd53b868e11.webp)
 
 点击运行 HTML，弹出页面展示 svg 图片：
 
 
-![img](https://pic.yupi.icu/yuyi/1739502355573-a1df4ec7-f6fd-4373-96e8-6f165eb12a98.webp)
+![img](/imgs/55eb39fd59d58f43.webp)
 
 如果你觉得生成的样式是你满意的样式，则复制整块内容，创建一个新文件，修改后缀名为 svg，再将内容贴进去就行了。
 
@@ -89,7 +86,7 @@ DeepSeek 给我优化的内容如下：
 
 哈哈，先不要觉得难，几句话就能搞定，有 DeepSeek 就不用我们写一行代码啦。
 
-![img](https://pic.yupi.icu/yuyi/1739502355611-90c82343-ca78-4e1f-95ad-2c4ed1f3a34d.webp)
+![img](/imgs/cdf497c9a8fe27f6.webp)
 
 比如我直接提的需求：
 
@@ -104,13 +101,13 @@ DeepSeek 思考几秒后，直接就给我返回了 HTML 代码文件。
 同样的，我们点击“运行 HTML” 按钮就行，比如 DeepSeek 给我返回的样式如下。
 
 
-![img](https://pic.yupi.icu/yuyi/1739502355630-1a4ad725-1820-49af-a29a-11caafbe98da.webp)
+![img](/imgs/865ee7315339f657.webp)
 
 点击“保存图片”就能拿到 png 图片。
 
 怎么样，是不是很简单？
 
-![img](https://pic.yupi.icu/yuyi/1739502355867-2ee2e997-5469-45a1-907f-f68929f2d67a.webp)
+![img](/imgs/bacfec05fb49fa7c.webp)
 
 我这里的卡片样式没有仔细打磨，如果你在小红书小绿书做图文赛道，可以花时间弄一套自己的提示词，直接让 DeepSeek 变成你的出图神器！
 
@@ -124,13 +121,13 @@ DeepSeek 还支持 mermaid 语法，该语法包括流程图、甘特图、饼�
 
 DeepSeek 返回结果如下：
 
-![img](https://pic.yupi.icu/yuyi/1739502355861-4408af84-776a-4489-83c1-bc5357403a6e.webp)
+![img](/imgs/7fd3b6bca232814b.webp)
 
 我们复制 DeepSeek 返回的结果，在浏览器中打开 https://mermaid.live ，将复制的结果粘贴上去就能得到思维导图，然后点击下载 PNG  和 SVG 图片即可。
 
 如下图所示：
 
-![img](https://pic.yupi.icu/yuyi/1739502355955-e143c028-b22e-48d0-906b-96bb76a643bc.webp)
+![img](/imgs/3f3549a7c8070d72.webp)
 
 上面三种方法基本就能满足我们的大部分需求了，如果你都能掌握的话，已经超过 80% 玩 DeepSeek 的人了。
 
@@ -147,7 +144,7 @@ DeepSeek 返回结果如下：
 比如我让 DeepSeek 给我生成一个鲸鱼跃出海面喷水的图片，它返回给我一段提示词。
 
 
-![img](https://pic.yupi.icu/yuyi/1739502355999-13ad7cde-baaa-41d6-b7f8-9c93c799141f.webp)
+![img](/imgs/92075d49d794c853.webp)
 
 拿到这个提示词后，我们再找个 AI 出图工具就能得到图片了。
 
@@ -165,18 +162,18 @@ DeepSeek 返回结果如下：
 
 比如我用即梦生成的图片：
 
-![img](https://pic.yupi.icu/yuyi/1739502356062-4ee81b25-794f-4080-a9a7-5d0ca694401a.webp)
+![img](/imgs/0d6b5bc65a793a29.webp)
 
 
 效果看起来蛮不错吧。
 
-![img](https://pic.yupi.icu/yuyi/1739502356350-b948a45e-891e-4779-b4b4-572c9720dad8.webp)
+![img](/imgs/38c3cc5488e609f6.webp)
 
 另外提一句，DeepSeek 在发布 R1 后，在 1 月 28 号还开源了 Janus Pro 处理多模型，也可以根据文字生成图片。
 
 官方给的效果图如下：
 
-![img](https://pic.yupi.icu/yuyi/1739502356357-3155e5a9-cd26-4c0d-a388-aec7c9f717fa.webp)
+![img](/imgs/e7459e3ef625c787.webp)
 
 看起来还行，不过我感觉出图质量没即梦好。
 
@@ -192,19 +189,19 @@ DeepSeek 返回结果如下：
 
 经过四五次与 DeepSeek 的交流后，得出的效果如下：
 
-![img](https://pic.yupi.icu/yuyi/1739502356384-09071cf6-19f2-4577-9f20-55245b867f10.webp)
+![img](/imgs/a396954f3f310405.webp)
 
 效果还是不错滴。
 
 网上还有人分享了一个修改照片的方法，让 DeepSeek 生成 PS 脚本去修复照片，对比图如下：
 
-![img](https://pic.yupi.icu/yuyi/1739502356403-35a7cf51-2bdc-4a41-93cf-a30af509cd45.webp)
+![img](/imgs/a65d08f954b15e0e.webp)
 
 这个方法我还没测试，估计也是和 DeepSeek 交流多次才实现的。
 
 如果你也想试一下的话，注意 Photoshop 2022 之后的版本才能跑脚本哈。
 
-![img](https://pic.yupi.icu/yuyi/1739502356522-a33b2a21-d470-4bc1-a037-a12fd69e81e6.png)
+![img](/imgs/58b58c439091ea12.png)
 
 好了，关于 DeepSeek 处理图片的内容就分享到这了。
 

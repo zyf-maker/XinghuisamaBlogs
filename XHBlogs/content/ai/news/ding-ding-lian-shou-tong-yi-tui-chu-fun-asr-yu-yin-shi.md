@@ -3,39 +3,35 @@ title: "钉钉联手通义推出Fun-ASR语音识别大模型，可听懂家居�
 summary: "共收录 2 条 AI 行业资讯，如钉钉联手通义推出Fun-ASR语音识别大模型，可听懂家居、畜牧等十大行业黑话；图片等。"
 order: 93
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《钉钉联手通义推出Fun-ASR语音识别大模型，可听懂家居、畜牧等十大行业黑话》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
-本文转载自： [钉钉联手通义推出Fun-ASR语音识别大模型，可听懂家居、畜牧等十大行业黑话](https://mp.weixin.qq.com/s/HfYSXtcDa64t8W3EX-Chcg)
-
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/MqAf4WtOxvV8CELw.png)
+![](/imgs/9a2c49c4f593da4f.png)
 
 8 月 22 日，钉钉、通义实验室语音团队宣布，联手推出新一代语音识别大模型 Fun-ASR，能听懂家装、畜牧等十大行业黑话，并支持企业专属模型定制训练。基于双方深度共建，Fun-ASR 能够准确转写各种语音信号，具备识别多行业术语、不同语言与口音的能力，也能结合上下文信息实现更精准的转录，并支持企业专属模型定制训练，让模型更懂企业场景。
 
 目前，Fun-ASR 已被集成进钉钉的多个功能模块，包括会议字幕与同传、智能纪要、语音助手等，旨在构建一套稳定、高效、易扩展的语音识别基座，尤其适用对企业级语境理解、识别准确率有较高要求的场景。
 
-![图片](https://pic.code-nav.cn/post_picture/1610518142000300034/vMlm1E9QN5Elv1wo.webp)
+![图片](/imgs/b234d676d71ff9d9.webp)
 
 技术层面看，Fun-ASR 语音识别大模型的核心亮点在于三方面：
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/W0RKyeWFTY22RPmy.webp)
+![](/imgs/efaceee6b25cb918.webp)
 
 该模型经过上亿小时音频数据的训练，并结合钉钉多行业客户的真实场景共创，能够准确理解互联网、科技、家装、畜牧、汽车等十多个领域的专业术语。
 
 实测数据显示，Fun-ASR 在保险行业的准确率较以往提升 18%，在家装、畜牧等行业也实现了 15%-20% 的提升。针对生僻词汇，Fun-ASR 还提供企业自定义热词能力，最多可支持 1000+ 热词导入。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/mMwgmz7Ue9x7Tylj.webp)
+![](/imgs/2f5d1fc6adaf2147.webp)
 
 Fun-ASR 可结合企业在钉钉内的已有信息如通讯录、日程、知识库等，进行推理优化，有效缓解大模型造成的幻觉，提供更可靠的转写结果。该能力需经企业授权后方可生效。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/u4wiRE8wXJYU9fB0.webp)
+![](/imgs/34b9f2ab5e24f287.webp)
 
 基于高效的端到端训练架构，该模型可利用企业提供的真实场景语音数据进一步做算法优化，以提升如品牌名、项目代号、产品名、人名等专属词汇的识别准确率。
 

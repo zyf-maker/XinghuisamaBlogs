@@ -7,31 +7,31 @@
    设计令牌 —— 暖纸 / 墨黑 的双生配色，单一朱砂强调色
    ========================================================= */
 :root {
-  --paper: #f6f4f0;
-  --surface: #fffefb;
-  --surface-alt: #efebe4;
-  --ink: #16150f;
-  --ink-soft: #322f27;
-  --muted: #5c5848;
-  --line: rgba(22, 21, 15, 0.1);
-  --line-strong: rgba(22, 21, 15, 0.24);
-  --accent: #a8432b;
-  --accent-soft: rgba(168, 67, 43, 0.1);
-  --accent-ink: #fffefb;
+  --paper: #f7f6f3;
+  --surface: #fffefc;
+  --surface-alt: #efeeea;
+  --ink: #17161a;
+  --ink-soft: #33323a;
+  --muted: #5f5e66;
+  --line: rgba(23, 22, 26, 0.1);
+  --line-strong: rgba(23, 22, 26, 0.22);
+  --accent: #95412c;
+  --accent-soft: rgba(149, 65, 44, 0.09);
+  --accent-ink: #fffefc;
   --ok: #2f6b4f;
   --warn: #8a6318;
   --err: #a33a2e;
   --shadow-hairline: 0 1px 0 rgba(22, 21, 15, 0.04);
 
   /* 液态玻璃：半透明底 + 背景虚化 + 边缘高光 */
-  --glass-bg: rgba(255, 255, 255, 0.3);
-  --glass-bg-strong: rgba(255, 254, 251, 0.66);
+  --glass-bg: rgba(255, 255, 255, 0.42);
+  --glass-bg-strong: rgba(255, 255, 253, 0.76);
   --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-edge: rgba(255, 255, 255, 0.72);
+  --glass-edge: rgba(255, 255, 255, 0.8);
   --glass-spec-top: rgba(255, 255, 255, 0.95);
   --glass-spec-bottom: rgba(255, 255, 255, 0.12);
-  --glass-shadow: 0 14px 32px -24px rgba(22, 21, 15, 0.45), 0 1px 3px -2px rgba(22, 21, 15, 0.2);
-  --glass-blur: 24px;
+  --glass-shadow: 0 12px 28px -22px rgba(23, 22, 26, 0.4), 0 1px 3px -2px rgba(23, 22, 26, 0.14);
+  --glass-blur: 20px;
 
   --glass-tint: rgba(120, 160, 200, 0.06);
   --font-serif-cn: var(--font-serif), "Source Han Serif SC", "Noto Serif SC", "Songti SC", serif;
@@ -129,6 +129,10 @@
   ::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 0; }
   ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
   * { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+
+  /* 侧栏用的静音滚动条：只在不滚动时也不抢视线 */
+  .scroll-quiet { scrollbar-width: none; -ms-overflow-style: none; }
+  .scroll-quiet::-webkit-scrollbar { width: 0; height: 0; }
 }
 
 /* 3. 可复用组件层 */

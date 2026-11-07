@@ -1,3 +1,4 @@
+import { asset } from "../lib/base";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
@@ -273,7 +274,7 @@ export default function Home() {
               <div className="glass glass-sheen p-5">
                 <p className="eyebrow">Profile</p>
                 <div className="mt-3 flex items-center gap-3">
-                  <img src={siteConfig.avatarUrl} alt={siteConfig.authorName} className="h-12 w-12 rounded-full border border-[var(--line)]" />
+                  <img src={asset(siteConfig.avatarUrl)} alt={siteConfig.authorName} className="h-12 w-12 rounded-full border border-[var(--line)]" />
                   <div>
                     <p className="font-serif text-[15px] font-bold text-[var(--ink)]">{siteConfig.authorName}</p>
                     <p className="mt-0.5 text-[11.5px] text-[var(--muted)]">{siteConfig.authorTitle}</p>

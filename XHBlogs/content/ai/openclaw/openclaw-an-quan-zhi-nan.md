@@ -3,15 +3,12 @@ title: "OpenClaw 安全指南"
 summary: "玩 OpenClaw 的安全红线和避坑指南"
 order: 15
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-21"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 安全指南》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。这是本教程最重要的一篇。OpenClaw 是一个能操作你电脑的 AI 工具，工信部和国家互联网应急中心都发过安全预警，翻车案例已经一堆了。在享受 AI 带来便利的同时，安全意识一定要有。
 

@@ -3,15 +3,12 @@ title: "产品盈利模式设计"
 summary: "为爱发电不现实，让产品产生价值"
 order: 8
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-13"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《产品盈利模式设计》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。今天要和大家分享的主题是 **盈利模式**，主要是希望能够给站长、软件开发者、内容创作者、团队领导者一些变现上的启发。
 
@@ -84,7 +81,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 这只是举个例子，事实上我们还没有通过这种方式盈利
 
-![](https://pic.yupi.icu/1/image-20230717125736202.png)
+![](/imgs/e494ee18a797c54f.png)
 
 如果我们平台流量本身比较大，有自己的客户，那么就不用走广告商平台，直接跟客户交流具体的广告收费模式利润会更高。比如根据网站的日均访问数 * 天数 * 广告位的价值来收费。
 

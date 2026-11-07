@@ -3,15 +3,12 @@ title: "DeepSeek-R1的训练流程强化学习（RL）阶段采用了GRPO算法"
 summary: "DeepSeek-R1的训练流程确实包含多个阶段，其中强化学习（RL）阶段采用了GRPO（Group Relative Policy Optimization）算法。具体流程如下："
 order: 109
 level: "进阶"
-tags: ["技术解析", "转载", "AI"]
+tags: ["技术解析"]
 updated: "2025-03-28"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek-R1的训练流程强化学习（RL）阶段采用了GRPO算法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 DeepSeek-R1的训练流程确实包含多个阶段，其中强化学习（RL）阶段采用了GRPO（Group Relative Policy Optimization）算法。具体流程如下：
 
@@ -25,7 +22,7 @@ DeepSeek-R1的训练流程确实包含多个阶段，其中强化学习（RL）�
 - **组内奖励归一化**：对每个输入提示生成多个输出（组采样），计算组内相对奖励作为优势值，无需依赖价值网络。
 - **动态梯度正则化**：通过KL散度约束策略更新，确保训练稳定性。
 
-![img](https://pic.yupi.icu/yuyi/1739511843576-e2a4ab9b-5e87-42b8-8e6f-6fe24a11f5cf.jpeg)
+![img](/imgs/ce5d106a603ce141.jpg)
 
 
 - **多阶段RL迭代**：例如，在推理导向的RL中，模型专注于数学、编程等结构化任务，通过基于规则的奖励（如答案正确性、格式规范）优化决策过程；在通用对齐RL中，结合人类偏好奖励提升输出的安全性和实用性。
@@ -70,7 +67,7 @@ GRPO算法的实现可以分为以下几个关键步骤：
 
 - **更新规则**：GRPO采用相对优势方法，更新策略参数以增加选择更好候选输出的概率，同时减少选择较差候选输出的概率。更新公式如下：
 
-![img](https://pic.yupi.icu/yuyi/1739511843475-45884b37-76bb-4e93-bd55-2c5740b68429.jpeg)
+![img](/imgs/35cfb8cebb990b35.jpg)
 
 
 其中，ri

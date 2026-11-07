@@ -3,19 +3,15 @@ title: "上桌！办公小浣熊 · 桌面版全新上线！"
 summary: "共收录 2 条 AI 行业资讯，如上桌！办公小浣熊 · 桌面版全新上线！；生成的二维码等。"
 order: 78
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《上桌！办公小浣熊 · 桌面版全新上线！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
-本文转载自： [上桌！办公小浣熊 · 桌面版全新上线！](https://mp.weixin.qq.com/s/FkCmqj0A5ShDaM750PcxrQ)
-
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/jYwpd3Z5HC8G7RwZ.webp)
+![](/imgs/abee778dbc13c128.webp)
 
 **办公小浣熊 · 桌面版全新上线！**
 
@@ -41,7 +37,7 @@ source: "https://github.com/liyupi/ai-guide"
 Office Raccoon
 
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/b2JDaOo1pCr7JTXB.webp)
+![](/imgs/ff1b5e6f3f8a5763.webp)
 
 
 ****02** 下载和使用** 
@@ -55,12 +51,12 @@ Office Raccoon
 Office Raccoon
 
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/rvarkorQTnGIDfQy.webp)
+![](/imgs/8ae66cd629042404.webp)
 
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/RK3rFfgicPsgP1hp.webp)
+![](/imgs/c4ea615446b682b5.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/jWkBCc4oL4vbyKGP.webp)
+![](/imgs/b0e57a3e4c16673d.webp)
 
 
 Mac 和 Windows 全平台支持！
@@ -82,7 +78,7 @@ Mac 和 Windows 全平台支持！
 「小浣熊家族」用户数突破150 万，日调用量达上百万次，每日处理 Token 数超过35亿，触达千万级用户。“办公小浣熊”被称为国内增速最快的AI 办公工具；“代码小浣熊”获沙利文评选为国内第一AI 代码助手。
 
 
-![生成的二维码](https://pic.code-nav.cn/post_picture/1610518142000300034/XQRkKLpiiHBz1G77.webp)
+![生成的二维码](/imgs/045b2f390a158d5a.webp)
 
 
 扫描上方二维码，免费注册领取你的「小浣熊」。点击**阅读原文**，可获取桌面端下载链接。

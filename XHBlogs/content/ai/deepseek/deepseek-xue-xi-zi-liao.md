@@ -3,15 +3,12 @@ title: "DeepSeek 学习资料"
 summary: "清华大学DeepSeek：从入门到精通.pdf（共 1 条资讯链接）"
 order: 203
 level: "入门"
-tags: ["资源汇总", "转载", "AI"]
+tags: ["资源汇总"]
 updated: "2025-03-28"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 学习资料》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 教程资料
 
@@ -60,7 +57,7 @@ source: "https://github.com/liyupi/ai-guide"
 - **链接**：[DeepSeek模型架构演进 - 技术分析思维导图 | MyLens AI](https://mylens.ai/space/carolinehuang365s-workspace-ewipdy/deepseek模型架构的技术演进-hp5rym?story=deepseek模型架构的技术演进-hp5rym)
 - **总结**：
   这篇文章通过思维导图的形式，分析了 DeepSeek 模型架构的演进过程，重点介绍了从第一代模型到第三代模型的技术特点和进展。
-  作者详细阐述了每一代模型的架构设计和应用场景。![img](https://pic.yupi.icu/yuyi/1739419421353-11296d3f-7456-449b-83b5-6869c2c7b86c.png)
+  作者详细阐述了每一代模型的架构设计和应用场景。![img](/imgs/7915103c09fd3904.png)
 
 ### DeepSeek-V3 技术报告
 

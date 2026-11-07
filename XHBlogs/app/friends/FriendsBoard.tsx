@@ -35,7 +35,7 @@ export default function FriendsBoard() {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-3 sm:px-10 py-6 md:py-10 relative z-10 scroll-smooth mt-20 md:mt-10">
+    <div className="w-full relative z-10 scroll-smooth">
 
       {/* 页首 */}
       <div className="mb-8 md:mb-10 border-b border-[var(--line)] pb-8 md:pb-9">

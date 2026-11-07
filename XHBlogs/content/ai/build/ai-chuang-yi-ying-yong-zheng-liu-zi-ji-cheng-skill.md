@@ -3,15 +3,12 @@ title: "AI 创意应用 - 蒸馏自己成 Skill 项目"
 summary: "本项目是一个有趣的 AI 创意应用，把自己的知识、经验、思维模式「蒸馏」成一个 AI 技能包（Skill），让 AI 以你的风格思考和回答问题。全程不需要写代码，有手就能做。"
 order: 14
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-09-11"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 创意应用 - 蒸馏自己成 Skill 项目》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个有趣的 AI 创意应用，把自己的知识、经验、思维模式「蒸馏」成一个 AI 技能包（Skill），让 AI 以你的风格思考和回答问题。全程不需要写代码，有手就能做。
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 同事.skill、前任.skill、女娲.skill、老板.skill、自己.skill…… 各种奇奇怪怪的蒸馏项目层出不穷，大家都在把身边的人「封装」成 AI 技能包。
 
-![](https://pic.yupi.icu/1/image-20260409163428725.png)
+![](/imgs/291c79d440d810c1.png)
 
 有人把离职同事蒸馏了，让 AI 继续干他的活；有人把前任蒸馏了，跟 AI 版的前任聊天回忆往事；甚至还有人搞了个「反蒸馏.skill」，专门防止自己被蒸馏。
 
@@ -49,7 +46,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 开源指路：https://github.com/liyupi/yupi-skill
 
-![](https://pic.yupi.icu/1/image-20260409175224601.png)
+![](/imgs/2569a26f27a1defe.png)
 
 下面带大家看看我是怎么一步步把自己蒸馏成 Skill 的，你也可以照着这个流程蒸馏自己或者身边的人（要合法哦），整个过程不需要写代码，有手就行。
 
@@ -62,7 +59,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 建议用能力最强、上下文较长的大模型，蒸馏效果会更好。我这里用的是 Claude Opus。
 
-![](https://pic.yupi.icu/1/image-20260409142017010.png)
+![](/imgs/ebabb8b69684517c.png)
 
 
 ## 第一步：收集原料
@@ -86,7 +83,7 @@ AI 不了解你，它需要「原料」才能提炼出你的思维方式、表�
 
 把这些素材文件丢进项目的 `references/` 文件夹就行，什么格式都行，比如文章、截图、PDF、聊天记录导出、备忘录…… 不用分类，先全丢进去。
 
-![](https://pic.yupi.icu/1/image-20260409144409055.png)
+![](/imgs/b257c549c1cbc84b.png)
 
 
 ### 联网采集公开素材
@@ -137,11 +134,11 @@ AI 不了解你，它需要「原料」才能提炼出你的思维方式、表�
 - 个人经历和编程学习路线：https://github.com/liyupi/codefather
 ```
 
-![](https://pic.yupi.icu/1/image-20260409153025082.png)
+![](/imgs/75173739b70fd23f.png)
 
 AI 完成了素材收集，并且分类创建了多个文件：
 
-![](https://pic.yupi.icu/1/image-20260409160036931.png)
+![](/imgs/fa238e5414117f39.png)
 
 如果 AI 说缺少哪方面的素材，你可以再手动补充。
 
@@ -172,17 +169,17 @@ references/ 里的素材已经整理好了。
 每个结论标注依据来源（来自哪个文件/链接），信息不足的维度直接说明。
 ```
 
-![](https://pic.yupi.icu/1/image-20260409160843491.png)
+![](/imgs/22c59c1441d98e38.png)
 
 AI 给出了详细的人物分析报告。比如分析出了我的表达风格：结论先行 → 分点展开 → 一句话总结；自黑式幽默；短段落 + 大量留白；咨询时直言不讳但收尾温暖。
 
-![](https://pic.yupi.icu/1/image-20260409161228612.png)
+![](/imgs/43361503362da475.png)
 
 如果你想让蒸馏效果更好，可以看看 AI 给出的建议。比如 AI 让我补充 B 站视频口语风格转录和学员评价原文，于是我又给它喂了一些视频稿。
 
 AI 给人物分析报告补充了更多我的表达风格：
 
-![](https://pic.yupi.icu/1/image-20260409162017577.png)
+![](/imgs/7800e692239f1b83.png)
 
 
 ## 第三步：AI 追问，挖掘深层思维
@@ -209,11 +206,11 @@ AI 给人物分析报告补充了更多我的表达风格：
 
 AI 给出了我的核心心智模型，黑话直接拉满，我差点儿没看懂：
 
-![](https://pic.yupi.icu/1/image-20260409163556431.png)
+![](/imgs/7876ba943769d608.png)
 
 然后 AI 给了我 12 个追问。这些问题不是通用模板，而是根据我提供的素材定制的，每个问题都很犀利：
 
-![](https://pic.yupi.icu/1/image-20260409163641942.png)
+![](/imgs/428fbf59aa11a642.png)
 
 用自己平时说话的方式简单回答就行。比如第一题：
 
@@ -228,11 +225,11 @@ AI 给出了我的核心心智模型，黑话直接拉满，我差点儿没看�
 @你的回答
 ```
 
-![](https://pic.yupi.icu/1/image-20260409165326778.png)
+![](/imgs/2731ab9ed205600d.png)
 
 AI 通过我的回答，更了解我了。心智模型做了 6 处关键修正和深化：
 
-![](https://pic.yupi.icu/1/image-20260409165739285.png)
+![](/imgs/ef078ddbff4978b9.png)
 
 
 ## 第四步：补充能力（可选）
@@ -269,7 +266,7 @@ AI 通过我的回答，更了解我了。心智模型做了 6 处关键修正�
 
 发送提示词给 AI 后，AI 确认理解了任务：
 
-![](https://pic.yupi.icu/1/image-20260409170756966.png)
+![](/imgs/e11d8711d80981a9.png)
 
 
 ## 第五步：开始蒸馏
@@ -284,7 +281,7 @@ AI 通过我的回答，更了解我了。心智模型做了 6 处关键修正�
 npx skills add https://github.com/anthropics/skills --skill skill-creator
 ```
 
-![](https://pic.yupi.icu/1/image-20260409180936318.png)
+![](/imgs/e723be900939d5bc.png)
 
 安装好之后，在提示词中声明使用 skill-creator（或者直接用斜杠命令 `/skill-creator`）：
 
@@ -299,11 +296,11 @@ npx skills add https://github.com/anthropics/skills --skill skill-creator
 生成完成后，自己想 3 个用户最可能问的问题，用 Skill 回答并评估是否像我。
 ```
 
-![](https://pic.yupi.icu/1/image-20260409171938570.png)
+![](/imgs/58754a0ad3123ba3.png)
 
 AI 完成了整个 Skill 的开发和测试。生成的 `yupi-skill` 目录就是可以直接使用的技能包：
 
-![](https://pic.yupi.icu/1/image-20260409172607113.png)
+![](/imgs/9171882753225139.png)
 
 大功告成！
 
@@ -320,7 +317,7 @@ AI 完成了整个 Skill 的开发和测试。生成的 `yupi-skill` 目录就�
 
 AI 给出的回复非常务实，不仅推荐了自学方法，还自动去我的编程导航网站查了信息，推荐了 AI 编程零基础教程：
 
-![](https://pic.yupi.icu/1/image-20260409173135021.png)
+![](/imgs/f08bed49e086ecd0.png)
 
 再问一个和鱼皮经历有关的问题：
 
@@ -330,7 +327,7 @@ AI 给出的回复非常务实，不仅推荐了自学方法，还自动去我�
 
 AI 的回答挺符合我的风格，一个字，干就完了！
 
-![](https://pic.yupi.icu/1/image-20260409173902297.png)
+![](/imgs/59cecc83073857a0.png)
 
 再问一个面试相关的问题：
 
@@ -340,7 +337,7 @@ AI 的回答挺符合我的风格，一个字，干就完了！
 
 AI 不仅给出了时间安排和备战建议，还自动推荐了鱼皮的教程和面试鸭上的 AI 题库：
 
-![](https://pic.yupi.icu/1/image-20260409174132048.png)
+![](/imgs/187dd375a6f4e5ea.png)
 
 效果还不错，至少说话风格和推荐的资源都挺像我的~
 
@@ -353,7 +350,7 @@ AI 不仅给出了时间安排和备战建议，还自动推荐了鱼皮的教�
 
 但保险起见，还是要确认一下生成的 Skill 不依赖制作过程中的文档。当然，在不涉及隐私暴露的前提下，如果为了效果更好、回答更准确，你可以按需保留一部分参考文件。
 
-![](https://pic.yupi.icu/1/image-20260409172930076.png)
+![](/imgs/48c04ac08ae9cf23.png)
 
 然后让 AI 帮你生成一份有吸引力的 README.md 项目介绍文档：
 
@@ -365,13 +362,13 @@ AI 不仅给出了时间安排和备战建议，还自动推荐了鱼皮的教�
 然后把这个目录开源到 https://github.com/liyupi/yupi-skill
 ```
 
-![](https://pic.yupi.icu/1/image-20260409174544926.png)
+![](/imgs/fe2a5c128b82b0af.png)
 
 好了，这下大家都可以使用蒸馏后的鱼皮了。
 
 > 开源指路：https://github.com/liyupi/yupi-skill
 
-![](https://pic.yupi.icu/1/image-20260409175224601.png)
+![](/imgs/2569a26f27a1defe.png)
 
 不过说实话，蒸馏的过程中肯定还是会丢失一些东西，数字分身再像也只是个「影子」，还是没有真人鱼皮有温度的。
 

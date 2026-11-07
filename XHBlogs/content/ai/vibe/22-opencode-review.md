@@ -10,38 +10,35 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenCode：开源免费的 AI 命令行工具实测》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 Claude Code 一直是大家公认的 AI 编程命令行工具 Top 1，在 AI 和程序员圈子里几乎是神一般的存在。
 
-![](https://pic.yupi.icu/1/happy-new-year-claude-coders-v0-o2quvbl99lag1.png)
+![](/imgs/052bf3d960b81a59.png)
 
 但是，这狗玩意儿对中国用户可不太友好……
 
 首先，如果你想要使用 Claude Code，就必须要有特殊的网络 + 官方账号，否则就会看到一片红。
 
-![](https://pic.yupi.icu/1/cannotuseclaude.png)
+![](/imgs/56bb1039a059e7a2.png)
 
 此外，2025 年 9 月，Anthropic 公司不知道抽什么风，突然宣布 **全面禁止中国控股企业使用 Claude 服务**，不仅包括中国大陆企业，连海外中资控股超过 50% 的公司都在封禁范围内！
 
 甚至 Anthropic 还特别点名了中国，把咱们称为 **敌对国家**！
 
-![](https://pic.yupi.icu/1/image-20250905164631315.png)
+![](/imgs/0b3e40ca5f77cc50.png)
 
 天下苦 Claude Code 久矣！
 
 但是最近我身边很多程序员朋友开始从 Claude Code 转向了另一个工具，正是突然大火的开源项目 OpenCode。
 
-![](https://pic.yupi.icu/1/image-20260107174223010.png)
+![](/imgs/17f979c6d4d079e4.png)
 
 这玩意只用了半年的时间，就在 GitHub 上涨到了 5.2w Star！
 
 这是个什么概念？比我在 GitHub 上开源的几十个项目的总和加起来都多！慕了慕了……
 
-![](https://pic.yupi.icu/1/opencodestarhistory.png)
+![](/imgs/ac241e786ed8cabf.png)
 
 OpenCode 到底是什么？凭什么这么火？
 
@@ -51,7 +48,7 @@ OpenCode 到底是什么？凭什么这么火？
 
 [OpenCode](https://opencode.ai/) 是一款 100% 开源的 AI 编程命令行工具，可以在 **终端、IDE、甚至桌面应用** 中使用。
 
-![](https://pic.yupi.icu/1/screenshot.png)
+![](/imgs/8e44828262aeb0cc.png)
 
 你可能会问：这玩意儿跟 Claude Code 有啥区别？
 
@@ -67,7 +64,7 @@ OpenCode 到底是什么？凭什么这么火？
 
 直接进入 OpenCode 官网，复制一行命令：
 
-![](https://pic.yupi.icu/1/image-20260107174407894.png)
+![](/imgs/bb428e87350da4a5.png)
 
 命令如下：
 
@@ -79,11 +76,11 @@ curl -fsSL https://opencode.ai/install | bash
 
 安装完成之后，输入 `opencode` 进入程序，接下来你就可以愉快地使用了~
 
-![](https://pic.yupi.icu/1/image-20260107174646918.png)
+![](/imgs/7da26d8a13530b1f.png)
 
 先来个经典的 Hello World，AI 成功给出了回复。
 
-![](https://pic.yupi.icu/1/image-20260107174755331.png)
+![](/imgs/7f67f0c65e77d5d5.png)
 
 恭喜，到这里你已经掌握了 OpenCode 的 70% 了。
 
@@ -95,31 +92,31 @@ OpenCode 支持 2 种模式，默认是 Build 模式，用来构建应用、生�
 
 按一下 Tab 键，就可以切换到 Plan 模式，用于生成执行计划。
 
-![](https://pic.yupi.icu/1/image-20260107174952823.png)
+![](/imgs/1d123d1bfbe3ac29.png)
 
 按一下 `Ctrl + p` 键，可以打开命令面板，里面有几十个内置命令。我们先来试着切换一下大模型：
 
-![](https://pic.yupi.icu/1/image-20260107175255527.png)
+![](/imgs/d6731f94ad3bed04.png)
 
 默认提供了 4 个免费模型：
 
-![](https://pic.yupi.icu/1/image-20260107175409282.png)
+![](/imgs/863d4d69a2cb15cb.png)
 
 好家伙，连智谱当时最新的 GLM-4.7 竟然也免费？那我的 Coding Plan 套餐不是白开了？
 
-![](https://pic.yupi.icu/1/image-20260107175513490.png)
+![](/imgs/cc4abcb7e9970e10.png)
 
 除了免费的模型外，OpenCode 支持超多的 AI 模型，你可以自由选择：
 
-![](https://pic.yupi.icu/1/image-20260107175614359.png)
+![](/imgs/b52630f69ee84445.png)
 
 选中模型后，配置自己的 API Key 就好了：
 
-![](https://pic.yupi.icu/1/image-20260107175657296.png)
+![](/imgs/a5697c79d6124d08.png)
 
 如果你之前有 **Claude Pro/Max 订阅账号**，可以直接登录使用，无缝从 Claude Code 迁移过来。
 
-![](https://pic.yupi.icu/1/image-20260107175745963.png)
+![](/imgs/1fe431b75d7f2fb6.png)
 
 
 
@@ -127,15 +124,15 @@ OpenCode 支持 2 种模式，默认是 Build 模式，用来构建应用、生�
 
 OpenCode 支持斜杠命令，输入 `/`，能看到很多操作，比如查看模型列表、查看 Agents、管理 MCP、切换主题等等：
 
-![](https://pic.yupi.icu/1/image-20260107175926346.png)
+![](/imgs/04b3e256238758c1.png)
 
 支持几十个不同的主题，颜值都挺高的，从这点也能看出来 OpenCode 很注重用户的体验：
 
-![](https://pic.yupi.icu/1/image-20260107180108430.png)
+![](/imgs/f525d46a549b3041.png)
 
 输入 `@` 可以快速关联目录文件，给 AI 添加上下文： 
 
-![](https://pic.yupi.icu/1/image-20260107182710150.png)
+![](/imgs/1b847964b683a36e.png)
 
 
 
@@ -145,17 +142,17 @@ OpenCode 支持斜杠命令，输入 `/`，能看到很多操作，比如查看�
 
 你可以点击某条消息，然后会弹出一个消息动作框，你可以撤回消息和 AI 的回复，也可以复制、或者基于当前对话新开一个对话框。
 
-![](https://pic.yupi.icu/1/image-20260107180609525.png)
+![](/imgs/900aa413ab852f96.png)
 
 你可以通过鼠标上下滚动来切换选单，并且可以直接通过鼠标点击进入下一步。
 
 你可以按 `Ctrl + p` 键打开命令面板，然后开启侧边栏：
 
-![](https://pic.yupi.icu/1/image-20260107181100523.png)
+![](/imgs/1f332825ec77cfe3.png)
 
 然后界面就变成了这样，你管这叫命令行？
 
-![](https://pic.yupi.icu/1/image-20260107181218259.png)
+![](/imgs/8b0fafa9c5225388.png)
 
 
 
@@ -173,7 +170,7 @@ OpenCode 支持 LSP，意味着 AI 能真正理解你的代码结构，而不是
 
 比如我让 AI 介绍我的 AI 答题平台项目中最有价值的代码，LSP 就派上用场了。它能帮 AI 快速定位某段代码在哪里被调用、引用了哪些变量，而不是让 AI 傻傻地全局搜索文本。
 
-![](https://pic.yupi.icu/1/image-20260107181807464.png)
+![](/imgs/8d31bd8d48dbc4a7.png)
 
 
 
@@ -181,11 +178,11 @@ OpenCode 支持 LSP，意味着 AI 能真正理解你的代码结构，而不是
 
 如果你不小心关闭了 OpenCode，不用担心，可以打开命令面板，选中 “Switch session” 切换会话：
 
-![](https://pic.yupi.icu/1/image-20260107183241477.png)
+![](/imgs/e5ec8b30e870a9a3.png)
 
 就能回到之前的聊天了：
 
-![](https://pic.yupi.icu/1/image-20260107183320692.png)
+![](/imgs/2d77a8c3cff6fd8e.png)
 
 
 
@@ -197,15 +194,15 @@ OpenCode 支持 LSP，意味着 AI 能真正理解你的代码结构，而不是
 
 > 指路：https://opencode.ai/download
 
-![](https://pic.yupi.icu/1/image-20260107182151987.png)
+![](/imgs/747fc52aa11bd83e.png)
 
 不过当我怀着满腔热血安装并打开它时，竟然报错了！
 
-![](https://pic.yupi.icu/1/image-20260107183123854.png)
+![](/imgs/9fe31e58fcbfd4e6.png)
 
 经过一番排查，发现原来是我开了代理，关闭之后就正常运行了。
 
-![](https://pic.yupi.icu/1/image-20260107183605119.png)
+![](/imgs/7c58d42a398823f3.png)
 
 但是用惯了 Cursor，这个交互体验真的有点敷衍了，不推荐大家使用。
 
@@ -236,7 +233,7 @@ Skills 是一种给 AI 准备的能力扩展包。你可以把它理解成给新
 
 > 项目地址：https://github.com/code-yeongyu/oh-my-opencode
 
-![](https://pic.yupi.icu/1/image-20260107184457429.png)
+![](/imgs/9186213eaafc41b0.png)
 
 这个插件有多牛？看看用户评价：
 
@@ -261,7 +258,7 @@ Oh My OpenCode 的核心功能是引入了一个叫 **Sisyphus** 的智能体编
 
 简单来说，Sisyphus 就是一个 AI 监工，它能同时指挥多个 AI 模型干活，还会盯着它们把任务做完。
 
-![](https://pic.yupi.icu/1/omo.png)
+![](/imgs/18684b7136fb3794.png)
 
 虽然官方说用一行命令就能完成安装，但我建议你先安装 bun，再执行 npx 来安装，否则可能会报错。
 
@@ -272,7 +269,7 @@ npx oh-my-opencode install
 
 安装过程中，可能会问你有没有某些模型的订阅，我反正啥都没有，一直选 "No" 就行了：
 
-![](https://pic.yupi.icu/1/image-20260107185251337.png)
+![](/imgs/cbdeae2d4bc25184.png)
 
 安装完成后，再次进入 OpenCode，之后只需要在你的提示词里加上 `ultrawork`（或 `ulw`）这个开挂咒语，就能激活全部增强功能。自动调度多个 AI 模型同时工作、深度探索代码库、锲而不舍地执行。
 
@@ -284,7 +281,7 @@ npx oh-my-opencode install
 
 最近蚂蚁集团的 `蚂蚁阿福` AI 健康助手火了，地铁口、公司楼下的电视广告中随处可见何炅老师的身影。
 
-![](https://pic.yupi.icu/1/mayiafuad.jpeg)
+![](/imgs/a607932009343b51.jpg)
 
 虽然我还没有用过它，但是听说它可以通过拍皮肤、拍报告提供 AI 初诊，还能智能回答医学科普和治疗建议。
 
@@ -292,19 +289,19 @@ npx oh-my-opencode install
 
 前有蚂蚁阿福，今有鱼皮阿坤。
 
-![](https://pic.yupi.icu/1/image-20260107194117758.png)
+![](/imgs/1ac0cffeb0b745bc.png)
 
 先分析一下，我们要做的是包含前端 + 后端的全栈项目，而且后端还需要调用 AI 大模型来生成内容。
 
 这里我选择用 **Vercel AI Gateway** 来实现 AI 能力，这是一款简单易用的 AI 网关。
 
-![](https://pic.yupi.icu/1/1760687990497-90720fbb-0df6-4ede-87b8-64b8702994e9-20251028181254840.png)
+![](/imgs/57e0deebf1803eb3.png)
 
 什么是 AI 网关？
 
 简单来说，它就像是火车站的检票口，你的应用发来的请求先经过网关，网关帮你处理认证、限流、监控等一系列复杂的操作，然后把请求转发给 AI 大模型。
 
-![](https://pic.yupi.icu/1/1761645642401-683e786e-3e06-420a-abce-cd43f7bfa901.png)
+![](/imgs/f6110d09e9f42095.png)
 
 而且 Vercel AI Gateway 支持对接 500 多个大模型，还有免费额度，非常适合学习和小项目。
 
@@ -314,7 +311,7 @@ npx oh-my-opencode install
 
 1）首先你需要注册登录 Vercel，然后在控制台创建 API Key，注意不要泄露哦：
 
-![](https://pic.yupi.icu/1/1760688078133-7b91b6f3-2fc4-4bb4-b2c1-d517699f0968-20251028181254879.png)
+![](/imgs/f6245dbd2c341b6c.png)
 
 
 
@@ -334,17 +331,17 @@ npx oh-my-opencode install
 
 点击发送后，OpenCode 会自动使用网页抓取工具读取 Vercel AI Gateway 的官方文档，学习最新的用法：
 
-![](https://pic.yupi.icu/1/image-20260107190151933.png)
+![](/imgs/579808199376d493.png)
 
 大概 5 分钟左右，AI 就完成了全部代码的生成，并且自动安装了依赖。
 
-![](https://pic.yupi.icu/1/image-20260107190629349.png)
+![](/imgs/9025778eac69a9da.png)
 
 
 
 3）我直接把之前拿到的 Vercel 的 API Key 提供给 AI，让它帮我启动项目：
 
-![](https://pic.yupi.icu/1/image-20260107190751628.png)
+![](/imgs/151034c4e4587ccc.png)
 
 
 
@@ -352,27 +349,27 @@ npx oh-my-opencode install
 
 结果报错了！无法调用 AI。
 
-![](https://pic.yupi.icu/1/image-20260107191838608.png)
+![](/imgs/a8e8b3b803f0757a.png)
 
 
 
 可能是 AI 对 Vercel AI Gateway 文档的理解不到位，导致写错了调用 AI 的代码。于是我再次把文档输入给 AI，让它再战一次：
 
-![](https://pic.yupi.icu/1/image-20260107191719979.png)
+![](/imgs/9668b90f5e044c93.png)
 
 结果又报错了，明明我已经给 AI 提供了 API Key，系统还是报错 “缺少 API Key”。
 
 于是我又调了一次 AI，告诉它 “这个 key 我之前已经提供给你了”。
 
-![](https://pic.yupi.icu/1/image-20260107192718301.png)
+![](/imgs/9b59cc4dfbdb9a45.png)
 
 经过大概 5 次左右的报错和修复，仍然不能正常使用！我麻了啊……
 
-![](https://pic.yupi.icu/1/image-20260107193542108.png)
+![](/imgs/7e93022bab2e23b8.png)
 
 于是，我有一个鬼点子：既然要跟 Claude Code 比较，那我不妨尝试用 Claude Code 修复这个 OpenCode 解决不了的问题？
 
-![](https://pic.yupi.icu/1/image-20260107193829543.png)
+![](/imgs/3fba265d60902119.png)
 
 试试看！输入提示词：
 
@@ -382,11 +379,11 @@ npx oh-my-opencode install
 帮我修复后端，确保项目能正常运行
 ```
 
-![](https://pic.yupi.icu/1/image-20260107193701784.png)
+![](/imgs/4b500247164363fb.png)
 
 Claude Code 成功修复了问题，终于能够正常使用了：
 
-![](https://pic.yupi.icu/1/image-20260107194915666.png)
+![](/imgs/44a5b174da778fd8.png)
 
 💡 注意，如果你遇到了调用 AI 网络超时的问题，可以让 AI 把调用的 baseURL 改为 https://ai-gateway.vercel.sh/v1
 
@@ -396,29 +393,29 @@ Claude Code 成功修复了问题，终于能够正常使用了：
 
 不行，大家把 OpenCode 吹得这么牛批，我得再试试，一定是我用法的问题！
 
-![](https://pic.yupi.icu/1/image-20260107195050357.png)
+![](/imgs/91879f04dce0db2e.png)
 
 ### Ultrawork 模式
 
 还记得前面提到的 `ultrawork`（或 `ulw`）开挂咒语么？搞起！
 
-![](https://pic.yupi.icu/1/image-20260107195327425.png)
+![](/imgs/c91a6664ad4677f3.png)
 
 进入战斗状态了：
 
-![](https://pic.yupi.icu/1/image-20260107195346575.png)
+![](/imgs/b25d9fd5005b5db7.png)
 
 可以查看子代理运行详情，先按 `Ctrl + x` 键，再按方向键来查看不同的代理。
 
 而且当后台任务完成时，会有一个提示。可以看到 “研究 Vercel AI SDK 对话模式” 的任务已经完成。
 
-![](https://pic.yupi.icu/1/image-20260107195605772.png)
+![](/imgs/96aca1f7b366b2c7.png)
 
 不过你猜怎么着？我等了将近 10 分钟，任务还没结束……
 
 看看这个任务列表，需要这么复杂吗？连数据库都给我干出来了？
 
-![=](https://pic.yupi.icu/1/image-20260107200237753.png)
+![=](/imgs/ae746ec36d4c2467.png)
 
 我已经没耐心等下去了，毁灭吧！
 
@@ -434,7 +431,7 @@ Claude Code 成功修复了问题，终于能够正常使用了：
 
 如果只是追求前端使用方便，那我为什么不用 Cursor？
 
-![](https://pic.yupi.icu/1/image-20260107200720088.png)
+![](/imgs/bcc96db6388555f1.png)
 
 不过 OpenCode 的成功说明了一个道理：**谁离用户近、谁能发现痛点，谁就有超越巨头的机会。**
 

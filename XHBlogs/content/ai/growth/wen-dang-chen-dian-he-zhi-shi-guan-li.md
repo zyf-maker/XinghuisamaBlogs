@@ -3,15 +3,12 @@ title: "文档沉淀和知识管理"
 summary: "记录下来，才能走得更远"
 order: 4
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-13"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《文档沉淀和知识管理》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。
 
@@ -277,11 +274,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 随着文档或知识库越来越多，必然就会给大家的查找造成负担。所以我在 **最开始** 就给所有团队内部的知识库都按主题做了分组，如下图：
 
-![](https://pic.yupi.icu/1/image-20230705134114445.png)
+![](/imgs/666b09e0ff47d29b.png)
 
 每个知识库下的文档，也建立了相应的分组：
 
-![](https://pic.yupi.icu/1/image-20230705134325495.png)
+![](/imgs/4642798051d31890.png)
 
 当然，分组这个操作也是需要持续做的。如果刚开始没有办法预估会有哪些分组，那就等后面需要分组的时候，即时新建就好。
 

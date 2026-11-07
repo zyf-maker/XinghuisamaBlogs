@@ -3,15 +3,12 @@ title: "有史以来最大力度！苹果进军医疗，计划明年推出 AI �
 summary: "有史以来最大力度！苹果进军医疗，计划明年推出 AI 医生 - 华尔街见闻，由程序员鱼皮整理。"
 order: 60
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《有史以来最大力度！苹果进军医疗，计划明年推出 AI 医生 - 华尔街见闻》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 “Mulberry 计划”是由 AI 驱动，能够在一定程度上模拟真实医生的功能。AI 基于从 iPhone、Apple Watch、耳机或第三方设备收集的健康数据，来提供个性化的健康改善建议。苹果还计划引入外部医学专家并制作“提醒类”视频，并且食品追踪功能或将大升级，抢占营养市场。
 

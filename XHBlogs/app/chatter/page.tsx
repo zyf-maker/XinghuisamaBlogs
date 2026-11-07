@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Navbar from '../../components/Navbar';
 import PageTransition from '../../components/PageTransition';
+import ContentLayout from '../../components/ContentLayout';
 import ChatterBoard from './ChatterBoard';
 import { siteConfig } from '@/siteConfig';
 
@@ -45,11 +46,13 @@ export default function ChatterPage() {
   }
 
   return (
-    <div className="min-h-screen relative pb-10">
+    <div className="min-h-screen relative">
       <Navbar />
       <PageTransition>
-        {/* 将解析好的数据传递给客户端组件进行瀑布流渲染 */}
-        <ChatterBoard chatters={chatters} />
+        <ContentLayout meta={{ '/chatter': `${chatters.length} 则` }}>
+          {/* 将解析好的数据传递给客户端组件进行瀑布流渲染 */}
+          <ChatterBoard chatters={chatters} />
+        </ContentLayout>
       </PageTransition>
     </div>
   );

@@ -3,15 +3,12 @@ title: "OpenClaw 一键安装脚本"
 summary: "一行命令搞定 OpenClaw 的所有依赖和配置"
 order: 4
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-20"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 一键安装脚本》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。上一篇教程手把手教了大家本地安装 OpenClaw 的完整流程，但有不少同学觉得手动装 Node.js、Git、配镜像太麻烦了。所以我做了个 **一键安装脚本**，自动搞定所有环境依赖和配置，只需要复制粘贴一行命令，即可愉快使用小龙虾~
 
@@ -26,7 +23,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 按 `Win + R`，唤起运行窗口，然后输入 `powershell` 并回车：
 
-![](https://pic.yupi.icu/1/1773650695343-70d4ef97-6754-49c1-93e3-a230001f8171.png)
+![](/imgs/486e19ac0e2c573e.png)
 
 输入以下命令：
 
@@ -44,38 +41,38 @@ irm https://codefather.cn/openclaw_install/install-openclaw.ps1 | iex
 
 1）检测并安装 Node.js v22+，支持 nvm-windows 或直接下载，而且会通过国内镜像加速：
 
-![](https://pic.yupi.icu/1/1773649977323-8202eb12-a705-4a5a-bde2-e529d60e93f2.png)
+![](/imgs/3cb4abf5bc058dcd.png)
 
 2）检测并安装 Git：
 
-![](https://pic.yupi.icu/1/1773650014622-e36e9846-368d-40b6-abd9-5141fc10d003.png)
+![](/imgs/6d0d4afd39e3f12e.png)
 
 3）设置 npm 国内镜像：
 
-![](https://pic.yupi.icu/1/1773650306616-3bebe398-9d60-42c4-82c4-675e290ff670.png)
+![](/imgs/1a844401133b3cf3.png)
 
 4）安装 pnpm：
 
-![](https://pic.yupi.icu/1/1773650330327-4a4f0ca1-2f65-4c7e-b516-c2b37141f4da.png)
+![](/imgs/ac299ec985390dc8.png)
 
 5）安装 OpenClaw，GitHub 连不上的时候还会提供镜像方案供小伙伴们选择：
 
-![](https://pic.yupi.icu/1/1773650526366-27f8a36a-6406-4d0b-9db0-ea88d996d5a9.png)
+![](/imgs/165555aeeecb23ca.png)
 
 6）验证安装结果：
 
-![](https://pic.yupi.icu/1/1773650512181-7b5e92ea-cfe7-4043-ab7b-ee9b3393a500.png)
+![](/imgs/506f418ff1794598.png)
 
 7）交互式配置，脚本会引导选择 AI 厂商、输入 API Key、选择默认模型，一步搞定：
 
-![](https://pic.yupi.icu/1/1773650629769-7358a04d-b1ec-44c8-849d-654605afc672.png)
+![](/imgs/a4a32e4cc3399f9d.png)
 
 
 ### Mac 电脑
 
 按 `Command + 空格`，唤起聚焦搜索，搜索「终端」，点击打开：
 
-![](https://pic.yupi.icu/1/1773650769650-59007b90-463d-45f4-868a-fd4776890cac.png)
+![](/imgs/ccaf93a9e067b5c2.png)
 
 输入以下命令：
 
@@ -101,7 +98,7 @@ curl -fsSL https://codefather.cn/openclaw_install/install-openclaw.sh | bash
 
 1）已有合格版本的 Node.js / Git 会直接使用，不会重复安装：
 
-![](https://pic.yupi.icu/1/1773651732963-ecbf3099-196e-4009-a698-f100c01138d3.png)
+![](/imgs/88d19638f0abc968.png)
 
 2）npm 镜像、Node.js 下载源、Git 下载源全部走国内镜像，下载速度嘎嘎快
 
@@ -109,15 +106,15 @@ curl -fsSL https://codefather.cn/openclaw_install/install-openclaw.sh | bash
 
 4）支持 OpenAI、Anthropic、Gemini、智谱、Moonshot、Kimi Coding、百度千帆、小米等多家 AI 厂商，选完即用：
 
-![](https://pic.yupi.icu/1/1773651814048-3a28ee57-b93e-4bbd-8c95-a89282fcf870.png)
+![](/imgs/7f5c6ecfdc697836.png)
 
 5）如果已经装过 OpenClaw，脚本会跳过安装流程，直接提供重新配置的入口：
 
-![](https://pic.yupi.icu/1/1773651858739-4b3083bc-ebbe-4c43-9686-10798f9db0e5.png)
+![](/imgs/bc83b4b657855e60.png)
 
 6）配置完成后自动启动 OpenClaw 控制面板，无门槛开始使用：
 
-![](https://pic.yupi.icu/1/1773651943494-09d95e45-75d9-4bcf-9b66-42bf8a9acbf8.png)
+![](/imgs/726fe3a5754b4850.png)
 
 怎么样，是不是简单的一皮？
 

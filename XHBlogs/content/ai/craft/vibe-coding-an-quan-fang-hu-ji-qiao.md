@@ -3,15 +3,12 @@ title: "Vibe Coding 安全防护技巧"
 summary: "保护你的项目和 API 密钥"
 order: 10
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-01-13"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 安全防护技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -211,7 +208,7 @@ function Comment({ text }) {
 
 攻击者可以输入 `<script>alert('鱼皮是狗')</script>`，这段脚本就会在其他用户的浏览器中执行。
 
-![](https://pic.yupi.icu/1/image-20260105155517608.png)
+![](/imgs/6782f913e6c04a80.png)
 
 正确的做法是：
 
@@ -386,7 +383,7 @@ AI 会给你详细的安全分析。
 - SonarQube：代码质量和安全分析
 - OWASP ZAP：Web 应用安全测试
 
-![](https://pic.yupi.icu/1/evo-by-snyk-hp-image_j0acql.png)
+![](/imgs/c8299e9808c01cd5.png)
 
 这些工具能自动发现很多安全问题。
 

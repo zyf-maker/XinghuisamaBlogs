@@ -3,15 +3,12 @@ title: "vivo官宣：将深度融合满血版DeepSeek"
 summary: "vivo官宣：将深度融合满血版DeepSeek，由程序员鱼皮整理。"
 order: 27
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《vivo官宣：将深度融合满血版DeepSeek》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 快科技2月12日消息，vivo今天正式宣布，将深度融合满血版DeepSeek，蓝心大模型与DeepSeek双擎驱动，AI能力更强。
 
@@ -25,7 +22,7 @@ DeepSeek-R1被公认为是目前最先进的大语言模型之一，它基于大
 
 除了手机之外，目前很多国产汽车、电视厂商都陆续宣布，自家产品将接入DeepSeek，国产GPU摩尔线程、景嘉微也已经接入。
 
-![](https://n.sinaimg.cn/spider20250212/66/w600h1066/20250212/b4ac-b933f8a0a037bd4a40fcf3044ec2f0b0.jpg)
+![](/imgs/99722b7d8f43ad6e.jpg)
 
 ---
 来源：快科技

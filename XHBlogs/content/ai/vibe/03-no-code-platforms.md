@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 零代码平台》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 如果你是完全零基础的新手，或者只是想快速验证一个想法，那么 **零代码平台** 绝对是你的最佳选择。
@@ -39,7 +36,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 和传统开发的区别：
 
-![](https://pic.yupi.icu/1/traditiondevpkvibecoding%E5%A4%A7.jpeg)
+![](/imgs/9ee7e3288b801dff.jpg)
 
 是不是简单太多了？这就是零代码平台的魅力所在。
 
@@ -91,15 +88,15 @@ Bolt.new 的核心优势：
 - 界面简洁现代
 ```
 
-![](https://pic.yupi.icu/1/image-20260107110501086.png)
+![](/imgs/4eda94bee1776544.png)
 
 2）等待 AI 生成代码
 
-![](https://pic.yupi.icu/1/image-20260107110607536.png)
+![](/imgs/3e10d6b4654bbd4b.png)
 
 3）在右侧预览区域看到实时效果
 
-![](https://pic.yupi.icu/1/image-20260107110658047.png)
+![](/imgs/e4dd73130282252d.png)
 
 4）如果不满意，继续对话调整。或者利用可视化编辑功能，点哪儿改哪儿~
 
@@ -107,11 +104,11 @@ Bolt.new 的核心优势：
 把背景色改成浅蓝色，按钮改成圆角
 ```
 
-![](https://pic.yupi.icu/1/image-20260107110744960.png)
+![](/imgs/fd9a7f7d11059b8f.png)
 
 5）满意后，点击 "Publish" 按钮一键部署，就能得到一个可以分享的链接。
 
-![](https://pic.yupi.icu/1/image-20260107111103207.png)
+![](/imgs/4418b51556320818.png)
 
 就这么简单！整个过程不到 5 分钟。
 
@@ -166,7 +163,7 @@ Lovable 的核心优势：
 - 数据要保存到数据库
 ```
 
-![](https://pic.yupi.icu/1/image-20260107111601472.png)
+![](/imgs/93b766825f119bd2.png)
 
 3）接下来 Lovable 会生成完整的全栈应用，包括：
 
@@ -177,19 +174,19 @@ Lovable 的核心优势：
 
 在这个过程中，你可能需要人工确认一些操作，比如启用 Cloud 来支持数据库和用户认证：
 
-![](https://pic.yupi.icu/1/image-20260107111715955.png)
+![](/imgs/4a4eb54d2fddbda2.png)
 
 4）几分钟过后，AI 生成完毕，可以在预览区域测试功能
 
-![](https://pic.yupi.icu/1/image-20260107112144754.png)
+![](/imgs/16b8c4885a80c93d.png)
 
 5）继续通过对话和可视化修改功能优化细节，编辑体验还是不错的
 
-![](https://pic.yupi.icu/1/image-20260107112259442.png)
+![](/imgs/a08e9be7589fc100.png)
 
 6）一键部署上线
 
-![](https://pic.yupi.icu/1/image-20260107112411553.png)
+![](/imgs/bf75af919b8f7de0.png)
 
 
 
@@ -199,7 +196,7 @@ Lovable 的核心优势：
 
 它生成的代码组织得也不错，如果你以后想导出代码自己维护，也比较容易。而且直接集成了 Supabase 这个强大的后端服务，让你可以轻松处理数据存储、用户认证等复杂功能。
 
-![](https://pic.yupi.icu/1/image-20260107112431787.png)
+![](/imgs/bddf21d4fa179a55.png)
 
 当然，因为功能更强大，所以相对来说也更复杂一些，新手可能需要一点时间适应。而且因为要生成更多的代码（前端 + 后端），速度可能会比 Bolt.new 慢一些。
 
@@ -234,35 +231,35 @@ Lovable 的核心优势：
 做一个在线预约系统，用户可以选择日期和时间，填写联系方式，提交预约
 ```
 
-![](https://pic.yupi.icu/1/image-20260107112754177.png)
+![](/imgs/4ecf5710f2fa67a2.png)
 
 3）接下来进入开发阶段，AI 可能会通过对话跟你确认需求。
 
 如果你希望做出商业级项目，一定要好好跟它沟通；如果只是做个 Demo 玩玩，直接跳过对话就好。
 
-![](https://pic.yupi.icu/1/image-20260107112932144.png)
+![](/imgs/66ab0e55201a6348.png)
 
 然后 AI 生成了需求文档：
 
-![](https://pic.yupi.icu/1/image-20260107113021068.png)
+![](/imgs/4de70a26f218353d.png)
 
 你可以手动编辑文档，也可以直接立即生成应用。
 
 等待几分钟后，AI 自动生成了完整的应用，可以实时预览效果：
 
-![](https://pic.yupi.icu/1/image-20260107113641264.png)
+![](/imgs/fdba11de4c37eeb7.png)
 
 5）跟其他平台一样，你可以对应用进行修改。支持可视化编辑，编辑体验还是不错的。
 
-![](https://pic.yupi.icu/1/image-20260107113743213.png)
+![](/imgs/56ed78eaac3abfe2.png)
 
 6）满意后，可以直接发布，获取到访问链接。
 
-![](https://pic.yupi.icu/1/image-20260107113853665.png)
+![](/imgs/ab2998b5c1744b37.png)
 
 7）如果需要更多能力，可以利用插件扩展功能，比如接入微信支付来收费
 
-![](https://pic.yupi.icu/1/image-20260107113922034.png)
+![](/imgs/5ae10d7633044143.png)
 
 
 
@@ -288,7 +285,7 @@ Lovable 的核心优势：
 
 适合场景：需要生成漂亮的界面、快速搭建全栈应用、对设计要求高的场景。
 
-![](https://pic.yupi.icu/1/image-20260107123602515.png)
+![](/imgs/b5696f9de75b1aa9.png)
 
 
 
@@ -300,7 +297,7 @@ Lovable 的核心优势：
 
 适合场景：需要后端开发、想学习多种语言、需要团队协作、想在手机上编程的项目。
 
-![](https://pic.yupi.icu/1/image-20260107123620053.png)
+![](/imgs/ce57a1904a8dc4c6.png)
 
 
 
@@ -312,7 +309,7 @@ Lovable 的核心优势：
 
 适合场景：使用 Google 生态、需要 Firebase 服务、想要 AI 辅助开发的项目。
 
-![](https://pic.yupi.icu/1/image-20260107123700807.png)
+![](/imgs/97d0357bd9bc43a2.png)
 
 
 
@@ -324,11 +321,11 @@ Lovable 的核心优势：
 
 简单来说，如果你想做的是普通网站或应用（比如个人主页、电商网站），用 Bolt.new、百度秒哒就够了。如果你想做的是 AI 应用（比如智能客服、AI 助手、知识库问答系统），可以试试 Dify 或 Coze。
 
-![Dify 开发 AI 应用](https://pic.yupi.icu/1/1743561915955-ad27735a-c927-4207-b769-03fda32081b6.png)
+![Dify 开发 AI 应用](/imgs/dd3bf2910b72548d.png)
 
 这些平台都提供了可视化的配置界面，可以通过拖拽的方式搭建 AI 工作流，不需要写代码就能做出功能强大的 AI 应用。
 
-![阿里云百炼搭建 AI 工作流](https://pic.yupi.icu/1/1745388167957-d7995436-fc2f-410e-bc59-4f6db6544359-20260112161510229.png)
+![阿里云百炼搭建 AI 工作流](/imgs/0b11f6eb61d0a179.png)
 
 
 
@@ -370,7 +367,7 @@ Lovable 的核心优势：
 
 5）在做重大修改之前，最好保存一下当前版本。大部分平台都支持版本历史，万一改坏了可以回退。
 
-![](https://pic.yupi.icu/1/image-20260107114739910.png)
+![](/imgs/8ada82793b5c36fd.png)
 
 6）最后，即使你现在不懂代码，也可以把生成的代码导出来保存。以后学习的时候，可以回过头来研究这些代码是怎么写的。
 

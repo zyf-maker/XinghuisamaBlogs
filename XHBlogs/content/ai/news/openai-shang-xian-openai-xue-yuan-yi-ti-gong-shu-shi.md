@@ -3,15 +3,12 @@ title: "OpenAI 上线“OpenAI 学院”，已提供数十小时免费 AI 学习
 summary: "OpenAI 上线“OpenAI 学院”，已提供数十小时免费 AI 学习资源，由程序员鱼皮整理。"
 order: 68
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenAI 上线“OpenAI 学院”，已提供数十小时免费 AI 学习资源》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 2025 年 04 月 02 日 11:03 [TechWeb](https://www.techweb.com.cn/it/2025-04-02/2959052.shtml)
 

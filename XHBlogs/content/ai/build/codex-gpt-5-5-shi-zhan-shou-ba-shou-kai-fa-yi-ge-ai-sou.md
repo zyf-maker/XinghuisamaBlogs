@@ -3,15 +3,12 @@ title: "Codex + GPT-5.5 实战：手把手开发一个 AI 搜索引擎"
 summary: "想必你已经发现了，如今的搜索引擎已经全面进化了。"
 order: 27
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 14
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Codex + GPT-5.5 实战：手把手开发一个 AI 搜索引擎》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 想必你已经发现了，如今的搜索引擎已经全面进化了。
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 搜索这件事，正在从「人找信息」变成「AI 帮你找信息」。
 
-![](https://pic.yupi.icu/1/image-20260512151649430.png)
+![](/imgs/5cac0177fe9efec6.png)
 
 那这种 AI 搜索引擎到底是怎么实现的？
 
@@ -40,7 +37,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 具体的需求是：用户输入一个问题，系统自动联网搜索最新信息，再交给 AI 大模型综合分析，生成一份带引用来源的智能回答，同时还能像传统搜索引擎一样查看完整的搜索结果列表。用户还可以通过相关问题推荐继续追问，不断深挖感兴趣的内容。
 
-![](https://pic.yupi.icu/1/image-20260512142357593.png)
+![](/imgs/f02390eb9195c907.png)
 
 
 ## 方案设计
@@ -66,7 +63,7 @@ AI 大模型我就选择 DeepSeek V4，试试它在真实业务场景中的效�
 
 Google、百度这些搜索引擎，背后都是几十万台服务器在跑这套系统。
 
-![](https://pic.yupi.icu/1/01_%25E6%2590%259C%25E7%25B4%25A2%25E5%25BC%2595%25E6%2593%258E%25E5%258E%259F%25E7%2590%2586%25E7%25A4%25BA%25E6%2584%258F%25E5%259B%25BE_compressed_v1.png)
+![](/imgs/3ca1eb7367595680.png)
 
 如果搁以前，让你自己开发一个搜索引擎，简直想都不敢想，光是抓取全网页面这一步就能把人劝退。
 
@@ -74,7 +71,7 @@ Google、百度这些搜索引擎，背后都是几十万台服务器在跑这�
 
 目前专门为 AI 应用设计的搜索服务已经有不少了，比如 Tavily Search、Firecrawl、Brave Search API 等等，它们都能通过 API 调用拿到结构化的搜索结果，直接给 AI 使用。
 
-![](https://pic.yupi.icu/1/image-20260512152607731.png)
+![](/imgs/d9caae37269c56a4.png)
 
 下面重点介绍一下本项目选用的 Tavily Search。
 
@@ -96,23 +93,23 @@ Tavily Search 是目前 AI 应用开发领域最主流的搜索 API 之一，知
 
 进入 [Tavily 官网](https://www.tavily.com)，可以看到它提供 4 方面的能力，包括联网搜索、提取网页内容、爬虫和深度研究。
 
-![](https://pic.yupi.icu/1/1776256669936-290f2a07-4b99-4f2e-8917-5a8f5c8ee120.png)
+![](/imgs/9da7ce1b09ef25df.png)
 
 登录后进入管理后台，获取 API Key：
 
-![](https://pic.yupi.icu/1/1776256874935-687296a6-8edc-4732-9a8c-eab3682f1362.png)
+![](/imgs/940bcbcdb3fe2a7a.png)
 
 然后进入 [调试广场](https://app.tavily.com/playground)，可以在这里验证搜索效果。
 
 比如我搜索一下 “程序员鱼皮”，可以看到返回了 JSON 格式的结构化结果，每条都包含标题、URL 和内容摘要，搜到了我的博客、GitHub 主页等信息，还挺全面的。
 
-![](https://pic.yupi.icu/1/1776257119230-8368e83e-ec3e-4e27-ac3e-62ec7c35d368.png)
+![](/imgs/6a672ba5a3e516df.png)
 
 它还支持很多参数设置，比如搜索的详细程度、时间范围、是否包含网页内容、最大搜索结果数、国家等等。
 
 比如我把搜索国家设置为中国，就能搜到国内平台的文章了：
 
-![](https://pic.yupi.icu/1/1776257191114-95ef71bb-b844-45ec-bd25-f0bf691fa5d1.png)
+![](/imgs/127d77478beeb536.png)
 
 验证完搜索效果没问题，接下来看看怎么在代码里使用。
 
@@ -140,7 +137,7 @@ response = agent.invoke({"messages": "最近有什么 AI 新闻？"})
 
 除了搜索，还有 TavilyExtract 工具，可以根据网址提取干净的网页内容：
 
-![](https://pic.yupi.icu/1/1776257649471-db04269f-1efd-4a96-b485-c762dc2d0b59.png)
+![](/imgs/82faadc1dc0cb26f.png)
 
 看不懂代码没关系，之后我们把这些需求写进提示词，让 AI 自己去查文档、写代码就行。
 
@@ -178,7 +175,7 @@ response = agent.invoke({"messages": "最近有什么 AI 新闻？"})
 5. 前端同时展示 AI 综合回答和完整的搜索结果列表
 6. AI 回答完成后，自动生成相关问题推荐，方便用户继续探索
 
-![AI搜索引擎核心业务流程图](https://pic.yupi.icu/1/02_AI%25E6%2590%259C%25E7%25B4%25A2%25E5%25BC%2595%25E6%2593%258E%25E6%25A0%25B8%25E5%25BF%2583%25E4%25B8%259A%25E5%258A%25A1%25E6%25B5%2581%25E7%25A8%258B%25E5%259B%25BE_compressed_v3.png)
+![AI搜索引擎核心业务流程图](/imgs/5deb2d180791fd13.png)
 
 
 ## 环境准备
@@ -187,17 +184,17 @@ response = agent.invoke({"messages": "最近有什么 AI 新闻？"})
 
 打开 Codex，确认模型列表里有 GPT-5.5。如果看不到，大概率是账号的问题，可能需要开通更高级的会员，我这里用的是 Plus 会员。
 
-![](https://pic.yupi.icu/1/1777256418373-5682599c-2367-4f94-951a-43bab6f0f861-20260512154050287.png)
+![](/imgs/6004f8307ac66057.png)
 
 可以看到界面上已经有了 GPT-5.5 模型选项，还支持调节智能程度（低 / 中 / 高 / 超高），我一般选择「高」。
 
 左下角进入设置，把工作模式切换为「用于编程」，这样 AI 的回复会更专业、更适合开发场景：
 
-![](https://pic.yupi.icu/1/image-20260512143515143.png)
+![](/imgs/474111dee82a49ef.png)
 
 然后在设置中开启「电脑操控」，并安装 Google Chrome 浏览器扩展。这样后面可以让 AI 帮你自动操作电脑和浏览器进行测试。
 
-![](https://pic.yupi.icu/1/1778557131199-91ad72e5-024a-46a6-ae0f-3e59851f7327.png)
+![](/imgs/97f972023a8cc587.png)
 
 
 ### 安装 AI 扩展
@@ -210,9 +207,9 @@ Codex 的 AI 扩展主要包括三类：
 
 官方自带了一些内置的插件和技能，比如 Computer Use、Browser Use、PDF 处理、演示文稿编辑等：
 
-![](https://pic.yupi.icu/1/image-20260512143730227.png)
+![](/imgs/c6bee1ded44e2e63.png)
 
-![](https://pic.yupi.icu/1/image-20260512143751551.png)
+![](/imgs/d4415fdfad3e5cdc.png)
 
 不过这次项目需要的几个扩展，Codex 默认没有，得自己安装。
 
@@ -224,7 +221,7 @@ Codex 的 AI 扩展主要包括三类：
 
 你可以直接在 Codex 设置里手动添加 MCP 服务，但是要手动填写一堆参数，非常麻烦！
 
-![](https://pic.yupi.icu/1/1777257751584-4842f03a-fa07-4cbe-94ad-dce017977b66-20260512143837549-20260512154050491.png)
+![](/imgs/bd8574c125f5afdc.png)
 
 好在我们可以换一种方式，用每个 AI 服务提供的命令来快速安装。
 
@@ -239,19 +236,19 @@ Firecrawl 是一个联网搜索和网页抓取工具，能让 AI 在开发前先
 npx -y firecrawl-cli@latest init --all --browser
 ```
 
-![](https://pic.yupi.icu/1/1777258212308-8c83d23e-338e-4ec2-b1c0-05f54a22a36e-20260512154050521.png)
+![](/imgs/9c06bf7d1e7434ef.png)
 
 执行后，会自动打开浏览器，要在弹出的页面中点击授权：
 
-![](https://pic.yupi.icu/1/1777258069152-2d7fdb02-64e2-440b-bcbd-6254b07fb74e-20260512154050549.png)
+![](/imgs/349653f842e36a67.png)
 
 安装完成后，会自动注册 12 个相关技能：
 
-![](https://pic.yupi.icu/1/1777258235867-0f6f08f5-4791-4b66-84b7-50936912540d-20260512154050588.png)
+![](/imgs/e88c6688fc130b78.png)
 
 在 Codex 的技能管理中，就能看到新添加的 Firecrawl 相关技能了：
 
-![](https://pic.yupi.icu/1/1777258331237-182161c5-d21b-4a9b-9c6a-855d99312b5e-20260512154050621.png)
+![](/imgs/6f14371be3c43962.png)
 
 
 #### 2、安装 Context7
@@ -266,23 +263,23 @@ npx ctx7@latest setup
 
 它会问是安装 MCP 服务还是 CLI + Skills，这里我选择 CLI + Skills。你会发现，现在越来越多工具已经从 MCP 转向 CLI + Skills 的方式了：
 
-![](https://pic.yupi.icu/1/1777258448310-41f86ec3-26e1-476e-aed5-4913c8116d21-20260512154050653.png)
+![](/imgs/8da37cdcaa5e1e6a.png)
 
 同样在弹出的网页中授权，不用自己获取和输入 API Key，太方便了！
 
-![](https://pic.yupi.icu/1/1777258547209-dc872280-09eb-4bd9-ad45-2e412382002d-20260512154050680.png)
+![](/imgs/8ca29c697755a9e6.png)
 
 然后选择要给哪个 AI 编程工具安装，我选择为 Codex 安装：
 
-![](https://pic.yupi.icu/1/1777258572107-f494c3bb-01a9-443d-ba1d-6b1a3b3fab9a-20260512154050707.png)
+![](/imgs/4165db831e2512f9.png)
 
 安装成功：
 
-![](https://pic.yupi.icu/1/1777258672897-259f035a-f365-46ce-bc5d-e33fbc839f34-20260512154050735.png)
+![](/imgs/1228dd152b607b32.png)
 
 在 Codex 中确认已安装的技能：
 
-![](https://pic.yupi.icu/1/1777258710387-4b47a05d-dcb1-43ce-9761-f5d28976731e-20260512154050771.png)
+![](/imgs/9b46b980709dfec8.png)
 
 
 #### 3、安装 UI UX Pro Max
@@ -297,15 +294,15 @@ uipro init
 
 选择为 Codex 安装技能：
 
-![](https://pic.yupi.icu/1/image-20260427143633213.png)
+![](/imgs/c75cf065689e1223.png)
 
 安装成功：
 
-![](https://pic.yupi.icu/1/1777258832043-8a3230db-2a76-47f7-a32a-5113a0487631-20260512154050883.png)
+![](/imgs/b63617489306b6c8.png)
 
 在 Codex 的技能管理中，能看到新技能：
 
-![](https://pic.yupi.icu/1/1777258847545-ba145ccf-2ab3-4a37-948a-4bb48d228fe4-20260512154050912.png)
+![](/imgs/278ff9804ebb174b.png)
 
 至此，环境准备完成！下次开发项目时，就不用再重复准备了~
 
@@ -314,7 +311,7 @@ uipro init
 
 新建一个 `yupi-ai-search` 项目文件夹，在 Codex 中打开：
 
-![](https://pic.yupi.icu/1/1778555023028-80d1f617-111e-4e19-815c-7f455101674a.png)
+![](/imgs/a6a342553d76886b.png)
 
 然后输入提示词。这里分享一下我实际用的提示词，给大家参考：
 
@@ -359,7 +356,7 @@ uipro init
 
 模型我选择 GPT-5.5，智能程度选「高」，权限给完全访问（主要图个省事儿）：
 
-![](https://pic.yupi.icu/1/1778555200757-7240a8f9-cf77-465b-982e-f039e2b311c9.png)
+![](/imgs/66dcc5f43c101df8.png)
 
 小提示，如果你想让 AI 测试得更完整，可以先获取到 Tavily Search 和 DeepSeek 的 API Key 并直接提供给 AI，否则 AI 是没办法测试搜索和 AI 总结能力的。
 
@@ -367,50 +364,50 @@ uipro init
 
 可以看到 AI 先用 Firecrawl 和 Context7 搜索了 Tavily Search、LangChain、FastAPI、DeepSeek API 的用法和文档，做完调研后，才能开始写代码：
 
-![](https://pic.yupi.icu/1/1778555536834-8dbc50c9-6038-42e9-90c2-261fe1f203bc.png)
+![](/imgs/4677f9976ca8f201.png)
 
 AI 生成完代码后，会自主打开浏览器进行前端测试：
 
-![](https://pic.yupi.icu/1/1778556244139-48927bec-fe3c-41ff-92c5-cd8045480d63.png)
+![](/imgs/2f3658ae45d804db.png)
 
 从开发到测试运行，总共花了 23 分钟。AI 生成了完整的前端和后端项目代码，还自动写好了项目文档：
 
-![](https://pic.yupi.icu/1/1778556777014-9ff35308-377f-4e1f-9d32-be62c4749842.png)
+![](/imgs/4582b6affce88f16.png)
 
 把鼠标放到 Codex 右侧，可以查看整个任务的生成结果、后台终端和信息来源。
 
-![](https://pic.yupi.icu/1/1778557426240-34c35fa6-6b77-4e55-befe-9ff04d8f02e3.png)
+![](/imgs/b96c22fdd3598e90.png)
 
 在 AI 回复的最下方，可以查看和审核生成的所有代码文件：
 
-![](https://pic.yupi.icu/1/1778556995353-16cf38fe-df3c-4f43-bf74-3c0053d16e93.png)
+![](/imgs/a9de38a358e87d56.png)
 
 感兴趣的同学可以看下 AI 生成的核心代码。后端的核心是一个 SSE 流式接口，接收到用户的搜索请求后，先调用 Tavily Search 获取网页搜索结果，然后把搜索结果注入 Prompt 并交给 DeepSeek V4 生成带引用的综合回答，最后再生成相关问题推荐。
 
 如果搜索失败了，还有降级策略，会提示用户回答未经联网验证：
 
-![](https://pic.yupi.icu/1/1778559184004-3a017b1b-7ba1-4ab0-b385-d5ab5d17b584.png)
+![](/imgs/6c47bcefc6ce0795.png)
 
 
 ## 测试验证
 
 接下来根据 AI 给出的指引，需要填写 API Key：
 
-![](https://pic.yupi.icu/1/1778557518039-74f6c533-9922-40bf-8023-f175cef3afb7.png)
+![](/imgs/97a3fa958c476f76.png)
 
 先到 [DeepSeek 开放平台](https://platform.deepseek.com) 获取 DeepSeek 的 API Key，Tavily 的 API Key 前面已经拿到了：
 
-![](https://pic.yupi.icu/1/1778557575635-cd8140d2-5b18-4c36-a7a5-91a92cb1015f.png)
+![](/imgs/c029da560cc15c19.png)
 
 然后修改项目后端目录下的环境变量配置文件，把 `.env.example` 重命名为 `.env`，填入你自己的 API Key：
 
-![](https://pic.yupi.icu/1/1778557702120-af92b45d-5f2a-46bd-8895-184063af520a.png)
+![](/imgs/dc4cf92109105483.png)
 
 注意，如果你的项目要开源，一定记得在 `.gitignore` 中忽略 `.env` 文件，防止 API Key 泄露到 GitHub 上！
 
 配置完环境变量后，让 AI 重启项目：
 
-![](https://pic.yupi.icu/1/1778558017324-2d4008af-99ba-4cfb-8595-018363622eb6.png)
+![](/imgs/540cbf0dd47bcdb4.png)
 
 ### 人工测试
 
@@ -420,7 +417,7 @@ AI 生成完代码后，会自主打开浏览器进行前端测试：
 
 AI 真的是很听提示词的话了，简洁风格 + 居中大搜索框，跟 Perplexity 的感觉确实有几分相似 🐶：
 
-![](https://pic.yupi.icu/1/1778558216223-bf3b6c1f-939e-4af2-b4ae-53318a62c90c.png)
+![](/imgs/e58cb30a889477a4.png)
 
 来输入一个问题试试：什么是鱼皮的 AI 编程导航？
 
@@ -428,29 +425,29 @@ AI 真的是很听提示词的话了，简洁风格 + 居中大搜索框，跟 P
 
 大概 4 秒左右，界面就展示出了搜索结果列表，然后 20 秒左右给出了完整的 AI 总结。可以看到左侧是 AI 的综合回答，带着引用编号；右侧是完整的搜索结果列表，包含了标题、摘要和链接，跟传统搜索引擎一样可以逐条浏览：
 
-![](https://pic.yupi.icu/1/1778558955839-01e86b7c-4a9e-4438-9c93-1157a53a59f4.png)
+![](/imgs/3ea16bda94b3da79.png)
 
 搜索和生成速度还是挺快的，而且 AI 把我的两个不同的产品分得很清楚，内容也是准确的。
 
 底部可以看到引用来源和相关问题推荐，点击引用就能跳转到原文，点击相关问题就能快速发起下一次搜索：
 
-![](https://pic.yupi.icu/1/1778559088680-6cd7d454-804d-45aa-b5d6-071d2126ec51.png)
+![](/imgs/bc6c4c45116fc727.png)
 
 在 Codex 的对话页面，把鼠标放到右侧，点击查看后台终端，能看到 Python 后端的日志信息，每一次搜索请求都有记录：
 
-![](https://pic.yupi.icu/1/1778559813125-6cb03089-93ea-4db6-adeb-b616493cbc01.png)
+![](/imgs/2ab73c4352249108.png)
 
 从搜索结果来看，默认搜索的信息源以国内为主。但 Tavily Search 同样支持国外信息源搜索，比如我问：Claude Code 4.7 怎么样？
 
 这次的搜索来源就变成了中英文混合的了，不少英文技术博客的测评文章都搜到了：
 
-![](https://pic.yupi.icu/1/1778559369205-281eff4e-0fc6-4c0b-ad77-a3a6464b0216.png)
+![](/imgs/99c0638d6909736a.png)
 
 你还可以在提问中指定搜索来源，比如我问：鱼皮在 X 上有哪些 Claude Code 教程？
 
 搜索结果中就包含了 X 的原始文章页面：
 
-![](https://pic.yupi.icu/1/1778559537963-ab13e987-8568-4bd4-a0d3-a51a5e291eca.png)
+![](/imgs/efce8136e0bbd418.png)
 
 怎么样，轻轻松松就开发出了一个属于自己的 AI 搜索引擎，国内外信息尽在我手~
 
@@ -468,15 +465,15 @@ Codex 内置了浏览器操控能力，输入 `@浏览器` 使用插件，直接
 出了问题自动修复，确保所有功能正常可用
 ```
 
-![](https://pic.yupi.icu/1/1778561487978-700ae39e-627c-4b1c-817a-cfe7689936d9.png)
+![](/imgs/3ad2ab271ab54b80.png)
 
 可以看到 AI 在 Codex 内部打开了一个浏览器，自己输入了问题并搜索，然后检查搜索结果列表、AI 回答、引用来源、相关问题、搜索历史等所有功能是否正常：
 
-![](https://pic.yupi.icu/1/1778562027828-4a13a04d-d838-41b6-aa3a-466c528ba85d.png)
+![](/imgs/13087ac1bf68a6c8.png)
 
 等了 18 分钟，AI 完成了端到端的自主测试，还顺手做了一点儿优化：
 
-![](https://pic.yupi.icu/1/1778562928716-5f9c866d-c14a-49b8-a20a-c623050062c1.png)
+![](/imgs/1eecec240bf928be.png)
 
 至此项目就开发完了，很简单吧？
 
@@ -505,11 +502,11 @@ Codex 内置了浏览器操控能力，输入 `@浏览器` 使用插件，直接
 
 而且最近的更新速度嘎嘎快，还有工夫整个 AI 桌面宠物给我们加点儿情绪价值……（虽然有些 UI 调整我觉得不如之前的好看）
 
-![](https://pic.yupi.icu/1/image-20260505182943304-20260512154052050.png)
+![](/imgs/b7943e33acb7439e.png)
 
 不过缺点也很明显。默认可用的模型有限，不像 Cursor 和 Copilot 原生就整合了 Claude、GPT、Gemini 各种模型随便切。易用性也差了一些，从 MCP 配置那里大家应该已经感受到了。Copilot 可以直接在扩展市场一键搜索安装 MCP，Cursor 也支持可视化编辑 JSON 配置，Codex 这边还得自己折腾命令行或者手写 TOML。
 
-![](https://pic.yupi.icu/1/1777266857576-e240c700-e113-4d3d-8f4d-44512175986f-20260512145745548-20260512154052085.png)
+![](/imgs/e3269fbbfce43f43.png)
 
 再说说 GPT-5.5 模型。我除了这个项目之外，之前的教程以及自己的项目中也多次用到了 GPT-5.5，整体感觉不如 Claude Opus 4.6。但能力还是很强的，只要提示词到位，基本都能一把梭全栈项目的前端和后端，而且核心业务流程大概率一次性跑通。
 
@@ -517,17 +514,17 @@ Codex 内置了浏览器操控能力，输入 `@浏览器` 使用插件，直接
 
 再看看 GPT-5.5 的成本。这次开发消耗了 13.4 万 tokens，上下文用了 52%。Codex 桌面端的上下文容量是 258K，开发这种全栈项目基本够用了：
 
-![](https://pic.yupi.icu/1/1778562964683-a8df5a46-5762-48f5-9593-4e89d21b739f.png)
+![](/imgs/19c858255883b324.png)
 
 我目前开的是 GPT Plus 会员，一个月 20 刀（150 元左右），每 5 小时和每周有限额。做完这个项目后，5 小时的额度用了差不多一半，不算扩展功能的话，1 周差不多能做 10 个完整项目。
 
-![](https://pic.yupi.icu/1/1778563016906-8653e48f-c417-44c6-8157-99f4e82b7a86.png)
+![](/imgs/ae32c3c52ebb9d1a.png)
 
 最后说说 DeepSeek V4 吧。这次项目用的是 V4-Flash 模型作为搜索引擎的大脑，生成速度还是挺快的，效果也不错，作为搜索结果的整理完全够用了，不需要上 Pro。
 
 Flash 模型的价格很便宜，我测试时用了 24 次请求才花了 9 分钱。按正常上线给用户访问的量来算，1 天 1000 次请求大约消耗 3.75 元，性价比很高，我们团队的一些业务也会对接 DeepSeek API。
 
-![](https://pic.yupi.icu/1/1778561258409-d0081f49-c868-49a8-80e5-f1342e83bde7.png)
+![](/imgs/617a63a4155dcac7.png)
 
 总的来说，AI 应用开发的门槛已经非常低了。以前做一个搜索引擎是大厂才能干的事情，现在一段提示词就能搞出来一个能用的原型。
 

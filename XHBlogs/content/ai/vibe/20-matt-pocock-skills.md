@@ -10,16 +10,13 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Matt Pocock Skills：真实工程技能库》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 如今的 GitHub 真是太魔幻了，有个 AI 相关的项目，几乎全是 Markdown 文本文件，但是不到半年就拿到了 **18 万 Star**。
 
 这个仓库叫 [skills](https://github.com/mattpocock/skills)，作者 Matt Pocock 是前端 TypeScript 领域很有名的教育者，在 YouTube 上有大几十万粉丝。他把自己日常用 AI 编程的工作方法总结成了一套技能，也就是一组可以直接装进 Claude Code、Codex 等 AI 编程工具里的指令集，然后开源了出来。
 
-![](https://pic.yupi.icu/1/image-20260721175958152.png)
+![](/imgs/651b1dfa60eb1791.png)
 
 那么这套 Skills 到底有什么？为什么能受到这么大的欢迎？
 
@@ -37,11 +34,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 Matt Pocock 做的事情是把真实的软件工程方法论，比如测试驱动开发、代码评审、领域建模这些，浓缩成一个个 Skill 文件。装到自己的电脑上后，在 AI 编程工具里输入类似 `/grill-me`、`/tdd` 这样的斜杠命令，AI 就会按照对应的工程方法来工作，而不是像平时那样想到哪写到哪。
 
-![概念对比 CLAUDE.md 和 Skills](https://pic.yupi.icu/1/01_Skills%E6%A6%82%E5%BF%B5%E5%AF%B9%E6%AF%94%EF%BC%9A%E6%99%AE%E9%80%9ACLAUDE.md_vs_Skills%E7%B3%BB%E7%BB%9F_compressed_v1.png)
+![概念对比 CLAUDE.md 和 Skills](/imgs/8417fbf09d70051f.png)
 
 截止到我写这篇文章时，整个仓库里有大几十个 Skill 文件，其中正式推荐使用的有 22 个，剩下的是一些还在开发中的、作者个人专用的、以及已经废弃的。
 
-![](https://pic.yupi.icu/1/image-20260721213003965.png)
+![](/imgs/10d3d2da61cdafd0.png)
 
 这 22 个正式 Skill 分成两大类。一类是工程类，包括测试驱动开发、代码评审、Bug 诊断这些跟写代码直接相关的；另一类是生产力类，比如头脑风暴、上下文交接，甚至还有一个让 AI 教你学东西的。
 
@@ -57,25 +54,25 @@ Matt Pocock 做的事情是把真实的软件工程方法论，比如测试驱�
 npx skills@latest add mattpocock/skills
 ```
 
-![](https://pic.yupi.icu/1/image-20260721181513539.png)
+![](/imgs/c1dc5a4640a01b0a.png)
 
 运行之后它会让你选想要哪些 Skill，以及装到哪个 AI 编程工具里。选完之后，对应的 Skill 文件会被复制到你的项目目录或者 AI 工具的本地配置目录（比如 `~/.claude/skills/`）。
 
-![](https://pic.yupi.icu/1/image-20260721181722123.png)
+![](/imgs/380698ed4c992a79.png)
 
 建议选上 `/setup-matt-pocock-skills` 这个初始化 Skill，装完后在 AI 编程工具里运行一次，比如我在 Claude Code 中运行：
 
-![](https://pic.yupi.icu/1/image-20260721181838820.png)
+![](/imgs/58a66e035477912e.png)
 
 AI 会问你几个问题来适配你的项目，比如用什么工具来管理 Issue、项目文档保存在哪个目录。
 
 我这里为了简单，选择了用本地 Markdown 文件来管理 Issue，文档保存在默认的 `docs/` 目录下，规则保存到 `CLAUDE.md` 文件中。
 
-![](https://pic.yupi.icu/1/image-20260721182034789.png)
+![](/imgs/1ccc88cf05671584.png)
 
 如果你不想手动管理这些安装到项目里的 Skill 文件，也可以用 Claude Code 的插件方式来安装，这样它会自动保持最新版本，不过就不能自己修改了。
 
-![](https://pic.yupi.icu/1/image-20260721190007313.png)
+![](/imgs/242db0f90fbbdf1e.png)
 
 装好之后，接下来我带你看看这个仓库里最实用的几个 Skill。
 
@@ -95,13 +92,13 @@ AI 会问你几个问题来适配你的项目，比如用什么工具来管理 I
 >
 > 能通过查看环境（文件系统、工具等）找到的事实，直接去查，不用问我。但决策是我来做的，每个决策都要等我拍板。
 
-![](https://pic.yupi.icu/1/image-20260721182742452.png)
+![](/imgs/be0b0ce72a55bb82.png)
 
 就是这么简单粗暴，但实际用起来后，你会发现效果确实很好。
 
 有用户分享说，他第一次用 `/grill-me` 的时候，AI 一口气问了 38 个问题。等问完之后，他发现很多自己之前根本没想到的设计细节都被 AI 逼着想清楚了。
 
-![](https://pic.yupi.icu/1/image-20260721183248245.png)
+![](/imgs/04240c3a5a84ac37.png)
 
 这个 Skill 我专门写了一篇完整的实战体验和原理拆解，可以阅读本教程经验技巧板块中的《用 grill-me 让 AI 拷问你的需求》。
 
@@ -115,7 +112,7 @@ Matt Pocock 的做法是在 `CONTEXT.md` 里提前定义好这些术语。比如
 
 因为 AI 每次对话都会读 `CONTEXT.md`，所以这些术语积累得越多，AI 对项目的理解就越精准，沟通也越来越高效。
 
-![CONTEXT.md 共享语言让沟通越来越高效](https://pic.yupi.icu/1/03_CONTEXT.md%E5%85%B1%E4%BA%AB%E8%AF%AD%E8%A8%80%E8%AE%A9%E6%B2%9F%E9%80%9A%E8%B6%8A%E6%9D%A5%E8%B6%8A%E9%AB%98%E6%95%88_compressed_v3.png)
+![CONTEXT.md 共享语言让沟通越来越高效](/imgs/4b68beddb3ad58df.png)
 
 
 
@@ -127,13 +124,13 @@ Matt Pocock 的做法是在 `CONTEXT.md` 里提前定义好这些术语。比如
 
 `/tdd` 这个 Skill 就是来解决这个问题的。它强制 AI 用「垂直切片」的方式来工作，也就是先写一个测试让它失败，然后只写刚好能让这个测试通过的代码，通过之后再写下一个测试。这就是经典的 Red-Green-Refactor 循环，一次只走一小步，每一步都是实打实验证过的。
 
-![TDD 垂直切片和批量方式对比](https://pic.yupi.icu/1/04_TDD%E5%9E%82%E7%9B%B4%E5%88%87%E7%89%87vs%E6%89%B9%E9%87%8F%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![TDD 垂直切片和批量方式对比](/imgs/3913733148306686.png)
 
 除了循环本身，这个 Skill 里还有几条值得注意的规则。
 
 比如它要求 **只在预先商定的接缝处测试**。所谓接缝（Seam）就是代码的公开接口，比如一个函数的入参和返回值。在写任何测试之前，AI 会先跟你确认在哪些接缝处写测试，而不是到处乱写，这样测试的覆盖重点才能落在真正重要的地方。
 
-![](https://pic.yupi.icu/1/image-20260721190924720.png)
+![](/imgs/e1f9d846dfec0745.png)
 
 另外这个 Skill 还列出了几种 AI 写测试时容易犯的反模式，相当于给 AI 定了规矩，一旦发现自己写出了这类测试就必须改掉。
 
@@ -153,13 +150,13 @@ Matt Pocock 认为问题的根源在于 AI 跳过了最关键的一步，就是�
 
 `/diagnosing-bugs` 这个 Skill 把 Debug 过程拆成了 6 个阶段，其中「建立反馈循环」是第一步，也是整个流程的核心。
 
-![](https://pic.yupi.icu/1/image-20260721191701894-20260721191719297-20260721191756770.png)
+![](/imgs/bd886cd416edd73c.png)
 
 **在这步完成之前，AI 不允许跳到「猜原因」的阶段。** 如果 AI 在还没有一条能重现 Bug 的命令的时候就开始分析代码，Skill 会直接打断它。
 
 等有了一条稳定重现的命令之后，接下来的步骤就比较常规了：最小化重现场景、提出假设并逐一验证、修复并写回归测试。
 
-![Bug 诊断 6 阶段流程图](https://pic.yupi.icu/1/05_Bug%E8%AF%8A%E6%96%AD6%E9%98%B6%E6%AE%B5%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%88%E5%8F%8D%E9%A6%88%E5%BE%AA%E7%8E%AF%E4%BC%98%E5%85%88%EF%BC%89_compressed_v2.png)
+![Bug 诊断 6 阶段流程图](/imgs/7b5ff04357fd1bfc.png)
 
 这个思路跟 Cursor 内置的 Debug 模式有点异曲同工，都是先通过自动检测和分析错误来定位问题，而不是让 AI 上来就瞎猜和乱改（可以阅读本教程编程工具板块「Cursor」目录中的《Cursor Debug 模式详解》）。
 
@@ -175,15 +172,15 @@ Matt Pocock 认为问题的根源在于 AI 跳过了最关键的一步，就是�
 
 当你运行 `/teach` 并告诉 AI 你想学什么之后，AI 会先问你为什么想学这个东西，然后把你的学习目标记录到一个叫 `MISSION.md` 的文件里。
 
-![](https://pic.yupi.icu/1/image-20260721202928545.png)
+![](/imgs/23fd34dda1c80b0f.png)
 
 接着它会去搜索高质量的学习资源，整理成 `RESOURCES.md` 资源文件。
 
-![](https://pic.yupi.icu/1/image-20260721203009683.png)
+![](/imgs/43ee1612fbc41c08.png)
 
 最后基于收集到的资源给你设计课程，每堂课是一个精美的 HTML 文件，保存在 `lessons/` 目录下。
 
-![](https://pic.yupi.icu/1/image-20260721203410326.png)
+![](/imgs/f7455072d23d4f91.png)
 
 值得一提的是，AI 会区分「流畅度」和「存储强度」这两种学习效果。流畅度就是你当场能回忆起来的感觉，但这不代表你真的记住了，存储强度才是真正的长期记忆。所以它会刻意设计有一定难度的练习，用间隔重复和交错练习等方法来帮你加深记忆，而不是让你产生「我已经学会了」的错觉。
 
@@ -201,15 +198,15 @@ Matt Pocock 认为问题的根源在于 AI 跳过了最关键的一步，就是�
 
 `/wayfinder` 的做法是把一个大需求拆成一张「决策地图」。当你面对一个大而模糊的需求时，AI 会先跟你一起把最终目标定义清楚，然后在 Issue 管理工具里创建一张地图，上面列出需要做的一系列决策，每个决策是一个独立的 Issue。
 
-![](https://pic.yupi.icu/1/image-20260721204043039.png)
+![](/imgs/5516a4ea06256569.png)
 
 这些决策之间有依赖关系，所以它会自动标注哪些可以先做、哪些要等前置决策完成才能开始。每次你打开一个新的 AI 对话来处理一个决策的时候，上下文都是干净的，不会被之前的内容污染。
 
-![](https://pic.yupi.icu/1/image-20260721204132899.png)
+![](/imgs/eb720381901f7319.png)
 
 这里面还有一个很有趣的设计叫「战争迷雾」，就像游戏里没探索过的地图区域一样。你现在能看到的决策只是一部分，随着前面的决策逐步完成，后面的决策才会逐渐清晰起来。这样可以避免一开始就过度规划那些还想不清楚的事情。
 
-![Wayfinder 战争迷雾决策地图](https://pic.yupi.icu/1/06_Wayfinder%E6%88%98%E4%BA%89%E8%BF%B7%E9%9B%BE%E5%86%B3%E7%AD%96%E5%9C%B0%E5%9B%BE_compressed_v1.png)
+![Wayfinder 战争迷雾决策地图](/imgs/ba136cc4a7db645e.png)
 
 不过这个 Skill 的门槛相对比较高，更适合有一定工程经验的开发者。如果你的项目规模不大，前面提到的 `/grill-me` 就够用了。
 
@@ -223,11 +220,11 @@ Matt Pocock 认为问题的根源在于 AI 跳过了最关键的一步，就是�
 
 Matt Pocock 建议每隔几天就跑一次这个技能，相当于定期给代码做一次体检。它会深度扫描你的代码库，找出那些结构上可以优化的地方，然后生成一个可视化的 HTML 报告，用 Tailwind 美化样式、用 Mermaid 画架构图，每个优化建议都是一张卡片，写着涉及的文件、当前的问题、建议的改进方案。
 
-![](https://pic.yupi.icu/1/image-20260721204942049.png)
+![](/imgs/b702ff672756f8c6.png)
 
 这个 Skill 背后的核心理念来自《A Philosophy of Software Design》这本书。打个比方，一个好的模块就像微波炉，你只需要按几个按钮就能加热食物，内部的电磁波原理完全不用管，这种叫做「深」模块，接口简单、实现复杂。但如果一个模块用起来跟自己写一个差不多费劲，那就是「浅」模块了。这个 Skill 要找的就是代码库里那些浅模块，帮你把它们变成深模块。
 
-![深模块和浅模块的区别](https://pic.yupi.icu/1/07_%E6%B7%B1%E6%A8%A1%E5%9D%97vs%E6%B5%85%E6%A8%A1%E5%9D%97%EF%BC%88%E5%BE%AE%E6%B3%A2%E7%82%89%E6%AF%94%E5%96%BB%EF%BC%89_compressed_v1.png)
+![深模块和浅模块的区别](/imgs/29e249bb8928a25a.png)
 
 2）`/handoff` 上下文交接
 
@@ -235,7 +232,7 @@ Matt Pocock 建议每隔几天就跑一次这个技能，相当于定期给代�
 
 `/handoff` 就是来解决这个问题的。在你当前对话结束前，它会让 AI 把整个对话的核心内容压缩成一份交接文档，保存成一个 Markdown 文件。下次开新对话的时候，只要让 AI 读一下这个文件，它就能接着上次的进度继续工作。
 
-![](https://pic.yupi.icu/1/image-20260721205244844.png)
+![](/imgs/adb81efa83a79b52.png)
 
 这个交接文档还会标注建议在新对话中使用哪些 Skill，并且会自动去除 API 密钥之类的敏感信息。
 

@@ -3,15 +3,12 @@ title: "DeepSeek嵌入到Excel，提升10倍工作效率，太牛了！"
 summary: "昨天跟大家分享了DeepSeek的简单用法，有粉丝就问道：能将DeepSeek嵌入到Excel吗？"
 order: 8
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek嵌入到Excel，提升10倍工作效率，太牛了！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 昨天跟大家分享了DeepSeek的简单用法，有粉丝就问道：能将DeepSeek嵌入到Excel吗？
 
@@ -19,13 +16,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 实现在A1单元格中输入数据，然后点击按钮执行，在B1单元格中输出结果的效果，我们来看下具体怎么做的
 
-![img](https://pic.yupi.icu/yuyi/1739500999272-ee9397b5-62c2-423d-b53b-695644b46146.webp)
+![img](/imgs/05116d0bbdff1ad9.webp)
 
 ### 一、获取API
 
 首先我们需要获取DeepSeek的API，只需来到官网，右上角点击【API开放平台】，然后在右侧找到【API keys】然后在中间点击【API keys】，就会显示窗口，我们需要为其设置一个名字，然后复制下API，等下需要用到。
 
-![img](https://pic.yupi.icu/yuyi/1739500999275-43b619a8-74ec-4c4a-b0ec-6affe8204823.webp)
+![img](/imgs/a1868bd12a1f4685.webp)
 
 ### 二、插入VBA代码
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我们需要将【你的API】替换为你刚才获取的API地址
 
-![img](https://pic.yupi.icu/yuyi/1739500999509-195d3321-c3ef-46eb-866e-d667c5a30aaf.webp)
+![img](/imgs/2d89d2a3da409179.webp)
 
 ```vbnet
 Sub CallDeepSeekAPI()
@@ -92,7 +89,7 @@ End Sub
 
 到此就设置设置完毕了，只需在A1单元格输入问题，然后点击【按钮】等待一段时间就能得到结果，大家可以动手试一下~
 
-![img](https://pic.yupi.icu/yuyi/1739500999992-c3359cbb-2927-4997-8305-4efcde15be17.gif)
+![img](/imgs/3675ab965a76ca41.gif)
 
 
 > 来源：https://mp.weixin.qq.com/s/ZD6KRtYPr7gpsPtAiwiLvQ

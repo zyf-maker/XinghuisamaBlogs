@@ -3,15 +3,12 @@ title: "我的 GitHub 涨星涨粉技巧"
 summary: "让更多人发现你的开源项目"
 order: 14
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-10-22"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《我的 GitHub 涨星涨粉技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 其实 GitHub 是一个非常好的产品推广渠道，尤其是开源项目。我自己的 **GitHub 关注者已经突破 2w**，在中国区关注者排行榜中排到前 7。
 
-![](https://pic.yupi.icu/1/image-20260216150445005.png)
+![](/imgs/9037fafda04c34ac.png)
 
 如今有了 AI 的加持，想做个开源项目比以前容易太多了，但很多同学发完之后 Star 寥寥无几，涨关注就更难了。
 
@@ -34,13 +31,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 我的编程导航、面试鸭、AI 知识库，每个都是持续迭代出来的，不是写完就扔。我去年重点发力 AI 编程方向，熬夜肝了无数个大爷，打磨 [ai-guide](https://github.com/liyupi/ai-guide) 这个免费 AI 教程仓库，开源 9 个月就从 0 做到了 2 万多 Star，内容也从最初的几十篇扩充到了上百篇，靠的是持续输出有价值的内容。
 
-![](https://pic.yupi.icu/1/HSUtwvfa8AAsVIH.jpeg)
+![](/imgs/09b0db99baba9bd0.jpg)
 
 2）装修你的 GitHub 主页：在你的 GitHub 账号下新建一个和用户名同名的仓库，里面的 README 文档会直接展示在你的主页上。
 
 建议在文档里写好自我介绍、置顶最拿得出手的项目。你的主页就是你在开源世界的脸面，别人一看你的主页就知道 follow 你能获得什么，followers 自然越来越多。
 
-![](https://pic.yupi.icu/1/image-20260216151341675.png)
+![](/imgs/cf3a58e6a3a4680e.png)
 
 3）用心写好项目 README：很多人代码写得不错，但 README 就一句 "A project built with React"，谁敢用啊？
 
@@ -48,23 +45,23 @@ source: "https://github.com/liyupi/ai-guide"
 
 4）提供可体验的地址：光有代码不够，一定要部署一个在线 Demo 让别人直接体验。很多人看到一个项目，如果没有可以直接访问的地址，大概率就划走了，眼见为实嘛。
 
-![](https://pic.yupi.icu/1/image-20260216151931295.png)
+![](/imgs/fc44597911c78b36.png)
 
 5）降低使用门槛：提供 Docker 一键部署、写清楚环境要求、准备好示例数据。让别人 clone 下来 2 分钟就能跑起来，而不是折腾半天环境。门槛越低，愿意试用和给 Star 的人越多。
 
-![](https://pic.yupi.icu/1/image-20260216152025708.png)
+![](/imgs/e71b21743474d469.png)
 
 6）重视仓库 SEO：GitHub 本身就是个搜索引擎，你的项目名称、Description、Topics 标签都是关键词。
 
 比如我的 ai-guide 项目，在 GitHub 上搜索 "ai guide"、"AI编程教程" 的排名都很靠前，这些自然搜索流量是免费的。你可以搜一下自己项目的核心关键词，看看排第几，然后针对性优化。
 
-![](https://pic.yupi.icu/1/image-20260216152123748.png)
+![](/imgs/824d481251a293af.png)
 
 除了 GitHub 搜索，现在越来越多人直接问 AI 找资源。仓库内容做得够扎实、口碑积累够多，AI 也会主动推荐你，比如现在问豆包「想学 AI 编程」，它推荐的第一个就是 ai-guide。怎么让 AI 更愿意引用你的内容，可以阅读本板块中的《GEO 生成式引擎优化实战》。
 
 7）追热点出爆款：热门话题自带流量，关键是要快狠准。当年「合成大西瓜」火遍全网的时候，我第一时间做了个魔改工具开源，一夜爆了；「羊了个羊」刷屏的时候，我马上做了「鱼了个鱼」游戏跟上，也迅速起量。
 
-![](https://pic.yupi.icu/1/image-20260216152348389.png)
+![](/imgs/8e63b6fa1309887e.png)
 
 现在有了 AI，你可以用它帮你快速分析热点背后的需求、生成完整项目，从发现热点到上线开源可能就一个晚上的事。
 
@@ -74,11 +71,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 目前各大平台对开源项目的推广容忍度很高，平台乐意推、用户也天然信任开源的东西。像我的 [编程导航网站](https://www.codefather.cn/)，也经常有学编程的同学来分享自己的项目，我作为平台方是很乐意帮忙推荐的，互相成就嘛。
 
-![](https://pic.yupi.icu/1/1%20%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.png)
+![](/imgs/039af5b721dabfa7.png)
 
 9）拓宽你的受众：先想清楚你的项目是给谁用的。如果你的项目不是纯中文场景，千万不要只盯着国内用户。可以用 AI 把 README 翻译成英文，仓库描述也用英文来写，面向全球开发者。GitHub 上海外用户是大头，多了几十倍的潜在受众。我前段时间还专门开源了一个 [GitHub Global 工具](https://github.com/liyupi/github-global)，帮你一键把仓库翻译成多种语言，出海成本不要太低。
 
-![](https://pic.yupi.icu/1/1769079083162-aa879560-6044-4ef7-a3a2-718b03070978.png)
+![](/imgs/13352f6234d92773.png)
 
 10）长期走一个方向：我的 GitHub 从编程学习资源、项目实战教程、面试刷题、到 AI 编程，一直围绕「帮程序员成长」这条线。方向一致，别人才愿意长期关注你，而不是看完一个项目就走了。而且随着 AI 编程的普及，GitHub 的用户群体已经远不止传统程序员了，很多产品经理、设计师、创业者也开始逛 GitHub 找工具，你的潜在受众其实比以前大得多，坚持走下去回报会越来越大。
 

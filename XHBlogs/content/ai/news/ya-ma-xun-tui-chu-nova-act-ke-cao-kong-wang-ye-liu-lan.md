@@ -3,15 +3,12 @@ title: "亚马逊推出 Nova Act：可操控网页浏览器的 AI 智能体"
 summary: "亚马逊推出 Nova Act：可操控网页浏览器的 AI 智能体，由程序员鱼皮整理。"
 order: 57
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《亚马逊推出 Nova Act：可操控网页浏览器的 AI 智能体》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 4 月 1 日消息，亚马逊于当地时间周一正式发布了其通用人工智能智能体（AI agent）——Nova Act。该智能体具备操控网络浏览器并自主执行简单网络任务的能力。与此同时，亚马逊还推出了配套的 Nova Act 软件开发工具包（SDK），旨在帮助开发者利用 Nova Act 构建智能体应用原型。
 

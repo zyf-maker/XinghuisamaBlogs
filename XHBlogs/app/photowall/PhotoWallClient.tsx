@@ -1,5 +1,7 @@
 "use client";
 
+import { asset } from '../../lib/base';
+
 import { useState, useMemo, useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import PageTransition from '../../components/PageTransition';
@@ -44,7 +46,7 @@ export default function PhotoWallClient() {
       <Navbar />
 
       <PageTransition>
-        <div className="w-full max-w-7xl mx-auto mt-28 px-4 sm:px-10 relative z-10">
+        <div className="w-full relative z-10">
 
           {!currentAlbum && (
             <div className="animate-fade-in-up">
@@ -84,7 +86,7 @@ export default function PhotoWallClient() {
                           onClick={() => setSelectedImage(photo)}
                           className="break-inside-avoid relative group rounded-lg overflow-hidden cursor-zoom-in bg-[var(--surface)] border border-[var(--line)] transition-transform duration-500 hover:scale-[1.02]"
                         >
-                          <img src={photo.url} alt={photo.caption} className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                          <img src={asset(photo.url)} alt={photo.caption} className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                           <div
                             className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                             style={{ background: "linear-gradient(to top, rgba(20,22,26,0.8), rgba(20,22,26,0) 58%)" }}
@@ -114,7 +116,7 @@ export default function PhotoWallClient() {
                     >
                       <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-[var(--line)] bg-[var(--surface-alt)]">
                         <img
-                          src={album.cover}
+                          src={asset(album.cover)}
                           alt={album.title}
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                         />
@@ -179,7 +181,7 @@ export default function PhotoWallClient() {
                     className="break-inside-avoid relative group rounded-lg overflow-hidden cursor-zoom-in bg-[var(--surface)] border border-[var(--line)] transition-transform duration-500 hover:scale-[1.02] animate-fade-in-up"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    <img src={photo.url} alt={photo.caption || '照片'} className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                    <img src={asset(photo.url)} alt={photo.caption || '照片'} className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" loading="lazy" />
                     <div
                       className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                       style={{ background: "linear-gradient(to top, rgba(20,22,26,0.78), rgba(20,22,26,0) 55%)" }}
@@ -205,7 +207,7 @@ export default function PhotoWallClient() {
           </button>
 
           <img
-            src={selectedImage.url}
+            src={asset(selectedImage.url)}
             alt={selectedImage.caption || '全屏照片'}
             className="max-w-full max-h-[85vh] object-contain rounded-lg"
             onClick={(e) => e.stopPropagation()}

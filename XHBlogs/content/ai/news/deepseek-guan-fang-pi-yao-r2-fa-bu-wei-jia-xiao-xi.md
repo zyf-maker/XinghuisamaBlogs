@@ -3,15 +3,12 @@ title: "DeepSeek 官方辟谣：R2 发布为假消息"
 summary: "DeepSeek 官方辟谣：R2 发布为假消息，由程序员鱼皮整理。"
 order: 45
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 官方辟谣：R2 发布为假消息》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 3 月 11 日消息，有传闻指出 DeepSeek 将于 3 月 17 日发布下一代 R2 模型。对此，DeepSeek 官方企业咨询账号在用户群中予以回应，明确表示“辟谣：R2 发布为假消息”。
 
@@ -23,6 +20,6 @@ DeepSeek 的 R1 模型在今年 1 月发布后可谓爆火，持续刷屏各大�
 
 官方强调，与 DeepSeek 相关的一切信息均以官方账号发布为准，任何非官方账号、个人账号发布的信息都不代表 DeepSeek 的观点，提醒大家注意甄别。(出处：快科技)
 
-![](https://q4.itc.cn/q_70/images03/20250311/5e5b5184a87342948a27f9c01864f167.jpeg)
+![](/imgs/8151d3f35542e548.jpg)
 
 > 来源：搜狐

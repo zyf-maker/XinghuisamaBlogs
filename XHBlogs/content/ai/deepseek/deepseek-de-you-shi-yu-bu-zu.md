@@ -3,15 +3,12 @@ title: "DeepSeek的优势与不足"
 summary: "DeepSeek的优势："
 order: 105
 level: "进阶"
-tags: ["技术解析", "转载", "AI"]
+tags: ["技术解析"]
 updated: "2025-03-28"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek的优势与不足》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 **DeepSeek的优势：**
 

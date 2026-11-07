@@ -3,15 +3,12 @@ title: "Cursor + Cordova - 表情包生成器 APP 项目实战"
 summary: "本项目将带你用纯 Vibe Coding 的方式，一行代码都不写，开发一个可以在手机上运行的 APP。"
 order: 22
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor + Cordova - 表情包生成器 APP 项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目将带你用纯 Vibe Coding 的方式，一行代码都不写，开发一个可以在手机上运行的 APP。
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你现在看到的 APP，是我完全用 AI 生成的，一行代码都没写！怎么做到的呢？
 
-![](https://pic.yupi.icu/1/image-20250612190219936.png)
+![](/imgs/702f72c241a8fb3c.png)
 
 大家好，我是程序员鱼皮。AI 发展很快，现在随随便便就能生成一个网站，但是怎么纯用 AI 开发能在手机上运行的 APP 呢？网上基本上没有完整的教程。所以，我出手了，下面只用几分钟的时间，我会教大家如何利用 AI 生成 APP，依然是 **保姆级教程**。
 
@@ -36,11 +33,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 Apache Cordova 是一个开源的移动应用开发框架，允许开发者使用 HTML、CSS 和 JavaScript 等 Web 技术开发 **跨平台** 的移动应用。它通过将 Web 技术封装在本地容器中，使得开发者可以编写一次代码，然后在 Android、iOS、Windows 等多个平台上运行。
 
-![](https://pic.yupi.icu/1/1749628169384-9f90fa60-e328-46c8-99eb-6f4f343b8aeb.png)
+![](/imgs/4d63e55a7d2e7776.png)
 
 Cordova 主要基于以下几个核心组件实现，感兴趣的同学可以了解一下：
 
-![](https://pic.yupi.icu/1/image-20250612190256834.png)
+![](/imgs/1e28858e188d71d7.png)
 
 也就是说，想要开发 APP，我们只需要把网站文件交给 Cordova，根据需要装一装插件、改一改配置，然后直接使用它提供的构建工具就能将 Web 应用打包成原生 APP 应用了（比如 APK 文件）！几乎不涉及任何代码编写和开发。
 
@@ -48,7 +45,7 @@ Cordova 主要基于以下几个核心组件实现，感兴趣的同学可以了
 
 如果你自己折腾，可能至少要花个几天的时间，会踩很多坑，到网上搜各种方案还不一定能搞定。所以我才做了这个教程，该踩的坑我都帮大家踩完了，会 **用最短的时间带你搞定环境，并且教你如何使用 AI + Cordova 生成 APP**。开始之前记得 **点赞收藏三连** 哦，拜托，我的头发真的不多啦！
 
-![](https://pic.yupi.icu/1/1749628109290-90dc8199-664a-4994-8dfe-716b4f8b5b71.png)
+![](/imgs/3f60625215722fac.png)
 
 ## 二、环境准备
 
@@ -56,7 +53,7 @@ Cordova 主要基于以下几个核心组件实现，感兴趣的同学可以了
 
 首先我们要安装 Cordova。Cordova 的运行依赖 Node.js 和 NPM 前端工具，到 [Node.js 官网](https://nodejs.org/zh-cn) 下载即可，会自动安装 NPM。
 
-![](https://pic.yupi.icu/1/1749628757935-a1f29765-c0e8-4c3a-9486-e113f3814e8d.png)
+![](/imgs/892e8148ac747821.png)
 
 可以把 NPM 理解为快速安装各种软件的小工具，安装完成后打开终端，执行下列命令安装 Cordova：
 
@@ -71,7 +68,7 @@ Cordova 支持将网站打包为 Android 和 IOS 移动端、Electron 桌面端�
 
 首先，我们要根据 Cordova 的版本来确定所需环境和工具的版本，由于我们安装的 Cordova 是最新版本的，因此直接阅读 [最新的官方文档](https://cordova.apache.org/docs/en/dev/guide/platforms/android/index.html) 即可，比如我这里需要的依赖如下：
 
-![](https://pic.yupi.icu/1/1749470136150-38d5fe30-e3e3-4994-8c06-ada90cc3deb7.png)
+![](/imgs/883d686607c4ac0e.png)
 
 其中，最重要的是：
 
@@ -86,36 +83,36 @@ Cordova 支持将网站打包为 Android 和 IOS 移动端、Electron 桌面端�
 
 Java 版本必须是 17，最好找个现成的 [Windows 系统的 Java 安装包](https://www.azul.com/downloads/?version=java-17-lts&os=windows&package=jdk#zulu)：
 
-![](https://pic.yupi.icu/1/1749629753199-b8458627-2a44-4d5b-8786-74bc1d5b83bc.png)
+![](/imgs/8db798fa774ad0f2.png)
 
 安装 Java 时建议选择 **自动配置环境变量**（包括 Path 和 JAVA_HOME），就不用自己手动配置环境变量了。
 
-![](https://pic.yupi.icu/1/1748604000379-99f42d77-7198-4c44-989c-914f21175452.png)
+![](/imgs/3852374219223fe2.png)
 
 安装完成后，打开终端执行 `java -version` 命令查看版本号，看到下列输出表示成功：
 
-![](https://pic.yupi.icu/1/1748604045327-9e78c03d-dff8-4823-a6f8-221b1c288b77.png)
+![](/imgs/6793117802abb96a.png)
 
 如果无法执行命令，大概率是没有配置 Path 环境变量。
 
-![](https://pic.yupi.icu/1/1749715203575-d424aa3d-9be3-4e55-936e-8c99211a10a9.png)
+![](/imgs/587e37f59f78568c.png)
 
 
 #### 2、安装 Gradle
 
 根据上面的版本号，Gradle 必须是 8.13，直接到 [官网](https://gradle.org/releases/) 下载二进制压缩包即可。
 
-![](https://pic.yupi.icu/1/1749470207621-4d12c5fa-6849-49eb-807a-46512cbd7011.png)
+![](/imgs/7debb8461ef800bf.png)
 
 解压下载完成的压缩包，移动到 **不包含中文的路径** 中，然后配置环境变量，包括 Path 和 GRADLE_HOME：
 
-![](https://pic.yupi.icu/1/1749470552544-1d872d78-933d-404e-a5d3-95071f98f72c.png)
+![](/imgs/fb71b3c8d1d6f8fe.png)
 
-![](https://pic.yupi.icu/1/1749471051766-77ad3676-a1f4-449a-9c6c-3db9adaf5484.png)
+![](/imgs/18e6e9ec543b4e96.png)
 
 打开终端执行 `gradle -v` 命令，查看版本号：
 
-![](https://pic.yupi.icu/1/1749470606188-7af15756-34de-4f77-b469-6b88afc5e6bd.png)
+![](/imgs/1edb362cd45c01db.png)
 
 如果命令无法执行，大概率是 Path 环境变量配置错误。
 
@@ -126,50 +123,50 @@ Java 版本必须是 17，最好找个现成的 [Windows 系统的 Java 安装�
 
 到官网下载 Android studio，运行安装包，按照步骤安装即可：
 
-![](https://pic.yupi.icu/1/1748600319317-775ad570-b84d-441e-9538-3f654e0c0280.png)
+![](/imgs/4314f82f03845651.png)
 
 安装完成后，第一次打开 Android Studio 时，会提醒你安装 Android SDK 环境：
 
-![](https://pic.yupi.icu/1/1748600394690-c64893b5-28f2-439e-afc2-302b616c2cb6.png)
+![](/imgs/d5964d53803dd652.png)
 
 注意不要把 SDK 组件安装到包含中文的目录下，好在安装包也给了限制，不然又得栽倒一片人。。。
 
-![](https://pic.yupi.icu/1/1748601041213-24016b9f-a6ce-4e8e-afba-a412cdee7dab.png)
+![](/imgs/ef7e2fd88566b774.png)
 
 接下来无脑安装即可，会自动安装各种 Android 开发常用的工具、还有安卓设备模拟器：
 
-![](https://pic.yupi.icu/1/1748601061577-19061773-bea7-4f90-8fd4-588a99049611.png)
+![](/imgs/d76726b913cf740d.png)
 
 这一步可能会有点煎熬，有些地区的朋友可能需要一些特殊的网络支持，你懂的。
 
-![](https://pic.yupi.icu/1/1748601238964-92c8754e-7c98-4c5d-9b4d-d1a1ede316ed.png)
+![](/imgs/4c17d0fac87f9c49.png)
 
-![](https://pic.yupi.icu/1/1748601268568-8e5e99b1-0792-49f3-9bd1-d8073282743a.png)
+![](/imgs/9e15785a799ab070.png)
 
 经过了漫长的等待，Android SDK 终于安装完成，然后需要配置 Android 的环境变量 ANDROID_HOME：
 
-![](https://pic.yupi.icu/1/1749469684248-b1c77491-ca2b-49bd-a4e4-fffcef962868.png)
+![](/imgs/2841bb9021977f07.png)
 
 还要配置 platform-tools 到 Path 中，里面有一些命令行工具：
 
-![](https://pic.yupi.icu/1/1749469743427-c052d689-2746-4522-a37d-4ba5513cf857.png)
+![](/imgs/867f2cfa12e22076.png)
 
 
 配置完成后，我们打开 Android Studio，右上角进入 SDK Manager 的设置，根据 Cordova 的版本号要求，安装对应 API Level 的 SDK，比如我这里安装了 34 和 35 版本。
 
-![](https://pic.yupi.icu/1/1748604140186-2cfeee7a-5cce-4647-8dc6-98afc4c7e980.png)
+![](/imgs/0f13f441e089b97c.png)
 
 这一步可能也会比较慢，耐心等待安装吧~
 
-![](https://pic.yupi.icu/1/1748604151163-82381d25-9824-446c-b418-54e758de9a5f.png)
+![](/imgs/3569afe018095e6b.png)
 
 安装完 SDK 后，再进入 SDK 工具选项，安装 Command-line Tools 命令行工具，之后在电脑上运行安卓 apk 包时可能会用到：
 
-![](https://pic.yupi.icu/1/1749607562141-66bfc793-a918-4359-b574-a8d52bc250a1.png)
+![](/imgs/b5cc66c05bc0eb3e.png)
 
 同样，把 Command-line Tools 添加到环境变量 Path 中，路径为 `%ANDROID_HOME%\cmdline-tools\latest\bin`，这样一来，很多工具可以直接在终端中使用了，比如 apkanalyzer。
 
-![](https://pic.yupi.icu/1/1749607796266-a0dbb7b1-62ab-4b43-abcb-796b7261d45a.png)
+![](/imgs/a0d2f774d074cd82.png)
 
 
 #### 4、安装 Android 设备模拟器
@@ -178,39 +175,39 @@ Java 版本必须是 17，最好找个现成的 [Windows 系统的 Java 安装�
 
 打开 Android Studio 的设备管理器，添加一个新设备：
 
-![](https://pic.yupi.icu/1/1749609766461-16befd69-65e1-4c07-bb6a-7e5ee2500dc4.png)
+![](/imgs/71b31f305d237108.png)
 
 选择指定机型，建议选择 API 版本高一点的，我这里选择 Pixel 7：
 
-![](https://pic.yupi.icu/1/1749610449536-edf49ed9-852c-425f-b3a0-a7e7bcc95d90.png)
+![](/imgs/b574c812cfa23d29.png)
 
 安装推荐的系统镜像：
 
-![](https://pic.yupi.icu/1/1749609929190-ad696301-b3d1-4642-98b1-56e303f0856a.png)
+![](/imgs/821de2053bbe270b.png)
 
 耐心等待后手机就创建成功了，直接运行：
 
-![](https://pic.yupi.icu/1/1749610968230-15d4f951-0407-49c1-9453-d8d2035f9a6d.png)
+![](/imgs/bca18951841c5dbb.png)
 
 结果，报错啦！
 
-![](https://pic.yupi.icu/1/1749610958509-4da79a4e-781a-48e5-bf97-93383de6b4ff.png)
+![](/imgs/1367a0b6e8f6ab0e.png)
 
 如果你也遇到这种情况，可以在终端 **进入 Android 模拟器目录** 手动运行虚拟设备，这样能够看到详细的错误信息，有利于排查问题。
 
-![](https://pic.yupi.icu/1/1749611297041-de408f6c-6acc-425e-bd7f-646c3c41fcb4.png)
+![](/imgs/5383e28deae8f985.png)
 
 比如我这里显然是由于路径包含了中文！可恶啊，当时年少轻狂不自卑一个没注意用了中文路径。。。
 
-![](https://pic.yupi.icu/1/1749611342058-e78e5020-2a11-4403-8bdb-28c1788d4287.png)
+![](/imgs/e8afd01214750430.png)
 
 解决方法很简单，手动创建一个不包含中文路径的 avd 虚拟设备目录，然后设置环境变量 ANDROID_SDK_HOME：
 
-![](https://pic.yupi.icu/1/1749612398190-b65661c4-b4c3-4d64-aeb1-491ec40ac55b.png)
+![](/imgs/10294dd97ccf8792.png)
 
 然后再利用 Android Studio 创建一个设备并运行，这次成功运行了，恭喜你多了一个手机！
 
-![](https://pic.yupi.icu/1/1749612554480-2514015b-1592-49ee-83dd-fae7af6a6918.png)
+![](/imgs/418f09879911a5ac.png)
 
 至此，环境终于搞定了，下面来实战 AI + Cordova 开发 APP。
 
@@ -226,7 +223,7 @@ cordova create <你的项目英文名称>
 
 首次创建项目可能会有提示：
 
-![](https://pic.yupi.icu/1/1748595666543-fd4ae41b-7edc-4443-bab6-3e6ff8eeb819.png)
+![](/imgs/2e748269412279f9.png)
 
 
 ### 生成代码
@@ -289,7 +286,7 @@ cordova create <你的项目英文名称>
 
 AI 生成的网站文件会放到 `www` 目录下。生成代码完成后，AI 可能会自动提醒你打包 APP 并且运行的命令，要依次添加安卓平台、安装插件、打包、运行。
 
-![](https://pic.yupi.icu/1/1748596578547-e99a9448-e4a3-421c-907f-5e85c3b24ea2.png)
+![](/imgs/7b33ad76ae9c9e49.png)
 
 这些命令我们等会儿就会用到，现在先不要自动执行，因为生成的代码不一定直接可用，我们需要先利用网页端进行调试。
 
@@ -306,7 +303,7 @@ cordova platform add browser
 
 如果你在执行命令时遇到了报错，可以直接问 AI，比如鱼皮遇到了缺少命令执行权限的错误：
 
-![](https://pic.yupi.icu/1/1748597149478-5d93aa00-a15d-41a7-b7b3-6011c9098420.png)
+![](/imgs/1a6ea35ccd30896c.png)
 
 解决方案是，执行下列命令来修改 PowerShell 的执行策略：
 
@@ -322,7 +319,7 @@ cordova run browser
 
 然后就能够查看到网站的运行效果了。需要注意的是，因为 Cordova Browser 平台的特殊性，通过这个命令运行的网页效果可能和直接双击、或者启动本地服务器运行有区别。
 
-![](https://pic.yupi.icu/1/1749632376309-d49aa1f5-15fa-47ac-8ecc-34fafa453a17.png)
+![](/imgs/163ab684a10ca4c3.png)
 
 除了上面的命令外，如果你想快速调试多个不同的平台，可以运行下列命令，统一查看各个平台：
 
@@ -330,7 +327,7 @@ cordova run browser
 cordova serve --port 8000
 ```
 
-![](https://pic.yupi.icu/1/1749632540888-2c8274ca-b2bc-488b-9d55-da8999b57a87.png)
+![](/imgs/d4b4991a71811111.png)
 
 ### 添加安卓平台
 
@@ -342,11 +339,11 @@ cordova platform add android
 
 如图，添加安卓平台成功，注意要 **确保输出的 Target SDK 和 Compile SDK 版本一致**：
 
-![](https://pic.yupi.icu/1/1749554296373-e755253d-c2e9-4367-87a4-9c9e24402f20.png)
+![](/imgs/18b74f65e6441def.png)
 
 如果不一致，可能会影响 APP 的运行。可以修改 `config.xml` 的 targetSdkVersion 来修改版本号：
 
-![](https://pic.yupi.icu/1/1749548403555-9eb701bd-bd9f-469f-a672-b56d033c8b91.png)
+![](/imgs/c25590c0d45556fa.png)
 
 ### 添加插件
 
@@ -358,7 +355,7 @@ cordova plugin add cordova-plugin-camera
 
 添加插件成功：
 
-![](https://pic.yupi.icu/1/1748597252238-9c9d7da6-1b6e-42b1-ad5e-714498f21b67.png)
+![](/imgs/5f4f3d63613533d5.png)
 
 
 ### 打包运行安卓 APP
@@ -373,7 +370,7 @@ cordova build android
 
 看到下列信息表示打包成功：
 
-![](https://pic.yupi.icu/1/1749554490277-687fea6b-175e-4097-92e0-37090d4f3c63.png)
+![](/imgs/edb41d82344f2051.png)
 
 得到 apk 包后，有 2 种运行方式：
 
@@ -381,13 +378,13 @@ cordova build android
 
 可以直接将 apk 包发送到手机安装运行：
 
-![](https://pic.yupi.icu/1/1749608745115-c35207fa-a32c-4dc2-a74f-10244b993e51.png)
+![](/imgs/875d3c0a33f169ae.png)
 
 运行效果如图：
 
-![](https://pic.yupi.icu/1/1749609325122-30c51d37-aeaa-4e4e-95a1-6565dc212266.jpeg)
+![](/imgs/719602b3ffa4545a.jpg)
 
-![](https://pic.yupi.icu/1/1749609327998-acbfdfbd-6982-4be4-9f77-d116046194a0.jpeg)
+![](/imgs/1c9229e3d28591cd.jpg)
 
 
 #### 电脑运行
@@ -400,7 +397,7 @@ cordova run android
 
 就可以将 apk 安装到虚拟设备中，并且运行 APP 了，效果如图：
 
-![](https://pic.yupi.icu/1/1749612728673-2c8f7bd0-ecc5-46c4-b24c-573498a70e63.png)
+![](/imgs/868e123b293b0e45.png)
 
 
 ### 常见报错
@@ -413,40 +410,40 @@ cordova run android
 
 比如鱼皮的项目缺少了图标文件：
 
-![](https://pic.yupi.icu/1/1748597545640-7b26e31f-4c7e-4f57-999f-adbf5b2994ad.png)
+![](/imgs/b5cc5643b2b950c9.png)
 
 AI 尝试帮我创建图标：
 
-![](https://pic.yupi.icu/1/1748597699107-c363caa4-1e59-4fd6-ba4a-3004414b2c7c.png)
+![](/imgs/b2949468725fc3ab.png)
 
 或者简单粗暴，移除配置文件中对图标的引用：
 
-![](https://pic.yupi.icu/1/1748597731494-234f4827-eef8-4a1d-9f00-0ed01b61d66d.png)
+![](/imgs/f301d3bbe78c0f24.png)
 
 
 #### 2、缺少环境变量
 
 如果环境搭建不顺利，可能会遇到下列报错，根据报错信息去进行对应的配置即可：
 
-![](https://pic.yupi.icu/1/1748599524081-e2121c56-11bc-4504-bd2d-6a5fff26f4fb.png)
+![](/imgs/998b5b47fc55b7ad.png)
 
 
 #### 3、命令执行失败
 
 执行 `cordova run` 报错命令执行失败，可能是因为没有配置 `cmdline-tools` 到环境变量 Path 中。
 
-![](https://pic.yupi.icu/1/1749607603308-b1dac4af-1505-4e15-b2ab-25ffd9abf3a5.png)
+![](/imgs/f31c54f91f1681d3.png)
 
 
 #### 4、Gradle 无法安装
 
 明明已经安装了 Gradle，但是 Cordova 仍然会安装 Gradle，而且可能因为网络原因下载失败：
 
-![](https://pic.yupi.icu/1/1749469918640-07f5eca4-5651-4e35-91a5-222c43363004.png)
+![](/imgs/a5a08db00d695bca.png)
 
 这时，我们可以配置环境变量 `CORDOVA_ANDROID_GRADLE_DISTRIBUTION_URL`，指定从本地下载 Gradle。环境变量的值设置为我们自己下载的 Gradle 压缩包的路径。
 
-![](https://pic.yupi.icu/1/1749471697598-c7dd5754-4e58-4b01-9787-5889a0f9df52.png)
+![](/imgs/fd0d3b8ff2be5c2a.png)
 
 如果修改配置后再次执行打包命令还是报错，建议删除项目内的 `platforms/android/.gradle` 缓存，然后重试。
 
@@ -457,7 +454,7 @@ AI 尝试帮我创建图标：
 
 比如现在鱼皮有一个消消乐网页游戏项目，让我们来包装为 APP：
 
-![](https://pic.yupi.icu/1/1749614057458-74ba49c0-d249-43ab-9946-631c8783cc75.png)
+![](/imgs/84420583b751e20d.png)
 
 1）先创建 cordova 项目：
 
@@ -467,7 +464,7 @@ cordova create yu-game-web-app
 
 2）把已有的网页文件复制到 www 目录下：
 
-![](https://pic.yupi.icu/1/1749614211678-13686f0e-7921-4abe-9ed2-beaf031ff38d.png)
+![](/imgs/b7c74516a1f2e098.png)
 
 3）执行 cordova 命令添加 Android 平台：
 
@@ -483,7 +480,7 @@ cordova run android
 
 运行成功的效果如图，还是很 nice 的~
 
-![](https://pic.yupi.icu/1/1749614429684-50917cff-d0fc-4c0f-be7d-c356e7827410.png)
+![](/imgs/e293f8d4d40a8afe.png)
 
 
 ## 最后

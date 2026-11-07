@@ -3,15 +3,12 @@ title: "AI 编程时代，哪些技术必须要了解？"
 summary: "用 AI 编程做项目的时候，你一定会遇到各种没见过的技术名词。"
 order: 13
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-09-02"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 编程时代，哪些技术必须要了解？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 用 AI 编程做项目的时候，你一定会遇到各种没见过的技术名词。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你一脸问号：这都是啥？算了，让 AI 干就完了，我不用管……
 
-![](https://pic.yupi.icu/1/%E5%95%A5%E5%95%A5%E5%95%A5%E8%A1%A8%E6%83%85%E5%8C%85.jpg)
+![](/imgs/94b482db6ca5cd6f.jpg)
 
 但问题是，如果你对这些技术完全没概念，跟 AI 沟通时就说不清楚自己想要什么，AI 选错了方向你也判断不出来。
 
@@ -36,7 +33,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 JavaScript 最早是给浏览器用的语言，负责网页上的各种交互效果。后来 Node.js 的出现让它也能跑在服务器上写后端，于是 JS 变成了前后端通吃的全栈语言。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/01_JavaScript%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80_compressed_v3.png)
+![](/imgs/563bf00f0db4c745.png)
 
 TypeScript 是 JavaScript 的增强版，给每个变量都标注了类型，写代码时编辑器就能帮你检查错误。
 
@@ -44,7 +41,7 @@ TypeScript 是 JavaScript 的增强版，给每个变量都标注了类型，写
 
 如果你想做网站相关的项目，JS/TS 几乎是绑定的。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/02_TypeScript%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F%E5%A2%9E%E5%BC%BA_compressed_v3.png)
+![](/imgs/f7f214ab5c2aa45f.png)
 
 
 #### 2、Python
@@ -55,7 +52,7 @@ Python 的语法接近英语，读起来像伪代码一样直观，所以很多�
 
 如果你要做 AI 应用开发、数据处理、爬虫这些事情，Python 是非常好的选择。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/03_Python%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80_compressed_v2.png)
+![](/imgs/6ed319824a6ea57e.png)
 
 简单来说，做网站选 JS / TS，做 AI 应用选 Python，两者都会就更好了。
 
@@ -76,7 +73,7 @@ React 是 Meta 开发的前端框架，核心理念是把页面拆分成一个�
 
 根据开发者调查数据，React 的使用率超过了 80%，是全球最主流的前端框架。AI 训练数据中 React 代码量最大，所以 AI 生成 React 代码的质量也是最高的。我们团队的产品基本都是用 React 开发的。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/07_React%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6_compressed_v1.png)
+![](/imgs/941256a730fd22c1.png)
 
 
 #### 2、Next.js
@@ -89,7 +86,7 @@ Next.js 是基于 React 的全栈框架，由 Vercel 公司开发。
 
 而且能够轻松部署到 Vercel 平台，只需要把代码推到 GitHub，连接仓库后每次推送自动构建上线，非常省事。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/09_Next.js%E5%85%A8%E6%A0%88%E6%A1%86%E6%9E%B6_compressed_v1.png)
+![](/imgs/1ce431973a13389b.png)
 
 
 #### 3、Tailwind CSS
@@ -102,7 +99,7 @@ Tailwind CSS 是一个原子化的样式框架。
 
 AI 生成的前端代码默认就很喜欢用 Tailwind，因为它不需要额外维护 CSS 文件，而且每个样式类名只有一种写法，AI 生成的准确率特别高。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/11_Tailwind_CSS%E5%8E%9F%E5%AD%90%E5%8C%96%E6%A1%86%E6%9E%B6_compressed_v1.png)
+![](/imgs/aa11e0e3c7b0c263.png)
 
 不过你可能也注意到了，AI 生成的页面经常是蓝紫色渐变的配色，就是因为 Tailwind 的默认色板有蓝色和紫色，AI 用起来特别顺手，导致做出来的东西千篇一律…… 想避免这个问题，记得在提示词里明确你想要的配色风格。
 
@@ -128,7 +125,7 @@ Spring Boot 是 Java 后端开发的标配框架，国内大部分企业的后�
 
 如果你学 AI 编程的同时也想提升后端就业竞争力，Spring Boot 是必学的。而且 Spring AI 框架的推出，让 Java 程序员也能很方便地开发 AI 应用了。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/24_Spring_Boot%E6%A1%86%E6%9E%B6_compressed_v2.png)
+![](/imgs/52bcb2aadc6ae60f.png)
 
 
 #### 2、FastAPI
@@ -137,7 +134,7 @@ FastAPI 是 Python 生态中增长最快的后端框架，目前已经有接近 
 
 FastAPI 最爽的一点是，启动后访问 /docs 路径就能看到一个交互式的接口文档页面，可以直接在浏览器里测试接口。如果你用 AI 生成 Python 后端项目，大概率就是 FastAPI。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/25_FastAPI%E6%A1%86%E6%9E%B6_compressed_v1.png)
+![](/imgs/3ee50f264b482a30.png)
 
 简单来说，Java 方向选 Spring Boot，Python 方向选 FastAPI，想省事用 Next.js 的 API Routes 前后端一把梭。
 
@@ -150,11 +147,11 @@ FastAPI 最爽的一点是，启动后访问 /docs 路径就能看到一个交�
 
 关系型数据库就像 Excel 表格一样，数据有行有列，数据之间可以建立关联。
 
-![](https://pic.yupi.icu/1/1769046133583-18e6b389-b3b7-4c56-b5f3-7482a3897bd3.png)
+![](/imgs/db8a4e01f6506204.png)
 
 MySQL 和 PostgreSQL 是最主流的两个关系型数据库，都是开源免费的。
 
-![](https://pic.yupi.icu/1/1769046291097-2dea6cb4-76e5-45ef-8799-e187324eee46.png)
+![](/imgs/6f3783c651f33708.png)
 
 MySQL 在国内用得最广，遇到问题基本都能搜到解决方案。PostgreSQL 功能更强大，支持 JSON 数据类型、地理信息、全文搜索，还能通过 pgvector 插件支持向量搜索，适合开发 AI 应用，很多海外的 SaaS 产品和 AI 项目都在用 PostgreSQL。
 
@@ -171,7 +168,7 @@ Supabase 是一个开源的后端即服务平台，底层基于 PostgreSQL，提
 
 你可以跟 AI 说「用 Supabase 做数据库和认证」，AI 就能帮你生成完整的集成代码。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/36_Supabase%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1_compressed_v1.png)
+![](/imgs/1be16e7ad1137d06.png)
 
 
 ## 五、部署上线
@@ -186,7 +183,7 @@ Supabase 是一个开源的后端即服务平台，底层基于 PostgreSQL，提
 
 它是 Next.js 框架背后的公司，对 Next.js 项目的支持最好。你只需要把代码推送到 GitHub，Vercel 会自动帮你构建和部署，几分钟就能上线，还自带 HTTPS 和 CDN 加速。免费额度对个人项目完全够用，非常适合部署 AI 编程做出来的小项目。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/44_Vercel%E9%83%A8%E7%BD%B2%E5%B9%B3%E5%8F%B0_compressed_v3.png)
+![](/imgs/3e4fb07f8626b541.png)
 
 
 #### 2、Linux 云服务器
@@ -206,7 +203,7 @@ Docker 可以把你的代码、运行环境、依赖库全部打包成一个「�
 
 把应用封装为 Docker 很简单，让 AI 帮你写 Dockerfile 配置文件就行，不需要自己记 Docker 文件的写法。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/46_Docker%E5%AE%B9%E5%99%A8%E5%8C%96_compressed_v2.png)
+![](/imgs/7e4d6e9730b9e4d5.png)
 
 如果你的项目涉及多个服务，比如前端 + 后端 + 数据库，还可以用 docker-compose 一键启动所有服务。
 
@@ -219,7 +216,7 @@ Docker 可以把你的代码、运行环境、依赖库全部打包成一个「�
 
 你不需要死记 Git 命令，因为 AI 可以帮你执行 Git 操作。但几个核心概念要知道，比如 commit 是保存一个版本，branch 是创建一个分支，push 是把代码推送到远程仓库。
 
-![](https://pic.yupi.icu/1/07_Git%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%90%8E%E6%82%94%E8%8D%AF_compressed_v3.png)
+![](/imgs/14f517fbb06b21fd.png)
 
 
 #### 2、GitHub
@@ -228,7 +225,7 @@ GitHub 是全球最大的代码托管平台，也是曾经大家玩梗说的程�
 
 你可以把代码推送到 GitHub 上，便于备份、分享和协作。前面说的 Vercel 部署，就是连接你的 GitHub 仓库来实现自动上线的。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/71_GitHub%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E5%B9%B3%E5%8F%B0_compressed_v1.png)
+![](/imgs/334505b70eff3789.png)
 
 
 ## 七、调用 AI 大模型
@@ -246,7 +243,7 @@ OpenAI 提供了一套标准的 API，你可以用它来实现对话、文本生
 
 很多其他 AI 服务商的 API 也兼容 OpenAI 的接口格式，比如 DeepSeek、通义千问等。所以学会调用 OpenAI API 后，切换到其他模型也很方便。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/72_OpenAI_API%E8%B0%83%E7%94%A8GPT%E5%A4%A7%E6%A8%A1%E5%9E%8B_compressed_v2.png)
+![](/imgs/592704b1d87f603c.png)
 
 如果你想在一个项目中灵活切换不同的模型，还可以用 OpenRouter 这样的统一接口服务，一个 Key 就能调用上百种大模型。
 
@@ -259,7 +256,7 @@ LangChain 可以说是最流行的 AI 应用开发框架，你可以把它理解
 
 不过有一点要注意，LangChain 更适合原型开发和复杂的多模型编排场景。如果你的应用比较简单，直接用 OpenAI 或者各家大模型的 SDK 会更轻量。
 
-![](https://pic.yupi.icu/1/article-images/tech-stack/76_LangChain_AI%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6_compressed_v1.png)
+![](/imgs/b13a0805fce63ebd.png)
 
 
 ## 八、向量数据库和 RAG
@@ -272,7 +269,7 @@ LangChain 可以说是最流行的 AI 应用开发框架，你可以把它理解
 
 RAG 的全称是 Retrieval-Augmented Generation 检索增强生成，核心思想就是 **先搜再答**，让大模型在回答之前先去搜一遍相关资料，再基于搜到的知识来组织答案。就跟开卷考试差不多，遇到不会的先翻翻书。
 
-![](https://pic.yupi.icu/1/1776332850706-68cb05fe-7022-445c-9c3d-944f74f48dee.png)
+![](/imgs/cc69f9def5600e46.png)
 
 但怎么搜到相关的资料呢？
 
@@ -280,7 +277,7 @@ RAG 的全称是 Retrieval-Augmented Generation 检索增强生成，核心思�
 
 简单来说，向量就是把一段文字用一串数字来表示，让计算机可以比较语义上的相似度。负责把文字转成向量的模型叫 Embedding 模型，存储这些向量并支持快速相似度搜索的数据库就是向量数据库。
 
-![](https://pic.yupi.icu/1/1769046928023-6111fd54-4926-4ef0-b67b-e10f3af57d52.png)
+![](/imgs/fb0dabdbe3cabfbd.png)
 
 RAG 的做法其实就 2 步。
 
@@ -288,11 +285,11 @@ RAG 的做法其实就 2 步。
 
 2）用户提问时，把问题也转成向量，去向量库里搜最相似的几个文档块，再把这些块连同用户问题一起交给大模型生成回答。
 
-![](https://pic.yupi.icu/1/1776650476421-3bfb3c26-575d-4cc4-9538-f74a4589b42d.png)
+![](/imgs/f77b20ff221772e0.png)
 
 在 AI 时代，向量数据库的应用越来越广，做 AI 知识库、语义搜索、推荐系统都需要用到它。主流的向量数据库有 Milvus、Chroma、Qdrant 这些，PostgreSQL 也可以通过 pgvector 插件支持向量搜索。
 
-![](https://pic.yupi.icu/1/1769047066536-0ef08cd3-b86b-4c97-9016-7add32a710b8.png)
+![](/imgs/0901323279a023ca.png)
 
 如果想深入了解 RAG 的各种进阶方案，我之前写过一篇 [从 Naive RAG 到 Agentic RAG 的全景科普文章](https://mp.weixin.qq.com/s/r_HwTfIyShV5Ke0UY6b-4g)，感兴趣可以去看看。
 

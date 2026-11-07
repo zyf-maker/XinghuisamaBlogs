@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 辅助工具集》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 在前面的文章中，我们学习了各种 AI 编程工具，包括 AI 零代码平台、AI 智能体平台、AI 代码编辑器、命令行工具、IDE 插件，还体验了 OpenClaw 这样的 AI 数字员工。但要真正高效地开发项目，光有 AI 工具还不够，还需要一些辅助工具来完善整个工作流程。
@@ -55,7 +52,7 @@ Git 的工作流程很简单，主要就三步：
 
 打个比方，修改代码就像在草稿纸上写东西，添加到暂存区就像把满意的内容挑出来，提交到仓库就像把这些内容正式保存到笔记本里。
 
-![](https://pic.yupi.icu/1/gitworkflow%E5%A4%A7.jpeg)
+![](/imgs/ad93e2df91903495.jpg)
 
 
 
@@ -67,7 +64,7 @@ Git 的工作流程很简单，主要就三步：
 
 我自己刚开始接触 Git 的时候就是这样，完全没有上网搜教程，就是看别人提交项目的时候在编辑器上点几下就搞定了，觉得很神奇。然后我就有样学样地用起了这个工具。而且很长一段时间我都是用 [GitHub Desktop](https://desktop.github.com/) 来傻瓜式操作，遇到问题了再上网搜解决方案。
 
-![GitHub Desktop APP](https://pic.yupi.icu/1/screenshot-windows-dark.png)
+![GitHub Desktop APP](/imgs/48f7407463ede56b.png)
 
 等你熟练了之后，可以再学习命令行操作。命令行虽然看起来复杂，但其实更灵活、更强大，而且很多高级功能只能通过命令行实现。
 
@@ -138,7 +135,7 @@ Git 会帮你记录每一次修改，随时可以回退。
 
 现在很多 AI 工具都内置了 Git 功能。比如 Cursor 可以在编辑器里直接提交代码：
 
-![](https://pic.yupi.icu/1/image-20260109110826513.png)
+![](/imgs/cf8dc5ffa1476c67.png)
 
 也可以让 AI 帮你自动执行 Git 命令，就跟它说 “帮我用 Git 来管理项目” 就可以了。
 
@@ -176,7 +173,7 @@ Git 的功能很强大，但对于 Vibe Coding 来说，掌握上面这些用法
 
 2）创建项目，可以直接绑定 GitHub 并选择已经托管的项目，点击 "Deploy" 部署按钮：
 
-![](https://pic.yupi.icu/1/image-20260109111323983.png)
+![](/imgs/971e05f6fa93a9a6.png)
 
 3）等待 1 ~ 2 分钟，项目就上线了！
 
@@ -211,7 +208,7 @@ EdgeOne Pages 基于这个强大的基础设施，优点是国内访问速度快
 
 使用方法巨简单，在 GitHub 创建仓库并上传网站文件后，直接在仓库设置中启用 GitHub Pages：
 
-![](https://pic.yupi.icu/1/image-20260109111917547.png)
+![](/imgs/1c7b859c154b2b95.png)
 
 然后就能通过 `username.github.io/repo-name` 访问了。适合个人主页、项目文档、简单的静态网站。
 
@@ -234,7 +231,7 @@ EdgeOne Pages 基于这个强大的基础设施，优点是国内访问速度快
 
 CDN（内容分发网络）就是把你的网站内容缓存到全球各地的服务器上，用户访问时会自动选择离他最近的服务器，大大提高加载速度。
 
-![](https://pic.yupi.icu/1/1763643073516-5248d56c-bf7d-4537-b8f8-681a104626d9.png)
+![](/imgs/4810c2c3648cfa04.png)
 
 Cloudflare 的优势是：
 
@@ -248,7 +245,7 @@ Cloudflare 的优势是：
 
 也可以直接使用 Cloudflare 提供的 Pages 页面部署能力，直接上传自己的代码，交给它一键部署并白票免费的域名，更方便~
 
-![](https://pic.yupi.icu/1/1763643412558-4d499b46-5e16-4f83-9df7-06a85175df35.png)
+![](/imgs/7148fc5bdd0af4ba.png)
 
 如果你的网站部署在 Vercel 或 Netlify 上，它们本身就有 CDN 加速，不需要额外配置 Cloudflare。但如果你是自己租服务器部署，强烈建议用 Cloudflare 加速。 
 
@@ -282,7 +279,7 @@ MCP（Model Context Protocol） 是一个开放标准，可以让 AI 工具连�
 
 简单来说，MCP 就像给 AI 装上了各种 "插件"，让它能做更多事情。比如文件系统 MCP 让 AI 可以读写文件，GitHub MCP 让 AI 可以操作 GitHub 仓库，数据库 MCP 让 AI 可以查询数据库，浏览器 MCP 让 AI 可以浏览网页。
 
-![](https://pic.yupi.icu/1/mcp.png)
+![](/imgs/2ee780f06f646399.png)
 
 现在几乎所有主流 AI 编程工具都支持 MCP，包括 Cursor、Claude Code、Cline、Windsurf、Gemini CLI、Kiro 等。你可以在这些工具中使用各种 MCP 服务，大大扩展 AI 的能力。
 
@@ -298,21 +295,21 @@ MCP（Model Context Protocol） 是一个开放标准，可以让 AI 工具连�
 
 1）利用 MCP 大全网站搜索你需要的 MCP 工具，并获取到 MCP 配置信息，后面会用到：
 
-![](https://pic.yupi.icu/1/image-20260109113038258.png)
+![](/imgs/b07fd50c45fd3fdc.png)
 
 由于这个 MCP 工具需要用到 `uvx` 命令来安装，我们需要先安装 uv 工具。参考 [官方安装文档](https://docs.astral.sh/uv/getting-started/installation/)，选择操作系统并执行一行命令，就能完成安装了。
 
-![](https://pic.yupi.icu/1/image-20260109113308798.png)
+![](/imgs/9f5cec8beb30c705.png)
 
 安装后，执行 `uvx` 命令，应该会看到下图的输出，表示安装成功：
 
-![](https://pic.yupi.icu/1/image-20260109113427041.png)
+![](/imgs/5cf27e0de4a04a57.png)
 
 
 
 2）打开 Cursor 设置，找到 MCP 配置选项，点击添加 MCP：
 
-![](https://pic.yupi.icu/1/image-20260109113809834.png)
+![](/imgs/dd3420c6b0ce13c0.png)
 
 
 
@@ -332,13 +329,13 @@ MCP（Model Context Protocol） 是一个开放标准，可以让 AI 工具连�
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260109112647904.png)
+![](/imgs/1fdcf8d5eebf76a8.png)
 
 
 
 4）保存后，会发现 MCP 工具已成功开启，现在 AI 就可以获取到最新时间了。
 
-![](https://pic.yupi.icu/1/image-20260109113524465.png)
+![](/imgs/424b28c916b1e206.png)
 
 
 
@@ -346,7 +343,7 @@ MCP（Model Context Protocol） 是一个开放标准，可以让 AI 工具连�
 
 AI 就能通过调用 MCP，给你最准确的时间。
 
-![](https://pic.yupi.icu/1/image-20260109113631840.png)
+![](/imgs/ab759585d23be6a9.png)
 
 
 
@@ -372,7 +369,7 @@ AI 就能通过调用 MCP，给你最准确的时间。
 
 这些 MCP 服务能让 AI 的能力边界大大扩展，从单纯的代码生成变成能够联网搜索、操作文件、部署项目的全能助手。
 
-![](https://pic.yupi.icu/1/image-20260116122211103.png)
+![](/imgs/8af26d5299ed23c2.png)
 
 如果你想了解更多 MCP 服务，可以访问：
 
@@ -394,15 +391,15 @@ AI 就能通过调用 MCP，给你最准确的时间。
 
 这些工具的核心理念是：先把需求写成规范文档，然后让 AI 严格遵守规范来生成代码，确保代码质量和需求对齐。
 
-![](https://pic.yupi.icu/1/image-20260116161926017.png)
+![](/imgs/7dae71f40717f83b.png)
 
 1）Spec-kit：GitHub 推出的规范驱动开发框架，适合从 0 开始做大型新项目
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE4%E5%A4%A7.jpeg)
+![](/imgs/b80cd552f1d6f59c.jpg)
 
 2）OpenSpec：轻量的规范驱动开发框架，适合在现有项目上迭代功能
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE6%E5%A4%A7.jpeg)
+![](/imgs/0e25e00dbfd307ce.jpg)
 
 关于这些工具更详细的用法，可以见本 Vibe Coding 教程的《工具实战》部分。
 
@@ -412,11 +409,11 @@ AI 就能通过调用 MCP，给你最准确的时间。
 
 Agent Skills 是 Anthropic 推出的 AI 技能系统，可以把复杂的任务指令、脚本和资源打包成一个技能，让 AI 快速学会新本事。
 
-![](https://pic.yupi.icu/1/%25E6%25BC%25AB%25E7%2594%25BB%25E5%259B%25BE7%25E5%25A4%25A7.jpeg)
+![](/imgs/c253c4bdc8102291.jpg)
 
 比如 frontend-design 技能能让 AI 生成更有个性的界面设计，告别千篇一律的蓝紫渐变色。
 
-![](https://pic.yupi.icu/1/image-20260116152325220.png)
+![](/imgs/01b599b3d8256526.png)
 
 关于 Agent Skills 更详细的用法，可以见本 Vibe Coding 教程的《工具实战》部分。
 
@@ -430,11 +427,11 @@ Agent Skills 是 Anthropic 推出的 AI 技能系统，可以把复杂的任务�
 
 Superpowers 是一套让 AI 编程助手变得更专业的软件开发流程，提供了一套可组合的编程技能包，确保 AI 能够按照专业程序员的开发习惯来工作。
 
-![](https://pic.yupi.icu/1/%25E6%25BC%25AB%25E7%2594%25BB%25E5%259B%25BE8%25E5%25A4%25A7.jpeg)
+![](/imgs/87dec05430f3966b.jpg)
 
 这些工具比较适合团队协作和大型项目开发，如果你只是做简单的个人项目，可能用不上。但了解这些工具的理念，对提升代码质量很有帮助。
 
-![](https://pic.yupi.icu/1/image-20260116180907360-20260116180953363-20260116181058928-20260116181118631-20260118134539731.png)
+![](/imgs/38d0eeb8361825f5.png)
 
 关于 Superpowers 更详细的用法，可以见本 Vibe Coding 教程的《工具实战》部分。
 
@@ -452,7 +449,7 @@ Superpowers 是一套让 AI 编程助手变得更专业的软件开发流程，�
 
 你可以在 GitHub 上托管代码、展示项目、学习别人的代码、参与开源项目。而且很多 AI 工具都支持和 GitHub 集成，比如 Cursor、Vercel、Netlify 等。
 
-![鱼皮 GitHub 的项目仓库](https://pic.yupi.icu/1/image-20251126231252956.png)
+![鱼皮 GitHub 的项目仓库](/imgs/4b71f02164a95006.png)
 
 个人建议，给自己的每个项目都创建一个 GitHub 仓库，既能备份代码，又能展示作品。
 
@@ -472,7 +469,7 @@ Superpowers 是一套让 AI 编程助手变得更专业的软件开发流程，�
 
 我更推荐用 [PicGo](https://molunerfinn.com/PicGo/)，这是一个本地图床工具，支持多种图床平台（GitHub、七牛云、腾讯云、阿里云等）。你可以在本地管理图片，上传后自动复制链接，非常方便。
 
-![](https://pic.yupi.icu/1/image-20260109114343606.png)
+![](/imgs/29237ba622e2bc68.png)
 
 而且 PicGo 还支持快捷键上传、截图上传等功能，用起来特别顺手。如果你经常需要在文章或项目里插入图片，强烈推荐试试 PicGo。
 
@@ -505,7 +502,7 @@ DATABASE_URL=your_database_url
 
 对于国内用户，我推荐在 [阿里云](https://wanwang.aliyun.com/) 或 [腾讯云](https://dnspod.cloud.tencent.com/) 这种知名云服务商购买域名。价格一般是几十块钱一年，而且操作界面都是中文的，很方便。
 
-![](https://pic.yupi.icu/1/image-20260109114615834.png)
+![](/imgs/b370591a879b011a.png)
 
 需要注意的是，**如果你的网站服务器在国内，域名需要备案**。备案流程大概需要 1 ~ 2 周，需要提供身份证、手机号等信息。
 
@@ -527,7 +524,7 @@ DATABASE_URL=your_database_url
 - 实时数据同步，数据变化时自动更新
 - 友好的可视化界面，不用写 SQL 也能管理数据
 
-![](https://pic.yupi.icu/1/image-20260109114906767.png)
+![](/imgs/c93b8cc98e2a85f8.png)
 
 而且 Supabase 的文档非常详细，配合 AI 工具使用特别方便。你只需要告诉 AI：“用 Supabase 做一个用户注册功能”，AI 就能帮你写好代码。
 
@@ -546,7 +543,7 @@ DATABASE_URL=your_database_url
 
 我强烈推荐自己团队开发的 [代码小抄](https://codecopy.cn/)。这是一个简单易用的代码分享工具，可以快速、跨设备地自由分享代码。
 
-![代码小抄](https://pic.yupi.icu/1/1705646241236-26786c47-1251-4891-85f3-e91ac9e4be94-20240125151504219-20240222165129145.png)
+![代码小抄](/imgs/f2ba48362d0eac34.png)
 
 代码小抄的优势：
 

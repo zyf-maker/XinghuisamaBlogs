@@ -3,15 +3,12 @@ title: "Anthropic 官方 - 人机协作团队方法"
 summary: "把 AI 当成同事，Anthropic 官方总结的 4 条协作经验"
 order: 15
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-09-02"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Anthropic 官方 - 人机协作团队方法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -19,17 +16,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 一个人，驾驭几十个 AI，效率贼啦高，年收入破百万，想想都很威风~
 
-![](https://pic.yupi.icu/1/image-20260824131103066.png)
+![](/imgs/edcbe600b5914c04.png)
 
 虽然实际上很少有人能做到这种程度，但不可否认的一点是，很多公司都开始引入 AI 员工了。
 
 **毕竟 AI 无所不能，关键是它完全不会累、效率还贼高。**
 
-![](https://pic.yupi.icu/1/deepseek%20%E5%A4%A7%E8%82%A5%E9%B1%BC%E8%A1%A8%E6%83%85%E5%8C%85%E4%B8%AD.jpeg)
+![](/imgs/7bff242e21c6c501.jpg)
 
 Claude 背后的公司 Anthropic 正在探索一种跟 AI 协作的新方式，他们把 Claude 拉进工作群，只要艾特它 `@Claude`，就可以让它按照要求去干活。
 
-![](https://pic.yupi.icu/hackdeacon/pic02.jpg?imageSlim)
+![](/imgs/d6c836a89c1f57b2.jpg)
 
 听起来很简单，但他们在实际运用 AI 的过程中，也遇到了不少痛点。
 
@@ -41,7 +38,7 @@ Claude 背后的公司 Anthropic 正在探索一种跟 AI 协作的新方式，�
 
 > 原文地址：[https://claude.com/blog/building-effective-human-agent-teams](https://claude.com/blog/building-effective-human-agent-teams)
 
-![](https://pic.yupi.icu/1/image-20260824130929774.png)
+![](/imgs/07a82ec97ec1944a.png)
 
 如果 AI 真的成了团队成员，我们要怎么和它一起工作呢？
 
@@ -70,7 +67,7 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 以前我们写文档，可能只是为了方便团队查阅。现在，文档还承担了另一个作用：**给 AI 同事提供工作背景**。
 
-![](https://pic.yupi.icu/hackdeacon/pic04.jpg?imageSlim)
+![](/imgs/9b2492b04af371b1.jpg)
 
 其实，这个建议不仅仅是和 AI 协作时才适用。平时大家在团队中工作也是一样的，有什么想法、决定，及时同步出来，别憋在心里，这样很多不必要的误会和返工，根本不会发生。
 
@@ -78,7 +75,7 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 可以从 4 个方面入手：会议纪要、聊天记录总结、企业知识库、项目配置文件。
 
-![](https://pic.yupi.icu/hackdeacon/pic03.jpg?imageSlim)
+![](/imgs/fe634216256c90a4.jpg)
 
 
 #### 1、会议纪要
@@ -89,13 +86,13 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 如果公司在用类似企业微信、腾讯会议、钉钉、飞书等协作产品，可以通过在线会议转写功能，快速生成会议纪要。
 
-![腾讯会议自动文字转写](https://pic.yupi.icu/hackdeacon/2b6c107ba5dd5ff4f9daea24209d7edc.png?imageSlim)
+![腾讯会议自动文字转写](/imgs/2978100b3080d80d.png)
 
 这时候就有人要问了：那线下会议怎么办？
 
 也不用慌，飞书等产品支持上传录音或视频，快速生成会议纪要。在开会时，我们只需要顺手录制音频就好。
 
-![](https://pic.yupi.icu/hackdeacon/aba112c037de243fcc55cb4202f0a9d3.png?imageSlim)
+![](/imgs/2858d38c1ccdfc06.png)
 
 得到生成的《会议纪要文档》后，可以直接丢给我们的 AI 同事，让它快速了解背景信息。
 
@@ -106,7 +103,7 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 这样我们就可以快速总结团队的需求、进度，甚至可以一键出周报。
 
-![企业微信聊天记录总结](https://pic.yupi.icu/hackdeacon/4817c2899542397133656f5e95e3d7ca.png?imageSlim)
+![企业微信聊天记录总结](/imgs/7a0e668ae22a5450.png)
 
 如果工作用的是微信沟通，但目前微信还没有「一键总结聊天记录」的功能，怎么办？
 
@@ -114,7 +111,7 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 具体操作步骤如下：
 
-![](https://pic.yupi.icu/hackdeacon/b0cd9e79403bdc97ce10529615cc34fe.jpg?imageSlim)
+![](/imgs/b1d8f94c65274428.jpg)
 
 很简单吧？
 
@@ -125,7 +122,7 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 这里分享一个语雀的实用功能，可以根据你一周、一个月内的工作文档，让 AI 推理总结，并可以导出文档为 AI 友好的 Markdown 格式。
 
-![语雀](https://pic.yupi.icu/hackdeacon/e59aa5cb1d0085307d4a5d8f307a54df.png?imageSlim)
+![语雀](/imgs/2b6f68d377a84b00.png)
 
 
 #### 4、项目配置文件
@@ -134,7 +131,7 @@ Anthropic 的做法，是让重要信息尽量同步到公开的工作空间里�
 
 像 `CLAUDE.md`、`AGENTS.md` 等文件其实就是专属于项目的知识库，同时这些文件生来就是给 AI 读的，可以把它们跟随项目一起提交到 GitHub，让团队和 AI 一起共享。
 
-![](https://pic.yupi.icu/1/image-20260824132638290.png)
+![](/imgs/feb20b3c414417ad.png)
 
 
 ### 二、给 AI 和人类分好工
@@ -145,7 +142,7 @@ AI 和每位团队成员要共享同一个工作空间，并且都要有明确�
 
 结果你俩用的标准还不一样，你按「注册量」统计，隔壁同事按「激活量」来算，活干重复了、数字也对不上。
 
-![](https://pic.yupi.icu/hackdeacon/pic05.jpg?imageSlim)
+![](/imgs/643afe5d0a58e828.jpg)
 
 这就是没有明确分工、没有统一工作空间的结果，各个同事之间养着自己的 AI，不仅重复干活，还污染了产出的上下文。
 
@@ -153,9 +150,9 @@ AI 和每位团队成员要共享同一个工作空间，并且都要有明确�
 
 做数据分析的 Agent，需要用到访问数据库的 MCP。比如 DBHub 这个 MCP，在 Claude Code 的官方文档里，就是用它来演示连接 PostgreSQL 数据库。
 
-![](https://pic.yupi.icu/hackdeacon/20260813101117851.png?imageSlim)
+![](/imgs/3aad9a74769e9b1d.png)
 
-![](https://pic.yupi.icu/hackdeacon/20260813102906814.png?imageSlim)
+![](/imgs/ce83230ebabfa0a7.png)
 
 负责测试的 Agent 需要调用测试工具，比如比较常见的 Playwright MCP、Browser Use，它们能让 AI 自己打开网页、点击、输入、截图、还能自己看控制台的报错。
 
@@ -165,11 +162,11 @@ Anthropic 还用了一个很巧妙的方法，用 `Skills` 技能文件来定义
 
 `Skills` 技能文件需要包含 AI 的角色定位、干活的步骤和规范、以及所拥有的权限等内容。
 
-![Skill files](https://pic.yupi.icu/hackdeacon/code.png?imageSlim)
+![Skill files](/imgs/ed55a9d6df77c26d.png)
 
 这样一来，如果你想要复刻一个同款的 Agent 也很方便，把 Skills 文件提供给另一个 AI 就好了。此时的 `Skills` 技能文件就像是「离职交接文档」。
 
-![](https://pic.yupi.icu/hackdeacon/pic06.jpg?imageSlim)
+![](/imgs/e7c8e88171fd1eab.jpg)
 
 定义清晰的角色与职责，才能让 AI 和团队达成共识，从而帮助团队走向成功。
 
@@ -177,7 +174,7 @@ Anthropic 还用了一个很巧妙的方法，用 `Skills` 技能文件来定义
 
 根据多 Agent 协作的思路，我可以让一个 Agent 专心负责搜集问题，一个 Agent 专门根据知识库撰写答案。
 
-![](https://pic.yupi.icu/hackdeacon/pic07.jpg?imageSlim)
+![](/imgs/4e43c3b4008746c2.jpg)
 
 刚好最近知乎官方发布了 Zhihu CLI，这是知乎数据开放平台面向 AI Agent 提供的官方命令行工具。
 
@@ -186,7 +183,7 @@ Anthropic 还用了一个很巧妙的方法，用 `Skills` 技能文件来定义
 请下载安装 zhihu-cli skill 并完成初始化配置 https://developer-cdn.zhihu.com/zhihu-cli/releases/stable/skill/zhihu-cli-skill.zip
 ```
 
-![](https://pic.yupi.icu/hackdeacon/20260812220455886.png?imageSlim)
+![](/imgs/84dbed081def6962.png)
 
 然后到 [知乎平台](https://developer.zhihu.com/profile) 生成一个密钥用于认证知乎 CLI，生成的密钥也是直接发送给 AI，就能完成配置。
 
@@ -194,19 +191,19 @@ Anthropic 还用了一个很巧妙的方法，用 `Skills` 技能文件来定义
 
 安装并配置好后，创建一个搜集问题的 Agent Skill：
 
-![](https://pic.yupi.icu/hackdeacon/20260812222212989.png?imageSlim)
+![](/imgs/d9b0f334d54f64a4.png)
 
 OK，搜索问题的能力就成功实现了。不过返回的问题相关数据其实是错误的，需要后续再修复，这里我先继续创建撰写回答的 Agent。
 
-![](https://pic.yupi.icu/hackdeacon/20260812223503102.png?imageSlim)
+![](/imgs/f4dcc30da6f17b3e.png)
 
 把完整的需求、以及我自己的写作风格指南提供给 AI：
 
-![](https://pic.yupi.icu/hackdeacon/20260812224346461.png?imageSlim)
+![](/imgs/699b40144b5e1f1f.png)
 
 这里的附加文件就是文章前面提到的，要给 AI 提供足够的背景信息，它才能理解清楚你的需求。
 
-![](https://pic.yupi.icu/hackdeacon/20260812225210530.png?imageSlim)
+![](/imgs/427c6287c6d07c57.png)
 
 开发完编写回答的 Agent 后，AI 还自己跑了一遍工作流验证。
 
@@ -223,7 +220,7 @@ Anthropic 发现，很多时候，AI 只会完成被分配到的任务，而不�
 
 这里的北极星必须由人类设定，一般是公司的使命和业务目标，然后明确告诉团队里的 AI。
 
-![](https://pic.yupi.icu/hackdeacon/pic10.jpg?imageSlim)
+![](/imgs/40caaecc39e482e6.jpg)
 
 官方在文章中说：一个团队把「让新用户更容易上手我们的产品」定成北极星，AI 发现产品的报错提示写得太难懂，很容易把用户劝退。它主动提了文案修改意见后，第二周新用户明显增多了。
 
@@ -233,7 +230,7 @@ Anthropic 发现，很多时候，AI 只会完成被分配到的任务，而不�
 
 AI 主动提出修改建议，改为：邮箱格式不对，请检查是否包含 @ 符号，比如 yupi@codefather.cn
 
-![](https://pic.yupi.icu/hackdeacon/pic09.jpg?imageSlim)
+![](/imgs/279c6674dd5e748d.jpg)
 
 所以说，AI 有时候不够主动，并不是它不聪明，而是你没有告诉它团队的终极目标是啥。
 
@@ -255,13 +252,13 @@ Anthropic 的工程师已经可以让 AI 独立处理 500 个 Bug 修复任务�
 
 举个例子，我们团队搭建了一个 AI 资讯推送机器人，能够定时在交流群中推送 AI 热点：
 
-![](https://pic.yupi.icu/hackdeacon/20260813111951884.png?imageSlim)
+![](/imgs/6c22ea5451a49323.png)
 
 其实在一开始，我们是先同步草稿给人工检查编辑，再确定发布。
 
 > AI 每天自动搜集资讯 → 整理成草稿 → 同步给人工检查 → 编辑确认 → 发布
 
-![](https://pic.yupi.icu/hackdeacon/pic08.jpg?imageSlim)
+![](/imgs/b3d71544988dfd1a.jpg)
 
 在前期还是需要人类来把关，AI 只负责干活，不负责决定。
 
@@ -280,7 +277,7 @@ Anthropic 的工程师已经可以让 AI 独立处理 500 个 Bug 修复任务�
 
 所以我觉得，如果你本身就有一个健康的团队，接入 AI 同事可以快速地为工作提效，反之 AI 同事只会给原本混乱的团队 **雪上加霜**！
 
-![](https://pic.yupi.icu/hackdeacon/pic11.jpg?imageSlim)
+![](/imgs/54cd2b67b6b97afd.jpg)
 
 **AI 不会拯救一个混乱的团队，它只会把团队原本的样子无限放大。**
 

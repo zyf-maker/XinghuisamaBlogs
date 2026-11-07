@@ -3,21 +3,18 @@ title: "Claude Fable 5.1 编程能力实测 - 3 个项目案例"
 summary: "Claude 家族最强模型，缓存价格砍了 75%，用 3 个项目看看它到底强在哪"
 order: 4
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-09-02"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Fable 5.1 编程能力实测 - 3 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 大半夜的，Anthropic 发布了 Claude Fable 5.1，这是目前 Claude 家族里最强的模型，专门为长程 Agent 编程和复杂知识工作打造的。
 
-![](https://pic.yupi.icu/1/twitter-%E5%8F%91%E5%B8%83%E6%96%B0%E9%97%BB.png)
+![](/imgs/28c3a5748aa22ecf.png)
 
 这次 Fable 5.1 加入了反蒸馏机制，新的 API 账户没办法在多轮对话中篡改 Claude 之前的上下文来偷取思考过程了，防止其他厂商大规模蒸馏 Claude 的能力。
 
@@ -25,11 +22,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 先看下能力。Fable 5.1 在 Agent 科学研究和 Agent 编程这两个方向上提升最猛。Terminal-Bench-Science 拿了 52.6%，Fable 5 只有 24.7%，直接翻倍了！Agent 编程的 Terminal-Bench 4.0 拿了 55.8%，也远超 Fable 5 的 42.0% 和 GPT-5.6 Sol 的 37.3%。在 Cursor 场景下的 CursorBench 也拿了 73.4%，是目前跑过这个基准得分最高的模型。
 
-![](https://pic.yupi.icu/1/%E5%AE%98%E6%96%B9%E8%B7%91%E5%88%86%E5%9B%BE.png)
+![](/imgs/c24c57d85b388707.png)
 
 再看价格，Fable 5.1 的输入输出价格跟 Fable 5 一样，还是每百万 token 输入 $10、输出 $50。但是 Anthropic 把缓存读取的价格砍了 75%！从 $1 降到了 $0.25。
 
-![](https://pic.yupi.icu/1/%E5%AE%98%E6%96%B9%E4%BB%B7%E6%A0%BC%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
+![](/imgs/dd264ccb2272d5c1.png)
 
 别小看这个改动。Agent 编程场景下，模型会反复读取之前的上下文，缓存读取占了大头成本。官方实测下来，普通任务便宜了约 25%，重度 Agent 任务最高能省 45%！
 
@@ -43,7 +40,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 测试方法很简单，我在 Cursor 里同时起了多个子 Agent，每个 Agent 负责一个独立项目、一个独立目录，全程不需要人工干预，让 AI 自己跑到底。
 
-![](https://pic.yupi.icu/1/%E8%AE%A9-Cursor-%E6%89%A7%E8%A1%8C.png)
+![](/imgs/1ec1d04c221d3525.png)
 
 激动的心，颤抖的手，咱们开始~
 
@@ -66,41 +63,41 @@ source: "https://github.com/liyupi/ai-guide"
 
 开发过程中，每完成一个模块，AI 都会自己打开浏览器验证效果，发现问题就立刻修复，不需要我做任何干预。
 
-![](https://pic.yupi.icu/1/1788316435823-c3d626a3-ae56-4067-986b-cb6f58017522.png)
+![](/imgs/e6018eff4f347fc9.png)
 
 来看看成品效果。
 
 先看主页，这段开场描述写得还挺有味道的，还提供了详细的游戏说明，不过也是浓浓的 AI 味儿。
 
-![](https://pic.yupi.icu/1/1788317097613-5b4ed983-d871-42d2-bdd4-4259e44437c6.png)
+![](/imgs/6ce00972000f52da.png)
 
 进入游戏，第三人称跟随摄像机，可以自由旋转视角，确实有黑神话那个味儿了。
 
-![](https://pic.yupi.icu/1/1788317004612-2cec1319-6d17-4f7f-a332-34a2241ab079.png)
+![](/imgs/d71c67b45b3e5a85.png)
 
 场景里有小怪和 BOSS，你需要清除区域内的妖怪才能解开结界，进入下一个区域。
 
-![](https://pic.yupi.icu/1/1788317156264-3feea846-fa78-47b0-b453-669ecae36b6e.png)
+![](/imgs/7c774507e15bbac5.png)
 
 最让我惊喜的是战斗系统。牛来的攻击方式非常丰富，除了轻棍、重棍、闪避这些基操之外，重点还原了黑神话悟空中的棍势机制，支持四段连招、蓄力重击等多种连招玩法。
 
-![](https://pic.yupi.icu/1/1788317361608-c49710ea-f86f-4ac6-9f99-81700d9cbd28.png)
+![](/imgs/f585d000f25b1160.png)
 
 还复刻了黑神话中的经典技能，比如定身术，可以直接定住一名敌人，然后一顿输出，跟原版游戏的体验很接近。
 
-![](https://pic.yupi.icu/1/1788317217938-44f8ea8e-d70c-44a4-8694-3e3e935d2aa1.png)
+![](/imgs/7ef2abae65180e7e.png)
 
 还有分身技能，会召唤出多只小牛来一起攻击，BOSS 战的时候特别好用，来感受下这个技能的还原度：
 
-![](https://pic.yupi.icu/1/1788317424430-9fe07966-027d-40ed-8405-3123da7c7206.png)
+![](/imgs/d1f9d9117ee7a204.png)
 
 还有狂牛变身，怒气攒满之后可以变身为狂牛形态，攻击力提升 1.8 倍，而且所有招式不消耗体力，广智助我！
 
-![](https://pic.yupi.icu/1/1788317297852-e74737fc-e6f7-4429-8c57-fd6bfbfc8e86.png)
+![](/imgs/a1325d0904b30510.png)
 
 可惜，游戏的不足之处也很明显。整个游戏没有声音，部分场景会出现穿模的情况，牛来偶尔会卡在地形里面。
 
-![](https://pic.yupi.icu/1/1788317255322-ef783518-cbb1-46e5-b187-7762e86d9186.png)
+![](/imgs/4657819cb511aab8.png)
 
 综合来看，只用一段提示词就能让 AI 做出一个拥有完整战斗系统、多种技能和 BOSS 战的 3D 动作游戏，我觉得已经非常厉害了。
 
@@ -129,45 +126,45 @@ AI 后端调用兼容 OpenAI 协议的大模型接口，base_url 为 https://api
 
 先看看成品效果。Editor Window 界面复刻得非常到位，代码高亮、代码小地图、文件树、多标签页都有了。
 
-![](https://pic.yupi.icu/1/1788317553638-fb499b4b-6427-460b-8c41-447e2a6b1f94.png)
+![](/imgs/5df59dc77a10522f.png)
 
 比之前 Opus 5 做出来的成品更精致了，这次甚至连终端都完整地做出来了，可以自由输入命令、浏览文件目录。
 
-![](https://pic.yupi.icu/1/1788317648786-7a27da6f-01ed-4a90-a94c-293bfeba7e91.png)
+![](/imgs/461df19462061add.png)
 
 切换到 Agents 面板，让 AI 执行一个任务，可以清晰地看到完整的执行过程，包括思考过程、工具调用、代码编辑等等。
 
-![](https://pic.yupi.icu/1/1788317824066-63c841c9-f1ea-4424-adc2-a0d3ce71c09e.png)
+![](/imgs/35442ad3e80d4f4f.png)
 
 我再让 AI 开发一个贪吃蛇游戏，它可以自主完成开发，而且界面上支持灵活地接受或拒绝 AI 改动的每个文件，跟真正的 Cursor 交互体验很像了。
 
-![](https://pic.yupi.icu/1/1788318274280-ab2d1044-f309-4dc1-8400-ce9835de8291.png)
+![](/imgs/e56713b61c2dd6f6.png)
 
 还支持多轮对话，而且默认设置了 AI 单次执行步骤不超过 20 步的保护机制，避免 AI 无限制地跑下去浪费资源，非常贴心了。
 
-![](https://pic.yupi.icu/1/1788318312011-9355617a-c558-446e-ad5f-883b30a8a290.png)
+![](/imgs/4b1a667547dc5c1d.png)
 
 复刻出来的贪吃蛇游戏也是完全可玩的，你觉得这个效果怎么样？
 
-![](https://pic.yupi.icu/1/1788318544571-a5a5d48d-71c9-43c0-a7c3-bf8fbbfc5dc0.png)
+![](/imgs/355b20671ea4bd90.png)
 
 对比一下之前几个模型在同样任务上的表现。
 
 当时我让 Kimi K3 做这个项目的时候，Editor Window 的基本骨架是有了，但界面比较简陋，文件树和编辑器之间的联动也不太顺畅。
 
-![Kimi K3 的 Editor Window](https://pic.yupi.icu/1/1784190810038-c3d24d7d-f500-46ff-bb62-b2c9205005f2-20260717144633410.png)
+![Kimi K3 的 Editor Window](/imgs/0c759e223c45dcc8.png)
 
 Agent 执行任务时虽然能看到工具调用，但整体完成度跟成熟产品还有很大差距。
 
-![Kimi K3 的 Agent 执行](https://pic.yupi.icu/1/1784190877508-637d8580-e58d-4810-b54a-d740da2b6be6-20260717144634958.png)
+![Kimi K3 的 Agent 执行](/imgs/be26a9312e316101.png)
 
 后来我用 Claude Opus 5 跑同样的提示词，效果好了很多，保留了 VSCode 的代码高亮、管理面板等核心功能：
 
-![Opus 5 的编辑器界面](https://pic.yupi.icu/1/1785147124049-912c793e-0915-4843-853b-9848a4611536.png)
+![Opus 5 的编辑器界面](/imgs/d0e2916d271933dd.png)
 
 Opus 5 的 Agent 也能调用终端自主测试开发出的代码，而且你可以清晰地看到 AI 的思考信息和工具调用过程。
 
-![Opus 5 的 AI 执行](https://pic.yupi.icu/1/1785147250942-846cdd2b-a6be-4848-b412-dc1d9e31e0b0.png)
+![Opus 5 的 AI 执行](/imgs/26d1d25850c73211.png)
 
 而这次 Fable 5.1 做出来的效果又上了一个台阶。对比下来，Fable 5.1 的版本在编辑器完整度、终端交互、Agent 执行流程、文件审阅机制这几个方面都做到了最好。同样一段提示词，你能明显感受到模型真的是一代比一代强。
 
@@ -194,27 +191,27 @@ AI 大模型使用兼容 OpenAI 协议的接口，base_url 为 https://api.deeps
 
 整个界面布局相当专业，左侧素材库、中间是视频预览和时间轴、右侧是属性和设置面板，还做了暗色主题，第一眼看上去确实像个成熟的剪辑软件。
 
-![](https://pic.yupi.icu/1/1788318601160-75bb8005-57b6-415e-bc5f-26bd87675bd7.png)
+![](/imgs/56b4b571dfee9bd9.png)
 
 导入一个视频试试。跟正常的剪辑软件一样，可以在时间轴上浏览视频、分割片段、撤销重做，音频波形也能正常显示。
 
-![](https://pic.yupi.icu/1/1788318769263-b19677dc-a362-4916-848e-1ccf92e29cb3.png)
+![](/imgs/4fa9bdec586eae51.png)
 
 AI 生成字幕功能也做出来了，不过由于我本地没有部署语音识别服务（ASR），AI 是用模拟数据生成的字幕，内容跟视频是对不上的。如果接入一个真实的语音识别服务，这个功能应该就能正常工作了。
 
-![](https://pic.yupi.icu/1/1788318841802-bfe3e50c-09a4-40e2-b977-bf37d38ca280.png)
+![](/imgs/535151f3826c0d5d.png)
 
 AI 识别精彩片段功能也一样，能看到界面上标记了高光时刻，支持预览和直接添加为片段，但由于缺少语音识别服务，识别出来的内容并不准确。
 
-![](https://pic.yupi.icu/1/1788318966064-f46ce50a-b21b-4bf8-a884-5a3b76b6b619.png)
+![](/imgs/443474f3f65ca274.png)
 
 口水话检测功能做得很用心，可以自动识别各类语气词，列出来之后支持一键删除选中的部分。这个功能的前端交互是完全没问题的。
 
-![](https://pic.yupi.icu/1/1788319023182-a666f4eb-067f-4b41-a349-e4fc1ba50a6c.png)
+![](/imgs/158fcd194c06ceef.png)
 
 剪辑完的视频也可以正常导出，支持服务端 FFmpeg 和浏览器端 FFmpeg.wasm 两种导出方式，甚至还支持软字幕。
 
-![](https://pic.yupi.icu/1/1788319055824-9717a166-11b8-4d64-9bfa-68d798710209.png)
+![](/imgs/c39cf29aab4d97ae.png)
 
 虽然 AI 字幕和精彩片段这些功能因为缺少语音识别服务没法真正跑通，但整个产品的前端界面布局和后端核心业务流程都是完整的。
 
@@ -235,7 +232,7 @@ Fable 5.1 给我最大的感觉是 **又强又稳**。我测试的三个项目�
 
 不过，贵也是真的贵……
 
-![](https://pic.yupi.icu/1/fable%E6%B6%88%E8%80%97%E9%87%91%E9%A2%9D.png)
+![](/imgs/04b9930b3a158c76.png)
 
 这 3 个项目的 Fable 5.1 消耗加起来大约 $63，算上调度用到的 Opus 零碎开销，总共花了约 $66，折合人民币将近 470 块。平均每个项目 150 多块，跑完这轮测评，把我一个月的鸡腿钱都干没了。
 
@@ -254,7 +251,7 @@ Fable 5.1 给我最大的感觉是 **又强又稳**。我测试的三个项目�
 
 > 开源指路：https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/Claude-Fable-5.1.md
 
-![](https://pic.yupi.icu/1/image-20260902124242828.png)
+![](/imgs/95fce9eea0a4c68f.png)
 
 感兴趣的话，你也可以对照本教程经验技巧板块「大厂 AI 编程经验」目录中的《Anthropic 官方 - 提示词精简方法》看看官方是怎么给系统提示词做减法的，会更有体感。
 

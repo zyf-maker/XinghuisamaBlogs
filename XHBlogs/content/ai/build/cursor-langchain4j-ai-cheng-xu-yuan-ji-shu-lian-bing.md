@@ -3,15 +3,12 @@ title: "Cursor + LangChain4j - AI 程序员技术练兵场项目实战"
 summary: "本项目是一个 AI 程序员技术练兵场，通过游戏化的方式帮助程序员提升技术水平。用户选择技术方向和难度，AI 自动生成挑战任务，用户完成挑战后获得奖励和经验值。"
 order: 35
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor + LangChain4j - AI 程序员技术练兵场项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个 AI 程序员技术练兵场，通过游戏化的方式帮助程序员提升技术水平。用户选择技术方向和难度，AI 自动生成挑战任务，用户完成挑战后获得奖励和经验值。
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你是一名月薪 3000 的程序员，慕名来到鱼皮的技术练兵场，听闻此地可通过不断挑战提升技术水平和薪资，策马奔腾。
 
-![](https://pic.yupi.icu/1/1760438722374-4e8edebc-d975-4873-8f06-9e9856733694.png)
+![](/imgs/7503ec0604b82612.png)
 
 事不宜迟，准备挑战吧，愿君武运昌隆！
 
@@ -40,17 +37,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 首先，请选择自己的修炼方向，这还用想吗？当然是 Java 后端，乃吾辈立身之本。
 
-![](https://pic.yupi.icu/1/1760438746874-c935795e-6e56-4aa1-9d34-fd11a3548911.png)
+![](/imgs/de14eb2d44092ec5.png)
 
 
 等待片刻之后，挑战正式开始。
 
-![](https://pic.yupi.icu/1/1760438783205-69493acd-80c7-47fb-b585-5ec9d307e287.png)
+![](/imgs/f84f558c2f5aa67f.png)
 
 
 这次你需要实现一个基于 Spring Boot 的图书管理系统，目标薪资，竟然是你梦寐以求的 8000 元！
 
-![](https://pic.yupi.icu/1/1760438873460-36f24edc-31e3-42ee-be87-4c58e7c9c7f6.png)
+![](/imgs/8277c184a8989f8a.png)
 
 
 你先认真阅读了下需求。哼，不过增删改查之术，岂非手到擒来？
@@ -59,100 +56,100 @@ source: "https://github.com/liyupi/ai-guide"
 
 先把什么 Spring Boot、MyBatis、MySQL、Lombok 这些平日最为趁手的家伙什，通通选上，易如反掌！
 
-![](https://pic.yupi.icu/1/1760438935115-c22680b8-7009-4dce-bd68-44a58040851d.png)
+![](/imgs/9293a1d9e5c0ac89.png)
 
 
 然而未曾料想，竟有如此之多的奇门技艺，真是大开眼界。
 
 这个什么 DDD、TDD、CQRS 架构、六边形架构。虽不知这些乃何等绝学，但听起来便觉高深莫测，选上去定然不差！
 
-![](https://pic.yupi.icu/1/1760438953486-924cff33-718f-4529-9122-57e05c07782a.png)
+![](/imgs/3d529fda47e058a3.png)
 
 
 来，且看结果如何，月薪 8000 必拿下！
 
-![](https://pic.yupi.icu/1/1760438981041-3e54d4a0-036e-4af5-8cec-ec1e344a1ec1.png)
+![](/imgs/fc231163948797a6.png)
 
 
 什吗？！竟然还倒扣了 400 元！
 
-![](https://pic.yupi.icu/1/1760439049424-532d6ad1-0600-4654-bd9b-311d48cfdc2f.png)
+![](/imgs/a621f11e3c39add3.png)
 
 “恭喜你，成功把一个简单的图书管理系统设计成了宇宙级复杂架构！建议直接升职为CTO，负责规划下一次人类登月的软件系统，建议先学会'Hello World'再谈六边形。”
 
 你别说，这 AI 骂人好脏啊！
 
-![](https://pic.yupi.icu/1/1760439092397-5b225c9e-8a3b-4508-8479-a0182975f8a4.png)
+![](/imgs/eea8dc2247afecca.png)
 
 你心有不甘，细细研读 AI 生成的结果报告。
 
-![](https://pic.yupi.icu/1/1760439118337-09c71f6d-6194-408d-aa2b-0b98e4312daf.png)
+![](/imgs/14e72ecb3a58c143.png)
 
 哦，原来是过度设计了啊。。。
 
 每个技术都有清晰的介绍和应用场景，而且还很贴心地给出了系统架构图以及核心业务流程图，生怕你看不懂。
 
-![](https://pic.yupi.icu/1/1760439138791-eadfe743-c45a-4b08-b4c6-95eb3824c048.png)
+![](/imgs/3808e4cd8082d83e.png)
 
-![](https://pic.yupi.icu/1/1760439162059-5bc72d92-bfd4-42b0-8048-fec3a9b01b78.png)
+![](/imgs/db93bef522e72faf.png)
 
 
 再往下看，AI 还给你提供了详细的学习建议。
 
-![](https://pic.yupi.icu/1/1760439189112-a6dfb1bf-a610-4e09-a6a1-db5006a2e362.png)
+![](/imgs/aef3180f1df96284.png)
 
 
 “针对3k-8k薪资段，企业更看重基础扎实、能干活”，此言颇为中肯。
 
 此外，还给出了一些编程修炼秘籍和相关的面试考题，推荐得非常准确，都是贴合技术知识、企业常问的高频考题。
 
-![](https://pic.yupi.icu/1/1760439221768-a3000130-d259-4d43-8572-112f0f57cc5d.png)
+![](/imgs/1419cffd53616d6f.png)
 
 
 而且每道题皆有详尽答案，还可通过 [面试鸭刷题系统](https://www.mianshiya.com/) 温习巩固。
 
-![](https://pic.yupi.icu/1/1760439251444-114592e1-860f-45d9-9c57-747d546c2cfa.png)
+![](/imgs/95a2506f644f8013.png)
 
 
 你心中不甘，决定再来亿次，势必要攻破 8000 这道坎！
 
-![](https://pic.yupi.icu/1/1760439307167-b49136e2-037e-444a-b465-8a8980abbbdf.png)
+![](/imgs/df54d03542cf684c.png)
 
 
 一个月后，经过不懈苦修，你终于品尝到了学 IT、月薪过万的滋味，月薪达到了 1.5 万。
 
-![](https://pic.yupi.icu/1/1760439363814-13713b6e-7674-4be8-a7c9-5691183644c5.png)
+![](/imgs/989a9275eb8b6e42.png)
 
 
 然而此时的需求难度，已臻至更高层次。
 
-![](https://pic.yupi.icu/1/1760439432591-eee68a21-d25f-4cb0-9249-96c0c2443d9c.png)
+![](/imgs/ca566f2c6719183d.png)
 
 再看此关要求，明明每字皆可独识，连在一起却如天书般晦涩难懂。
 
 再看看选项，不再是简单的技术名词，而是各种各样的方案和实现细节。
 
-![](https://pic.yupi.icu/1/1760439452471-426945f6-a3e2-436b-9013-2754d7c09a7c.png)
+![](/imgs/b5d685d90227968d.png)
 
 
 你已心生退意，然而见到自己在薪资排行榜上的名次，咬牙切齿，决意继续苦修。
 
-![](https://pic.yupi.icu/1/1760439492103-33f97636-b7a3-4622-9887-e2f9c14629fb.png)
+![](/imgs/5259e322ab072f8d.png)
 
 
 除了不断挑战更高薪资的险关外，你还可选择由练兵场主精挑细选的精选关卡：
 
-![](https://pic.yupi.icu/1/1760439533899-2a48936b-d8aa-4310-9d01-ed1179c41a92.png)
+![](/imgs/fe10f463cb806085.png)
 
 
 这样一来，可以自由学习更多业务场景，稳步精进武艺！
 
-![](https://pic.yupi.icu/1/1760439519631-05710f00-3095-4cd1-bc2b-245e9d687ca0.png)
+![](/imgs/3ce015104e9ec46a.png)
 
 
 终于，又过一月，你的技术水平已突破暗劲小圆满之境，薪资水涨船高。
 
-![](https://pic.yupi.icu/1/1760439579749-f7e8cd21-b8f8-4cb0-a5c1-8a2687e185ac.png)
+![](/imgs/c46a8bd544763510.png)
 
 
 苦修至此，你不禁好奇。
@@ -164,33 +161,33 @@ source: "https://github.com/liyupi/ai-guide"
 - 又有何等潜规则呢？
 
 
-![](https://pic.yupi.icu/1/1760439624999-0279322e-0aba-4f81-88ba-4e8be10ee244.png)
+![](/imgs/fa951c853ba64e00.png)
 
 
 经过一番搜寻，你方知晓，原来整个项目的代码竟然是 [完全开源](https://github.com/liyupi/coder-test) 的！
 
 > 开源仓库：https://github.com/liyupi/coder-test
 
-![](https://pic.yupi.icu/1/1760439663604-934c9d1b-24b2-47d6-8dc2-c0f9802f87d5.png)
+![](/imgs/183c57bb605ec11f.png)
 
 
 不仅如此，整个项目竟然都是鱼皮老狗全程直播亲手打造！
 
-![](https://pic.yupi.icu/1/1760439691881-8d4282f9-c585-4a25-bef5-42e4dca440f8.png)
+![](/imgs/78e2aa9bd0039c25.png)
 
 
 源码之前，了无秘密。而直播授艺，更见真章。
 
 看着鱼皮直播写下的完整项目秘籍，你心中五味杂陈。
 
-![](https://pic.yupi.icu/1/1760439737161-b52085d6-65e2-403f-b334-105550061b59.png)
+![](/imgs/c43cb682d1c80892.png)
 
 
 你虽习得诸多方案和架构，嘴上功夫了得，却发现自己连一个完整的项目都写不出来，更遑论编写秘籍了。。。
 
 此刻，你终于悟了！
 
-![](https://pic.yupi.icu/1/1760439809229-dab5cd86-d4ac-4e56-868c-82df1c65cb54.png)
+![](/imgs/bbaf7b6786afb001.png)
 
 或许鱼皮建此练兵场的初衷，乃是让众武林同道从真实需求出发，提升技术广度、锻炼方案设计之能；而这只是个引路之石，习得这些方案心法之后，还要靠自身通过实战磨砺不断积累经验。
 
@@ -198,7 +195,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 对鱼皮这个项目感兴趣的朋友，可以直接下载源码，把项目配置中 AI 大模型的 API Key 改成自己的，就可以愉快使用了~
 
-![](https://pic.yupi.icu/1/1760439936811-fefe92c3-f7cd-47ec-b888-03a4f1e4cd98.png)
+![](/imgs/df8a5f12a36bdb4d.png)
 
 
 ## 推荐资源

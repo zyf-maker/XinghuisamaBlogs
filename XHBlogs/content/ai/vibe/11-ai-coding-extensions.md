@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《优质 AI 编程扩展推荐》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。给大家分享一些我自己在用的 AI 编程扩展，帮你大幅提高 AI 编程效率和代码质量。
 
 **万字长文 + 100 多张图**，绝对干货！点个收藏，让我们开始吧~
@@ -26,7 +23,7 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 打个比方，MCP 就像是 AI 的 USB-C 接口，原本 AI 只能根据训练数据来回答问题、生成代码，但有了这个统一接口，它就能连接各种外部工具，比如打开浏览器看网站、搜索并抓取网页内容、部署项目到云端、访问数据库等等，能力一下子就丰富起来了。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE1%E5%A4%A7.jpeg)
+![](/imgs/2b04b5c34f791796.jpg)
 
 
 
@@ -44,7 +41,7 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 它就能自动把网页的内容、结构、甚至是动态加载的数据都给我抓下来。
 
-![](https://pic.yupi.icu/1/image-20260116105912027.png)
+![](/imgs/ab133f11987c183f.png)
 
 
 
@@ -52,13 +49,13 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 首先你需要在 [Firecrawl 官网](https://www.firecrawl.dev/app/api-keys) 注册账号，并创建一个调用服务的 API Key。
 
-![](https://pic.yupi.icu/1/image-20260116105955795.png)
+![](/imgs/a8edbc21a8304775.png)
 
 然后进入到 AI 编程工具中配置一下 MCP 服务器。这里我以 Cursor 为例，其他 AI 编程工具对接 MCP 的方法可以看各自的官方文档，比如 [Claude Code 接入 MCP 文档](https://docs.anthropic.com/en/docs/claude-code/mcp)。
 
 打开 Cursor 设置，找到 Tools & MCP，点击 `+ New MCP Server`。
 
-![](https://pic.yupi.icu/1/image-20260116110425690.png)
+![](/imgs/fe7f1ec4dc420a25.png)
 
 本质上就是修改 MCP 配置文件，添加这样的配置：
 
@@ -76,13 +73,13 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260116110454499.png)
+![](/imgs/d138e6217454c5c4.png)
 
 这段配置的意思是：通过 npx 命令来运行 firecrawl-mcp 这个工具，并且把你的 API 密钥传给它。如果你电脑上还没有安装 npx，需要先 [到官网安装 Node.js](https://nodejs.org/zh-cn)，npx 会随着 Node.js 一起安装。
 
 配置好之后，看到绿色的成功点点，表示能够正常使用了。
 
-![](https://pic.yupi.icu/1/image-20260116110558199.png)
+![](/imgs/0017b3c917e9b7f8.png)
 
 除了基础的网页抓取，Firecrawl MCP 还支持批量抓取整站内容、递归抓取网站的多层链接、失败自动重试等高级功能。
 
@@ -103,7 +100,7 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 它就能通过 Brave 搜索引擎去找答案。而且 Brave 搜索不会追踪你的搜索记录，隐私保护做得很好。
 
-![](https://pic.yupi.icu/1/image-20260116111803869.png)
+![](/imgs/c91610b7c4c6a7be.png)
 
 
 
@@ -111,13 +108,13 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 首先去 [Brave Search API](https://brave.com/search/api/) 注册账号，然后进入 API Key 管理页面，首先要选择一个订阅计划。必须选择免费版啊！每月有 2000 次查询额度，对于个人开发来说够用了。
 
-![](https://pic.yupi.icu/1/image-20260116110947801.png)
+![](/imgs/a8a57a17a47f41b3.png)
 
 但这里比较坑的一点是，即使订阅免费版，也要填写付款方式，没有海外银行卡的朋友可以撤了。
 
 订阅成功后，创建 API Key：
 
-![](https://pic.yupi.icu/1/image-20260116111311536.png)
+![](/imgs/4dbac8a4046c7a72.png)
 
 拿到 API Key 后，在 Cursor 的 MCP 配置中添加：
 
@@ -139,7 +136,7 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 支持网页、图片、视频、新闻等多种类型的内容搜索，甚至能搜索本地商家信息（比如附近的咖啡店）。
 
-![](https://pic.yupi.icu/1/image-20260116111954334.png)
+![](/imgs/54c5747ec7cb1e13.png)
 
 它还带有 AI 摘要功能，能把搜索结果自动总结成简洁的答案。
 
@@ -153,7 +150,7 @@ MCP 的全称是 Model Context Protocol 模型上下文协议。简单来说，�
 
 Context7 就是来解决这个问题的。它会自动从官方文档网站抓取最新的、特定版本的文档内容，然后提供给 AI。
 
-![](https://pic.yupi.icu/1/image-20260116112229490.png)
+![](/imgs/2c1b2c1dd6ff561b.png)
 
 这样一来，AI 给出的代码示例和建议就是基于最新文档的，不会去用已经废弃的写法，大大提高了项目能正常运行的概率。
 
@@ -163,7 +160,7 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 访问 [Context7 Dashboard](https://context7.com/dashboard) 注册账号并获取 API Key，个人使用是免费的。
 
-![](https://pic.yupi.icu/1/image-20260116112322940.png)
+![](/imgs/0a2f9c702f17aa06.png)
 
 然后在 MCP 配置中添加：
 
@@ -182,7 +179,7 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 之后你在 AI 编程工具中跟 AI 对话时，只要跟技术文档相关，或者主动提一嘴 "use context7"，它就会自动去获取最新文档来回复你。
 
-![](https://pic.yupi.icu/1/image-20260116112656483.png)
+![](/imgs/776fc200a6286a97.png)
 
 
 
@@ -190,23 +187,23 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 [Web to MCP](https://web-to-mcp.com/) 是一个 Chrome 扩展，搭配 MCP 使用，能把网页上的任何 UI 组件直接发送给 AI，让 AI 生成对应的代码，用最快的速度抄作业！
 
-![](https://pic.yupi.icu/1/image-20260116113052973.png)
+![](/imgs/486b8ff092afa42c.png)
 
 很多时候，我在浏览网站时看到一个不错的 UI 组件，想让 AI 帮我实现类似的效果。以前的做法是截图，然后跟 AI 描述：“帮我做一个类似这样的按钮，圆角、渐变色、带阴影……” 既费时又不准确。
 
 有了 Web to MCP，我只需要在网页上点击某个想复刻的元素：
 
-![](https://pic.yupi.icu/1/image-20260116113725321.png)
+![](/imgs/4a36eaf8b5c81d63.png)
 
 它就会自动捕获组件的 DOM 结构、CSS 样式、甚至是交互效果，并且给你一个让 AI 复刻组件的提示词。
 
 你只需要把提示词发送给 AI，AI 会调用 MCP 拿到完整的组件信息，并生成代码来复刻组件。
 
-![](https://pic.yupi.icu/1/image-20260116114142631.png)
+![](/imgs/51e9844193cfbc1a.png)
 
 相比于直接给 AI 模糊的截图，生成的代码更准确了。
 
-![](https://pic.yupi.icu/1/image-20260116114426822.png)
+![](/imgs/0fd39d2c9912a203.png)
 
 
 
@@ -214,11 +211,11 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 1）通过官网或者在 Chrome 应用商店搜索 Web to MCP 来安装扩展
 
-![](https://pic.yupi.icu/1/image-20260116113138693.png)
+![](/imgs/c61ae64d6cb58fb2.png)
 
 2）用 Google 账号登录，获取你的 MCP 配置：
 
-![](https://pic.yupi.icu/1/image-20260116113241575.png)
+![](/imgs/0a02793c3ee177a8.png)
 
 3）在 AI 编程工具的 MCP 配置中添加：
 
@@ -244,7 +241,7 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 比如我跟 AI 说：“帮我分析当前这个网站加载慢的原因”，它就能打开 Chrome DevTools，分析网络请求、查看资源加载时间，然后告诉我哪里有问题。
 
-![](https://pic.yupi.icu/1/image-20260116115138719.png)
+![](/imgs/5fe9eeb156ec082a.png)
 
 或者我说：“帮我测试一下这个表单提交功能”，它就能自动填写表单、点击提交按钮、查看请求响应。
 
@@ -275,11 +272,11 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 开发完项目后，你一定会想让别人访问你的网站。传统的部署流程很繁琐，需要人工打包代码、上传代码到服务器、配置域名、设置 HTTPS 安全证书，一套流程下来得花不少时间。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE2%E5%A4%A7.jpeg)
+![](/imgs/55c8ccdf8278e922.jpg)
 
 有了 EdgeOne Pages MCP，我直接在 AI 编程工具里跟 AI 说：“帮我部署这个项目”，它就能自动完成打包、上传、部署的全过程，最后给我一个可以直接访问的 URL。而且部署到全球加速网络，各地访问速度都很快。
 
-![](https://pic.yupi.icu/1/1752212029384-16cfba8f-babb-49c0-9d41-3b76ee78eecf.png)
+![](/imgs/e91ab1d66052640f.png)
 
 
 
@@ -287,11 +284,11 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 首先到 [EdgeOne 控制台](https://console.cloud.tencent.com/edgeone/pages) 开通 Pages 服务：
 
-![](https://pic.yupi.icu/1/1752209404627-3a3193d9-4c94-4f80-ad02-435ff22f16ed.png)
+![](/imgs/1905dd7ae05fff6e.png)
 
 然后获取 API Token，作为调用服务的凭证：
 
-![](https://pic.yupi.icu/1/1752209504079-6741bbd0-438e-48a4-86be-6eddfc3efa83.png)
+![](/imgs/b8aae9cbc66cddce.png)
 
 在 MCP 配置中添加：
 
@@ -311,7 +308,7 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 配置好后，就能让 AI 帮你一键部署项目了。部署是免费的，支持静态网站、全栈项目、自动配置 HTTPS 和 CDN 加速等功能，非常适合个人项目和小型应用。
 
-![](https://pic.yupi.icu/1/1752211869664-b74dc4d9-57b1-4bb7-9f02-703112b613eb.png)
+![](/imgs/59583b7add61002f.png)
 
 
 
@@ -321,17 +318,17 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 对象存储就是云端的文件存储服务，可以理解为云盘。
 
-![](https://pic.yupi.icu/1/image-20260116120009365.png)
+![](/imgs/e13e8caff995977c.png)
 
 在团队协作开发中，我们经常需要让 AI 参考一些项目规范文档、或者引用一些图片。以前的做法是把这些文件放在本地，然后手动上传给 AI，既不方便，也不利于团队维护、修改和共享。
 
 有了 COS MCP，我可以说一句话把这些需要共享的文件存到云端，然后让 AI 直接去读取。
 
-![](https://pic.yupi.icu/1/image-20260116122211103.png)
+![](/imgs/8af26d5299ed23c2.png)
 
 比如我跟 AI 说：“按照我们团队 COS 共享的项目规范文档来写这个功能”，它就能自动从 COS 里读取规范文档，然后按照规范来写代码。
 
-![](https://pic.yupi.icu/1/image-20260116122453843.png)
+![](/imgs/e9b16ba9f09b0ce6.png)
 
 
 
@@ -339,11 +336,11 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 1）首先需要开通腾讯云 COS 对象存储服务。访问 [腾讯云 COS 控制台](https://console.cloud.tencent.com/cos)，创建一个存储桶（Bucket）：
 
-![](https://pic.yupi.icu/1/image-20260116120711822.png)
+![](/imgs/cfb4be87039a1aca.png)
 
 2）然后在 "访问管理" > "API 密钥管理" 中获取 SecretId 和 SecretKey，注意一定不要泄露这些信息！
 
-![](https://pic.yupi.icu/1/image-20260116121022222.png)
+![](/imgs/5f3342d829f8458e.png)
 
 3）在 MCP 配置中添加：
 
@@ -364,13 +361,13 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260116121243549.png)
+![](/imgs/87a468f505357464.png)
 
 配置好后，AI 就能读取和管理你云端的文件了，相当于给了 AI 一个网盘。
 
 此外，这个工具还支持图片搜索、图片处理、文档转换、视频封面生成等功能。
 
-![](https://pic.yupi.icu/1/image-20260116121658701.png)
+![](/imgs/e38382dd55074688.png)
 
 
 
@@ -381,21 +378,21 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 程序员朋友们对 GitHub 肯定不陌生，这是全球最大的代码托管平台，可以用它来存储代码、团队协作开发。
 
-![](https://pic.yupi.icu/1/image-20260116122621938.png)
+![](/imgs/0356e171ee1c126a.png)
 
 在日常开发中，我可能需要搜索 GitHub 代码仓库、创建 Issue 问题反馈、提交 PR 代码合并请求、查看代码变更、分析提交历史等等。以前这些操作都得在 GitHub 网站上手动完成，现在我可以直接让 AI 帮我做。
 
 比如我跟 AI 说：“我最近在 GitHub 上开源了哪些项目？star 数如何？”
 
-![](https://pic.yupi.icu/1/image-20260116123701822.png)
+![](/imgs/68ce011c1224074f.png)
 
 它就能快速给我在 GitHub 上的项目生成一份数据报告：
 
-![](https://pic.yupi.icu/1/image-20260116123734660.png)
+![](/imgs/f082ce814900d9b5.png)
 
 或者我说：“帮我看看最近一周的代码变更”，它就能分析 Git 提交记录，告诉我都改了什么。
 
-![](https://pic.yupi.icu/1/image-20260116124022290.png)
+![](/imgs/6cafe9fd27eaa849.png)
 
 
 
@@ -403,7 +400,7 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 首先需要在 GitHub 获取到你的 [Access Token](https://github.com/settings/tokens)，作为访问你 GitHub 资源的凭证：
 
-![](https://pic.yupi.icu/1/image-20260116122846165.png)
+![](/imgs/b9f7338513960539.png)
 
 然后在 MCP 配置中添加：
 
@@ -422,7 +419,7 @@ Context7 就是来解决这个问题的。它会自动从官方文档网站抓�
 
 这个工具还支持代码分析、CI/CD 监控、安全扫描等功能，基本上你在 GitHub 中能做的事，AI 都能帮你做。
 
-![](https://pic.yupi.icu/1/image-20260116123148068.png)
+![](/imgs/73adc6970979db47.png)
 
 
 
@@ -434,7 +431,7 @@ IDE 就是集成开发环境，简单理解就是写代码的软件，比如 VS 
 
 值得一提的是，现在很多有图形界面的 AI 编程工具（比如 Cursor）都是基于 VS Code 开发的，自然也支持 VS Code 的插件，所以下面我也主要分享 VS Code 插件，装上就能用。
 
-![](https://pic.yupi.icu/1/image-20260116124127539.png)
+![](/imgs/134262e29857d9ee.png)
 
 
 
@@ -444,19 +441,19 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 在 VS Code 或 Cursor 的扩展商店搜索 "Claude Code" 即可安装：
 
-![](https://pic.yupi.icu/1/image-20260116124255886.png)
+![](/imgs/5586abf32b63e764.png)
 
 这个扩展的优点是提供了图形界面，你可以通过侧边栏面板和 Claude 对话，能够灵活输入文字。
 
-![](https://pic.yupi.icu/1/image-20260116124614180.png)
+![](/imgs/b8eae44c998c525d.png)
 
 当 AI 修改代码时，你能在编辑器里实时看到变化，并且自动显示 diff 对比，让你清楚地知道 AI 改了哪些地方。
 
-![](https://pic.yupi.icu/1/image-20260116124700221.png)
+![](/imgs/0a2926aac2206395.png)
 
 我经常用它来重构代码、修复 Bug、添加新功能。它还支持多会话并行，也就是说你可以同时让多个 Claude 代理处理不同的任务，比如一个负责前端，一个负责后端，大大提高开发效率。
 
-![](https://pic.yupi.icu/1/image-20260116124928547.png)
+![](/imgs/eab294f0dbbcf4eb.png)
 
 顺带一提，类似的插件还有 Cline、GitHub Copilot 等，功能都差不多，大家可以根据自己的喜好选择。
 
@@ -466,29 +463,29 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 [GitLens](https://www.gitkraken.com/gitlens) 能让你更直观地查看 Git 代码的修改历史。
 
-![](https://pic.yupi.icu/1/image-20260116125249627.png)
+![](/imgs/fd0f69d45a51bf78.png)
 
 Git 是程序员用来管理代码版本的工具，简单理解就是能记录代码的每一次修改，包括谁改的、什么时候改的、为什么改。
 
 有了这些记录，出了 Bug 时我就能快速找到 “凶手” 追责。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE3%E5%A4%A7.jpeg)
+![](/imgs/0f8eac97743667d1.jpg)
 
 但 Git 只是个命令行工具，想查看历史记录还需要手敲命令，看起来也不太舒服。
 
-![](https://pic.yupi.icu/1/image-20260116125146713.png)
+![](/imgs/748b774d7affdb83.png)
 
 当我通过编辑器的扩展商店安装了 GitLens 后，把鼠标放到任意代码行上，GitLens 就会自动显示这行代码的作者、相关的 PR 合并请求等等。
 
-![](https://pic.yupi.icu/1/image-20260116125445257.png)
+![](/imgs/f44df4eda3c88ee0.png)
 
 进入 Git 管理面板，整个项目的提交记录一目了然。
 
-![](https://pic.yupi.icu/1/image-20260116125736701.png)
+![](/imgs/537ac6143ec7a5bb.png)
 
 此外，它还支持 AI 功能，能自动生成提交信息、解释代码变更、生成变更日志、用 AI 解释某次改动的目的。
 
-![](https://pic.yupi.icu/1/image-20260116130129466.png)
+![](/imgs/a852c11638c45e63.png)
 
 
 
@@ -497,17 +494,17 @@ Git 是程序员用来管理代码版本的工具，简单理解就是能记录�
 
 [Office Viewer](https://github.com/cweijan/vscode-office) 能帮你在编辑器里直接预览和编辑各种文档。
 
-![](https://pic.yupi.icu/1/image-20260116130347383.png)
+![](/imgs/ff9dd4e64d371535.png)
 
 我们知道，AI 输出的文档内容以 Markdown 格式为主，默认的编辑器中打开 Markdown 文件只能看到原始的标记语法，不够直观。
 
-![](https://pic.yupi.icu/1/image-20260116130450441.png)
+![](/imgs/73e5e494924adea7.png)
 
 看长文的时候，我还要用 Typora 等专业的 Markdown 编辑器打开文档，比较麻烦。
 
 在扩展商店搜索 "Office Viewer" 并安装后，可以直接在编辑器中使用所见即所得的 Markdown 编辑器，看文档、写文档都很方便，不用来回切换窗口。
 
-![](https://pic.yupi.icu/1/image-20260116130527681.png)
+![](/imgs/17c635da364495fc.png)
 
 此外，这个插件支持 Excel 表格、Word 文档、PDF 文档、SVG、字体文件、压缩包等多种格式，堪称编辑器里的万能文档查看器。
 
@@ -518,17 +515,17 @@ Git 是程序员用来管理代码版本的工具，简单理解就是能记录�
 
 [ESLint](https://eslint.org/) 是前端 JavaScript / TypeScript 项目必备的代码检查工具。
 
-![](https://pic.yupi.icu/1/image-20260116130608877.png)
+![](/imgs/0ebd3e591e9a0d8c.png)
 
 虽然编辑器本身也能检查一些基本的语法错误，但对于代码规范、潜在的逻辑漏洞等问题，就需要专业的代码检查工具来把关了。
 
 现在很多 AI 生成的项目代码都会自带 ESLint 配置文件（比如 `.eslintrc.js` 或者 `eslint.config.js`），定义好团队统一的代码检查规则。
 
-![](https://pic.yupi.icu/1/image-20260116131035221.png)
+![](/imgs/0e17d96fcc29185f.png)
 
 在扩展商店搜索 "ESLint" 并安装后，插件会自动检测项目中的规则配置文件，然后实时检查代码中的问题，并给出修复建议。
 
-![](https://pic.yupi.icu/1/image-20260116131356553.png)
+![](/imgs/69d4326707829c58.png)
 
 这样一来，AI 写的代码如果有不规范的地方，你立刻就能发现并让 AI 修正，避免埋下隐患。
 
@@ -539,21 +536,21 @@ Git 是程序员用来管理代码版本的工具，简单理解就是能记录�
 
 [Prettier](https://prettier.io/) 是一个代码格式化工具，能自动统一代码风格。
 
-![](https://pic.yupi.icu/1/image-20260116130633473.png)
+![](/imgs/b3020103c25b0c68.png)
 
 团队协作时，每个人的编码习惯不同，有的代码缩进 4 格、有的缩进 2 格；有的用单引号、有的用双引号。大家的代码风格五花八门，看着就很乱，代码审查时也容易出现 Beef。
 
 这时就需要统一的格式化规范了。现在很多 AI 生成的项目代码都会自带 Prettier 配置文件（比如 `.prettierrc`），定义好统一的格式化规则。
 
-![](https://pic.yupi.icu/1/image-20260116131553797.png)
+![](/imgs/6ddb3a2be8c5fd62.png)
 
 在扩展商店搜索 "Prettier" 并安装后，就可以用快捷键一键格式化代码。
 
-![](https://pic.yupi.icu/1/image-20260116131725960.png)
+![](/imgs/dd8089fb3817c3d4.png)
 
 还可以在 VS Code 的设置里搜索 "Format On Save" 并开启，这样每次保存代码时就会自动格式化，保证整个项目的代码风格一致。
 
-![](https://pic.yupi.icu/1/image-20260116132036643.png)
+![](/imgs/c0958da9ba7287ae.png)
 
 
 
@@ -562,15 +559,15 @@ Git 是程序员用来管理代码版本的工具，简单理解就是能记录�
 
 [Error Lens](https://github.com/usernamehw/vscode-error-lens) 能让你一眼看到代码中的错误。
 
-![](https://pic.yupi.icu/1/image-20260116130706384.png)
+![](/imgs/618d9f7d41293e41.png)
 
 一般情况下，如果代码中有错误，你得把鼠标移到红色波浪线上才能看到错误提示，不够直观。
 
-![](https://pic.yupi.icu/1/image-20260116140447236.png)
+![](/imgs/aea6919506582c5a.png)
 
 在扩展商店搜索 "Error Lens" 并安装后，错误信息会直接高亮显示在代码行尾，你一眼就能看到哪里有问题。
 
-![](https://pic.yupi.icu/1/image-20260116140619858.png)
+![](/imgs/e64a6c49c56bec2a.png)
 
 
 
@@ -579,15 +576,15 @@ Git 是程序员用来管理代码版本的工具，简单理解就是能记录�
 
 [Console Ninja](https://github.com/wallabyjs/console-ninja) 能让你在编辑器里直接看到代码的运行结果。
 
-![](https://pic.yupi.icu/1/image-20260116130745078.png)
+![](/imgs/bd1a937b99ec7751.png)
 
 在调试前端代码时，我经常需要看 `console.log` 打印出来的日志输出。要先切换到浏览器，再按 F12 打开开发者工具来查看控制台，比较麻烦。
 
-![](https://pic.yupi.icu/1/image-20260116140819516.png)
+![](/imgs/d025a17b910addc4.png)
 
 在扩展商店搜索 "Console Ninja" 并安装后，直接在编辑器里就能看到输出结果，看到每个日志是从哪个文件哪一行输出的，还能显示网络请求和错误堆栈。
 
-![](https://pic.yupi.icu/1/image-20260116141109420.png)
+![](/imgs/b2271b4ac5ebec86.png)
 
 有了它，不用频繁切换窗口了，调试效率大大提升。
 
@@ -608,7 +605,7 @@ Agent Skills 是给 AI 装备的技能包，让 AI 在特定任务上表现得�
 
 它定义了一种 **封装 AI 工作流** 的标准：开发者可以把复杂的任务指令、脚本和资源打包成一个 **技能（Skill）**；作为用户，你只需要安装这些技能，AI 就能立刻学会这项本事，不用重复造轮子。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE7%E5%A4%A7.jpeg)
+![](/imgs/1e0e6b37e86cd613.jpg)
 
 让我们来实战一下，利用 [frontend-design](https://www.claudeskill.site/en/skills/anthropic-agent-skills:frontend-design)  这个 Agent Skills 来优化生成网站的界面。
 
@@ -622,22 +619,22 @@ Agent Skills 是给 AI 装备的技能包，让 AI 在特定任务上表现得�
 /plugin marketplace add anthropics/skills
 ```
 
-![](https://pic.yupi.icu/1/image-20260116145357194.png)
+![](/imgs/07f341195ef0d5a3.png)
 
 然后输入 `/plugin`，通过 Tab 键切换到 Marketplaces 界面，批量安装官方提供的 Skills。包括：
 
 - document-skills：文档技能包，可以处理 Excel、Word、PPT、PDF 等文档。
 - example-skills：示例技能包 ，可以处理技能创建、构建 MCP、视觉设计、算法艺术、网页测试、动图制作、主题样式等。
 
-![](https://pic.yupi.icu/1/claudecode%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85.png)
+![](/imgs/441ac2b0a0991c17.png)
 
 安装好之后，输入 `/skills` 命令，就能看到所有已经安装完成的技能了，我们要的 `frontend-design` 也在其中。
 
-![](https://pic.yupi.icu/1/image-20260116145938235.png)
+![](/imgs/54eab6d300d41124.png)
 
 可以在本地找到 Skills 的安装位置，你会发现，SKills 的本质就是一组封装好的提示词文档 + 脚本文件等：
 
-![](https://pic.yupi.icu/1/image-20260116151949110.png)
+![](/imgs/af6a3e842fef14bf.png)
 
 还有另外一种安装方式，也可以在 Claude Code 中输入一行命令来安装 [frontend-design](https://www.claudeskill.site/en/skills/anthropic-agent-skills:frontend-design) 技能。
 
@@ -651,15 +648,15 @@ skill install anthropic-agent-skills:frontend-design
 
 比如我让 AI 开发一个精美的狼人杀网页游戏，它会询问我是否要使用 `frontend-design`  技能。
 
-![](https://pic.yupi.icu/1/image-20260116152325220.png)
+![](/imgs/01b599b3d8256526.png)
 
 使用这个技能后，AI 会选择独特的设计风格，生成的界面既有个性又专业，告别千篇一律的蓝紫渐变色。而且不需要你每次都重复输入一堆设计要求，非常方便！
 
-![](https://pic.yupi.icu/1/image-20260116153402176.png)
+![](/imgs/085a7b35e37412c4.png)
 
 不用技能是这样的，对比一下：
 
-![](https://pic.yupi.icu/1/image-20260116155623890.png)
+![](/imgs/ec87185d40012d50.png)
 
 目前 [Anthropic 官方技能仓库](https://github.com/anthropics/skills) 已经提供了丰富的技能集合，涵盖编程相关的数据库优化、API 安全、测试策略、代码审查、文档生成，还有办公相关的 PPT 制作、Excel 处理、Word 文档、PDF 生成等各个方面。
 
@@ -668,7 +665,7 @@ skill install anthropic-agent-skills:frontend-design
 - ⭐️ [鱼皮 AI 导航 - Skills 大全](https://ai.codefather.cn/skills)：持续更新优质技能，释放 AI 执行潜力
 - [Claude Skills Hub](https://www.claudeskill.site/)：社区技能市场
 
-![](https://pic.yupi.icu/1/image-20260201150711260.png)
+![](/imgs/515acb109f5430cb.png)
 
 值得一提的是，Agent Skills 现已成为 [通用标准](https://agentskills.io)。除了 Claude，[Cursor](https://cursor.com/docs/context/skills) 等主流 AI 编程工具也会陆续提供支持。也就是说，你在一个工具里用的技能，在另一个工具里也能复用。
 
@@ -682,7 +679,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://www.npmjs.com/package/skills
 
-![](https://pic.yupi.icu/1/image-20260204114830800.png)
+![](/imgs/9456252e3d5faac4.png)
 
 
 
@@ -690,7 +687,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：通过 `npx skills add vercel-labs/skills` 安装
 
-![](https://pic.yupi.icu/1/image-20260204144654011.png)
+![](/imgs/7ecbb77a030edfe2.png)
 
 
 
@@ -698,7 +695,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：通过 `npx skills add anthropics/skills` 安装
 
-![](https://pic.yupi.icu/1/1769307998192-27ac24c2-c732-401d-a19e-ebe07086d73b-20260204144825800.png)
+![](/imgs/ba55d934f68a6b6d.png)
 
 
 
@@ -706,7 +703,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/yusufkaraaslan/Skill_Seekers
 
-![](https://pic.yupi.icu/1/image-20260204115524485.png)
+![](/imgs/74554f73c16567ee.png)
 
 
 
@@ -714,7 +711,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/affaan-m/everything-claude-code
 
-![](https://pic.yupi.icu/1/image-20260204121536989.png)
+![](/imgs/1fad1466da748b9d.png)
 
 
 
@@ -724,7 +721,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://skills.sh
 
-![](https://pic.yupi.icu/1/image-20260204115906122.png)
+![](/imgs/293444e4eb6c5e54.png)
 
 
 
@@ -732,7 +729,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://ai.codefather.cn/skills
 
-![](https://pic.yupi.icu/1/image-20260201150711260.png)
+![](/imgs/515acb109f5430cb.png)
 
 
 
@@ -740,7 +737,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://skillsmp.com/zh
 
-![](https://pic.yupi.icu/1/image-20260204120006396.png)
+![](/imgs/650f4650112d7bab.png)
 
 
 
@@ -748,7 +745,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://mcpmarket.com/daily/skills
 
-![](https://pic.yupi.icu/1/image-20260204120133997.png)
+![](/imgs/3f457245c973f726.png)
 
 
 
@@ -759,7 +756,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/anthropics/skills
 
-![](https://pic.yupi.icu/1/1769307079120-6aaf2999-fee5-4fdb-a5e3-2ba66824b4de-20260204142715111.png)
+![](/imgs/1346a63876d0e373.png)
 
 
 
@@ -767,7 +764,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/ComposioHQ/awesome-claude-skills
 
-![](https://pic.yupi.icu/1/image-20260204120329382.png)
+![](/imgs/fe65845668ccf244.png)
 
 
 
@@ -805,7 +802,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/kepano/obsidian-skills
 
-![](https://pic.yupi.icu/1/image-20260204125639748.png)
+![](/imgs/9227db9eb974202a.png)
 
 
 
@@ -827,7 +824,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0
 
-![](https://pic.yupi.icu/1/image-20260204143151405.png)
+![](/imgs/c7ccf280f11aee28.png)
 
 
 
@@ -839,7 +836,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/obra/superpowers
 
-![](https://pic.yupi.icu/1/01-AI%E8%8E%B7%E5%BE%97%E8%B6%85%E8%83%BD%E5%8A%9B%E6%A2%97%E5%9B%BE.jpeg)
+![](/imgs/42676381737963b1.jpg)
 
 
 
@@ -853,7 +850,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
 
-![](https://pic.yupi.icu/1/image-20260204143423578.png)
+![](/imgs/7b507714fa39e368.png)
 
 
 
@@ -885,7 +882,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/supabase/agent-skills
 
-![](https://pic.yupi.icu/1/image-20260204143740866.png)
+![](/imgs/74a7d99e25511f6c.png)
 
 
 
@@ -910,7 +907,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/remotion-dev/skills
 
-![](https://pic.yupi.icu/1/68747470733a2f2f7075622d36343664383038643963623234306365613533626564633736646433636430632e72322e6465762f66697265736869702d717569636b2e676966.gif)
+![](/imgs/eddf870a72f4a79b.gif)
 
 
 
@@ -918,7 +915,7 @@ skill install anthropic-agent-skills:frontend-design
 
 > 指路：https://github.com/JimLiu/baoyu-skills
 
-![小红书配图技能](https://pic.yupi.icu/1/image-20260204144449881.png)
+![小红书配图技能](/imgs/940d4518e1b00786.png)
 
 
 
@@ -966,7 +963,7 @@ skill install anthropic-agent-skills:frontend-design
 
 而规范驱动开发的思路正好相反：先把需求写成规范文档，并且把规范文档当作代码的 **唯一真相来源**。你可以把规范文档理解为 **法律条文**，它包含了详细的需求描述、系统设计和接口定义。AI 必须严格遵守这些条文来生成代码，确保产出完全符合预期。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE4%E5%A4%A7.jpeg)
+![](/imgs/b80cd552f1d6f59c.jpg)
 
 听起来有些抽象，我们可以跟着 [Spec-kit GitHub 仓库](https://github.com/github/spec-kit) 的官方文档来实战一下。
 
@@ -976,19 +973,19 @@ skill install anthropic-agent-skills:frontend-design
 uvx --from git+https://github.com/github/spec-kit.git specify init my-project
 ```
 
-![](https://pic.yupi.icu/1/image-20260116141308958.png)
+![](/imgs/38c63f5da67e08cc.png)
 
 选择你使用的 AI 编程工具，Spec-kit 支持 Claude Code、GitHub Copilot 等几乎所有主流编程工具。这里我选 Claude Code：
 
-![](https://pic.yupi.icu/1/image-20260116141507190.png)
+![](/imgs/6688bcf01597e8d2.png)
 
 根据操作系统选择脚本类型，Windows 选下面的，其他选上面的：
 
-![](https://pic.yupi.icu/1/image-20260116141537030.png)
+![](/imgs/7b315006f63e479f.png)
 
 执行完这个命令后，会在当前目录下创建一个 `my-project` 文件夹：
 
-![](https://pic.yupi.icu/1/image-20260116141613246.png)
+![](/imgs/63067707e899bc68.png)
 
 文件夹里面包含了这些核心文件：
 
@@ -997,15 +994,15 @@ uvx --from git+https://github.com/github/spec-kit.git specify init my-project
 - `.specify/templates/`：模板文件
 - `.claude/commands/`：定义了一套内置的斜杠命令，让你在 AI 编程工具中可以直接调用
 
-![](https://pic.yupi.icu/1/image-20260116142528820.png)
+![](/imgs/c625bfbb870777b4.png)
 
 初始化程序还给了我们一些指引，告诉我们接下来如何运用这些命令来开发项目。
 
-![](https://pic.yupi.icu/1/image-20260116141715310.png)
+![](/imgs/3584df880f11b29e.png)
 
 用 Claude Code 打开这个项目文件夹，就可以在对话中使用定义好的命令了。
 
-![](https://pic.yupi.icu/1/image-20260116142740271.png)
+![](/imgs/83c1c5c0482705cf.png)
 
 接下来就是标准化的开发流程，参考 [官方文档](https://github.com/github/spec-kit)，主要分为 7 个步骤：
 
@@ -1021,15 +1018,15 @@ uvx --from git+https://github.com/github/spec-kit.git specify init my-project
 
 💡 如果你要做中文项目，最好在制定项目准则时就明确告诉 AI “整个网站使用中文”。
 
-![](https://pic.yupi.icu/1/image-20260116160508054.png)
+![](/imgs/58fda21f393ba5b5.png)
 
 AI 更新了项目准则文档：
 
-![](https://pic.yupi.icu/1/image-20260116160610169.png)
+![](/imgs/d1f97a3728ecd621.png)
 
 建议每一步我们都用 Git 提交一个版本，这样出了问题后能及时回滚，也便于我们看到每一步改动的文件。
 
-![](https://pic.yupi.icu/1/image-20260116160745548.png)
+![](/imgs/abf834390790d104.png)
 
 
 
@@ -1041,19 +1038,19 @@ AI 更新了项目准则文档：
 /speckit.specify 我想做个【自动提醒我喝水的网站】
 ```
 
-![](https://pic.yupi.icu/1/image-20260116161231223.png)
+![](/imgs/940bba8ee640c030.png)
 
 AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目。在这个分支下创建了一个需求规格文档（spec.md） + 一个需求检查文档（requirements.md）。
 
-![](https://pic.yupi.icu/1/image-20260116161307642.png)
+![](/imgs/9b99982fcd94e4df.png)
 
 需求规格文档非常详细，还包含了边缘测试用例，针对用户各种可能的操作进行处理。
 
-![](https://pic.yupi.icu/1/image-20260116161926017.png)
+![](/imgs/7dae71f40717f83b.png)
 
 需求检查文档中记录了 AI 对于需求的理解，打钩表示 AI 理解并确认了：
 
-![](https://pic.yupi.icu/1/image-20260116161500358.png)
+![](/imgs/3dcd2ac7c9310b74.png)
 
 
 
@@ -1063,11 +1060,11 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.clarify` 命令，AI 会提出结构化的问题，让你来回答。从而帮你填补需求中的空白，比如边界情况、错误处理等。
 
-![](https://pic.yupi.icu/1/image-20260116162702812.png)
+![](/imgs/98a8399770caa7a7.png)
 
 我运气不错，不需要这一步 AI 就已经理解了所有条目，接下来可以进入制定技术方案阶段。
 
-![](https://pic.yupi.icu/1/image-20260116162201772.png)
+![](/imgs/128928614b2e266e.png)
 
 
 
@@ -1075,7 +1072,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.plan` 命令，让 AI 决定用什么技术栈、系统架构、数据模型、API 接口等。
 
-![](https://pic.yupi.icu/1/image-20260116163506902.png)
+![](/imgs/d55d5f07edf068c2.png)
 
 制定技术方案完成，这次生成了一大堆文档，简单了解一下：
 
@@ -1086,11 +1083,11 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 - research.md 技术研究文档，记录了 8 项关键技术决策
 - contracts/api-contract.md API 接口文档
 
-![](https://pic.yupi.icu/1/image-20260116164021646.png)
+![](/imgs/3b72d51f05a6ef9e.png)
 
 接下来，我们就可以准备开发实现了。
 
-![](https://pic.yupi.icu/1/image-20260116163553725.png)
+![](/imgs/c3a3382704ebcfe2.png)
 
 
 
@@ -1098,11 +1095,11 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.tasks` 命令，把计划拆解成可执行的任务列表，并标注依赖关系和优先级。
 
-![](https://pic.yupi.icu/1/image-20260116164537006.png)
+![](/imgs/9c15e0b80fdc9cc2.png)
 
 生成了一个任务列表文档，每一步要做什么都非常清晰：
 
-![](https://pic.yupi.icu/1/image-20260116164612533.png)
+![](/imgs/e7cd863ca7a6dff5.png)
 
 
 
@@ -1110,7 +1107,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.analyze` 命令，检查规范、计划、任务是否完整一致，提前发现设计缺陷。
 
-![](https://pic.yupi.icu/1/image-20260116164936733.png)
+![](/imgs/9aceca87b337beca.png)
 
 可以看到，AI 没有检查出问题，还让我自信地进行下一步，真爽死了！
 
@@ -1120,17 +1117,17 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 最后，运行 `/speckit.implement` 命令，让 AI 按照任务列表生成代码。
 
-![](https://pic.yupi.icu/1/image-20260116170006815.png)
+![](/imgs/634c11104f8832f4.png)
 
 大功告成，看一下效果~
 
-![](https://pic.yupi.icu/1/image-20260116170146827.png)
+![](/imgs/4ed1216778521dec.png)
 
 因为我这里始终没有提到使用中文输出，所以网站内容都是英文的，不过我感觉效果还可以。
 
 到这里，我们已经学会了如何用 Spec-kit 开发完整项目，再复习一下完整流程：
 
-![](https://pic.yupi.icu/1/%25E6%25BC%25AB%25E7%2594%25BB%25E5%259B%25BE5%25E5%25A4%25A7.jpeg)
+![](/imgs/7e18f1fc9a8d6319.jpg)
 
 即使不用 Spec-kit，我们开发完整项目时也可以人工遵循这些步骤。
 
@@ -1148,7 +1145,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 它的核心理念是把规范文档作为代码库的一部分，每次改功能都 **先写变更提案** => 确认后再实现 => 实现完再把变更归档到规范文档中，让文档和代码始终保持同步。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE6%E5%A4%A7.jpeg)
+![](/imgs/0e25e00dbfd307ce.jpg)
 
 访问 [OpenSpec 官方仓库](https://github.com/Fission-AI/OpenSpec/) 查看文档。
 
@@ -1166,7 +1163,7 @@ openspec init
 
 初始化过程中会让你选择要集成的 AI 工具（比如 Claude Code、Cursor 等），我这里选择 Cursor。
 
-![](https://pic.yupi.icu/1/image-20260116163202471.png)
+![](/imgs/6ec352e856e8e1d1.png)
 
 运行命令后，OpenSpec 会自动在你的项目中生成一个 `openspec/` 目录，里面包含：
 
@@ -1175,11 +1172,11 @@ openspec init
 - ⭐️ `openspec/AGENTS.md`：让 AI 编程助手使用 OpenSpec 进行规范驱动开发的操作指南，包含了如何创建变更提案、编写需求规范、验证和归档变更的完整工作流程。
 - `openspec/project.md`：当前项目的上下文说明（用来记录项目的信息）
 
-![](https://pic.yupi.icu/1/image-20260116164308965.png)
+![](/imgs/c07d2ccb62d98d09.png)
 
 此外，还会根据你选择的 AI 编程工具，生成对应的命令文件，比如 Cursor 的：
 
-![](https://pic.yupi.icu/1/image-20260116173814973.png)
+![](/imgs/d13f0b9f9e83f8c7.png)
 
 有了这些文件，我们就可以开始规范化的开发流程了。参考 [官方文档](https://github.com/Fission-AI/OpenSpec/)，主要分为 5 个步骤：
 
@@ -1197,7 +1194,7 @@ openspec init
 /openspec:proposal 添加功能：根据名称和邮箱搜索用户
 ```
 
-![](https://pic.yupi.icu/1/image-20260116171714070.png)
+![](/imgs/b657a482ec61a4ea.png)
 
 AI 会给这个功能创建一个独立的目录 `openspec/changes/add-user-search/`，目录下创建一系列文档：
 
@@ -1205,7 +1202,7 @@ AI 会给这个功能创建一个独立的目录 `openspec/changes/add-user-sear
 - `tasks.md`：实施步骤的任务分解
 - `specs/…/spec.md`：需求变更的具体内容
 
-![](https://pic.yupi.icu/1/image-20260116171953809.png)
+![](/imgs/eb089289f7b210bb.png)
 
 
 
@@ -1219,7 +1216,7 @@ openspec validate add-user-search    # 验证格式是否正确
 openspec show add-user-search        # 查看详细内容
 ```
 
-![](https://pic.yupi.icu/1/image-20260116172259055.png)
+![](/imgs/c8e7321187829d6b.png)
 
 
 
@@ -1251,11 +1248,11 @@ AI 会更新规范和任务列表，直到大家达成一致。
 
 AI 会按照 `tasks.md` 中的任务列表逐一实现，并标记完成状态。
 
-![](https://pic.yupi.icu/1/image-20260116172654371.png)
+![](/imgs/03905e1d7a0b27fe.png)
 
 很快生成完成，AI 的输出非常整齐，所有改动一目了然：
 
-![](https://pic.yupi.icu/1/image-20260116172905921.png)
+![](/imgs/3db4104ab73e388e.png)
 
 
 
@@ -1279,7 +1276,7 @@ AI 会按照 `tasks.md` 中的任务列表逐一实现，并标记完成状态�
 openspec archive add-user-search --yes
 ```
 
-![](https://pic.yupi.icu/1/image-20260116172957759.png)
+![](/imgs/00df20a90fd9e98d.png)
 
 这个命令会：
 
@@ -1287,7 +1284,7 @@ openspec archive add-user-search --yes
 - 将需求变更自动合并到 `openspec/specs/` 主规范中
 - 保持文档和代码的同步
 
-![](https://pic.yupi.icu/1/image-20260116174247313.png)
+![](/imgs/76aad4acf9da74e0.png)
 
 这样一来，通过 `openspec/changes/` 的历史记录，你可以随时追溯每次变更的来龙去脉。
 
@@ -1329,15 +1326,15 @@ scoop install aichat
 
 安装完成后，运行 `aichat` 命令，首次执行会引导你创建配置，选择你要用的大模型并填写 API Key：
 
-![](https://pic.yupi.icu/1/image-20260116143602756.png)
+![](/imgs/98d0432b374a35a1.png)
 
 然后就可以愉快地跟 AI 对话了：
 
-![](https://pic.yupi.icu/1/image-20260116143719965.png)
+![](/imgs/2b2f84c3a4e6d551.png)
 
 但是我个人主要用它的 Shell 助手能力（给命令添加 `-e` 选项），而不是 AI 对话能力。
 
-![](https://pic.yupi.icu/1/ai-chat-e.gif)
+![](/imgs/592cbe3c9aec3d83.gif)
 
 比如我想批量重命名文件，但不记得命令怎么写，在终端里执行下列命令：
 
@@ -1347,19 +1344,19 @@ aichat -e 帮我把当前目录下所有 .txt 文件改成 .md
 
 它就会生成对应的 shell 命令，我确认后它就自动执行了。
 
-![](https://pic.yupi.icu/1/image-20260116144218847.png)
+![](/imgs/ec6e6a98e480e9dc.png)
 
 还可以通过快捷键来智能补全命令：
 
-![](https://pic.yupi.icu/1/ai-chat-completion.gif)
+![](/imgs/8fa66d6be41baa16.gif)
 
 除了 Shell 助手，AIChat 还有一些进阶功能。比如支持 RAG 检索增强生成，可以让 AI 基于你的本地文档回答问题；支持创建 AI 代理，把指令、工具和文档组合成自动化工作流。
 
-![](https://pic.yupi.icu/1/ai-chat-agents.png)
+![](/imgs/72a3ac79dab267e5.png)
 
 此外，如果你想对比不同模型的效果，运行 `aichat --serve` 可以启动本地网页界面，同时对比多个模型的回答。
 
-![](https://pic.yupi.icu/1/ai-chat-compare-model.png)
+![](/imgs/b512dccf324b5cb1.png)
 
 
 
@@ -1383,7 +1380,7 @@ aichat -e 帮我把当前目录下所有 .txt 文件改成 .md
 
 > 开源指路：https://github.com/microsoft/markitdown
 
-![](https://pic.yupi.icu/1/image-20260403142348396.png)
+![](/imgs/b15144db5f819561.png)
 
 安装和使用非常简单，一行 pip 命令搞定：
 
@@ -1393,7 +1390,7 @@ pip install markitdown
 
 装好之后，在终端输入一行命令就能转换文件。而且它还提供了 MCP Server，可以直接接入到 AI 编程工具中。之后你在项目里丢一个 PDF 或 Word 文件让 AI 分析，它就会自动调用 MarkItDown 先转成 Markdown 再处理，非常丝滑。
 
-![](https://pic.yupi.icu/1/image-20260403142531441.png)
+![](/imgs/a424a8e98ced2127.png)
 
 MarkItDown 的优点在于格式覆盖广，几乎啥格式都能转。但遇到排版很复杂的 PDF，比如论文里的多栏排版、数学公式、复杂表格，就有点力不从心了。
 
@@ -1407,7 +1404,7 @@ MarkItDown 的优点在于格式覆盖广，几乎啥格式都能转。但遇到
 
 > 开源指路：https://github.com/opendatalab/MinerU
 
-![](https://pic.yupi.icu/1/image-20260403143732593.png)
+![](/imgs/c09e6dc2d99517a9.png)
 
 
 
@@ -1417,7 +1414,7 @@ MarkItDown 的优点在于格式覆盖广，几乎啥格式都能转。但遇到
 
 > 开源指路：https://github.com/docling-project/docling
 
-![](https://pic.yupi.icu/1/image-20260403143816972.png)
+![](/imgs/89748aa054c1e593.png)
 
 简单来说：日常转换选 MarkItDown，论文公式选 MinerU，复杂版面选 Docling，按需搭配就好。
 
@@ -1437,7 +1434,7 @@ MarkItDown 的优点在于格式覆盖广，几乎啥格式都能转。但遇到
 
 > 开源指路：https://github.com/ggml-org/whisper.cpp
 
-![](https://pic.yupi.icu/1/image-20260403144636577.png)
+![](/imgs/fe6799a461d6c990.png)
 
 
 
@@ -1449,7 +1446,7 @@ MarkItDown 的优点在于格式覆盖广，几乎啥格式都能转。但遇到
 
 > 开源指路：https://github.com/yt-dlp/yt-dlp
 
-![](https://pic.yupi.icu/1/image-20260403151136014.png)
+![](/imgs/7779f8c190e9532b.png)
 
 
 
@@ -1461,7 +1458,7 @@ MarkItDown 的优点在于格式覆盖广，几乎啥格式都能转。但遇到
 
 > 开源指路：https://github.com/FFmpeg/FFmpeg
 
-![](https://pic.yupi.icu/1/image-20260403152202764.png)
+![](/imgs/bdc8600ceff1b524.png)
 
 组合使用的话，yt-dlp 负责下载素材，whisper.cpp 负责语音转文字，FFmpeg 负责音视频处理，三板斧一套下来，AI 就能完成从下载、转录到剪辑的完整工作流了。
 
@@ -1479,7 +1476,7 @@ Browser Use 不仅是一个 Skill，它本身也是一个功能强大的独立�
 
 > 开源指路：https://github.com/browser-use/browser-use
 
-![](https://pic.yupi.icu/1/image-20260403141700375.png)
+![](/imgs/5d1d3d04dbdad626.png)
 
 适合用来做自动化测试、批量数据抓取、后台系统的重复性操作等场景。它的底层基于微软开源的 Playwright 浏览器自动化框架，稳定性和兼容性都不错。
 
@@ -1493,7 +1490,7 @@ Browser Use 不仅是一个 Skill，它本身也是一个功能强大的独立�
 
 > 开源指路：https://github.com/ComposioHQ/composio
 
-![](https://pic.yupi.icu/1/image-20260403152926005.png)
+![](/imgs/78f9969012c56d6c.png)
 
 不管你用 Python 还是 TypeScript 开发 AI 应用，都能直接用上。官方还提供了不少现成的应用模板，拿来就能用。
 
@@ -1509,7 +1506,7 @@ Browser Use 不仅是一个 Skill，它本身也是一个功能强大的独立�
 
 > 开源指路：https://github.com/mem0ai/mem0
 
-![](https://pic.yupi.icu/1/image-20260403150058803.png)
+![](/imgs/d88e95e709a81c9c.png)
 
 它支持用户级、会话级、Agent 级三层记忆管理，不同用户的上下文不会互相混淆。如果你在学 AI 应用开发，建议研究一下 Mem0 的记忆系统实现，很有参考价值。
 

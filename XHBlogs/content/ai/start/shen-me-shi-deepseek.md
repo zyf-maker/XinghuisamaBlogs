@@ -3,15 +3,12 @@ title: "什么是 DeepSeek"
 summary: "DeepSeek（深度求索）是一款由国内团队开发的开源人工智能工具库，专注于提供高效易用的AI模型训练与推理能力。它既包含预训练大语言模型（如DeepSeek-R1系列），也提供配套工具链，助力开发者快速实现AI应用落地。"
 order: 201
 level: "入门"
-tags: ["关于 DeepSeek", "转载", "AI"]
+tags: ["关于 DeepSeek"]
 updated: "2025-03-28"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《什么是 DeepSeek》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 DeepSeek（深度求索）是一款由国内团队开发的开源人工智能工具库，专注于提供高效易用的AI模型训练与推理能力。它既包含预训练大语言模型（如DeepSeek-R1系列），也提供配套工具链，助力开发者快速实现AI应用落地。
 
@@ -58,7 +55,7 @@ DeepSeek 可能集成了 **检索增强生成（Retrieval-Augmented Generation, 
 
 #### DeepSeek原理图
 
-![img](https://pic.yupi.icu/yuyi/1739428111977-95378500-3e57-4a78-b174-28b2baf693a9.png)
+![img](/imgs/cf02b5bf7d2d23fe.png)
 
 DeepSeek是由幻方量化创立的人工智能公司推出的一系列AI模型，包括DeepSeek Coder、DeepSeek LLM、DeepSeek-V2、DeepSeek-V3和DeepSeek-R1等。以下是对DeepSeek技术原理的通俗介绍：
 
@@ -67,7 +64,7 @@ DeepSeek是由幻方量化创立的人工智能公司推出的一系列AI模型�
 - **混合专家架构（MoE）：** MoE架构就像是一个有很多专家的团队。每个专家都擅长处理某一类特定的任务。当模型收到一个任务，比如回答一个问题或者处理一段文本时，它会把这个任务分配给最擅长处理该任务的专家去做，而不是让所有的模块都来处理。比如DeepSeek-V2有2360亿总参数，但处理每个token时，仅210亿参数被激活；DeepSeek -V3总参数达6710亿，但每个输入只激活370亿参数。这样一来，就大大减少了不必要的计算量，让模型处理复杂任务时又快又灵活。
 - **基于Transformer架构：** Transformer架构是DeepSeek的基础，它就像一个超级信息处理器，能处理各种顺序的信息，比如文字、语音等。它的核心是注意力机制，打个比方，我们在看一篇很长的文章时，会自动关注重要的部分，Transformer的注意力机制也能让模型在处理大量信息时，自动聚焦到关键内容上，理解信息之间的关系，不管这些信息是相隔很近还是很远。
 
-![img](https://pic.yupi.icu/yuyi/1739429542707-90d8785b-42dd-419b-8512-1ce58c45a0b2.png)
+![img](/imgs/a95cca52c2b51249.png)
 
 #### 关键技术方面
 
@@ -101,7 +98,7 @@ DeepSeek模型在推理能力与速度方面表现出色，展现出强大的竞
 - **多词元预测（MTP）优化：** MTP训练目标允许模型在一次前向传播中预测多个词元，这不仅提升了训练效率，还为推理阶段的推测性解码提供了支持。在实际应用中，DeepSeek-V3能够快速生成高质量的文本内容，例如在文本生成任务中，其生成速度比传统模型快2倍以上，同时保持了较高的生成质量。
 - **硬件优化与量化技术：** DeepSeek支持FP8混合精度训练，并结合硬件优化技术，如FlashAttention优化，充分利用GPU显存带宽优势，进一步加速了推理过程。此外，其动态批处理技术能够根据请求复杂度灵活调整批次大小，优化吞吐量，确保在不同负载下都能保持高效的推理性能。
 
-![img](https://pic.yupi.icu/yuyi/1739428685208-a9b61783-cc46-411c-810a-aa598c1e818f.png)
+![img](/imgs/ce107b608a60f99f.png)
 
 #### 成本效益分析
 

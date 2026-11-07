@@ -3,25 +3,22 @@ title: "GPT-6 Astra 编程能力实测 - 4 个项目案例"
 summary: "从 3D 城市生成器到操作 KiCad 画电路板，实测全球最强模型的真实水平"
 order: 17
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-09-11"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GPT-6 Astra 编程能力实测 - 4 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 2026 年 9 月初 OpenAI 发布了 GPT-6 Astra，号称全世界最智能的模型，主打像人一样操作电脑和自主完成编程任务。关于它的跑分、官方案例和发布当天的争议，可以阅读本板块中的《GPT-6 Astra 发布解读 - 跑分、官方案例和争议》。
 
-![](https://pic.yupi.icu/1/OpenAI%20Twitter%20%E6%88%AA%E5%9B%BE.png)
+![](/imgs/926370ee7205bca8.png)
 
 我看了一圈官方展示的案例，3D 城市生成、3D 卡丁车赛车游戏等等，效果确实震撼。
 
-![官方展示的 3D 卡丁车游戏](https://pic.yupi.icu/1/gpt6astra-3D%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F-90c1852a.png)
+![官方展示的 3D 卡丁车游戏](/imgs/11f66d7b51909958.png)
 
 当时我就想第一时间跑轮实测，结果打开 Codex 一看，没有 Astra 的选项。
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 现在，我的 Codex 终于有 GPT-6 Astra 的权限了，赶紧搞几个实战项目测测看。
 
-![](https://pic.yupi.icu/1/image-20260906204649799.png)
+![](/imgs/c122998dde75fde9.png)
 
 这次我选择了 4 个案例，由浅入深：
 
@@ -47,13 +44,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 OpenAI 官方的开发者展示馆里有一个用 GPT-5.5 做的程序化城市生成器，编辑器风格的界面加上实时 3D 渲染。我想看看 Astra 能不能做到更好的水平。
 
-![官方的城市生成器](https://pic.yupi.icu/1/image-20260907101007222.png)
+![官方的城市生成器](/imgs/8d1daa079d86d415.png)
 
 提示词里我就强调了一件事，至少包含重庆、上海、西安、深圳、江南五种城市风格，要让用户一眼就能认出是哪座城市。
 
 之所以选重庆当主打风格，是因为层叠立交的复杂地形在国内辨识度极高，最容易看出 AI 到底有没有理解城市特色。此外，参数维度和编辑器布局怎么设计我一个字都没提，让 AI 自己去搜官方那版的产品设计，在此基础上做中国版。
 
-![Case 1 提示词](https://pic.yupi.icu/1/gpt6astra-shizhan-prompt-01-case1-chongqing-f3e40e6b.png)
+![Case 1 提示词](/imgs/26c88282c5e22c72.png)
 
 AI 拿到任务后，先用 Firecrawl 搜索了官方 Showcase 的产品设计，又查了 Three.js 的文档，然后一口气把整个项目写完了。
 
@@ -61,29 +58,29 @@ AI 拿到任务后，先用 Firecrawl 搜索了官方 Showcase 的产品设计�
 
 来看看成品，第一眼就被惊艳到了……
 
-![重庆 · 8D 魔幻山城](https://pic.yupi.icu/1/gpt6astra-shizhan-case1-chongqing-default-583f7a6d.png)
+![重庆 · 8D 魔幻山城](/imgs/8d01088abfad0846.png)
 
 网站右侧是完整的城市生成器控制面板，城市风格、城市形态、建筑密度、平均高度、地形与交通、光照氛围全都能调。你随便拖动一个滑块，3D 场景就会实时重新生成。底部是五种城市风格的预览卡片，一目了然。
 
 重庆的 3D 场景确实做出了高差感，建筑群层叠在地形的起伏上，标注了立交层数和轨道交通的位置。
 
-![](https://pic.yupi.icu/1/image-20260907101131449.png)
+![](/imgs/055fa50177c239e6.png)
 
 再看看切换其他城市风格的效果。上海版是滨江平地加超高层密集，色调完全变了，标注了东方明珠和上海中心。
 
-![上海 · 陆家嘴天际线](https://pic.yupi.icu/1/image-20260907101226542.png)
+![上海 · 陆家嘴天际线](/imgs/8ad15974c9583c85.png)
 
 西安版的特色也很鲜明，城墙围合结构、中式屋顶、低矮建筑群，整个色调偏暖土色，标注了大雁塔和钟楼中轴。
 
-![西安 · 千年长安城](https://pic.yupi.icu/1/image-20260907101256119.png)
+![西安 · 千年长安城](/imgs/1cbad2757e9952db.png)
 
 深圳版切换到了暗色调，超高密度的玻璃幕墙建筑群，标注了深圳湾，赛博感十足。还能看到道路上的小车，很细节。
 
-![深圳 · 赛博未来都市](https://pic.yupi.icu/1/image-20260907101353271.png)
+![深圳 · 赛博未来都市](/imgs/199c04fd6a891a2f.png)
 
 江南版的画风跟前四个完全不同，白墙黛瓦、小桥流水、低层建筑，水系穿城而过。
 
-![江南 · 枕水人家](https://pic.yupi.icu/1/image-20260907101447391.png)
+![江南 · 枕水人家](/imgs/b87f552c2c50a10d.png)
 
 这五种风格切出来视觉差异非常明显，不是简单换个颜色，建筑形态、地形高差、地标标注全都跟着变了。
 
@@ -96,31 +93,31 @@ AI 拿到任务后，先用 Firecrawl 搜索了官方 Showcase 的产品设计�
 
 这个案例最核心的考点是运镜。我要求整段动画要体现专业的运镜手法，不同段落用不同类型的镜头，镜头之间的转场要自然，战场上要有大规模的士兵群体。具体怎么实现、后端承担什么职责，全部交给 AI 自己设计。
 
-![Case 2 提示词](https://pic.yupi.icu/1/gpt6astra-shizhan-prompt-02-case2-odyssey-ddd820f4.png)
+![Case 2 提示词](/imgs/049affe9fb8faf11.png)
 
 AI 先搜了特洛伊战争的经典场面和电影运镜手法，然后自己设计了一套前后端架构。前端用 Three.js 做 3D 场景渲染和镜头动画，后端用 Node.js 提供两个接口，一个根据场景配置生成分镜脚本，另一个调用 ffmpeg 把前端渲染的帧序列编码成 MP4 视频。
 
 大约 19 分钟后，AI 交卷了：
 
-![特洛伊之围 · 开场](https://pic.yupi.icu/1/gpt6astra-shizhan-case2-opening-3cb6551d.png)
+![特洛伊之围 · 开场](/imgs/24c1874a64fc771b.png)
 
 打开网页，一整片黄昏色调的战场直接扑面而来，大规模的士兵方阵、城墙城门、远处的战舰群都在。底部有完整的时间轴播放器，可以拖拽进度、调倍速、全屏播放，右上角还有「导出影片」按钮，对接的就是后端的 ffmpeg 导出接口。
 
-![特洛伊之围 · 战争推进](https://pic.yupi.icu/1/image-20260907101547643.png)
+![特洛伊之围 · 战争推进](/imgs/0a56f06bfa09ebbc.png)
 
 动画播放过程中，镜头确实在持续运动，从远景推向近景，能看到摄像机角度在截图之间有明显变化。
 
-![特洛伊之围 · 镜头推进](https://pic.yupi.icu/1/image-20260907101609545.png)
+![特洛伊之围 · 镜头推进](/imgs/f1e36a885e1054db.png)
 
 整段动画分成了六个章节，72 秒完整叙事，从风暴将至的全景一步步推到近距离搏杀，最后拉远收束。镜头轨迹的加速度都做了连续性处理，章节字幕是渐隐渐现的。
 
-![特洛伊之围 · 六个章节](https://pic.yupi.icu/1/image-20260907101732031.png)
+![特洛伊之围 · 六个章节](/imgs/edf9bce9507f4612.png)
 
 过程中，AI 在自验证阶段发现了远景雾气太重、角色脚底悬空等几个问题，自己修了两轮，最后跑了 9 项测试全部通过。
 
 不过也有明显的瑕疵，有几处角色穿模，士兵的武器偶尔会穿过身体，这种问题让 AI 再跑一轮修复大概率能搞定。
 
-![特洛伊之围 · 穿模问题](https://pic.yupi.icu/1/image-20260907101803378.png)
+![特洛伊之围 · 穿模问题](/imgs/7862416a017cefab.png)
 
 整体来看，这个项目从产品设计到技术实现都很完整。虽然 3D 模型本身是低多边形风格的，不是很精细的建模，但考虑到这是一段提示词从零做出来的全栈项目，已经很强了。
 
@@ -131,7 +128,7 @@ AI 先搜了特洛伊战争的经典场面和电影运镜手法，然后自己�
 
 简单来说，我要求 AI 先克隆 VS Code 的开源代码，然后在此基础上做一个支持 Editor Window 和 Agents Window 双窗口切换的 Web AI 编程工具。Editor Window 负责代码编辑，Agents Window 负责 AI 对话和自主开发，技术栈让 AI 自由发挥。
 
-![Case 3 提示词](https://pic.yupi.icu/1/gpt6astra-shizhan-prompt-03-case3-cursor-4e7ba66a.png)
+![Case 3 提示词](/imgs/171fcf824c573243.png)
 
 AI 拿到任务后同时做了两件事，一边用 Firecrawl 搜索 Cursor 3 的产品设计，一边通过 Git 命令克隆 VS Code 仓库。
 
@@ -139,37 +136,37 @@ AI 拿到任务后同时做了两件事，一边用 Firecrawl 搜索 Cursor 3 �
 
 有意思的是，AI 没有直接把产品叫做「Cursor 复刻版」，而是自己取了个产品名叫「orbit」，顶部中间就是 Editor / Agents 双窗口切换按钮。
 
-![](https://pic.yupi.icu/1/image-20260907102033341.png)
+![](/imgs/7ad9fe04cce92462.png)
 
 先来看看 Editor Window 编辑器模式的效果：
 
-![](https://pic.yupi.icu/1/image-20260907102104325.png)
+![](/imgs/853eb6c7a0168706.png)
 
 整体布局参考了 VS Code，比如左侧文件树、中间 Monaco 编辑器、上方多标签页和面包屑导航、下方终端面板、右侧 Agent 对话面板。但又跟 VS Code 不完全一样，比如暗色主题配色、活动栏图标、状态栏信息这些细节都做了自己的设计，更像是一个独立产品而不是简单的换皮。
 
 切换到 Agents Window，这就是我们熟悉的 AI 对话界面了：
 
-![Agents Window](https://pic.yupi.icu/1/gpt6astra-shizhan-case3-agents-window-07a45833.png)
+![Agents Window](/imgs/06a109a07b9488ab.png)
 
 Agents 面板有完整的任务管理能力，中间是对话输入区，下方已经配好了 `deepseek-v4-pro` 模型选择和 Agent 模式。
 
 AI 能够正常完成简单的开发任务，核心功能都能跑通：
 
-![](https://pic.yupi.icu/1/image-20260907102738405.png)
+![](/imgs/a1727028a99aa97e.png)
 
 跟之前我测试过的几个模型横向对比一下。
 
 Kimi K3 那次花了半个多小时，核心功能跑通了，但是界面比较简陋。
 
-![Kimi K3 的复刻 Cursor](https://pic.yupi.icu/1/1784190810038-c3d24d7d-f500-46ff-bb62-b2c9205005f2-20260717144633410.png)
+![Kimi K3 的复刻 Cursor](/imgs/0c759e223c45dcc8.png)
 
 再来看看 Claude Opus 5 用同样的提示词做出来的版本，代码高亮、小地图、管理面板都在，还原度很高，但说实话跟 VS Code 太像了，少了点自己的想法。
 
-![Claude Opus 5 的复刻 Cursor](https://pic.yupi.icu/1/1785147124049-912c793e-0915-4843-853b-9848a4611536.png)
+![Claude Opus 5 的复刻 Cursor](/imgs/d0e2916d271933dd.png)
 
 Claude Fable 5.1 的完成度最高，有完整终端、Agent 执行流程和文件审阅机制，还能逐文件接受或拒绝 AI 改动。
 
-![Claude Fable 5.1 的复刻 Cursor](https://pic.yupi.icu/1/1788318274280-ab2d1044-f309-4dc1-8400-ce9835de8291.png)
+![Claude Fable 5.1 的复刻 Cursor](/imgs/e56713b61c2dd6f6.png)
 
 GPT-6 Astra 这次最让我惊喜的是它有自己的产品想法。没有完全照着 Cursor 去抄，而是自己设计了 orbit 这个品牌、自己加了任务分类管理和三个快捷入口、自己定义了暗色主题的配色体系。在 Editor Window 的视觉还原度上也做到了几个模型里最好的。
 
@@ -184,13 +181,13 @@ GPT-6 Astra 这次最让我惊喜的是它有自己的产品想法。没有完�
 
 官方的案例展示中，让 Astra 打开 KiCad 电路设计软件，把一张电子原理图变成可以直接拿去生产的 PCB 布线图，元器件怎么摆、铜线怎么走全部由 AI 自己完成。
 
-![官方演示：Astra 在 KiCad 里完成电路板布线](https://pic.yupi.icu/1/gpt6astra-%E7%BA%BF%E8%B7%AF%E6%9D%BF%E6%A1%88%E4%BE%8B-c5fe28c2.png)
+![官方演示：Astra 在 KiCad 里完成电路板布线](/imgs/65eca099d2c07513.png)
 
 要知道，以前这玩意是硬件工程师一点一点手工拖出来的，是整个电子设计流程里最费时间的环节之一。
 
 我想仿照这个案例自己试一试，于是在本机装了 KiCad 10，看看 Astra 能不能自己操作 KiCad 完成从原理图到 PCB 布线的全过程。
 
-![Case 4 提示词](https://pic.yupi.icu/1/gpt6astra-shizhan-prompt-04-case4-kicad-75e409ec.png)
+![Case 4 提示词](/imgs/5fe97b2f08711df2.png)
 
 这个案例跟前 3 个完全不同，AI 没有写代码，而是像人一样看屏幕、点按钮、拖拽元器件。
 
@@ -198,15 +195,15 @@ GPT-6 Astra 这次最让我惊喜的是它有自己的产品想法。没有完�
 
 它确实成功操控了 KiCad 的界面，打开项目、进入 PCB 编辑器、从原理图导入网表，这些流程操作都做对了。原理图一致性检查也通过了，说明 AI 看懂了原理图和 PCB 之间的对应关系。最后它还自己跑了一次 DRC 设计规则检查。
 
-![](https://pic.yupi.icu/1/image-20260907105125791.png)
+![](/imgs/a7e4fdcb6b8e27f6.png)
 
 但是没能完成正确的布局和布线。我发现 AI 在画布上点击和框选元器件的时候，坐标经常对不准，没法可靠地把元器件拖到指定位置，更别说一根根地画铜线了。最终 DRC 报了 12 项违规和 20 处未连接。
 
-![](https://pic.yupi.icu/1/image-20260907105203993.png)
+![](/imgs/8f8ed3fc84c1c0c8.png)
 
 这个结果让我挺失望的，因为我看了很多博主分享 Astra 操作 Blender 创造各种 3D 大作，成品都很惊艳，怎么到我这就翻车了呢？
 
-![](https://pic.yupi.icu/1/image-20260907105956901.png)
+![](/imgs/7b04ef2aea1a9de3.png)
 
 从我自己的测试结果来看，Astra 在「看懂专业软件界面」和「找到正确的菜单按钮」这两件事上做得不错，但是却卡在了精细的画布交互上。这也侧面解释了为什么官方的 ScreenSpot-Pro 跑分能到 92.7%（看懂屏幕没问题），但 OSWorld 的任务完成率只有 72.6%（真正把活儿干完就难多了）。
 
@@ -219,7 +216,7 @@ GPT-6 Astra 这次最让我惊喜的是它有自己的产品想法。没有完�
 
 比如之前我用 GPT-5.6 Sol 做出来的足球游戏界面是这样的：
 
-![GPT-5.6 Sol 的足球游戏](https://pic.yupi.icu/1/1783647330206-bb64786d-95d9-41e5-9d53-4fb42ffdd9da.png)
+![GPT-5.6 Sol 的足球游戏](/imgs/5bfe1eb6bf696003.png)
 
 是的，那一坨黑色方块就是球门……
 

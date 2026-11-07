@@ -3,15 +3,12 @@ title: "Vibe Coding 全栈应用开发"
 summary: "这篇文章，我会带你做 3 个完整的全栈项目：个人博客系统、简易问答社区、在线商城（Mini 版）。"
 order: 5
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 全栈应用开发》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -32,7 +29,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 前端负责展示数据和接收用户输入，后端负责处理请求和业务逻辑，数据库负责持久化存储。三者通过 API 接口进行通信。
 
-![](https://pic.yupi.icu/1/fullstackarchitecture%E5%A4%A7.jpeg)
+![](/imgs/d43a3f0df2cecf90.jpg)
 
 举个例子，当用户在博客网站上发布一篇文章时，前端会收集文章的标题、内容等信息，然后发送 HTTP 请求给后端。后端收到请求后，会验证数据是否合法，然后调用数据库接口把文章保存到数据库中。保存成功后，后端返回成功响应给前端，前端显示 “发布成功” 的提示。
 
@@ -53,7 +50,7 @@ AI 就能帮你生成完整的后端代码，包括参数验证、密码加密�
 
 这个博客系统要支持文章的发布、编辑、删除和查看。文章可以分类，支持标签。用户可以注册登录，发布自己的文章。访客可以浏览文章，但不能发布。文章支持 Markdown 格式，可以添加封面图。首页显示文章列表，支持分页和搜索。
 
-![](https://pic.yupi.icu/1/demoweb10.png)
+![](/imgs/66ea37514a4a7417.png)
 
 技术选型上，前端使用 React + TypeScript + Vite，样式用 Tailwind CSS。后端使用 Node.js + Express，数据库用 MySQL。用户认证用 JWT（JSON Web Token）。文章编辑器可以复用之前做过的 Markdown 编辑器。
 
@@ -261,7 +258,7 @@ AI 会根据你的数据库设计，生成创建表的 SQL 语句。
 
 这个问答社区要支持用户提问和回答。用户可以发布问题，其他用户可以回答。问题和回答都支持点赞。提问者可以采纳最佳答案。首页显示问题列表，支持按热度、最新、未解决等排序。每个问题有标签，可以按标签筛选。用户有积分系统，提问、回答、被采纳都会获得积分。
 
-![](https://pic.yupi.icu/1/demoweb11.png)
+![](/imgs/92513ca4611a7bf2.png)
 
 技术栈和博客系统类似，前端用 React + TypeScript + Vite，后端用 Node.js + Express，数据库用 MySQL。
 
@@ -379,7 +376,7 @@ AI 会根据你的数据库设计，生成创建表的 SQL 语句。
 
 这个 Mini 版商城要实现基本的电商功能。商品展示（列表和详情）、购物车（添加、删除、修改数量）、订单管理（创建订单、查看订单）、用户地址管理。不需要实现支付功能，订单创建后显示为待支付状态即可。这样可以降低开发难度，专注于核心业务流程。
 
-![](https://pic.yupi.icu/1/demoweb12.png)
+![](/imgs/3c1bacc8d02de793.png)
 
 技术栈和前面的项目类似，前端用 React + TypeScript + Vite，后端用 Node.js + Express，数据库用 MySQL。
 

@@ -76,33 +76,33 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-28 px-4 sm:px-10 relative z-10">
+    <div className="w-full relative z-10">
 
-      <div className="mb-12 border-b border-[var(--line)] pb-9 relative z-20">
+      <div className="mb-10 border-b border-[var(--line)] pb-7 relative z-20">
         <p className="eyebrow">Archive · {posts.length} 篇</p>
-        <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">
-          归档与探索
+        <h1 className="mt-3 font-serif text-[1.85rem] font-black leading-[1.18] tracking-tight text-[var(--ink)] sm:text-[2.2rem]">
+          文章归档
         </h1>
-        <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">
-          按时间排列的全部长文，可按标签筛选或直接搜索标题。
+        <p className="mt-3 max-w-xl text-[13px] leading-[1.85] text-[var(--ink-soft)]">
+          按时间倒序排列，可按标签筛选或直接搜标题。
         </p>
       </div>
 
-      <div className="flex flex-col items-center gap-8 mb-16 relative z-[99]">
+      <div className="flex flex-col gap-4 mb-10 relative z-[99]">
 
-        <div className="relative w-full max-w-lg group" ref={searchContainerRef}>
+        <div className="relative w-full max-w-md group" ref={searchContainerRef}>
           <input
             type="text"
-            placeholder="搜寻被封存的知识..."
+            placeholder="搜索标题或关键词…"
             value={searchQuery}
             onChange={(e) => {
               setSearchQuery(e.target.value);
               setIsDropdownOpen(true);
             }}
             onFocus={() => setIsDropdownOpen(true)}
-            className="w-full bg-[var(--surface)] border border-[var(--line-strong)] rounded-lg px-6 py-4 pl-14 text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)] transition-all placeholder:text-[var(--muted)] font-medium relative z-20"
+            className="w-full h-10 bg-[var(--surface)] border border-[var(--line-strong)] rounded-md px-4 pl-10 text-[13px] text-[var(--ink)] focus:outline-none focus:border-[var(--accent)] transition-colors placeholder:text-[var(--muted)] relative z-20"
           />
-          <Search className="w-6 h-6 absolute left-5 top-1/2 -translate-y-1/2 text-[var(--muted)] group-focus-within:text-[var(--accent)] transition-colors z-20" />
+          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--muted)] group-focus-within:text-[var(--accent)] transition-colors z-20" />
 
           <AnimatePresence>
             {isDropdownOpen && searchQuery.trim() !== '' && (
@@ -149,7 +149,7 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
         <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 bg-[var(--surface)] p-4 rounded-lg border border-[var(--line)]">
           <div className="flex flex-wrap justify-center md:justify-start gap-2 flex-1">
             <button onClick={() => setSelectedTag('All')} className={`px-4 py-2 rounded-md text-xs font-bold transition-all duration-300 ${selectedTag === 'All' ? 'bg-[var(--accent)] text-[var(--accent-ink)] shadow-sm' : 'bg-[var(--surface-alt)] text-[var(--accent)] hover:bg-[var(--surface)]'}`}>
-              全部档案
+              全部
             </button>
             {tags.map(tag => (
               <button key={tag.name} onClick={() => setSelectedTag(tag.name)} className={`px-4 py-2 rounded-md text-xs font-bold transition-all duration-300 ${selectedTag === tag.name ? 'bg-[var(--accent)] text-[var(--accent-ink)] shadow-sm' : 'bg-[var(--surface-alt)] text-[var(--accent)] hover:bg-[var(--surface)]'}`}>
@@ -162,11 +162,11 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
           <div className="hidden md:flex bg-[var(--surface)] p-1 rounded-lg shrink-0">
             <button onClick={() => setViewMode('timeline')} className={`flex items-center gap-2 px-4 py-2 rounded-md font-bold text-sm transition-all duration-300 ${viewMode === 'timeline' ? 'bg-[var(--surface)] text-[var(--accent)] shadow-sm' : 'text-[var(--accent)] hover:text-[var(--accent)]'}`}>
               <ListTree size={16} />
-              <span>中枢链路</span>
+              <span>时间轴</span>
             </button>
             <button onClick={() => setViewMode('card')} className={`flex items-center gap-2 px-4 py-2 rounded-md font-bold text-sm transition-all duration-300 ${viewMode === 'card' ? 'bg-[var(--surface)] text-[var(--accent)] shadow-sm' : 'text-[var(--accent)] hover:text-[var(--accent)]'}`}>
               <LayoutGrid size={16} />
-              <span>矩阵网格</span>
+              <span>卡片视图</span>
             </button>
           </div>
         </div>
@@ -276,7 +276,7 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
 
               {timelinePosts.length === 0 && (
                  <div className="text-center py-20 text-[var(--ink-soft)] font-bold uppercase tracking-widest text-sm">
-                    这个频段没有接收到任何信号 📡
+                    没有匹配的文章。
                  </div>
               )}
             </div>

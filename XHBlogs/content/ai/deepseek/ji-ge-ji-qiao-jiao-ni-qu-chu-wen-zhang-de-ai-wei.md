@@ -3,25 +3,22 @@ title: "几个技巧，教你去除文章的 AI 味！"
 summary: "最近有不少朋友在利用 AI 写毕业设计论文，几秒钟一篇文章就刷出来的，爽的飞起。"
 order: 4
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《几个技巧，教你去除文章的 AI 味！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 最近有不少朋友在利用 AI 写毕业设计论文，几秒钟一篇文章就刷出来的，爽的飞起。
 
 结果万万没想到，人家论文查重服务也升级了，是不是用 AI 写的论文大概率都能被查出来。。。
 
-![](https://pic.yupi.icu/1/image-20250318131837094.png)
+![](/imgs/9890b9907b588dc9.png)
 
 这可如何是好啊？救救我救救我。。。
 
-![](https://pic.yupi.icu/1/image-20250318132050627.png)
+![](/imgs/d540a0f2481a2445.png)
 
 下面我就给大家分享一些快速去除文章 AI 味的小技巧，有些是网上被分享过的，也有些是我个人的经验。学会之后，无论是写工作文案、毕业设计、自媒体文章，还是平时生活中写写好评，都是非常轻松的。
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 要想去 AI 味儿，首先要了解 AI 生成的文章特点，先来一篇 AI 生成的内容，让它给我的剧本杀店写一篇好评：
 
-![](https://pic.yupi.icu/1/image-20250318132753154.png)
+![](/imgs/278a84953373b009.png)
 
 正常人谁会这么写？！
 
@@ -48,7 +45,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 相比较来说，下面这篇内容还好一点点，没有那么结构化，而且还提了一下老板，增加了真实感：
 
-![](https://pic.yupi.icu/1/image-20250318133705736.png)
+![](/imgs/2da7f4445bd4bcff.png)
 
 下面我们来学习下怎么消除 AI 味儿。
 
@@ -119,15 +116,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 举个例子，写一段店铺好评：
 
-![](https://pic.yupi.icu/1/image-20250318141924582.png)
+![](/imgs/55a8a5cd8c3ee846.png)
 
 不同 AI 大模型的效果也不一样：
 
-![](https://pic.yupi.icu/1/image-20250318142452339.png)
+![](/imgs/1105e89f99329e96.png)
 
 再举个例子，微调上述 Prompt，让 AI 稍微专业一丢丢，写一篇知识分享的短视频文案：
 
-![](https://pic.yupi.icu/1/image-20250318143014803.png)
+![](/imgs/8ad8872716e92b7d.png)
 
 当然，AI 现在的能力还是有限的，即使调整 Prompt 可以让 AI 生成的内容没那么标准化，但还是需要人工过一遍。
 

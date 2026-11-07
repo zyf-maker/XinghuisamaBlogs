@@ -3,15 +3,12 @@ title: "Shopify 新标准：将 AI 融入日常工作，已是基本要求"
 summary: "共收录 2 条 AI 行业资讯，如chat.shopify.io；proxy等。"
 order: 69
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Shopify 新标准：将 AI 融入日常工作，已是基本要求》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 今天 Shopify CEO Tobi Lütke 的一封被曝光的内部邮件很流行，Tobi 要把拥抱 AI 变成 Shopify 的文化基因，不仅是要求所有公司员工学习 AI，还需要在日常工作中应用 AI，甚至将 AI 的应用计入了绩效考核，**部门若想申请更多招聘名额和资源，需先证明他们的工作不能被 AI 替代**；同时 AI 必须是“完成任务原型阶段”（GSD Prototype phase）的核心工具，也就是说以前可能需要人工去制作原型，现在都要尽可能使用 AI 来完成。
 

@@ -3,29 +3,26 @@ title: "炸裂！Spring AI 1.0 正式发布，让 Java 再次伟大！"
 summary: "共收录 3 条 AI 行业资讯，如编程导航；程序员面试刷题神器 - 面试鸭等。"
 order: 71
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《炸裂！Spring AI 1.0 正式发布，让 Java 再次伟大！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 炸裂，炸裂，炸裂！从第一次提交代码到现在，经过 2 年的沉淀，Spring AI 框架的第一个正式版本 1.0 终于发布了。
 
-![](https://pic.yupi.icu/1/1747881171718-91ac3eb5-049b-4510-8012-6736c40c9c95.png)
+![](/imgs/d54ed3f7ba471b36.png)
 
 有了这玩意，开发 AI 应用就是洒洒水的事，Java 开发者们是不是又爽了，反正我是很兴奋啊，让 Java 再次伟大！
 
-![](https://pic.yupi.icu/1/1747881641460-856dbbed-0d9d-480c-ad16-8e8dfcccbeb5.png)
+![](/imgs/06e157b9cfa68ac1.png)
 
 但可能很多同学还不知道 Spring AI 能干什么，凭什么这玩意就让 Java 伟大了？
 
 正好我最近刚带编程导航的同学做完一套 AI 超级智能体实战项目，毫不夸张地说，我已经把 Spring AI 玩得 “手拿把掐” 了。
 
-![](https://pic.yupi.icu/1/1747881819511-84f8a2c7-994a-4c1f-b785-584cf3572732.png)
+![](/imgs/751799f2fb8051db.png)
 
 下面我来给大家快速分享一下 Spring AI 的核心能力和魔法。看完之后，我相信你会点赞收藏三连，并且说一句：“伟的太大了”。
 
@@ -36,7 +33,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 大模型调用能力是 AI 应用开发的基础，允许应用程序与各种 AI 大模型进行交互，发送提示词并获取模型的响应。Spring AI 提供了统一的接口来支持各种主流大模型，包括 OpenAI GPT 系列、Claude、通义千问等。
 
-![](https://pic.yupi.icu/1/1747881987603-4021fe3f-ee20-4330-8586-32e46beba8c8.png)
+![](/imgs/e31bcf6c04c2423d.png)
 
 Spring AI 通过配置 + 抽象接口简化了大模型的调用过程，我可以直接在配置中声明多个大模型：
 
@@ -338,17 +335,17 @@ RAG（Retrieval-Augmented Generation）是指利用外部知识来增强 AI 生�
 
 比如我带大家做了一个 AI 恋爱大师应用，给 AI 准备了一套专注于恋爱问答的知识库文档：
 
-![](https://pic.yupi.icu/1/1747884552579-4d8d5873-cbac-4e30-85b4-dc12bd8edbdd.png)
+![](/imgs/8cc55f4c6ac73ed2.png)
 
 利用 RAG 技术，AI 就能从我自己定义的知识库中获取到特定领域的、最新的信息，不仅能减少大模型的幻觉（防止瞎编内容），还能趁机推荐一波自己的课程，岂不美哉？
 
 所以 AI 的回复也不能完全相信哦~
 
-![](https://pic.yupi.icu/1/1747885198412-cf86e734-d482-490a-925b-896401ce0a3a.png)
+![](/imgs/a9d54d9548f40a17.png)
 
 RAG 的完整工作流程包括文档收集和切割、向量转换和存储、文档过滤和检索、查询增强和关联 4 大步骤。
 
-![](https://pic.yupi.icu/1/1747884491944-04de44f3-e024-434a-b79b-de61c8e603cd.png)
+![](/imgs/ec7bd8c718436da2.png)
 
 Spring AI 给 RAG 全流程的实现都提供了支持：
 
@@ -430,7 +427,7 @@ public String generateAnswerWithKnowledge(String query) {
 
 除了实现基础的 RAG 能力外，Spring AI 还提供了更多高级能力来优化 RAG 的效果。比如提供了完整的 ETL流程的支持，能够快速抽取文档、切分处理文档、并加载到向量存储中。
 
-![](https://pic.yupi.icu/1/1747886114680-591a26a3-6674-475b-9eab-e62c52b04b7c.png)
+![](/imgs/8a341081df6c8d69.png)
 
 提供了多查询扩展器，可以为原始提示词生成多个查询变体，提高召回文档的几率：
 
@@ -459,7 +456,7 @@ public String doQueryRewrite(String prompt) {
 
 效果如图：
 
-![](https://pic.yupi.icu/1/1747886020980-0b6e4da9-f59d-4bf5-aabd-fb03d3a3e795.png)
+![](/imgs/56ce1f30037200db.png)
 
 还支持自定义文档检索器，能够更灵活地定义查询规则，比如按照文档的元信息精确查询、只查询相似度最高的 N 条数据等：
 
@@ -481,7 +478,7 @@ DocumentRetriever retriever = VectorStoreDocumentRetriever.builder()
 
 工具调用实现的本质是拼接提示词，让 AI 选择要调用哪些工具，然后由程序调用工具并将返回结果交给 AI 进行后续输出。
 
-![](https://pic.yupi.icu/1/1747893550889-cf67c903-5461-43bb-bdf1-d3a497f3e36f.png)
+![](/imgs/90544f4484c0ee3c.png)
 
 利用 Spring AI，只需要通过注解就能快速定义工具：
 
@@ -573,7 +570,7 @@ MCP（Model Context Protocol 模型上下文协议）是一种开放标准，目
 
 可以将 MCP 想象成 AI 应用的 USB 接口，就像 USB 为设备连接各种外设和配件提供了标准化方式一样，MCP 为 AI 模型连接不同的数据源和工具提供了标准化的方法。从而轻松增强 AI 的能力，有效降低开发者的理解成本，并且打造出 MCP 服务生态。
 
-![](https://pic.yupi.icu/1/1747893881601-d78714c3-812d-4945-8b3f-c5be3b2b0d46.png)
+![](/imgs/0fd4803664935768.png)
 
 利用 Spring AI，我们可以快速接入别人的 MCP 服务，只需要定义 MCP 服务配置，然后直接通过 Bean 注入 MCP 服务提供的工具即可：
 
@@ -695,16 +692,16 @@ public String chatWithExternalTools(String userMessage) {
 
 就先分享到这里，我全程直播带大家做的 AI 超级智能体新项目今天就完结了，教程中给大家讲解了 Spring AI 几乎所有的特性和高级用法，甚至带大家阅读开源 Manus 项目的源码并且实现了拥有自主规划能力的 AI 智能体，欢迎大家来 [编程导航](https://www.codefather.cn/) 学习。
 
-![](https://pic.yupi.icu/1/1747894887694-cd5e7c53-f777-49ad-ae5a-89252a1ac10d.png)
+![](/imgs/983f490c26d7d1f1.png)
 
 在我们的 [程序员面试刷题神器 - 面试鸭](https://www.mianshiya.com/) 中也新出了 AI 大模型相关的面试题，每道题目都能让你学到很多知识~
 
-![](https://pic.yupi.icu/1/1747894904199-e795908c-638e-4d29-afd5-c8127db010f3.png)
+![](/imgs/7ba04bcce6edad66.png)
 
 还有 [鱼皮开源的 AI 知识库](https://github.com/liyupi/ai-guide)，里面有很多值得学习的 AI 干货，持续更新~
 
 获取知识库：https://github.com/liyupi/ai-guide
 
-![](https://pic.yupi.icu/1/1747796993472-c3d3dd64-2ccd-407e-b427-0a7992fec7d0.png)
+![](/imgs/60d264632e627c95.png)
 
 我们下期见咯！

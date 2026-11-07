@@ -3,15 +3,12 @@ title: "Vibe Coding 资源大全"
 summary: "AI 编程博主；AI 导航（共 2 条资讯链接）"
 order: 204
 level: "入门"
-tags: ["入门导读", "转载", "AI"]
+tags: ["入门导读"]
 updated: "2026-09-28"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 资源大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 经过持续更新迭代，如今鱼皮 AI 导航已经进化成了 **一站式 AI 学习交流平台**，月访问量已达 40 万。无论是想找好用的 AI 工具、MCP、Skills，获取最新 AI 资讯，发现 AI 提示词模板，还是交流 AI 使用心得、学习 AI 知识，你想要的关于 AI 的一切都可以在这里找到！
 
-![鱼皮 AI 导航](https://pic.yupi.icu/1/image-20260320141449683.png)
+![鱼皮 AI 导航](/imgs/7f49730b9576359d.png)
 
 
 ## 鱼皮 AI 导航有什么？
@@ -44,7 +41,7 @@ AI 时代的机会比想象中多得多。像我们团队日常工作中的很�
 
 AI 写论文、做 PPT、生成图片、编代码、做视频…… 无论你想干啥，来这点两下就能找到对应的神器。
 
-![](https://pic.yupi.icu/yuyi/image-20260320141924847.png)
+![](/imgs/95c2cffa14aff56b.png)
 
 后续还会持续给大家收录新的工具，助你时刻走在 AI 潮流的前端。
 
@@ -55,19 +52,19 @@ AI 写论文、做 PPT、生成图片、编代码、做视频…… 无论你想
 
 我原创的 [《AI 编程零基础入门教程》](https://ai.codefather.cn/vibe) 也可以在网站上免费阅读。这是 GitHub 上 Star 数破万的优质教程，上千张图、几十万字，结合了我练习两年半的 AI 编程经验 + 项目开发经验 + 产品变现经验，哪怕零基础，也能带你快速用 AI 开发上线自己的产品并盈利。
 
-![](https://pic.yupi.icu/yuyi/image-20260320152009626.png)
+![](/imgs/7c3832912bf53731.png)
 
 这套教程涵盖了 Vibe Coding 的方方面面。从零基础入门 => 10 分钟做出第一个项目 => 学会多种 AI 编程工具 => 实战各类 AI 项目 => 掌握 AI 编程核心技巧 => 跑通产品变现全流程，再搭配 AI 编程学习资源、AI 知识百科、常见问题解决手册，能够帮你玩转 AI 编程，应对各种需求。
 
-![](https://pic.yupi.icu/yuyi/%E9%B1%BC%E7%9A%AE%E7%9A%84%20AI%20%E5%AF%BC%E8%88%AA-3%E6%AF%944%E5%A4%A7%E7%BA%B2_%E5%89%AF%E6%9C%AC.jpg)
+![](/imgs/3755ad159dea12f0.jpg)
 
 而且教程一直在持续更新，还新增了一整套《OpenClaw 保姆级实战教程》，比如傻瓜式一键安装、接入 QQ 和飞书对话、各种进阶玩法等等，带你玩转 AI 时代流行的产品。
 
-![](https://pic.yupi.icu/yuyi/image-20260320162748802.png)
+![](/imgs/eeaf0d531f6a9bb1.png)
 
 这里还有各种主流 AI 工具的保姆级实战教程，可以直接写进简历的 [企业级 AI 项目课程](https://www.codefather.cn/course?sortField=priority&tags%5B%5D=AI%E9%A1%B9%E7%9B%AE)，以及从入门到进阶的 AI 知识百科。碎片化时代，我们帮你做系统学习的那个人。
 
-![](https://pic.yupi.icu/yuyi/image-20260320153748763.png)
+![](/imgs/ff8898986b3ed213.png)
 
 
 ### AI 提示词大全
@@ -80,17 +77,17 @@ AI 写论文、做 PPT、生成图片、编代码、做视频…… 无论你想
 
 2）绘图提示词大全，精选了吉伊卡哇、蜡笔小新、吉卜力、赛博朋克等热门 AI 绘图风格模板，每个都有案例图片，喜欢哪个可以直接复制提示词去出图。
 
-![](https://pic.yupi.icu/yuyi/image-20260320143208632.png)
+![](/imgs/13f82c9855d0be5f.png)
 
 还有 2 个绘图提示词生成工具：
 
 1）提示词生成器：选个风格模板，用大白话描述你想画什么，AI 会帮你生成专业的绘图提示词。丢到 Nano Banana 等 AI 绘图工具里，就能生成类似风格的图片。
 
-![](https://pic.yupi.icu/yuyi/image-20260213142024806.png)
+![](/imgs/1bd65fe15d543a6b.png)
 
 2）图转提示词工具：如果你在网上刷到一张好看的 AI 图片，想要复刻同款，只需要上传图片，AI 视觉模型会自动分析构图、色彩、风格，反向帮你生成对应的提示词，直接拿去生成同款，再也不用自己猜别人的提示词了。
 
-![](https://pic.yupi.icu/yuyi/image-20260213144312660.png)
+![](/imgs/cc59aed1db53a3ab.png)
 
 
 ### MCP + Skills 大全
@@ -99,7 +96,7 @@ MCP 和 Agent Skills 刚火的时候，我们就第一时间上线了对应的�
 
 以后再也不用网上到处搜索了，来鱼皮 AI 导航就能一站搞定。
 
-![](https://pic.yupi.icu/yuyi/image-20260320155129046.png)
+![](/imgs/d6ea46a75a59508c.png)
 
 
 ### AI 热点资讯
@@ -113,11 +110,11 @@ AI 高速发展，几乎每天都有 “炸裂” 的消息。
 
 这些我们会持续帮你盯着！所有的行业新鲜事都按时间排序好了，还能直接点击日历上的某一天去回顾。
 
-![](https://pic.yupi.icu/yuyi/image-20260320154026284.png)
+![](/imgs/27aadf71fcfd458c.png)
 
 如果你只想快速搞清楚「现在有哪些模型、谁最强、谁最划算」，还可以看看我用 AI 做的 [AI 大模型世界](https://www.bilibili.com/toy/ai-model-world) 网站。几百个主流模型的能力排名、价格、发布时间线和几十个排行榜都在里面，数据来自第三方评测、自动更新，免费免登录。
 
-![AI 大模型世界排行榜](https://pic.yupi.icu/1/aimodelworld-0926-leaderboard-b9cedcc8.png)
+![AI 大模型世界排行榜](/imgs/79c9ebfb9b7a5165.png)
 
 
 ### AI 交流社区
@@ -128,7 +125,7 @@ AI 的本质还是工具，到底能用它做到什么样的事，还要看你�
 
 最近社区里关于 OpenClaw 玩法、Vibe Coding 实战、AI 绘图的讨论特别多，质量都挺高的，经常能在里面淘到好东西。
 
-![](https://pic.yupi.icu/yuyi/image-20260320153403134.png)
+![](/imgs/1266a4facc33c456.png)
 
 工具是冷的，但人是热的，一起来社区碰撞出灵感的火花吧。
 

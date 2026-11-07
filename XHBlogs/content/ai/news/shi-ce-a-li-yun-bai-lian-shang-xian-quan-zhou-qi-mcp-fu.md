@@ -3,21 +3,18 @@ title: "实测：阿里云百炼上线「全周期 MCP 服务」，AI 工具一�
 summary: "实测：阿里云百炼上线「全周期 MCP 服务」，AI 工具一站式托管，由程序员鱼皮整理。"
 order: 54
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《实测：阿里云百炼上线「全周期 MCP 服务」，AI 工具一站式托管》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 长话短说：
 
 今天，**阿里云百炼正式上线了 MCP（Model Context Protocol）服务的完整平台能力**，覆盖从服务注册、云托管，到 Agent 调用、流程组合的全生命周期。
 
-![](https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/86e0115a-26c0-4338-e076-88fb8c23f700/public)
+![](/imgs/undefined)
 
 https://bailian.console.aliyun.com/
 
@@ -36,7 +33,7 @@ https://bailian.console.aliyun.com/
 
 这里我测了两个典型的 Agent 例子，分别是「导航推荐助手」和「网页抓取助手」。
 
-![](https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb4f10bd-5370-445a-9262-9cb40a1a5300/public)
+![](/imgs/undefined)
 
 在百炼上，可以通过多种方式，构建 Agent
 
@@ -84,11 +81,11 @@ https://bailian.console.aliyun.com/
 
 目前，百炼已经上线了 15 款 MCP 的云服务，并提供了 61 款社区 MCP 的介绍，更多的还在路上。
 
-![](https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/78367a90-f9d4-4f46-bd97-3f31a9466500/public)
+![](/imgs/undefined)
 
 以上服务已部署，更多服务在路上
 
-![](https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/772819d4-d08e-472b-46c1-17fb62a6bd00/public)
+![](/imgs/undefined)
 
 这些都是社区 MCP
 
@@ -120,7 +117,7 @@ https://bailian.console.aliyun.com/
 3.  3\. 系统会自动创建一个函数计算实例来托管你的服务
 4.  4\. 注册成功后，该服务就能作为 MCP 工具被调用
 
-![](https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3eeb83ca-877b-423e-15b1-57b813eb1e00/public)
+![](/imgs/undefined)
 
 bailian.console.aliyun.com/?tab=app#/mcp-manage/create
 
@@ -150,7 +147,7 @@ bailian.console.aliyun.com/?tab=app#/mcp-manage/create
 
 Plugin 是各厂商其自己模型设计的，无法直接复用到其他模型平台。而 MCP 的目标是**让所有模型理解同一种“服务语言”**。无论 Claude、GPT、百炼自有模型，理论上都能读懂相同的 MCP 接口描述，并做出合理调度。
 
-![](https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8d143006-f87e-4c7a-fb2b-6d170f3a2300/public)
+![](/imgs/undefined)
 
 MCP 和 Plugin 的区别 be like
 

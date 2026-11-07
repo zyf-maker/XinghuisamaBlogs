@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《我的 AI 工具箱推荐》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
 在前面的文章中，我们系统学习了 AI 编程工具的各个类型：从 AI 模型选择、零代码平台、AI 代码编辑器、命令行工具、IDE 插件、AI 智能体平台、OpenClaw 这样的 AI 数字员工，到辅助工具集。
@@ -43,7 +40,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 不过 Cursor 最大的问题就是价格死贵。我之前分享过账单，一个多月就烧了 1 万多块。所以我现在会搭配一些免费工具使用，避免预算爆炸。
 
-![](https://pic.yupi.icu/1/yupicursorbilling.png)
+![](/imgs/4c045a9106272075.png)
 
 
 
@@ -53,7 +50,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我一般用它来做一些简单的任务，或者快速搭建项目框架。比如我想做一个图片压缩工具，直接在命令行里跟 AI 说一句话，它就能自动帮我搭好整个项目。
 
-![](https://pic.yupi.icu/1/1764146174167-3018c8f3-0ad9-4a4f-9764-246f33b33203.png)
+![](/imgs/1bb0306031e7879c.png)
 
 而且 Claude Code 支持 Skills，可以把一些常用的规范和流程写成 Skill，让 AI 自动遵循，对于避免重复工作和团队协作特别有用。
 
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 [Cline](https://cline.bot/) 是一款 AI IDE 插件，是我的备胎之一。当 Cursor 的预算用完了，或者我想在 VS Code 里开发时，就会用 Cline。
 
-![](https://pic.yupi.icu/1/image-20260108222935455.png)
+![](/imgs/682f29da2717fd5c.png)
 
 Cline 最大的优势是完全免费，而且功能很全面，基本上能做到 Cursor 80% 的事情。虽然体验没有 Cursor 那么流畅，但考虑到它是免费的，已经非常不错了。
 
@@ -87,7 +84,7 @@ Nano Banana 是今年最炸裂的 AI 生图工具，我用它来生成漫画知�
 
 你看到的这种动漫风格的图片，都是用 Nano Banana 做的：
 
-![](https://pic.yupi.icu/1/toolstype%25E5%25A4%25A7.jpeg)
+![](/imgs/91fa8de8943e1342.jpg)
 
 自从用了 Nano Banana，我就彻底和 Midjourney 说再见了。
 
@@ -111,7 +108,7 @@ Nano Banana 是今年最炸裂的 AI 生图工具，我用它来生成漫画知�
 
 Veo 3 的视频质量确实很高，物理规律、光影效果都很真实。但是价格死贵，所以我只在需要高质量视频的时候才会用它。
 
-![](https://pic.yupi.icu/1/1751177650505-09aecbd1-a858-4a01-a74d-62120f074c98.png)
+![](/imgs/fb1b240aa5d3e556.png)
 
 
 
@@ -121,7 +118,7 @@ Veo 3 的视频质量确实很高，物理规律、光影效果都很真实。�
 
 而且 Eleven Labs 支持多种语言和声音风格，可以根据不同场景选择不同的声音，我会用它来合成一些创意视频的配音。
 
-![](https://pic.yupi.icu/1/image-20260109100507368.png)
+![](/imgs/b6763557ee040bf6.png)
 
 
 
@@ -145,7 +142,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 通义千问是我们团队产品接入最多的大模型。最新的 Qwen3.8-Max 是全模态模型，支持 100 万 token 上下文，图像、视频、文档都能直接作为输入，在编程和长周期任务上的能力也有明显提升，支持 Claude Code、OpenClaw 等主流框架。通过 [阿里云百炼平台](https://bailian.console.aliyun.com/) 可以 API 调用或 Token Plan 订阅使用，官方也开源了模型权重。
 
-![](https://pic.yupi.icu/1/1752569401445-7023e2c1-f709-4c22-af86-63ee1872c1cd.png)
+![](/imgs/72b0e75e9aa43f25.png)
 
 我们的产品用它来生成简单的内容或者做意图识别。比如用户输入一句话，我们用通义千问来判断用户想做什么，然后调用相应的功能。
 
@@ -159,7 +156,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 我现在主要用它来对接 AI 应用的后端，以及校验专业技术知识。比如我写文章时，不确定某个技术点是否正确，就会问问 DeepSeek。它的 API 按量计费很便宜，所以可以随便用，不用担心成本。
 
-![](https://pic.yupi.icu/1/image-20260109100658239.png)
+![](/imgs/d486fefdd46462be.png)
 
 
 
@@ -171,7 +168,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 我还会利用 Gemini 网页版来搜集一些国外的技术和产品调研，给出的报告很专业。
 
-![](https://pic.yupi.icu/1/image-20260109100840547.png)
+![](/imgs/43903860d9488b55.png)
 
 不过 Gemini 在国内有一定的使用门槛，你懂的。
 
@@ -189,7 +186,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 我们团队做 Java 项目时，基本上都会用 Spring AI。它把各种大模型的 API 统一成一套接口，这样开发者可以很方便地切换不同的模型，不用改代码。
 
-![](https://pic.yupi.icu/1/image-20260109100909041.png)
+![](/imgs/466b202d1ab36c4d.png)
 
 而且 Spring AI 提供了很多高级功能，比如对话记忆、RAG、工具调用等，让我们可以快速构建复杂的 AI 应用。
 
@@ -203,7 +200,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 我带 [编程导航](https://codefather.cn/) 的鱼友们做对标大厂的 [AI 零代码生成平台项目](https://www.codefather.cn/course/1948291549923344386) 时，就是用的 LangChain4j + LangGraph4j，能够很方便地构建复杂的 AI 工作流。
 
-![](https://pic.yupi.icu/1/1753332332820-9ec614de-65a2-496d-b9b2-dc89c20d06c9.png)
+![](/imgs/c9567798a34d48a2.png)
 
 
 
@@ -213,7 +210,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 它提供了统一的 API，我不用去学习每个模型的 API 文档，直接用 Vercel AI Gateway 就行。
 
-![](https://pic.yupi.icu/1/1760687990497-90720fbb-0df6-4ede-87b8-64b8702994e9-20251028181254840.png)
+![](/imgs/57e0deebf1803eb3.png)
 
 我用它来开发一些创意项目。比如我想做一个 AI 工具，让用户可以选择不同的模型，Vercel AI Gateway 就能帮我很方便地实现这个功能。
 
@@ -225,11 +222,11 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 我们团队的一些知识库就用它来管理。比如我们有很多技术文档，用百炼的 RAG 功能可以很方便地让 AI 基于这些文档回答问题。
 
-![](https://pic.yupi.icu/1/1744177887403-6373c63c-d410-49ba-a71c-556389536376.png)
+![](/imgs/3e9b6fa401ff5e52.png)
 
 而且百炼提供了可视化的流程编排功能，不用写代码就能构建复杂的 AI 工作流。
 
-![](https://pic.yupi.icu/1/1745388167957-d7995436-fc2f-410e-bc59-4f6db6544359.png)
+![](/imgs/a300c5acd4c9cade.png)
 
 
 
@@ -239,7 +236,7 @@ AI 大模型是所有 AI 工具的基础。下面是我今年用得最多的几�
 
 每次有新模型发布，我都会在 OpenRouter 上试试，用它来体验最新的大模型能力。
 
-![](https://pic.yupi.icu/1/image-20260109101446266.png)
+![](/imgs/ca8f980fbab173f1.png)
 
 对于想要尝鲜的开发者来说，OpenRouter 是个很好的选择。
 
@@ -253,11 +250,11 @@ AI 浏览器插件让我可以在浏览器里随时使用 AI，特别方便。
 
 [Monica](https://monica.im/) 是浏览器里的全能 AI 助手，网页总结、视频总结、翻译、写作、图片处理一应俱全。
 
-![](https://pic.yupi.icu/1/image-20260109101602426.png)
+![](/imgs/27dbb047edae49cc.png)
 
 我每天都在用 Monica。比如看长文章时，用它总结一下核心内容；看英文文档时，用它翻译；看代码仓库时，总结整个项目的介绍。
 
-![](https://pic.yupi.icu/1/image-20260109101803122.png)
+![](/imgs/f7adfaf925a260a0.png)
 
 Monica 最大的优势是集成度高，几乎所有常用的 AI 功能都有。而且它支持多个大模型，可以根据任务选择最合适的模型，强烈安利。
 
@@ -271,7 +268,7 @@ Monica 最大的优势是集成度高，几乎所有常用的 AI 功能都有。
 
 而且 AITDK 还能分析竞品的内容策略，看看别人都在写什么，我就能找到差异化的角度。
 
-![](https://pic.yupi.icu/1/image-20260109101947603.png)
+![](/imgs/afd061351df77fd6.png)
 
 
 
@@ -295,7 +292,7 @@ Monica 最大的优势是集成度高，几乎所有常用的 AI 功能都有。
 
 我在微信里看到一篇文章，想让 AI 总结一下，直接 @元宝 就行。这种无缝集成的体验特别好，不用切换 App，在微信里就能用 AI。
 
-![](https://pic.yupi.icu/1/image-20260109102243168.png)
+![](/imgs/21c553a5c6fdd547.png)
 
 
 
@@ -313,7 +310,7 @@ Monica 最大的优势是集成度高，几乎所有常用的 AI 功能都有。
 
 而且文心助手还有很多其他功能，比如 PPT 生成、文档翻译等。对于内容创作者来说，是个很实用的工具。
 
-![](https://pic.yupi.icu/1/image-20260109102440839.png)
+![](/imgs/cb0aabce792cbf25.png)
 
 
 
@@ -323,7 +320,7 @@ Monica 最大的优势是集成度高，几乎所有常用的 AI 功能都有。
 
 我会定期去看看最近 AI 领域有什么新动态。而且鱼皮 AI 导航整理了很多 AI 工具的分类，找工具特别方便。
 
-![](https://pic.yupi.icu/1/AI%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%E7%BD%91%E7%AB%99.png)
+![](/imgs/e54cc5b761db0b13.png)
 
 
 

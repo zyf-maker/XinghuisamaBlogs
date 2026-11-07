@@ -3,15 +3,12 @@ title: "普通人也能轻松掌握的 20 个 DeepSeek 高频提示词（2025版
 summary: "1️⃣ 说人话最重要"
 order: 12
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《普通人也能轻松掌握的 20 个 DeepSeek 高频提示词（2025版）》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 一、基础原则
 

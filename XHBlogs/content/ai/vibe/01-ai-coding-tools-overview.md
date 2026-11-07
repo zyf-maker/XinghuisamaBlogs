@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 编程工具大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
 如果你已经完成了【基础必读】的学习，并且成功做出了第一个网页应用，那么恭喜你，已经体验到了 Vibe Coding 的魅力！
@@ -52,7 +49,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在深入了解具体工具之前，我们先来看看 AI 编程工具的基本分类。根据使用方式和复杂度，我把它们分为 3 大类：
 
-![](https://pic.yupi.icu/1/toolstype%E5%A4%A7.jpeg)
+![](/imgs/62419f7efdd115d5.jpg)
 
 
 
@@ -66,7 +63,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 局限：功能相对简单，复杂项目可能力不从心
 
-![](https://pic.yupi.icu/1/image-20260106100544197.png)
+![](/imgs/a0934a5b52572224.png)
 
 
 
@@ -80,7 +77,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 局限：需要一定学习成本，对新手不够友好
 
-![](https://pic.yupi.icu/1/image-20260106100559696.png)
+![](/imgs/dea626713da82cba.png)
 
 
 
@@ -94,7 +91,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 局限：需要一定技术基础，新手不建议使用
 
-![](https://pic.yupi.icu/1/image-20260106100958506.png)
+![](/imgs/6e461d25b6d5e696.png)
 
 
 

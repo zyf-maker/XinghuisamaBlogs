@@ -3,15 +3,12 @@ title: "Kimi K2 - AI 文档阅读助手项目实战"
 summary: "本项目是一个 AI 文档阅读助手网站，可以帮你快速读懂各种复杂的文档（论文、技术文档、PDF 等），还能帮你管理文档。"
 order: 32
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Kimi K2 - AI 文档阅读助手项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个 AI 文档阅读助手网站，可以帮你快速读懂各种复杂的文档（论文、技术文档、PDF 等），还能帮你管理文档。
 
@@ -23,17 +20,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 大家好，我是程序员鱼皮。开学季到了，想必很多朋友要开始收集和阅读论文，像我自己学习新技术知识也会去阅读文档，我深知阅读文档的痛苦。明明每个词拆开都知道什么意思，连一起就看不懂。
 
-![](https://pic.yupi.icu/1/1757559057843-b9d37369-49bf-4eec-878a-c70ac945cbd9.png)
+![](/imgs/2c03e9ff2f87e0a7.png)
 
 为了帮助大家免受文档的折磨，我用 AI 开发了个 AI 文档助手网站，可以帮你快速读懂各种复杂的文档、还帮你管理文档。
 
-![](https://pic.yupi.icu/1/1757561248387-205bf672-7a6c-452a-a283-698fb526601c.png)
+![](/imgs/920c7164afd79986.png)
 
 网站完全免费，代码完全开源！
 
 开源仓库：[github.com/liyupi/literature-assistant](https://github.com/liyupi/literature-assistant)
 
-![](https://pic.yupi.icu/1/1757829143308-d5bfdac6-847a-4061-9194-4821bdf3d3dc.png)
+![](/imgs/6f26b68358b49302.png)
 
 下面先教大家如何使用网站，再分享这个网站的制作过程，还有国内使用 Claude Code 的方法哦。
 
@@ -46,54 +43,54 @@ source: "https://github.com/liyupi/ai-guide"
 
 💡 要确保你的电脑有 Node.js 和 Java 环境，可以参考 README.md 文档安装。
 
-![](https://pic.yupi.icu/1/1757567928358-ad506045-faaf-47b1-b742-190c83c94ad3.png)
+![](/imgs/f7999e09902a2f97.png)
 
 
 当你要阅读文档时，点击 “单个导入” 按钮，上传文档文件，然后需要填写 Kimi AI 的 API Key。
 
-![](https://pic.yupi.icu/1/1757560732751-de713284-c039-41c1-b9f4-0af34e4c703c.png)
+![](/imgs/b7fdac0f3b9ed085.png)
 
 
 选择 Kimi 是因为他们刚刚发布了新版本的 K2 模型，在编程、推理和文档理解方面都很不错；
 
 而且支持 256K 的上下文，几十万字的论文也能搞定。
 
-![](https://pic.yupi.icu/1/1757560219469-2eab0801-a9b3-49dd-b680-d1d27c1850cf.png)
+![](/imgs/845d160f8c4b6ec7.png)
 
 
 在侧重考察真实软件工程任务的 SWE-bench Verified 等基准测试中，新版 Kimi K2 模型的表现也很不错：
 
-![](https://pic.yupi.icu/1/1757560161782-1c78bd3c-a3a5-42f9-b79b-a0b07d808e6b.png)
+![](/imgs/e270bb5e2c3b0578.png)
 
 
 只需要登录 [Kimi 的开发控制台](https://platform.moonshot.cn/)，然后进入 API Key 管理来获取一个调用大模型的密钥。
 
-![](https://pic.yupi.icu/1/1757560312832-cfd4158d-8c31-4c22-8b42-573551334863.png)
+![](/imgs/96b694e85c66df0f.png)
 
 
 虽然新人有免费额度，但是不要泄露自己的密钥哦！
 
-![](https://pic.yupi.icu/1/1757560674974-180d8475-e83e-4b35-ba9b-2ded866aa730.png)
+![](/imgs/d75ac1b597e3a04c.png)
 
 
 填写好 API Key，就可以生成文档阅读指南啦，生成速度非常快。
 
-![](https://pic.yupi.icu/1/1757560771758-4c3df93e-889d-4c74-afa2-90e69347f286.png)
+![](/imgs/a75a06e840d5d804.png)
 
 
 AI 生成的效果还是不错的，图文并茂，能帮你更快理解复杂的文档。
 
-![](https://pic.yupi.icu/1/1757560820325-87111dd8-cd82-49d0-9385-24ea9a33e885.png)
+![](/imgs/7d26ef8e52d2747e.png)
 
 
 你还可以批量导入多个文档，同时调用 AI 生成阅读指南，提高效率。
 
-![](https://pic.yupi.icu/1/1757560886812-1706415c-cff5-4475-872f-ba66891563f7.png)
+![](/imgs/8dfe1c8e44468c48.png)
 
 
 此外，你还可以把这个网站当做自己的智能文档收藏夹，可以分类检索已经导入的文档、下载原始文件、随时查看文档阅读指南。**不要再让自己收藏过的文档找不到啦~**
 
-![](https://pic.yupi.icu/1/1757560925975-079ad961-7cc8-498b-99e2-84a4a534023f.png)
+![](/imgs/fefb5f1a0efd9181.png)
 
 
 ## 怎么实现？
@@ -110,7 +107,7 @@ npm install -g @anthropic-ai/claude-code
 
 结果，报错啦！
 
-![](https://pic.yupi.icu/1/1756451588360-37620a0b-bc2f-4ad5-adf9-4efde87f17ed.png)
+![](/imgs/c9f32ff9b13bd6bc.png)
 
 **可恶啊，这破玩意还不支持国内使用！**
 
@@ -133,14 +130,14 @@ $env:ANTHROPIC_SMALL_FAST_MODEL="kimi-k2-turbo-preview"
 
 然后就可以愉快地使用 Claude Code 生成代码了~
 
-![](https://pic.yupi.icu/1/1756451713145-29e5ba15-76b2-4848-903a-f098b942e2f9.png)
+![](/imgs/db4b901fb782f42d.png)
 
 
 对于包含完整前后端的网站，很难用一段提示词就让 AI 生成出满意的效果，因此我们需要像企业真实开发一样 **分解工作步骤**。先后端、再前端、最后前后端对接联调，而且最好一个一个地开发功能，出了问题及时调整。
 
 分享一些参考的提示词：
 
-![](https://pic.yupi.icu/1/1757567728565-5724de3e-7863-457b-9866-368c1535bd2c.png)
+![](/imgs/5107025d8053aa8d.png)
 
 
 ------
@@ -148,7 +145,7 @@ $env:ANTHROPIC_SMALL_FAST_MODEL="kimi-k2-turbo-preview"
 
 以上就是本期分享，希望这个工具对大家有帮助，也不要忘记给鱼皮三连支持，谢谢大家~
 
-![](https://pic.yupi.icu/1/1757829315038-73ef4fd7-7fef-4fa2-859d-11bb28381933.webp)
+![](/imgs/8a2ef857f6eaf6e7.webp)
 
 
 ## 推荐资源

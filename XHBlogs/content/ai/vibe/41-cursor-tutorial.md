@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor 保姆级教程：一篇搞定 AI 编程第一课》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 AI 编程工具的竞争已经进入了白热化阶段，国外有 Cursor、Claude Code、Codex 三巨头，国内有字节的 TRAE、阿里的 Qoder、腾讯的 CodeBuddy 三剑客。
 
 其中，Cursor 算是我最早为之付费的产品了，虽然现在它因为价格等原因被人诟病，但仍然是非常能打的主流 AI 编程工具，而且更新嘎嘎快。
 
-![](https://pic.yupi.icu/1/1_cursor.png)
+![](/imgs/6068a542d181069d.png)
 
 我自己用 Cursor 做了不少项目，烧的钱也最多。这篇文章我会从安装开始，带你用 Cursor 从 0 做出一个完整的网站项目，完整走一遍 AI 编程的流程。看完之后，你就能用 Cursor 独立完成各种 AI 编程任务了。
 
@@ -31,11 +28,11 @@ AI 编程工具的竞争已经进入了白热化阶段，国外有 Cursor、Clau
 
 打开 [Cursor 官网](https://cursor.com)，网站会自动识别你的操作系统，直接下载安装包，一路点下一步就行了，跟装微信一样简单。
 
-![](https://pic.yupi.icu/1/image-20260604161516577.png)
+![](/imgs/ec24c9e8ee9db066.png)
 
 安装完成后打开 Cursor，先注册一个账号。建议用 GitHub 账号来注册登录，因为后面做项目的时候会用到 GitHub 来管理代码和部署上线，提前关联好会方便很多。
 
-![](https://pic.yupi.icu/1/image-20260604161539548.png)
+![](/imgs/421fbde5210a1ab1.png)
 
 
 
@@ -47,11 +44,11 @@ Cursor 提供了两套操作界面。
 
 跟你平时用的 AI 聊天工具长得差不多，左边管理对话和项目，中间跟 AI 聊天，适合新手上手。
 
-![](https://pic.yupi.icu/1/image-20260604161607946.png)
+![](/imgs/dceb406b3e89bd8e.png)
 
 另一套叫 Editor Window，就是一个完整的代码编辑器界面，左边看文件、中间写代码、右边跟 AI 对话、底部打开终端，适合管理复杂的代码项目。
 
-![](https://pic.yupi.icu/1/image-20260604161653209.png)
+![](/imgs/e0c885d51d6160fd.png)
 
 两种界面可以同时打开、随时切换。我建议新手先从 Agent Window 开始用，界面更简洁，上手零门槛。等你对 Cursor 熟悉了，再切到 Editor Window。
 
@@ -63,7 +60,7 @@ Cursor 默认提供免费的 Free 套餐，可以体验基本的 AI 对话功能
 
 如果你要认真学 AI 编程，建议至少开通 Premium 套餐，每月 30 美元（约 210 元人民币）。注意 Cursor 在 2026 年下半年调整了套餐，原来的 Pro 已经下架，现在还有一个每月 8 美元的 Plus 套餐，但它只能用 Grok 系列模型；想用 Claude、GPT 这些第三方模型，至少要开 Premium，而且第三方模型不包含在月费里，会按 API 原价单独计费。更高级的 Super（每月 100 美元）和 Ultra（每月 200 美元）套餐主要是增加了用量额度，不够用了再升级就行。
 
-![](https://pic.yupi.icu/1/image-20260604161759761.png)
+![](/imgs/08f8a1ee02e38cc8.png)
 
 
 
@@ -71,11 +68,11 @@ Cursor 默认提供免费的 Free 套餐，可以体验基本的 AI 对话功能
 
 Cursor 的 Premium 及以上套餐用户可以自由选择 AI 模型。Cursor 支持 Claude、GPT、Gemini、Grok 等国外主流大模型，你可以在对话面板的模型选择器里一键切换，还能调节模型的推理等级。
 
-![](https://pic.yupi.icu/1/image-20260604161830863.png)
+![](/imgs/efaa4d2690762bc7.png)
 
 不知道选什么的话，直接用 Auto 模式就好，Cursor 会自动帮你选合适的模型，既省心又省钱。等你熟练了之后，可以根据任务复杂度手动切换，比如简单任务用便宜快速的模型，复杂任务切到更强的模型。
 
-![](https://pic.yupi.icu/1/image-20260604161906303.png)
+![](/imgs/3698b55d5a5b586f.png)
 
 好了，基础准备搞定了，接下来正式体验 Cursor 的 AI 能力。
 
@@ -96,11 +93,11 @@ Cursor 的 Premium 及以上套餐用户可以自由选择 AI 模型。Cursor �
 
 AI 会自动联网搜索最新信息，然后帮你整理总结，生成一份 HTML 网页文件。
 
-![](https://pic.yupi.icu/1/image-20260604161950784.png)
+![](/imgs/e88d722141983bb3.png)
 
 看看效果，只需要跟 AI 说一句话，天下热点尽在你手~
 
-![](https://pic.yupi.icu/1/image-20260604162054901.png)
+![](/imgs/dc655727b3ead3bc.png)
 
 
 
@@ -110,15 +107,15 @@ AI 会自动联网搜索最新信息，然后帮你整理总结，生成一份 H
 
 Ask 模式是纯问答，执行速度快，但是不能修改文件，适合你想了解某个知识点、或者让 AI 解释一段代码的时候用。
 
-![](https://pic.yupi.icu/1/image-20260604162242454.png)
+![](/imgs/d69a1085c2626939.png)
 
 用编辑器模式写代码的时候，AI 还会自动预测你下一步要写什么，按 Tab 就能接受建议，形成「Tab, Tab, Tab」的连续补全节奏。
 
-![](https://pic.yupi.icu/1/image-20260604162414383.png)
+![](/imgs/53baeedfdccfddaa.png)
 
 选中一段代码按 `Cmd+K`（Mac）或 `Ctrl+K`（Windows），还能弹出一个小对话框，直接让 AI 在当前位置修改代码，更轻量。
 
-![](https://pic.yupi.icu/1/image-20260604162514930.png)
+![](/imgs/56c0f94cdd7609c7.png)
 
 不过有了 Agent 模式之后，大多数情况你已经不需要自己动手写代码了。Agent 模式才是 Cursor 真正的杀手锏，接下来我们用它做一个完整的编程项目。
 
@@ -142,7 +139,7 @@ Ask 模式是纯问答，执行速度快，但是不能修改文件，适合你�
 
 然后在 Cursor 的 Editor Window 中打开这个文件夹，在对话面板里把模式切换到 Plan（按 `Shift+Tab` 可以快速切换模式）。
 
-![](https://pic.yupi.icu/1/image-20260604162640727.png)
+![](/imgs/3ad1e2c4628a30e6.png)
 
 Plan 模式的好处是 AI 会先帮你想清楚怎么做，生成一份实施计划，确认没问题后再动手写代码。这样可以避免 AI 一上来就乱写一通。
 
@@ -162,7 +159,7 @@ Plan 模式的好处是 AI 会先帮你想清楚怎么做，生成一份实施�
 
 AI 会分析需求，有任何不确定的地方会弹窗找你确认。然后输出一份详细的实施计划，包括技术选型、文件结构、任务列表。你不需要看懂计划里提到的每个技术名词，大致扫一遍觉得合理就行。
 
-![](https://pic.yupi.icu/1/image-20260604162743435.png)
+![](/imgs/7af85e97ba28cd80.png)
 
 
 
@@ -172,11 +169,11 @@ AI 会分析需求，有任何不确定的地方会弹窗找你确认。然后�
 
 它会自动创建项目文件、编写前端页面、写后端接口、配置 AI 模型调用。如果计划中有多个可以同时进行的步骤，Cursor 还可能会启动多个子 Agent 并行工作，加快速度。
 
-![](https://pic.yupi.icu/1/image-20260604162815059.png)
+![](/imgs/dda5db34177f2324.png)
 
 几分钟后，AI 完成了开发，还会自动运行项目，并且在 Cursor 内置的浏览器面板中自动打开网页，你可以直接预览效果，不用切到外部浏览器。
 
-![](https://pic.yupi.icu/1/image-20260604162844304.png)
+![](/imgs/1a3f6042219ca4b8.png)
 
 
 
@@ -184,15 +181,15 @@ AI 会分析需求，有任何不确定的地方会弹窗找你确认。然后�
 
 项目跑起来之后，AI 会告诉你需要准备什么。由于我们的项目使用了 DeepSeek 大模型的 API 来做总结，需要先去 DeepSeek 开放平台获取一个 API Key，填到项目的环境变量文件里。
 
-![](https://pic.yupi.icu/1/image-20260604162915371.png)
+![](/imgs/3c51744dea8b8934.png)
 
 然后试试看效果。我输入一篇文章的网址，点击总结按钮，很快 AI 就给出了总结，还是很到位的。
 
-![](https://pic.yupi.icu/1/image-20260604162946718.png)
+![](/imgs/d364575b8ffe492c.png)
 
 但是我发现有些网站的内容无法正常提取和总结……
 
-![](https://pic.yupi.icu/1/image-20260604163108311.png)
+![](/imgs/2820b99c496d9e0b.png)
 
 人工一个个测试太麻烦了，我们可以让 AI 自己来测试和修复。
 
@@ -203,19 +200,19 @@ AI 会分析需求，有任何不确定的地方会弹窗找你确认。然后�
 比如当我输入 https://ai.codefather.cn 时，报错：未提取到足够正文
 ```
 
-![](https://pic.yupi.icu/1/image-20260604163149159.png)
+![](/imgs/4b2c4e7bc78e018a.png)
 
 AI 先分析了当前的代码，然后通过终端命令尝试复现 Bug，修复了代码，还开了一个子 Agent 来打开浏览器自动验证。
 
-![](https://pic.yupi.icu/1/image-20260604163216526.png)
+![](/imgs/1f49981cf06c48d2.png)
 
 修复完成后再试一次，这次就能够正常总结了。
 
-![](https://pic.yupi.icu/1/image-20260604163242010.png)
+![](/imgs/ca3d9b225cd24d5b.png)
 
 每次任务执行完成后，你可以查看代码改动，按需保留或者撤销部分修改，也可以直接点击 Keep 保留全部改动。建议每验证完成一个功能就 Keep 一下。
 
-![](https://pic.yupi.icu/1/image-20260604163307654.png)
+![](/imgs/5e49ad1b65a10900.png)
 
 
 
@@ -231,21 +228,21 @@ AI 编程的核心思路就是「先完成再迭代」，第一版做出来之�
 
 在对话框里输入 `@`，可以让 AI 精准地参考你指定的内容。比如 `@文件名` 引用项目中的某个文件，`@Docs` 引用已索引的官方文档，`@Terminals` 引用当前终端的报错信息。
 
-![](https://pic.yupi.icu/1/image-20260604163359832.png)
+![](/imgs/c4b2ac4dfba2b285.png)
 
 比如你要用 Ant Design 组件库来美化网站，可以用 `@Docs` 引入 Ant Design 的官方文档，AI 就能基于最新的文档来编写代码，避免编造过时的写法。
 
 你也可以直接把文件拖拽到对话框里。比如我把自己的产品信息文档拖进来，AI 在做底部版权推荐的时候就知道该展示什么信息了。
 
-![](https://pic.yupi.icu/1/image-20260604163419853.png)
+![](/imgs/94078af4d5c87cb1.png)
 
 Cursor 还支持直接把图片拖进对话框。比如你觉得苹果官网的设计风格好看，截张图粘进来让 AI 参考着修改就行。
 
-![](https://pic.yupi.icu/1/image-20260604163438613.png)
+![](/imgs/c832b0b289964f5f.png)
 
 执行上述提示词后，网站被优化成了下面这样，还不错吧~
 
-![](https://pic.yupi.icu/1/image-20260604163550109.png)
+![](/imgs/77913ab75e640ffb.png)
 
 
 
@@ -255,7 +252,7 @@ Cursor 还支持直接把图片拖进对话框。比如你觉得苹果官网的�
 
 这时候用 Cursor 的快照回滚功能就好了。Agent 每次修改都会自动保存一个快照，你只要把鼠标悬停在对话记录中之前某条消息上，点击回滚图标，就能一键恢复到那个时间点的代码状态。
 
-![](https://pic.yupi.icu/1/image-20260604163729304.png)
+![](/imgs/a1fcef040ec72108.png)
 
 就像游戏里的存档功能，搞砸了可以读档重来。
 
@@ -267,11 +264,11 @@ Cursor 还支持直接把图片拖进对话框。比如你觉得苹果官网的�
 
 在对话框的右下角可以看到当前对话的上下文使用情况，包括消耗了多少 Token 和各部分占比，一目了然。
 
-![](https://pic.yupi.icu/1/image-20260604163751198.png)
+![](/imgs/8e637c850a85e456.png)
 
 你也可以打开 [Cursor 后台面板](https://cursor.com/dashboard) 查看一段时间的消耗明细，建议给每月的按需用量加个上限，防止破产。
 
-![](https://pic.yupi.icu/1/image-20260604163907596.png)
+![](/imgs/d02b0038f9729ac6.png)
 
 恭喜你，到这里你已经用 AI 从 0 做出了一个完整的网页应用！
 
@@ -281,7 +278,7 @@ Cursor 还支持直接把图片拖进对话框。比如你觉得苹果官网的�
 
 Cursor 本身已经很强了，但它还有一套扩展体系，可以让 AI 连接外部工具、获取最新信息、遵守你的编码规范。
 
-![Cursor 插件系统](https://pic.yupi.icu/1/image-20260604163937041.png)
+![Cursor 插件系统](/imgs/a3aae0120bc57b6d.png)
 
 
 
@@ -289,7 +286,7 @@ Cursor 本身已经很强了，但它还有一套扩展体系，可以让 AI 连
 
 MCP 的全称是 Model Context Protocol，听起来很唬人，但你可以把它理解为 AI 的万能插头。原本 AI 只能根据训练数据来回答问题、生成代码，但有了 MCP，它就能连接各种外部工具和数据源，比如查天气、操作数据库、规划出行路线。
 
-![](https://pic.yupi.icu/1/mcp%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![](/imgs/2312ba2a19785f36.png)
 
 比如安装高德地图的 MCP，只需要去高德开放平台申请一个 API Key，然后在 Cursor 设置里配置一下就行：
 
@@ -303,19 +300,19 @@ MCP 的全称是 Model Context Protocol，听起来很唬人，但你可以把�
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260604164139668.png)
+![](/imgs/33c1fd24f41d5d4b.png)
 
 配置完成后，能够在 Cursor 设置面板中看到 MCP Server 提供的工具列表：
 
-![](https://pic.yupi.icu/1/image-20260604164305442.png)
+![](/imgs/f0a99b15050b662b.png)
 
 来试一试，直接跟 AI 说：用高德地图帮我规划一次周末上海两日游，查一下明天天气，推荐适合的景点。
 
-![](https://pic.yupi.icu/1/image-20260604164341317.png)
+![](/imgs/044da161c2e6199d.png)
 
 AI 就会自动调用高德地图的各种工具，整合成一份完整的出游方案。
 
-![](https://pic.yupi.icu/1/image-20260604164403560.png)
+![](/imgs/90d42ea30b27a687.png)
 
 像我现在分析自己的产品数据时，就用数据库 MCP 让 AI 直接连接数据库查询数据，省得自己写 SQL 语句了。
 
@@ -325,13 +322,13 @@ AI 就会自动调用高德地图的各种工具，整合成一份完整的出�
 
 Skills 你可以理解为给 AI 提供的技能包，装了某个技能后，AI 在遇到相关任务时就能自动按照这套方法来干活，不用你每次都写一大堆提示词。而且技能是按需加载的，只有任务匹配时才会调用，不会浪费上下文空间。
 
-![](https://pic.yupi.icu/1/04_Agent_Skills%E6%8A%80%E8%83%BD%E5%8C%85%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8A%AB%E9%9C%B2_original_v2%E5%A4%A7.jpeg)
+![](/imgs/b3c3bac9721ef051.jpg)
 
 比如 AI 编程时常用的几个技能，用于联网搜索的 Firecrawl、用于获取最新技术文档的 Context7、用于美化前端页面的 UI UX Pro Max 等等。
 
 安装技能很简单，以 Firecrawl 为例，直接到官网复制一行安装命令，打开终端执行，按照指引完成授权就好。
 
-![](https://pic.yupi.icu/1/image-20260604164539466.png)
+![](/imgs/5fc008a5f748cfa8.png)
 
 安装完成后，在对话中输入 `/firecrawl` 就能调用：
 
@@ -341,11 +338,11 @@ Skills 你可以理解为给 AI 提供的技能包，装了某个技能后，AI 
 
 你会发现，Firecrawl 目前比 Cursor 内置的网页搜索工具效果更好、搜索结果更全面。
 
-![](https://pic.yupi.icu/1/image-20260604164606348.png)
+![](/imgs/111c558e546a6688.png)
 
 你还可以用 Cursor 内置的 `/create-skill` 命令来创建自己的技能。比如你刚做完一个网页总结工具，觉得这个流程以后还会重复用到，就可以让 AI 把这次的工作流程封装成技能，以后遇到类似任务就省事儿了。
 
-![](https://pic.yupi.icu/1/image-20260604164634591.png)
+![](/imgs/f77daf795f590b3a.png)
 
 
 
@@ -365,7 +362,7 @@ Skills 你可以理解为给 AI 提供的技能包，装了某个技能后，AI 
 
 保存之后，AI 在当前项目中工作时就会自动遵循这些规则。
 
-![](https://pic.yupi.icu/1/image-20260604164704104.png)
+![](/imgs/0068ee0a53b81383.png)
 
 这个文件不是 Cursor 独有的，Claude Code、Codex 等主流 AI 编程工具都会读取它，写一份规则就能在多个工具间通用。
 
@@ -373,7 +370,7 @@ Skills 你可以理解为给 AI 提供的技能包，装了某个技能后，AI 
 
 在设置面板的 Rules 配置中，可以创建针对特定文件类型生效的规则，也可以让 AI 智能判断是否需要某条规则。
 
-![](https://pic.yupi.icu/1/image-20260604164827576.png)
+![](/imgs/2afd7729b7e2d360.png)
 
 不过对于刚入门的同学来说，用 `AGENTS.md` 就完全够了。
 
@@ -389,29 +386,29 @@ Skills 你可以理解为给 AI 提供的技能包，装了某个技能后，AI 
 
 Cursor 还有一种 Cloud Agent，跑在云端服务器上，关掉电脑它也能继续工作，适合大规模代码重构这种耗时任务。你甚至可以在手机上打开网页，随时随地让 AI 干活和查看进度。
 
-![](https://pic.yupi.icu/1/image-20260604165027452.png)
+![](/imgs/77304d15e1ea7b3d.png)
 
 2）Automations 自动化：可以设置定时触发或者事件触发的自动化任务。比如让 AI 每天早上 9 点自动整理项目进度并生成报告，或者当 GitHub 仓库有人提交代码时自动做代码审查。
 
-![](https://pic.yupi.icu/1/image-20260604165053532.png)
+![](/imgs/97af2cff91b34c29.png)
 
 3）Marketplace 插件市场：Cursor 有自己的官方插件市场，里面有 Figma 设计稿转代码、AWS 云服务部署、Notion 知识库等各种插件，一键安装就能用。
 
-![](https://pic.yupi.icu/1/image-20260604165114110.png)
+![](/imgs/2d816d242672752b.png)
 
 4）代码索引：Cursor 会自动分析整个代码库建立语义索引，你在对话中就能快速检索到项目里任何角落的代码。这个能力很适合用来学习开源项目，用 Cursor 打开项目后让 AI 帮你分析整体架构。
 
-![](https://pic.yupi.icu/1/image-20260604165222081.png)
+![](/imgs/f946dc7fdfc04c1d.png)
 
 5）Git 集成：Cursor 自带了 Git 操作面板，可以查看代码变更、提交记录、撤销修改，不用打开终端敲命令。
 
 你现在不用深入学 Git，就把它当成代码的「后悔药」就好。
 
-![](https://pic.yupi.icu/1/image-20260604165247952.png)
+![](/imgs/bfc64df46dc29b82.png)
 
 6）VS Code 扩展：由于 Cursor 是基于 VS Code 开发的，所以它兼容所有 VS Code 的扩展插件。你甚至还可以安装 Claude Code 插件和 Codex 插件，在同一个编辑器里使用多个 AI 编程工具。
 
-![](https://pic.yupi.icu/1/image-20260604165333167.png)
+![](/imgs/6354c1381e850b4a.png)
 
 
 

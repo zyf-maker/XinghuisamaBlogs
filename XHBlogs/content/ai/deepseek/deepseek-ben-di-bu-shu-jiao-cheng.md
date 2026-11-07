@@ -3,15 +3,12 @@ title: "DeepSeek 本地部署教程"
 summary: "https://www.bilibili.com/video/BV1KYwoevEit（共 1 条资讯链接）"
 order: 9
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 本地部署教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ### 写在前面
 
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在做的小伙伴可能跟我一样在使用`DeepSeek`时，经常遇到“服务器繁忙，请稍后再试。”
 
-![img](https://pic.yupi.icu/yuyi/1739500169839-0d09c924-8509-4729-975d-c92d097489ed.png)
+![img](/imgs/43a48e78824be6c0.png)
 
 先说说为啥我推荐这个版本吧。`DeepSeek-R1-1.5B` 是一个轻量级的模型，参数量只有 15 亿，听起来是不是很“迷你”？但别小瞧了它，这可是个“小而精”的家伙。它只需要 3GB 的显存就能运行，这意味着即使你的电脑配置不高，也能轻松驾驭它。而且，它在数学推理方面表现相当出色，甚至在某些基准测试中超过了 `GPT-4o` 和 `Claude 3.5`。当然了，如果你电脑配置更高，可以尝试其他版本。
 
@@ -50,7 +47,7 @@ source: "https://github.com/liyupi/ai-guide"
 - **操作系统**：Windows 11
 - **硬盘空间**：500G，剩余335G
 
-![img](https://pic.yupi.icu/yuyi/1739500608629-9b0369ee-f4fd-4bc9-90df-d4788dd0c649.png)
+![img](/imgs/e9982e9ba881f2b0.png)
 
 ### 四、部署步骤
 
@@ -58,7 +55,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 访问官网：https://ollama.com/ 下载
 
-![img](https://pic.yupi.icu/yuyi/1739502355751-4eed027b-d4e2-4f06-8550-404816abdb30.png)
+![img](/imgs/ddca3998c7ab03c0.png)
 
 安装文件OllamaSetup.exe大约745MB。
 
@@ -79,13 +76,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 更多版本可以在这里查看：[**https://ollama.com/library/deepseek-r1**](https://ollama.com/library/deepseek-r1) 。
 
-![img](https://pic.yupi.icu/yuyi/1739500260448-da177880-f5ca-4434-8593-eb6d47b7ecf2.png)
+![img](/imgs/bcc61fbcae35c028.png)
 
 命令行输入：`ollama run deepseek-r1:1.5b` 拉取`DeepSeek`模型
 
 整个拉取过程还是比较丝滑的，5到6分钟后看到【success】字样，代表成功安装DeepSeek R1，然后就可以与DeepSeek对话了
 
-![img](https://pic.yupi.icu/yuyi/1739502407731-febeac44-4ab6-4dee-802a-24a73e057821.png)
+![img](/imgs/8404f15d9b7586fc.png)
 
 #### 4.4 与DeepSeek对话
 
@@ -101,11 +98,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 刚安装`Page Assit` 插件， 需要进行一下如下设置
 
-![img](https://pic.yupi.icu/yuyi/1739500677293-6b6c9402-a49e-471f-9624-e4dca16d4819.png)
+![img](/imgs/a411dacaa8639dcd.png)
 
 设置完成后，选择模型就可以与`DeepSeek`对话了
 
-![img](https://pic.yupi.icu/yuyi/1739500672402-fb3e55d6-f5ca-4184-afd9-55e0834c4c12.png)
+![img](/imgs/aa3924799b2808eb.png)
 
 ### 五、实际应用场景：DeepSeek-R1-1.5B 能干啥？
 

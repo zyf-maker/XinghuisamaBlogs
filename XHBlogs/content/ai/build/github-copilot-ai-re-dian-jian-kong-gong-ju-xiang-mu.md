@@ -3,15 +3,12 @@ title: "GitHub Copilot - AI 热点监控工具项目实战"
 summary: "这是一套以 AI 编程实战为核心的项目教程，基于 Express 5 + React 19 + OpenRouter + Socket.io，用 AI 编程的方式从 0 到 1 开发一个《AI 热点监控工具》，带你亲身体验 Vibe Cod"
 order: 31
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-09-11"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GitHub Copilot - AI 热点监控工具项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这是一套以 AI 编程实战为核心的项目教程，基于 Express 5 + React 19 + OpenRouter + Socket.io，用 AI 编程的方式从 0 到 1 开发一个《AI 热点监控工具》，带你亲身体验 Vibe Coding 的完整工作流，学会用 AI 快速做出实用的提效工具！
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 ⭐️ 项目介绍视频：https://bilibili.com/video/BV1g8d8B6ENk
 
-![](https://pic.yupi.icu/1/image-20260304102630302.png)
+![](/imgs/dcc89c314844d356.png)
 
 
 ## 项目介绍
@@ -45,42 +42,42 @@ source: "https://github.com/liyupi/ai-guide"
 
 用户输入要监控的关键词，比如 "Vibe Coding"、"Claude" 等，系统会自动开始监控。支持激活 / 暂停单个关键词。
 
-![](https://pic.yupi.icu/1/image-20260304102804249.png)
+![](/imgs/b20b7ce1e39bb4d5.png)
 
 
 2）AI 自动抓取和分析热点
 
 系统每 30 分钟自动从 Twitter、Bing、HackerNews、搜狗、B 站、微博等 8+ 个信息源抓取内容，利用 AI 进行查询扩展、真假识别、相关性分析和智能摘要，过滤低质量内容后展示在信息流中。
 
-![](https://pic.yupi.icu/1/image-20260304103025682.png)
+![](/imgs/9d95bcc0b1bfc9a4.png)
 
 
 3）多维度筛选和排序
 
 支持按信息来源、重要性、时间范围进行筛选，支持按热度综合、相关性、发布时间排序，帮助用户快速定位需要的热点信息。
 
-![](https://pic.yupi.icu/1/image-20260304103219366.png)
+![](/imgs/01af046341cdc61f.png)
 
 
 4）全网搜索
 
 除了监控关键词的实时热点流外，还可以直接搜索特定的关键词，从全网获取信息：
 
-![](https://pic.yupi.icu/1/image-20260304103824666.png)
+![](/imgs/99860d98dee0361b.png)
 
 
 5）实时通知
 
 通过 WebSocket 实时推送热点通知，高重要性的热点还会通过邮件通知：
 
-![](https://pic.yupi.icu/1/image-20260304104139285.png)
+![](/imgs/eb68d387e0268160.png)
 
 
 6）Agent Skills 技能包
 
 将热点监控能力封装为标准的 Agent Skills，安装后在 Cursor、VSCode Copilot、Claude Code 等 AI 编程工具中都能使用：
 
-![](https://pic.yupi.icu/1/1772099941189-4fb78679-12ac-4b92-a7b4-b5b4645b09d4.png)
+![](/imgs/74905778b015fc24.png)
 
 
 ## 项目收获
@@ -107,7 +104,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 该项目功能丰富，涵盖关键词管理、热点采集和分析、信息展示和筛选、实时通知系统、全网信息源搜索、Agent Skills 六大模块，20+ 功能点，覆盖了从信息采集、AI 智能分析到实时推送通知的完整热点监控闭环。
 
-![](https://pic.yupi.icu/1/image-20260304101313199.png)
+![](/imgs/e1c397546d7e769d.png)
 
 
 ## AI 编程开发流程
@@ -126,7 +123,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 建议每做完一个功能就用 Git 提交代码，防止 AI 后面改着改着搞崩了。如果上下文太长了，AI 容易断片儿，就新开一个对话窗口，把需求文档和方案文档丢给 AI，让它重新分析已有代码找回记忆。
 
-![](https://pic.yupi.icu/1/image-20260304105541465.png)
+![](/imgs/d25f4ab2f624122d.png)
 
 
 ## 核心业务流程
@@ -166,7 +163,7 @@ graph TD
 
 本项目以 Node.js 全栈 + TypeScript 为核心，前后端分离，涵盖多源爬虫数据采集、AI 大模型内容审核、WebSocket 实时推送、定时任务调度、Aceternity UI 科技感前端、Agent Skills 开发等实用技术。
 
-![](https://pic.yupi.icu/1/image-20260304101227060.png)
+![](/imgs/e016269aad8cd3a5.png)
 
 后端：Express 5、TypeScript、Prisma ORM、SQLite、Socket.io、node-cron、Nodemailer
 
@@ -183,7 +180,7 @@ AI 编程工具：VSCode + GitHub Copilot、MCP 插件（Firecrawl + Context7）
 
 本项目采用前后端分离架构，前端使用 React + Vite，后端使用 Express + Prisma，通过 REST API 和 WebSocket 通信。通过定时任务引擎来驱动多数据源采集和 AI 分析，Agent Skills 作为独立模块可在多种 AI 编程工具中复用。
 
-![](https://pic.yupi.icu/1/image-20260304101440202.png)
+![](/imgs/1cad222ab980453d.png)
 
 
 完整视频教程 + 文字教程（预计 2 ~ 5 天学完）：https://www.codefather.cn/course/2026625439052627970

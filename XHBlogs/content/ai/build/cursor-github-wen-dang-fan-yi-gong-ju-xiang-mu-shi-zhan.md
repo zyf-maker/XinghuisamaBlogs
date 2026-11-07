@@ -3,15 +3,12 @@ title: "Cursor - GitHub 文档翻译工具项目实战"
 summary: "这是一套以 AI 编程实战为核心的项目教程，基于 Next.js + GitHub App + OpenRouter，用 AI 编程的方式从 0 到 1 开发一个《GitHub 仓库 AI 文档翻译 SaaS 平台》，带你亲身体验 Vibe"
 order: 29
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-10-22"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor - GitHub 文档翻译工具项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这是一套以 AI 编程实战为核心的项目教程，基于 Next.js + GitHub App + OpenRouter，用 AI 编程的方式从 0 到 1 开发一个《GitHub 仓库 AI 文档翻译 SaaS 平台》，带你亲身体验 Vibe Coding 的完整工作流，学会用 AI 做出真正能用、能部署、能赚钱的产品！
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 项目介绍视频：https://bilibili.com/video/BV1mAAmzqEfP
 
-![](https://pic.yupi.icu/1/1769079083162-aa879560-6044-4ef7-a3a2-718b03070978-20260225143424199.png)
+![](/imgs/008e103174055a3e.png)
 
 
 ## 项目介绍
@@ -36,7 +33,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 **零配置，一键翻译，让你的 GitHub 项目走向全球！**
 
-![](https://pic.yupi.icu/1/GitHub%20Global%20%E4%B8%BB%E9%A1%B5.png)
+![](/imgs/34bed748b40e31e0.png)
 
 
 ## 项目功能演示
@@ -45,46 +42,46 @@ source: "https://github.com/liyupi/ai-guide"
 
 基于 GitHub App 实现安全登录与授权，比传统 OAuth App 权限更细粒度，Token 1 小时自动过期，更安全。
 
-![](https://pic.yupi.icu/1/image-20260225142930323.png)
+![](/imgs/325404b290b95933.png)
 
 
 2）导入 GitHub 仓库
 
 输入 GitHub 仓库地址，点击导入，平台就会自动拉取你的仓库信息，方便后续配置翻译。
 
-![](https://pic.yupi.icu/1/1769079897565-92698844-bfcc-4f6d-b226-d18352ea2244-20260225144921746-20260225144924730.png)
+![](/imgs/95f7084a5530168f.png)
 
 
 3）配置翻译，灵活选择翻译范围
 
 可以自由选择要翻译成哪些语言（支持英语、法语等 20 种主流语言），还能通过可视化的文件树勾选要翻译哪些文档。
 
-![](https://pic.yupi.icu/1/1769079083162-aa879560-6044-4ef7-a3a2-718b03070978-20260225143424199-20260225152611505.png)
+![](/imgs/1e4477010e56b506.png)
 
 
 4）一键执行翻译，自动提交 PR
 
 点击翻译，AI 调用 OpenRouter 大模型执行翻译任务，前端实时展示进度状态：
 
-![](https://pic.yupi.icu/1/1769079926879-90640105-2d23-418c-b4b5-e962eab31299-20260225144931498.png)
+![](/imgs/1fbb538f21344b5a.png)
 
 翻译完成后自动创建 GitHub 代码合并请求，仓库负责人可以选择是否合并，既方便又安全：
 
-![](https://pic.yupi.icu/1/1769080074375-806fa172-c440-47e3-93fd-07ad33c271ea-20260225144935674.png)
+![](/imgs/fb37b0bd393d09e0.png)
 
 
 5）自动触发增量翻译
 
 开启「自动翻译」开关后，每当往仓库推送了新的文档变更，GitHub Webhook 会自动通知平台，系统只翻译「在翻译范围内且发生了变更」的文件，省时省钱：
 
-![](https://pic.yupi.icu/1/1770201178863-f4e450bd-b92f-4f56-9b43-82aed36a73b0-20260225142203617.png)
+![](/imgs/776f73bf278a697c.png)
 
 
 6）自定义大模型和 API Key
 
 平台默认提供了免费的 AI 翻译额度，也可以在设置页面配置自己的 OpenRouter API Key，从排行榜前 20 的主流大模型中自由选择翻译模型（支持 GPT、Claude、Gemini、DeepSeek 等）：
 
-![](https://pic.yupi.icu/1/1770194573295-9e7552ca-b0c1-4612-a590-6060b5717d79-20260225144945946.png)
+![](/imgs/bcebd7e7c629fd7c.png)
 
 
 ## 项目收获
@@ -113,7 +110,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 该项目功能丰富，涵盖用户认证、仓库管理、翻译配置、翻译执行、变更同步 5 大模块，20+ 功能点，覆盖了真实 SaaS 产品的核心业务场景。
 
-![](https://pic.yupi.icu/1/image-20260225140201706.png)
+![](/imgs/184ec90bad810a0b.png)
 
 
 ## AI 编程开发流程
@@ -130,7 +127,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 最后通过 Vercel 一键部署上线，整个项目累积不到 1 天就做完并且上线了！
 
-![](https://pic.yupi.icu/1/image-20260225141454620.png)
+![](/imgs/1cea60145c1b8686.png)
 
 
 ## 核心业务流程
@@ -162,7 +159,7 @@ graph TD
 
 本项目以 Next.js 全栈 + TypeScript 为核心，前后端一体，综合运用了多种主流 SaaS 开发技术。
 
-![](https://pic.yupi.icu/1/image-20260225140224582.png)
+![](/imgs/bd0f990f5eafd170.png)
 
 前后端：Next.js 15（App Router）、TypeScript、shadcn/ui + Tailwind CSS、Prisma ORM、MySQL、NextAuth.js
 
@@ -179,7 +176,7 @@ AI 编程工具：Cursor、MCP 插件（firecrawl-mcp + context7）、Agent Skil
 
 本项目采用 Next.js 全栈一体化架构，前后端合并在一套代码中，通过 API Routes 提供服务端接口，结合本地任务队列处理耗时的翻译任务，并对接 GitHub API 和 OpenRouter 完成核心业务。
 
-![](https://pic.yupi.icu/1/image-20260225141302579.png)
+![](/imgs/6385c674dcf7b167.png)
 
 
 完整视频教程 + 文字教程（预计 3 ~ 5 天学完）：https://www.codefather.cn/course/2014303010343092226

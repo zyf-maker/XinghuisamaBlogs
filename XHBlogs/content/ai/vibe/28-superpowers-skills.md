@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Superpowers：核心技能库》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 在前面的文章中，我们学习了各种 AI 编程工具和规范化开发框架。但你可能会想：有没有一套完整的开发流程，能让 AI 像专业程序员一样工作呢？
@@ -29,7 +26,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 就像给一个刚进公司啥都不懂的 AI 加上了超能力，瞬间让它有了专业程序员的开发习惯。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE8%E5%A4%A7.jpeg)
+![](/imgs/d5df0b955262185b.jpg)
 
 
 
@@ -47,7 +44,7 @@ source: "https://github.com/liyupi/ai-guide"
 /plugin marketplace add obra/superpowers-marketplace
 ```
 
-![](https://pic.yupi.icu/1/image-20260116171109190.png)
+![](/imgs/9e6a05c6df0f847d.png)
 
 再从市场安装插件：
 
@@ -55,7 +52,7 @@ source: "https://github.com/liyupi/ai-guide"
 /plugin install superpowers@superpowers-marketplace
 ```
 
-![](https://pic.yupi.icu/1/image-20260116171125164.png)
+![](/imgs/8d6982e9992b9cfc.png)
 
 安装后运行 `/help` 查看可用命令，你会看到这 3 个命令
 
@@ -63,7 +60,7 @@ source: "https://github.com/liyupi/ai-guide"
 - `/superpowers:write-plan` 创建实现方案
 - `/superpowers:execute-plan` 批量执行方案
 
-![](https://pic.yupi.icu/1/image-20260116171300633.png)
+![](/imgs/20a04243e207748c.png)
 
 
 
@@ -77,22 +74,22 @@ source: "https://github.com/liyupi/ai-guide"
 
 选择 `/superpowers:brainstorm` 命令并输入需求：
 
-![](https://pic.yupi.icu/1/image-20260116175524611.png)
+![](/imgs/dcfa96721057fb6c.png)
 
 Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需求，比如：
 
 - 用户注册模块的主要场景是什么？
 - 希望支持哪些注册方式？
 
-![](https://pic.yupi.icu/1/image-20260116175456666.png)
+![](/imgs/cd7645abebd5f540.png)
 
 通过交互问答，AI 会探索不同方案、不断改进设计。
 
-![](https://pic.yupi.icu/1/image-20260116175907783.png)
+![](/imgs/22b0e0494178e9eb.png)
 
 当需求和方案确认无误后，它会自动将详细的设计文档保存到 `docs/plans/` 目录。
 
-![](https://pic.yupi.icu/1/image-20260116180740987.png)
+![](/imgs/3411a4faef2c01dc.png)
 
 
 
@@ -102,7 +99,7 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 
 这一步是可选的，我这里直接让 AI 继续执行，看看会发生什么：
 
-![](https://pic.yupi.icu/1/image-20260116181020601.png)
+![](/imgs/53ba3b54fa088509.png)
 
 
 
@@ -112,7 +109,7 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 
 我这里 AI 直接自动执行了，省了一步命令~
 
-![](https://pic.yupi.icu/1/image-20260116180907360-20260116180953363-20260116181058928-20260116181118631.png)
+![](/imgs/0594ea9f07d95aaf.png)
 
 查看 AI 生成的实施计划文档，每个任务都包含：
 
@@ -120,11 +117,11 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 - 完整的代码内容
 - 验证步骤
 
-![](https://pic.yupi.icu/1/image-20260116181910011.png)
+![](/imgs/9bea4b499103fc24.png)
 
 好家伙，这哪里是实施计划文档啊，感觉大多数代码都写出来了！
 
-![](https://pic.yupi.icu/1/image-20260116181959589.png)
+![](/imgs/eb26dfbf867273cb.png)
 
 
 
@@ -136,15 +133,15 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 
 我这里 AI 直接问我想要哪种方式：
 
-![](https://pic.yupi.icu/1/image-20260116182128737.png)
+![](/imgs/c411a5929c55e1e0.png)
 
 我盲选一手 Subagent-Driven 方式，AI 自动选择了对应的开发技能：
 
-![](https://pic.yupi.icu/1/image-20260116182244311.png)
+![](/imgs/158b0a5f5bec3e87.png)
 
 然后 AI 就开始干活了：
 
-![](https://pic.yupi.icu/1/image-20260116182445078.png)
+![](/imgs/d0a932a19b1a69f9.png)
 
 
 
@@ -157,7 +154,7 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 - 运行测试，确认通过
 - 提交代码
 
-![](https://pic.yupi.icu/1/image-20260116183728764.png)
+![](/imgs/af6b5e25298fd996.png)
 
 如果发现有代码是在测试之前写的，Superpowers 会删除它，强制你先写测试。
 
@@ -167,7 +164,7 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 
 每完成一批任务后，Superpowers 会自动触发代码审查，对照计划检查代码，按严重程度报告问题。如果发现严重问题（Critical），会阻止继续进行。
 
-![](https://pic.yupi.icu/1/image-20260116182947482.png)
+![](/imgs/d43d8b2cb73adead.png)
 
 
 
@@ -175,13 +172,13 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 
 所有任务完成后，Superpowers 会验证所有测试是否通过：
 
-![](https://pic.yupi.icu/1/image-20260116194339313.png)
+![](/imgs/073429fa88b605b3.png)
 
 然后 AI 可能会提供几个选项，比如合并到主分支 / 创建 PR / 保留分支 / 丢弃更改。
 
 如果你确定功能没有问题，可以利用 Superpowers 内置的技能来完成开发分支的清理工作。
 
-![](https://pic.yupi.icu/1/image-20260116194520921.png)
+![](/imgs/e5db9e10ea4aaf2c.png)
 
 
 
@@ -189,7 +186,7 @@ Superpowers 不会急着写代码，而是先通过多轮问答和你对齐需�
 
 这套 “先设计后编码” 的规范流程走下来，代码质量会更有保障，不过代价就是速度确实比让 AI 直接生成代码会慢很多。真的是慢很多！就这么个需求我搞了半个多小时！！！
 
-![](https://pic.yupi.icu/1/image-20260116183405162.png)
+![](/imgs/b6c162f5ccb16026.png)
 
 如果你正在开发大型项目，需要团队协作，那么可以试试 Superpowers，前期多花的时间会在后期省回来。但是如果你只是想写个简单的脚本或者快速验证一个想法，用它就有点儿牛刀杀鸡了，真没必要。
 

@@ -3,15 +3,12 @@ title: "DeepSeek，紧急声明"
 summary: "DeepSeek，紧急声明，由程序员鱼皮整理。"
 order: 18
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek，紧急声明》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 2月6日晚间，深度求索DeepSeek官微发布《关于DeepSeek官方信息发布及服务渠道的说明》。DeepSeek声明称，近期部分与 DeepSeek 有关的仿冒账号和不实信息对公众造成了误导和困扰。为保障用户权益，减少虚假信息的不良影响，现就官方账号等问题进行说明。
 
@@ -25,9 +22,9 @@ DeepSeek提示，除以上官方账号外，其他任何以DeepSeek或相关负�
 
 **说明全文如下：**
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0207%2Fa67978e0j00srafva005jd000j200pzg.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/a90d8413f00cbd57.jpg)  
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0207%2Ffa4d74a9j00srafva001kd000j900gjg.jpg&thumbnail=660x2147483647&quality=80&type=jpg)  
+![](/imgs/fb43f0ed9abcaf1a.jpg)  
 
 ---
 来源：网易新闻

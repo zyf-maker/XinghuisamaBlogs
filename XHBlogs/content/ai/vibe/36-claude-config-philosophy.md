@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Code 配置哲学：官方亲自教你怎么「调教」AI》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近 Anthropic 官方发了一篇博文，标题叫《Steering Claude Code》，把 Claude Code 的整套配置体系从底层逻辑到使用场景讲了个透。
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 原文指路：https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more
 
-![](https://pic.yupi.icu/1/image-20260625173136998.png)
+![](/imgs/c1279db37176f045.png)
 
 
 
@@ -41,7 +38,7 @@ Claude Code 的调教方式共有 7 种：CLAUDE.md 文件、Rules 规则、Skil
 
 接下来咱们挨个儿学习。
 
-![Claude Code 七种调教方式总览](https://pic.yupi.icu/1/01_%E4%B8%83%E7%A7%8D%E8%B0%83%E6%95%99%E6%96%B9%E5%BC%8F%E6%80%BB%E8%A7%88%E5%AF%B9%E6%AF%94%E5%9B%BEv2_compressed_v1.png)
+![Claude Code 七种调教方式总览](/imgs/98a3c00d5706a45f.png)
 
 
 
@@ -61,7 +58,7 @@ CLAUDE.md 的加载分两种方式。
 
 子目录的 CLAUDE.md 比如 `app/api/CLAUDE.md`，只有当 Claude 读取该目录下的文件时才会加载，适合放只跟特定模块相关的约定。
 
-![CLAUDE.md 加载机制](https://pic.yupi.icu/1/02_CLAUDE.md%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6v2_compressed_v3.png)
+![CLAUDE.md 加载机制](/imgs/eade42cc09744ab5.png)
 
 官方明确建议，**CLAUDE.md 尽量控制在 200 行以内**。
 
@@ -73,7 +70,7 @@ CLAUDE.md 的加载分两种方式。
 
 所以记住一个原则就好：**CLAUDE.md 只放「事实」，不放「流程」。**
 
-![事实和流程对比](https://pic.yupi.icu/1/03_%E4%BA%8B%E5%AE%9Evs%E6%B5%81%E7%A8%8B-CLAUDE.md%E5%86%85%E5%AE%B9%E5%88%86%E7%B1%BB%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![事实和流程对比](/imgs/b27b8c54d50d7f67.png)
 
 构建命令、技术栈、目录结构、命名规范是事实。部署流程、代码审查清单、发布步骤是流程，应该封装为 Skills。
 
@@ -112,7 +109,7 @@ Skills 放在 `.claude/skills/` 目录下，每个技能是一个文件夹，核
 
 Skills 的渐进式加载设计非常优雅。会话开始时，Claude 只会读取每个 Skill 的名称和简短描述，完整的技能内容只有在被触发时才加载到上下文中。
 
-![Skills渐进式加载设计](https://pic.yupi.icu/1/04_Skills%E6%B8%90%E8%BF%9B%E5%BC%8F%E5%8A%A0%E8%BD%BD%E8%AE%BE%E8%AE%A1%E5%9B%BEv2_compressed_v3.png)
+![Skills渐进式加载设计](/imgs/87b26a80b2c32268.png)
 
 这意味着你可以定义几十个 Skills，但平时它们几乎不占 token。只有当你主动调用（比如输入 `/code-review`），或者 AI 自动匹配到当前任务需要某个技能时，完整的指令内容才会加载进来。
 
@@ -128,7 +125,7 @@ Subagents 放在 `.claude/agents/` 目录下，每个文件定义一个独立的
 
 跟 Skills 最大的区别在于，Subagent 运行在自己独立的上下文窗口里，只有最终结果会返回给主会话。所有中间过程完全不占用你主对话的上下文空间。
 
-![Subagents 隔离上下文运行机制](https://pic.yupi.icu/1/05_Subagents%E9%9A%94%E7%A6%BB%E4%B8%8A%E4%B8%8B%E6%96%87%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6%E5%9B%BEv2_compressed_v1.png)
+![Subagents 隔离上下文运行机制](/imgs/5cba4d8c476e989a.png)
 
 什么场景适合用 Subagent 呢？
 
@@ -154,7 +151,7 @@ Hooks 是 7 种方式里最特殊的一个。
 
 Hooks 通过 `settings.json` 注册，绑定到 Claude Code 生命周期中的特定事件，比如工具调用前（PreToolUse）、工具调用后（PostToolUse）、压缩对话前（PreCompact）等等。
 
-![Hooks生命周期事件触发](https://pic.yupi.icu/1/06_Hooks%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91%E5%9B%BEv2_compressed_v2.png)
+![Hooks生命周期事件触发](/imgs/7e1bbf9d72a8caef.png)
 
 最经典的用法就是：每次编辑文件后自动跑 Prettier 格式化。
 
@@ -178,7 +175,7 @@ Hooks 通过 `settings.json` 注册，绑定到 Claude Code 生命周期中的�
 
 **安全这件事，不能指望 AI 的自觉性。**
 
-![指令和钩子-安全防线对比](https://pic.yupi.icu/1/07_%E6%8C%87%E4%BB%A4vs%E9%92%A9%E5%AD%90-%E5%AE%89%E5%85%A8%E9%98%B2%E7%BA%BF%E5%AF%B9%E6%AF%94%E5%9B%BE_compressed_v3.png)
+![指令和钩子-安全防线对比](/imgs/090bd8f730ceca30.png)
 
 
 
@@ -194,7 +191,7 @@ Output Styles 是用来定义 Claude 输出风格和行为模式的。它放在 
 
 所以官方的建议是先看看内置的几种风格够不够用，别轻易去自定义。目前内置了 Proactive 主动执行、Explanatory 详细解释、Learning 协作学习这 3 种模式，基本覆盖了大多数使用场景。
 
-![](https://pic.yupi.icu/1/image-20260625182514344.png)
+![](/imgs/bacdfe34e8be4b8f.png)
 
 Append System Prompt 是另一种调整 Claude 行为的方式，它允许你在不修改任何文件的情况下，临时给 Claude 追加一段指令。
 
@@ -202,7 +199,7 @@ Append System Prompt 是另一种调整 Claude 行为的方式，它允许你在
 
 跟 Output Style 的区别在于，它是追加而非替换，不会影响 Claude Code 的默认行为。适合临时调整语气、输出格式这些轻量需求。
 
-![](https://pic.yupi.icu/1/image-20260625182914705.png)
+![](/imgs/ead761225107d560.png)
 
 不过官方也提到了一个限制，追加的指令越多，AI 对每条指令的遵循度就越低，特别是指令之间有冲突的时候。
 
@@ -214,7 +211,7 @@ Append System Prompt 是另一种调整 Claude 行为的方式，它允许你在
 
 没关系，官方给了几条判断标准，有个印象就行。
 
-![配置方式选择决策流程](https://pic.yupi.icu/1/08_%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F%E9%80%89%E6%8B%A9%E5%86%B3%E7%AD%96%E6%B5%81%E7%A8%8B%E5%9B%BE_compressed_v3.png)
+![配置方式选择决策流程](/imgs/dc5e712d60be5137.png)
 
 第一，CLAUDE.md 放「事实」，Skills 放「流程」。
 
@@ -240,7 +237,7 @@ Append System Prompt 是另一种调整 Claude 行为的方式，它允许你在
 
 这样 CLAUDE.md 保持精简，Claude 需要详细信息的时候会自己去读对应文件。
 
-![渐进式披露按需加载](https://pic.yupi.icu/1/06_%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8A%AB%E9%9C%B2%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD_compressed_v2.png)
+![渐进式披露按需加载](/imgs/1384b78869019419.png)
 
 然后是 Skills，我觉得这是目前最被低估的功能。我现在把很多重复性的工作流程都封装成了 Skill，什么 AI 热点搜集、视频动画制作、图文创作工作流等等。
 

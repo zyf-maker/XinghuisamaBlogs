@@ -3,15 +3,12 @@ title: "DeepSeek 发展历程"
 summary: "- 起源于金融量化领域"
 order: 203
 level: "入门"
-tags: ["关于 DeepSeek", "转载", "AI"]
+tags: ["关于 DeepSeek"]
 updated: "2025-03-28"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 发展历程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 创立与发展
 

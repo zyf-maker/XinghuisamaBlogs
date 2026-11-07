@@ -3,15 +3,12 @@ title: "Vibe Coding 上下文管理技巧"
 summary: "让 AI 真正理解你的项目"
 order: 4
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-09-02"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 上下文管理技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -63,7 +60,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 3. 对话级上下文：当前对话中的临时信息，比如刚才讨论的问题、生成的代码片段等。
 
-![](https://pic.yupi.icu/1/contextlevel%E5%A4%A7.jpeg)
+![](/imgs/e4b1a08f077807d7.jpg)
 
 管理好这三个层次的上下文，你就能让 AI 始终 “在状态”。
 
@@ -107,7 +104,7 @@ AI 有一个上下文窗口（Context Window），可以理解为它的短期记
 
 有些 AI 编程工具自带了总结上下文的指令，可以直接使用：
 
-![](https://pic.yupi.icu/1/image-20260104180238760.png)
+![](/imgs/9a7620ebd15dcc37.png)
 
 也可以手动输入提示词来总结：
 
@@ -293,7 +290,7 @@ Cursor 支持在项目根目录创建 `.cursorrules` 文件，作为项目的系
 
 💡 注意，随着 AI 编程工具的更新，这些规则可能会有变化，建议还是多看看 [官方文档](https://cursor.com/cn/docs/context/rules)。
 
-![](https://pic.yupi.icu/1/image-20260104181209687.png)
+![](/imgs/8571e774b5e36e50.png)
 
 
 ### Claude Code 的 CLAUDE.md

@@ -3,21 +3,18 @@ title: "程序员简历模板"
 summary: "AI 时代，写出让面试官眼前一亮的程序员简历"
 order: 7
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-04-20"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《程序员简历模板》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 每年求职季，我都会分享一些求职攻略。这些年我帮大家修改过几千份简历，毫不夸张地说，绝大多数同学的简历只能用 "惨不忍睹" 来形容。
 
-![](https://pic.yupi.icu/1/image-20260330153426705.png)
+![](/imgs/4f1a135cf4031d78.png)
 
 但更重要的是，随着 AI 的发展，程序员的简历写法也必须要更新了！
 
@@ -40,7 +37,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 简历文字版获取：https://laoyujianli.com/share/aiyupi
 
-![鱼皮 AI 时代的简历](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AEAI%E6%97%B6%E4%BB%A3%E5%AE%8C%E7%BE%8E%E7%AE%80%E5%8E%86%E6%9C%80%E7%BB%88%E7%89%88.jpg)
+![鱼皮 AI 时代的简历](/imgs/876ab0835d3fb0b7.jpg)
 
 下面我按照简历的板块顺序，逐个分析这么写的理由。
 
@@ -49,7 +46,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在学习怎么写之前，先推荐一个好用的简历制作工具 —— 鱼皮自己团队开发的 [老鱼简历](https://laoyujianli.com)，不到一分钟就能搞定一份专业简历。
 
-![老鱼简历网站简历模板大全](https://pic.yupi.icu/1/%E8%80%81%E9%B1%BC%E7%AE%80%E5%8E%86%E7%BD%91%E7%AB%99%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF%E5%A4%A7%E5%85%A8.png)
+![老鱼简历网站简历模板大全](/imgs/86db99d9e9a00dd5.png)
 
 老鱼简历提供了很多实用的功能，帮你解决写简历的各种痛点：
 
@@ -62,9 +59,9 @@ source: "https://github.com/liyupi/ai-guide"
 - AI 优化简历内容：每个模块都支持 AI 一键优化，让表达更专业
 - 导出和分享：支持导出为 PDF 和图片、生成在线简历链接、一键脱敏分享
 
-![简历编辑器](https://pic.yupi.icu/1/image-20230927135123890-20231122134518974.png)
+![简历编辑器](/imgs/928a61c02793bad6.png)
 
-![智能纠错](https://pic.yupi.icu/1/image%20(4)-20231122134519304.png)
+![智能纠错](/imgs/000fb2bb89481fb4.png)
 
 通过这个视频，就能快速了解老鱼简历是怎么帮你提高写简历效率的啦~
 
@@ -80,7 +77,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 先看简历的开头：
 
-![](https://pic.yupi.icu/1/image-20260330155917595.png)
+![](/imgs/8d805d8405716505.png)
 
 首先注意求职意向的写法。以前大家写求职意向，基本就是 "Java 后端开发" 或者 "前端开发"。但现在我建议在后面加一个括号，比如 `Java 后端开发（具备 AI Agent 全栈开发经验）`，点明你的 AI 相关经验。
 
@@ -95,7 +92,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 ### 教育背景和奖项
 
-![](https://pic.yupi.icu/1/image-20260330160113442.png)
+![](/imgs/956ea5b4e1fd5740.png)
 
 这一块没什么特别新的东西，但有 3 个小技巧值得注意。
 
@@ -121,7 +118,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 先看传统开发技术这一块：
 
-![](https://pic.yupi.icu/1/image-20260330160457275.png)
+![](/imgs/03db6ef2223932b1.png)
 
 以后端为例，前 5 条大家应该都很熟悉了，Java、Spring Boot、MySQL、Redis、Docker，这些是后端开发的基本盘。不管 AI 怎么发展，这些技术在企业里用得最多，面试也大概率会考。
 
@@ -150,7 +147,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 再看 AI 相关的技能：
 
-![](https://pic.yupi.icu/1/image-20260330161157605.png)
+![](/imgs/10f110b6bfa3f66a.png)
 
 别看这 4 条写得不长，但每一条都是精心编排的，是有层次的。我来给大家拆解一下。
 
@@ -166,7 +163,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 现在越来越多的公司希望程序员会用 Cursor、Claude Code、GitHub Copilot 这些工具，因为会用这些工具的人产出效率更高。但更关键的是，你不仅要会用这些 AI 工具，还要能开发工具、MCP Server 和 Agent Skills 来扩展这些工具的能力。大部分人只是 AI 工具的使用者，但如果你还能给这些工具贡献能力，这就和 "只会用 AI" 的人拉开了差距。如果你想少踩坑，可以阅读本教程经验技巧板块的相关文章，有非常多的 AI 编程小妙招。
 
-![](https://pic.yupi.icu/1/image-20260330162015019.png)
+![](/imgs/94b6cac31c97123c.png)
 
 **第四层、AI 编程模式**
 
@@ -176,14 +173,14 @@ source: "https://github.com/liyupi/ai-guide"
 
 当然了，不是让你硬编这些技能，而是先去学、去实践，然后自然而然地写到简历上。比如跟着我在 [编程导航](https://codefather.cn/) 最新开发的 AI 编程和 AI 超级智能体相关的项目，只要花不到 1 个月的时间，大多数企业在 AI 编程和 AI 应用开发方面需要的技术你基本就都掌握了。
 
-![鱼皮原创项目学习导图](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E5%8E%9F%E5%88%9B%E9%A1%B9%E7%9B%AE%E5%AD%A6%E4%B9%A0%E5%AF%BC%E5%9B%BE_tiny.png)
+![鱼皮原创项目学习导图](/imgs/8550d873a570c5b7.png)
 
 还要提醒大家，专业技能不用写太多，要保证简历的第一页能够看到你的工作经历或者项目经历。毕竟面试官最关心的还是你做过什么，技能列表只是让他快速判断你的技术方向和深度。
 
 
 ### 工作经历
 
-![](https://pic.yupi.icu/1/image-20260330162926648.png)
+![](/imgs/69154aee7035e35d.png)
 
 工作经历的开头，我建议用一行话写清楚你负责的产品和数据规模。比如贴个产品访问地址，列出日活多少、PV 多少、注册用户多少，写一个最能体现体量的数据就够了。这样做的原因很简单，面试官需要判断这个产品是不是真实的？是一个什么级别的产品？
 
@@ -214,11 +211,11 @@ AI 时代，项目经历的选择是非常有讲究的！
 
 AI 超级智能体：侧重传统 Java 后端技术和 AI 应用开发的结合，体现的是 RAG、MCP、智能体架构这些 AI 方向的新技能和技术深度。
 
-![AI 超级智能体项目](https://pic.yupi.icu/1/image-20260302181221444.png)
+![AI 超级智能体项目](/imgs/a582fc2b4436f513.png)
 
 AI 热点监控工具：侧重 AI 编程能力和 AI 的实际落地应用，体现的是用 Vibe Coding 方式从需求分析到方案设计到开发上线，快速独立交付一个真正有用的工具产品。
 
-![AI 热点监控工具](https://pic.yupi.icu/1285/202603021602038.png)
+![AI 热点监控工具](/imgs/33b0c37d03f86bf9.png)
 
 这样搭配的好处是，面试官能看到你既有传统技术的扎实功底，又有 AI 应用开发的新知识储备和 AI 编程的实战经验。
 
@@ -226,7 +223,7 @@ AI 热点监控工具：侧重 AI 编程能力和 AI 的实际落地应用，体
 
 这个项目的写法有几个地方值得大家学习。
 
-![](https://pic.yupi.icu/1/image-20260330163946480.png)
+![](/imgs/52d5a591d2e695d8.png)
 
 1）一定要上线你的项目，附上可访问的地址和 GitHub。能在本地跑和能部署上线给用户用，在面试官看来是两个完全不同的层次。
 
@@ -236,7 +233,7 @@ AI 热点监控工具：侧重 AI 编程能力和 AI 的实际落地应用，体
 
 #### AI 热点监控工具
 
-![](https://pic.yupi.icu/1/image-20260330164503926.png)
+![](/imgs/d6c3342a6ef94753.png)
 
 这个项目最大的亮点在第一条：
 
@@ -250,7 +247,7 @@ AI 热点监控工具：侧重 AI 编程能力和 AI 的实际落地应用，体
 
 一般工作经验 3 年以下的同学，简历上重点写 1 到 3 个项目就够了，内容在精不在多。但如果你做过更多的项目，可以用一个 "其他个人作品" 板块来展示，每个项目一行话，点明技术栈和核心亮点。
 
-![](https://pic.yupi.icu/1/image-20260330164758514.png)
+![](/imgs/147454c02f07426f.png)
 
 注意这个板块的开头，加了一句引导语指向个人作品集网站。面试官如果感兴趣，可以直接去网站上看到更多项目的详情，有限的简历空间里容纳了远超几页纸的信息量。
 
@@ -261,7 +258,7 @@ AI 热点监控工具：侧重 AI 编程能力和 AI 的实际落地应用，体
 
 最后这个板块的核心原则是：**体现出你的专业性和能力广度，并且每一点都要有证据。**
 
-![](https://pic.yupi.icu/1/image-20260330165412460.png)
+![](/imgs/0c53fdf710d5aeb8.png)
 
 很多同学的个人优势可能是这么写的：我学习能力强、我善于团队协作、我热爱编程……这种话谁不会写？面试官看了等于没看。
 
@@ -288,7 +285,7 @@ AI 热点监控工具：侧重 AI 编程能力和 AI 的实际落地应用，体
 
 配合 [编程导航](https://www.codefather.cn) 的 [《鱼皮保姆级写简历指南》](https://www.codefather.cn/course/cv) 一起使用，效果更佳。也可以到 [编程导航](https://www.codefather.cn/) 上看看真实的简历参考、以及现场面试的视频，换个视角看看别人的简历，也能发现自己的问题。大家加油！
 
-![](https://pic.yupi.icu/1/image-20260330170812198.png)
+![](/imgs/60b719ad48049739.png)
 
 
 ## 推荐资源

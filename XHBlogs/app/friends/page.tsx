@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar';
 import PageTransition from '../../components/PageTransition';
+import ContentLayout from '../../components/ContentLayout';
 import FriendsBoard from './FriendsBoard';
 import {siteConfig} from "@/siteConfig";
 
@@ -10,12 +11,12 @@ export const metadata = {
 
 export default function FriendsPage() {
   return (
-    <div className="min-h-screen relative pb-20">
+    <div className="min-h-screen relative">
       <Navbar />
       <PageTransition>
-        <div className="mt-28">
+        <ContentLayout>
           <FriendsBoard />
-        </div>
+        </ContentLayout>
       </PageTransition>
     </div>
   );

@@ -3,19 +3,16 @@ title: "DeepSeek技术解读：从V3到R1的MoE架构创新"
 summary: "（共 0 条资讯链接）"
 order: 106
 level: "进阶"
-tags: ["技术解析", "转载", "AI"]
+tags: ["技术解析"]
 updated: "2025-03-28"
 readingTime: 38
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek技术解读：从V3到R1的MoE架构创新》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 首先简单提一下MoE的发展历史，早在1991年一篇名为《[Adaptive Mixtures of Local Experts](https://link.zhihu.com/?target=https%3A//ieeexplore.ieee.org/abstract/document/6797059) 》的研究，最早提出了[Mixture of Experts](https://zhida.zhihu.com/search?content_id=253521716&content_type=Article&match_order=1&q=Mixture+of+Experts&zhida_source=entity)的原型框架，如图1，直至今日，MoE的框架依然保持这种方式。
 
-![img](https://pic.yupi.icu/yuyi/1739504717902-2954b618-90a5-4b46-a6fc-bdc01a8be919.png)
+![img](/imgs/4412d5c10fc7a12d.png)
 
 图1、Adaptive Mixtures of Local Experts 框图
 
@@ -61,7 +58,7 @@ source: "https://github.com/liyupi/ai-guide"
 问题1：公式 (5) 计算的 me为什么可以看作是 ceS 的近似？
 答：直观理解，我们假设极端情况下每个token最多分配给1个专家，那么可以假设被激活的专家的权重可以是1，其他专家权重都是0，这样对于专家 e 来说， 可以计算得到 me=ceS 。另外从定义上 me=1S∑s=1Sgs,e 表示token集合 S 分配给专家 e 的token概率，如果不考虑token分配的完整性。这其实就是 ceS 的定义。只不过 me 是个soft的计算方式，而 ceS 是取TopK的hard计算的。理解上可再参考下示例图，图示展示有6个专家，在6个token上计算，取Top1专家激活。左图每一行是多专家softmax的结果。左边按列加和计算 ∑s=1Sgs,e=me×S 其实是计算分配给专家 e 的token数，是soft的计算，右边按列加和计算 ce 也是计算分配给专家 i 的token数，是hard的计算。 ci 和 me×S 的值是近似的（四舍五入取整的结果），也就是 ce≈me×S ，所以me可以近似看作是 ceS 。
 
-![img](https://pic.yupi.icu/yuyi/1739504718170-ffbaeed0-4139-45f7-8edd-ee4f686fca0d.png)
+![img](/imgs/3dfe3de277e58ff0.png)
 
 问题2：这样近似计算有什么好处？
 答：因为 me 计算引入了门控 gs,e 项， gs,e 计算如公式(1)所示，包括的可学习参数 wg ，保证了这个一个可微的计算，可以做梯度更新。
@@ -82,7 +79,7 @@ DeepSeek-V3 是一个混合专家 (MoE)语言模型，具有 6710 亿(671B)参�
 
 **‌MoE（Mixture of Experts）是组合多个专家模型提升深度学习模型性能和效率的架构。‌其核心思想是通过引入多个**[**专家模型**](https://zhida.zhihu.com/search?content_id=253521716&content_type=Article&match_order=2&q=专家模型&zhida_source=entity)**（Experts），每个输入数据只选择和激活其中的一部分专家模型进行处理，从而减少计算量，提高训练和推理速度。‌MoE的概念在1991年就已提出，训练不容易收敛是其在大模型领域应用的主要障碍。**
 
-![img](https://pic.yupi.icu/yuyi/1739504717871-b1e1b809-d0a6-47fb-b060-7183b83d33ca.png)
+![img](/imgs/29492687a5b69b1c.png)
 
 MoE模型基本结构示意（来源：网络）
 
@@ -124,7 +121,7 @@ R1-Zero展示出自我验证、反思和长链思维推理能力，甚至在推�
 
 相比之下，DeepSeek-R1采用了多阶段训练方法，加入了SFT，而不是采用纯粹的强化学习，R1从一小组精心挑选的示例数据（称为“[冷启动数据](https://zhida.zhihu.com/search?content_id=253521716&content_type=Article&match_order=1&q=冷启动数据&zhida_source=entity)”）进行有监督微调（SFT），再进入强化学习。这种方法改善了 DeepSeek-R1-Zero 的语言可读性和连贯性，同时在推理之外的测试中实现了更好的性能。
 
-![img](https://pic.yupi.icu/yuyi/1739504718443-b8017ec5-b78e-4139-ac86-b9b7586199b5.png)
+![img](/imgs/b2f13e4363c6fe51.png)
 
 DeepSeek-V3整体架构（来源：DeepSeek）
 
@@ -136,7 +133,7 @@ DeepSeek-V3整体架构（来源：DeepSeek）
 
 当使用传统 Transformer 在推断（Inference）过程中计算并生成 Token（词元）时，模型需要读入所有过去 Token 的上下文，以决定接下来输出什么Token。最直观的方法就是简单的再次进行一次包括所有过去 Token 的[前向传播](https://zhida.zhihu.com/search?content_id=253521716&content_type=Article&match_order=1&q=前向传播&zhida_source=entity)（计算）。
 
-![img](https://pic.yupi.icu/yuyi/1739504718004-73dcaf10-1b09-4c97-87dc-350ce0505b68.png)
+![img](/imgs/aff1b636bb5908a2.png)
 
 KV Cache（来源：互联网）
 
@@ -144,7 +141,7 @@ KV Cache（来源：互联网）
 
 目前常用的方法是缓存所有过去 Token 的相关内部状态，主要是[注意力机制](https://zhida.zhihu.com/search?content_id=253521716&content_type=Article&match_order=3&q=注意力机制&zhida_source=entity)中的键（Key）和值（Value）向量。这也是键值缓存（简称 KV 缓存）名称的由来。
 
-![img](https://pic.yupi.icu/yuyi/1739504718848-a5879ade-a777-4579-8c98-ec9f3a1a3034.png)
+![img](/imgs/ba4afbee77c30468.png)
 
 不同注意力机制的对比（来源：DeepSeek V2）
 
@@ -158,13 +155,13 @@ MLA的本质是对KV的有损压缩，提高存储信息密度的同时尽可能
 
 MLA的方法是将KV矩阵转换为低秩形式：将原矩阵表示为两个较小矩阵（相当于潜向量）的乘积，在推断过程中，仅缓存潜向量，而不缓存完整的键KV。这规避了分组查询注意力和多查询注意力的查询的信息损失，从而在降低KV缓存的前提下获得更好的性能。
 
-![img](https://pic.yupi.icu/yuyi/1739504719103-d47530eb-d50a-449c-b9c2-286f07959828.png)
+![img](/imgs/76a096410966ca2c.png)
 
 矩阵的低秩近似（来源：互联网）
 
 另外为了与MLA技术的低秩KV压缩兼容，DeepSeek也将编码方式RoPE 进行了改进，使V2/V3/R1获得了长上下文的外延能力。
 
-![img](https://pic.yupi.icu/yuyi/1739504719549-8614732c-69e5-474c-88d6-e543d0668915.png)
+![img](/imgs/fd4e4df0ad5d213b.png)
 
 MLA方法有效降低KV Cache和训练成本（来源：DeepSeek）
 
@@ -172,7 +169,7 @@ MLA方法有效降低KV Cache和训练成本（来源：DeepSeek）
 
 我们认为MLA是个非常有趣且先进的创新，这一工作建立在对注意力机制深度理解的之上，并且需要进行大胆谨慎的验证。限于算力条件和个人ROI，能够独立完成这一创新的团队并不多。能做出MLA这样的工作，确实是达到国际一线架构水平了。换一个角度看，MLA也是建立在DeepSeek团队的量化金融基因之上，不禁让我们联想到优秀的量化码农对每个矩阵计算的FPGA底层优化。
 
-![img](https://pic.yupi.icu/yuyi/1739504720135-760b9839-5597-4f52-9261-548f7ed65f53.png)
+![img](/imgs/2e31ea5370b1756d.png)
 
 MLA之外的KV Cache优化方法（来源：武汉大学）
 
@@ -203,7 +200,7 @@ DeekSeek采用了“增加共享专家+无辅助损耗负载平衡”的方法�
 
 DeepSeek将专家分为两类：共享专家和路由专家。共享专家始终会被路由，在训练中重点确保路由专家的路由均衡。
 
-![img](https://pic.yupi.icu/yuyi/1739504720251-0940d320-39ad-4bfa-96d3-a5674637a881.png)
+![img](/imgs/8f0ed16a001c490f.png)
 
 DeepSeekMoE与传统的多路由和细粒度专家MoE对比（来源：DeepSeek）
 
@@ -219,7 +216,7 @@ MoE架构自1991年提出后，就一直在与Dense架构共生发展。
 
 DeepSeek R1的推出确实大大推动了开源MoE大模型的发展，并为MoE的落地应用提供了更多可能。但是我们也应看到，MoE模型与应用领域高度和TOC（Total Owning Cost，总拥有成本）密切相关，很多场景MoE未必比Dense模型好。
 
-![img](https://pic.yupi.icu/yuyi/1739504721099-5c04e5d6-3dd5-4338-a999-929efa8a99d8.png)
+![img](/imgs/6f598009d30c561b.png)
 
 不同的MoE架构（来源：香港科技大学）
 
@@ -255,7 +252,7 @@ DeepSeek 的优势不仅仅来自于其模型架构。从低比特 FP8 训练到
 
 V3 的训练基于DeepSeek自研的HAI-LLM 框架。HAI-LLM是一个高效、轻量级的训练框架，其设计充分考虑了多种并行策略，包括DP、PP、TP、EP和FSDP的并行模式。
 
-![img](https://pic.yupi.icu/yuyi/1739504720340-ffe7c1bc-91fa-465b-ada9-41d37a216c53.png)
+![img](/imgs/2b12140103b08307.png)
 
 并行模式对比（来源：互联网）
 
@@ -275,7 +272,7 @@ HAI-LLM框架所作的并行改进（来源：中存算）
 
 ### 3.1.2 针对软件并行策略的硬件优化
 
-![img](https://pic.yupi.icu/yuyi/1739504722768-7fee67fb-2fd7-45f0-ab80-1698f3504dd3.png)
+![img](/imgs/508c19d2804fd6d6.png)
 
 低成本的万卡集群架构（来源：DeepSeek）
 
@@ -283,7 +280,7 @@ HAI-LLM框架所作的并行改进（来源：中存算）
 
 ### 3.1.3 针对硬件架构的软件优化
 
-![img](https://pic.yupi.icu/yuyi/1739504721244-e59b15dd-8636-49a1-bc79-c2100183dae2.png)
+![img](/imgs/e2c8782ef7013411.png)
 
 针对硬件架构优化的HFReduce（来源：DeepSeek）
 
@@ -295,13 +292,13 @@ HAI-LLM框架所作的并行改进（来源：中存算）
 
 ### 3.2.1 低比特训练框架的构建
 
-![img](https://pic.yupi.icu/yuyi/1739504721485-24e3cdb2-16f0-4abc-8d79-a297c35fd5c5.png)
+![img](/imgs/7969697b2ca4dd50.png)
 
 FP8与其他数据格式占据空间对比（来源：互联网）
 
 通常的大模型训练会采用BF16（16位浮点）或FP32/TF32（32位浮点）精度作为数据计算和存储的格式，来确保较高的训练精度。相比之下，FP8占用的数据位宽仅为FP32的1/4，可以有力的提升计算速度，降低对存储的消耗。当然，FP8也存在精度不高，容易导致训练失败的潜在问题。
 
-![img](https://pic.yupi.icu/yuyi/1739504722018-6e4163a3-ecd9-4bf3-89f4-1cf7c5167cc3.png)
+![img](/imgs/e4ea8a109a5acf90.png)
 
 FP8训练框架局部方案（来源：DeepSeek）
 
@@ -331,7 +328,7 @@ DeepSeek将中间结果储存计算升级为 FP32（32位浮点），实行高�
 
 该框架中以下组件保持原始精度（例如 BF16 或 FP32）：嵌入模块、MoE 门控模块、归一化算子和注意力算子，以确保模型的动态稳定训练。为保证数值稳定性，以高精度存储主要权重、权重梯度和优化器状态。
 
-![img](https://pic.yupi.icu/yuyi/1739504722056-dedfa96f-b381-47fe-97f7-352c65176808.png)
+![img](/imgs/e72aad62db50beaa.png)
 
 细粒度量化与提高累加精度（来源：DeepSeek）
 
@@ -375,7 +372,7 @@ V3/R1的训练框架中引入DualPipe算法以实现高效的流水线并行性�
 
 DualPipe算法将每个数据块分为四个部分：attention（图中ATTN）、all-to-all dispatch（图中DISPATCH）、MLP 和 all-to-all combine（图中COMBINE）。对于后向块，attention和 MLP 都进一步分为后向输入、后向权重。对于一对前向和后向块，针对通信和计算的过程和瓶颈进行优化。DualPipe采用双向流水线调度，同时从流水线发送前向和后向数据，尽可能提高使用率。
 
-![img](https://pic.yupi.icu/yuyi/1739504722121-883f6efb-a013-4c13-a3fe-22089113988e.png)
+![img](/imgs/ab79781753e83141.png)
 
 DualPipe的流水线（来源：DeepSeek）
 
@@ -387,7 +384,7 @@ V3/R1的训练框架还定制了高效的跨节点All-to-All通信内核，以�
 
 为了保证 DualPipe的计算性能不被通信影响，DeepSeek定制了高效的跨节点 All-to-All 通信内核（包括 dispatching 和 combining），以节省专用于通信的 SM数量。
 
-![img](https://pic.yupi.icu/yuyi/1739504722826-8362d317-5bab-4a88-a55d-ce78845eff6f.png)
+![img](/imgs/d6ccbdc15b7192cb.png)
 
 传统的基于NVSwitch的All-to-All通信结构（来源：互联网）
 
@@ -431,7 +428,7 @@ DeepSeek采用的显存节省技术（来源：中存算）
 
 4）PTX的移植比CUDA移植挑战更大，难以在国产GPU上直接移植。
 
-![img](https://pic.yupi.icu/yuyi/1739504722935-5d089e59-edc1-485b-8b1a-64cb97b43922.png)
+![img](/imgs/31b53d6177f286b5.png)
 
 CUDA与PTX、SASS的层次关系（来源：互联网）
 
@@ -445,7 +442,7 @@ DeepSeek在训练过程中使用PTX，感觉就是量化码农用C语言写交�
 
 在这里面，NVLink主要负责芯片间（C2C）的通信，而Infiniband负责节点间（服务器间）通信。如果使用PCIe进行C2C通信，带宽远不如NVLink。
 
-![img](https://pic.yupi.icu/yuyi/1739504723720-366b3ee6-df3c-41e5-9796-6fd43ebb30c7.png)
+![img](/imgs/c90d7f833b5571a7.png)
 
 NVLink+Infinband互连（来源：英伟达）
 
@@ -459,7 +456,7 @@ NVLink+Infinband互连（来源：英伟达）
 [陈巍：DeepSeek是否有国运级的创新？从V3到R1的架构创新与误传的万字长文分析（下）162 赞同 · 9 评论文章](https://zhuanlan.zhihu.com/p/21755758234)
 
 
-![img](https://pic.yupi.icu/yuyi/1739504723170-75db169f-eb34-4864-81e7-1771d3c6d558.png)
+![img](/imgs/7e778cc5b5c5e41e.png)
 
 ## 4 V3的训练流程
 
@@ -467,7 +464,7 @@ DeepSeek的R1是以V3为基础构建的（冷启动）。如果想深入理解R1
 
 在预训练阶段后，对DeepSeek-V3 进行了两次上下文长度扩展，第一阶段将最大上下文长度扩展到32K，第二阶段进一步扩展到128K。然后在 DeepSeek-V3的基础模型上进行包括有监督精调 (SFT) 和强化学习(RL)在内的后训练，使其更贴近人类的偏好。
 
-![img](https://pic.yupi.icu/yuyi/1739504723701-9dba35c9-ac9c-4d3a-9163-d2cb4ad9699d.png)
+![img](/imgs/35c78da687c995c2.png)
 
 DeepSeek-V3训练流程（来源：中存算）
 
@@ -491,7 +488,7 @@ DeepSeek-V3 总共包含 671B参数，其中每个Token激活了37B。在路由�
 
 高质量的数据结构与数据投喂顺序，其实是大模型性能提升的关键。可惜DeepSeek并没有给出预训练数据更具体的构建方法。
 
-![img](https://pic.yupi.icu/yuyi/1739504723778-ebd8e76b-f049-41e4-bf55-50696d76a16d.png)
+![img](/imgs/6b049b36a446360b.png)
 
 Fill-in-Middle方法（来源：互联网）
 
@@ -535,7 +532,7 @@ V3的强化学习包括奖励模型与组相对策略优化（GRPO）。
 
 大模型的训练通常用无监督或有监督进行预训练，然后通过有监督精调（SFT）进一步学习。然而SFT有时难以将人类的偏好显式地整合进去，这时就需要强化学习来进行精调。在以往的大模型训练中一般使用PPO（Proximal Policy Optimization）来形成梯度策略。PPO的代价在于需要维护较大的价值网络（也是一个神经网络），需要占用较大的显存与计算资源。
 
-![img](https://pic.yupi.icu/yuyi/1739504724024-89e259ad-d548-4e2c-965f-21b11dc381a2.png)
+![img](/imgs/92970304d7b2df7f.png)
 
 GRPO与PPO对比（来源：DeepSeek）
 
@@ -575,7 +572,7 @@ R1-Zero的训练过程具有重要意义：
 
 2）格式奖励（Format rewards）。奖励模型将其思考过程置于“`<think>`”和“`</think>`”标签之间。
 
-![img](https://pic.yupi.icu/yuyi/1739504724564-16c630a6-8fe8-4e46-a7e5-08b7c0a5633a.png)
+![img](/imgs/48223edc4c5fd5d0.png)
 
 DeepSeek的准确度奖励与格式奖励（来源：互联网）
 
@@ -591,7 +588,7 @@ DeepSeek-R1 的训练过程分为4个阶段，包括使用数千高质量CoT示�
 
 两个SFT阶段进行推理和非推理能力的能力植入，两个强化学习阶段旨在泛化学习推理模式并与人类偏好保持一致。
 
-![img](https://pic.yupi.icu/yuyi/1739504724606-f48071cb-6b06-4167-84d7-022c2b2ac3ad.png)
+![img](/imgs/6f7bed384de88c5a.png)
 
 DeepSeek-R1训练流程（来源：中存算）
 
@@ -621,7 +618,7 @@ DeepSeek-R1训练流程（来源：中存算）
 
 **拒绝采样（Rejection Sampling）是一种**[**蒙特卡洛方法**](https://zhida.zhihu.com/search?content_id=253521716&content_type=Article&match_order=1&q=蒙特卡洛方法&zhida_source=entity)**，和重要性采样一样，都是在原始分布难以采样时，用一个易于采样的建议分布进行采样，通过拒绝原始分布之外的采样数据来获得采样结果。拒绝采样只是为了解决目标分布采样困难问题，该方法需要原始分布是已知的。**
 
-![img](https://pic.yupi.icu/yuyi/1739504724694-43f72ddf-a9a7-43bc-8db4-971d54582374.png)
+![img](/imgs/5443e0271886f3c3.png)
 
 拒绝采样示意（来源：互联网）
 
@@ -670,7 +667,7 @@ DeepSeek-R1训练流程（来源：中存算）
 
 **蒸馏是将复杂的大型神经网络压缩为更小、更简单的神经网络，同时尽可能多的保留结果模型的性能的过程。此过程涉及训练较小的“学生“神经网络，通过其预测或内部表示的精调来学习模拟更大、更复杂的“教师”网络的行为。**
 
-![img](https://pic.yupi.icu/yuyi/1739504725022-cf60eb36-a7ea-4b02-9e6a-6ac056e98462.png)
+![img](/imgs/f9d9e47128cd820d.png)
 
 模型蒸馏方法（来源：互联网）
 
@@ -695,19 +692,19 @@ DeepSeek-R1-Distill模型（来源：DeepSeek）
 
 1）根据前面分析，目前主力的专业行业应用仍是使用Dense模型，能部署MoE模型的通用AI巨头早已下场完成部署，从目前的应用比例来看，使用Dense模型的依然占据应用主体。对于Dense模型（实际上是单专家的特例），超过对等算力的单卡大显存或扩展存储容易形成浪费。
 
-![img](https://pic.yupi.icu/yuyi/1739504725095-e483a2b9-fe22-44f4-bf79-898dc11e72e9.png)
+![img](/imgs/9d9f1d2ec1a49bfe.png)
 
 同样模型性能下MoE模型需要更大的显存（来源：Meta）
 
 2）根据从厂商和V3论文获得的实际部署方案，为保证MoE部分不同专家之间的负载均衡，会将共享专家和高负载的细粒度专家在集群的不同GPU做多个复制，让GPU把更多的热数据（发给共享专家的）跑起来，V3部署中每个GPU大概托管9个专家。如果考虑这9个专家中有一个是参数最多的共享专家，那么事实上每块GPU上的空闲细粒度专家占据的参数总和可能不超过单块GPU上总参数量的1/3。
 
-![img](https://pic.yupi.icu/yuyi/1739504725855-8b257ad1-bd64-407d-b3df-7a8c278cb00a.png)
+![img](/imgs/b14e9ed162b06b55.png)
 
 MoE的跨GPU部署模式（来源：微软）
 
 3）从成本上看，可能把一部分专家放到CPU上更划算。我们认为MoE上的专家可以分为高频专家、中频专家，低频专家。高频专家和中频专家搭配部署在GPU上比较合适，低频专家调度很少，更适合放在服务器上已有的闲置CPU的内存上（CPU上的标准内存比GPU的HBM便宜很多，扩展性更好），以充分利用全服务器的算力降低综合成本。
 
-![img](https://pic.yupi.icu/yuyi/1739504725883-c72d8b82-05a4-4f37-a0ad-d91d44a96541.png)
+![img](/imgs/e0b7f131408a6a9e.png)
 
 MoE模型的GPU+CPU混合部署（来源：Meta）
 
@@ -772,7 +769,7 @@ DeepSeek的进步和成果，也给国产AI芯片的发展提供了一些启示�
 
 上篇请看：[陈巍：DeepSeek是否有国运级的创新？从V3到R1的架构创新与误传的万字长文分析（上）438 赞同 · 26 评论文章](https://zhuanlan.zhihu.com/p/21208287743)
 
-![img](https://pic.yupi.icu/yuyi/1739504725833-d2ad18c6-cf77-48e8-b561-7ab66e11e278.png)
+![img](/imgs/1e8223aee89c81b9.png)
 
 
 > 来源：https://zhuanlan.zhihu.com/p/22496725607?utm_source=chatgpt.com

@@ -3,17 +3,13 @@ title: "不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见�
 summary: "共收录 7 条 AI 行业资讯，如不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵；不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵等。"
 order: 84
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://www.qbitai.com/2025/07/303502.html)
 
 
 中外技术节哪家强？
@@ -31,7 +27,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 **今年6月30日至7月4日，硬核少年技术节已经办到第四届了，并且在北京、杭州两地同步举办**，一如既往不讲排场，讲真章。
 
-![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://pic.code-nav.cn/post_picture/1610518142000300034/TCbhTnV5iaPX3Z9v.webp)
+![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](/imgs/810922c8766328a7.webp)
 
 虽然这已经是淘天集团第四次办技术节，但依然年年起新潮，肉眼看得到的自我进化。
 
@@ -61,7 +57,7 @@ AI展示场是一个巨大的技术市集。
 
 诸如此类的技术，在现场统统摆出来，**直观展示淘天AI赋能电商各场景的最新实践**。
 
-![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://pic.code-nav.cn/post_picture/1610518142000300034/G9ohtXHEKPDDAuES.webp)
+![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](/imgs/98e27517ae0c093b.webp)
 
 不得不提的是，**开幕式上，淘天集团公布了AIGX技术体系的多项最新进展**。
 
@@ -93,7 +89,7 @@ AI展示场是一个巨大的技术市集。
 
 在AI狼人杀过程中，参赛者们需要自己训练AI Agent，让他们扮演预言家、女巫、村民等角色，并且各自制定游戏策略，通过语言生成与逻辑推理进行刺激的悍跳、站边、反向操作，经历“语言伪装-信息博弈-投票决策”的全流程对抗。
 
-![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://pic.code-nav.cn/post_picture/1610518142000300034/TIaMYRxGEHNbvmWl.webp)
+![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](/imgs/7e08700c0b3be2b8.webp)
 
 AI狼人杀原始设置为中文语境，采用经典狼人杀6人局规则*（预言家1/女巫1/狼人2/平民2）*，支持动态策略调整，比拼的是AI Agent在语言理解、社交推理与策略演化等多方面的能力。
 
@@ -127,7 +123,7 @@ AI狼人杀原始设置为中文语境，采用经典狼人杀6人局规则*（�
 
 RecGPT融合了多模态认知、用户行为分析，以及对世界知识和实时热点的理解，能够精准捕捉用户长期兴趣和动态需求，还能结合消费者自身情况推理出商品的推荐理由。
 
-![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://pic.code-nav.cn/post_picture/1610518142000300034/REdlTNoNzuFeHzvb.webp)
+![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](/imgs/37febf03bac771d8.webp)
 
 以前，手淘的“猜你喜欢”更多是“看后推”“搜后推”，**现在RecGPT会根据既往消费习惯、所在地区特色、季节需求等，在用户尚未意识到需求时，提前预判并给出贴心建议**。
 
@@ -159,7 +155,7 @@ AIGR、AIGC的进展只是AIGX技术体系的一个切片。
 
 **“朝气”与“匠心”，就是技术副总裁、算法技术负责人，阿里妈妈CTO郑波对这一气质的精炼概括。**
 
-![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://pic.code-nav.cn/post_picture/1610518142000300034/HOYkjmoD3MSwxrR1.webp)
+![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](/imgs/675681775fa1cef9.webp)
 
 其中，**朝气是一种心态也是一种氛围**。
 
@@ -187,7 +183,6 @@ AIGR、AIGC的进展只是AIGX技术体系的一个切片。
 >
 > 欢迎大家预约直播观看！
 
-![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](https://pic.code-nav.cn/post_picture/1610518142000300034/1WADZ0s6xblADxx8.webp)
+![不走寻常路的淘天技术节：AI狼人杀、Poster路演、博见社轮番上阵](/imgs/3e3298adb599b2a2.webp)
 
 
-*版权所有，未经授权不得以任何形式转载及使用，违者必究。*

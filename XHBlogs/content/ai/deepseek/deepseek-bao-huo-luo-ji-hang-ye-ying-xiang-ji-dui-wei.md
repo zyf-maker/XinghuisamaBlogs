@@ -3,15 +3,12 @@ title: "DeepSeek 爆火逻辑、行业影响及对未来AI发展的启示"
 summary: "1. DeepSeek的核心竞争力"
 order: 102
 level: "进阶"
-tags: ["技术解析", "转载", "AI"]
+tags: ["技术解析"]
 updated: "2026-10-22"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek 爆火逻辑、行业影响及对未来AI发展的启示》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 一、DeepSeek与国内外模型的优势与劣势分析  
 

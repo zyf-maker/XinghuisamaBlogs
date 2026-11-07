@@ -3,35 +3,32 @@ title: "Meta 深夜开源 Llama 4！首次采用 MoE，惊人千万 token 上下
 summary: "共收录 3 条 AI 行业资讯，如人工智能；GPU等。"
 order: 66
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2026-10-22"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Meta 深夜开源 Llama 4！首次采用 MoE，惊人千万 token 上下文，竞技场超越 DeepSeek》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 万万没想到。Meta 选择在周六日，发布了最新 AI 模型系列 ——Llama 4，这是其 Llama 家族的最新成员。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/NZh1Fxddxd02VSBM.webp" alt="" width="100%" />
+<img src="/imgs/9d09e34a342ca426.webp" alt="" width="100%" />
 
 该系列包括 Llama 4 Scout、Llama 4 Maverick 和 Llama 4 Behemoth。所有这些模型都经过了大量未标注的文本、图像和视频数据的训练，以使它们具备广泛的视觉理解能力。
 
 Meta GenAI 负责人 Ahmad Al-Dahle 表示，Llama 4 展示了 Meta 对开源 AI、整个开源 AI 社区的长期承诺以及坚定不移的信念 —— 开放系统将产出最好的小型、中型和即将出现的前沿大模型。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/olPCqIeVLrboWERM.webp" alt="" width="100%" />
+<img src="/imgs/d6c22d51091e94d5.webp" alt="" width="100%" />
 
 谷歌 CEO 劈查伊不禁感叹，[人工智能](https://cloud.tencent.com/product/ai-class?from_column=20065&from=20065)世界永远不无聊，恭喜 Llama 4 团队，继续前进！
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/rm0wyEVzkWCmO5GN.webp" alt="" width="100%" />
+<img src="/imgs/f7667e9d0142f5a7.webp" alt="" width="100%" />
 
 在大模型竞技场（Arena），Llama 4 Maverick 的总排名第二，成为第四个突破 1400 分的大模型。其中开放模型排名第一，超越了 DeepSeek；在困难提示词、编程、数学、创意写作等任务中排名均为第一；大幅超越了自家 Llama 3 405B，得分从 1268 提升到了 1417；风格控制排名第五。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/mbX9CddoMznCJpof.webp" alt="" width="100%" />
+<img src="/imgs/c95dcb8e6a79e7f8.webp" alt="" width="100%" />
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/DIegOg98wou5pKdn.webp" alt="" width="100%" />
+<img src="/imgs/0e18b09473549457.webp" alt="" width="100%" />
 
 那么 Llama 4 模型系列有何特点呢？具体而言：
 
@@ -47,7 +44,7 @@ Llama 4 Behemoth 是 Meta 目前最强大的模型之一，也是世界上最智
 
 好消息是，用户现在就可以在 llama.com 和 Hugging 上下载 Llama 4 Scout 和 Llama 4 Maverick 最新模型。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/9Pbj3qr0Pugjvsui.webp" alt="" width="100%" />
+<img src="/imgs/906bebc6b0f7fd8e.webp" alt="" width="100%" />
 
 所有 Llama 4 模型均采用原生多模态设计，比如上传一张图像，你可以问关于这张图像的任何问题
 
@@ -57,11 +54,11 @@ Llama 4 Scout 支持长达 1000 万 token 的上下文，这是目前行业内�
 
 Llama 4 在图像 grounding 方面也是一流的，能够将用户提示与相关的视觉概念对齐，并将模型响应锚定到图像中的区域。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/dQLGATEior1zgFDU.webp" alt="" width="100%" />
+<img src="/imgs/0c5eb1fcd2ea5379.webp" alt="" width="100%" />
 
 Llama 4 还经过预训练和微调，能够理解 12 种语言的无与伦比的文本，支持全球开发和部署。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/2Xxr3oRk4SFfsGjs.webp" alt="" width="100%" />
+<img src="/imgs/8520d16a711ef38c.webp" alt="" width="100%" />
 
 **预训练**
 
@@ -69,7 +66,7 @@ Meta 在构建下一代 Llama 模型时，在预训练阶段尝试了多种新�
 
 首先，**这是 Meta 首次采用混合专家（Mixture of Experts, MoE）架构**。在 MoE 模型中，单个 token 仅激活总参数的一部分。Meta 表示，MoE 架构在训练和推理时计算效率更高，在固定训练 FLOPs 预算下，相比密集模型提供更高的质量。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/ztQPiKKzKu4fvqP9.webp" alt="" width="100%" />
+<img src="/imgs/95023af1dce91219.webp" alt="" width="100%" />
 
 以 Llama 4 Maverick 模型为例，该模型拥有 170 亿激活参数和 4000 亿总参数。Meta 采用交替的密集层和混合专家（MoE）层来提高推理效率。在 MoE 层中，他们使用了 128 个路由专家和一个共享专家。每个 token 都会被发送到共享专家以及 128 个路由专家中的一个。
 
@@ -103,7 +100,7 @@ Llama 4 Maverick 在图像和文本理解方面提供了无与伦比、行业领
 
 Llama 4 Maverick 包含 170 亿激活参数、128 个专家和 4000 亿总参数，相比 Llama 3.3 70B，以更低的价格提供了更高的质量。由下表可知，Llama 4 Maverick 是同类中最佳的多模态模型，在编码、推理、多语言、长上下文和图像基准测试中，其性能超过了类似模型如 GPT-4o 和 Gemini 2.0，并且在编码和推理方面与规模更大的 DeepSeek v3.1 具有竞争力。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/Ilusha7l6FSYjYh8.webp" alt="" width="100%" />
+<img src="/imgs/6c6b5ee46dc0e281.webp" alt="" width="100%" />
 
 较小模型 Llama 4 Scout 是一款通用型模型，拥有 170 亿激活参数、16 个专家和 1090 亿总参数，能够在其所属类别中提供最先进的性能。Llama 4 Scout 将支持的上下文长度从 Llama 3 的 128K 大幅提升至业界领先的 1000 万 token。这为多文档摘要、解析广泛用户活动以实现个性化任务以及推理庞大代码库等应用提供了更多可能性。
 
@@ -111,9 +108,9 @@ Llama 4 Scout 在预训练和后训练中均使用 256K 上下文长度，使基
 
 Llama 4 架构的关键创新之一是使用无位置嵌入的交错注意力层（interleaved attention layers），并通过推理时的温度缩放来增强长上下文泛化能力。这种架构被称为 iRoPE 架构，其中 i 代表交错（interleaved）注意力层，强调其支持无限上下文长度的长期目标；RoPE 指大多数层中使用的旋转位置嵌入。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/cfCiNT5dwnYGawHq.webp" alt="" width="100%" />
+<img src="/imgs/b43f41dce4d55278.webp" alt="" width="100%" />
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/usuVnEjcuadSu534.webp" alt="" width="100%" />
+<img src="/imgs/bd88299d42e5684e.webp" alt="" width="100%" />
 
 Meta 对两款模型进行了广泛的图像和视频帧静止图像训练，以赋予它们广泛的视觉理解能力，包括对时序活动及相关图像的理解。这使得模型能够在多图像输入和文本提示下轻松进行视觉推理和理解任务。这些模型在预训练时最多支持 48 张图像，并且在后训练中可以支持 8 张图像，结果良好。
 
@@ -121,7 +118,7 @@ Llama 4 Scout 在图像定位方面表现卓越，能够将用户提示与相关
 
 此外，Llama 4 Scout 在编码、推理、长上下文和图像基准测试中超越了类似模型，并且比所有之前的 Llama 模型表现更强。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/nf0J197YjWF8yk7A.webp" alt="" width="100%" />
+<img src="/imgs/07219a880f2ad83f.webp" alt="" width="100%" />
 
 **将 Llama 推向新的尺度：2T Behemoth**
 
@@ -129,7 +126,7 @@ Llama 4 Behemoth 预览版是一个教师模型，也是一个多模态混合专
 
 在数学、多语言和图像基准测试中，它提供了非推理模型的最先进性能，是教授较小 Llama 4 模型的完美选择。
 
-<img src="https://pic.code-nav.cn/post_picture/1619930914211520514/hUTxkLXhkdIsWyHW.webp" alt="" width="100%" />
+<img src="/imgs/26ad610f00321d9e.webp" alt="" width="100%" />
 
 对一个拥有两万亿参数的模型进行后训练是一个巨大的挑战，这要求研究者从数据规模开始，彻底重新设计和改进训练方案。为了最大化性能，Meta 不得不对监督微调（SFT）数据进行 95% 的剪枝，而较小模型的剪枝比例为 50%。这一举措是为了在质量和效率上取得必要的平衡。Meta 还发现，先进行轻量级监督微调（SFT），再进行大规模强化学习（RL），能够显著提升模型的推理和编码能力。
 

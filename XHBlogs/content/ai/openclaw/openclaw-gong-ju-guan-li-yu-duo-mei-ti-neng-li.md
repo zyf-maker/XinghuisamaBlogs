@@ -3,15 +3,12 @@ title: "OpenClaw 工具管理与多媒体能力"
 summary: "操控浏览器、文字转语音、发图片发视频"
 order: 10
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-20"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 工具管理与多媒体能力》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。OpenClaw 内置了很多工具，但默认并不是全部开启的。这篇教程教你怎么管理工具的开关，以及如何解锁文字转语音、发送图片视频等多媒体能力。
 
@@ -24,7 +21,7 @@ OpenClaw 的工具分为多个类别，比如 EXEC（执行命令）、WRITE（�
 
 可以选择预设工具组合，也可以单独开关某个工具。比如担心 AI 误操作你电脑上的文件，可以关闭文件写入和修改等工具。
 
-![](https://pic.yupi.icu/1/1773892633607-77e420a9-349d-431b-ac04-7d5db7fc03fc.png)
+![](/imgs/fbab8a229c3954a8.png)
 
 除了在 Web 控制台管理工具，你也可以通过配置文件 `openclaw.json` 的 `tools` 字段来控制工具的开关。工具权限控制是安全的重要环节，建议只开启你需要的工具，减少 AI 误操作的风险。
 
@@ -36,21 +33,21 @@ OpenClaw 的工具分为多个类别，比如 EXEC（执行命令）、WRITE（�
 
 默认是不可以操作浏览器的：
 
-![](https://pic.yupi.icu/1/1773892961341-974d02bb-485b-422a-98d1-b131196450ef.png)
+![](/imgs/e82106e67023c2e3.png)
 
 开启 Browser 工具并保存：
 
-![](https://pic.yupi.icu/1/1773893064239-70acdd34-62ec-4a31-8045-7e7651ea3404.png)
+![](/imgs/b76e64d7ce835e0d.png)
 
 这次它成功操作了浏览器，帮我访问了网站、导航到了指定页面并完成了截图。
 
-![](https://pic.yupi.icu/1/1773893427843-2aeafde7-4fb7-4e4e-b0dc-cf1b4a4c2e81.png)
+![](/imgs/9cef42798662991b.png)
 
 有了浏览器工具，你还可以让 AI 帮你自动化各种网页操作，比如自动填表单、批量采集信息等。
 
 如果你安装了插件，可能会获取到更多工具。比如安装飞书插件后，可以按需让 AI 使用飞书的功能，比如操作日历、多维表格、文档、任务等等：
 
-![](https://pic.yupi.icu/1/1773893614509-a6488f29-7611-4d40-9fa9-de374718493d.png)
+![](/imgs/e4378cf53bf99b71.png)
 
 
 ## TTS 文字转语音
@@ -61,7 +58,7 @@ OpenClaw 内置了微软免费的 Edge TTS 文字转语音服务，不需要额�
 
 首先，在代理的工具管理中开启 `TTS`（文字转语音工具）和 `MESSAGE`（消息发送工具）并保存。TTS 负责把文字转成语音文件，MESSAGE 负责把语音文件发送给你。
 
-![](https://pic.yupi.icu/1/1773903118851-c854ccc6-39b0-43ca-936e-6c848fd80caa.png)
+![](/imgs/097369d018e7d88b.png)
 
 注意，还需要做一些配置，否则生成的音频文件可能为空！
 
@@ -99,13 +96,13 @@ openclaw gateway restart
 
 小龙虾调用 TTS 工具获得了语音文件，但是 AI 就卡在这里了，大概率不会把音频文件发送给你：
 
-![](https://pic.yupi.icu/1/1773899122840-7c362884-6949-4caa-bced-b3763b3d09bc.png)
+![](/imgs/7e6d4da48d2bb332.png)
 
 因为 TTS 只负责文本转语音，如果要把语音文件以「语音气泡消息」的方式发送给飞书，还必须控制语音文件的输出格式为 `.opus` 格式。
 
 飞书的底层代码是这样判断的：只有文件扩展名为 `.opus` 的音频，才会以语音气泡消息的方式发送，否则只会当作文件附件。
 
-![](https://pic.yupi.icu/1/1773899350094-794b0801-223a-4674-9481-6236df070bbd-20260319211755133.png)
+![](/imgs/273da44d1d8099d9.png)
 
 可以跟小龙虾说下面这句话，这是我目前跑出来成功率最高、配置最快的方法：
 
@@ -118,17 +115,17 @@ openclaw gateway restart
 如果任务正常执行，把这套流程保存到长期记忆中。
 ```
 
-![](https://pic.yupi.icu/1/1773902948904-9c6ab1ed-537d-4e1b-9f90-ce9af94ab9a9.png)
+![](/imgs/31a42653ca2a8f8a.png)
 
 如果命令执行卡住，可能是 ffmpeg 下载太慢了，可以到 [官网](https://ffmpeg.org/download.html) 手动下载。
 
 发完这条消息后，记忆文件也更新了，下次发送语音就非常方便了：
 
-![](https://pic.yupi.icu/1/1773902998684-9a548ed4-0b11-4012-b176-b09c0976c5b3.png)
+![](/imgs/d326bb1b4ad4529b.png)
 
 爽用！
 
-![](https://pic.yupi.icu/1/1773903216786-c30204ef-e51d-4d41-a6da-5d0ac4bc4d84.png)
+![](/imgs/3152088f8898039c.png)
 
 对了，OpenClaw 在聊天中还支持 `/tts` 斜杠命令来控制语音行为（比如 `/tts on`、`/tts off`），但我感觉不是很好用，一般也不用每句话都回复语音，需要的时候直接跟 AI 说 “发语音” 就好了。
 

@@ -3,15 +3,12 @@ title: "DeepSeek一句话搞定修图难题"
 summary: "家人们！！今天解锁了deepseek打工新姿势 让deepseeker帮我写PS脚本，直接一键get日式小清新照片🎞️ 操作很简单，思路一下就打开了！"
 order: 22
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek一句话搞定修图难题》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 家人们！！今天解锁了deepseek打工新姿势 让deepseeker帮我写PS脚本，直接一键get日式小清新照片🎞️ 操作很简单，思路一下就打开了！ 
 

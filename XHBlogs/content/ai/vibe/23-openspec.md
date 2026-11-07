@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenSpec：轻量规范开发框架》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 在前面的文章中，我们学习了 Spec-kit 规范驱动开发框架。但你可能会觉得 Spec-kit 的流程太复杂了，有没有更轻量的选择呢？
@@ -27,7 +24,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 它的核心理念是把规范文档作为代码库的一部分，每次改功能都 **先写变更提案** => 确认后再实现 => 实现完再把变更归档到规范文档中，让文档和代码始终保持同步。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE6%E5%A4%A7.jpeg)
+![](/imgs/0e25e00dbfd307ce.jpg)
 
 
 
@@ -53,7 +50,7 @@ openspec init
 
 初始化过程中会让你选择要集成的 AI 工具（比如 Claude Code、Cursor 等），我这里选择 Cursor。
 
-![](https://pic.yupi.icu/1/image-20260116163202471.png)
+![](/imgs/6ec352e856e8e1d1.png)
 
 运行命令后，OpenSpec 会自动在你的项目中生成一个 `openspec/` 目录，里面包含：
 
@@ -62,11 +59,11 @@ openspec init
 - ⭐️ `openspec/AGENTS.md`：让 AI 编程助手使用 OpenSpec 进行规范驱动开发的操作指南，包含了如何创建变更提案、编写需求规范、验证和归档变更的完整工作流程。
 - `openspec/project.md`：当前项目的上下文说明（用来记录项目的信息）
 
-![](https://pic.yupi.icu/1/image-20260116164308965.png)
+![](/imgs/c07d2ccb62d98d09.png)
 
 此外，还会根据你选择的 AI 编程工具，生成对应的命令文件，比如 Cursor 的：
 
-![](https://pic.yupi.icu/1/image-20260116173814973.png)
+![](/imgs/d13f0b9f9e83f8c7.png)
 
 有了这些文件，我们就可以开始规范化的开发流程了。
 
@@ -90,7 +87,7 @@ openspec init
 /openspec:proposal 添加功能：根据名称和邮箱搜索用户
 ```
 
-![](https://pic.yupi.icu/1/image-20260116171714070.png)
+![](/imgs/b657a482ec61a4ea.png)
 
 AI 会给这个功能创建一个独立的目录 `openspec/changes/add-user-search/`，目录下创建一系列文档：
 
@@ -98,7 +95,7 @@ AI 会给这个功能创建一个独立的目录 `openspec/changes/add-user-sear
 - `tasks.md`：实施步骤的任务分解
 - `specs/…/spec.md`：需求变更的具体内容
 
-![](https://pic.yupi.icu/1/image-20260116171953809.png)
+![](/imgs/eb089289f7b210bb.png)
 
 
 
@@ -112,7 +109,7 @@ openspec validate add-user-search    # 验证格式是否正确
 openspec show add-user-search        # 查看详细内容
 ```
 
-![](https://pic.yupi.icu/1/image-20260116172259055.png)
+![](/imgs/c8e7321187829d6b.png)
 
 
 
@@ -144,11 +141,11 @@ AI 会更新规范和任务列表，直到大家达成一致。
 
 AI 会按照 `tasks.md` 中的任务列表逐一实现，并标记完成状态。
 
-![](https://pic.yupi.icu/1/image-20260116172654371.png)
+![](/imgs/03905e1d7a0b27fe.png)
 
 很快生成完成，AI 的输出非常整齐，所有改动一目了然：
 
-![](https://pic.yupi.icu/1/image-20260116172905921.png)
+![](/imgs/3db4104ab73e388e.png)
 
 
 
@@ -172,7 +169,7 @@ AI 会按照 `tasks.md` 中的任务列表逐一实现，并标记完成状态�
 openspec archive add-user-search --yes
 ```
 
-![](https://pic.yupi.icu/1/image-20260116172957759.png)
+![](/imgs/00df20a90fd9e98d.png)
 
 这个命令会：
 
@@ -180,7 +177,7 @@ openspec archive add-user-search --yes
 - 将需求变更自动合并到 `openspec/specs/` 主规范中
 - 保持文档和代码的同步
 
-![](https://pic.yupi.icu/1/image-20260116174247313.png)
+![](/imgs/76aad4acf9da74e0.png)
 
 这样一来，通过 `openspec/changes/` 的历史记录，你可以随时追溯每次变更的来龙去脉。
 

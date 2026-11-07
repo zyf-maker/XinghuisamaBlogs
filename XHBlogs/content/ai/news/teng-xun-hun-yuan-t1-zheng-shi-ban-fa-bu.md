@@ -3,23 +3,20 @@ title: "腾讯混元 T1 正式版发布"
 summary: "腾讯混元 T1 正式版发布，由程序员鱼皮整理。"
 order: 40
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《腾讯混元 T1 正式版发布》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 2025 年 3 月 21 日，腾讯正式推出自研深度思考模型混元 T1 正式版。这款基于 Hybrid-Mamba-Transformer 融合架构的推理大模型，不仅以“首字秒出、吐字速度 60-80 tokens/s”刷新行业效率标杆，更在数学、逻辑推理等硬核领域展现了逼近人类专家的能力。其发布标志着大模型技术从“通用能力竞赛”迈入“垂直场景效能革命”的新阶段。架构创新 传统大模型受限于 Transformer 架构的
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-ae54d37e.png)
+![](/imgs/093d298e2c4bceb2.png)
 
 2025 年 3 月 21 日，腾讯正式推出自研深度思考模型混元 T1 正式版。这款基于 Hybrid-Mamba-Transformer 融合架构的推理大模型，不仅以“首字秒出、吐字速度 60-80 tokens/s”刷新行业效率标杆，更在数学、逻辑推理等硬核领域展现了逼近人类专家的能力。其发布标志着大模型技术从“通用能力竞赛”迈入“垂直场景效能革命”的新阶段。
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-536860f5.png)
+![](/imgs/76eff988e127046e.png)
 
 ## **架构创新**
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这一架构让混元 T1 在保持顶级性能的同时，输入定价低至 **1 元/百万 tokens**，输出价格仅 4 元，创行业成本新低。
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-e525536e.png)
+![](/imgs/de427a70139b1ea1.png)
 
 ## **性能突破**
 
@@ -47,7 +44,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 特别值得关注的是其中文能力——在 CEval 中文基准测试中，其表现大幅超越 GPT-4.5，与 DeepSeek R1 持平，打破了“英文模型更强”的固有认知。
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-19af4989.png)
+![](/imgs/576f7633ceeb8cdb.png)
 
 ## **行业落地**
 
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 3. **工业部署**：在芯片设计场景中，其长文本处理能力使布线优化任务耗时从 9 小时降至 1.5 小时，功耗降低 12%。
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-c56ecc25.png)
+![](/imgs/4535d0045a47c38d.png)
 
 ## **技术普惠**
 
@@ -85,14 +82,14 @@ source: "https://github.com/liyupi/ai-guide"
 
 3. **场景深挖化**：从通用对话转向数学/代码/科学等“高壁垒、高价值”垂直领域，预计到 2026 年，专业推理模型市场规模将突破千亿元。
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-a9bc4176.png)
+![](/imgs/33588fa8bbda584d.png)
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-127b6821.png)
+![](/imgs/282625ccbc5bf0ae.png)
 
 ## 结语
 
 混元 T1 的推出不仅是技术指标的突破，更预示着 AI 产业价值评估体系的转变——当参数规模触及物理极限， **“单位算力效能”与“垂直场景穿透力”** 将成为新的竞争焦点。正如腾讯云 AI 负责人吴运声老师所言：“未来的 AI 竞赛，不是比谁能建更大的模型，而是比谁能用更聪明的架构解决更实际的问题。”在这场静默的革命中，混元 T1 已为行业树立了新的路标。
 
-![](https://developer.qcloudimg.com/editor/image/5421023/20250326-412c179b.png)
+![](/imgs/174c66448daa4261.png)
 
 > 来源：腾讯云开发者社区

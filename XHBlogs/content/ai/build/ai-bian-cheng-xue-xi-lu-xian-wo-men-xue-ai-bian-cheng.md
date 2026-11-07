@@ -3,15 +3,12 @@ title: "AI 编程学习路线：我们学 AI 编程时，到底在学什么？"
 summary: "最近因为身体原因，没办法直播带大家做项目了，唉。。。"
 order: 203
 level: "入门"
-tags: ["入门导读", "转载", "AI"]
+tags: ["入门导读"]
 updated: "2026-09-28"
 readingTime: 12
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 编程学习路线：我们学 AI 编程时，到底在学什么？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 最近因为身体原因，没办法直播带大家做项目了，唉。。。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 正好借这个机会，我系统梳理了一下 AI 编程的完整学习路线，今天分享给大家。
 
-![](https://pic.yupi.icu/1/image-20260520191637710.png)
+![](/imgs/33fc6314eccb08e9.png)
 
 经常听到有同学说：AI 编程不就是对话么？有手就行吧？
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我把它分成了六个阶段，从零基础入门到进阶提升，每个阶段要掌握的内容都不一样，下面一个个来讲。
 
-![鱼皮的 AI 编程学习路线](https://pic.yupi.icu/1/AI%20%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF_compressed.png)
+![鱼皮的 AI 编程学习路线](/imgs/9bf310ea22144e44.png)
 
 ⭐️ 本文对应视频版，8 分钟速通：https://bilibili.com/video/BV1z6LR6tEum
 
@@ -44,13 +41,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 开源地址：https://github.com/liyupi/ai-guide
 
-![](https://pic.yupi.icu/1/image-20260320152009626.png)
+![](/imgs/58e147ebdd239db4.png)
 
 第二个是我录制的[《小白都能学的 AI 编程实战》视频课](https://ai.codefather.cn/course/2087008226460565505)，哪怕没有任何编程基础，也能跟着我用 AI 从 0 跑通完整的项目流程，开发出能上线、能提效、甚至能商用变现的作品。从环境搭建、到做出多个完整项目、再到进阶提升，手把手带你系统学习。课程里还配套了 AI 编程经验技巧大全、技术栈速查手册、Bug 速查手册、大模型原理入门等实用资料。
 
 > 教程指路：https://ai.codefather.cn/course/2087008226460565505
 
-![](https://pic.yupi.icu/1/image-20260528190958881.png)
+![](/imgs/33040dee7b6a1694.png)
 
 这两个资源覆盖了下面学习路线中提到的所有内容，跟着学就对了，不用再到处找教程。
 
@@ -63,11 +60,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 首先你需要理解 AI 编程的基本概念。比如什么是 Vibe Coding、什么是大语言模型、什么是 Token、传统编程和 AI 编程的思维区别是什么。这些概念不复杂，可以阅读本教程的《Vibe Coding 简介》和《Vibe Coding 概念大全》，用最通俗的方式讲解了这些内容，花 10 分钟读一遍就能理解。
 
-![](https://pic.yupi.icu/1/image-20260520171913541.png)
+![](/imgs/76867822cb50b3ce.png)
 
 然后直接动手开干。打开一个 AI 零代码平台，比如 Lovable、美团 NoCode 或者百度秒哒，输入一段需求描述，看着 AI 帮你生成代码、页面展示出来、一键发布到网上。这个过程带来的成就感，就是最好的学习动力。
 
-![](https://pic.yupi.icu/1/image-20260520172103766.png)
+![](/imgs/1cb7b5bd46bb71dc.png)
 
 跑通了第一个项目之后，你会发现 AI 编程的过程其实就是：向 AI 描述需求 → 多轮对话不断优化 → 验证效果并修复问题，循环往复。
 
@@ -82,7 +79,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 目前市面上的 AI 编程工具大致分四类：AI 代码编辑器（如 Cursor、Codex、Trae）、AI 命令行工具（如 Claude Code）、AI 编程辅助插件（如 GitHub Copilot）、AI 零代码平台（入门阶段已经用过了）。
 
-![](https://pic.yupi.icu/1/02_AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E5%9B%9B%E5%A4%A7%E5%88%86%E7%B1%BB_compressed_v1.png)
+![](/imgs/8f3ed3a0233d50e0.png)
 
 
 ### 三大主流工具
@@ -91,15 +88,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 Cursor 是基于 VS Code 的 AI 代码编辑器，界面友好、功能齐全，能够一键切换各种主流模型，是我日常 AI 编程的主力工具。
 
-![](https://pic.yupi.icu/1/1_cursor.png)
+![](/imgs/6068a542d181069d.png)
 
 Codex 是 OpenAI 推出的 AI 编程工具，有桌面端和 CLI 版本，默认使用 GPT 系列模型，性价比很高。
 
-![](https://pic.yupi.icu/1/image-20260520170343111.png)
+![](/imgs/da326d1bfe88a2ae.png)
 
 Claude Code 是终端编程 Agent，处理复杂任务的能力最强，在 SWE-bench 基准测试中拿到了行业最高分。不过它运行在命令行里，上手门槛略高。
 
-![](https://pic.yupi.icu/1/14_claudecode.png)
+![](/imgs/5df007b6edf955f4.png)
 
 如果你是新手，**建议从 Cursor 开始入门**，因为它有完整的可视化界面，代码编辑和审查体验是最好的。
 
@@ -118,7 +115,7 @@ Claude Code 是终端编程 Agent，处理复杂任务的能力最强，在 SWE-
 4. 使用技巧：多 Agent 并行、子 Agent 拆分任务
 5. 自定义配置：规则文件定义 AI 行为规范、项目级约束
 
-![](https://pic.yupi.icu/1/03_AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E4%BA%94%E5%A4%A7%E5%AD%A6%E4%B9%A0%E6%96%B9%E9%9D%A2_compressed_v3.png)
+![](/imgs/46bc593a3183856f.png)
 
 工具不用全学，选 1 ~ 2 个深入掌握就够了，操作逻辑都是相通的。
 
@@ -127,15 +124,15 @@ Claude Code 是终端编程 Agent，处理复杂任务的能力最强，在 SWE-
 
 MCP 相当于给 AI 编程工具装上了「万能插头」，让 AI 能够连接外部服务。比如通过 Figma MCP 读取设计稿生成代码，通过数据库 MCP 查询业务数据，通过联网搜索 MCP 获取最新信息。
 
-![](https://pic.yupi.icu/1/1746710765234-c974bda8-666e-45b3-adc4-ace97cbb8c0a.png)
+![](/imgs/9f67a0874ce68848.png)
 
 Agent Skills 是给 AI 准备的「技能包」。装上文档处理技能，AI 就知道怎么生成 PPT、处理 Excel；装上代码规范技能，它就知道怎么按公司标准写代码。
 
-![](https://pic.yupi.icu/1/1769306811193-2ee3acbc-5e36-46c2-8d08-b2682494fb56.png)
+![](/imgs/f0f1a9289ea4d3de.png)
 
 还有 CLI 命令行工具也越来越值得关注。AI 大模型天生擅长读命令、执行操作，现在大厂纷纷开源了自家产品的 CLI 工具，本质上就是在给 AI 提供操作接口。
 
-![](https://pic.yupi.icu/1/image-20260407131112596.png)
+![](/imgs/8812b69b251f62af.png)
 
 
 ## 三、AI 编程核心技能
@@ -148,7 +145,7 @@ Agent Skills 是给 AI 准备的「技能包」。装上文档处理技能，AI 
 
 我早期做项目的时候，恨不得一条提示词把整个页面全交给 AI 一把梭，结果生成出来的代码问题一大堆。后来我学会了「小步快跑」，一次只让 AI 完成一个小功能，做完验证没问题再继续下一个，效率反而高了很多。
 
-![](https://pic.yupi.icu/1/05_%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%B0%8F%E6%AD%A5%E5%BF%AB%E8%B7%91_compressed_v3.png)
+![](/imgs/d9d917090bd4b015.png)
 
 
 ### 提示词工程
@@ -164,7 +161,7 @@ Agent Skills 是给 AI 准备的「技能包」。装上文档处理技能，AI 
 3. 给 AI 举例子，它会更容易理解
 4. 学会不断追问和迭代
 
-![](https://pic.yupi.icu/1/06_%E6%8F%90%E7%A4%BA%E8%AF%8D%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E8%A6%81%E7%B4%A0_compressed_v1.png)
+![](/imgs/5830d31931490860.png)
 
 
 ### 上下文管理
@@ -173,7 +170,7 @@ Agent Skills 是给 AI 准备的「技能包」。装上文档处理技能，AI 
 
 最重要的是学会使用项目规则文件。建议优先学习通用的 `AGENTS.md` 格式，几乎所有主流 AI 编程工具都支持。在规则文件里写入项目技术栈、编码规范、目录结构说明，AI 生成代码时就会自动遵守这些约定。
 
-![](https://pic.yupi.icu/1/image-20260201145003244.png)
+![](/imgs/4bf33154e018cad8.png)
 
 然后是学会用 @ 引用来引用文件、函数、文档作为上下文，让 AI 基于已有代码生成新代码。
 
@@ -195,7 +192,7 @@ Git 就是 AI 编程时代的「后悔药」。AI 可能改崩你的代码，有
 
 AI 时代，不用把 Git 的每个命令都搞懂，核心是学会 `git add` / `git commit` / `git push` 这三个命令，学会用 `git diff` 查看 AI 改了什么，用 `git checkout` 回退到之前的版本。
 
-![](https://pic.yupi.icu/1/07_Git%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%90%8E%E6%82%94%E8%8D%AF_compressed_v3.png)
+![](/imgs/14f517fbb06b21fd.png)
 
 
 ### 项目开发流程
@@ -206,7 +203,7 @@ AI 时代，不用把 Git 的每个命令都搞懂，核心是学会 `git add` /
 
 注意，如果是在企业中做项目，AI 生成的代码不能直接用，**一定要经过审查**。重点关注业务逻辑是否正确、有没有遗漏错误处理、有没有安全隐患、改动是否影响了其他功能。
 
-![](https://pic.yupi.icu/1/1773743259446-0023e562-efb7-48e0-8930-3de6e475ed4a.png)
+![](/imgs/cd59df2fbdaab87a.png)
 
 还要有基本的安全意识。不要把 API Key 直接写在代码里，AI 推荐的第三方包要验证是否真实存在，用户输入要做校验。
 
@@ -217,7 +214,7 @@ AI 时代，不用把 Git 的每个命令都搞懂，核心是学会 `git add` /
 
 快速部署推荐 Vercel 平台，能够一键部署前端和全栈项目，免费额度就够用了。进阶可以学 Docker 容器化部署、云服务器部署。
 
-![](https://pic.yupi.icu/1/image-20260109111323983.png)
+![](/imgs/971e05f6fa93a9a6.png)
 
 
 ### AI 编程模式
@@ -228,7 +225,7 @@ AI 时代，不用把 Git 的每个命令都搞懂，核心是学会 `git add` /
 
 适合中大型项目，由 Karpathy 在提出 Vibe Coding 后进一步定义。核心思路是你不再自己写代码，而是作为「总指挥」来编排 AI 智能体，设计好系统架构和约束条件，让 AI 去执行实现，你负责审查和验收质量。从随性聊天变成有规划地指挥 AI 干活。
 
-![](https://pic.yupi.icu/1/08_Agentic_Engineering%25E6%2599%25BA%25E8%2583%25BD%25E4%25BD%2593%25E5%25B7%25A5%25E7%25A8%258B_compressed_v3.png)
+![](/imgs/918c179c76466ca6.png)
 
 2）Harness Engineering 驾驭工程
 
@@ -236,7 +233,7 @@ AI 时代，不用把 Git 的每个命令都搞懂，核心是学会 `git add` /
 
 Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就是围绕它搭一整套工作环境和流程，让它跑得又快又稳。
 
-![](https://pic.yupi.icu/1/7_harness_layers-20260520185712885.png)
+![](/imgs/682587bc76fff488.png)
 
 3）SDD 规范驱动开发
 
@@ -246,7 +243,7 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 而 SDD 的思路正好相反：**先把需求写成规范文档，并且把规范文档当作代码的唯一真相来源**。
 
-![](https://pic.yupi.icu/1/09_SDD%25E8%25A7%2584%25E8%258C%2583%25E9%25A9%25B1%25E5%258A%25A8%25E5%25BC%2580%25E5%258F%2591_compressed_v1.png)
+![](/imgs/a0405ac4c116d243.png)
 
 实际开发中可以灵活组合多种模式。做小工具时用 Vibe Coding 快速出活，做正经项目就切到 Agentic Engineering 的思维，项目越大越复杂就越需要 Harness 的工程化方法。想详细了解可以看我的 [Harness Engineering 实战教程](https://mp.weixin.qq.com/s/qdTXCvMA4yI9mTuQv8Zq6A)。
 
@@ -263,7 +260,7 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 当你全栈项目做得比较熟练了，就可以挑战更复杂的项目了。比如在项目中接入 AI 大模型 API，做 AI 对话、AI 内容生成、AI 知识库、AI 数据分析等功能。还可以对接各种第三方服务，比如 Stripe 国际支付、对象存储、短信服务、内容审核等。
 
-![](https://pic.yupi.icu/1/1778558955839-01e86b7c-4a9e-4438-9c93-1157a53a59f4.png)
+![](/imgs/3ea16bda94b3da79.png)
 
 如果你想体系化地学习，可以跟着我的项目教程做。我在 [编程导航](https://www.codefather.cn/post/1797431216467001345) 上有近 30 套保姆级项目教程，含简历写法和面试题解，覆盖了从 AI 编程项目到传统编程项目的各种类型。
 
@@ -271,23 +268,23 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 1）[AI 热点监控工具](https://www.codefather.cn/course/2026625439052627970) 是一个自动化发现并推送 AI 领域前沿热点的全网监控工具，以 Vibe Coding 为核心，实战 MCP 和 Agent Skills 扩展 AI 编程能力，掌握 AI 编程全链路工作流。
 
-![AI 热点监控工具](https://pic.yupi.icu/1285/202603021602038.png)
+![AI 热点监控工具](/imgs/33b0c37d03f86bf9.png)
 
 2）[AI 万能视频下载总结器](https://www.codefather.cn/course/2027618983506640897) 是纯 AI 编程开发的商业级万能视频下载网站，实战 Stripe 海外支付集成、SEO 优化，学会用 AI 编程打造能赚钱的产品。
 
-![AI 万能视频下载总结器](https://pic.yupi.icu/1/AI%20%E4%B8%87%E8%83%BD%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E6%80%BB%E7%BB%93%E5%99%A8%E5%B0%81%E9%9D%A2.png)
+![AI 万能视频下载总结器](/imgs/20ba5d744c7214a0.png)
 
 3）[AI 文档翻译 SaaS 平台](https://www.codefather.cn/course/2014303010343092226) 是以 Vibe Coding 为核心的 Next.js 全栈 SaaS 项目，实战 GitHub App 开发、OpenRouter 统一接入多种 AI 大模型，掌握 AI 编程的完整工作流。
 
-![GitHub 文档翻译工具](https://pic.yupi.icu/1/1769079926879-90640105-2d23-418c-b4b5-e962eab31299-20260225144931498.png)
+![GitHub 文档翻译工具](/imgs/1fbb538f21344b5a.png)
 
 4）[AI 程序员技术练兵场](https://www.codefather.cn/course/1965699176489484289) 是基于 Spring Boot + Vue 的闯关式技术练兵场，AI 模拟产品经理出题、用户拖拽选择技术方案、AI 智能评分，实战 LangChain4j AI 开发框架、结构化输出、对话记忆、工具调用等主流 AI 开发技术。
 
-![AI 程序员技术练兵场](https://pic.yupi.icu/1/image-20260302180856752.png)
+![AI 程序员技术练兵场](/imgs/f5b0e16902ad876e.png)
 
 5）[AI 闯关学习小程序](https://www.codefather.cn/course/2037104890135748610) 是用 AI 编程从 0 开发的微信小程序，用户输入想学的知识，AI 自动联网搜索并生成交互式闯关题目，答完生成学习报告。实战 Taro 跨端开发、Python FastAPI 后端、LangChain AI 应用开发、Tavily 联网搜索、RAG 知识库、Agentic RAG 和微信小程序上线全流程。
 
-![](https://pic.yupi.icu/1/image-20260520165223866.png)
+![](/imgs/00e40467cd2b1335.png)
 
 
 ## 五、进阶提升
@@ -300,13 +297,13 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 特别要注意，用 AI 编程时间长了后，你会遇到一些 **系统性的失败模式**。比如上下文漂移、功能倒退、架构退化、依赖膨胀等。识别这些模式能帮你提前防范，而不是等问题严重了才去补救。
 
-![](https://pic.yupi.icu/1/10_AI%E7%BC%96%E7%A8%8B%E7%B3%BB%E7%BB%9F%E6%80%A7%E5%A4%B1%E8%B4%A5%E6%A8%A1%E5%BC%8F_compressed_v1.png)
+![](/imgs/2b191773ede11633.png)
 
 2）上下文工程
 
 这是进阶版的上下文管理。包括上下文预算设计（哪些信息常驻、哪些按需加载）、决策日志（把踩过的坑记录下来防止重复犯错）、窗口管理策略（什么时候该开新对话、什么时候该沉淀文档）等。
 
-![](https://pic.yupi.icu/1/11_%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%96%B9%E9%9D%A2_compressed_v1.png)
+![](/imgs/4f14fdc3acf0ae02.png)
 
 3）成本管理
 
@@ -314,13 +311,13 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 比如根据任务选择模型、精简规则文件、合理使用工具等等。
 
-![](https://pic.yupi.icu/1/12_AI%E7%BC%96%E7%A8%8B%E6%88%90%E6%9C%AC%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5_compressed_v2.png)
+![](/imgs/7775b2684a3f21ad.png)
 
 4）编程技术基础
 
 有了编程基础能更好地和 AI 协作。不需要系统学完一门语言，但需要对常见技术栈有基本认知，知道这些技术分别是什么、能干什么，这样在和 AI 对话时能更准确地表达需求。
 
-![](https://pic.yupi.icu/1/13_%25E7%25BC%2596%25E7%25A8%258B%25E6%258A%2580%25E6%259C%25AF%25E5%259F%25BA%25E7%25A1%2580%25E8%25AE%25A4%25E7%259F%25A5%25E5%259B%25BE_compressed_v2.png)
+![](/imgs/71fe79d4a61bb516.png)
 
 5）AI 大模型原理入门
 
@@ -328,7 +325,7 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 比如了解 Token 和分词、上下文窗口、温度参数，通俗理解 Transformer 和注意力机制，知道为什么会出现幻觉、为什么有上下文长度限制。
 
-![](https://pic.yupi.icu/1/14_AI%25E5%25A4%25A7%25E6%25A8%25A1%25E5%259E%258B%25E5%258E%259F%25E7%2590%2586%25E5%2585%25A5%25E9%2597%25A8%25E6%25A6%2582%25E5%25BF%25B5_compressed_v2.png)
+![](/imgs/2543f75f538509c8.png)
 
 6）AI 应用开发技术栈
 
@@ -336,7 +333,7 @@ Harness 本意是马具，你可以把 AI 想象成一匹马，这个模式就�
 
 推荐跟着我的 [AI 超级智能体项目](https://www.codefather.cn/course/1915010091721236482) 和 [AI 零代码应用生成平台项目](https://www.codefather.cn/course/1948291549923344386) 学习，能够快速掌握这些主流 AI 开发技术。
 
-![AI 零代码应用生成平台](https://pic.yupi.icu/1285/202603021607812.png)
+![AI 零代码应用生成平台](/imgs/6537cc15b52687c9.png)
 
 7）产品思维和变现
 
@@ -346,7 +343,7 @@ AI 编程最激动人心的地方在于，你能用它做出真正能赚钱的�
 
 强烈建议看一下本教程中的产品变现板块，里面分享了我做过 10 多个自研产品的真实经验。
 
-![](https://pic.yupi.icu/1/image-20260520190929910.png)
+![](/imgs/c22e83116ea2dc69.png)
 
 
 ## 六、持续学习
@@ -359,7 +356,7 @@ AI 编程这个领域变化非常快，几个月前的最佳实践现在可能�
 
 在 [鱼皮 AI 导航](https://ai.codefather.cn) 上有最新 AI 资讯汇总，也可以关注程序员鱼皮公众号，关于 AI 编程值得学习的内容我都会给大家出保姆级教程，帮你紧跟时代。
 
-![](https://pic.yupi.icu/yuyi/image-20260320154026284.png)
+![](/imgs/27aadf71fcfd458c.png)
 
 
 ## 写在最后
@@ -374,6 +371,6 @@ AI 编程这个领域变化非常快，几个月前的最佳实践现在可能�
 
 我的 AI 编程视频课已正式上线，《完整版 AI 编程学习路线》已作为附赠资料提供给购课的学员，可以到鱼皮 AI 导航网站看课：https://ai.codefather.cn/course/2087008226460565505
 
-![](https://pic.yupi.icu/1/b1544a814c2fb312c559e2b0b42ab65d.jpg)
+![](/imgs/2fbf292fe5120b23.jpg)
 
 希望这份学习路线能帮你找到方向，少走弯路，加油！

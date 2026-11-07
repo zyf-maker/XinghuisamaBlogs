@@ -3,19 +3,16 @@ title: "《聪明的机器，复杂的人心》，斯坦福 AI 报告 2025 年�
 summary: "共收录 7 条 AI 行业资讯，如《斯坦福 AI 指数 2025》；OpenAI等。"
 order: 49
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《《聪明的机器，复杂的人心》，斯坦福 AI 报告 2025 年版的 12 个信号》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 斯坦福出了最新的 AI 报告，我们一起来看一下核心思想，或者会给我们新的启示...如果你对 AI 感兴趣、但不想啃上百页的英文报告，这篇总结可以帮你 10 分钟看懂[《斯坦福 AI 指数 2025》](https://zhida.zhihu.com/search?content_id=256259611&content_type=Article&match_order=1&q=%E3%80%8A%E6%96%AF%E5%9D%A6%E7%A6%8FAI%E6%8C%87%E6%95%B02025%E3%80%8B&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NDQ1NDYwODUsInEiOiLjgIrmlq_lnabnpo9BSeaMh-aVsDIwMjXjgIsiLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoyNTYyNTk2MTEsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.pl0UeMjJWmqivQ7JjQuJmyoVs_98vo1X7YIW9e5pM40&zhida_source=entity)。
 
-![](https://pica.zhimg.com/v2-867ec796ad57172b749d91b066018f9a_1440w.jpg)
+![](/imgs/66696f0b8bc257d5.png)
 
 ## 一句话：
 

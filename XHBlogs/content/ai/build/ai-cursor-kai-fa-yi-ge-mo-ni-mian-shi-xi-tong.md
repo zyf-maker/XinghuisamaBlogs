@@ -3,15 +3,12 @@ title: "AI + Cursor 开发一个模拟面试系统"
 summary: "直播教程回放（共 1 条资讯链接）"
 order: 103
 level: "进阶"
-tags: ["AI 项目教程", "转载", "AI"]
+tags: ["AI 项目教程"]
 updated: "2025-03-28"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI + Cursor 开发一个模拟面试系统》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 开发过程直播回放
 

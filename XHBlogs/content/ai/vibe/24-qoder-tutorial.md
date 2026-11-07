@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Qoder：国产 AI 桌面应用保姆级教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 曾经，Codex 可能是很多人心中最好用的 AI 编程工具，能力强、功能多，而且官方动不动就赠送额度重置。
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 之前我已经把国外主流的 AI 编程工具教程都写过了，比如 Cursor、Claude Code、GitHub Copilot、Codex 等等。
 
-![](https://pic.yupi.icu/1/image-20260915172254246.png?imageSlim)
+![](/imgs/4edcf5d8e45bc6e7.png)
 
 这次，我把目光锁定在了阿里的国产 AI 工具 [Qoder](https://qoder.com/zh) 上。它最近的热度很高，而且我体验下来，功能丰富度完全不输 Codex。
 
@@ -37,13 +34,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 打开 [Qoder 官网](https://qoder.com/zh/download)，直接下载对应操作系统的安装包，傻瓜式安装就好，各种操作系统都是支持的。
 
-![](https://pic.yupi.icu/1/image-20260914111014009.png?imageSlim)
+![](/imgs/6961a2d3ccdfa8b4.png)
 
 安装完打开 Qoder，用邮箱、Google 或 GitHub 账号注册登录。新用户默认享有 14 天 Pro 试用期和 300 Credits（积分），核心功能都可以先体验到。
 
 登录之后你会看到一个很干净的主界面，是不是有点眼熟？
 
-![](https://pic.yupi.icu/1/image-20260914112411161.png?imageSlim)
+![](/imgs/fe9a3011a5898881.png)
 
 Qoder 有两种工作模式，在左上角可以切换：
 
@@ -60,15 +57,15 @@ Qoder 有两种工作模式，在左上角可以切换：
 
 模型就先用默认的 Auto 模式，权限也直接用默认的「询问审批」，然后提交任务。
 
-![](https://pic.yupi.icu/1/image-20260914153545386.png?imageSlim)
+![](/imgs/4cb8f15aabed7a06.png)
 
 AI 先进行联网搜索，为了确保安全，弹出了确认框问我同不同意。这个就是 Qoder 的 **询问审批** 机制，敏感操作会先停下来问你，你点了同意才会继续，避免 AI 在你不知情的情况下乱操作。
 
-![](https://pic.yupi.icu/1/image-20260914153922848.png?imageSlim)
+![](/imgs/e9bc770c1d5a2885.png)
 
 然后 Agent 调用了 yt-dlp 工具成功获取到了视频信息并下载了视频文件，右侧还能看到本次任务的执行监控，任务信息一目了然。
 
-![](https://pic.yupi.icu/1/image-20260914172003471.png?imageSlim)
+![](/imgs/9c8961c9e4a880fc.png)
 
 这就是 Qoder 最基本的用法了，是不是非常简单？
 
@@ -86,11 +83,11 @@ AI 先进行联网搜索，为了确保安全，弹出了确认框问我同不�
 
 在 Qoder 左上角切换到 **编程模式**，然后在对话框下方点击「新建工作区」：
 
-![](https://pic.yupi.icu/1/image-20260914172222378.png?imageSlim)
+![](/imgs/d28e9a04bf62220c.png)
 
 新建一个空的项目文件夹（比如叫 `remove-bg`），并且添加为工作区：
 
-![](https://pic.yupi.icu/1/image-20260914172303454.png?imageSlim)
+![](/imgs/2846e0c453de4fe1.png)
 
 然后在对话框里输入需求。不需要限定技术栈，只描述要做什么，让 AI 自己选择合适的方案：
 
@@ -104,7 +101,7 @@ AI 先进行联网搜索，为了确保安全，弹出了确认框问我同不�
 
 你还可以在对话框里拖入一张参考设计的截图，让 AI 照着这个风格来做，效果会更贴近你的预期：
 
-![](https://pic.yupi.icu/1/image-20260914172730708.png?imageSlim)
+![](/imgs/d9220588732dc460.png)
 
 
 
@@ -116,17 +113,17 @@ AI 先进行联网搜索，为了确保安全，弹出了确认框问我同不�
 
 点开模型选择器，可以看到 Qoder 内置了不少 AI 档位和模型。
 
-![](https://pic.yupi.icu/1/image-20260914174609796.png?imageSlim)
+![](/imgs/830c284adb9408eb.png)
 
 首先是 6 个档位：Auto 自动、经济、性能、极致，还有最贵的 Sonus 和 Cantus，用来尝鲜体验全球顶级模型。
 
 除了档位之外，你还可以直接指定具体的模型，通义千问 Qwen3.8-Max、DeepSeek-V4、GLM-5.3、Kimi-K3、MiniMax-M3 等等，加起来有十几个可以选。
 
-![](https://pic.yupi.icu/1/image-20260914174836866.png?imageSlim)
+![](/imgs/cfe1fb1ef8c61d4f.png)
 
 你也可以在设置里添加自己的 API Key，走自己的额度，不消耗 Qoder 的 Credits。
 
-![](https://pic.yupi.icu/1/image-20260914175107170.png?imageSlim)
+![](/imgs/8007f9160193fcb5.png)
 
 由于这个项目有一定复杂度，我选择「性能」那档。
 
@@ -136,7 +133,7 @@ AI 先进行联网搜索，为了确保安全，弹出了确认框问我同不�
 
 但开发项目需要频繁地读写项目文件和执行命令，每一步都确认就太慢了。所以这次我把权限切到「自动审批」，让 Agent 自己判断是否安全，有风险时才来问我。
 
-![](https://pic.yupi.icu/1/image-20260914175315736.png?imageSlim)
+![](/imgs/c9dad5591d6f45c9.png)
 
 模型和权限都确认好了，点击发送，AI 启动！
 
@@ -148,11 +145,11 @@ AI 先进行联网搜索，为了确保安全，弹出了确认框问我同不�
 
 开发完成后，AI 自己启动了服务器，打开内置浏览器并上传了一张测试图片，检查去背景功能是否正常。
 
-![](https://pic.yupi.icu/1/image-20260914175843759.png?imageSlim)
+![](/imgs/489a37ca8b5166ae.png)
 
 然后 AI 会通过截图和图片理解来验证项目的效果，发现问题还会自己回去改代码再验证，直到没问题了才最终交付。
 
-![](https://pic.yupi.icu/1/image-20260914181110129.png?imageSlim)
+![](/imgs/add42560a1f75aa3.png)
 
 因为权限选的是「自动审批」，Agent 全程自己判断安全性，没有弹确认框打断流程，效率比第一个任务快了不少。
 
@@ -164,15 +161,15 @@ Agent 验证通过之后，我自己再确认一下效果。
 
 我上传了一张自己的照片试试，几秒钟后去除背景完成，前端展示了原图和去背景后的对比效果，还能一键下载透明底图片。效果非常不错~
 
-![](https://pic.yupi.icu/1/image-20260914181249701.png?imageSlim)
+![](/imgs/1655065c46e008ae.png)
 
 AI 只花了 5 分钟左右就完成了任务。你还可以在对话框下方查看当前任务的上下文占用情况，在右侧边栏查看 AI 在工作区生成的文件。
 
-![](https://pic.yupi.icu/1/image-20260914182055423.png?imageSlim)
+![](/imgs/99e6ada1f100d8f7.png)
 
 在左下角可以查看当前账号的剩余用量。额度快用完的时候，建议不要执行太复杂的任务了。
 
-![](https://pic.yupi.icu/1/image-20260914182452239.png?imageSlim)
+![](/imgs/52e26a79dca1080e.png)
 
 
 
@@ -180,11 +177,11 @@ AI 只花了 5 分钟左右就完成了任务。你还可以在对话框下方�
 
 如果你对网站的某个地方不满意，可以在 Qoder 内置浏览器的上方给页面做 **批注**：
 
-![](https://pic.yupi.icu/1/image-20260914181453848.png?imageSlim)
+![](/imgs/5e401b65185947de.png)
 
 直接在页面上标记哪里需要改，写上修改意见发给 AI，它会自动定位到对应代码并修改，很方便：
 
-![](https://pic.yupi.icu/1/image-20260914181538975.png?imageSlim)
+![](/imgs/c8aff98f59c9580d.png)
 
 你还可以继续在对话框里跟 AI 聊，比如「加一个批量上传功能」、「支持手动调整去背景的精度」，对话的上下文是连续的，不用每次都重新描述项目。
 
@@ -202,7 +199,7 @@ AI 编程只是 Qoder 的一个应用场景，接下来我再演示几个实际�
 
 我电脑的下载目录中有 2000 多个乱七八糟的文件，截图、文档、表格等等混在一起，堪称究极屎山！
 
-![](https://pic.yupi.icu/1/image-20260914202949895.png?imageSlim)
+![](/imgs/a207b0b7c3884fdf.png)
 
 现在直接让 Qoder 帮我整理。进入「通用模式」，输入下列提示词并执行：
 
@@ -213,11 +210,11 @@ AI 编程只是 Qoder 的一个应用场景，接下来我再演示几个实际�
 
 AI 会自动扫描文件，然后找我人工确认要选择哪种整理方式：
 
-![](https://pic.yupi.icu/1/image-20260914205835913.png?imageSlim)
+![](/imgs/226539d86c2adbf9.png)
 
 人工确认后，AI 会创建子文件夹、把文件一个个移过去，最后给了我一份整理报告。
 
-![](https://pic.yupi.icu/1/image-20260914211300037.png?imageSlim)
+![](/imgs/ff96d1be9ef57604.png)
 
 我这么多年的懒惰造成的屎山，就在几分钟内被 AI 铲除了~
 
@@ -239,15 +236,15 @@ AI 会自动扫描文件，然后找我人工确认要选择哪种整理方式�
 
 Qoder 在内置浏览器里打开了面试鸭，自己一页一页地导航、截图、整理信息。这种需要「打开网站 → 逐页浏览 → 截图 → 写文档」的工作流，普通的网页爬虫做不了，必须有真实的浏览器去点击和导航才行。
 
-![](https://pic.yupi.icu/1/image-20260914211954652.png?imageSlim)
+![](/imgs/b0856b4a2075f796.png)
 
 AI 会干脆利落地打开浏览器，进入目标网站，然后开始截图、翻页、截图、跳转、截图……
 
-![](https://pic.yupi.icu/1/image-20260914212659726.png?imageSlim)
+![](/imgs/441febe972d13899.png)
 
 几分钟后，AI 输出了一篇有图有文的宣传文档，美滋滋~
 
-![](https://pic.yupi.icu/1/image-20260914212849916.png?imageSlim)
+![](/imgs/916be5e0d5980789.png)
 
 
 
@@ -265,21 +262,21 @@ Qoder 支持 **应用快照** 和 **电脑操控** 能力，可以像人类一�
 
 Qoder 会分析截图中的文字内容，然后给出一份中文摘要，非常方便：
 
-![](https://pic.yupi.icu/1/image-20260915111321318.png?imageSlim)
+![](/imgs/88f014da20ec5cb3.png)
 
 这个功能不仅能看文章，还能分析设计稿、识别报错信息、读取表格数据，只要屏幕上有内容它都能看。
 
 再来试试电脑操控，使用前需要先到设置页面开启「电脑操控」功能，按系统提示开启辅助功能和屏幕录制权限：
 
-![](https://pic.yupi.icu/1/image-20260915094331844.png?imageSlim)
+![](/imgs/34253daeb5aab65e.png)
 
 然后我开启 `computer-use` 插件，让 AI 帮忙从应用商店下载免费的记事本软件：
 
-![](https://pic.yupi.icu/1/image-20260915114112343.png?imageSlim)
+![](/imgs/af6f0085d99a8218.png)
 
 注意看下面这张图中的透明小鼠标，就是 AI 正在操控应用商店，下载免费的笔记应用。虽然速度并不快，但操作还是很精准的。
 
-![](https://pic.yupi.icu/1/image-20260915114129229.png?imageSlim)
+![](/imgs/9941780199dfdc59.png)
 
 Qoder 还有一个「录制与回放」功能，你可以把一段操作录制下来存成 Skill，以后遇到同样的流程直接回放就行，不用每次都重新描述。
 
@@ -299,7 +296,7 @@ Qoder 还有一个「录制与回放」功能，你可以把一段操作录制�
 
 Qoder 还有 **子智能体** 的概念，主 Agent 可以把复杂任务自动拆分成多个子任务，分派给子智能体并行处理，完成后汇总结果。做大项目的时候效率提升很明显。
 
-![](https://pic.yupi.icu/1/image-20260915091457685.png?imageSlim)
+![](/imgs/f2c3eeab9dbd4306.png)
 
 
 
@@ -309,11 +306,11 @@ Skills 是给 AI 准备的技能包，装了某个技能后，AI 在遇到相关
 
 Qoder 内置了不少技能，比如联网搜索、图片生成、代码安全扫描等等。你也可以安装社区做的技能包，比如 Firecrawl 网页抓取、Context7 最新技术文档查询等。
 
-![](https://pic.yupi.icu/1/image-20260915091634554.png?imageSlim)
+![](/imgs/52873d9e7644fb95.png)
 
 Qoder 还会自动识别你电脑上已经安装到用户目录下的技能，你可以直接在对话框中选择使用，非常方便：
 
-![](https://pic.yupi.icu/1/image-20260915091726091.png?imageSlim)
+![](/imgs/5e99eb401146b77f.png)
 
 
 
@@ -323,15 +320,15 @@ Qoder 还会自动识别你电脑上已经安装到用户目录下的技能，�
 
 插件是功能扩展包，里面可以包含 Skills、MCP 服务等多种能力的组合；连接器主要是通过 MCP 协议对接外部数据源和服务，比如连接 GitHub、飞书、Notion 等，让 Agent 能直接读写这些平台的数据。
 
-![](https://pic.yupi.icu/1/image-20260915091925094.png?imageSlim)
+![](/imgs/48c0411a2cd732ab.png)
 
 连接器本质上就是 MCP 服务。你可以在连接器面板里添加各种 MCP，添加完之后在对话框中用 `@` 就能调用。
 
-![](https://pic.yupi.icu/1/image-20260915092010538.png?imageSlim)
+![](/imgs/9a68ae859e5c39a1.png)
 
 比如我安装一个 GitHub 的 MCP，然后在对话框中输入 `@GitHub` 就能让 AI 帮我连接到 GitHub 并获取项目信息：
 
-![](https://pic.yupi.icu/1/image-20260915100209271.png?imageSlim)
+![](/imgs/fceaf3d1a9ce2e65.png)
 
 
 
@@ -341,7 +338,7 @@ Qoder 还会自动识别你电脑上已经安装到用户目录下的技能，�
 
 比如每次 Agent 改完代码自动跑一遍代码格式化工具，保证风格统一；或者设置一条规则，每次 Agent 要删文件的时候自动拦截，防止误删重要文件。个人开发者日常可能用不到这个功能，更适合团队协作场景。
 
-![](https://pic.yupi.icu/1/image-20260915094417512.png?imageSlim)
+![](/imgs/fd90f7351251a61c.png)
 
 建议直接让 AI 帮你生成 Hooks 配置，比你自己手写方便多了。
 
@@ -355,11 +352,11 @@ Qoder 内置记忆系统，会自动记住你的偏好和项目规则。
 
 项目记忆的文件大概长这样：
 
-![](https://pic.yupi.icu/1/image-20260915094936283.png?imageSlim)
+![](/imgs/039879128e8e99fc.png)
 
 不过记忆也有代价，AI 每次执行任务时会读取相关记忆，多少会额外占用一些上下文空间。如果你觉得某些记忆没用或者想省 Token，可以在设置里自己控制记忆的开关。
 
-![](https://pic.yupi.icu/1/image-20260915094602047.png?imageSlim)
+![](/imgs/c47acbce8d2fec14.png)
 
 
 
@@ -369,19 +366,19 @@ Qoder 内置记忆系统，会自动记住你的偏好和项目规则。
 
 创建方法很简单，进入「自动化」面板，可以手动输入信息创建任务，我更推荐让 Qoder 帮我创建：
 
-![](https://pic.yupi.icu/1/image-20260915100341584.png?imageSlim)
+![](/imgs/a2545874edea1caf.png)
 
 然后会自动跳转到对话页面，你可以设置自动化执行任务的时间间隔，通过自然语言描述工作内容：
 
-![](https://pic.yupi.icu/1/image-20260915100522423.png?imageSlim)
+![](/imgs/ea411d9d265635a5.png)
 
 很快，AI 就创建了自动化任务：
 
-![](https://pic.yupi.icu/1/image-20260915101016509.png?imageSlim)
+![](/imgs/a86296ae0e5ffb25.png)
 
 可以在「自动化」面板查看和编辑自动化任务：
 
-![](https://pic.yupi.icu/1/image-20260915101040717.png?imageSlim)
+![](/imgs/2bcba8cf6005d790.png)
 
 这下我的下载目录再也不会变得一团糟了~
 
@@ -391,7 +388,7 @@ Qoder 内置记忆系统，会自动记住你的偏好和项目规则。
 
 下载 Qoder Mobile 应用，扫码连接电脑，在手机上就能查看 Agent 的执行进度、审批操作、追加指令。出门在外也能驾驭和监督 AI 的工作。
 
-![](https://pic.yupi.icu/1/image-20260915094022479.png?imageSlim)
+![](/imgs/2c68f25251750fd5.png)
 
 跟 Codex 的手机远程是一个意思，不过大多数国内用户可能没法下载移动端的 ChatGPT 应用，Qoder 在这一点上友好很多。
 
@@ -401,7 +398,7 @@ Qoder 内置记忆系统，会自动记住你的偏好和项目规则。
 
 没想到吧，Qoder 也有桌面宠物，能实时反映 AI 的工作状态，让你不用切窗口就知道 AI 有没有完成任务。点击宠物还可以快捷开启语音输入，直接跟 AI 说话。
 
-![](https://pic.yupi.icu/1/image-20260915093358006.png?imageSlim)
+![](/imgs/ca6dcb2bd73ce328.png)
 
 不过目前内置的宠物数量还比较少，期待后续能开放更多选择。
 

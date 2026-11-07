@@ -3,15 +3,12 @@ title: "模型动态"
 summary: "AI 模型的最新发布、测评和行业动态"
 order: 1
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《模型动态》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -33,4 +30,4 @@ AI 模型更新的速度越来越快了，每隔几周就有新模型发布，�
 
 如果你觉得天天被新模型轰炸、根本跟不上，还可以打开我用 AI 做的 [AI 大模型世界](https://www.bilibili.com/toy/ai-model-world) 网站，免费、免登录。它把全世界几百个主流模型做成了一个个像素小人，能力条、价格、上下文长度一眼就能看出来；还有从 2023 年到现在的模型发布时间线，以及综合智力、性价比、编程能力等几十个排行榜，数据全部来自 Epoch AI、LiveBench 等第三方评测，每 12 小时自动更新一次。网站代码也 [完全开源](https://github.com/liyupi/ai-model-world)，想自己部署一份也没问题。
 
-![AI 大模型世界](https://pic.yupi.icu/1/aimodelworld-0926-home-47a2a341.png)
+![AI 大模型世界](/imgs/3e9e966f2c43cd2f.png)

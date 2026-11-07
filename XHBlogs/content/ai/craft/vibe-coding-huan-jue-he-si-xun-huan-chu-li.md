@@ -3,15 +3,12 @@ title: "Vibe Coding 幻觉和死循环处理"
 summary: "如何让失控的 AI 重回正轨"
 order: 5
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-01-13"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 幻觉和死循环处理》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -31,7 +28,7 @@ AI 幻觉指的是 AI 生成的内容看起来很有道理，但实际上是错�
 
 比如下面这段对话，我的本名可不是这个……
 
-![](https://pic.yupi.icu/1/image-20260104184328898.png)
+![](/imgs/c7904531855fa1f5.png)
 
 在编程场景中，AI 幻觉通常表现为：
 
@@ -97,7 +94,7 @@ AI 产生幻觉的原因有几个：
 
 这就是死循环，AI 被困在了一个错误的思路里，无法自己走出来。不仅浪费时间，还白白浪费了大量 tokens。
 
-![](https://pic.yupi.icu/1/aideadloop%E5%A4%A7.jpeg)
+![](/imgs/3bd8d0eaf2fcd25a.jpg)
 
 
 ### 死循环的常见场景
@@ -268,7 +265,7 @@ export function NoteList() {
 
 把这些信息截图或复制给 AI，它能更快地找到问题。
 
-![](https://pic.yupi.icu/1/image-20260104190230437.png)
+![](/imgs/45e4a7c42e19b027.png)
 
 如果你不知道是不是前端出了问题，或者根本不知道什么是前端，那大概率就是前端出了问题。
 

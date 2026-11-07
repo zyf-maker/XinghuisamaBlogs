@@ -3,21 +3,18 @@ title: "多家车企接入AI大模型DeepSeek 智能汽车再进一步"
 summary: "多家车企接入AI大模型DeepSeek 智能汽车再进一步，由程序员鱼皮整理。"
 order: 6
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《多家车企接入AI大模型DeepSeek 智能汽车再进一步》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 近日，AI大模型DeepSeek在汽车领域的应用取得了显著进展，多家知名车企宣布与其完成深度融合，标志着AI技术在汽车行业的应用进入了一个新的加速阶段。
 
 2月6日，吉利汽车率先宣布，其自研的星睿大模型与DeepSeek-R1模型深度融合，通过DeepSeek-R1的蒸馏训练，吉利汽车的星睿车控FunctionCall大模型和汽车主动交互端侧大模型得到了显著优化。这一融合使得AI系统能够更精准地理解用户意图，准确调用车载接口，提供车辆控制、主动对话、售后服务等智能化功能，大幅提升了用户的智能交互体验。
 
-![](https://n.sinaimg.cn/sinakd20250211s/304/w600h504/20250211/e888-690fed3f8aa468ab1619fe9c88af17db.jpg)
+![](/imgs/2e402f8b6c2e6113.jpg)
 
 紧接着，极氪汽车、岚图汽车、宝骏汽车、智己汽车和东风汽车也相继宣布与DeepSeek大模型完成深度融合。极氪汽车计划上线智能座舱助手AI Eva，岚图汽车则计划于2月14日开启全民知识蒸馏训练，宝骏汽车已完成实车装载，并计划在未来通过OTA实现更多车型的应用。智己汽车构建了多场景插拔式AI矩阵平台，东风汽车旗下多个自主品牌也已完成DeepSeek全系列大语言模型的接入工作。
 

@@ -3,15 +3,12 @@ title: "我的自媒体起号经验"
 summary: "从 0 到 10 万粉的真实经历"
 order: 16
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-13"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《我的自媒体起号经验》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。刚来 X 平台，关注数就突破了几千，说实话有点受宠若惊，感谢大家助力每一个梦想 🌹。
 

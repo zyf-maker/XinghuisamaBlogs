@@ -10,16 +10,13 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《VSCode + GitHub Copilot：微软全家桶的 AI 编程实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、…… 每隔一段时间就冒出来一个新选手。
 
 之前我一直沉迷于 Cursor 和 Claude Code，直到最近做新项目时认真体验了一把 GitHub Copilot， 才发现这玩意儿真夯啊！
 
-![](https://pic.yupi.icu/1/13c2a89f183a7161be27361ce4908ed6.png)
+![](/imgs/8def14c2784f21e0.png)
 
 先简单介绍一下主角。**VSCode** 是微软出品的全球最流行的代码编辑器，装机量破亿；**GitHub Copilot** 则是 GitHub 官方出品的 AI 编程助手插件，直接安装在 VSCode 中使用。
 
@@ -32,7 +29,7 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 啥啥啥，这都是啥？
 
-![](https://pic.yupi.icu/1/image-20260305141036239.png)
+![](/imgs/39570277399de452.png)
 
 即使你看不懂我说的这些也没关系，这篇文章就带大家从 0 开始上手 VSCode + GitHub Copilot，从安装到实战、从基础到核心特性，一条龙服务。
 
@@ -44,19 +41,19 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 1）首先进入 [VSCode 官网](https://code.visualstudio.com/) 下载安装包，直接傻瓜式安装。
 
-![](https://pic.yupi.icu/1/image-20260305141229310.png)
+![](/imgs/34739528b3989e8b.png)
 
 2）打开 VSCode，点击左侧「扩展市场」图标，搜索 "GitHub Copilot"，安装官方的 AI 编程插件。
 
-![](https://pic.yupi.icu/1/image-20260305141416199.png)
+![](/imgs/78656f2cebbdf823.png)
 
 你还可以根据需要，选择安装 Chinese 汉化插件，适合国内的宝宝们：
 
-![](https://pic.yupi.icu/1/image-20260305153013870.png)
+![](/imgs/24b6357f5a25dbd2.png)
 
 3）安装完后，点击 VSCode 底部状态栏的 Copilot 图标，按照提示登录 GitHub 账号就行了。
 
-![](https://pic.yupi.icu/1/setup-copilot-status-bar.png)
+![](/imgs/a0b41ef308fa71c0.png)
 
 如果你还没有 Copilot 订阅，会自动进入 **Copilot Free 免费计划**，每月有一定的 AI 对话和代码补全额度，零门槛上手。想体验完整功能的话，Copilot Pro 支持新用户免费试用 30 天，申请一张国内银行的 Visa 卡就能开通。
 
@@ -64,7 +61,7 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 到这里，安装配置就全部搞定了，比折腾 Claude Code 那套网络受限 + 账号受限 + 命令行小黑框的组合拳简单多了。
 
-![](https://pic.yupi.icu/1/1766562559951-d1371bb9-99d3-467a-aeec-421cd12eb3bb.png)
+![](/imgs/54208c49d1ecf5a0.png)
 
 
 
@@ -78,7 +75,7 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 点击 VSCode 上方的「聊天按钮」，打开 Chat 对话面板，你就可以和 AI 愉快地聊天了。让它分析需求、写代码、改 Bug，啥都行。
 
-![](https://pic.yupi.icu/1/image-20260305142129090.png)
+![](/imgs/aa72b8257f460a1d.png)
 
 对话框区域有一个 **智能体选择器**，可以在 3 种内置模式之间切换：
 
@@ -86,17 +83,17 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 - Plan 规划模式：AI 先出方案再动手，适合复杂任务
 - Ask 纯问答模式：只回答问题，不改代码，适合探索和学习（我用的比较少）
 
-![](https://pic.yupi.icu/1/image-20260305142244467.png)
+![](/imgs/ba0cfd52e0b15190.png)
 
 除了 Chat 面板，还有两种更轻量的 AI 对话方式。
 
 1）按 `Ctrl+I`（Mac 是 `Cmd+I`）打开行内对话，直接在代码中跟 AI 交互：
 
-![](https://pic.yupi.icu/1/image-20260305142602604.png)
+![](/imgs/0229e527565d5bb5.png)
 
 2）按 `Ctrl+Shift+Alt+L`（Mac 是 `Cmd+Shift+Option+L`）打开 Quick Chat 弹窗，适合快问快答。
 
-![](https://pic.yupi.icu/1/image-20260305143009366.png)
+![](/imgs/ebe55be38e1b509c.png)
 
 
 
@@ -104,17 +101,17 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 写代码的时候，Copilot 会自动给你浅色的补全建议，按一下 `Tab` 就能接受。比如你写了一个计算日期的函数名 plusDate，它能直接帮你把整个函数体补全出来。
 
-![](https://pic.yupi.icu/1/image-20260305143231950.png)
+![](/imgs/2327e34aa31a468f.png)
 
 更智能的是 Next Edit Suggestions（NES），也就是「下一步编辑建议」。它不光补全当前位置的代码，还能预测你接下来要改哪里！
 
 编辑器左侧会出现一个小箭头，按 Tab 就能跳过去并应用建议。
 
-![](https://pic.yupi.icu/1/image-20260305143512348.png)
+![](/imgs/c5e254fb9519a7d2.png)
 
 比如你把一个类名从 `Point` 改成了 `Point3D`，它会自动建议你在下面加个 `z` 变量，这个体验像秃噜鱼皮一般丝滑~
 
-![](https://pic.yupi.icu/1/nes-point.png)
+![](/imgs/58542ef982806b66.png)
 
 这两个功能用 Cursor 的同学应该不陌生，体验上差不多，但 Copilot 的 NES 预测精度个人感觉略胜一筹。
 
@@ -144,7 +141,7 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 新建一个空的项目文件夹（比如 ai-diviner），在 VSCode 中打开该文件夹，应该会默认打开 Chat 对话面板。
 
-![新建项目](https://pic.yupi.icu/1/image-20260305144504583.png)
+![新建项目](/imgs/887ff6b5c4e9a402.png)
 
 在对话区域的智能体选择器中选择 Plan 模式、并选择大模型（比如 Claude Opus），然后输入需求：
 
@@ -160,7 +157,7 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 6. 响应式布局，手机也能用
 ```
 
-![Plan模式执行AI](https://pic.yupi.icu/1/image-20260305144551103.png)
+![Plan模式执行AI](/imgs/941e996b564a90ba.png)
 
 选择 Plan 模式后，AI 不会直接开始写代码。
 
@@ -168,17 +165,17 @@ AI 编程工具现在是真的百花齐放，Cursor、Claude Code、OpenCode、�
 
 你只要像聊天一样把自己的想法告诉 AI 就好，比如我希望调用 DeepSeek 大模型的 API：
 
-![](https://pic.yupi.icu/1/image-20260305144900988.png)
+![](/imgs/7dfc02dcb88e38fa.png)
 
 如果你自己也拿不准，可以让 AI 帮你分析不同方案的优缺点，或者交给它自主决定。
 
 AI 理解你的需求后，会给出一份结构化的实施方案。
 
-![](https://pic.yupi.icu/1/image-20260305145315374.png)
+![](/imgs/19f9808757cbd92e.png)
 
 方案里会列出要创建哪些文件、每个文件负责什么、实现步骤的先后顺序，以及怎么验证效果。你可以在这一步跟 AI 反复讨论、调整方案，直到满意为止。
 
-![](https://pic.yupi.icu/1/image-20260305145352874.png)
+![](/imgs/f374a1f5c1a7b713.png)
 
 Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → 问题对齐 → 方案设计 → 迭代细化。AI 会先用只读工具深入研究你的代码库，再通过交互式问答来消除歧义，最后才给出方案草稿。
 
@@ -190,15 +187,15 @@ Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → �
 
 确认方案没问题后，点击方案下方的「Start Implementation」按钮，让 AI 开始自动执行，直到实现方案。
 
-![](https://pic.yupi.icu/1/image-20260305145604534.png)
+![](/imgs/a93b97d8d39bdd8f.png)
 
 执行过程中，Agent 会自动管理一个 Todos 任务列表来跟踪进度。你可以清楚地看到 Agent 在做什么，比如创建 `index.html`、`style.css`、`script.js` 文件，往里面写代码，甚至可能会自动打开终端执行命令。
 
-![](https://pic.yupi.icu/1/image-20260305145807776.png)
+![](/imgs/82211c70f01eb35e.png)
 
 如果 AI 要跑终端命令或者调用某些工具，会弹出确认框让你审批，安全性有保障。
 
-![](https://pic.yupi.icu/1/image-20260305150107141.png)
+![](/imgs/7ce2f14a370769c2.png)
 
 你也可以在 Agent 工作时继续发消息，选择排队等待、立即打断、或者引导 AI 调整方向。
 
@@ -210,27 +207,27 @@ Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → �
 
 几分钟后，Agent 不仅完成了开发任务，还用 Python 启动了个 Web 服务器，帮我运行了网站。
 
-![](https://pic.yupi.icu/1/image-20260305150430976.png)
+![](/imgs/b667df08d24e506c.png)
 
 好家伙，这是多一步都不想让我做啊？照这个趋势，早晚我得退化到 Hello World 水平。
 
 不过我还是喜欢在 Chrome 浏览器中测试，复制网址到浏览器中打开，然后输入从 [DeepSeek 开放平台](https://platform.deepseek.com/api_keys) 获取到的大模型  API Key：
 
-![](https://pic.yupi.icu/1/image-20260305150858949.png)
+![](/imgs/5a1a1eca17712d87.png)
 
-![](https://pic.yupi.icu/1/image-20260305150957888.png)
+![](/imgs/ede616357e7b3a11.png)
 
 输入一个问题，测测俺今年的爱情运势，然后点击「开始占卜」：
 
-![](https://pic.yupi.icu/1/image-20260305151027082.png)
+![](/imgs/b27e46754c5c913f.png)
 
 三张塔罗牌依次翻开，下方出现 AI 生成的占卜解读。深紫色的星空背景，搭配金色边框，再加上流畅的翻牌动画，效果还真挺唬人的。
 
-![](https://pic.yupi.icu/1/image-20260305151413007.png)
+![](/imgs/94cbbb0d4579c252.png)
 
 我感觉自己也可以开一个塔罗占卜小摊儿了，应该不是错觉。。。
 
-![](https://pic.yupi.icu/1/image-20260305151303905.png)
+![](/imgs/67f358f9bdad5618.png)
 
 如果你对页面的某些细节不满意，可以在内置浏览器中点击「元素选择」按钮，哪里不爽点哪里，然后在 Chat 框里编写提示词就行，比如：
 
@@ -238,17 +235,17 @@ Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → �
 改为鱼皮塔罗
 ```
 
-![](https://pic.yupi.icu/1/image-20260305151754685.png)
+![](/imgs/52c0514394891fb3.png)
 
 Agent 会自动定位到对应的代码并精准修改，改完你再刷新预览就好。
 
-![](https://pic.yupi.icu/1/image-20260305152037670.png)
+![](/imgs/adfb3762e800ffd7.png)
 
 整个过程，从写需求到出成品，也就几分钟。搁以前，我要是自己从零写这么个带动画的占卜网站，怎么着也得搞一下午。
 
 你还可以继续跟 AI 对话来增加功能，整个过程中一定要注意 **上下文的用量**，如果满了 AI 可能会断片儿失忆，开始乱改。
 
-![](https://pic.yupi.icu/1/image-20260305152200805.png)
+![](/imgs/eec34e909c413474.png)
 
 因此，在上下文快满的时候，最好让 AI 把当前项目的信息沉淀为文档。这样之后每次打开新的 AI 对话框时，只要把历史文档交给 AI，就能快速找回记忆。 
 
@@ -274,17 +271,17 @@ VSCode 给 AI 提供了三种类型的工具：
 
 所有工具都可以通过 Chat 对话区域的「配置工具」按钮进行可视化管理，很方便：
 
-![](https://pic.yupi.icu/1/image-20260305152856918.png)
+![](/imgs/4c11e543296964c9.png)
 
 你可以自由开启或关闭工具，不需要写任何配置文件，比其他 AI 编程工具方便不少。
 
 开启工具后，大多数情况下 AI 会自动判断该调用哪些工具。你也可以在对话中用 `#` 号手动引用特定工具，比如 `#codebase` 搜索整个代码库、`#fetch codefather.cn` 抓取某个网页的内容、`#problems` 查看当前项目的所有报错。
 
-![](https://pic.yupi.icu/1/image-20260305153343950.png)
+![](/imgs/d917beef62085f79.png)
 
 Agent 执行终端命令时，还有一套安全审批机制。前面实战中我们也看到了，默认会弹确认框等待人工确认；你也可以配置自动审批规则，甚至开启终端沙箱（目前支持 macOS 和 Linux）来限制文件和网络访问，安全性拉满。
 
-![](https://pic.yupi.icu/1/image-20260305153647365.png)
+![](/imgs/24a47d7d3d6613ac.png)
 
 还有一个实用功能叫 Tool Sets（工具集），你可以把多个相关工具打包成一组，在对话中用 `#工具集名称` 一次性引用。
 
@@ -292,7 +289,7 @@ Agent 执行终端命令时，还有一套安全审批机制。前面实战中�
 
 先在对话面板的设置中打开「工具集」，点击创建新的工具集文件并输入名称：
 
-![](https://pic.yupi.icu/1/image-20260306104630540.png)
+![](/imgs/69ce01dab6fde1a9.png)
 
 然后会自动弹出工具集的配置文件，添加下列代码并保存即可：
 
@@ -306,11 +303,11 @@ Agent 执行终端命令时，还有一套安全审批机制。前面实战中�
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260306104906332.png)
+![](/imgs/720dc230218cc3ef.png)
 
 配置好之后，在对话中输入 `#reader` 就能一次性启用这组只读工具了：
 
-![](https://pic.yupi.icu/1/image-20260306105151652.png)
+![](/imgs/c8348629d1709f73.png)
 
 
 
@@ -322,17 +319,17 @@ MCP 在 AI 圈已经非常火了，各种 AI 编程工具都已支持。但 GitH
 
 你只需要打开 VSCode 扩展市场，开启 MCP 服务市场，就能看到一堆热门的 MCP 服务，哪还需要到什么 MCP 资源网站上自己安装啊？！
 
-![](https://pic.yupi.icu/1/image-20260305154025676.png)
+![](/imgs/62293ec6f530b31c.png)
 
 比如我想使用 Context7 这个获取最新技术文档的 MCP，点击安装后，会自动弹窗让我输入 API Key：
 
-![](https://pic.yupi.icu/1/image-20260305154459227.png)
+![](/imgs/1ef3d1b7d867c95b.png)
 
 确认之后，就可以正常使用了。AI 在执行任务时会自动调用 MCP 提供的工具，你也可以用 `#` 号主动引用。
 
 比如刚才装好了 Context7，之后让 AI 写代码时它就会自动去拉取最新的技术文档作为参考，减少 AI 瞎编 API 用法的情况。
 
-![](https://pic.yupi.icu/1/image-20260306110049012.png)
+![](/imgs/150aa011781f1ece.png)
 
 整个过程不需要手写 JSON 配置，全程可视化选择和安装，对新手特别友好。以前在 Cursor 里配 MCP 还得自己找 JSON 粘贴，这里点点鼠标就搞定了~
 
@@ -355,19 +352,19 @@ MCP 在 AI 圈已经非常火了，各种 AI 编程工具都已支持。但 GitH
 
 这个文件不会自动生成，需要你自己创建，或者通过 VSCode 的命令面板执行 `MCP: Open Workspace Folder Configuration` 命令来打开：
 
-![](https://pic.yupi.icu/1/image-20260306110305648.png)
+![](/imgs/62f7efc1c03c7358.png)
 
 MCP 服务除了提供工具之外，还支持 Resources（资源）和 MCP Apps（交互式应用）。Resources 可以给 AI 提供数据库表、API 响应等上下文；MCP Apps 则能在对话中渲染表单、仪表盘等交互式 UI 组件，体验拉满。
 
-![](https://pic.yupi.icu/1/mcp-apps-flame-graph.png)
+![](/imgs/9da0e4e549231814.png)
 
 此外，VSCode 还能自动发现其他应用中已配置的 MCP 服务，省去重复配置的麻烦，在 VSCode 聊天设置中搜索 `chat.mcp.discovery.enabled` 即可开启。
 
-![](https://pic.yupi.icu/1/image-20260306110930161.png)
+![](/imgs/a391de07eb38a626.png)
 
 MCP 配置也支持通过 Settings Sync 跨设备同步，在同步设置中勾选「MCP 服务器」选项，换电脑不用重新配一遍。
 
-![](https://pic.yupi.icu/1/image-20260306110740774.png)
+![](/imgs/4b3201ae5c5e220c.png)
 
 
 
@@ -375,7 +372,7 @@ MCP 配置也支持通过 Settings Sync 跨设备同步，在同步设置中勾�
 
 Agent Skills 是给 AI 准备的能力扩展包。和前面提到的 Tools 不同，Skills 更像是一份详细的工作手册，里面包含操作指南、脚本、示例代码等资源，让 AI 在特定任务上表现更专业。
 
-![](https://pic.yupi.icu/1/1769306811193-2ee3acbc-5e36-46c2-8d08-b2682494fb56.png)
+![](/imgs/f0f1a9289ea4d3de.png)
 
 比如你给 AI 装个「Web 应用测试」的 Skill，里面写好了用 Playwright 写测试的标准流程、示例模板、最佳实践。之后你让 AI 帮你写测试，它就会自动按照这套标准来，而不是每次都瞎写一通。
 
@@ -385,15 +382,15 @@ Agent Skills 是给 AI 准备的能力扩展包。和前面提到的 Tools 不�
 
 大多数情况下，直接从网上安装别人开发好的 SKills 就可以了。比如 [鱼皮 AI 导航的 Skills 大全](https://ai.codefather.cn/skills) 里有我给大家精选的技能包，也可以去 GitHub 上的 [awesome-copilot](https://github.com/github/awesome-copilot) 仓库逛逛，社区贡献了不少实用的 Skills，拿来就能用。
 
-![](https://pic.yupi.icu/1/image-20260306111855649.png)
+![](/imgs/163f309e1dd9a64a.png)
 
 在 VSCode 中，你可以通过对话框的 Skills 设置按钮，查看和管理本地已有的 SKills：
 
-![](https://pic.yupi.icu/1/image-20260306111219014.png)
+![](/imgs/2572a76c0b48d71e.png)
 
 当然，你也可以自己创建 Skills，可以通过可视化界面选择安装位置，比如安装在当前项目下（仅本项目能用），还是安装到用户目录下（整个电脑的所有项目都能用）：
 
-![](https://pic.yupi.icu/1/image-20260306112025446.png)
+![](/imgs/28f9c83edd6aa401.png)
 
 创建技能的核心是编写 `SKILL.md` 技能描述文件，比如创建一个「Web 应用测试」技能，文档内容示例如下：
 
@@ -420,11 +417,11 @@ description: 使用 Playwright 测试 Web 应用的指南，当需要创建或�
 - 使用 Page Object Model 组织复杂页面的测试
 ```
 
-![](https://pic.yupi.icu/1/image-20260306112358350.png)
+![](/imgs/4b25fd9fd076d3b1.png)
 
 Skill 创建好之后，你可以在对话区域里用 `/webapp-testing` 斜杠命令手动调用它，也可以让 AI 根据任务自动匹配加载。
 
-![](https://pic.yupi.icu/1/image-20260306112515795.png)
+![](/imgs/b9774463949a0e9f.png)
 
 Skills 采用渐进式披露的设计，AI 只在需要时才加载相关 Skill 的内容，不会一次性把所有信息都塞进上下文，既节省 Token 又保持灵活。即使装了几十个 Skill 也不用担心上下文爆炸。
 
@@ -443,7 +440,7 @@ Skills 采用渐进式披露的设计，AI 只在需要时才加载相关 Skill 
 
 你可以在 Chat 对话区域底部的下拉菜单中随时切换不同的运行方式：
 
-![](https://pic.yupi.icu/1/image-20260306094253979.png)
+![](/imgs/6a173d165ed6c8b6.png)
 
 有个骚操作是，你可以在不同的 Agent 之间移交任务。比如先用本地 Agent 做个 Plan，觉得方案没问题了，一键移交给 Cloud Agent 去执行，它会自动创建分支、写代码、跑测试、最后提一个 Pull Request 给你的团队审查。
 
@@ -451,7 +448,7 @@ Skills 采用渐进式披露的设计，AI 只在需要时才加载相关 Skill 
 
 就像 Claude Code 可以同时开多个终端 Tab 一样，Copilot 的 Sessions 列表让你在一个面板里统一管理所有 AI 任务的状态，这是 GitHub 官方文档中重点推荐的工作流。
 
-![](https://pic.yupi.icu/1/image-20260306112932393.png)
+![](/imgs/61b290379b4e7656.png)
 
 
 
@@ -461,7 +458,7 @@ Hooks 允许你在 Agent 执行的关键节点自动运行自定义脚本。简�
 
 你可以在 VSCode 设置中查看和管理已配置的 Hooks：
 
-![](https://pic.yupi.icu/1/image-20260306094814153.png)
+![](/imgs/26b576d1e6bf2a43.png)
 
 目前支持的生命周期事件包括：
 
@@ -486,7 +483,7 @@ Hooks 允许你在 Agent 执行的关键节点自动运行自定义脚本。简�
 }
 ```
 
-![](https://pic.yupi.icu/1/image-20260306113256929.png)
+![](/imgs/0a59686684b12438.png)
 
 这样每次 Agent 调用工具修改了代码文件，都会自动跑一遍 Prettier 代码美化工具，保证代码风格统一。
 
@@ -504,7 +501,7 @@ Hooks 的应用场景很多，比如自动格式化代码、拦截危险命令�
 
 创建指令的方式很简单，在对话区域的设置中打开「聊天指令」，然后选择创建位置：
 
-![](https://pic.yupi.icu/1/image-20260306113751454.png)
+![](/imgs/5a59f1a495910a74.png)
 
 或者手动在项目根目录下新建 `.github/copilot-instructions.md` 文件，填入内容即可，比如：
 
@@ -527,17 +524,17 @@ Hooks 的应用场景很多，比如自动格式化代码、拦截危险命令�
 - 用户输入和 API 调用要加错误处理
 ```
 
-![](https://pic.yupi.icu/1/image-20260306114223424.png)
+![](/imgs/ae285a0dc70be131.png)
 
 VSCode 支持两种指令类型。一种是全局生效的指令（Always-on），所有对话都会自动应用；另一种是基于文件模式匹配的指令（File-based），比如 `.tsx` 文件用 React 组件规范，`.test.ts` 文件用测试规范，只有匹配到对应文件时才生效。
 
 像下面这种带 YAML 头部的结构，就是 File-based 指令的标准写法，通过 `description` 字段描述何时生效、`applyTo` 字段指定匹配的文件模式：
 
-![](https://pic.yupi.icu/1/image-20260306121336765.png)
+![](/imgs/cc676937a204d395.png)
 
 还有个小技巧，在对话区域里输入 `/init`，AI 会自动分析你的项目结构和代码风格，帮你生成一份自定义指令文件，省得自己从零写起。这个命令特别适合接手老项目、或者在已有项目上扩展功能的场景，AI 能帮你快速梳理出项目已有的编码习惯。
 
-![](https://pic.yupi.icu/1/image-20260306100241500.png)
+![](/imgs/7785e8b35450d2ba.png)
 
 
 
@@ -551,7 +548,7 @@ VSCode 支持两种指令类型。一种是全局生效的指令（Always-on）�
 
 一种是在对话区域的设置中打开「自定义智能体」，选择创建位置（当前项目或用户目录），VSCode 会自动创建对应的文件：
 
-![](https://pic.yupi.icu/1/image-20260306114509869.png)
+![](/imgs/b492d2657854fc0f.png)
 
 另一种方法是手动写一个 `.agent.md` 文件放在 `.github/agents/` 目录下。比如创建一个写作助手 `article.agent.md`：
 
@@ -577,11 +574,11 @@ tools: ['search', 'codebase', 'fetch', 'editFiles']
 - 技术术语第一次出现时要解释
 ```
 
-![](https://pic.yupi.icu/1/image-20260306121541349.png)
+![](/imgs/25f13cac395520c0.png)
 
 保存后，在对话区域的智能体下拉菜单中就能看到这个写作助手了，选中它 AI 就会按照你定义的角色来工作。
 
-![](https://pic.yupi.icu/1/image-20260306121613414.png)
+![](/imgs/9a42daedaa5c1730.png)
 
 自定义智能体还有一个更强大的玩法，叫 Handoffs（移交）。你可以在 Agent 文件中定义「下一步动作」按钮，实现智能体之间的任务接力。
 
@@ -613,11 +610,11 @@ Prompt Files（提示词文件）可以把你常用的任务封装成 **斜杠�
 
 创建方式跟自定义指令完全类似，在对话区域的设置中打开「提示文件」，在弹出的对话框中选择「新建提示文件」：
 
-![](https://pic.yupi.icu/1/image-20260306122919311.png)
+![](/imgs/c2d19e06501363a7.png)
 
 然后选择创建位置（当前项目或用户目录），VSCode 会自动创建对应的文件：
 
-![](https://pic.yupi.icu/1/image-20260306123109760.png)
+![](/imgs/1280d02f4d684b86.png)
 
 你也可以直接在 `.github/prompts/` 目录下创建 `.prompt.md` 文件。举个例子，创建一个 `/gen-test` 命令来自动生成单元测试：
 
@@ -637,11 +634,11 @@ tools: ['search', 'search/codebase', 'edit/editFiles']
 
 这里面用到了一些变量，比如 `${file}` 会自动替换为当前打开的文件路径，`${input:framework}` 是指要从用户在对话框中输入的内容来获取值。
 
-![](https://pic.yupi.icu/1/image-20260306123242156.png)
+![](/imgs/f1648fd20e5068ed.png)
 
 保存后，在对话框中输入 `/gen-test` 就能触发。你还可以在后面追加额外信息，比如 `/gen-test 只测试登录相关的函数`。
 
-![](https://pic.yupi.icu/1/image-20260306123816437.png)
+![](/imgs/61b3d1f63bfb7902.png)
 
 
 
@@ -662,7 +659,7 @@ tools: ['search', 'search/codebase', 'edit/editFiles']
 
 我自己平时用的最多的就是自动生成 Commit Message，再也不用绞尽脑汁想提交信息怎么写了。
 
-![](https://pic.yupi.icu/1/image-20260306121819177.png)
+![](/imgs/7aa68a2aaac5b1d3.png)
 
 这些小功能单个看起来不起眼，但用起来真的能省不少事。
 
@@ -684,7 +681,7 @@ tools: ['search', 'search/codebase', 'edit/editFiles']
 
 对了，如果你想用 GitHub Copilot 做更复杂的全栈项目实战，可以跟着鱼皮最新的 [AI 热点监控项目](https://www.codefather.cn/course/2026625439052627970) 练手，我帮大家测过了，企业级大项目 Copilot 也完全能 hold 住。
 
-![](https://pic.yupi.icu/1/image-20260304102630302.png)
+![](/imgs/dcc89c314844d356.png)
 
 就写到这，觉得有用的话记得收藏这篇文章，也欢迎在评论区聊聊你喜欢用哪款 AI 编程工具，帮到更多同学做选择。
 

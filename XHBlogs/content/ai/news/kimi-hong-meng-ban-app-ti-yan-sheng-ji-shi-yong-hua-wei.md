@@ -3,23 +3,19 @@ title: "Kimi 鸿蒙版 App 体验升级，使用华为仓颉 markdown 解析引�
 summary: "共收录 4 条 AI 行业资讯，如Kimi 鸿蒙版 App 体验升级，使用华为仓颉 markdown 解析引擎滑动帧率提升至 2.4 倍；有鲫雪狐等。"
 order: 101
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Kimi 鸿蒙版 App 体验升级，使用华为仓颉 markdown 解析引擎滑动帧率提升至 2.4 倍》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [Kimi 鸿蒙版 App 体验升级，使用华为仓颉 markdown 解析引擎滑动帧率提升至 2.4 倍](https://www.ithome.com/0/877/614.htm)
 
 感谢IT之家网友 [有鲫雪狐](https://m.ithome.com/html/app/open.html?url=ithome%3A%2F%2Fuserpage%3Fid%3D2169131) 的线索投递！
 
 [IT之家](https://www.ithome.com/) 8 月 24 日消息，据仓颉编程语言官方消息，Kimi 团队积极适配华为[鸿蒙](https://hmos.ithome.com/)系统，**已于今年 3 月推出了支持全量功能的鸿蒙版应用**，并通过内置仓颉 Markdown 渲染引擎，提升了长对话的渲染性能，实现流畅无卡顿的渲染效果。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/8DdSYDjkhGkNM9s4.webp "Kimi 鸿蒙版 App 体验升级，使用华为仓颉 markdown 解析引擎滑动帧率提升至 2.4 倍")
+![](/imgs/17650ee4fe3aac1d.webp "Kimi 鸿蒙版 App 体验升级，使用华为仓颉 markdown 解析引擎滑动帧率提升至 2.4 倍")
 
 据称，**Kimi 鸿蒙版 App 集成仓颉前，遇到主线程耗时长，应用卡顿的情况**，线上故障率达到千分之二，其中多数为 appfreeze。主要原因是对话渲染时 markdown 解析部分性能较差，耗时较长。而仓颉社区三方库已具备高性能的 markdown 解析、渲染库。在仓颉团队的推动下，Kimi 采用了仓颉方案优化应用性能。
 

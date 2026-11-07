@@ -3,15 +3,12 @@ title: "MCP 服务开发保姆级教程"
 summary: "从零开始开发 MCP 服务"
 order: 16
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-10-22"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《MCP 服务开发保姆级教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 开源指路：https://github.com/yuyuanweb/mcp-mianshiya-server
 
-![MCP 服务](https://pic.yupi.icu/1/1744008993525-16f07f5b-e3b4-4f1a-97dd-ea886c8d945d.png)
+![MCP 服务](/imgs/5091f4293f00c71b.png)
 
 
 ## 一、MCP 为啥如此重要？
@@ -32,14 +29,14 @@ source: "https://github.com/liyupi/ai-guide"
 
 更重要的是，只要大家都遵循 MCP 这套协议，AI 就能无缝连接本地数据、互联网资源、开发工具、生产力软件，甚至整个社区生态，实现真正的 "万物互联"，这将极大提升 AI 的协作和工作能力，价值不可估量。
 
-![MCP 架构](https://pic.yupi.icu/1/1744006127873-09bedb4a-5c7c-4cd0-9c4d-3620f319eac7.png)
+![MCP 架构](/imgs/e3a76f08256fc392.png)
 
 
 ## 二、MCP 总体架构
 
 MCP 的核心是 "客户端 - 服务器" 架构，其中 MCP 客户端主机可以连接到多个服务器。客户端主机是指希望通过 MCP 访问数据的程序，比如 Claude Desktop、IDE 或 AI 工具。
 
-![MCP 架构图](https://pic.yupi.icu/1/1742979138403-f9f03e19-3537-461e-95d5-6f8a9a413c3a.jpeg)
+![MCP 架构图](/imgs/7e245217f5868ebf.jpg)
 
 
 ## 三、MCP 开发
@@ -221,7 +218,7 @@ java -jar target/mcp-server-0.0.1-SNAPSHOT.jar
 
 1、打开 Cherry Studio 的 "设置"，点击 "MCP 服务器"
 
-![Cherry Studio 设置](https://pic.yupi.icu/1/1743063238632-2156707f-cfa4-4493-bf3e-68279f3972b9.png)
+![Cherry Studio 设置](/imgs/d23700b020ecb29b.png)
 
 2、点击 "编辑 JSON"，将 MCP 配置添加到配置文件中
 
@@ -229,34 +226,34 @@ java -jar target/mcp-server-0.0.1-SNAPSHOT.jar
 
 4、进入聊天页面，在输入框下面勾选开启 MCP 服务
 
-![开启 MCP](https://pic.yupi.icu/1/1743063248363-b3a09c97-1bb9-4f97-ab0a-2cee5a641c83.png)
+![开启 MCP](/imgs/f9d52481b904723f.png)
 
 配置完成，尝试搜索下面试题目，效果不戳！
 
-![搜索效果](https://pic.yupi.icu/1/1743063251268-145a5d00-4495-49e8-91db-f5536efca436.png)
+![搜索效果](/imgs/c7d9eb131b68a59a.png)
 
 甚至还进行面经解析，返回多个面试题目与答案的链接！
 
-![面经解析](https://pic.yupi.icu/1/1743143537320-1fca3955-3128-42a6-bd32-0cace3bab2ab.png)
+![面经解析](/imgs/3a9b6819e3fd8832.png)
 
 当然这个功能我们 [面试鸭官方](https://www.mianshiya.com/) 也实现了，帮助大家面试复盘：
 
-![面试鸭面经解析](https://pic.yupi.icu/1/1744008304237-fdfb2b99-9038-43de-94ed-ca0760afdf40.png)
+![面试鸭面经解析](/imgs/3528f0ddbeeb1aea.png)
 
 
 ## 五、上传 MCP 服务
 
 和开发一个 APP 一样，我们也可以把做好的 MCP 服务分享到第三方 MCP 服务平台。比如 MCP.so，可以理解为 MCP 服务的应用市场。
 
-![MCP.so](https://pic.yupi.icu/1/1744008425870-c5b7958e-98cc-4a14-a4af-cba3af01fcde.png)
+![MCP.so](/imgs/71880a9717bc9c9e.png)
 
 直接点击头像左侧的提交按钮，然后填写 MCP 服务的项目地址、以及服务器配置实例，点击提交即可。
 
-![提交 MCP](https://pic.yupi.icu/1/1744008547763-70effe90-c0aa-4683-bbc8-060639266529.png)
+![提交 MCP](/imgs/965ea19e2002620a.png)
 
 提交完成后就可以在平台搜索到了：
 
-![搜索 MCP](https://pic.yupi.icu/1/1744008638998-003207ee-8394-4ded-9ea6-83dbf189477c.png)
+![搜索 MCP](/imgs/5a0f0c48b51059cd.png)
 
 
 ---

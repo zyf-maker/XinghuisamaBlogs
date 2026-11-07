@@ -3,15 +3,12 @@ title: "LangChain4j + 多智能体 - AI 零代码应用生成平台项目实战"
 summary: "本项目是一个企业级的 AI 零代码应用生成平台，对标大厂商业产品。用户输入需求，AI 自动生成完整的 Web 应用，支持可视化编辑和一键部署。"
 order: 36
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《LangChain4j + 多智能体 - AI 零代码应用生成平台项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个企业级的 AI 零代码应用生成平台，对标大厂商业产品。用户输入需求，AI 自动生成完整的 Web 应用，支持可视化编辑和一键部署。
 
@@ -35,25 +32,25 @@ source: "https://github.com/liyupi/ai-guide"
 
 这是一套以 **AI 开发实战 + 后端架构设计** 为核心的项目教程，基于 Spring Boot 3 + LangChain4j + LangGraph4j + Vue 3 开发的 **对标大厂** 的 企业级 AI 代码生成平台，带大家掌握新时代程序员必知必会的 AI 智能体开发、AI 工作流等前沿技术，大幅提升求职竞争力！
 
-![](https://pic.yupi.icu/1/1753332293578-0ccc2a53-6d98-41a7-b714-16fa6a7f095f-20250814154720271.png)
+![](/imgs/331f0df08635fdcf.png)
 
 我带大家开发了多种模式的应用生成、可视化修改、AI 图片搜集、持久化对话记忆、一键部署等功能：
 
 > 查看视频演示： https://bilibili.com/video/BV17npxz5EZF
 
-![](https://pic.yupi.icu/1/1753332451827-220a1df9-ea60-4646-bea0-64e5f73d15fe-20250814154743041.png)
+![](/imgs/78a1154c2c58bd12.png)
 
 除了全程直播讲解的、几十个小时的视频教程之外，我还写了整套文字教程（15 万字），妥妥一本书的量！可想而知我最近掉了多少头发。。。
 
-![](https://pic.yupi.icu/1/image-20250917152551920.png)
+![](/imgs/90f17888114ed481.png)
 
 这还不够，每个项目我都写了详细的简历写法和面试题解，做完项目直接写到简历上、突击面试，一条龙服务！
 
-![](https://pic.yupi.icu/1/image-20250917152631431.png)
+![](/imgs/dbca66614b0d8a93.png)
 
 真心换真心，我做项目教程的付出也得到了大家的认可，也帮很多同学拿到了 offer~
 
-![](https://pic.yupi.icu/1/image-20250422160549546.png)
+![](/imgs/ac571a54d75eab09.png)
 
 接下来鱼皮给大家快速介绍这个项目，希望让更多需要它的同学看到，把它变成自己的项目。秋招正处于黄金时段，简历上写满前沿技术，不仅求职有底气，做项目的能力也会大幅提升！
 
@@ -66,24 +63,24 @@ source: "https://github.com/liyupi/ai-guide"
 
 1）智能代码生成：用户输入需求描述，AI 自动分析并选择合适的生成策略，通过工具调用生成代码文件，采用流式输出让用户实时看到 AI 的执行过程。
 
-![](https://pic.yupi.icu/1/1753332332820-9ec614de-65a2-496d-b9b2-dc89c20d06c9.png)
+![](/imgs/c9567798a34d48a2.png)
 
 
 2）可视化编辑：生成的应用将实时展示，可以进入编辑模式，自由选择网页元素并且和 AI 对话来快速修改页面，直到满意为止。
 
-![](https://pic.yupi.icu/1/1753332451827-220a1df9-ea60-4646-bea0-64e5f73d15fe.png)
+![](/imgs/8c8da3bc24d4dac1.png)
 
 
 3）一键部署分享：可以将生成的应用一键部署到云端并自动截取封面图，获得可访问的地址进行分享，同时支持完整项目源码下载。
 
-![](https://pic.yupi.icu/1/1753332366033-187b00b1-8609-42b1-ba80-cf58bdb0e970.png)
+![](/imgs/49ed53902bad3b5d.png)
 
 
 4）企业级管理：提供用户管理、应用管理、系统监控、业务指标监控等后台功能，管理员可以设置精选应用、监控 AI 调用情况和系统性能。
 
-![](https://pic.yupi.icu/1/1753281175326-d7ecfcb9-f034-4893-8e13-be0c5dcdacf6.png)
+![](/imgs/d2e470956d061c0d.png)
 
-![](https://pic.yupi.icu/1/1753333524767-c89b8d1b-bc57-4094-ace7-1b37876f3f0b.png)
+![](/imgs/c327f130234d509f.png)
 
 
 当你学会这个项目后，你不仅能开发 AI 代码生成器，更能灵活开发各种复杂的 AI 应用：AI 写作助手、AI 设计工具、AI 数据分析平台、AI PPT 制作大师，尽情发挥自己的想象力吧！
@@ -96,7 +93,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 开源仓库：https://github.com/liyupi/yu-ai-code-mother
 
-![](https://pic.yupi.icu/1/image-20250917153240294.png)
+![](/imgs/5c4572ec81d23fd3.png)
 
 
 ## 项目收获
@@ -105,12 +102,12 @@ source: "https://github.com/liyupi/ai-guide"
 
 微服务 AI 全栈项目，技术丰富，玩透 AI 应用开发~
 
-![](https://pic.yupi.icu/1/1753272108623-c211ff4f-35ff-4f2c-bd5d-3a39a13d8f1c.png)
+![](/imgs/0722d0044756cb79.png)
 
 
 业务场景真实，实践大量企业解决方案：
 
-![](https://pic.yupi.icu/1/1753290346736-47093142-ff4f-4b1d-8523-f6dea8de7e3c.png)
+![](/imgs/97b5d5ce43d86828.png)
 
 鱼皮给大家讲的是 **通用的项目开发方法、企业级架构设计套路和最新的 AI 应用开发技术**，从这个项目中你可以学到：
 
@@ -131,7 +128,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 满满的项目正反馈：
 
-![](https://pic.yupi.icu/1/20240604145231908.png)
+![](/imgs/af5ffee621e7c9c5.png)
 
 除视频教程外，鱼皮编程导航的项目还提供：
 
@@ -145,11 +142,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 本项目的功能模块：
 
-![](https://pic.yupi.icu/1/image%2520(1).png)
+![](/imgs/0d28153b4eccc586.png)
 
 本项目的架构设计：
 
-![](https://pic.yupi.icu/1/AI%25E5%25BA%2594%25E7%2594%25A8%25E7%2594%259F%25E6%2588%2590%25E5%25B9%25B3%25E5%258F%25B0%25E6%259E%25B6%25E6%259E%2584%25E5%259B%25BE.png)
+![](/imgs/992fcf071053d535.png)
 
 ## 加入学习
 
@@ -157,15 +154,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 编程导航已有 **20 多套项目教程！** 每个项目的学习重点不同，几乎全都是前端 + 后端的 **全栈** 项目 。
 
-![](https://pic.yupi.icu/1/image-20250917153702335.png)
+![](/imgs/b301f53ef8ec384a.png)
 
 欢迎加入编程导航，不仅能学习往期 **所有** 原创项目，还能享受更多原创资料、1 对 1 学习和求职指导、几百场面试视频，开启你的编程起飞之旅~
 
-![](https://pic.yupi.icu/1/image-20250120113756426.png)
+![](/imgs/a0139d19fc72dbf1.png)
 
 已经有 **几万名** 小伙伴学起来了，还有很多大家自发整理的笔记。不得不说，做项目真的给了很多同学坚持学习的目标、也有了更多拿 Offer 的机会，大家的动力也更足了！冲冲冲！
 
-![](https://pic.yupi.icu/1/offer%25E6%2588%25AA%25E5%259B%25BE.png)
+![](/imgs/aee7f4b0e0173f72.png)
 
 
 ## 推荐资源

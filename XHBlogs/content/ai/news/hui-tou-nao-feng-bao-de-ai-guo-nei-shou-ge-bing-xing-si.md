@@ -3,19 +3,15 @@ title: "会头脑风暴的 AI — 国内首个并行思考模型 问小白o4 来
 summary: "会头脑风暴的 AI — 国内首个并行思考模型 问小白o4 来啦！，由程序员鱼皮整理。"
 order: 95
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《会头脑风暴的 AI — 国内首个并行思考模型 问小白o4 来啦！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
-本文转载自： [会头脑风暴的 AI — 国内首个并行思考模型 问小白o4 来啦！](https://mp.weixin.qq.com/s/lOuFggxvgvmDy7jbNHygKg)
-
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/e8VRRXDmgev9NjaY.webp)
+![](/imgs/0b901ef1680a5dec.webp)
 
 作为国内首个并行思考模型，问小白o4 最大的本事是能同时开八个“脑洞”琢磨你的问题，自动筛选最优思考路径，答案精准度飙升！
 
@@ -25,7 +21,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 问小白o4 是由问小白团队提出的第四代开源推理范式（4th open-sourced reasoning form）构建而成，融合了“Long‑CoT 强化学习”与“过程奖励学习（Process Reward Learning）”的端到端训练机制，使模型同时具备深度推理与高质量思考过程筛选能力。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/EnFwBJV2bI8ttokr.webp)
+![](/imgs/3dbd9c6dfb1b0558.webp)
 
 * 多：想得更多，给得更多
 
@@ -39,21 +35,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 基于最优思考的回答，问小白o4 在复杂任务上的性能显著超过OpenAI o3-mini-medium、Claude Opus 4，大幅提升回答的正确率与可解释性。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/ELKe3910CT0so8Kv.webp)
+![](/imgs/c8c8f881fc46dd9f.webp)
 
 📈 模型性能提升
 
 问小白 o4 是一款具备更强推理能力、更擅长处理复杂任务的Dense架构基础模型。作为当前开源复杂推理能力最强的模型之一，问小白 o4 以32B参数量在复杂数学和代码编程任务上实现了新的性能突破。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/KtHfUYTBrDXqbMzq.webp)
+![](/imgs/8fd1d0ad20702d7d.webp)
 
 * 为了确保评估的稳定性，我们以avg\@64作为测试精度
 
 1. 什么样的思考过程会被 问小白o4 的大脑选中？
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/sdsT90XMJPPgAToh.webp)
+![](/imgs/5c771e7ba4b0f8f4.webp)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/kqGysKNIuLjeDQzW.webp)
+![](/imgs/74567da04a375736.webp)
 
 2. 基于 问小白o4 强大的推理能力，能在哪些场景获得更好的体验？
 
@@ -63,7 +59,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 问小白o4 能够抽取题目知识点并对齐通用解法范式，结合策略合成与自证校验，自动匹配最优解题方法，实现更高准确率与更强泛化能力的智能解题。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/XYoSxLj0ZbHdN8Ih.webp)
+![](/imgs/3f577e2a0656959c.webp)
 
 > 思考1：分步硬拆造成重复，结果错误 ❌ 
 >
@@ -87,7 +83,7 @@ Prompt:设$C$ 是曲面 $S$ 上曲率不等于零的渐近曲线，其挠率为 
 
 在代码生成与补全场景，问小白o4 能够识别推理过程中的逻辑错误，并综合考虑多种边界情况，筛选出最佳实践。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/L3RU6bJy22Bkzajc.webp)
+![](/imgs/6691ebb5a74cc4e0.webp)
 
 > 思考1：查询对象数据类型错误，结果错误 ❌
 >
@@ -123,7 +119,7 @@ Ensure the code is structured, commented, and easy to modify if needed.
 
 通过过滤低质思考过程，问小白o4 有效降低RAG场景下10%的思考过程幻觉率，让你的每一次搜索请求结果都更加准确。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/EllHOP9McUieyAtW.webp)
+![](/imgs/8ce782f4a68fd1e7.webp)
 
 > 思考1：混淆鞍山市和鞍山村，概念混乱 ❌
 >
@@ -137,6 +133,6 @@ Ensure the code is structured, commented, and easy to modify if needed.
 
 前往 wenxiaobai.com 或下载更新 问小白App 至3.18.8最新版本，立即与 问小白o4 模型开启对话。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/IEPZsVwQxg37eHrk.webp)
+![](/imgs/2f74db7092507920.webp)
 
 我们非常推荐你前往「问小白」Web端开启满血版8倍脑暴 ，或点击文章下方「阅读原文」直达。

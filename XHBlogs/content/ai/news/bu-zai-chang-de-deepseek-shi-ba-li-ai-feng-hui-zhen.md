@@ -3,15 +3,12 @@ title: "不在场的DeepSeek，是巴黎AI峰会真正的主角"
 summary: "不在场的DeepSeek，是巴黎AI峰会真正的主角，由程序员鱼皮整理。"
 order: 4
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《不在场的DeepSeek，是巴黎AI峰会真正的主角》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 当万斯在台上大谈美国要主宰AI技术时，台下人们谈论最多的是DeepSeek。
 

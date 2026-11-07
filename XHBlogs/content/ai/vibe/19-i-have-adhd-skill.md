@@ -10,22 +10,19 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《i-have-adhd：精简 AI 输出的技能》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 最近 GitHub 上有个项目涨势非常猛，短短一周涨了 1 万多个 Star，成功引起了我的注意。
 
 项目的名字很有意思，叫 [i-have-adhd](https://github.com/ayghri/i-have-adhd)，翻译过来就是「我有多动症」。
 
-![](https://pic.yupi.icu/1/image-20260918093543074.png)
+![](/imgs/a2d40581eb58b2ba.png)
 
 这是一个给 AI 工具安装的 Skill 技能，作用是让 AI 不再长篇大论地废话，每次回答都直奔主题，先给出你该执行的下一步操作，多步骤任务用编号列清楚。
 
 之所以叫 ADHD，是因为 ADHD（注意缺陷多动障碍）人群的工作记忆比较有限，面对大段文字很容易走神，这种「先说结论、直给行动」的输出方式对他们更友好。
 
-![](https://pic.yupi.icu/1/image-20260918094435900.png)
+![](/imgs/ecae7cd9e3e4da04.png)
 
 虽然名字叫 ADHD，但并不是只有 ADHD 人群才能用。任何希望 AI 回答更简洁高效的人都可以试试。而且理论上输出变简洁了，每次对话消耗的 tokens 也会相应减少，长期用下来能省不少钱。
 
@@ -47,17 +44,17 @@ Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd,
 
 比如我在 Cursor 里执行这段提示词：
 
-![](https://pic.yupi.icu/1/image-20260918094009494.png)
+![](/imgs/426bd231c67928e7.png)
 
 AI 会自动读取 GitHub 仓库的安装说明，然后帮你完成安装。
 
 安装完成后，技能文件会存放在电脑的 `~/.agents/skills` 目录下，这个路径是主流 AI 工具都能扫描到的通用技能目录：
 
-![](https://pic.yupi.icu/1/image-20260918094127968.png)
+![](/imgs/cffc2218f0efbeef.png)
 
 之后在对话时输入斜杠命令 `/i-have-adhd` 就可以激活这个技能了：
 
-![](https://pic.yupi.icu/1/image-20260918095017727.png)
+![](/imgs/ae8222d5f5389f8d.png)
 
 如果你还不了解 Skills 技能包是什么，可以先阅读本目录中的《Agent Skills：通用 AI 技能库》。
 
@@ -79,13 +76,13 @@ AI 会自动读取 GitHub 仓库的安装说明，然后帮你完成安装。
 
 看看下面这张图的测试结果，左边没有开启 ADHD 技能，右边开启了。可以看到对话消耗的 tokens 从 48.7K 直接降到了 27.5K，**减少了将近一半**！
 
-![](https://pic.yupi.icu/1/image-20260918103735499.png)
+![](/imgs/7c8dcb049ec0a789.png)
 
 再看看回答的内容风格。左边没开技能的时候，AI 先是搜了一圈资料，然后洋洋洒洒地分了好几个章节来展开讲，篇幅很长。
 
 右边开了技能之后，AI 的回答明显更直接，上来就给出核心定义，然后用编号列出可执行的最佳实践，按落地成本从低到高排序，读完立刻就知道该干什么。
 
-![](https://pic.yupi.icu/1/image-20260918103850606.png)
+![](/imgs/36e927583e9884cd.png)
 
 有点像你跟 AI 说「别绕弯子，直接告诉我怎么做」，效果确实不错。
 
@@ -107,15 +104,15 @@ AI 会自动读取 GitHub 仓库的安装说明，然后帮你完成安装。
 
 **时间快了将近两倍，tokens 省了 26%**。
 
-![](https://pic.yupi.icu/1/image-20260918140007658.png)
+![](/imgs/7f6aad6e354acbda.png)
 
 不过光看数据还不够，得看实际效果。先看没开技能的版本，整体的古画意境还不错，有虹桥、有行人、有河面，悬停弹窗也做了出来：
 
-![](https://pic.yupi.icu/1/image-20260918140444318.png)
+![](/imgs/7823e487476443b0.png)
 
 再看开了技能的版本。整体布局和交互也都实现了，不过从细节上来看，我觉得还是没开技能的时候更好一些。比如右侧有些人物直接站在了水面上，而且人物配色花花绿绿的，有点破坏整体的水墨意境：
 
-![](https://pic.yupi.icu/1/image-20260918140703646.png)
+![](/imgs/1710f5600c76cc4c.png)
 
 不过说实话，两个版本的效果都只能算一般，毕竟这段提示词我写得比较随意。
 
@@ -123,15 +120,15 @@ AI 会自动读取 GitHub 仓库的安装说明，然后帮你完成安装。
 
 下面是 ZCode 的对比图，左边无技能用了约 15.2 万 tokens、36 分钟，右边有技能用了约 14 万 tokens、34 分钟。GLM Flash 本身就比较精简，所以开不开技能的差距没那么大：
 
-![](https://pic.yupi.icu/1/glmflashadhdqingming.png)
+![](/imgs/b85a243b385cb754.png)
 
 再对比下成品效果，先看看没开技能的成品，桥面和河船都渲染出来了，整体还行，但背景比较单调：
 
-![](https://pic.yupi.icu/1/image-20260918140950801.png)
+![](/imgs/bf3a387a1b2145db.png)
 
 再看开了技能的效果，差别就比较明显了。桥面和行人倒是有了，但你注意看画面底部，怎么还出现了几个巨人？这一看就知道是渲染层级出了问题：
 
-![](https://pic.yupi.icu/1/image-20260918141041702.png)
+![](/imgs/68d97d9b8933d8aa.png)
 
 
 
@@ -149,7 +146,7 @@ AI 会自动读取 GitHub 仓库的安装说明，然后帮你完成安装。
 
 整个技能的核心就是一份 [提示词文件 SKILL.md](https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md)，里面定义了 10 条输出规则，AI 在回答时会遵循这些规则来调整自己的表达方式。
 
-![](https://pic.yupi.icu/1/image-20260918094758352.png)
+![](/imgs/5d663e417f2e2efe.png)
 
 这 10 条规则可以简单总结为：
 
@@ -164,7 +161,7 @@ AI 会自动读取 GitHub 仓库的安装说明，然后帮你完成安装。
 9. 每个列表最多展示 5 项：信息太多时先分组，优先展示最相关的
 10. 不写开场白、回顾和结束语：禁止套话
 
-![](https://pic.yupi.icu/1/image-20260918094834485.png)
+![](/imgs/236d52ed6e93c1f4.png)
 
 ADHD 人群的核心困难在于工作记忆容量有限、启动行动的门槛高、对时间的感知比较模糊，这套规则刚好针对这些痛点逐一给出了应对方案。而对其他用户来说，这些规则同样有效，毕竟没有人喜欢 AI 在回答里夹带一堆废话。
 

@@ -10,16 +10,13 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《REA：AI 逆向工程工具实测》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 2026 年 10 月初，我的时间线被一个叫 REA 的开源项目刷屏了。
 
 起因是 AI 圈的知名博主 Matthew Berman 发了条推文：**逆向一切，软件已死。**
 
-![](https://pic.yupi.icu/1/Matthew%20Berman%20%E5%8E%9F%E5%B8%96.png)
+![](/imgs/192c9bdacc6dd39b.png)
 
 这条推文直接爆了，到处都是「以后什么软件都能被 AI 扒光」的声音。
 
@@ -27,19 +24,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 有个老哥嫌语音输入工具 Typeless 越来越贵，干脆用 REA + Claude 把它逆向了，前后说了两句话、花了 25 分钟，就在自己 Mac 上复刻了一个不用登录、不用订阅的本地版。
 
-![](https://pic.yupi.icu/1/image-20261015141431998.png)
+![](/imgs/711607e41833a64e.png)
 
 还有个老外嫌每次找空调遥控器麻烦，直接把自家空调的 App 逆向了，做了个 Mac 状态栏小遥控，点一下就能开关、调温度，再也不用满屋找遥控器。
 
-![空调 App 做成状态栏遥控](https://pic.yupi.icu/1/rea-reverse-case-ac-remote-97ebf369.png)
+![空调 App 做成状态栏遥控](/imgs/f06980cc16f3e1c9.png)
 
 还有更离谱的。有个老哥把自家智能马桶的微信小程序也逆向了，做了个电脑状态栏遥控，坐在工位上点一下，书房那头的马桶盖真就翻起来。
 
-![马桶小程序做成状态栏遥控](https://pic.yupi.icu/1/rea-reverse-case-toilet-1a3cef0c.png)
+![马桶小程序做成状态栏遥控](/imgs/ac0b2facb3a2d237.png)
 
 这个项目在 GitHub 上也跟坐了火箭一样，建仓大半年一直不温不火，结果十月初几天内 Star 数就从几万冲到了 20 多万。
 
-![REA 在 GitHub 上的 Star 数](https://pic.yupi.icu/1/rea-reverse-rea-github-star-70e31d71.png)
+![REA 在 GitHub 上的 Star 数](/imgs/84b6caac292a07aa.png)
 
 那问题来了：**如果让你来逆向，你最想搞什么软件？**
 
@@ -59,7 +56,7 @@ REA 的全称是 Reverse Engineer Anything，翻译过来就是「逆向一切�
 
 软件逆向干的就是这件事，只不过把「菜」换成了一个没有源码的 App。
 
-![逆向工程原理示意](https://pic.yupi.icu/1/rea-reverse-reverse-principle-cn-a5a29059.png)
+![逆向工程原理示意](/imgs/f0abf27a54a661bd.png)
 
 注意，REA 本身并不是大模型，它是一套跑在你自己电脑上的 **命令行工具加 MCP 服务**。
 
@@ -67,7 +64,7 @@ REA 的全称是 Reverse Engineer Anything，翻译过来就是「逆向一切�
 
 REA 做的事情，就是把它们打包成一个统一的接口，接到 Cursor、Codex、Claude Code 这类 AI 编程助手上。
 
-![REA 把逆向工具打包给 AI 调用](https://pic.yupi.icu/1/rea-reverse-rea-toolbox-efecbb20.png)
+![REA 把逆向工具打包给 AI 调用](/imgs/719843f72229ce8b.png)
 
 为什么要多这一层呢？
 
@@ -101,7 +98,7 @@ npx rea-agents setup
 
 我有个特别喜欢的单机安卓游戏，叫《火影战记》。可惜作者已经好几年没更新了，一直都是那些角色，玩得有点腻了。
 
-![《火影战记》原版的选人界面](https://pic.yupi.icu/1/rea-reverse-game-original-b189e2b1.png)
+![《火影战记》原版的选人界面](/imgs/c5a59eded6aac5a2.png)
 
 我一直想给它加一个新角色，让自己玩个开心。
 
@@ -111,13 +108,13 @@ npx rea-agents setup
 
 一开始我用的是 Cursor 加 Claude Opus 5.5 模型，把游戏安装包直接丢给它，让它照着 REA 去拆。
 
-![在 Cursor 里用 REA 加角色](https://pic.yupi.icu/1/rea-reverse-game-cursor-prompt-e791a600.png)
+![在 Cursor 里用 REA 加角色](/imgs/9483c5c41b22d89d.png)
 
 虽然 AI 说是成功添加了一个新角色，但最后改完的游戏包一打开就直接卡死，结果让我大失所望。
 
 于是我换成了 Codex 加 GPT-6 Astra 模型，整个过程顺畅多了。
 
-![在 Codex 里用 REA 加角色](https://pic.yupi.icu/1/rea-reverse-game-codex-prompt-0bae8899.png)
+![在 Codex 里用 REA 加角色](/imgs/431ca1ef02da0ac3.png)
 
 有意思的是，Codex 没急着动手，反而先问了我一句：新角色有没有指定人选？
 
@@ -127,7 +124,7 @@ npx rea-agents setup
 
 其中最关键的是摸透角色的注册流程。因为光把迈特凯的素材塞进游戏，他是不会出现在选人界面的，角色名单是写死在原生库里的。
 
-![定位角色注册流程](https://pic.yupi.icu/1/rea-reverse-game-register-be4032dd.png)
+![定位角色注册流程](/imgs/39bab209aeb7bf8f.png)
 
 **真正让 AI 下得去手的，就是 REA 这一层。**
 
@@ -137,21 +134,21 @@ npx rea-agents setup
 
 美术部分，它还派了一个子智能体专门给迈特凯画像素立绘，跑步、出拳、踢腿，连八门遁甲的特效都安排上了。
 
-![子智能体生成迈特凯立绘](https://pic.yupi.icu/1/rea-reverse-game-sprite-gen-04cf3989.png)
+![子智能体生成迈特凯立绘](/imgs/b3ce2b49c8def45e.png)
 
 素材和数值都弄好之后，Codex 还在一个独立的安卓模拟器里做了验证。
 
 打开游戏，选人页里真的多了一个迈特凯：
 
-![选人页里多了迈特凯](https://pic.yupi.icu/1/rea-reverse-game-select-5078d0fa.png)
+![选人页里多了迈特凯](/imgs/32dac3a3c7a3553d.png)
 
 选完人进场，迈特凯稳稳站住了，血条、金币、技能图标都正常，非常不烧心~ ❤️‍🔥
 
-![迈特凯进场后正常参战](https://pic.yupi.icu/1/rea-reverse-game-combat-idle-66827d59.png)
+![迈特凯进场后正常参战](/imgs/341f6c11b13497be.png)
 
 接着开一局试试，技能放出来也像模像样，这就是青春啊！
 
-![迈特凯开八门遁甲放技能](https://pic.yupi.icu/1/rea-reverse-game-combat-skill-249d9eca.png)
+![迈特凯开八门遁甲放技能](/imgs/c5ae063c78461ebf.png)
 
 虽然在数值平衡、音效、画风上还有不少小问题，但可以正常玩耍，我已经很满足了。
 
@@ -163,13 +160,13 @@ npx rea-agents setup
 
 这次还是先用 Cursor 加 Claude Opus 5.5 模型。结果 AI 刚开始干活，就撞上了安全过滤，对话被自动切换到了 Claude Opus 4.8。
 
-![Opus 5.5 被降级到 4.8](https://pic.yupi.icu/1/rea-reverse-learn-cursor-downgrade-1e4851ba.png)
+![Opus 5.5 被降级到 4.8](/imgs/d78a879d047abdc7.png)
 
 我三番五次软磨硬泡，跟 AI 说我就是想学技术，但它还是守着底线，只肯做静态分析，死活不肯把完整源码反编译出来。
 
 它的原话是：无论怎么框定成「学习」或「反诈」，把这个特定 App 的真实代码还原出来，就是复原它访问和分发内容的管道，这件事本身就越界了。
 
-![AI 只肯做静态分析](https://pic.yupi.icu/1/rea-reverse-learn-cursor-analysis-e65491a3.png)
+![AI 只肯做静态分析](/imgs/de9a7bb29f0cbd7d.png)
 
 它一眼看出这是个 Flutter 做的 App，业务逻辑都编译进了一个叫 `libapp.so` 的文件里；还发现它虽然套了 360 加固壳，但加固只保护了 Java 层的代码，根本没盖住 Flutter 这半边；甚至连它底层还在用 2017 年、早就该升级的老版本加密库都给我揪了出来。
 
@@ -177,7 +174,7 @@ npx rea-agents setup
 
 这就是一类「挂羊头卖狗肉」的 App，拿学习当幌子，真正的生意是收割用户。
 
-![拆解后的结构和风险信号](https://pic.yupi.icu/1/rea-reverse-learn-teardown-db075399.png)
+![拆解后的结构和风险信号](/imgs/d3e539c679156bfd.png)
 
 它坑人的手法其实也是经典套路了。
 
@@ -189,39 +186,39 @@ npx rea-agents setup
 
 所以真心建议大家不要用这类 APP 来学习！
 
-![](https://pic.yupi.icu/1/image-20261015131445934.png)
+![](/imgs/331f453e31bc5573.png)
 
 **AI 有底线是好事，但对真心想学技术的人来说，确实有点卡手。**
 
 于是我换成了 DeepSeek Harness 工具加 DeepSeek 模型，还是让它照着 REA 去逆向，想着限制应该会松一些。
 
-![](https://pic.yupi.icu/1/image-20261015131640926.png)
+![](/imgs/e1fde6c9c0a5e66e.png)
 
 蓝色大肥鱼听话多了，几句话就把这个 App 的工程骨架讲明白了。
 
-![](https://pic.yupi.icu/1/image-20261015131719956.png)
+![](/imgs/632a353a7a2eb6a7.png)
 
 整个 App 是 Flutter 3.27 写的，界面、逻辑和底层能力分成了几层，想换皮只动上面一层就行。它没用系统自带的播放器，而是自己打包带了一套 B 站开源的 IJKPlayer。
 
 这么做是为了兼容性。系统自带的播放器支持哪些视频格式，是手机厂商说了算的，各家不一样，同一条视频可能这台手机能播、那台就报错。自己带一套 IJKPlayer，解码能力就自己说了算，不管用户拿的是什么手机都能把视频播出来。
 
-![这个 App 的工程骨架](https://pic.yupi.icu/1/rea-reverse-app-skeleton-8eb2c74f.png)
+![这个 App 的工程骨架](/imgs/4e53a2580256c9a4.png)
 
 连夜间模式都单独做了一整套配色图，一共 128 张，宁可多塞几 MB 也要把观感做好。
 
 看来它很清楚，大多数用户都是在夜里躺床上学习的。
 
-![白天和夜间两套配色图](https://pic.yupi.icu/1/rea-reverse-day-night-mode-1bbfb3ec.png)
+![白天和夜间两套配色图](/imgs/f33c93eb046d1322.png)
 
 我又顺手让它把这个 APP 改造成一个 AI 编程学习 APP。它派了好几个子智能体一起干，最后交付了一份技术讲解文档，还有一个能直接运行的学习 App。
 
-![](https://pic.yupi.icu/1/image-20261015131817870.png)
+![](/imgs/80e8052d3bcbd7a6.png)
 
 我在本地把这个学习 App 跑了起来，首页是七个模块的课程地图，从 Python 基础一路到 Agent 实战。
 
 点进第一节课，里面有讲解、有能直接复制运行的代码，还配了随堂测验，内容全是原创的 AI 编程知识。
 
-![DSH 交付的学习 App 首页](https://pic.yupi.icu/1/rea-reverse-learn-ailab-home-0a8d9c94.png)
+![DSH 交付的学习 App 首页](/imgs/9828ffe1f55e0f09.png)
 
 通过逆向这个 APP，还能发现一个挺实用的工程经验。
 
@@ -245,7 +242,7 @@ REA 工具本身没有发明什么新技术，真正强大的其实是 Ghidra、
 
 甚至因为 REA 这个包实在太重，光工具定义就有差不多 170 个、往上下文里塞十几万 token…… 裸着让 AI 自己干，少了这份负担，反而可能更快更省地完成任务。关于上下文为什么要省着用，可以阅读本教程经验技巧板块中的《Vibe Coding 上下文管理技巧》。
 
-![REA 的工具清单](https://pic.yupi.icu/1/rea-reverse-rea-tool-inventory-c5de33d8.png)
+![REA 的工具清单](/imgs/ab6c5fe80fa43eea.png)
 
 至于「软件已死」这种说法，当个乐子看就好了。一方面，逆向过程中可能会触发模型的安全限制，被降级和拒绝。
 

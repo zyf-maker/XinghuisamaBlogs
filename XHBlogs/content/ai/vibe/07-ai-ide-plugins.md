@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI IDE 插件》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 在前面的文章中，我们学习了 AI 代码编辑器和 AI 命令行编程工具。
@@ -47,7 +44,7 @@ IDE 插件的优势很明显。首先是无需切换编辑器，如果你已经�
 
 Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 JetBrains 系列的 IntelliJ IDEA、PyCharm、WebStorm 等多个编辑器。
 
-![](https://pic.yupi.icu/1/image-20260108222935455.png)
+![](/imgs/682f29da2717fd5c.png)
 
 它完全开源免费，支持 Claude、GPT、Gemini、DeepSeek 等各种大模型，还可以部署 MCP 服务扩展功能。不仅能对话生成代码，还能自主执行命令、修改多个文件、使用浏览器，总之功能非常全面。
 
@@ -61,11 +58,11 @@ Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 
 
 1）在 VS Code 中打开扩展商店，搜索 "Cline"，点击安装。
 
-![](https://pic.yupi.icu/1/image-20260108223139213.png)
+![](/imgs/4c38605981bd8cd3.png)
 
 2）安装后，点击侧边栏的 Cline 图标，可以直接免费使用，也可以使用你自己的大模型 API Key。
 
-![](https://pic.yupi.icu/1/image-20260108223220642.png)
+![](/imgs/b20852d68a46683c.png)
 
 3）点击下一步后，Cline 会引导你创建一个账号，使用 GitHub 或邮箱注册登录就好。
 
@@ -79,11 +76,11 @@ Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 
 - 使用 React Router
 ```
 
-![](https://pic.yupi.icu/1/image-20260108223531152.png)
+![](/imgs/fec0da2c0f2ab93e.png)
 
 5）接下来 Cline 会自动运行命令、安装必要的依赖、创建各个组件文件、配置路由、修改样式。整个过程你只需要确认每一步操作，或者直接让它全自动执行。
 
-![](https://pic.yupi.icu/1/image-20260108223742056.png)
+![](/imgs/ca463fec160845b2.png)
 
 
 
@@ -91,7 +88,7 @@ Cline 最大的优势是 **跨平台支持**，不仅支持 VS Code，还支持 
 
 如果你是 JetBrains IDE 的用户，在 IDE 中打开 Settings → Plugins，搜索 "Cline"，安装即可。使用方式和 VS Code 版本完全一样。
 
-![](https://pic.yupi.icu/1/image-20260108224135571.png)
+![](/imgs/ee3eb74240ed4c4d.png)
 
 
 
@@ -107,15 +104,15 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 这个扩展的优点是提供了图形界面，你可以通过侧边栏面板和 Claude 对话，能够灵活输入文字。
 
-![](https://pic.yupi.icu/1/image-20260116124614180.png)
+![](/imgs/b8eae44c998c525d.png)
 
 当 AI 修改代码时，你能在编辑器里实时看到变化，并且自动显示 diff 对比，让你清楚地知道 AI 改了哪些地方。
 
-![](https://pic.yupi.icu/1/image-20260116124700221-20260118135011240.png)
+![](/imgs/b1c7968e64342368.png)
 
 我经常用它来重构代码、修复 Bug、添加新功能。它还支持多会话并行，也就是说你可以同时让多个 Claude 代理处理不同的任务，比如一个负责前端，一个负责后端，大大提高开发效率。
 
-![](https://pic.yupi.icu/1/image-20260116124928547.png)
+![](/imgs/eab294f0dbbcf4eb.png)
 
 
 
@@ -125,7 +122,7 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 除了代码补全和 Chat 对话之外，GitHub Copilot 现在已经支持了非常强大的 Agent 模式、Plan 模式、MCP 服务管理、Agent Skills 技能包、自定义智能体、Hooks 自动化脚本等核心特性，体验上堪称 “六边形战士”。
 
-![](https://pic.yupi.icu/1/image-20260108225417720.png)
+![](/imgs/951b28e5de29dfe2.png)
 
 它的优点是成熟稳定、代码补全质量高、跨平台支持、支持最新的 AI 大模型随便切换。最关键的是，学生和开源贡献者可以免费使用，新用户还有 30 天 Pro 免费试用。
 
@@ -137,11 +134,11 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 [JetBrains AI Assistant](https://www.jetbrains.com/ai-assistant/) 是 JetBrains 官方推出的 AI 编程助手，专门为 JetBrains IDE 优化，刚出的时候鱼皮还在阿里云栖大会现场给大家做过这个的分享哈哈。
 
-![](https://pic.yupi.icu/1/image-20260108230013824.png)
+![](/imgs/a42c88ba4d5f8446.png)
 
 它不仅有代码补全，还能生成测试、解释代码、重构代码、生成文档等。而且和 IDE 的各种功能深度集成，比如调试、重构、测试、生成提交信息等。
 
-![](https://pic.yupi.icu/1/image-20260108225718180.png)
+![](/imgs/aa32581de0565b1c.png)
 
 优势是官方出品，和 IDE 集成最好，支持多种 AI 模型，功能全面。缺点是需要订阅 JetBrains 的付费计划。
 
@@ -151,7 +148,7 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 [Continue](https://www.continue.dev/) 是开源的 AI 编程插件，功能和 Cline 类似但更轻量。支持多种 AI 模型，有代码补全、对话、代码编辑等功能，界面比较简洁，上手容易。完全免费，支持 VS Code 和 JetBrains。
 
-![](https://pic.yupi.icu/1/image-20260108230116299.png)
+![](/imgs/c91f2901d460c72c.png)
 
 
 
@@ -177,7 +174,7 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，原本是独立的命令�
 
 GitLens 能让你更直观地查看 Git 代码的修改历史，把鼠标放到任意代码行上就能看到这行代码的作者、提交时间等信息。
 
-![](https://pic.yupi.icu/1/image-20260116125445257.png)
+![](/imgs/f44df4eda3c88ee0.png)
 
 
 
@@ -185,7 +182,7 @@ GitLens 能让你更直观地查看 Git 代码的修改历史，把鼠标放到�
 
 Office Viewer 能在编辑器里直接预览和编辑各种文档，包括 Markdown、Excel、Word、PDF 等，不用来回切换窗口。
 
-![](https://pic.yupi.icu/1/image-20260116130527681.png)
+![](/imgs/17c635da364495fc.png)
 
 
 
@@ -193,7 +190,7 @@ Office Viewer 能在编辑器里直接预览和编辑各种文档，包括 Markd
 
 ESLint 是代码质量检查工具，Prettier 是代码格式化工具。这两个插件能帮你保持代码规范，避免 AI 生成的代码出现格式问题。
 
-![](https://pic.yupi.icu/1/image-20260116131356553.png)
+![](/imgs/69d4326707829c58.png)
 
 
 
@@ -201,7 +198,7 @@ ESLint 是代码质量检查工具，Prettier 是代码格式化工具。这两�
 
 Error Lens 能让错误信息直接高亮显示在代码行尾，一眼就能看到哪里有问题。
 
-![](https://pic.yupi.icu/1/image-20260116140619858.png)
+![](/imgs/e64a6c49c56bec2a.png)
 
 
 
@@ -209,7 +206,7 @@ Error Lens 能让错误信息直接高亮显示在代码行尾，一眼就能看
 
 Console Ninja 能让你在编辑器里直接看到代码的运行结果，不用频繁切换到浏览器控制台。
 
-![](https://pic.yupi.icu/1/image-20260116141109420.png)
+![](/imgs/b2271b4ac5ebec86.png)
 
 
 
@@ -217,7 +214,7 @@ Console Ninja 能让你在编辑器里直接看到代码的运行结果，不用
 
 [Supermaven](https://supermaven.com/) 是一个专注于代码补全的插件，最大的特点是 100 万 Token 的上下文窗口，补全速度极快，准确度也很高。
 
-![](https://pic.yupi.icu/1/image-20260108230146505.png)
+![](/imgs/a23de0fae8e0393c.png)
 
 
 

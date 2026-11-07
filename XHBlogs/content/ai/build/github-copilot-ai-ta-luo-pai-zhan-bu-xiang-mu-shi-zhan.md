@@ -3,15 +3,12 @@ title: "GitHub Copilot - AI 塔罗牌占卜项目实战"
 summary: "这是一个利用 VSCode + GitHub Copilot 的 Plan 模式 + Agent 模式，从 0 到 1 开发的 AI 塔罗牌占卜网站。通过这个项目，你可以快速体验 GitHub Copilot 的核心 AI 编程能力，几分钟"
 order: 20
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GitHub Copilot - AI 塔罗牌占卜项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这是一个利用 VSCode + GitHub Copilot 的 Plan 模式 + Agent 模式，从 0 到 1 开发的 AI 塔罗牌占卜网站。通过这个项目，你可以快速体验 GitHub Copilot 的核心 AI 编程能力，几分钟就能做出一个有翻牌动画、AI 占卜解读、神秘华丽界面的小项目。
 
@@ -28,7 +25,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 技术栈很简单：HTML + CSS + JavaScript，调用 DeepSeek API 生成占卜解读。
 
-![](https://pic.yupi.icu/1/image-20260305151413007.png)
+![](/imgs/94cbbb0d4579c252.png)
 
 
 ## 安装 VSCode + GitHub Copilot
@@ -37,19 +34,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 1）进入 [VSCode 官网](https://code.visualstudio.com/) 下载安装包，直接傻瓜式安装。
 
-![](https://pic.yupi.icu/1/image-20260305141229310.png)
+![](/imgs/34739528b3989e8b.png)
 
 2）打开 VSCode，点击左侧「扩展市场」图标，搜索 "GitHub Copilot"，安装官方的 AI 编程插件。
 
-![](https://pic.yupi.icu/1/image-20260305141416199.png)
+![](/imgs/78656f2cebbdf823.png)
 
 你还可以根据需要，选择安装 Chinese 汉化插件：
 
-![](https://pic.yupi.icu/1/image-20260305153013870.png)
+![](/imgs/24b6357f5a25dbd2.png)
 
 3）安装完后，点击 VSCode 底部状态栏的 Copilot 图标，按照提示登录 GitHub 账号就行了。
 
-![](https://pic.yupi.icu/1/setup-copilot-status-bar.png)
+![](/imgs/a0b41ef308fa71c0.png)
 
 如果你还没有 Copilot 订阅，会自动进入 **Copilot Free 免费计划**，每月有一定的 AI 对话和代码补全额度，零门槛上手。想体验完整功能的话，Copilot Pro 支持新用户免费试用 30 天。如果你是在校学生，还可以通过 [GitHub Education](https://education.github.com/pack) 申请学生认证，认证通过后 Copilot Pro 直接免费用。
 
@@ -64,7 +61,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 新建一个空的项目文件夹（比如 ai-diviner），在 VSCode 中打开该文件夹，应该会默认打开 Chat 对话面板。
 
-![新建项目](https://pic.yupi.icu/1/image-20260305144504583.png)
+![新建项目](/imgs/887ff6b5c4e9a402.png)
 
 在对话区域的智能体选择器中选择 Plan 模式、并选择大模型（比如 Claude Opus），然后输入需求：
 
@@ -80,7 +77,7 @@ source: "https://github.com/liyupi/ai-guide"
 6. 响应式布局，手机也能用
 ```
 
-![Plan模式执行AI](https://pic.yupi.icu/1/image-20260305144551103.png)
+![Plan模式执行AI](/imgs/941e996b564a90ba.png)
 
 选择 Plan 模式后，AI 不会直接开始写代码。
 
@@ -88,17 +85,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 你只要像聊天一样把自己的想法告诉 AI 就好，比如希望调用 DeepSeek 大模型的 API：
 
-![](https://pic.yupi.icu/1/image-20260305144900988.png)
+![](/imgs/7dfc02dcb88e38fa.png)
 
 如果你自己也拿不准，可以让 AI 帮你分析不同方案的优缺点，或者交给它自主决定。
 
 AI 理解你的需求后，会给出一份结构化的实施方案。
 
-![](https://pic.yupi.icu/1/image-20260305145315374.png)
+![](/imgs/19f9808757cbd92e.png)
 
 方案里会列出要创建哪些文件、每个文件负责什么、实现步骤的先后顺序，以及怎么验证效果。你可以在这一步跟 AI 反复讨论、调整方案，直到满意为止。
 
-![](https://pic.yupi.icu/1/image-20260305145352874.png)
+![](/imgs/f374a1f5c1a7b713.png)
 
 Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → 问题对齐 → 方案设计 → 迭代细化。AI 会先用只读工具深入研究你的代码库，再通过交互式问答来消除歧义，最后才给出方案草稿。
 
@@ -109,15 +106,15 @@ Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → �
 
 确认方案没问题后，点击方案下方的「Start Implementation」按钮，让 AI 开始自动执行，直到实现方案。
 
-![](https://pic.yupi.icu/1/image-20260305145604534.png)
+![](/imgs/a93b97d8d39bdd8f.png)
 
 执行过程中，Agent 会自动管理一个 Todos 任务列表来跟踪进度。你可以清楚地看到 Agent 在做什么，比如创建 `index.html`、`style.css`、`script.js` 文件，往里面写代码，甚至可能会自动打开终端执行命令。
 
-![](https://pic.yupi.icu/1/image-20260305145807776.png)
+![](/imgs/82211c70f01eb35e.png)
 
 如果 AI 要跑终端命令或者调用某些工具，会弹出确认框让你审批，安全性有保障。
 
-![](https://pic.yupi.icu/1/image-20260305150107141.png)
+![](/imgs/7ce2f14a370769c2.png)
 
 你也可以在 Agent 工作时继续发消息，选择排队等待、立即打断、或者引导 AI 调整方向。
 
@@ -128,27 +125,27 @@ Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → �
 
 几分钟后，Agent 不仅完成了开发任务，还用 Python 启动了个 Web 服务器，帮忙运行了网站。
 
-![](https://pic.yupi.icu/1/image-20260305150430976.png)
+![](/imgs/b667df08d24e506c.png)
 
 好家伙，这是多一步都不想让我做啊？照这个趋势，早晚我得退化到 Hello World 水平。
 
 不过我还是喜欢在 Chrome 浏览器中测试，复制网址到浏览器中打开，然后输入从 [DeepSeek 开放平台](https://platform.deepseek.com/api_keys) 获取到的大模型  API Key：
 
-![](https://pic.yupi.icu/1/image-20260305150858949.png)
+![](/imgs/5a1a1eca17712d87.png)
 
-![](https://pic.yupi.icu/1/image-20260305150957888.png)
+![](/imgs/ede616357e7b3a11.png)
 
 输入一个问题，测测俺今年的爱情运势，然后点击「开始占卜」：
 
-![](https://pic.yupi.icu/1/image-20260305151027082.png)
+![](/imgs/b27e46754c5c913f.png)
 
 三张塔罗牌依次翻开，下方出现 AI 生成的占卜解读。深紫色的星空背景，搭配金色边框，再加上流畅的翻牌动画，效果还真挺唬人的。
 
-![](https://pic.yupi.icu/1/image-20260305151413007.png)
+![](/imgs/94cbbb0d4579c252.png)
 
 我感觉自己也可以开一个塔罗占卜小摊儿了，应该不是错觉。。。
 
-![](https://pic.yupi.icu/1/image-20260305151303905.png)
+![](/imgs/67f358f9bdad5618.png)
 
 如果你对页面的某些细节不满意，可以在内置浏览器中点击「元素选择」按钮，哪里不爽点哪里，然后在 Chat 框里编写提示词就行，比如：
 
@@ -156,17 +153,17 @@ Plan 模式的本质是采用 4 个阶段的迭代工作流：需求研究 → �
 改为鱼皮塔罗
 ```
 
-![](https://pic.yupi.icu/1/image-20260305151754685.png)
+![](/imgs/52c0514394891fb3.png)
 
 Agent 会自动定位到对应的代码并精准修改，改完刷新预览就好。
 
-![](https://pic.yupi.icu/1/image-20260305152037670.png)
+![](/imgs/adfb3762e800ffd7.png)
 
 整个过程，从写需求到出成品，也就几分钟。搁以前，我要是自己从零写这么个带动画的占卜网站，怎么着也得搞一下午。
 
 你还可以继续跟 AI 对话来增加功能，整个过程中一定要注意 **上下文的用量**，如果满了 AI 可能会断片儿失忆，开始乱改。
 
-![](https://pic.yupi.icu/1/image-20260305152200805.png)
+![](/imgs/eec34e909c413474.png)
 
 因此，在上下文快满的时候，最好让 AI 把当前项目的信息沉淀为文档。这样之后每次打开新的 AI 对话框时，只要把历史文档交给 AI，就能快速找回记忆。 
 

@@ -3,15 +3,12 @@ title: "DeepSeek带飞科大讯飞？"
 summary: "DeepSeek带飞科大讯飞？，由程序员鱼皮整理。"
 order: 22
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek带飞科大讯飞？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 DeepSeek 越来越火爆，但与此同时，DeepSeek“服务繁忙”的状况不仅没有好转，还在进一步加剧。
 

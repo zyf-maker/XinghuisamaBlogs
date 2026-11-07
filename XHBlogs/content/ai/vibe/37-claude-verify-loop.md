@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Code 验证循环实战教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近 Claude 官方发了一篇博客，专门讲怎么让 Claude Code 自己检查自己写的代码，官方管这个叫 Verification Loop 验证循环。
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 原文指路：[https://claude.com/blog/building-verification-loops-in-claude-code-with-skills](https://claude.com/blog/building-verification-loops-in-claude-code-with-skills)
 
-![](https://pic.yupi.icu/chengfang/1786413234706-10e92ec5-2867-4fc4-bdc7-207583033002.png?imageSlim)
+![](/imgs/fdc5ecad9020f5f5.png)
 
 不过话说回来，现在 AI 写代码是真的快，可是每次它自信地跟我说「搞定了」，我还是得自己打开页面、一个功能一个功能试、切换到手机端再测、最后打开浏览器控制台看有没有报错。
 
@@ -29,7 +26,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 所以我倒要试试，Claude 官方的这套验证循环，到底能不能真让我少干点活。
 
-![](https://pic.yupi.icu/chengfang/2.jpeg?imageSlim)
+![](/imgs/adfffa8b55afe740.jpg)
 
 
 
@@ -50,7 +47,7 @@ Claude Code 在开发过程中本来就会做一些基础检查，比如：
 
 但是换成 Verification Loop 以后，后面人工验收的部分也可以交给 AI 来干了。让 AI 自己验证、自己修改，全部通过以后再交付给我。
 
-![](https://pic.yupi.icu/chengfang/01-AI.png?imageSlim)
+![](/imgs/22e47fa2875bf052.jpg)
 
 当然，光跟 AI 说一句「你自己检查一下」肯定不够。它得知道具体该检查什么，也得拿到一个能够判断「到底过没过」的明确结果。
 
@@ -73,7 +70,7 @@ Claude Code 在开发过程中本来就会做一些基础检查，比如：
 
 这种规则是你的项目自己定的，通用的代码检查工具根本不知道这回事，但同样可以写进验证流程，让 AI 每次都按照这个标准来验。
 
-![](https://pic.yupi.icu/chengfang/02-AI.png?imageSlim)
+![](/imgs/97729458514ec07b.jpg)
 
 
 
@@ -89,7 +86,7 @@ Skill 的本质就是一个 Markdown 文件，里面用自然语言写清楚检�
 2. 觉得不够用的话再自己写。你可以把检查流程用自然语言描述出来，交给 `skill-creator` 插件帮你生成，它会理解你的工作流程然后自动生成对应的 Skill 文件。当然也可以自己手写一个 Markdown 文件，放到技能目录下就行。
 3. 拿新任务跑一遍，看看哪里不好用就继续迭代。等单个检查稳定了，再尝试把多个检查串起来。
 
-![](https://pic.yupi.icu/chengfang/03-AI.png?imageSlim)
+![](/imgs/d9f693b07d52324b.jpg)
 
 一个简单的 Skill 文件长这样：
 
@@ -111,7 +108,7 @@ description: 检查错误日志是否包含请求 ID，并且不能泄露请求�
 
 像我平时检查前端页面，就会反复检查页面加载、核心交互、移动端适配、浏览器控制台这些东西，每次都是同样的流程。所以这次我干脆把它们写成了一个 `verify-frontend` Skill，让 AI 自己对照着验收。
 
-![](https://pic.yupi.icu/chengfang/6.png?imageSlim)
+![](/imgs/330414209a751ee9.png)
 
 不过要注意，**Verification Loop 是核心思路，Skill 只是实现它的一种方式**。你也可以用 Hooks 钩子（在特定时机自动触发的脚本）来实现类似的效果，甚至可以用 `/goal` 命令定义一个目标条件，让 AI 自己循环直到条件满足为止。
 
@@ -127,7 +124,7 @@ description: 检查错误日志是否包含请求 ID，并且不能泄露请求�
 
 本来我想直接在 Claude Code 里用 Claude 自家的模型来跑这个实验，但是我的 Claude 账号早就喜提封号了。。。
 
-<img src="https://pic.yupi.icu/chengfang/1786431474389-948c82a1-921e-44b1-8e42-54b26a412b93.jpeg?imageSlim" style="zoom:50%;" />
+<img src="/imgs/3e6fa5075bcc26d1.jpg" style="zoom:50%;" />
 
 没办法，这次只能让 Claude Code 接 DeepSeek 模型给大家实测。具体怎么接入，可以阅读本教程编程工具板块 Claude Code 目录中的《Claude Code 和 Codex 对接国内模型教程》，这里就不展开讲了。
 
@@ -137,7 +134,7 @@ description: 检查错误日志是否包含请求 ID，并且不能泄露请求�
 
 初始版本的页面只有竹知了主体、缓慢自转和一个标题。
 
-![竹知了初始版本](https://pic.yupi.icu/chengfang/%E7%AB%B9%E7%9F%A5%E4%BA%86%E5%88%9D%E5%A7%8B%E7%89%88%E6%9C%AC.png?imageSlim)
+![竹知了初始版本](/imgs/f246927e41dc2918.png)
 
 然后我给 AI 下了 5 条需求：
 
@@ -153,7 +150,7 @@ description: 检查错误日志是否包含请求 ID，并且不能泄露请求�
 
 同时为了保证公平，我在第一轮开始之前就把第二轮要用的 6 类验收检查全部定好了，避免我看完第一轮结果以后再临时往规则里塞东西。
 
-![左侧为正常开发，右侧为 verify-frontend Skill](https://pic.yupi.icu/chengfang/1786418711345-bfcfaef7-69ea-490a-8991-117f9b730138.png?imageSlim)
+![左侧为正常开发，右侧为 verify-frontend Skill](/imgs/af969e33a3fd306d.png)
 
 
 
@@ -163,33 +160,33 @@ description: 检查错误日志是否包含请求 ID，并且不能泄露请求�
 
 5 分 33 秒后，Claude Code 宣布完成。5 项需求都有对应实现，而且 AI 自己还主动检查了一遍项目能不能正常构建。
 
-![](https://pic.yupi.icu/chengfang/11.png?imageSlim)
+![](/imgs/83b072cc82b66e3b.png)
 
 来看看 AI 实现的效果。
 
 我脑子里的「拖动竹知了」，其实是拿着棍子一甩，绳子受重力和惯性影响，下面的竹知了跟着晃，再配个「哇哇哇」的音效，美滋滋～
 
-![第一轮普通状态下竹知了](https://pic.yupi.icu/chengfang/%E7%AC%AC%E4%B8%80%E8%BD%AE%E6%99%AE%E9%80%9A%E7%8A%B6%E6%80%81%E4%B8%8B%E7%AB%B9%E7%9F%A5%E4%BA%86.png?imageSlim)
+![第一轮普通状态下竹知了](/imgs/b9898d2225625656.png)
 
 但是 AI 完全理解错了，它做出来的是鼠标按住模型以后，直接控制整个竹知了旋转。
 
 我刚想吐槽，回头看了一眼自己写的需求。
 
-![](https://pic.yupi.icu/chengfang/12.png?imageSlim)
+![](/imgs/c1110f9d5766a217.png)
 
 行吧，这真不能怪 AI。
 
 我只写了「鼠标拖动控制竹知了的旋转和朝向」，根本没写绳子、重力、惯性这些东西。
 
-![](https://pic.yupi.icu/chengfang/13.png?imageSlim)
+![](/imgs/e971bdfc10b18e14.jpg)
 
 AI 宣布完成以后，我还是老老实实自己验了一遍，功能基本都能用，不过狂暴模式的效果跟我想象中还是有点差距。虽然旋转确实变快了，但粒子和光效变化并不明显，只看图片的话，跟前面那个没啥区别。
 
-![第一轮狂暴模式下的竹知了](https://pic.yupi.icu/chengfang/14.png?imageSlim)
+![第一轮狂暴模式下的竹知了](/imgs/60eead399d3c655f.png)
 
 另外我还发现，浏览器控制台里躺着两条黄色警告。简单来说就是 3D 渲染库 Three.js 提示有两处旧的用法已经不推荐了，不过目前还能正常运行，所以不影响这次验收。
 
-![](https://pic.yupi.icu/chengfang/15.png?imageSlim)
+![](/imgs/2e948f57688897a8.png)
 
 总结一下这轮测试。AI 花了 5 分 33 秒写完代码，我又花了大概 2 分钟手动验了一遍。点交互、切换模式、测 375px、最后还得打开浏览器控制台看报错。
 
@@ -216,36 +213,36 @@ AI 宣布完成以后，我还是老老实实自己验了一遍，功能基本�
 + 浏览器控制台有没有报错
 + 页面有没有明显错位、遮挡或者裁切
 
-![](https://pic.yupi.icu/chengfang/16.png?imageSlim)
+![](/imgs/c9d8f829959a6084.png)
 
 为了让 AI 真正能操作页面，这次我给它配了两个工具。
 
 1. Playwright 是一个浏览器自动化测试框架，相当于 AI 的「手」，能帮它打开网页、拖动模型、点击按钮这些真实操作。
 2. Vision 视觉能力相当于 AI 的「眼睛」，让它能够截图并看懂页面长什么样，检查有没有明显的错位、遮挡或者裁切。可以用 GitHub 上开源的 [多模态视觉识别 Skill](https://github.com/asuojun/claude-vision-skill)
 
-![](https://pic.yupi.icu/1/image-20260803155552049.png)
+![](/imgs/035b199c0445d0cb.png)
 
 AI 写完代码之后，会自动执行验收流程。
 
 中间还出了个小插曲，Playwright 一开始因为依赖没装好所以没跑起来。不过这点小问题根本不需要人工处理，AI 自己排查出了原因、修好了依赖、然后继续往下验收。
 
-![](https://pic.yupi.icu/chengfang/17.png?imageSlim)
+![](/imgs/b037db80d5016fdd.png)
 
 最终，按照实验前定好的规则，6 类检查全部通过了。
 
-![](https://pic.yupi.icu/chengfang/18.png?imageSlim)
+![](/imgs/84a26039c640e062.png)
 
 这一轮任务总耗时 9 分 48 秒。而且从效果上来看，第二轮狂暴模式的粒子效果，比第一轮确实炫酷多了。
 
-![第二轮狂暴模式下的竹知了](https://pic.yupi.icu/chengfang/%E7%AC%AC%E4%BA%8C%E8%BD%AE%E3%80%8C%E7%8B%82%E6%9A%B4%E3%80%8D%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E7%AB%B9%E7%9F%A5%E4%BA%86.png?imageSlim)
+![第二轮狂暴模式下的竹知了](/imgs/a7f86e79c995e6a3.png)
 
 AI 在最终的验收报告里还记录了一条构建警告，提示打包后的文件体积超过 500 KB，还是挺细心的~
 
-![](https://pic.yupi.icu/chengfang/20.png?imageSlim)
+![](/imgs/6e8444b5ed279abd.png)
 
 不过和第一轮验收一样，打开浏览器控制台，我发现那两条警告信息还在。
 
-![](https://pic.yupi.icu/chengfang/19.png?imageSlim)
+![](/imgs/7b866050e11ea527.png)
 
 这也提醒了我，如果真要把验收交给 AI，光告诉它该验什么还不够。AI 具体用什么方式去检查（比如是看截图还是读控制台日志）、检查到异常以后怎么分类记录、最后怎么在报告里完整汇报出来，这些同样得在 Skill 里写清楚。中间任何一环有疏漏，都可能出现有问题却没有报告的盲区。
 
@@ -281,7 +278,7 @@ AI 在最终的验收报告里还记录了一条构建警告，提示打包后�
 
 Claude 官方把这些用法总结成了 4 种运行方式：
 
-![](https://pic.yupi.icu/chengfang/04-AI.png?imageSlim)
+![](/imgs/922a84eacf0aaccf.jpg)
 
 1）Standalone 独立执行
 
@@ -299,7 +296,7 @@ Anthropic 自己的 Claude Code 团队日常就是这么用的。先用 `/code-r
 
 这四步跑完，就是一整套全自动的代码质量保障流程，开发者只有在某一步出了问题、需要人工介入时才会收到通知。
 
-![](https://pic.yupi.icu/chengfang/05-AI.png?imageSlim)
+![](/imgs/7a9fe76046dcd9e0.jpg)
 
 4）On every PR 每次提交代码时自动执行
 
@@ -309,11 +306,11 @@ Anthropic 自己的 Claude Code 团队日常就是这么用的。先用 `/code-r
 
 顺带一提，Claude Code 的创造者 Boris Cherny 在今年 6 月说过一句话：我已经不再手动给 AI 写提示词了，我现在的工作是设计循环，让循环去指挥 AI 该做什么。
 
-![](https://pic.yupi.icu/1/loop%20engineering.png)
+![](/imgs/d1295ad742fce27d.png)
 
 这个理念在开发者社区里被叫做 Loop Engineering 循环工程，核心思想就是人类从「逐条指挥 AI」转变为「设计一套系统让 AI 自己运转」，而 Verification Loop 就是其中最关键的一环。
 
-![](https://pic.yupi.icu/1/01_Loop_Engineering%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%EF%BC%9A%E4%BD%A0%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E8%AE%A9%E5%AE%83%E4%BB%A3%E6%9B%BF%E4%BD%A0%E7%BB%99AI%E4%B8%8B%E6%8C%87%E4%BB%A4_compressed_v1.png)
+![](/imgs/885c24aa297b075a.png)
 
 关于 Loop Engineering 的更多内容，可以阅读本教程经验技巧板块中的《Loop Engineering 保姆级教程》。
 
@@ -331,7 +328,7 @@ Anthropic 自己的 Claude Code 团队日常就是这么用的。先用 `/code-r
 
 比如下面这个游戏记录工具：
 
-![](https://pic.yupi.icu/1/image-20260812144301650.png)
+![](/imgs/5864c8ac5b7250e8.png)
 
 如果你也有一套写完代码后每次都会重复的检查流程，可以试着整理成 Skill。懒得从零写的话，可以用官方的 `skill-creator` 插件，它会像面试一样问你平时的工作流程，然后帮你自动生成。
 

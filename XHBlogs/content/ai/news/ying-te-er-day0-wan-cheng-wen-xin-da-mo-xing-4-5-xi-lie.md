@@ -3,21 +3,17 @@ title: "英特尔 Day0 完成文心大模型 4.5 系列开源模型的端侧部�
 summary: "共收录 4 条 AI 行业资讯，如英特尔 Day0 完成文心大模型 4.5 系列开源模型的端侧部署；IT之家等。"
 order: 90
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《英特尔 Day0 完成文心大模型 4.5 系列开源模型的端侧部署》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [英特尔 Day0 完成文心大模型 4.5 系列开源模型的端侧部署](https://www.ithome.com/0/864/848.htm)
 
 [IT之家](https://www.ithome.com/) 6 月 30 日消息，百度今日[正式开源文心大模型 4.5 系列模型](https://www.ithome.com/0/864/640.htm)，涵盖 47B、3B 激活参数的混合专家（MoE）模型，与 0.3B 参数的稠密型模型等 10 款模型，并实现预训练权重和推理代码的完全开源。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/t6vtQA38mCuNQvSq.webp "英特尔 Day0 完成文心大模型 4.5 系列开源模型的端侧部署")
+![](/imgs/bef08ac0f6823f2c.webp "英特尔 Day0 完成文心大模型 4.5 系列开源模型的端侧部署")
 
 据英特尔中国消息，在此次文心系列模型的发布过程中，英特尔借助 OpenVINO  在模型发布的第零日实现对文心端侧模型的适配和在英特尔酷睿 Ultra 平台上的**端侧部署**。据介绍，OpenVINO  工具套件是由英特尔开发的开源工具套件，旨在优化和加速深度学习模型的推理性能，支持跨平台部署并充分利用英特尔硬件资源。
 

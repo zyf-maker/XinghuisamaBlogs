@@ -3,15 +3,12 @@ title: "编程资源大全"
 summary: "一站式编程学习资源导航"
 order: 3
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《编程资源大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -28,15 +25,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 对于初学编程的同学，编程导航有 **上百条编程学习路线**，不管你是想要做前端、后端开发，还是从基础的编程语言入手，都可以找到合适的学习路线规划。
 
-![](https://pic.yupi.icu/1/codenav-image.png)
+![](/imgs/26876e18082acfed.png)
 
 **20+ 套企业级实战全栈项目**，从 0 到 1 手把手带你学，可以直接写进简历！每套项目除了教程外，还提供直播笔记、项目源码、答疑解惑、专属项目交流群、现成的简历写法和面试题解、项目开发模板等。
 
-![](https://pic.yupi.icu/1/codenav-image2.png)
+![](/imgs/63f639ecb35f81cd.png)
 
 此外编程导航还有 **几百场模拟面试视频、上百套编程基础学习教程、上千篇精华技术文章** 等丰富资源，已帮助数千名小伙伴拿 offer、跳槽涨薪，好评不断。
 
-![](https://pic.yupi.icu/1/codenav-image3.png)
+![](/imgs/14f9699aeac408d1.png)
 
 上编程导航，和几十万编程爱好者交流学习，帮你快速提升编程学习和项目开发能力，解答学习求职中的各种疑问，收获满意的 Offer！
 
@@ -47,7 +44,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 访问地址：https://www.codefather.cn/tool
 
-![](https://pic.yupi.icu/1/image-20260113151313523.png)
+![](/imgs/a5a70543ffc013a0.png)
 
 
 ## 面试鸭 - 刷题神器，面试遇原题拿 Offer
@@ -56,7 +53,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 面试鸭作为一款 **题目全、更新快、题解优质** 的面试刷题工具，题库覆盖几乎所有主流编程方向，包括 Java 后端 / 前端 / AI / Python / C++ / Go / 运维 / 测试 / 系统设计 / 场景题 / 公司题库 / HR 面试，**300+ 题库、1 万多道面试真题**，能够应对面试官的多方位拷打。
 
-![](https://pic.yupi.icu/1/mianshiya-image1.png)
+![](/imgs/25e44d4ea6a05b3f.png)
 
 除了经典八股文，还提供企业真实面经、场景题、系统设计题等，帮你全方位攻克面试难关！支持 PC 端、小程序、甚至是 IDE、VSCode 编辑器插件，让你随时随地刷题、轻松提升技术、备战面试。
 
@@ -66,7 +63,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 原因很简单，**很多面试官都在用它来选题面试**，提高招聘效率。
 
-![](https://pic.yupi.icu/1/mianshiya-image2.png)
+![](/imgs/77611f81acb03d1d.png)
 
 
 #### AI 大模型面试题
@@ -75,7 +72,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 题库地址：https://www.mianshiya.com/bank/1906189461556076546
 
-![](https://pic.yupi.icu/1/image-20260113151621420.png)
+![](/imgs/1c7142f9ef75cf11.png)
 
 
 ## 老鱼简历 - 1 分钟搞定简历，面试率翻倍
@@ -88,21 +85,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 支持自由定制简历模块，切换中英文版本，导出 PDF 或图片，生成干净专业的在线简历链接，并可以一键脱敏分享，安全又省心。
 
-![](https://pic.yupi.icu/1/laoyujianli-image.png)
+![](/imgs/0a3922a4550467be.png)
 
 
 #### 不知道怎么优化简历？
 
 可以参考编程导航上的免费专栏《鱼皮的保姆级写简历指南》，提供了全面的简历优化技巧、常见的简历问题、真实案例分析。
 
-![](https://pic.yupi.icu/1/image-20260113152216928.png)
+![](/imgs/8045195983683514.png)
 
 
 #### 想获取更多岗位投递信息？
 
 老鱼简历提供了 **持续更新的投递时间表**，告诉你各大公司的招聘时间，帮你把握机会。
 
-![](https://pic.yupi.icu/1/image-20260113152400651.png)
+![](/imgs/363d2a27ba899d2e.png)
 
 
 ## 后端突击训练营 - 保姆级护航，高效拿 Offer
@@ -113,15 +110,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 入营后，你将获得**专属学习计划**，根据你的基础和目标岗位定制路线；由大厂背景导师提供 **1v1 答疑**、**项目深度优化**、**简历精修**与**模拟面试**，从面试官视角反复打磨你的项目和表达，而不是只停留在“写完代码就算学会”。
 
-![](https://pic.yupi.icu/1/xunlianying-image1.png)
+![](/imgs/550fe3df80df7605.png)
 
 同时，训练营通过**每日打卡、每周复盘和督学陪伴**，帮你对抗拖延和自学孤独，持续向求职目标推进。所有服务都围绕一个结果展开：让你在有限时间内，把学习转化为真正的求职竞争力。
 
-![](https://pic.yupi.icu/1/xunlianying-image2.png)
+![](/imgs/6077ec4144406f3b.png)
 
 👇添加训练营导师微信，帮你评估现状，进行求职规划辅导，并可咨询后端求职训练营相关问题~
 
-![](https://pic.yupi.icu/1/xunlianying-image3.png)
+![](/imgs/0701d1ac631530f2.png)
 
 
 ## 面多多 - 1v1 模拟面试，24 小时陪练
@@ -132,13 +129,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 提供了无限接近 **真实的沉浸式面试环境**，可以根据你的目标岗位、个人情况 **定制专属面试题，**1v1 语音答题，并生成详尽的 **复盘提升报告**，把你哪里卡壳、哪里逻辑乱、哪里知识需要补足，扒得明明白白。
 
-![](https://pic.yupi.icu/1/mianduoduo-image1.png)
+![](/imgs/fa40e6cdb04633f3.png)
 
 从自我介绍到项目深挖，从技术拷问到综合素质评估，完整复刻真实面试的全流程。而且 AI 面试官会根据你的回答智能追问，帮你提前预判所有可能被问到的环节，直到把你问透为止。
 
 你既可以选择 60 分钟及以上的沉浸式综合面试，也可以开启快速面试，按照岗位、题库或者专项进行有针对性的提升，还可以上传简历进行押题，面试更加游刃有余。
 
-![](https://pic.yupi.icu/1/mianduoduo-image2.png)
+![](/imgs/f5396e9ea38412ff.png)
 
 
 ## 算法导航 - 免费动画学算法
@@ -151,14 +148,14 @@ source: "https://github.com/liyupi/ai-guide"
 
 我们都提供了保姆级算法学习路线和教程，不仅包括算法步骤核心特性、优化策略、优缺点和拓展知识，还给出了 Java、JavaScript、Python、Go、C++ 等不同语言的代码实现，并附上了 **当堂小测验和 leetcode 关联题**。
 
-![算法导航动画学算法网站](https://pic.yupi.icu/1/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%88%AA%E5%8A%A8%E7%94%BB%E5%AD%A6%E7%AE%97%E6%B3%95%E7%BD%91%E7%AB%99.png)
+![算法导航动画学算法网站](/imgs/a4026f97449c1613.png)
 
 
 ## 编程导航模拟面试
 
 编程导航还有 **几百场真实的模拟面试录制视频**，不仅可以熟悉面试流程、消除真实面试时的紧张感，还能学习别人回答问题的思路和表达技巧。
 
-![](https://pic.yupi.icu/1/image-20260113153048672.png)
+![](/imgs/8f746033574e0b89.png)
 
 
 ## 鱼皮 AI 导航 - AI 工具和资源大全
@@ -171,7 +168,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 更重要的是，这里不只是一个工具清单，而是一个持续成长的 **AI 社区**。你可以交流经验、分享发现、学习别人是如何把 AI 用到实处的。
 
-![](https://pic.yupi.icu/1/image-20260109121412266.png)
+![](/imgs/7b40df45821fa6bf.png)
 
 
 ## 推荐资源

@@ -3,15 +3,12 @@ title: "DeepSeek官方整理的模型应用和工具"
 summary: "今天给大家介绍一个由 DeepSeek 团队维护的项目 Awesome DeepSeek Integration，该项目整理了与 DeepSeek 模型相关的各种应用和工具。"
 order: 204
 level: "入门"
-tags: ["资源汇总", "转载", "AI"]
+tags: ["资源汇总"]
 updated: "2025-03-28"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek官方整理的模型应用和工具》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 今天给大家介绍一个由 DeepSeek 团队维护的项目 Awesome DeepSeek Integration，该项目整理了与 DeepSeek 模型相关的各种应用和工具。
 
@@ -25,11 +22,11 @@ Awesome DeepSeek Integration 刚好提供了一些用于与 DeepSeek 等 AI 平�
 
 目前该项目已经收获了 15k+ 的 Star:
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181106646)
+![图片](/imgs/e2e6bca4465e5a2f.bin)
 
 DeepSeek 火了之后，该 Star 数是直线上升：
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181106711)
+![图片](/imgs/4262e650453d4a99.bin)
 
 Awesome DeepSeek Integration 是一个精选列表，包含了多种与 DeepSeek 模型集成的应用程序、工具和插件，涵盖了日常对话、AI 编程、大模型开发、知识库等多个领域。
 
@@ -52,7 +49,7 @@ Awesome DeepSeek Integration 是一个精选列表，包含了多种与 DeepSeek
 
 **LibreChat：**开源的 AI 聊天工具，可定制性强，能与 DeepSeek 无缝结合，提供个性化交互体验。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181106893)
+![图片](/imgs/2f150a88a37bf432.bin)
 
 ------
 
@@ -66,7 +63,7 @@ Awesome DeepSeek Integration 是一个精选列表，包含了多种与 DeepSeek
 
 **ATTPs：**一个智能体之间的通信协议框架，让不同平台的智能体可以安全、可信地交流，支持注册、发送和接收可验证数据，实现高效协作。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181106957)
+![图片](/imgs/22fba4815b72e43d.bin)
 
 ------
 
@@ -78,7 +75,7 @@ Awesome DeepSeek Integration 是一个精选列表，包含了多种与 DeepSeek
 
 **DeepSearcher：**DeepSearcher 结合了强大的 LLM（如 DeepSeek 和 OpenAI）和向量数据库（如 Milvus），基于私有数据进行搜索、评估和推理，提供高度准确的答案和全面的报告。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107016)
+![图片](/imgs/2157ef47bd39dd64.bin)
 
 ------
 
@@ -86,7 +83,7 @@ Awesome DeepSeek Integration 是一个精选列表，包含了多种与 DeepSeek
 
 Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solana 区块链协议。它支持任意 AI 模型的代理自主执行 60 多种 Solana 操作，包括代币交易、NFT 创建与管理、借贷、空投等。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107100)
+![图片](/imgs/381d437a52900128.bin)
 
 ------
 
@@ -98,7 +95,7 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **NoneBot：**基于 NoneBot 框架的智能对话工具，支持 QQ、飞书、Discord、TG 等多种消息平台。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107190)
+![图片](/imgs/3512847dd8089249.bin)
 
 ------
 
@@ -124,7 +121,7 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **Trancy：**沉浸式双语对照翻译、视频双语字幕、划句/划词翻译插件。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107315)
+![图片](/imgs/d6afe6e50ea062b6.bin)
 
 ------
 
@@ -136,7 +133,7 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **AI Commit：**使用 AI 生成 Git commit message 的 VS Code 插件。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107397)
+![图片](/imgs/73da88f79079eec9.bin)
 
 ------
 
@@ -150,7 +147,7 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **codecompanion.nvim：**AI 驱动的编码插件，无缝集成到 Neovim。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107448)
+![图片](/imgs/dd2226e303acbc63.bin)
 
 ------
 
@@ -160,7 +157,7 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **AI Git Commit：**使用 AI 生成 Git commit message 的 JetBrains 插件。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107501)
+![图片](/imgs/9b165967852a117b.bin)
 
 ------
 
@@ -170,7 +167,7 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **WindSurf：**基于 VS Code 的 AI Code 编辑器。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107589)
+![图片](/imgs/0c5d4a43fa5c2130.bin)
 
 ------
 
@@ -192,4 +189,4 @@ Solana Agent Kit：一个开源工具包，用于将 AI 智能体连接到 Solan
 
 **WordPress AI 助手：**对接 Deepseek API，用于 WordPress 站点的 AI 对话、文章生成和总结插件。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220181107651)
+![图片](/imgs/3472b6b079205655.bin)

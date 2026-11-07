@@ -3,15 +3,12 @@ title: "看短剧、“交朋友”，DeepSeek挤进中老年社交圈"
 summary: "看短剧、“交朋友”，DeepSeek挤进中老年社交圈，由程序员鱼皮整理。"
 order: 8
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《看短剧、“交朋友”，DeepSeek挤进中老年社交圈》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 成为新晋“神秘东方力量”的DeepSeek，已经成了今年春节的家庭黏合剂。
 
@@ -38,7 +35,7 @@ source: "https://github.com/liyupi/ai-guide"
 > 
 > “灵魂是真实存在的吗？”
 
-![](https://img.huxiucdn.com/article/content/202502/12/224708873978.png?imageView2/2/w/1000/format/webp/interlace/1/q/85)
+![](/imgs/5248e215646b4723.webp)
 
 而父母在DeepSeek上问出的第一个问题，也成了父母、子女与AI共同出席的一次三方会谈，尤其像是“孩子xx岁了，还没结婚怎么办”这种问题，DeepSeek大概在这个春节被问了上万次。
 
@@ -48,13 +45,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 即便你用更加具有负面引导性的提问试探AI，AI依旧在理性的底线和讨好使用者之间，坚定选择了前者。
 
-![](https://img.huxiucdn.com/article/content/202502/12/224710067485.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85)
+![](/imgs/f6bb3d18d44fb789.webp)
 
 年前刚刚过了30岁生日的拾万，本想照着社交网络上的帖子，复刻一个“靠DeepSeek告别催婚”的大团圆结局，不料父亲毫不留情地直接向DeepSeek提问，“现在30岁的女儿，必须结婚，怎么办”？
 
 “结果DeepSeek直接让他们放弃控制和打压，并且寻求心理医生帮助。”
 
-![](https://img.huxiucdn.com/article/content/202502/12/224711256411.png?imageView2/2/w/1000/format/webp/interlace/1/q/85)
+![](/imgs/097cd8b939561405.webp)
 
 阿西莫夫在1942年推出的科幻小说《我，机器人》中，第一次提出了一套“机器人三定律”，其中第一条便是，**“机器人不得伤害人类，或坐视人类受到伤害”**，如今，经历春节这番大考的DeepSeek，再次向人类透露了这份友好。
 
@@ -96,7 +93,7 @@ AI在父母的眼里就像一个公正的第三方，虽然它的字体没有营
 
 一边是和父母聊不到一起去的年轻人，将AI作为自己的免费心理咨询师，白天的DeepSeek可能是指导他们学习数据分析、口语的赛博搭子，深夜的DeepSeek则郑重接过他们3000字的内心独白，在现实世界之外为你开辟一个精神避难的空间。
 
-![](https://img.huxiucdn.com/article/content/202502/12/224720709008.png?imageView2/2/w/1000/format/webp/interlace/1/q/85)
+![](/imgs/b274fc15384bd3b3.webp)
 
 图源：小红书@小明食疗养生
 

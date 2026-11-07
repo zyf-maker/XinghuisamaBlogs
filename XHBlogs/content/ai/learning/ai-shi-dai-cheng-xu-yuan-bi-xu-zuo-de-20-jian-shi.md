@@ -3,15 +3,12 @@ title: "AI 时代程序员必须做的 20 件事"
 summary: "2026 年了，AI 已经能写 85% 的代码，让一个人能顶一个团队。程序员的角色正在被重新定义：从代码编写者变成 AI 指挥官，从手动实现变成意图驱动。"
 order: 14
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-18"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 时代程序员必须做的 20 件事》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -111,7 +108,7 @@ AI 写代码的质量，很大程度取决于你给它的信息够不够。要�
 
 💡 可以通过 [鱼皮的 AI 导航网站](https://ai.codefather.cn/) 获取最新 AI 资讯和 AI 学习资源。
 
-![](https://pic.yupi.icu/1/image-20260109121412266.png)
+![](/imgs/7b40df45821fa6bf.png)
 
 17、坚持复盘总结，每天记录工作、每月整理收获、每半年做一次大复盘。
 

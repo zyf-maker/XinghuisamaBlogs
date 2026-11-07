@@ -3,39 +3,36 @@ title: "本地安装 OpenClaw"
 summary: "零基础也能搞定的 OpenClaw 本地安装教程"
 order: 3
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-10-22"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《本地安装 OpenClaw》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。这篇文章手把手教你在自己的电脑上安装 OpenClaw，哪怕你完全没学过编程，只要跟着做，也能成功养虾 🦞~
 
 最近特别流行养龙虾，不是真的龙虾，而是一个叫 OpenClaw 的 AI 智能助手。
 
-![](https://pic.yupi.icu/1/openclaw%E7%8E%B0%E8%B1%A1.jpg)
+![](/imgs/972cce9e9892a805.jpg)
 
 你可以把它理解成一个住在你电脑里的 AI 员工，它不像普通的 AI 聊天机器人只能动嘴皮子，而是真的能帮你干活，读写文件、操作浏览器、执行命令、甚至搭建网站，通通不在话下。
 
-![](https://pic.yupi.icu/1/image-20260310160613289.png)
+![](/imgs/05c2018ae744a5e7.png)
 
 OpenClaw 的火爆程度远超我的想象，从 2025 年 11 月上线，仅用了大约 120 天就登顶 GitHub 星标 **历史第一**，累计拿下 29 万+ Stars，超过了 Linux、React 等一众前辈！
 
-![](https://pic.yupi.icu/1/image-20260310161116303.png)
+![](/imgs/77eef853581ab8ed.png)
 
 本来以为只是个技术圈的玩意儿，结果竟然火出圈了！
 
 国内出现了几百块的上门代装服务，你没听错，**上门帮你装一个开源软件，收费几百**。
 
-![](https://pic.yupi.icu/1/openclaw_setup_ondoor.jpeg)
+![](/imgs/d9109c0c00b47d99.jpg)
 
 更离谱的是，深圳腾讯大厦门口还搞了免费的线下 “装龙虾” 活动，近千人排队，四年级小学生、快 70 岁的老大爷都来了，场面跟老年人排队领鸡蛋似的。
 
-![](https://pic.yupi.icu/1/openclaw%E4%B8%8A%E9%97%A8%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1.jpeg)
+![](/imgs/0522d08399db8ca7.jpg)
 
 但我总觉着吧，如果这玩意需要让别人操作你的电脑帮你安装，大概率你也不需要这玩意，装上后你也不会用。
 
@@ -73,7 +70,7 @@ OpenClaw 的火爆程度远超我的想象，从 2025 年 11 月上线，仅用�
 
 打开 [OpenClaw 官网](https://openclaw.ai/)，你会看到官方提供了一行命令来安装。
 
-![](https://pic.yupi.icu/1/image-20260310161617619.png)
+![](/imgs/49797b9d61d18adb.png)
 
 **如果你是 Mac / Linux 用户**，可以直接打开终端（按 `Command + 空格` 搜索 “终端” 打开），粘贴下面这行命令并回车：
 
@@ -83,7 +80,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 这行命令会自动帮你安装所有依赖和 OpenClaw 本体，一步到位，装完就可以直接跳到 **第二步 - 安装配置 OpenClaw**。
 
-![](https://pic.yupi.icu/1/image-20260310161704012.png)
+![](/imgs/95af517f4b0c6a7a.png)
 
 **但如果你是 Windows 用户，千万不要直接执行一行命令安装！失败率极高！！！**
 
@@ -100,11 +97,11 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 打开 [Node.js 官网](https://nodejs.org/)，选择对应你操作系统的安装包，并执行下载。注意版本号 **至少选 22 以上**，低于这个版本就会逮虾失败。
 
-![](https://pic.yupi.icu/1/image-20260310144506886.png)
+![](/imgs/d93877dcc9c81e71.png)
 
 下载完成后，运行安装包，什么都不用改，一路点击下一步就好：
 
-![](https://pic.yupi.icu/1/image-20260310144530251.png)
+![](/imgs/9b4d3f000801c734.png)
 
 安装 Node.js 成功后，会自动附带安装一个叫 npm 的工具，它是 Node.js 的应用商店，后面我们要用它来安装 OpenClaw。
 
@@ -119,11 +116,11 @@ Git 是一个代码版本管理工具，OpenClaw 在安装过程中需要用它�
 
 打开 [Git 官网](https://git-scm.com/downloads/win)，下载 Windows 版本的安装包：
 
-![](https://pic.yupi.icu/1/image-20260310144749069.png)
+![](/imgs/63f1bfa280d3f407.png)
 
 同样，运行安装包，一路点击下一步，全都选择默认配置就好：
 
-![](https://pic.yupi.icu/1/image-20260310144843659.png)
+![](/imgs/2c784e83d88ab4f4.png)
 
 
 ### 3、安装 OpenClaw
@@ -134,7 +131,7 @@ Git 是一个代码版本管理工具，OpenClaw 在安装过程中需要用它�
 
 在电脑的搜索栏中输入 "PowerShell"，右键选择 **以管理员身份运行**：
 
-![](https://pic.yupi.icu/1/image-20260310144953360.png)
+![](/imgs/598badb28c97f2c6.png)
 
 先试试官方提供的一键安装命令：
 
@@ -144,7 +141,7 @@ iwr -useb https://openclaw.ai/install.ps1 | iex
 
 大概率你会跟鱼皮一样，直接报错，提示缺少执行脚本的权限：
 
-![](https://pic.yupi.icu/1/image-20260310145038140.png)
+![](/imgs/100f18341051ff36.png)
 
 没关系，执行下面这行命令，开启 PowerShell 的脚本执行权限：
 
@@ -154,11 +151,11 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 如果弹出确认提示，输入 `A` 然后按回车即可。这行命令的作用是允许运行来自可信来源的脚本，类似手机上允许安装第三方应用。
 
-![](https://pic.yupi.icu/1/image-20260310145148127.png)
+![](/imgs/3bd0e495a96b8f96.png)
 
 然后重新执行一键安装命令，运气好的话能直接成功。但像我这种倒霉蛋子，安装过程中又报错了！
 
-![](https://pic.yupi.icu/1/image-20260310145208509.png)
+![](/imgs/b332b764a62f07b3.png)
 
 报错信息显示是 npm 安装失败，那我们手动输入 npm 命令来安装试试：
 
@@ -166,11 +163,11 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 npm install -g openclaw
 ```
 
-![](https://pic.yupi.icu/1/image-20260310145316319.png)
+![](/imgs/26793fc62d274729.png)
 
 果不其然也报错了，因为一键安装脚本默认就是用 npm 来装的，根本原因一样。
 
-![](https://pic.yupi.icu/1/image-20260310145349762.png)
+![](/imgs/0f2a24029246e33f.png)
 
 别慌，其实换一个包管理工具就行，用 pnpm 来安装。
 
@@ -188,11 +185,11 @@ npm install -g pnpm
 pnpm -v
 ```
 
-![](https://pic.yupi.icu/1/image-20260310145555384.png)
+![](/imgs/b430c0e366c13000.png)
 
 然后执行 `pnpm setup`，这个命令会自动配置 pnpm 的全局安装路径，让你之后通过 pnpm 安装的工具能在任何地方直接使用：
 
-![](https://pic.yupi.icu/1/image-20260310145624520.png)
+![](/imgs/483f325949b44122.png)
 
 注意！执行完 `pnpm setup` 后，**一定要关闭当前 PowerShell 窗口，重新以管理员身份打开一个新的**。 这是为了让刚才配置的环境变量生效。
 
@@ -202,11 +199,11 @@ pnpm -v
 pnpm add -g openclaw@latest
 ```
 
-![](https://pic.yupi.icu/1/image-20260310145706609.png)
+![](/imgs/4b3bf9ad2e5a9fbf.png)
 
 等待一段时间后，安装成功！但你可能会看到一条提示，说忽略了一些包的构建脚本（Ignored build scripts）：
 
-![](https://pic.yupi.icu/1/image-20260310145800342.png)
+![](/imgs/f6072f6a6b32f963.png)
 
 这是因为 pnpm 出于安全考虑，默认不会自动执行第三方包的构建脚本，需要你手动批准。
 
@@ -216,11 +213,11 @@ pnpm add -g openclaw@latest
 pnpm approve-builds -g
 ```
 
-![](https://pic.yupi.icu/1/image-20260310145842863.png)
+![](/imgs/1b6e626cb074ce0b.png)
 
 不过执行这条命令可能会报错：
 
-![](https://pic.yupi.icu/1/image-20260310145930863.png)
+![](/imgs/9578fed5306e5833.png)
 
 鱼皮在网上搜了一大圈解决方案，也没能解决这个问题，期待官方后续修复。但好消息是，**这行命令不执行也几乎不影响正常使用**，直接忽略就行。
 
@@ -232,7 +229,7 @@ openclaw -v
 
 能够看到版本号，表示大功告成！
 
-![](https://pic.yupi.icu/1/image-20260310143618461.png)
+![](/imgs/d3e9f9cf16124347.png)
 
 
 ## 二、安装配置 OpenClaw
@@ -249,11 +246,11 @@ openclaw onboard --install-daemon
 
 执行后，会进入一个交互式引导程序，一步步带你完成配置。
 
-![](https://pic.yupi.icu/1/image-20260310150045929.png)
+![](/imgs/4bb69497d171a9f5.png)
 
 首先会弹出一个使用协议，需要你确认同意。
 
-![](https://pic.yupi.icu/1/image-20260310150214119.png)
+![](/imgs/fe07748a9e00a8c6.png)
 
 这里提醒一下，OpenClaw 是一个能操作你电脑的 AI 工具，理论上它可以执行任何终端命令，包括删除文件之类的敏感操作。**所以建议有条件的话在虚拟机或备用机里玩耍**，避免误操作影响到重要数据。
 
@@ -266,7 +263,7 @@ openclaw onboard --install-daemon
 
 建议新手直接选 Quickstart，它会帮你用默认配置快速搞定，人工模式适合有一定养虾经验的同学。
 
-![](https://pic.yupi.icu/1/image-20260310150255760.png)
+![](/imgs/c6eb162ec1c12856.png)
 
 
 ### 2、配置 AI 大模型
@@ -277,19 +274,19 @@ openclaw onboard --install-daemon
 
 鱼皮推荐新手选择 Qwen，因为它支持 OAuth 授权登录，会自动弹出网页让你扫码验证，不用手动去申请和填写 API Key，而且可以直接免费使用。缺点是调用太频繁可能会被限流，所以只适合快速上手体验。
 
-![](https://pic.yupi.icu/1/image-20260310150423382.png)
+![](/imgs/03041c8c15ad832b.png)
 
 选择 Qwen 后，引导程序会自动打开浏览器让你登录授权：
 
-![](https://pic.yupi.icu/1/image-20260310150610423.png)
+![](/imgs/1a6f9ac5b91ae887.png)
 
 完成登录授权后，选择默认的编程大模型：
 
-![](https://pic.yupi.icu/1/image-20260310150731894.png)
+![](/imgs/54834b9791bbf856.png)
 
 当然，你也可以选择其他大模型平台。如果你想了解各模型在 OpenClaw 场景下的实际表现，可以参考 [PinchBench](https://pinchbench.com/) 排行榜，这是一个专门测试大模型做 OpenClaw 任务的评测网站。以 2026 年 3 月的榜单为例，当时成功率最高的是 Claude Opus 4.6（成功率 82.5%），最便宜的是 Google 的 gemini-2.5-flash-lite（每次任务只要 1 毛钱）。不过这个榜单更新很快，新模型一直在刷新排名，选模型之前建议去看一眼最新数据。
 
-![](https://pic.yupi.icu/1/image-20260310164932093.png)
+![](/imgs/3b79dd8ae45b8873.png)
 
 不太建议新手一上来就用国外大模型来玩 OpenClaw，价格非常贵，尤其是你让 AI 干复杂的活时，Tokens 会烧得嘎嘎猛，要做好心理准备。国产的智谱、Kimi 也是不错的选择。
 
@@ -300,11 +297,11 @@ openclaw onboard --install-daemon
 
 建议直接跳过，我们先用网页界面聊天就好，后面可以再手动接入 QQ 和飞书。
 
-![](https://pic.yupi.icu/1/image-20260310150813561.png)
+![](/imgs/883f0ec936255c2b.png)
 
 接下来还会问你要不要配置搜索服务提供者（比如 Brave Search），也建议先跳过，这些都需要额外申请 API Key，后面有需要再配：
 
-![](https://pic.yupi.icu/1/image-20260310150917416.png)
+![](/imgs/8839fbb09ee4845d.png)
 
 
 ### 4、安装 Skills 技能包
@@ -313,36 +310,36 @@ Skills 是给 AI 装的能力扩展包。OpenClaw 本身只是一个框架，装
 
 先开启技能配置：
 
-![](https://pic.yupi.icu/1/image-20260310150959049.png)
+![](/imgs/e6930d0f0abe7a7d.png)
 
 然后引导程序会列出一些推荐的技能包，这里建议至少添加 **ClawHub** 这一个。ClawHub 是 OpenClaw 的官方技能市场，装了它之后，你的小龙虾就可以随时搜索和安装社区里上千个技能包，快速扩展自己的能力，非常方便。其他的技能按需选择即可。
 
-![](https://pic.yupi.icu/1/image-20260310151036714.png)
+![](/imgs/08a3ea32c6301cae.png)
 
 选择完技能后，还要选择安装技能的工具，用 npm 就行：
 
-![](https://pic.yupi.icu/1/image-20260310151118779.png)
+![](/imgs/d08cdc8c3b84808b.png)
 
 之后还会询问一些额外服务的配置，比如是否要配置 AI 生图大模型等，新手直接无脑全部选 No：
 
-![](https://pic.yupi.icu/1/image-20260310151157689.png)
+![](/imgs/168ab92ee06bc346.png)
 
 
 ### 5、启动网关服务
 
 接下来会自动安装并启动 OpenClaw 的 Gateway 网关服务。你可以把网关理解成 OpenClaw 的总调度中心，它负责接收你从各个渠道（网页、QQ、飞书等）发来的消息，分配给 AI 处理，再把结果返回给你。
 
-![](https://pic.yupi.icu/1/image-20260310151301625.png)
+![](/imgs/fcf1e0c1dd93f5c0.png)
 
 这时候 Windows 可能会弹出防火墙提示，问你是否允许公共网络和专用网络访问，**一定要点允许！** 否则网关服务无法正常工作。
 
-![](https://pic.yupi.icu/1/image-20260310151324961.png)
+![](/imgs/1939c0ef16e54f0e.png)
 
 启动成功后，引导程序会问你是在终端界面（TUI）还是网页浏览器中使用 OpenClaw。
 
 TUI 就是直接在命令行里跟 AI 聊天，适合喜欢敲命令、有一定编程基础的同学。新手当然选 Web UI 网页中使用：
 
-![](https://pic.yupi.icu/1/image-20260310151428919.png)
+![](/imgs/de8df2a23ea9a696.png)
 
 
 ### 开始使用
@@ -351,13 +348,13 @@ TUI 就是直接在命令行里跟 AI 聊天，适合喜欢敲命令、有一定
 
 先跟它打个招呼吧，问问它是谁。它还会主动引导你通过对话来设置身份、职责等个性化信息：
 
-![](https://pic.yupi.icu/1/image-20260310151625528.png)
+![](/imgs/bf2ca0cb07bf5a55.png)
 
 OpenClaw 内置了很多工具，比如文件读写、终端命令执行、网页搜索等。
 
 试试让它帮你读取电脑上的文件，比如查看下载目录里有什么：
 
-![](https://pic.yupi.icu/1/image-20260310151946903.png)
+![](/imgs/654826cf9eeed91b.png)
 
 
 ## 写在最后

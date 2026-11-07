@@ -3,15 +3,12 @@ title: "DeepSeek + 火山 - AI 海龟汤游戏项目实战"
 summary: "本项目是一个 AI 海龟汤游戏网站，通过 AI 对话的方式玩海龟汤游戏。"
 order: 19
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek + 火山 - AI 海龟汤游戏项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个 AI 海龟汤游戏网站，通过 AI 对话的方式玩海龟汤游戏。
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 [代码也给大家开源出来了](https://github.com/liyupi/yuhaigui-ai-game)，供朋友们玩耍和学习：
 
-![](https://pic.yupi.icu/1/image-20250311173906981.png)
+![](/imgs/991deba534326d15.png)
 
 下面简单介绍下这个项目~
 
@@ -44,13 +41,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 举个例子：有一个人邀请朋友来参加生日聚会，在他吹完蜡烛后，他把在场的所有朋友都弄死了，问为什么？
 
-![](https://pic.yupi.icu/1/image-20250311174206256.png)
+![](/imgs/1ad7695fbd98817f.png)
 
 可以让 AI 代替传统海龟汤的主持人，玩家只需要向 AI 对话，就能够自己进行海龟汤的游戏。
 
 下面这个图就是用 AI 生成的网站，其实还可以再优化优化让它更好看~
 
-![](https://pic.yupi.icu/1/1741583369760-09fd9c45-2093-4ab0-8148-ec83ad61fc6b.png)
+![](/imgs/789274984b7722bc.png)
 
 
 通过这个小项目，其实还是能学到不少东西的：
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 8. 学习如何纯利用 AI 开发前端网站
 
 
-![接入 AI 并调试优化 Prompt 提示词](https://pic.yupi.icu/1/1741248993412-8e92e068-5192-46ad-81bc-bf046de4c005.png)
+![接入 AI 并调试优化 Prompt 提示词](/imgs/051de0ea73c6db82.png)
 
 
 ### 技术选型
@@ -87,7 +84,7 @@ source: "https://github.com/liyupi/ai-guide"
 - AI 大模型接入，此处接入的是目前很火的 DeepSeek
 
 
-![快速初始后端 + 运行接口文档调试接口](https://pic.yupi.icu/1/1741247574417-a53861c4-35c6-488d-90a1-aa2cea31cee0.png)
+![快速初始后端 + 运行接口文档调试接口](/imgs/2036a8ecebd610ca.png)
 
 
 ### 业务流程
@@ -100,18 +97,18 @@ source: "https://github.com/liyupi/ai-guide"
 
 流程如图，这个图也是利用 AI 生成出来的：
 
-![](https://pic.yupi.icu/1/image-20250310135157204.png)
+![](/imgs/aec1315bc22ceecb.png)
 
 
 ## 最后
 
 这个项目的完整直播回放已经分集发到了 [编程导航网站](https://mp.weixin.qq.com/s/jHy2EjdOZPJDN_Lrs7qAUA) 上。除了上面这个项目外，最近我给编程导航的 [智能面试刷题平台项目](https://mp.weixin.qq.com/s/jHy2EjdOZPJDN_Lrs7qAUA) 也新增了不少 AI 的功能，比如 AI 生成题目和题解、AI 模拟面试等，都能够帮大家增加简历亮点并提升求职竞争力。
 
-![AI 模拟面试](https://pic.yupi.icu/1/image-20250311175611501.png)
+![AI 模拟面试](/imgs/cce3b623670f586a.png)
 
 编程导航还有我带大家做过的 [20 多套项目教程](https://www.codefather.cn/post/1797431216467001345)，从 0 到 1 带大家实操全栈项目开发，很多朋友靠我的项目拿到了不错的 Offer，好评如潮~ 
 
-![](https://pic.yupi.icu/1/de62f4cc-32cb-4814-aca7-03c232d0e2d2.png)
+![](/imgs/ddd92842b36deb6f.png)
 
 
 ## 推荐资源

@@ -3,15 +3,12 @@ title: "GitHub Copilot - AI 闯关学习小程序项目实战"
 summary: "这是一套以 AI 编程实战为核心的项目教程，基于 Taro + Python FastAPI + LangChain + LangGraph + DeepSeek，用 AI 编程的方式从 0 到 1 开发一个《AI 闯关学习微信小程序》，并"
 order: 23
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-08-21"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GitHub Copilot - AI 闯关学习小程序项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这是一套以 AI 编程实战为核心的项目教程，基于 Taro + Python FastAPI + LangChain + LangGraph + DeepSeek，用 AI 编程的方式从 0 到 1 开发一个《AI 闯关学习微信小程序》，并且走完部署上线的全流程，带你亲身体验 AI Vibe Coding 的完整工作流，学会用 AI 做出一个能上线、能传播、能变现的小程序产品！
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 完整视频教程 + 文字教程（预计 3 ~ 7 天学完）：https://www.codefather.cn/course/2037104890135748610
 
-![](https://pic.yupi.icu/1/1-project-demo-overview.png)
+![](/imgs/e895fd805fe063d2.png)
 
 
 ## 项目介绍
@@ -34,7 +31,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 更重要的是，这个项目的骨架可以直接复用到任何垂直领域，换个知识源就是一个新产品，比如驾考宝典、面试题库、企业内部培训考核、职业资格考试复习、英语单词闯关等等。
 
-![](https://pic.yupi.icu/1/2-driving-theory-quiz-flow.png)
+![](/imgs/c7a87de2742bd470.png)
 
 
 ## 项目功能演示
@@ -43,21 +40,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 在首页的输入框里，用一句话或者一段话描述你想学什么，选择题目难度和数量，点击「开始生成题目」，AI 就会自动去联网搜索相关资料，然后生成一组包含单选、多选、判断三种题型的闯关题目。
 
-![](https://pic.yupi.icu/1/3-vibecoding-web-search-and-correct-answer.png)
+![](/imgs/b4ed5452fd341582.png)
 
 
 2）闯关答题，答完立刻讲解
 
 题目生成后进入闯关页面，顶部有进度条和金币数，每答完一题立刻告诉你对错，并给出这道题的答案解析和对应的知识点，边玩边学。
 
-![](https://pic.yupi.icu/1/4-vibecoding-wrong-answer-and-submit.png)
+![](/imgs/6dd19e853792ad39.png)
 
 
 3）AI 生成通关复盘报告
 
 一组题目答完后，AI 会基于你的答题情况生成一份复盘报告，包含掌握度评分、答错的薄弱知识点、知识总结和下一步学习建议，还会结算本局获得的经验值。
 
-![](https://pic.yupi.icu/1/5-vibecoding-report-and-question-review.png)
+![](/imgs/0326eed3d6c8c89c.png)
 
 
 4）AI 联网搜索，出的题不过时
@@ -66,7 +63,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这一步本质上是把「出题」从一次简单的大模型调用，升级成了一个会自己上网查资料的 AI Agent。而且做了完整的降级策略，搜索不可用时会自动退回用大模型自身的知识出题，不影响主流程。
 
-![](https://pic.yupi.icu/1/6-yupi-ai-nav-search-and-quiz.png)
+![](/imgs/417316084cffdfa1.png)
 
 
 5）上传自己的知识库，基于私有文档出题
@@ -75,7 +72,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这个能力让项目从「学公开知识」扩展到了「考自己的资料」，可以用来做企业内部培训考核、特定题库复习、考试冲刺等场景。
 
-![](https://pic.yupi.icu/1/7-knowledge-base-upload-and-quiz.png)
+![](/imgs/e79ac34d5248e1e9.png)
 
 
 6）AI 给题目配图，学得更直观
@@ -84,7 +81,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 生成的图片会自动转存到对象存储，拿到永久访问链接，避免 AI 生图接口返回的临时链接过期后图片失效。同时还做了每日额度限制和多题并发控制，兼顾体验和成本。
 
-![](https://pic.yupi.icu/1/8-ai-generated-illustration-quiz.png)
+![](/imgs/f593133c68ef7fd4.png)
 
 
 7）微信一键登录，闯关记录随时回看
@@ -93,21 +90,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 同时项目做了「可选登录」的设计，没登录也能体验出题和答题，只是不保存记录，最大程度降低了新用户的使用门槛。
 
-![](https://pic.yupi.icu/1/9-profile-and-history.png)
+![](/imgs/0e5def2bbb09ef0d.png)
 
 
 8）真正上线，微信里搜得到
 
 这个项目不是做完就丢在本地，教程会带你把后端 Docker 化部署到容器托管平台、把本地 MySQL 换成云数据库、走完一套小程序发布流程，让任何人都能在微信里搜到并使用你做的小程序。
 
-![](https://pic.yupi.icu/1/image-20260811183313570.png)
+![](/imgs/35c8155d84da3fee.png)
 
 
 ## 功能梳理
 
 该项目功能丰富，涵盖闯关答题、AI 出题、复盘报告、用户系统、知识库、AI 配图 6 大模块，30+ 功能点，覆盖了一个真实上线小程序的核心业务场景。
 
-![](https://pic.yupi.icu/1/image-20260811155000927.png)
+![](/imgs/776701cbc79ab04e.png)
 
 闯关答题模块：
 
@@ -216,7 +213,7 @@ AI 配图模块：
 
 第六步，部署上线。Docker 容器化部署到微信云托管，走完小程序发布全流程。
 
-![](https://pic.yupi.icu/1/image-20260811154816415.png)
+![](/imgs/01b6d64f88ba7d68.png)
 
 
 ## 核心业务流程
@@ -225,14 +222,14 @@ AI 配图模块：
 
 整个使用流程非常简单：打开小程序 → 输入想学的知识 → 等 AI 出题 → 答题闯关 → 看复盘报告，几分钟完成一次学习闭环。
 
-![](https://pic.yupi.icu/1/01_%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B_compressed_v1.png)
+![](/imgs/98c36bf23e4845cf.png)
 
 
 ### AI 异步出题流程
 
 AI 出题要先联网搜索再让大模型推理，整体耗时可能达到几十秒，而微信小程序的单次请求有超时限制。所以出题接口不直接等结果，而是创建一个后台任务立刻返回任务 ID，由前端轮询获取进度。
 
-![](https://pic.yupi.icu/1/02_AI%E5%BC%82%E6%AD%A5%E5%87%BA%E9%A2%98%E6%B5%81%E7%A8%8B_compressed_v2.png)
+![](/imgs/1a949d061a279ca9.png)
 
 搜索或生图环节出现异常时，都不会让整个任务失败。搜索失败就退回用大模型自身知识出题，生图失败就出没有配图的题目，保证核心链路始终可用。
 
@@ -241,14 +238,14 @@ AI 出题要先联网搜索再让大模型推理，整体耗时可能达到几�
 
 上传文档后，系统会在后台完成解析、分块、向量化，之后就能基于这篇文档出题。检索环节用的是 Agentic RAG，由 AI 自己决定检索什么、检索几次。
 
-![](https://pic.yupi.icu/1/03_%E7%9F%A5%E8%AF%86%E5%BA%93RAG%E5%87%BA%E9%A2%98%E6%B5%81%E7%A8%8B_compressed_v1.png)
+![](/imgs/cf0ffe26c897a30a.png)
 
 
 ## 技术选型
 
 本项目以 Taro 微信小程序 + Python FastAPI + LangChain / LangGraph 为核心，前后端分离，综合运用了多种主流的小程序开发和 AI 应用开发技术。
 
-![](https://pic.yupi.icu/1/image-20260811155041400.png)
+![](/imgs/2304d8a7c6ca0aaf.png)
 
 小程序前端：Taro 4 跨端框架、React 18 + Hooks、TypeScript、Sass、Taro.request 统一请求封装、微信开发者工具
 
@@ -271,7 +268,7 @@ AI 编程工具：GitHub Copilot 主力 AI 编程工具（含免费方案）、C
 
 检索增强、AI 配图等能力对接了多家外部服务，数据分别落在关系型数据库、向量数据库和对象存储中。
 
-![](https://pic.yupi.icu/1/image-20260811155136853.png)
+![](/imgs/9a355efca08d6841.png)
 
 
 完整视频教程 + 文字教程（预计 3 ~ 7 天学完）：https://www.codefather.cn/course/2037104890135748610

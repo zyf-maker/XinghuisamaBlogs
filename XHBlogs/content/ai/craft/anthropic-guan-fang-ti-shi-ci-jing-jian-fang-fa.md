@@ -3,21 +3,18 @@ title: "Anthropic 官方 - 提示词精简方法"
 summary: "官方砍掉了 Claude Code 80% 的系统提示词，跑分居然没降"
 order: 16
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-09-02"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Anthropic 官方 - 提示词精简方法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 前段时间 Anthropic 在官方博客发了一篇文章，说他们针对 Claude Opus 5 和 Fable 5 这两个新模型，删掉了 Claude Code **超过 80%** 的系统提示词，但在编码评测上的表现居然没有下降。
 
-![](https://pic.yupi.icu/1/1785753504253-ca87d006-a35e-475f-bdb4-7a4b241e3856.png)
+![](/imgs/f3911068584dcda5.png)
 
 我当时的第一反应是：之前我花大力气写的那些提示词，都白写了？
 
@@ -36,7 +33,7 @@ Anthropic 在他们关于上下文工程的系列博客中提出了 2 个概念�
 
 第二个是 **上下文的边际递减效应**。上下文中的 Token 数量越多，模型精确召回信息的能力就越差。就像你一次性塞给一个人 100 页文档，让他同时记住每一页的细节，根本不现实。
 
-![](https://pic.yupi.icu/1/01_%E6%B3%A8%E6%84%8F%E5%8A%9B%E9%A2%84%E7%AE%97%E4%B8%8E%E8%BE%B9%E9%99%85%E9%80%92%E5%87%8F%E6%95%88%E5%BA%94_compressed_v2.png)
+![](/imgs/192f3e6d0685e0aa.png)
 
 现在你应该明白 Anthropic 为什么要砍这么多系统提示词了吧。
 
@@ -68,7 +65,7 @@ Anthropic 在他们关于上下文工程的系列博客中提出了 2 个概念�
 
 这样一来，模型就会根据项目现有的代码风格来自动适配，而不是被前置规则限制住选择。
 
-![](https://pic.yupi.icu/1/02_%E4%BB%8E%E5%AE%9A%E6%AD%BB%E8%A7%84%E5%88%99%E5%88%B0%E8%AE%A9%E6%A8%A1%E5%9E%8B%E8%87%AA%E5%B7%B1%E5%88%A4%E6%96%AD_compressed_v1.png)
+![](/imgs/074cbefafac55cb2.png)
 
 
 ### 2、从给示例到设计好接口
@@ -92,7 +89,7 @@ Anthropic 在他们关于上下文工程的系列博客中提出了 2 个概念�
 
 这种策略叫做 **渐进式披露（Progressive Disclosure）**，如果你读过本教程编程工具板块「工具实战」目录中的《Agent Skills：通用 AI 技能库》，对这个术语应该不陌生了。
 
-![](https://pic.yupi.icu/1/03_%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%8A%AB%E9%9C%B2%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD_compressed_v3.png)
+![](/imgs/57249e12d4d7e279.png)
 
 这个思路也适用于我们自己写的 CLAUDE.md 和 Skills 文件。很多人喜欢把 CLAUDE.md 写成一个事无巨细的百科全书，觉得如果不写全，模型就找不到。
 
@@ -105,7 +102,7 @@ Anthropic 在他们关于上下文工程的系列博客中提出了 2 个概念�
 
 CLAUDE.md 的定位也因此发生了变化，Anthropic 建议把它保持轻量，重点写项目中的「坑」和那些模型看代码看不出来的特殊约定。像目录结构、依赖列表这种模型自己就能读到的信息，就不需要再手动写进去了。
 
-![](https://pic.yupi.icu/1/04_%E4%BB%8E%E6%89%8B%E5%8A%A8%E8%AE%B0%E5%BF%86%E5%88%B0%E8%87%AA%E5%8A%A8%E8%AE%B0%E5%BF%86_compressed_v2.png)
+![](/imgs/815d53b0b943811c.png)
 
 
 ### 5、减少矛盾指令
@@ -118,7 +115,7 @@ Anthropic 在审查自己团队使用 Claude Code 的对话记录时，还发现
 
 于是他们砍掉了冗余的规则，这类矛盾自然就少了很多。
 
-![](https://pic.yupi.icu/1/05_%E7%9F%9B%E7%9B%BE%E6%8C%87%E4%BB%A4%E8%AE%A9%E6%A8%A1%E5%9E%8B%E5%9B%B0%E6%83%91_compressed_v3.png)
+![](/imgs/f3d0679ee4c321fd.png)
 
 
 ## 长短提示词实战对比
@@ -129,7 +126,7 @@ Anthropic 在审查自己团队使用 Claude Code 的对话记录时，还发现
 
 第一种是规则堆砌型的长提示词，包含一堆具体的技术要求和开发步骤：
 
-![](https://pic.yupi.icu/1/1785921294571-9f9acde0-232f-4571-8f39-8f8c8f1a464f.png)
+![](/imgs/18512dc1b8036766.png)
 
 第二种是短提示词，就 5 行话，只说了要做什么和用什么方式调研：
 
@@ -145,7 +142,7 @@ Anthropic 在审查自己团队使用 Claude Code 的对话记录时，还发现
 
 在前期调研规划阶段，短提示词那边主动进入了 Plan 模式，先规划好完整的 Todo 列表才开始动手；长提示词那边反而没有进入 Plan 模式，收到指令就直接开写了。
 
-![短提示词规划后的 Todo 列表](https://pic.yupi.icu/1/1785908352580-d2cafcaf-d694-40a9-98e7-3ea556571265.png)
+![短提示词规划后的 Todo 列表](/imgs/0879139fc73038a0.png)
 
 从代码量来看，短提示词版本一共跑出了 12984 行代码，长提示词版本只有 8384 行，少了将近三分之一。
 
@@ -155,25 +152,25 @@ Anthropic 在审查自己团队使用 Claude Code 的对话记录时，还发现
 
 可以正常切换 Edit 和 Agent 模式窗口，目录树加载正常，文件的增删改查都没问题，代码语法高亮和自动补全也有，甚至连 git 功能都做了。除此之外还支持切换主题、终端可以正常使用、搜索和快捷键也都到位了。最关键的是，Agent 模式可以正常接入模型来生成代码。
 
-![短提示词版本](https://pic.yupi.icu/1/1785913712132-b278c6d8-521a-4d60-9a64-5cb90fef59a0.png)
+![短提示词版本](/imgs/7fa135da5d87848e.png)
 
 长提示词生成的效果就有点儿翻车了，放张图大家自己感受一下差距。
 
-![长提示词版本](https://pic.yupi.icu/1/1785942480484-bdb66780-bc13-4d2c-8da3-dc88a18aaa55.png)
+![长提示词版本](/imgs/50c691030b1ccf8f.png)
 
 得益于 Opus 5 的智能，两种提示词生成的 Cursor 网页版都能正常调用 AI Agent 来生成代码。我把它们都接入了 DeepSeek API，让它们各自写一个贪吃蛇小游戏，用的模型是 DeepSeek V4 Flash，生成过程很丝滑。
 
 短提示词做的 Cursor 在生成代码前会显示思维链和调用了什么工具，整个交互体验更完整。
 
-![](https://pic.yupi.icu/1/1785981173449-df6ee5ce-64aa-456c-87cf-dea06f4dac33.png)
+![](/imgs/d1ebbe47c7d41887.png)
 
 长提示词做的 Cursor 则是直接开写，没有思维链展示。
 
-![](https://pic.yupi.icu/1/1785981359513-9ece52c4-c252-406f-be73-08ca1f401ec9.png)
+![](/imgs/eae61e72685cefa1.png)
 
 最后两个版本生成的贪吃蛇小游戏都能正常运行。AI 发展成现在这样，我居然能够轻松地用 AI 编程工具做个 AI 编程工具，然后让做出来的 AI 编程工具再来 AI 编程。
 
-![](https://pic.yupi.icu/1/1785913338340-fa358bbe-5512-4ba6-b2b3-d6366573c3f3.png)
+![](/imgs/0b507ce3c28cdecd.png)
 
 测试做到这里结果已经很明显了。短提示词开发的 Cursor 无论是功能完善度、代码质量还是一次跑通的成功率，都完胜长提示词版本。
 
@@ -197,7 +194,7 @@ Anthropic 在审查自己团队使用 Claude Code 的对话记录时，还发现
 
 为了帮开发者跟上这个变化，Claude Code 还内置了一个 `/doctor` 命令（也可以用 `/checkup`），可以自动扫描你的 Skills、CLAUDE.md 等配置文件，帮你检测哪些内容是冗余的、哪些可以精简。
 
-![](https://pic.yupi.icu/1/1785830100705-ba0f3f43-ba78-43e0-bf59-5dabcf2f2c61.png)
+![](/imgs/6cb5ad594604c2e1.png)
 
 具体来说，它会做这么几件事：
 
@@ -210,7 +207,7 @@ Anthropic 在审查自己团队使用 Claude Code 的对话记录时，还发现
 
 我用自己的项目实测了一下，它帮我优化了一部分配置内容，但没有对 CLAUDE.md 做大的改动，说明我这个项目的规则还算健康。
 
-![](https://pic.yupi.icu/1/1785830217113-f4cf3ca0-4d3b-42f7-9dae-a0d8f590bc5b.png)
+![](/imgs/07afc17de90989ea.png)
 
 
 ## 写在最后

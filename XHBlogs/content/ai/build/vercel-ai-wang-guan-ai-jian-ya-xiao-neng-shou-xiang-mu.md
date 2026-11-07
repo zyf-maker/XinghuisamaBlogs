@@ -3,15 +3,12 @@ title: "Vercel AI 网关 - AI 减压小能手项目实战"
 summary: "这篇文章的重点不在于开发，而在于学习 AI 网关的概念和使用方法。通过漫画式的讲解和 Vibe Coding 项目实战，你可以了解如何通过 Vercel AI Gateway 在 AI 应用中灵活切换不同的模型，降低开发成本和维护难度。适合"
 order: 34
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vercel AI 网关 - AI 减压小能手项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这篇文章的重点不在于开发，而在于学习 AI 网关的概念和使用方法。通过漫画式的讲解和 Vibe Coding 项目实战，你可以了解如何通过 Vercel AI Gateway 在 AI 应用中灵活切换不同的模型，降低开发成本和维护难度。适合想学习 AI 网关技术、需要快速对接多个 AI 模型的同学。
 
@@ -21,11 +18,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 你是小阿巴，刚入职的 AI 应用开发工程师。
 
-![](https://pic.yupi.icu/1/1761152281564-61073333-da43-4ac2-b6ca-09460e87331a.png)
+![](/imgs/b6c4c072604e8385.png)
 
 屑老板说：公司最近要做一个智能客服系统，小阿巴，你是新人，所以这个重任就交给你了！故天将降大任于新人也~
 
-![](https://pic.yupi.icu/1/1761645372915-7d9df0cf-f44a-4643-8d67-3e7103fb03db.png)
+![](/imgs/2e7861afbb713c3e.png)
 
 你一听，心想：不就是调个 API 的事儿嘛，有啥难的？
 
@@ -37,7 +34,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 结果刚写完，屑老板又说：嗯，听过国产的通义千问也不错，也一起接入吧！
 
-![](https://pic.yupi.icu/1/1761645406716-99acb82f-2f1f-4a62-a3c6-076ac17b1e6d.png)
+![](/imgs/a1688c0dc55e8170.png)
 
 你皱了皱眉，心想：又得写调用这个模型的代码了，老板你是不是有点过分了。。。
 
@@ -53,7 +50,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你看着渐渐发狂的老板，开始怀疑人生：调个 AI 接口怎么这么复杂？
 
-![](https://pic.yupi.icu/1/1761645432489-6e2f67db-40f5-40fe-a6f0-c18ead6e6d8a.png)
+![](/imgs/87f6d2807d80181a.png)
 
 
 ⭐️ 本文对应视频版：[https://bilibili.com/video/BV14NyrBTEeB](https://www.bilibili.com/video/BV14NyrBTEeB)
@@ -71,46 +68,46 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮：网关就像是火车站的检票口，所有乘客都要先经过检票口，检票员会检查你的车票，然后指引你去正确的站台。
 
-![](https://pic.yupi.icu/1/1761645506547-26d820e6-cda3-482e-a7e9-dcadcbbb0445.png)
+![](/imgs/8b0fa7f0ff6e5f42.png)
 
 在系统架构中，前端用户发来的请求要先经过网关，网关会统一处理用户认证、拦截恶意请求、控制流量、监控统计请求等等，然后把请求转发到后端服务器进行处理。
 
-![](https://pic.yupi.icu/1/1761645542774-a2da29dc-3d2c-4e1b-adcf-dc5dd59d0881.png)
+![](/imgs/3f64b19ed271aafe.png)
 
 你点了点头：哇哦，这样一来，如果我后端有多个服务，不用给每个服务单独写这些功能了。
 
 鱼皮：没错，而且如果一个后端服务挂了，网关还可以自动将请求转发到其他服务。
 
-![](https://pic.yupi.icu/1/1761645571947-8cb4a141-7d6f-4add-a82b-7a70716f23e7.png)
+![](/imgs/ef6de5abf70de8c6.png)
 
 你有些好奇了：那你刚刚提到的 AI 网关又是什么？
 
 鱼皮：传统的 API 网关通常放在你的应用和各种后端服务之间；而 AI 网关是专门为 AI 应用设计的，放在你的应用和各种 AI 模型服务之间（比如 OpenAI、通义千问、DeepSeek 等等）。
 
-![](https://pic.yupi.icu/1/1761645615469-787296d8-1fb6-4452-b406-c79ef537f193.png)
+![](/imgs/dd6bd009366ead75.png)
 
 你的应用只需要发送 **标准请求** 给 AI 网关，它就会自动帮你完成用户鉴权、限流控制、安全防护、故障转移、负载均衡、监控统计等一系列复杂的操作，并且将请求转发给 AI 大模型进行处理。
 
-![](https://pic.yupi.icu/1/1761645642401-683e786e-3e06-420a-abce-cd43f7bfa901.png)
+![](/imgs/f6110d09e9f42095.png)
 
 如果你要对接不同的大模型，只需要修改标准请求中的大模型名称，AI 网关就会帮你完成路由，不用针对每种模型写一套对接的代码啦~
 
-![](https://pic.yupi.icu/1/1761645657980-b463d0b2-eecd-4635-99ee-fed9f121bf4e.png)
+![](/imgs/8ea133cf54794a20.png)
 
 你欢呼雀跃：这也太强了，有了 AI 网关，老板提到的所有问题都能解决了！那现在有哪些 AI 网关产品可以用呢？
 
-![](https://pic.yupi.icu/1/1761645679096-3ceb73df-a858-4410-abc1-041222b497f4.png)
+![](/imgs/308c59dc39cbefc3.png)
 
 
 ## AI 网关选型
 
 很多 AI 玩家第一个接触到的 AI 网关可能是 [OpenRouter](https://openrouter.ai/)，它更像是一个 AI 模型的聚合平台，支持通过统一的接口对接几百种模型。
 
-![](https://pic.yupi.icu/1/1761645719834-eadcde16-711c-474c-9838-5ea5f01be452.png)
+![](/imgs/425f5b9e9abda7c6.png)
 
 很多 AI 工具都支持配置 OpenRouter，对于普通的 AI 使用者来说，可以通过它使用到更多的大模型、更稳定的服务。
 
-![](https://pic.yupi.icu/1/1761645743475-53493cb1-5be9-4b0b-8b9a-a497ac13d7c7.png)
+![](/imgs/c657e0a8f0ef3728.png)
 
 
 你问到：那还有专门面向开发者的 AI 网关产品吗？
@@ -123,11 +120,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 3）[Kong AI Gateway](https://konghq.com/products/kong-ai-gateway)：Kong 本身就是一个很成熟的 API 网关，现在专门为 AI 场景做了增强，企业级功能比较完善。
 
-![](https://pic.yupi.icu/1/image-20251018111819481.png)
+![](/imgs/b54d9d1305493bfc.png)
 
 4）[Higress AI](https://higress.ai/)：阿里云开源的 AI 网关，支持 100 多种大模型的统一协议转换，提供语义缓存、令牌限流、MCP 转换等企业级功能，适合有复杂 AI 集成需求的企业。
 
-![](https://pic.yupi.icu/1/image-20251019163817976-20251028181254777.png)
+![](/imgs/12ce88ab325fc3e1.png)
 
 
 你挠了挠头：看起来也太复杂了吧，我应该怎么上手 AI 网关呢？
@@ -141,19 +138,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 首先打开 [Vercel 官网](https://vercel.com/) 注册账号，绑定银行卡可以免费获得 5 美元的使用额度，对于学习测试来说够用了。
 
-![](https://pic.yupi.icu/1/1760687990497-90720fbb-0df6-4ede-87b8-64b8702994e9-20251028181254840.png)
+![](/imgs/57e0deebf1803eb3.png)
 
 
 然后在控制台创建 API Key，注意不要泄露哦：
 
-![](https://pic.yupi.icu/1/1760688078133-7b91b6f3-2fc4-4bb4-b2c1-d517699f0968-20251028181254879.png)
+![](/imgs/f6245dbd2c341b6c.png)
 
 
 #### 2、官方 Demo
 
 接下来，你可以通过官方提供的快速开始教程来创建项目并跑通 AI 对话的 Demo：
 
-![](https://pic.yupi.icu/1/image-20251019160232722.png)
+![](/imgs/f3f68bb751e25e19.png)
 
 
 简单来说就 4 个步骤：
@@ -170,11 +167,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 这里我选用的 AI 开发工具是 Cursor，直接让 AI 帮我生成符合要求的完整前端 + 后端代码。
 
-![](https://pic.yupi.icu/1/1761645829262-bd9950ef-6334-410f-ab27-140873cb56a4.png)
+![](/imgs/e18a7459e923b72c.png)
 
 由于 Vercel AI Gateway 是比较新的玩意，AI 可能不理解它的用法，所以我直接把 Vercel AI Gateway 的官方文档扔给 Cursor，让他通过文档来学习用法。
 
-![](https://pic.yupi.icu/1/1761645854330-54b6ab38-7f1f-45a5-ac34-463ee63477a7.png)
+![](/imgs/cad023dbec5ece12.png)
 
 
 完整提示词如下：
@@ -193,56 +190,56 @@ source: "https://github.com/liyupi/ai-guide"
 
 点击执行后，AI 会先调用 MCP 工具从网页中获取到信息，这里我用的是 `Firecrawl MCP`：
 
-![](https://pic.yupi.icu/1/1760690503357-7412db47-4389-49e2-b42c-dc6eabdc283b-20251028181255024.png)
+![](/imgs/40b0665b48bce57a.png)
 
 
 大概 6 分钟左右，AI 完成了全部代码的生成。可惜这里 AI 不是很听话，还是给我生成了一堆文档，比生成代码本身的时间都多！
 
-![](https://pic.yupi.icu/1/image-20251019161322770.png)
+![](/imgs/457619757f891934.png)
 
 
 然后在根目录下创建 `.env` 环境变量配置文件，填入 AI Gateway 的 API Key：
 
-![](https://pic.yupi.icu/1/1760689844332-79459841-46e3-4356-9fe7-76062a90464c-20251028181255097.png)
+![](/imgs/967519babba461bf.png)
 
 
 最后，安装依赖并执行启动脚本：
 
-![](https://pic.yupi.icu/1/1760690024471-f89bf1e3-3d9e-4857-8a68-a236ffa0af14-20251028181255125.png)
+![](/imgs/3d2bf648b226b0c8.png)
 
 
 访问 `localhost:3000` 就能看到项目啦：
 
-![](https://pic.yupi.icu/1/1760690223277-56f89c2a-b4c5-43d6-a61d-3f744bcd9aef-20251028181255161.png)
+![](/imgs/214a64b5928233eb.png)
 
 
 有一说一，效果可真不错，又给了我一点点动力再多写几个字哈哈：
 
-![](https://pic.yupi.icu/1/1760690245830-e877986b-1bb6-4c6a-96ad-92b738a57fed-20251028181255188.png)
+![](/imgs/3c3a679065f6f3c6.png)
 
 
 你感叹道：有了 AI + AI 网关这套组合拳，开发 AI 项目也太快了吧！
 
 鱼皮点点头：没错，而且整个过程中我们不用担心某个模型挂掉，网关会自动处理这些问题。
 
-![](https://pic.yupi.icu/1/1761645903883-94c22619-2cac-41a4-87c3-d51ec96586e0.png)
+![](/imgs/e3c525642f6bfd6b.png)
 
 
 #### 4、更多特性
 
 不仅如此，Vercel AI Gateway 支持非常多的国内外大模型，不同模型的计费标准都不一样：
 
-![](https://pic.yupi.icu/1/image-20251019165234650.png)
+![](/imgs/171d58c0d7fbf9e7.png)
 
 
 你还可以配置自己的模型 API Key：
 
-![](https://pic.yupi.icu/1/image-20251019162655475.png)
+![](/imgs/35a063876bc17c11.png)
 
 
 此外，还提供了 **可观测性** 等企业级功能，帮你了解 AI 的调用情况和成本分析：
 
-![](https://pic.yupi.icu/1/1760691345180-9ce7ec43-c651-4c19-a918-90b87034b7fe-20251028181255384.png)
+![](/imgs/6fbf84e9764e222a.png)
 
 
 你双眼放光：哇塞，那我以后开发 AI 项目就用它了！
@@ -251,7 +248,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 如果你的个人项目只需要简单地调用单个 AI 模型，直接调用 API 就够了；如果你个人或团队的小项目需要用到 AI 网关的特性（比如集成多个模型），那么可以选用 Vercel AI Gateway；而如果你要开发企业级应用，对安全性和稳定性要求很高，选用 Higress 或者 Kong 这种更专业的网关更合适，能帮你少写亿点点屎山代码 💩！
 
-![](https://pic.yupi.icu/1/1761645922466-4284b8ac-7928-424e-a0eb-09629e7e66a1.png)
+![](/imgs/87665599aa5173f1.png)
 
 
 ## 结局
@@ -260,11 +257,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 你感慨道：这就是站在巨人的肩膀上啊，果然不要重复造轮子，懒人推动世界进步！
 
-![](https://pic.yupi.icu/1/1761645939970-276a3391-2f40-4b85-8d23-d36c5a491f8c.jpeg)
+![](/imgs/143d32ea23de36df.jpg)
 
 鱼皮娇嗔：所以这就是你懒得给我点赞的理由？？？
 
-![](https://pic.yupi.icu/1/1761646182922-0edead80-b8e9-4b8f-a90d-e35fa8712f3b.png)
+![](/imgs/96fb1a5b785d61d1.png)
 
 
 ## 推荐资源

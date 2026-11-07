@@ -3,15 +3,12 @@ title: "Vibe Coding 项目灵感大全"
 summary: "这篇文章，我会为你提供 100 个适合 Vibe Coding 的项目创意，涵盖个人工具、工作效率、娱乐创意、学习教育、社交互动等多个领域，你可以根据自己的兴趣和水平选择。"
 order: 8
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-10-22"
 readingTime: 24
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 项目灵感大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -43,7 +40,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 选择那些能快速看到效果的项目。比如一个简单的工具，几天就能做出来，马上就能用。这样会有成就感，有动力继续做下去。避免选择那些需要几个月才能看到效果的大项目。
 
-![](https://pic.yupi.icu/1/choose-project-3ways%E5%A4%A7.jpeg)
+![](/imgs/14398533ad1b608d.jpg)
 
 
 ### 我的建议
@@ -639,13 +636,13 @@ Base64 编码和解码，支持文本和图片，可以在线预览。在处理�
 
 在 [ChatGPT GPTs](https://chatgpt.com/gpts) 上可以看到各种用户创建的 GPT 应用，涵盖写作、编程、设计、教育等各个领域。你可以体验这些应用，看看哪些功能可以用网页或小程序的形式实现。
 
-![](https://pic.yupi.icu/1/image-20260112125511653.png)
+![](/imgs/29b0f5772ee355ff.png)
 
 2、豆包 AI 应用平台
 
 豆包的 [应用生成平台](https://www.doubao.com/code/chat) 和 [创作广场](https://www.doubao.com/code/launch) 上有很多创意应用。这些应用大多是用 AI 快速生成的，可以给你提供很好的参考。你可以看看别人都在做什么、哪些应用受欢迎，从中找到自己的方向。
 
-![](https://pic.yupi.icu/1/image-20260112125557162.png)
+![](/imgs/5349b51c931f61ca.png)
 
 还有很多类似的平台，比如 Character.AI 等，都可以作为灵感来源。
 

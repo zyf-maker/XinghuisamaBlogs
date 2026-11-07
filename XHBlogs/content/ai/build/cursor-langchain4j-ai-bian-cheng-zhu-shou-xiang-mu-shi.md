@@ -3,15 +3,12 @@ title: "Cursor + LangChain4j - AI 编程助手项目实战"
 summary: "这是一套完整的全栈 AI 编程助手项目教程。本项目采用人工编码 + Vibe Coding 结合的方式开发，通过写 Java 代码来调用 AI、使用 Cursor 等 AI 工具辅助编码。重点在于学习如何在 Java 项目中集成 AI 能力"
 order: 39
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 19
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor + LangChain4j - AI 编程助手项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这是一套完整的全栈 AI 编程助手项目教程。本项目采用人工编码 + Vibe Coding 结合的方式开发，通过写 Java 代码来调用 AI、使用 Cursor 等 AI 工具辅助编码。重点在于学习如何在 Java 项目中集成 AI 能力，带你系统学习 LangChain4j 框架的几乎所有主流用法和特性。适合有一定 Java 后端开发基础的同学，快速入门 AI 应用开发，并且在简历上添加 AI 项目。
 
@@ -42,12 +39,12 @@ source: "https://github.com/liyupi/ai-guide"
 - 程序员常见面试题
 
 
-![](https://pic.yupi.icu/1/1752027043776-cd6d17ed-175f-4c7e-8b25-aee81a5296b2-20250710114302208.png)
+![](/imgs/cfa7dddae052468a.png)
 
 
 要实现这个需求，我们首先要能够调用 AI 完成 **基础对话**，而且要支持实现 **多轮对话记忆**。此外，如果想进一步增强 AI 的能力，需要让它能够 **使用工具** 来联网搜索内容；还可以让 AI 基于我们自己的 **知识库回答**，给用户提供我们在编程领域沉淀的资源和经验。
 
-![](https://pic.yupi.icu/1/1752028612444-351672a3-3725-4850-82b5-57d63d0ba866.png)
+![](/imgs/594d28b6114df6fd.png)
 
 如果要从 0 开始实现上述功能，还是很麻烦的，因此我们要使用 AI 开发框架来提高效率。
 
@@ -74,15 +71,15 @@ source: "https://github.com/liyupi/ai-guide"
 
 打开 IDEA 开发工具，新建一个 Spring Boot 项目，**Java 版本选择 21**（因为 LangChain4j 最低支持 17 版本）：
 
-![](https://pic.yupi.icu/1/1751944012715-3ac04ad2-42e9-4c41-b998-a5318050e27c.png)
+![](/imgs/91c737cfdceb634f.png)
 
 选择依赖，使用 3.5.x 版本的 Spring Boot，引入 Spring MVC 和 Lombok 注解库：
 
-![](https://pic.yupi.icu/1/1751944035875-83da11bb-e5fa-4a19-ae57-9c214cc0f523.png)
+![](/imgs/7b611abdeb05b72a.png)
 
 新建项目后，先修改配置文件后缀为 `yml`，便于后面填写配置。
 
-![](https://pic.yupi.icu/1/1751944110301-93054763-76d8-4686-ac6e-971e81b4acd4.png)
+![](/imgs/526b371111cc0796.png)
 
 这里我会建议大家创建一个 `application-local.yml` 配置文件，将开发时用到的敏感配置写到这里，并且添加到 `.gitignore` 中，防止不小心开源出来。
 
@@ -102,7 +99,7 @@ ChatModel 是最基础的概念，负责和 AI 大模型交互。
 
 需要到 [阿里云百炼平台](https://bailian.console.aliyun.com/?tab=model#/api-key) 获取大模型调用 key，注意不要泄露！
 
-![](https://pic.yupi.icu/1/1752030336360-af14dd92-7708-45dd-8420-fe87727726f3.png)
+![](/imgs/8bed7be180b0c266.png)
 
 回到项目，在配置文件中添加大模型配置，指定模型名称和 API Key：
 
@@ -117,7 +114,7 @@ langchain4j:
 
 可以 [按需选择模型名称](https://bailian.console.aliyun.com/?tab=doc#/doc/?type=model)，追求效果可以用 qwen-max，否则可以选择效果、速度、成本均衡的 qwen-plus。
 
-![](https://pic.yupi.icu/1/1752030577658-2b939caa-cf27-4065-aac5-e4f3234646b6.png)
+![](/imgs/ca4d3b8cdf489965.png)
 
 除了编写配置让 Spring Boot 自动构建 ChatModel 外，也可以通过构造器自己创建 ChatModel 对象。这种方式更灵活，在 LangChain4j 中我们会经常用到这种方式来构造对象。
 
@@ -170,25 +167,25 @@ class AiCodeHelperTest {
 
 以 Debug 模式运行单元测试，成功运行并查看输出：
 
-![](https://pic.yupi.icu/1/1751947565712-9e3c0a68-930b-4968-8a54-19eb8beb48c9.png)
+![](/imgs/6901f482b3781b55.png)
 
 如果遇到找不到符号的 lombok 报错：
 
-![](https://pic.yupi.icu/1/1751947096901-ca5ec0a7-ecd1-4447-9f7e-b679ad56dcde.png)
+![](/imgs/e95128ecd2ea3f62.png)
 可以修改 IDEA 的注解处理器配置，改为使用项目中的 lombok：
 
-![](https://pic.yupi.icu/1/1751947494173-01ebf704-c87b-4c6b-96a3-58aafccd5458.png)
+![](/imgs/f763b64e699f94b3.png)
 
 
 ### 多模态 - Multimodality
 
 多模态是指能够同时处理、理解和生成多种不同类型数据的能力，比如文本、图像、音频、视频、PDF 等等。
 
-![](https://pic.yupi.icu/1/1752051068307-72038162-f759-4fce-a0d8-0b5eec4cc59e.png)
+![](/imgs/7fe803a35af36858.png)
 
 LangChain4j 中使用多模态的方法很简单，用户消息中是可以添加图片、音视频、PDF 等媒体资源的。
 
-![](https://pic.yupi.icu/1/1752031262335-7dda9965-faa8-44e9-8a18-f748549299fa.png)
+![](/imgs/eaf4bf1ca3404dd9.png)
 
 我们先编写一个支持传入自定义 UserMessage 的方法：
 
@@ -216,14 +213,14 @@ void chatWithMessage() {
 
 但是效果不理想，qwen-max 模型无法直接查看或分析图片：
 
-![](https://pic.yupi.icu/1/1751948068455-4a25e7b7-9186-4148-bf42-de66b10ecef1.png)
+![](/imgs/72fecd40a474dd54.png)
 
-![](https://pic.yupi.icu/1/1751949077879-32103f89-88f4-45b0-8609-77bc9ad8403d.png)
+![](/imgs/41ca3d24a125167d.png)
 
 
 这也是目前多模态开发最关键的问题，虽然编码不难，但需要大模型本身支持多模态。可以在 LangChain 官网看到 [大模型能力支持表](https://docs.langchain4j.dev/integrations/language-models/)，不过一切以实际测试为准。
 
-![](https://pic.yupi.icu/1/1752031226164-9a0cf728-a4d7-4005-8bbf-3f43c0479c01.png)
+![](/imgs/b96b366bb1b9c660.png)
 
 
 目前框架对多模态的适配度也没有那么好，一不留神就报错了，所以我们先了解这种用法就好了，感兴趣的同学也可以用 OpenAI 等其他模型实现多模态。
@@ -246,7 +243,7 @@ void chatWithMessage() {
 
 编程导航的同学可以看 [AI 超级智能体项目第 3 期](https://www.codefather.cn/course/1915010091721236482/section/1916676331948027906)，有讲解过提示词优化技巧。
 
-![](https://pic.yupi.icu/1/1752031662526-ffba01f1-3358-4d6b-a6e3-e293781cc77c.png)
+![](/imgs/174670e7748b8603.png)
 
 想要使用系统提示词，最直接的方法是创建一个系统消息，把它和用户消息一起发送给 AI。
 
@@ -274,7 +271,7 @@ public String chat(String message) {
 
 再次运行单元测试和 AI 对话，显然系统预设生效了：
 
-![](https://pic.yupi.icu/1/1751949397794-26716439-7ccb-46f2-add4-ff299989b10e.png)
+![](/imgs/12d6c2f748803143.png)
 
 
 ### AI 服务 - AI Service
@@ -354,7 +351,7 @@ class AiCodeHelperServiceTest {
 
 Debug 运行，发现生成了 AI Service 的代理类，并且系统提示词生效了。是不是比之前自己拼接系统消息要方便多了？
 
-![](https://pic.yupi.icu/1/1751953464452-273ae8c5-4354-467e-b14b-668d64c3b1f3.png)
+![](/imgs/e28b43ef7a1fb0db.png)
 
 #### Spring Boot 项目中使用
 
@@ -383,7 +380,7 @@ public interface AiCodeHelperService {
 
 再次运行单元测试，也是可以正常对话的：
 
-![](https://pic.yupi.icu/1/1751953748624-64447a00-d43c-4f8e-9fd1-805efa910753.png)
+![](/imgs/f3d7c9f0736e6e16.png)
 
 这种方式虽然更方便了，但是缺少了自主构建的灵活性（可以自由设置很多参数），所以我建议还是采用自主构建。之后的功能特性，我们也会基于这种 AI Service 开发模式来实现。
 
@@ -461,17 +458,17 @@ void chatWithMemory() {
 
 Debug 运行单元测试，可以看到会话记忆存储的消息列表：
 
-![](https://pic.yupi.icu/1/1751954519469-e2f60419-ad5d-41fd-945d-c13d9861fe0f.png)
+![](/imgs/ceb166139fe2c07a.png)
 
 查看输出结果，会话记忆生效：
 
-![](https://pic.yupi.icu/1/1751954654615-b4efd4d5-b87a-4980-9c65-0e252c4dd379.png)
+![](/imgs/d5f8465c4c6afc2e.png)
 
 #### 进阶用法
 
 会话记忆默认是存储在内存的，重启后会丢失，可以通过自定义 [ChatMemoryStore](https://docs.langchain4j.dev/tutorials/chat-memory#persistence) 接口的实现类，将消息保存到 MySQL 等其他数据源中。
 
-![](https://pic.yupi.icu/1/1752040734375-fa8362f4-c2d2-4ecd-9f3d-f328f0459b58.png)
+![](/imgs/17c10839dad6d531.png)
 
 如果有多个用户，希望每个用户之间的消息隔离，可以通过给对话方法增加 memoryId 参数和注解，在调用对话时传入 memoryId 即可（类似聊天室的房间号）：
 
@@ -494,7 +491,7 @@ AiCodeHelperService aiCodeHelperService = AiServices.builder(AiCodeHelperService
 
 结构化输出是指将大模型返回的文本输出转换为结构化的数据格式，比如一段 JSON、一个对象、或者是复杂的对象列表。
 
-![](https://pic.yupi.icu/1/1752051496139-a403e8ad-9b0d-4b1c-924a-cd572f872b05.png)
+![](/imgs/442b11eaa2d2fd6f.png)
 
 结构化输出有 3 种实现方式：
 
@@ -525,7 +522,7 @@ AiCodeHelperService aiCodeHelperService = AiServices.builder(AiCodeHelperService
 
 感兴趣的同学可以 [阅读这篇文章](https://glaforge.dev/posts/2024/11/18/data-extraction-the-many-ways-to-get-llms-to-spit-json-content/) 了解更多，不过我们开发时无需关心这些，只要修改对话方法的返回值，框架就会自动帮我们实现结构化输出，非常爽！
 
-![](https://pic.yupi.icu/1/1752051189479-456a7016-ab27-4a18-8927-088724ac5ddb.png)
+![](/imgs/4bf6faae05dadd58.png)
 
 比如我们增加一个 **让 AI 生成学习报告** 的方法，AI 需要输出学习报告对象，包含名称和建议列表：
 
@@ -550,7 +547,7 @@ void chatForReport() {
 
 运行单元测试，效果很不错：
 
-![](https://pic.yupi.icu/1/1751955304297-a26adf70-eda0-4ebc-ae2e-aa5a8e67cf02.png)
+![](/imgs/e2e7d50ccfbd0cdb.png)
 
 如果你发现 AI 有时无法生成准确的 JSON，那么可以采用 JSON Schema 模式，直接在请求中约束 LLM 的输出格式。这是目前最可靠、精确度最高的结构化输出实现。
 
@@ -583,11 +580,11 @@ RAG（Retrieval-Augmented Generation，检索增强生成）是一种结合信�
 
 RAG 的完整工作流程如下：
 
-![](https://pic.yupi.icu/1/1752052410659-f9a142b9-0c2a-4a99-9c8c-8339970c96eb.png)
+![](/imgs/a363f98f0a8f5359.png)
 
 让我们来实操一下，首先我准备了 4 个文档，放在了 `resources/docs` 目录下：
 
-![](https://pic.yupi.icu/1/1752041906112-ac985734-3a43-44a7-b13d-a1632e426828.png)
+![](/imgs/86189d97a691f2d7.png)
 
 LangChain 提供了 3 种 RAG 的实现方式，我把它称为：极简版、标准版、进阶版。
 
@@ -726,24 +723,24 @@ void chatWithRag() {
 
 Debug 运行，能够看到分割的文档片段，部分文档片段有内容重叠：
 
-![](https://pic.yupi.icu/1/1751962218145-1291831b-be55-44d8-9d73-af3e4bbe3dff.png)
+![](/imgs/cb76b196c267919f.png)
 
 可以在对话记忆中看到实际发送的、增强后的 Prompt：
 
-![](https://pic.yupi.icu/1/1751962545347-a358cb1b-94d8-47ec-b9e1-c72234aeff4a.png)
+![](/imgs/e86ed66cc636ab75.png)
 
-![](https://pic.yupi.icu/1/1751962597654-e87d90cc-3240-4982-9c8e-a5228468b1e7.png)
+![](/imgs/87ece4b5d0ac1ee9.png)
 
 回答效果也是符合预期的：
 
-![](https://pic.yupi.icu/1/1751962714819-a74a07e9-2f0b-44ce-b4ee-db4a4041966c.png)
+![](/imgs/7f883576568f58e1.png)
 
 
 #### 获取引用源文档
 
 如果能够给 AI 的回答下面展示回答来源，更容易增加内容的可信度：
 
-![](https://pic.yupi.icu/1/1752042954244-609fbce6-beb7-4d4b-87a5-c26cd3b8bb9a.png)
+![](/imgs/5df2ad1acb137e54.png)
 
 在 LangChain4j 中，实现这个功能很简单。在 AI Service 中新增方法，在原本的返回类型外封装一层 Result 类，就可以获得封装后的结果，从中能够获取到 RAG 引用的源文档、以及 Token 的消耗情况等等。
 
@@ -767,13 +764,13 @@ void chatWithRag() {
 
 执行效果如图，获取到了引用的源文档信息：
 
-![](https://pic.yupi.icu/1/1751973326587-f0a61ddc-a0b7-4eb8-949b-d19e257262fc.png)
+![](/imgs/cba74e37a4a16c45.png)
 
 #### 进阶版 RAG
 
 这就是一套标准的 RAG 实现了，大多数时候，使用标准版就够了。进阶版会更加灵活，额外支持查询转换器、查询路由、内容聚合器、内容注入器等特性，将整个 RAG 的流程流水线化（RAG pipeline）。
 
-![](https://pic.yupi.icu/1/1752043947317-362c8de1-26e4-4657-ada0-fb414a2dab13.png)
+![](/imgs/bc400ac7b5dcd601.png)
 
 定义好 RAG 流程后，最后通过 RetrievalAugmentor 提供给 AI Service：
 
@@ -786,7 +783,7 @@ AiServices.builder(xxx.class)
 
 此外，之前我们使用的是内存向量存储，每次启动都要重新加载文档、调用嵌入模型，比较耗时，所以实际开发中建议使用独立的存储，[官方支持很多第三方存储](https://docs.langchain4j.dev/integrations/embedding-stores/)，但是个人比较推荐 PG Vector，在原有关系库的基础上安装插件来支持向量存储，而且支持的特性很多。
 
-![](https://pic.yupi.icu/1/1752044157711-6b5a9190-93ff-4a97-aa43-c42c519a2a0b.png)
+![](/imgs/bb45d5f2355473b0.png)
 
 ### 工具调用 - Tools
 
@@ -800,7 +797,7 @@ AiServices.builder(xxx.class)
 
 需要注意的是，工具调用的本质 **并不是 AI 服务器自己调用这些工具、也不是把工具的代码发送给 AI 服务器让它执行**，它只能提出要求，表示 “我需要执行 XX 工具完成任务”。而真正执行工具的是我们自己的应用程序，执行后再把结果告诉 AI，让它继续工作。
 
-![](https://pic.yupi.icu/1/1752051591909-adecdfe5-87d0-4801-b556-58beea244ebe.png)
+![](/imgs/329453709ea149e8.png)
 
 
 我们需要的网络搜索能力，就可以通过工具调用来实现。这里我们细化下需求：让 AI 能够通过我的 [面试鸭刷题网站](https://www.mianshiya.com/) 来搜索面试题。
@@ -809,7 +806,7 @@ AiServices.builder(xxx.class)
 
 好家伙，我爬我自己？不过大家不要尝试，很容易被封号。
 
-![](https://pic.yupi.icu/1/1752044504400-9b3b8719-dff6-4071-a084-e1236434b0c0.png)
+![](/imgs/c16bc673b20f0b73.png)
 
 
 先引入 Jsoup 库：
@@ -888,27 +885,27 @@ void chatWithTools() {
 
 Debug 运行，发现 AI 调用了工具：
 
-![](https://pic.yupi.icu/1/1751964854933-395ecc9e-0fb6-4788-b8e2-ae5ef1d094a7.png)
+![](/imgs/80a8237ea47c7271.png)
 
 工具检索到了题目列表：
 
-![](https://pic.yupi.icu/1/1751964893075-84d0ac23-fe02-47c0-95c3-e422d1305448.png)
+![](/imgs/20bc1da29215e8dc.png)
 
 可以通过 Debug 看到 AI Service 加载了工具：
 
-![](https://pic.yupi.icu/1/1751964979312-65f04b40-9554-438b-83ff-025009f30a1c.png)
+![](/imgs/bc0ed15e46e17ed7.png)
 
 可以通过会话记忆查看工具的调用过程：
 
-![](https://pic.yupi.icu/1/1751965074185-165ed1b9-a50f-4d21-ae85-b8c439f5065c.png)
+![](/imgs/3bc952473353aa01.png)
 
 输出结果符合预期：
 
-![](https://pic.yupi.icu/1/1751965104933-af4b3181-4dc0-40bb-9ef9-5e1c0e26b389.png)
+![](/imgs/644213f9b27f12be.png)
 
 前面只演示了最简单的工具定义方法 —— 声明式，LangChain4j 也提供了编程式的工具定义方法，不过我相信你不会想这么做的（除非是动态创建工具）。
 
-![](https://pic.yupi.icu/1/1752045043475-a61743d1-e1ea-4912-bfac-d77ce6e43858.png)
+![](/imgs/c013bd9554df79d9.png)
 
 除了联网搜索外，还有一些经典的工具，比如文件读写、PDF 生成、调用终端、输出图表等等。这些工具我们可以自己开发，也可以通过 MCP 直接使用别人开发好的工具。
 
@@ -919,7 +916,7 @@ MCP（Model Context Protocol，模型上下文协议）是一种开放标准，�
 
 可以将 MCP 想象成 AI 应用的 USB 接口。就像 USB 为设备连接各种外设和配件提供了标准化方式一样，MCP 为 AI 模型连接不同的数据源和工具提供了标准化的方法。
 
-![](https://pic.yupi.icu/1/1752051649523-398e66d6-87fa-4cc4-8c9d-951939844405.png)
+![](/imgs/52578ca84fc9a2dd.png)
 
 简单来说，通过 MCP 协议，AI 应用可以轻松接入别人提供的服务来实现更多功能，比如查询地理位置、操作数据库、部署网站、甚至是支付等等。
 
@@ -927,17 +924,17 @@ MCP（Model Context Protocol，模型上下文协议）是一种开放标准，�
 
 首先从 MCP 服务市场搜索 Web Search 服务，推荐 [下面这个](https://mcp.so/server/zhipu-web-search/BigModel?tab=content)，因为它提供了 SSE 在线调用服务，不用我们自己在本地安装启动，很方便。
 
-![](https://pic.yupi.icu/1/1752045285371-fd70d350-80bd-4037-9b57-ff8d3a37ccf5.png)
+![](/imgs/ca300a33751cff18.png)
 
 但也要注意，用别人的服务可能是需要 API Key 的，一般是按量付费。
 
 需要先去 [平台官方获取 API Key](https://www.bigmodel.cn/usercenter/proj-mgmt/apikeys)，等会儿会用到：
 
-![](https://pic.yupi.icu/1/1752045399400-4e8fe95f-5d5c-47dc-aa6e-4225f2df23aa.png)
+![](/imgs/cc7e34e3445c51a5.png)
 
 然后我们要在程序中使用这个 MCP 服务。比较坑的是，感觉 LangChain 对 MCP 的支持没有那么好，官方文档甚至都没有提到要引入的 MCP 依赖包。我还是从开源仓库中找到的依赖：
 
-![](https://pic.yupi.icu/1/1751967113982-099b0b9a-d5a3-43e0-bdf1-1ccfb8d093b2.png)
+![](/imgs/af569cc589c5ee5b.png)
 
 引入依赖：
 
@@ -1025,11 +1022,11 @@ void chatWithMcp() {
 
 执行单元测试，通过日志查看到了搜索过程：
 
-![](https://pic.yupi.icu/1/1751967601320-5242e432-ea07-4038-bc6f-7364aefe3d6a.png)
+![](/imgs/2d8426e76a7014e5.png)
 
 MCP 服务生效，从网上检索到了内容作为答案：
 
-![](https://pic.yupi.icu/1/1751967705158-c4591073-858c-4584-a5ee-7d2ecb5261d6.png)
+![](/imgs/3bc94e38f8a081ce.png)
 
 目前，文档中并没有提到利用 LangChain4j 开发 MCP 的方法，不过目前也不建议用 Java 开发 MCP。
 
@@ -1037,7 +1034,7 @@ MCP 服务生效，从网上检索到了内容作为答案：
 
 其实我感觉护轨这个名字起的不太好，其实我们把它理解为拦截器就好了。分为输入护轨（input guardrails）和输出护轨（output guardrails），可以在请求 AI 前和接收到 AI 的响应后执行一些额外操作，比如调用 AI 前鉴权、调用 AI 后记录日志。
 
-![](https://pic.yupi.icu/1/1752051765814-ca0a709d-216e-4f84-8a05-0a8b9a3a6b66.png)
+![](/imgs/93590ff8758b3036.png)
 
 让我们小试一把，在调用 AI 前进行敏感词检测，如果用户提示词包含敏感词，则直接拒绝。
 
@@ -1073,7 +1070,7 @@ public class SafeInputGuardrail implements InputGuardrail {
 
 LangChain4j 提供了几种快速返回的方法，简单来说，想继续调用 AI 就返回 success、否则就返回 fatal。
 
-![](https://pic.yupi.icu/1/1751968291132-96a670ce-6551-4726-8c62-045021303af1.png)
+![](/imgs/004b19745424550d.png)
 
 修改 AI Service，使用输入护轨：
 
@@ -1105,11 +1102,11 @@ void chatWithGuardrail() {
 
 运行并查看效果，会触发输入检测，直接抛出异常：
 
-![](https://pic.yupi.icu/1/1751968796339-ebf23753-55ad-4123-a4dc-e599859a28a1.png)
+![](/imgs/aac5ec0c55e94dda.png)
 
 如果不包含敏感词，则会顺利通过。
 
-![](https://pic.yupi.icu/1/1751968877451-3ac9f488-0b78-4c04-a227-3c89b54847c8.png)
+![](/imgs/2237a14f0ab50dfa.png)
 
 当然，除了输入护轨，也可以编写输出护轨，对 AI 的响应结果进行检测。
 
@@ -1201,7 +1198,7 @@ public class QwenChatModelConfig {
 
 再次调用 AI，就能看到很多信息了：
 
-![](https://pic.yupi.icu/1/1751974020940-84059541-3935-4505-b114-6fcc809b04f5.png)
+![](/imgs/b637da77f1393433.png)
 
 ### AI 服务化
 
@@ -1332,7 +1329,7 @@ curl -G 'http://localhost:8081/api/ai/chat' \
 
 可以看到流式的输出结果：
 
-![](https://pic.yupi.icu/1/1751975773168-c4ddd770-abd7-4555-90b6-8d487630aee4.png)
+![](/imgs/c84b7a13321421f7.png)
 
 
 #### 后端支持跨域
@@ -1413,15 +1410,15 @@ public class AiController {
 
 在项目根目录下创建新的前端项目文件夹 `ai-code-helper-frontend`，使用 Cursor 工具打开该目录，输入 Prompt 执行。注意要选择 Agent 模式、Thinking 深度思考模型（推荐 Claude）：
 
-![](https://pic.yupi.icu/1/1751976145149-beefc903-31e1-4a4f-8bbe-edf41a3a4806.png)
+![](/imgs/307645de8a570f1f.png)
 
 除了源代码外，鱼皮这里连项目介绍文档 `README.md` 都生成了，确实很爽！
 
-![](https://pic.yupi.icu/1/1752025773338-e87a94c7-db0b-4213-9cc8-f643b14f5182.png)
+![](/imgs/db4e833ed1f3ab09.png)
 
 生成完代码后，打开终端执行 `npm run dev` 命令，或者打开 `package.json` 文件并利用 Debug 按钮启动项目：
 
-![](https://pic.yupi.icu/1/1752026474929-cd4a7225-1e48-4e95-a08e-6f69ea256d45.png)
+![](/imgs/2ed6f38087eafd04.png)
 
 ### 查看效果
 
@@ -1429,17 +1426,17 @@ public class AiController {
 
 比如我遇到了连接后端 SSE 服务报错的问题，直接复制报错信息给 AI 解决：
 
-![](https://pic.yupi.icu/1/1752025968566-ab2c2d53-59e4-4519-bf55-e07b095f1e5d.png)
+![](/imgs/a786a76cefc539f4.png)
 
 成功运行，查看效果：
 
-![](https://pic.yupi.icu/1/1752026740589-5b4670c8-3f5c-470e-afba-4cfd469c31ee.png)
+![](/imgs/0a37eaaabb2757ea.png)
 
-![](https://pic.yupi.icu/1/1752026767000-6599f85f-5926-4174-a06e-55e30e4df667.png)
+![](/imgs/2035685636df8eb6.png)
 
 确保功能和样式没问题后，记得先提交代码（防止后续被 AI 生成的代码污染），然后你可以按需增加更多功能，比如用 Markdown 展示 AI 的回复消息。
 
-![](https://pic.yupi.icu/1/1752027043776-cd6d17ed-175f-4c7e-8b25-aee81a5296b2-20250710114303496.png)
+![](/imgs/9e14117846056c9a.png)
 
 
 ## 总结
@@ -1452,7 +1449,7 @@ OK，以上就是 LangChain4j 实战项目教程，怎么样，大家学会了�
 
 不过这类框架大家重点学习一个就好了，很多概念和用法是相通的：
 
-![](https://pic.yupi.icu/1/1752050425995-3b2b8cf4-ad48-41ec-a1e5-154ae6cd8526.png)
+![](/imgs/6f65f32ab399583b.png)
 
 
 ## 推荐资源

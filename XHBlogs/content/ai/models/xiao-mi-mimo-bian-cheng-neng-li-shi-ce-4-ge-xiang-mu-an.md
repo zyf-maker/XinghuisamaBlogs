@@ -3,15 +3,12 @@ title: "小米 MiMo 编程能力实测 - 4 个项目案例"
 summary: "最近大模型圈儿一直在神仙打架，给我测的头发都快掉光了。。。"
 order: 2
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 14
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《小米 MiMo 编程能力实测 - 4 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 最近大模型圈儿一直在神仙打架，给我测的头发都快掉光了。。。
 
@@ -29,7 +26,7 @@ DeepSeek V4 紧接着表示：我性价比最高！
 
 更重要的是，小米同步推出了「百万亿 Token 创造者激励计划」，免费给开发者发 tokens，这是把咱们这些白票党的心理拿捏得死死的。
 
-![](https://pic.yupi.icu/1/image-20260430152304332.png)
+![](/imgs/9409d50273d00a57.png)
 
 光看参数和跑分没什么意思，模型好不好用，还得拿真实项目来检验。
 
@@ -44,21 +41,21 @@ DeepSeek V4 紧接着表示：我性价比最高！
 
 可以看到这个计划的总池子有 100 万亿 tokens，活动时间是 2026 年 4 月 28 日到 5 月 28 日（现在已经结束了）：
 
-![](https://pic.yupi.icu/1/1777476574146-be9955f2-bedf-4c10-9f7f-686e7c4c302d.png)
+![](/imgs/7de00a7a6268c69f.png)
 
 申请方式很简单，填个表单就好。主要是选你常用的 AI 编程工具和底层模型，再描述一下你用 AI 做过什么项目：
 
-![](https://pic.yupi.icu/1/1777476951718-86711359-564e-426a-92e2-2031c8c4cf80.png)
+![](/imgs/674fa16ac234c731.png)
 
 提交后显示会在 3 个工作日左右完成审核：
 
-![](https://pic.yupi.icu/1/1777477159587-db9b0ad4-ee2c-45e8-870f-9f3db6d24621.png)
+![](/imgs/f741e0c3785af315.png)
 
 结果我刚申请就秒过了，邮箱很快就收到了通知。邮件里说使用申请时的邮箱登录或注册 MiMo API 开放平台，权益会在登录后 24 小时内自动到账。
 
 > 开放平台地址：[platform.xiaomimimo.com](https://platform.xiaomimimo.com/)
 
-![](https://pic.yupi.icu/1/1777478864522-fa8044ef-8daa-4222-8341-cd45b9800c98.png)
+![](/imgs/9a214d6a5a84f8e3.png)
 
 **注意，最好先用你申请的邮箱登录这个平台，然后再申请，否则权益可能无法到账！**
 
@@ -68,13 +65,13 @@ DeepSeek V4 紧接着表示：我性价比最高！
 
 从套餐信息来看，支持 MiMo-V2.5-Pro、MiMo-V2.5 等全系列模型，还兼容 Claude Code、OpenCode 等主流编程工具：
 
-![](https://pic.yupi.icu/1/1777515511662-c66151fe-15df-4c49-a5a0-b2f4110ddb21.png)
+![](/imgs/806612ad8259128a.png)
 
 我刚开始还以为自己看错了，以为是 1.6 亿，没想到真的是 16 亿，这下可劲儿造了！
 
 官方 Max 一年的订阅是将近 7000 元，送了 1 个月，相当于白票了 600 元左右？
 
-![](https://pic.yupi.icu/1/1777515591763-7d6c98ba-c569-43a6-a685-a81d07b9b297.png)
+![](/imgs/fee537afec1aaafb.png)
 
 咱且不说小米模型好不好用吧，免费送这么多，还要啥自行车？
 
@@ -82,7 +79,7 @@ DeepSeek V4 紧接着表示：我性价比最高！
 
 不是哥们，瞧不起我？气得我又掉了几根头发。。。
 
-![](https://pic.yupi.icu/1/1777522578378-c6589e31-c916-4b81-a8bf-73cc8e09e420.png)
+![](/imgs/0a42c72e873f4c22.png)
 
 下面我们步入正题，先准备测试大模型的 AI 编程工具。
 
@@ -95,13 +92,13 @@ DeepSeek V4 紧接着表示：我性价比最高！
 
 除了基础的代码生成，还能使用工具和 Skills 技能包、连接 MCP 外部服务、用 Plugins 插件扩展能力，甚至搞多智能体协作，扩展性很强。目前最新的 v2.1 版本还加入了 Skills 热重载、会话分叉、自定义主题等功能，更新嘎嘎猛。
 
-![](https://pic.yupi.icu/1/1777516701789-b0eb659f-6674-46a4-bdc0-b2d50eda4503.png)
+![](/imgs/03756363fb89efe1.png)
 
 安装 Claude Code 很简单。
 
 首先确保你的电脑有 Node.js 环境和 npm 软件依赖安装工具，没有的话，直接到 [Node 官网](https://nodejs.org/en/download) 下载傻瓜式安装包就好：
 
-![](https://pic.yupi.icu/1/1777516701942-41e28c9d-4c6c-420f-b34a-3a771d840517.png)
+![](/imgs/28b7a03920e3977c.png)
 
 无论使用什么操作系统，都可以通过 npm，一行命令来安装 Claude Code：
 
@@ -109,11 +106,11 @@ DeepSeek V4 紧接着表示：我性价比最高！
 npm install -g @anthropic-ai/claude-code
 ```
 
-![](https://pic.yupi.icu/1/1777516701568-eb7eda2d-4b39-4eb6-ac05-98c7316f0fd8.png)
+![](/imgs/2c23926e2526218c.png)
 
 安装完成后，输入 `claude` 命令进入对话界面，首次需要登录才能正常使用：
 
-![](https://pic.yupi.icu/1/1777516701608-fc857d89-e5d0-4ce0-8aa6-ff3e3be676fe.png)
+![](/imgs/11738898d97b2b9c.png)
 
 但估计很多同学没有 Anthropic 的国外订阅账号，所以我们要切换为国产模型。
 
@@ -126,7 +123,7 @@ Claude Code 本身是支持切换模型的，你可以通过「修改环境变�
 
 比如 [小米开放平台的 API 文档](https://platform.xiaomimimo.com/docs/zh-CN/integration/claudecode) 里就有现成的接入方法，包括创建配置文件和填写环境变量：
 
-![](https://pic.yupi.icu/1/1777516802254-f5e31401-fd22-4ade-9d79-9300e2aa23be.png)
+![](/imgs/f3459920e89a1882.png)
 
 不过我更推荐用一个开源工具 **CC Switch**，能够可视化地管理 Claude Code、Codex、Gemini CLI 等 AI 编程工具的配置，一键切换不同的模型供应商。内置了 50 多个供应商预设，不用自己手动改配置文件。
 
@@ -134,7 +131,7 @@ Claude Code 本身是支持切换模型的，你可以通过「修改环境变�
 
 按照官方中文文档，根据操作系统选择对应的安装方式：
 
-![](https://pic.yupi.icu/1/1777516702429-c35e4af9-a053-4b50-a4eb-732ee54ba83a.png)
+![](/imgs/f27bb8c5d8aed372.png)
 
 Mac 用户可以通过命令行安装：
 
@@ -143,15 +140,15 @@ brew tap farion1231/ccswitch
 brew install --cask cc-switch
 ```
 
-![](https://pic.yupi.icu/1/1777516702626-80669bdd-f79a-4eb7-8b50-c2761abd2e4f.png)
+![](/imgs/0f3dcae49e9194ce.png)
 
 安装完成后，运行软件进入主界面，添加模型供应商：
 
-![](https://pic.yupi.icu/1/1777516702459-9ec60a6b-3c67-4be6-ac68-05929b4c7e16.png)
+![](/imgs/936b7bc1fd71b3a2.png)
 
 可以看到 CC Switch 内置了海量的供应商预设，选择 Xiaomi MiMo：
 
-![](https://pic.yupi.icu/1/1777516868333-8935ba98-5740-4390-a91c-43726514d90c.png)
+![](/imgs/e4c60da35b96ff2b.png)
 
 然后准备填写模型配置信息，需要先从 [小米开放平台](https://platform.xiaomimimo.com/console/api-keys) 获取 API Key。
 
@@ -159,27 +156,27 @@ brew install --cask cc-switch
 
 专属 Base URL 在套餐页面可以看到，兼容 OpenAI 和 Anthropic 两种协议：
 
-![](https://pic.yupi.icu/1/1777520404516-69102816-7223-47d6-9718-5c01695170e0.png)
+![](/imgs/5c2094d945412edb.png)
 
 在 CC Switch 中填写好 API Key 和套餐专属的请求地址：
 
-![](https://pic.yupi.icu/1/1777519071552-5154a636-5ca3-4bec-8611-779d5d44577c.png)
+![](/imgs/bbbdba49a5388d71.png)
 
 然后设置使用的模型，我这里把主模型设置为 MiMo-V2.5-Pro，它是小米的旗舰 Agent 模型，专为长难编程任务优化，token 效率更高。
 
 点右下角保存：
 
-![](https://pic.yupi.icu/1/1777519244637-dee5554b-4a59-4d26-bdab-f1a9061b6ce2.png)
+![](/imgs/a9413e4e5863e890.png)
 
 可以在上图中看到 Claude Code 的 JSON 配置文件，其实 CC Switch 就是帮你可视化地修改各 AI 工具的配置文件，省去手动编辑 JSON 的麻烦。
 
 最后，启用 Xiaomi MiMo 模型：
 
-![](https://pic.yupi.icu/1/1777517330499-3376bc13-1ddc-4f91-a383-e7289ee94613.png)
+![](/imgs/66f93b5f6bb48d2d.png)
 
 然后重新进入 Claude Code，在左上角能看到切换后的模型名称。随便输入一句话，AI 能给出回复，说明切换模型成功：
 
-![](https://pic.yupi.icu/1/1777517445474-f87c4e7b-f5fe-40c4-9d94-bf03881537a4.png)
+![](/imgs/afc8726dd846ea9c.png)
 
 
 ### 安装扩展
@@ -205,19 +202,19 @@ Frontend Design 是 Anthropic 官方的前端美化技能，可以让 AI 生成�
 /plugin marketplace add anthropics/skills
 ```
 
-![](https://pic.yupi.icu/1/1777516703443-717324a1-5864-447b-a731-9e4a519b7c40.png)
+![](/imgs/d16dc9b4852ef1d8.png)
 
 输入 `/plugins`，在 Discover 菜单栏中，选中 `example-skills` 并按回车，安装官方的示例技能合集：
 
-![](https://pic.yupi.icu/1/1777516703538-4a99f67b-f288-4b8d-825e-0a2d6322a9f4.png)
+![](/imgs/625dcc5de95cf2be.png)
 
 输入 `/reload-plugins` 重载一下插件：
 
-![](https://pic.yupi.icu/1/1777516703624-e34d36ab-a5e2-4487-9cf7-e7748a056b1a.png)
+![](/imgs/9a4ae63ecab3bc4b.png)
 
 输入 `/skills` 查看已安装的技能，可以看到 `frontend-design` 已经就位了：
 
-![](https://pic.yupi.icu/1/1777516703673-3a14f336-7d1f-4796-8502-b74c61f47e16.png)
+![](/imgs/3106235e4907d95b.png)
 
 之后在对话框中输入 `/frontend-design` 就能主动触发这个技能，让 AI 美化前端页面。同时还自动装上了 `webapp-testing` 自动化测试技能，后面也用得上。
 
@@ -232,19 +229,19 @@ Firecrawl 是联网搜索和网页抓取工具，让 AI 开发前先搜索最新
 npx -y firecrawl-cli@latest init --all --browser
 ```
 
-![](https://pic.yupi.icu/1/1777516703895-7e336a35-0dc6-4fae-8859-3f8c68f7bf5b.png)
+![](/imgs/dc60977c4d316772.png)
 
 执行后，会自动打开浏览器，要在弹出的页面中点击授权：
 
-![](https://pic.yupi.icu/1/1777516704155-c203bf1d-0b6a-4c5d-b5c7-82649ef398ed.png)
+![](/imgs/ea16d0e7b1bba320.png)
 
 安装完成后，会自动注册 12 个 Firecrawl 相关技能：
 
-![](https://pic.yupi.icu/1/1777516704255-d77f6dd4-4366-4e4c-8d47-15c800539cab.png)
+![](/imgs/74db207e81f13602.png)
 
 在 Claude Code 的技能管理中，就能看到新添加的 Firecrawl 相关技能了：
 
-![](https://pic.yupi.icu/1/1777516704270-209e0bea-bc02-436f-80b0-9ccf7f19f48b.png)
+![](/imgs/240c0abbc1b28922.png)
 
 
 #### 3、安装 Context7
@@ -259,27 +256,27 @@ npx ctx7@latest setup
 
 它会问是安装 MCP 服务还是 CLI + Skills，这里我选择 CLI + Skills。你会发现，现在越来越多工具已经从 MCP 转向 CLI + Skills 的方式了：
 
-![](https://pic.yupi.icu/1/1777516704783-e365125c-516f-4dab-b23a-491825737e13.png)
+![](/imgs/bb4979b8660332bd.png)
 
 同样在弹出的网页中授权，不用自己获取和输入 API Key，太方便了！
 
-![](https://pic.yupi.icu/1/1777516704558-12e8c7bf-608f-4cd6-88e8-d4201888ba27.png)
+![](/imgs/78fb3c2a6e0db486.png)
 
 然后选择要给哪个 AI 编程工具安装，我选择为 Claude Code 安装：
 
-![](https://pic.yupi.icu/1/1777516704721-42a91222-a15f-4213-b9b6-99a108c3d72b.png)
+![](/imgs/9b2103166c5b6f36.png)
 
 安装成功后，可以在技能管理中看到 `find-docs` 技能：
 
-![](https://pic.yupi.icu/1/1777516704847-83d065f0-1366-411f-819f-28601f74aae8.png)
+![](/imgs/b8aa405ad24b1f29.png)
 
 当然，你也可以选择安装 MCP Server 的方式：
 
-![](https://pic.yupi.icu/1/1777516704900-044ae1bc-6565-41b4-9bb0-7c71a8925e8b.png)
+![](/imgs/eda84a1f81c68494.png)
 
 安装后，在 Claude Code 中输入 `/mcp` 命令，就能看到安装好的 MCP 了，比自己手动配置方便太多了！
 
-![](https://pic.yupi.icu/1/1777516705093-194d4d76-6279-4562-9030-6d111e9735c3.png)
+![](/imgs/9d21fddccf18083e.png)
 
 至此，环境准备完成！下次开发项目时，就不用再重复准备了~
 
@@ -312,7 +309,7 @@ npx ctx7@latest setup
 
 每个 Case 都要单独新建一个项目文件夹，在 Claude Code 中打开：
 
-![](https://pic.yupi.icu/1/1777517798429-58a4ae87-6db3-4941-adea-cddee5f05dd8.png)
+![](/imgs/50be1b329b071047.png)
 
 输入提示词：
 
@@ -346,7 +343,7 @@ npx ctx7@latest setup
 
 再按一次 Shift + Tab 还可以进入 Plan Mode 计划模式，但这里我已经给出了方案，就不用计划了，加速加速 gogogo！
 
-![](https://pic.yupi.icu/1/1777518046991-d35d894d-e766-487f-b4ff-f730f8763246.png)
+![](/imgs/c52497dad4577c0b.png)
 
 开发过程中可能需要你确认是否要执行工具调用、执行 Skill 等信息，可以选择不用再次询问。
 
@@ -354,21 +351,21 @@ npx ctx7@latest setup
 
 一个纯静态的个人网站竟然要近 10 分钟？！
 
-![](https://pic.yupi.icu/1/1777521529952-b778e4ee-4bfb-4c29-a2fb-42f0f690a7b0.png)
+![](/imgs/f864e2af47cd58b8.png)
 
 来感受一下效果，这是首屏页面，看上去还不错，有科技感：
 
-![](https://pic.yupi.icu/1/1777528773469-a4bb592b-94b6-456a-bb44-17742f5215f3.png)
+![](/imgs/fb8c65bcc2c2bf4a.png)
 
 然后是我个人的一些信息，采用了经典的三栏布局，但是由于没有图片，内容看起来很空洞：
 
-![](https://pic.yupi.icu/1/1777528814458-30fafe28-878d-495d-b925-11d598733319.png)
+![](/imgs/0fce883c829e8ecb.png)
 
 然后是项目作品，经典蓝紫渐变色，但关键是信息出现了错误，我啥时候带大家做过「鱼塘」这个项目了？？？
 
 而且展示的都是我很早之前的项目，看上去 AI 并没有成功调用搜索技能：
 
-![](https://pic.yupi.icu/1/1777528876043-2cb4d49e-58cd-4755-adc3-3ea7e041a8ba.png)
+![](/imgs/ddcf91445e9ad023.png)
 
 综合评价一下，信息正确性给到「拉」（编造了不存在的项目），开发速度给到「NPC」（近 10 分钟做个静态页面），美观效果给到「人上人」，这还多亏了我让它用 Aceternity UI 这个组件库。
 
@@ -412,13 +409,13 @@ npx ctx7@latest setup
 
 花了近 4 分钟完成任务，这次的速度还算正常：
 
-![](https://pic.yupi.icu/1/1777521496300-a074220c-51cc-4505-af96-1439e9b731f2.png)
+![](/imgs/ac17aac7c39c0395.png)
 
 根据 AI 的提示，我在后端填写好 DeepSeek 大模型的 API Key，然后启动项目的前端和后端，测试验证。
 
 结果刚打开页面，我就震惊了：
 
-![](https://pic.yupi.icu/1/1777529468600-e5e38e65-e79f-438e-83da-5a3ee3e4ed0e.png)
+![](/imgs/da21f9c017eff1d7.png)
 
 这么简陋的嘛？！怪不得开发那么快呢。。。
 
@@ -426,7 +423,7 @@ npx ctx7@latest setup
 
 AI 唰唰唰就给出了网站的分析报告，还是流式输出，分析了功能定位、目标用户、技术栈推测等等：
 
-![](https://pic.yupi.icu/1/1777529553650-ba87480b-472a-4afe-99ed-8040e4cb3d18.png)
+![](/imgs/fc4b417f4c879572.png)
 
 你别说，功能还真能用！
 
@@ -472,17 +469,17 @@ AI 唰唰唰就给出了网站的分析报告，还是流式输出，分析了�
 
 5 分钟后，AI 完成了任务。其实就生成了一个 HTML 网页，生成速度一般：
 
-![](https://pic.yupi.icu/1/1777521192533-502cfe95-0595-4b10-9672-4a6281fd1045.png)
+![](/imgs/542039f726ab21b7.png)
 
 然后打开网站一看，我差点没把饭喷出来。。。
 
 不是哥们，你管这叫 QQ 堂？！爷青逝啊！
 
-![](https://pic.yupi.icu/1/1777530394058-654ef6b2-cdcc-4c2b-a257-c387ac9d8f78.png)
+![](/imgs/fe18d3d6db18448b.png)
 
 开一把试试看，你别说，竟然真的能玩，放置炸弹炸箱子、消灭敌人：
 
-![](https://pic.yupi.icu/1/1777530606534-e0862b78-e46a-41a1-a686-1f37ae5437b2.png)
+![](/imgs/647a1faed391b477.png)
 
 但是 Bug 实在是太多了！
 
@@ -490,7 +487,7 @@ AI 唰唰唰就给出了网站的分析报告，还是流式输出，分析了�
 
 可笑的是，敌人连放个炸弹都不会，只能跟在我屁股后面走，就差把「我是沙比」4 个字写在脸上了。
 
-![](https://pic.yupi.icu/1/1777530774001-d5c29cbe-ff16-4e17-93e3-079eca9780a1.png)
+![](/imgs/f049353c83c9b2b7.png)
 
 这个项目 Bug 太多，从功能完成度上给到「拉完了」，开发速度上给到「NPC」，美观效果给到「拉」。
 
@@ -534,37 +531,37 @@ AI 唰唰唰就给出了网站的分析报告，还是流式输出，分析了�
 6. 必须生成完整可运行的代码，完成后自主验证
 ```
 
-![](https://pic.yupi.icu/1/1777520746868-103983db-6df8-44ea-a5d0-1a71d468dc41.png)
+![](/imgs/e2650ccf02dada74.png)
 
 AI 觉得任务比较复杂，自动进入了计划模式，先解压源码包分析架构，再规划实现方案：
 
-![](https://pic.yupi.icu/1/1777521840681-614c5cca-d1f0-41b6-9cc7-3e67896836c1.png)
+![](/imgs/e3b10fb9e381b91e.png)
 
 竟然跑了半个小时才完成，本来我要出门的，硬控了我这么久。。。
 
-![](https://pic.yupi.icu/1/1777522886901-c4137b73-0554-4451-8abc-afe6205cf340.png)
+![](/imgs/72d5c5cfb3c8afd4.png)
 
 运行，测试下效果。
 
 首先是 Claude Code 项目概览，你别说，这次看起来还有模有样的，列出了源文件数、组件数、工具数等关键指标，还标注了技术栈：
 
-![](https://pic.yupi.icu/1/1777532046330-843e3723-8b8d-4de5-9e49-46cd3f1ba833.png)
+![](/imgs/dd86f2f4c18536b8.png)
 
 然后查看架构总览，这里提供了一个可以交互式操作的架构图，用 React Flow 绘制，支持拖拽和缩放，排版布局还挺整齐的，不错不错~
 
-![](https://pic.yupi.icu/1/1777532098786-56438303-3599-4360-a039-4585e2cd8cc2.png)
+![](/imgs/80c2c00055834dde.png)
 
 点击某个模块，可以查看这个模块的具体设计，包括模块定位、架构设计、关键文件等信息：
 
-![](https://pic.yupi.icu/1/1777532216493-5b886dac-8bf6-4e5a-b875-7ceef52c60c9.png)
+![](/imgs/96913753173a2ee1.png)
 
 然后查看关键流程图。不是哥们，刚夸你两下就飘了是吧，你管这叫流程图？！
 
-![](https://pic.yupi.icu/1/1777532247219-e7dbb415-952e-4d72-99d0-5cc621500094.png)
+![](/imgs/52d1e329e7a03862.png)
 
 最后是查看源码目录结构，笑发财了，就一个空目录 src，根本点不开！
 
-![](https://pic.yupi.icu/1/1777532331152-7965d0b7-d9d7-4ed7-a3a9-dec9a3a33670.png)
+![](/imgs/fc743529133057ce.png)
 
 评价一下，代码分析能力我觉得还可以，项目概览和架构总览做得不错，给到「人上人」鼓励一下。但是流程图和目录结构都存在明显 Bug，功能完成质量给到「拉」，开发速度也给到「拉」，对不起我等待的半小时。
 
@@ -585,15 +582,15 @@ AI 觉得任务比较复杂，自动进入了计划模式，先解压源码包�
 
 我测了 4 个任务，执行过程中竟然 **都没有使用过我安装的技能**（Firecrawl、Context7、Frontend Design），而是用了 Claude Code 内置的搜索和抓取工具。这说明 MiMo-V2.5-Pro 在工具调用的决策上还不够聪明，更好的工具就在手边，它愣是没用。
 
-![](https://pic.yupi.icu/1/1777521462310-5e04aced-087b-4b78-be7f-8972385cd10c.png)
+![](/imgs/052f7ded30f36cf5.png)
 
 再看看成本。4 个项目总共消耗了 2300 万 tokens，套餐额度才用了 1%，舒服了。。。
 
-![](https://pic.yupi.icu/1/1777531135598-be7dbf70-d7e3-4dbd-a787-b0c821d71ae3.png)
+![](/imgs/37874e25364bf1d8.png)
 
 我还试了一下不用套餐的 tokens 消耗，单独开发一个博客类静态网站，大概 1.6 元左右。大家觉得贵还是便宜？
 
-![](https://pic.yupi.icu/1/1777531230941-56ed2f9e-bda1-4337-87c1-0c099685266a.png)
+![](/imgs/b9807d28091f53b1.png)
 
 虽然效果不算好，但是人家免费送 16 亿 tokens，感谢就完事儿了，要啥自行车啊！
 

@@ -3,15 +3,12 @@ title: "和 Deepseek 联手，做个哪吒的乾坤圈视频"
 summary: "哪吒票房破 90 亿了！"
 order: 17
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《和 Deepseek 联手，做个哪吒的乾坤圈视频》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 哪吒票房破 90 亿了！
 
@@ -19,13 +16,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 The One！
 
-![img](https://pic.yupi.icu/yuyi/v2-c12c68cc564b62c0f67b325e9f3997f5_1440w.jpg)
+![img](/imgs/a93028523ad50ed0.jpg)
 
 哈哈，开个玩笑。既然哪吒这么火，能不能蹭个热度（不是）呢？
 
 所以咱们就借助 deepseek 做一个 AI 视频，主题是：哪吒卖乾坤圈
 
-![image-20250313113010158](https://pic.yupi.icu/yuyi/image-20250313113010158.png)
+![image-20250313113010158](/imgs/d5f21899406defad.png)
 
 下面阿杰给大家简单拆解一下做法。流程其实还是老生常谈四件套：出脚本、出画面、转视频、剪辑。
 
@@ -37,7 +34,7 @@ The One！
 
 收到这样的回复
 
-![img](https://pic.yupi.icu/yuyi/v2-64d3116b510c8196d0d084980145dc53_1440w.jpg)
+![img](/imgs/ac9faf0ef1e6cc66.jpg)
 
 嗯，很硬核，看来 deepseek 很懂乾坤圈。什么 72 变形态-万象重构、绝对领域-反物质防御长...
 
@@ -49,7 +46,7 @@ The One！
 
 在收到这样的命令之后，回复的效果好了很多
 
-![img](https://pic.yupi.icu/yuyi/v2-c4d7259d46dad7e5aa1a8705b67986ff_1440w.jpg)
+![img](/imgs/331cc9bcc31ca449.jpg)
 
 感觉画面描述略显简单，稍微让他描述详细一点：
 
@@ -57,7 +54,7 @@ The One！
 
 Deepseek 的返回内容
 
-![img](https://pic.yupi.icu/yuyi/v2-b5a3508fc2b06cb07aa5d513b7e1bbef_1440w.jpg)
+![img](/imgs/71264e1a129c3123.jpg)
 
 ## 二、出图
 
@@ -67,7 +64,7 @@ Deepseek 的返回内容
 
 秒画试了一下，直接 PASS
 
-![img](https://pic.yupi.icu/yuyi/v2-8b0f7a9b174d66dc330df3b1d2435d79_1440w.jpg)
+![img](/imgs/6ee54b8675b14d29.jpg)
 
 可灵和即梦都可以画哪吒，最后阿杰选择了即梦。因为即梦更便宜，整体画面效果也更好。
 
@@ -83,7 +80,7 @@ Deepseek 的返回内容
 
 “突然圈体缩小”这个画面就应该分开呈现。毕竟画面是静态的，无法展示缩小的过程。
 
-![img](https://pic.yupi.icu/yuyi/v2-d5f06ec8af67a7e1351af87f4372a4a6_1440w.jpg)
+![img](/imgs/eba8731f79d9f67e.jpg)
 
 还有一点需要注意，**deepseek 给出的画面描述只是纯描述**，没有什么画风、光线、视角、色彩等等专业的东西。**但我们这类视频恰好不是很吃画质，只要把内容描述清楚就行，太复杂了可能会起反作用。**
 
@@ -95,11 +92,11 @@ Deepseek 的返回内容
 
 当然我们也没必要一定要一次生成乾坤圈，完全可以“**局部重绘**”，在原图的基础上修改。
 
-![img](https://pic.yupi.icu/yuyi/v2-e55d121c0dff75bf828d98404c6a9445_1440w.jpg)
+![img](/imgs/f2b4efaf5d0029ac.jpg)
 
 比如有一个用乾坤圈作灶台的画面，怎么也画不出来，通过重绘很轻松就解决了。阿杰一开始没有想到，浪费了很多时间。。
 
-![img](https://pic.yupi.icu/yuyi/v2-2e25cd827c1810fe436c0e9ef3f01450_1440w.jpg)
+![img](/imgs/3e69f1efd3636ea5.jpg)
 
 ## 三、出视频
 
@@ -111,13 +108,13 @@ https://hailuoai.com/video
 
 之前也给大家推荐过 vidu，不得不说这家伙出视频是真快。但快有快的弊端，视频质量就不是太高，对于一些运动幅度比较大的场景，不推荐用 vidu，或者“运动幅度”一定要选择“大”。
 
-![img](https://pic.yupi.icu/yuyi/v2-bd052e0df836f241717a9e5770c1604b_1440w.jpg)
+![img](/imgs/12d231a99b1b70eb.jpg)
 
 ## 四、剪辑
 
 这次的视频剪辑也花了阿杰不少时间。剪映中是有魔童的配音的，直接使用**文本朗读**即可。
 
-![img](https://pic.yupi.icu/yuyi/v2-672fb8bee4f8ca7594a88f81611488d3_1440w.jpg)
+![img](/imgs/f5b6ec26cf84855f.jpg)
 
 以上就是这个视频制作的大致过程了，不知道大家学会了没有？
 
@@ -135,7 +132,7 @@ Deepseek 能写出非常好的脚本，画面天马行空，想想都觉得震�
 
 可惜这样的画面既画不出来，更做不成视频。即使可以，也和原文有不小差距。
 
-![img](https://pic.yupi.icu/yuyi/v2-4ed76ec533a368e6bffa18eceab6ddaf_1440w.jpg)
+![img](/imgs/d829161e91525448.jpg)
 
 但阿杰是很乐观的。AI 的发展日新月异，黑马鳞次栉比，新旧更替...完善这些功能指日可期。
 

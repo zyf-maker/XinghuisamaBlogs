@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 命令行编程工具》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 在前面的文章中，我们学习了 AI 零代码平台和 AI 代码编辑器。随着你使用 Vibe Coding 越来越多，可能会遇到一些特殊场景：
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 命令行工具没有花哨的界面，只有简洁的文字交互。但正是这种极简，让它们拥有了极致的效率和灵活性。
 
-![](https://pic.yupi.icu/1/image-20260429110454017-20260430230948435.png)
+![](/imgs/4d7e5ea385e93d40.png)
 
 这篇文章，我会重点介绍 Claude Code 这个最火的命令行 AI 编程工具，并分享更多值得关注的命令行 AI 编程工具。
 
@@ -61,7 +58,7 @@ AI 代码编辑器是有图形界面的软件，你可以看到文件列表、�
 
 事实上，最近互联网大厂的风向变了。Google 率先开源了 Workspace CLI，紧接着短短一周之内，飞书、钉钉、企业微信不约而同地在 GitHub 上开源了自己的 CLI 工具。
 
-![](https://pic.yupi.icu/1/image-20260407142441568.png)
+![](/imgs/7d12401953e08905.png)
 
 为什么这些大厂不去卷更漂亮的界面，反而集体开起了倒车？
 
@@ -81,7 +78,7 @@ AI 代码编辑器是有图形界面的软件，你可以看到文件列表、�
 
 MCP 协议要求把所有工具的名称和参数格式全部注入到 AI 的上下文里，工具一多 Token 消耗就很夸张。有机构做过基准测试，同样的任务，MCP 的 Token 消耗可能是 CLI 的几十倍！
 
-![](https://pic.yupi.icu/1/image-20260407123223554.png)
+![](/imgs/e911edc372e37ba3.png)
 
 而且 MCP 的运行过程对人类来说就像个黑盒，出了问题很难排查；CLI 就不一样了，如果出错了，直接把命令复制到终端里跑一遍，报错信息一目了然。
 
@@ -101,7 +98,7 @@ MCP 协议要求把所有工具的名称和参数格式全部注入到 AI 的上
 
 [Claude Code](https://claude.com/product/claude-code) 是 Anthropic 公司推出的官方命令行 AI 编程工具，直接集成了 Claude 模型。它是目前功能最强大的命令行编程工具之一。
 
-![](https://pic.yupi.icu/1/image-20260107153527087.png)
+![](/imgs/82ce82de60d4d5de.png)
 
 Claude Code 最厉害的是它的自主执行能力 —— AI 不仅能生成代码，还能自动执行命令、修改文件、安装依赖，真正做到 “说一句话，项目就搭好了”。
 
@@ -121,7 +118,7 @@ Skills 的核心价值在于：人提供专业知识和方法论，AI 提供智�
 
 0）首先确保你的电脑有 Node.js 环境和 npm 软件依赖安装工具，没有的话，直接到 [Node 官网](https://nodejs.org/en/download) 下载傻瓜式安装包就好：
 
-![](https://pic.yupi.icu/1/1777341714221-67b76f0e-c816-410b-adc0-e445074efc46-20260430231040061.png)
+![](/imgs/cc1f1d3636e212f4.png)
 
 1）打开终端，输入一行命令安装 Claude Code：
 
@@ -131,7 +128,7 @@ npm install -g @anthropic-ai/claude-code
 
 2）然后执行 `claude` 命令打开程序，默认是需要登录 Claude 账号的，而且 Claude Code 对中国地区有访问限制，直接访问 Anthropic 官网或使用 Claude 的 API 可能会被屏蔽，真狗！
 
-![](https://pic.yupi.icu/1/1764145940075-ace6fd24-a09c-41c0-b400-1cffc394fc8a.png)
+![](/imgs/ffafea04003e3fac.png)
 
 除了访问限制之外，Claude Code 还有大规模封号的历史，而且它在客户端里藏了一套隐蔽的用户标记系统来识别中国用户，想搞清楚原理和风险的同学可以阅读本板块「Claude Code」目录中的《Claude Code 封号机制和应对方案》。
 
@@ -139,13 +136,13 @@ npm install -g @anthropic-ai/claude-code
 
 3）进入 `{用户目录}/.claude` 目录，创建一个 `settings.json` 配置文件：
 
-![](https://pic.yupi.icu/1/1764146110361-06e13de5-7de4-4fc5-9533-3651447d5e19.png)
+![](/imgs/baee36d912d9a3b7.png)
 
 4）修改配置文件中的内容如下，记得替换成你自己的 API Key。
 
 可以在 [智谱 AI 开放平台](https://open.bigmodel.cn) 获取到 API Key，注意不要泄露！
 
-![](https://pic.yupi.icu/1/1764146125955-3029843c-26b8-4628-b2b7-a9d8abb2aef1.png)
+![](/imgs/55bbce06c35fe36a.png)
 
 ```json
 {
@@ -160,7 +157,7 @@ npm install -g @anthropic-ai/claude-code
 
 5）接下来就可以愉快地使用了。在项目目录下运行 `claude`，就可以开始对话：
 
-![](https://pic.yupi.icu/1/1764146174167-3018c8f3-0ad9-4a4f-9764-246f33b33203.png)
+![](/imgs/1bb0306031e7879c.png)
 
 6）就让 AI 做个实用的图片压缩小工具吧，提示词如下：
 
@@ -181,15 +178,15 @@ npm install -g @anthropic-ai/claude-code
 
 7）点击执行后，大模型很快给出了任务规划 —— 先搭建后端、再实现前端、前后端联调、最后测试运行：
 
-![](https://pic.yupi.icu/1/1759250070544-7ede700d-37f2-4e4a-bfdb-01631f10df34.png)
+![](/imgs/05aee0bf44a18d57.png)
 
 不到 5 分钟，AI 就完成了任务，而且还自动帮我安装好了依赖，贴心~
 
-![](https://pic.yupi.icu/1/1759250293957-36299a39-fff9-4e5d-a23a-299efd854938.png)
+![](/imgs/835360c9c386a15f.png)
 
 我们打开浏览器访问 `localhost:3000` 就能看到效果了：
 
-![](https://pic.yupi.icu/1/1759291145587-14fb0214-53c7-45a8-8ad1-949368363e19.png)
+![](/imgs/d43a6536178690ee.png)
 
 整个过程中，Claude Code 会自动执行命令、创建文件、修改代码，你只需要用自然语言描述需求就行。爽的一批！
 
@@ -215,7 +212,7 @@ Claude Code 虽然默认使用 Anthropic 的 Claude 模型，但它是支持切�
 
 > 开源指路：https://github.com/farion1231/cc-switch
 
-![](https://pic.yupi.icu/1/1777343334412-73a61961-5d7e-4fbb-a0e0-691f5d867b48-20260430231155296.png)
+![](/imgs/b419fe01325c5e7c.png)
 
 以切换 DeepSeek V4 为例，操作步骤如下：
 
@@ -225,7 +222,7 @@ Claude Code 虽然默认使用 Anthropic 的 Claude 模型，但它是支持切�
 4. 设置主模型为 `deepseek-flash`
 5. 保存并启用，重新进入 Claude Code 即可使用
 
-![](https://pic.yupi.icu/1/1777343299981-c370c8ff-b24a-460a-891e-e08bc1efcf54-20260430231211935.png)
+![](/imgs/b7b1289f53840f49.png)
 
 通过 CC Switch，你还可以在 DeepSeek、小米 MiMo 等多个国产模型之间自由切换，按需选择最合适的模型。关于用 Claude Code + DeepSeek V4 开发完整项目的实战经验，可以阅读本教程项目实战板块「AI 创意应用」分类中的《Claude Code - AI 提肛助手项目实战》。
 
@@ -251,7 +248,7 @@ npm install -g @google/gemini-cli
 
 然后输入 `gemini` 就能运行了：
 
-![](https://pic.yupi.icu/1/image-20260107154410787.png)
+![](/imgs/e8da24d59606e459.png)
 
 
 
@@ -263,7 +260,7 @@ npm install -g @google/gemini-cli
 
 如果你经常在终端里工作，又想要更好的交互体验，Warp 是个不错的选择。它能让你在享受命令行效率的同时，不用完全放弃图形界面的便利。
 
-![](https://pic.yupi.icu/1/image-20260107154658863.png)
+![](/imgs/647e623e3582a72c.png)
 
 
 
@@ -273,7 +270,7 @@ GitHub Copilot 是微软推出的 AI 编程助手，已经被数百万开发者�
 
 它与 GitHub 深度集成、支持 MCP 协议、可以生成和解释命令。
 
-![](https://pic.yupi.icu/1/image-20260107154809001.png)
+![](/imgs/806ab76218074fb2.png)
 
 如果你已经在用 GitHub Copilot 做代码补全，那么 Copilot CLI 能让你在终端里也享受到类似的 AI 辅助，特别适合需要频繁执行命令的场景。
 
@@ -297,11 +294,11 @@ curl -fsSL https://opencode.ai/install | bash
 
 然后执行 `opencode` 命令就可以愉快使用了：
 
-![](https://pic.yupi.icu/1/image-20260107155212400.png)
+![](/imgs/58c3f9683e429378.png)
 
 这个交互比 Claude Code 舒服很多~
 
-![](https://pic.yupi.icu/1/image-20260107155206368.png)
+![](/imgs/b15d98fe2dd2b538.png)
 
 
 
@@ -325,17 +322,17 @@ curl -fsSL https://opencode.ai/install | bash
 
 除了上面这些 AI 编程工具，CLI 的开源生态也在快速发展。目前飞书、钉钉、企业微信、Google 等大厂的 CLI 基本都覆盖了消息、日历、文档、通讯录等核心业务，而且都内置了 AI Agent Skills，可以直接被 Claude Code、Cursor 等 AI 工具调用。
 
-![](https://pic.yupi.icu/1/image-20260407141854598.png)
+![](/imgs/7ea300afbe4136c2.png)
 
 除了大厂官方出品，社区里也涌现了很多有意思的项目。
 
 比如 [OpenCLI](https://github.com/jackwener/opencli) 能把任意网站、Electron 应用、甚至本地工具统统变成命令行接口。如果你想让 AI 帮你查 B 站热门、知乎热榜，装上 OpenCLI 后输入一行命令就搞定了。它内置了几十个适配器，覆盖了 B 站、知乎、Twitter、Reddit 等一大堆平台，就像给 AI 装了一个万能遥控器。
 
-![](https://pic.yupi.icu/1/image-20260403143000224.png)
+![](/imgs/16486a2855f9780e.png)
 
 还有 [CLI-Anything](https://github.com/HKUDS/CLI-Anything)，它能自动分析一个开源软件的源码，找出每个功能背后的 API 逻辑，然后自动生成对应的 CLI 命令。有了它，几乎任何软件都能被快速 CLI 化，非常适合给 AI 调用。
 
-![](https://pic.yupi.icu/1/image-20260407142234733.png)
+![](/imgs/1c6dd66cc8c3595f.png)
 
 
 
@@ -454,11 +451,11 @@ Claude Code 的创始人曾多次分享使用技巧，这里挑几个最值得�
 
 > 开源指路：https://github.com/vadimdemedes/ink
 
-![](https://pic.yupi.icu/1/image-20260401124426974.png)
+![](/imgs/4dd86c77bdb949c7.png)
 
 举个例子，比如编写下面这段代码，就能渲染出一个简易的终端界面，会显示一个每秒自动加 1 的计数器：
 
-![](https://pic.yupi.icu/1/image-20260407144127215.png)
+![](/imgs/ba9e2ebcf57ad75f.png)
 
 了解了 React Ink 之后，我们用它来做一个 CLI 试试。以我的编程导航为例，这是一个程序员学习交流社区。做成 CLI 工具之后，用户就可以直接在终端里搜索编程教程、查看热门内容，也方便 AI Agent 调用。
 
@@ -482,15 +479,15 @@ Claude Code 的创始人曾多次分享使用技巧，这里挑几个最值得�
 
 把这段提示词丢给 Claude Code 或者 Cursor 等 AI 编程工具，AI 就能帮你生成完整的项目代码。
 
-![](https://pic.yupi.icu/1/image-20260407144535296.png)
+![](/imgs/39f3a7a97a81c2c3.png)
 
 最终运行效果大概长这样，还不错吧~
 
-![](https://pic.yupi.icu/1/image-20260407150349886.png)
+![](/imgs/1513fa80830312e9.png)
 
 可以试试让 AI 使用这个工具，AI 通过 `--help` 就能快速了解这个工具怎么用，准确地给出了回答，嘎嘎快！
 
-![](https://pic.yupi.icu/1/image-20260407150632856.png)
+![](/imgs/9fece7e7894bb61f.png)
 
 这就是 CLI 的魅力，对人类来说是一个好用的效率工具，对 AI 来说更是一个天然的操作接口。
 
@@ -500,7 +497,7 @@ Claude Code 的创始人曾多次分享使用技巧，这里挑几个最值得�
 
 如果你想直观感受一下现代 CLI 的使用体验，可以试试最近飞书开源的 [Lark CLI](https://www.feishu.cn/feishu-cli)，这个工具可以让你在终端里直接操作飞书的消息、日历、文档等功能。
 
-![](https://pic.yupi.icu/1/image-20260407141759722.png)
+![](/imgs/8c54b6fd1e60436f.png)
 
 首先输入一行命令安装：
 
@@ -508,7 +505,7 @@ Claude Code 的创始人曾多次分享使用技巧，这里挑几个最值得�
 npm install -g @larksuite/cli
 ```
 
-![](https://pic.yupi.icu/1/image-20260407113800957.png)
+![](/imgs/c965a2041d0f9818.png)
 
 装好之后，先配置一下应用信息：
 
@@ -516,11 +513,11 @@ npm install -g @larksuite/cli
 lark-cli config init --new
 ```
 
-![](https://pic.yupi.icu/1/image-20260407125520107.png)
+![](/imgs/e93f88453c338140.png)
 
 打开链接配置飞书 CLI 应用：
 
-![](https://pic.yupi.icu/1/image-20260407125551163.png)
+![](/imgs/2ae2c514b63a8d76.png)
 
 创建应用成功后，需要登录授权，按需选择你允许通过 CLI 操作的业务：
 
@@ -528,19 +525,19 @@ lark-cli config init --new
 lark-cli auth login
 ```
 
-![](https://pic.yupi.icu/1/image-20260407125833469.png)
+![](/imgs/29756027d3b05d53.png)
 
 跟着 CLI 的引导一步步操作就好：
 
-![](https://pic.yupi.icu/1/image-20260407130308162.png)
+![](/imgs/07f99d8247f31e2e.png)
 
 授权过程中，记得要在飞书管理后台审核应用：
 
-![](https://pic.yupi.icu/1/image-20260407130344599.png)
+![](/imgs/73d888f68cbaf0df.png)
 
 审核应用通过后，可以再重新执行登录命令，直到你看到"授权成功"：
 
-![](https://pic.yupi.icu/1/image-20260407130807612.png)
+![](/imgs/422998dd3d096ec8.png)
 
 之后，你就可以用命令行来操作飞书了。
 
@@ -550,7 +547,7 @@ lark-cli auth login
 lark-cli calendar +agenda
 ```
 
-![](https://pic.yupi.icu/1/image-20260407131112596.png)
+![](/imgs/8812b69b251f62af.png)
 
 查看我的待办任务：
 
@@ -558,7 +555,7 @@ lark-cli calendar +agenda
 lark-cli task +get-my-tasks
 ```
 
-![](https://pic.yupi.icu/1/image-20260407141253773.png)
+![](/imgs/02e4059e3fa8b4dd.png)
 
 甚至直接创建一篇文档：
 
@@ -566,7 +563,7 @@ lark-cli task +get-my-tasks
 lark-cli docs +create --title "周报" --markdown "# 本周进展"
 ```
 
-![](https://pic.yupi.icu/1/image-20260407131334934.png)
+![](/imgs/a6f252b08fa53869.png)
 
 以前这些操作你要打开飞书 App，点好几下才能完成，现在一行命令就搞定了。
 
@@ -577,7 +574,7 @@ lark-cli --help
 lark-cli calendar --help
 ```
 
-![](https://pic.yupi.icu/1/image-20260407131533712.png)
+![](/imgs/89abf20301b32b18.png)
 
 你可以通过这个例子直观感受 CLI 的高效和便捷，体会一下为什么大厂都在卷 CLI。
 

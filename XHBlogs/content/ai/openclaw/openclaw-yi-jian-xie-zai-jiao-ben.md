@@ -3,15 +3,12 @@ title: "OpenClaw 一键卸载脚本"
 summary: "一行命令卸载干净，还送你一份养虾报告"
 order: 16
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-21"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 一键卸载脚本》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 官方文档虽然提供了 [卸载步骤](https://docs.openclaw.ai/install/uninstall#uninstall)，但大概率是没办法通过 1 条命令就删干净的。
 
-![](https://pic.yupi.icu/1/image-20260307105935932-20260321130257839.png)
+![](/imgs/5894bc17b82930bb.png)
 
 所以我做了这个 **一键卸载脚本**，不仅能帮你把龙虾吃得干干净净、虾壳都不剩，还会附带一份 **使用报告**，让你在告别龙虾之前，看看这段时间跟龙虾相处的回忆。
 
@@ -38,7 +35,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 按 `Win + R` 键，唤起运行窗口，然后输入 `powershell` 并回车：
 
-![](https://pic.yupi.icu/1/1773650695343-70d4ef97-6754-49c1-93e3-a230001f8171-20260321125946596.png)
+![](/imgs/cf9139defb2a016b.png)
 
 输入以下命令，执行给大家准备好的卸载脚本：
 
@@ -56,25 +53,25 @@ irm https://clawfather.cn/uninstall.ps1 | iex
 
 1）扫描本地 OpenClaw 相关的数据，为生成报告做准备：
 
-![](https://pic.yupi.icu/1/1774068080605-a4c5e2b1-b7da-4d60-8623-aa9409552fd7.png)
+![](/imgs/1479bb6bc3ae1486.png)
 
 整个过程只在本地进行，所以大家不需要担心自己的隐私问题~
 
 2）生成养虾报告，包括你的养虾天数、跟龙虾聊了多少次、发了多少条消息、烧了多少 Token、大概花了多少钱、养了几只龙虾、装了多少 Skills、什么时候最爱跟龙虾交流等：
 
-![](https://pic.yupi.icu/1/1774068186927-dd613e73-67fd-48c3-a3cf-c95dfdff3c32.png)
+![](/imgs/1dc2c827f01b6cbf.png)
 
 3）列出所有将被清理的组件，让你手动确认后再执行：
 
-![](https://pic.yupi.icu/1/1774068218878-2c53308e-2462-4134-a580-3dd1916225e1.png)
+![](/imgs/a89dfbeb3a48ede1.png)
 
 4）开始吃龙虾 🦞！逐项清理 OpenClaw 相关内容，停止 Gateway 服务、卸载 CLI、删除状态数据和配置文件：
 
-![](https://pic.yupi.icu/1/1774068299187-e6edc73f-9da4-4d30-8521-6e23ae6a93b9.png)
+![](/imgs/38335ae0f64f8182.png)
 
 5）验证卸载结果，确保清理干净，虾壳都不剩：
 
-![](https://pic.yupi.icu/1/1774017685135-434b4fe7-64c3-492a-9fc0-d6976d07f1b2.png)
+![](/imgs/d8907c76eddd6695.png)
 
 怎么样，是不是简单的一皮？仿佛什么都没发生过。
 
@@ -83,7 +80,7 @@ irm https://clawfather.cn/uninstall.ps1 | iex
 
 按 `Command + 空格`，唤起聚焦搜索，搜索「终端」，点击打开：
 
-![](https://pic.yupi.icu/1/1773650769650-59007b90-463d-45f4-868a-fd4776890cac-20260321125946989.png)
+![](/imgs/8bf7361c22e3b135.png)
 
 输入以下命令：
 
@@ -108,7 +105,7 @@ curl -fsSL https://clawfather.cn/uninstall.sh | bash
 
 比如前面提到的养虾报告，脚本会自动保存一份到桌面文件（`openclaw-wrapped.txt`），方便你截图发朋友圈晒一波。毕竟养过赛博龙虾也是一种人生经历嘛~
 
-![](https://pic.yupi.icu/1/1774068647522-f46233fe-cab6-4654-b16b-72381715d4df.png)
+![](/imgs/a2e9c2e7535e11ca.png)
 
 而且卸载脚本的安全性有「双重保障」，不会像龙虾一样乱删你的东西：
 

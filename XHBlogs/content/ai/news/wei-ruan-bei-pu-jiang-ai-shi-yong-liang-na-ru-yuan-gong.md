@@ -3,23 +3,19 @@ title: "微软被曝将“AI 使用量”纳入员工考核：不再是“可选
 summary: "共收录 2 条 AI 行业资讯，如微软被曝将“AI 使用量”纳入员工考核：不再是“可选项”，直接挂钩绩效；IT之家等。"
 order: 89
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《微软被曝将“AI 使用量”纳入员工考核：不再是“可选项”，直接挂钩绩效》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [微软被曝将“AI 使用量”纳入员工考核：不再是“可选项”，直接挂钩绩效](https://www.ithome.com/0/864/820.htm)
 
 [IT之家](https://www.ithome.com/) 6 月 30 日消息，据《商业内幕》27 日报道，微软开发者工具部门总裁 Julia Liuson 最近发出内部邮件，要求各级主管在评估员工绩效时，将其使用 GitHub Copilot 等内部 AI 工具的情况纳入考量。
 
 Liuson 表示，AI 已**成为微软日常工作的核心**，就像团队协作、数据导向思维和沟通能力一样，使用 AI 不再是选择题，而是每个岗位的基本要求。她指出，员工是否有效使用 AI，应该被纳入对其**整体表现和影响力**的全面评估之中。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/iga0SA9I8wY3D62O.webp "微软被曝将“AI 使用量”纳入员工考核：不再是“可选项”，直接挂钩绩效")
+![](/imgs/e4a8894ac06fdad3.webp "微软被曝将“AI 使用量”纳入员工考核：不再是“可选项”，直接挂钩绩效")
 
 知情人士透露，微软各团队的绩效考核标准不尽相同，目前已有部分团队考虑在下一个财年正式将 AI 工具使用情况作为绩效指标之一。
 

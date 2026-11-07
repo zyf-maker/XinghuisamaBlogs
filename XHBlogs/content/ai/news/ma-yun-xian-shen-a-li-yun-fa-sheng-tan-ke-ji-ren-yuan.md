@@ -3,15 +3,12 @@ title: "马云现身阿里云发声！谈科技人员责任：让 AI 更懂人�
 summary: "马云现身阿里云发声！谈科技人员责任：让 AI 更懂人类，由程序员鱼皮整理。"
 order: 53
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《马云现身阿里云发声！谈科技人员责任：让 AI 更懂人类》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 新京报贝壳财经讯（记者程子姣）马云再度现身，公开分享了他对科技、人才、责任的看法。4 月 10 日，阿里云新财年启动会在杭州云谷园区举行，马云到场发表演讲。新京报贝壳财经记者了解到，马云现场围绕人工智能话题分享了自己的看法。
 

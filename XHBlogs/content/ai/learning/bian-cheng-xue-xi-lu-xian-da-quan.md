@@ -3,15 +3,12 @@ title: "编程学习路线大全"
 summary: "100+ 条编程路线，从零基础到精通一条龙"
 order: 1
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《编程学习路线大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -29,7 +26,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 计算机基础：数据结构和算法 / 操作系统 / 计算机网络 / 软件工程
 - 其他方向：运维 / 大数据 / 软件测试 / 网络安全 / 游戏开发 / 区块链等
 
-![](https://pic.yupi.icu/1/%2525E7%2525BC%252596%2525E7%2525A8%25258B%2525E5%2525AF%2525BC%2525E8%252588%2525AA%2525E5%2525AD%2525A6%2525E4%2525B9%2525A0%2525E8%2525B7%2525AF%2525E7%2525BA%2525BF%2525E5%2525A4%2525A7%2525E5%252585%2525A8.png)
+![](/imgs/902e79b146d2c6ea.png)
 
 
 ## 清晰的学习重点，系统化梳理知识
@@ -38,11 +35,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 每个阶段都有详细的知识点列表、推荐的视频教程和书籍、配套的练习项目、预估的学习时长等。你不用再花时间去网上搜索资源，而是跟着路线一条路学下去，不再迷茫。
 
-![](https://pic.yupi.icu/1/%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AAJava%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF.png)
+![](/imgs/92963d7d9b052885.png)
 
 此外，Java 后端开发、AI 应用开发等热门方向还配套了精选的企业级项目，手把手带你从 0 到 1 实战开发。提供项目源码、教学视频、文档笔记、简历写法、面试题解的一条龙服务，让你学以致用，并且直接写满简历，更快拿到 Offer！
 
-![编程导航原创项目](https://pic.yupi.icu/1/2%20%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%8E%9F%E5%88%9B%E9%A1%B9%E7%9B%AE.png)
+![编程导航原创项目](/imgs/d64b52743a8094ea.png)
 
 
 ## 免费获取学习路线
@@ -51,7 +48,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 访问地址：[codefather.cn/learn](https://www.codefather.cn/learn)
 
-![](https://pic.yupi.icu/1/%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E4%B8%8B%E8%BD%BD.png)
+![](/imgs/b1228c1161981c21.png)
 
 
 ## 写在最后

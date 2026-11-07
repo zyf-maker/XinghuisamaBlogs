@@ -3,19 +3,16 @@ title: "腾讯元宝识图放大招！一次传 10 张图，朋友圈文案、�
 summary: "共收录 8 条 AI 行业资讯，如DeepSeek；腾讯元宝等。"
 order: 56
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《腾讯元宝识图放大招！一次传 10 张图，朋友圈文案、电子书金句全搞定！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 小伙伴们，好消息！腾讯元宝最近更新了，这次更新简直是生产力神器！最大的亮点就是它的识图功能，以前只能一张一张上传，现在直接支持一次性上传 10 张图片！无论是混元还是 [DeepSeek](https://www.aitop100.cn/search/?text=DeepSeek) 模型，都能把这些图片连起来看，彻底理解你的意思，然后集中回答你的问题。这功能简直是开了挂，充分展现了元宝双模型的强大实力！
 
-![腾讯元宝](https://aitop100app-1251510006.cos.ap-shanghai.myqcloud.com/banner/4782ce21-09f0-4b4f-b016-965e634cf611.png?imageMogr2/format/webp)
+![腾讯元宝](/imgs/790641bc39f4ac5e.webp)
 
 ## 这功能到底有多实用？
 
@@ -32,7 +29,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 举个例子，假设你要发朋友圈，上传了 9 张图片，每张图片都有主题和一些文字信息。元宝会先分析图片的内容和文字，然后根据这些信息，创作出符合你心意的文案。是不是很神奇？
 
-![腾讯元宝](https://aitop100app-1251510006.cos.ap-shanghai.myqcloud.com/banner/2f75c111-1b9f-4cc0-9e5c-eb669758bb66.png?imageMogr2/format/webp)
+![腾讯元宝](/imgs/38ec84d967467252.webp)
 
 ## 多平台全面上线，赶紧更新！
 

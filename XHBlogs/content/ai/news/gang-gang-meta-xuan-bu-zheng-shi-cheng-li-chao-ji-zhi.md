@@ -3,17 +3,13 @@ title: "刚刚，Meta宣布正式成立「超级智能实验室」！11人豪华
 summary: "刚刚，Meta宣布正式成立「超级智能实验室」！11人豪华团队首曝光，由程序员鱼皮整理。"
 order: 85
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《刚刚，Meta宣布正式成立「超级智能实验室」！11人豪华团队首曝光》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [刚刚，Meta宣布正式成立「超级智能实验室」！11人豪华团队首曝光](https://mp.weixin.qq.com/s/I9vrKrDfHIF_1Sdw9tYF2A)
 
 机器之心报道
 
@@ -29,7 +25,7 @@ Meta 又有了新动向！
 
 扎克伯格表示，MSL 将吸纳公司的各个团队，致力于开发 Llama 开源系列大模型、相关产品和基础人工智能研究项目等。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/09O2GPP18xptMa6O.webp)
+![](/imgs/ce10ead0dc3b900c.webp)
 
 以下是扎克伯克完整的备忘录内容：
 
@@ -75,7 +71,7 @@ Meta 在向世界交付超级智能的进程中占据独特优势地位：我们
 
 目前，新加入 Meta 的人已经开始在社交媒体上宣传造势，比如 Jack Rae。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/82VQnZLhJC41SQn8.webp)
+![](/imgs/373f3d131cbafff6.webp)
 
 参考链接：
 
@@ -85,7 +81,7 @@ https://www.cnbc.com/2025/06/30/mark-zuckerberg-creating-meta-superintelligence-
 
 https://www.theverge.com/news/695355/mark-zuckerberg-meta-ai-superintelligence-labs
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/pJ4Phvkkqm8pqZBm.webp)
+![](/imgs/944cd903db50e5a5.webp)
 
 © THE END
 

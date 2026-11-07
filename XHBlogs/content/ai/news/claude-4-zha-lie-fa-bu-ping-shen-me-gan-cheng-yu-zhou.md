@@ -3,15 +3,12 @@ title: "Claude 4炸裂发布！凭什么敢称宇宙最强编程 AI？"
 summary: "共收录 2 条 AI 行业资讯，如claude.ai；AI交流群等。"
 order: 72
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude 4炸裂发布！凭什么敢称宇宙最强编程 AI？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 5 月 23 日，Claude 官方宣布推出下一代 Claude 模型：Claude Sonnet 4 和 Claude Opus 4，直接 **在全世界的 AI 圈掀起了新的风暴**！
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 好家伙，这持久性，都快能平替我们标准的 8 小时工作制了。以后我上班就打开 AI 工具让它自己生成代码，只要下班前检查一下，就可以愉快下班了，真是充实且摸鱼的一天啊！
 
-![](https://pic.yupi.icu/1/1748049116801-cdfba9b0-ddec-4f01-b502-20490c50bc26.png)
+![](/imgs/85305173d838c915.png)
 
 Claude 4 一出现，直接为编程、高级推理和 AI 智能体设立了新标准，达到 SOTA！
 
@@ -27,11 +24,11 @@ SOTA（State of the Art）是一个典型的互联网黑话，常用来描述在
 
 如图，Claude 4 模型在 SWE-bench Verified 上领先，这是一个评估真实软件工程任务性能的基准。
 
-![](https://pic.yupi.icu/1/1747986906326-011c53e7-a1be-4a5f-a907-c570dfa53da5-20250524120720364.png)
+![](/imgs/f54afd608fe859fc.png)
 
 Claude Sonnet 4 模型则是对 Claude Sonnet 3.7 的重大升级，在编程和推理方面表现更优异。虽然在大多数领域不及 Opus 4，但它也吊打了其他大模型，提供了能力和实用性的最佳组合，而且最关键的是 **对免费用户开放**。
 
-![](https://pic.yupi.icu/1/1747986915100-240318d1-19ce-4c7e-b6c2-f4e9e1e4886c-20250524120720453.png)
+![](/imgs/25e363ca7b15f373.png)
 
 作为一个一直依赖 AI 编程的中毒患者，3.7 已经让我很爽了，4 这个大版本不得起飞了啊？！想想当年的 GPT-3 和 GPT-4 的差距，直接把我的期待值拉满了，下面我带大家一起来试试效果。
 
@@ -42,11 +39,11 @@ Claude Sonnet 4 模型则是对 Claude Sonnet 3.7 的重大升级，在编程和
 
 Claude 的使用非常简单，直接进入官网（[claude.ai](https://claude.ai/)）就可以免费使用 Claude Sonnet 4 模型了：
 
-![](https://pic.yupi.icu/1/1748054205184-19a24053-dd9a-4128-a072-0d3e031c2646.png)
+![](/imgs/ea831abbb8b3a06f.png)
 
 如果你想用 Claude 来编程、生成网站，建议还是选择专业的 AI 开发工具 Cursor，也已经第一时间集成了 Claude 4 系列模型。
 
-![](https://pic.yupi.icu/1/1748054309771-fc7782f4-3c98-45e0-b276-b314b638a163.png)
+![](/imgs/67907a81658f7f6d.png)
 
 下面鱼皮将使用 Cursor 带大家开发 3 个不同类型的网站项目：
 
@@ -74,11 +71,11 @@ Claude 的使用非常简单，直接进入官网（[claude.ai](https://claude.a
 
 在 Cursor 中选择对应的大模型、以及 Agent 智能体模式，然后执行 Prompt：
 
-![](https://pic.yupi.icu/1/1748054782941-36a20b14-52cb-49c5-b84f-f25f4fa46fcb.png)
+![](/imgs/d3a4cf3590b65321.png)
 
 等待一段时间后，就可以看到生成的效果了。比较坑的一点是，目前 Claude 4 Opus 模型过于火爆，一直提示说使用的人太多。。。本来我昨天就想发教程了，但就是卡在这一步，直到今天早上 8 点多才能正常使用。
 
-![](https://pic.yupi.icu/1/1748054838846-ce6a7ae0-ebf5-47bb-a15b-c258412abe32.png)
+![](/imgs/ccd0548f5acf84d0.png)
 
 我们将分别从生成 **代码的结构、网站的界面、网站的功能** 这 3 个角度来对比大模型的代码生成效果。
 
@@ -86,7 +83,7 @@ Claude 的使用非常简单，直接进入官网（[claude.ai](https://claude.a
 
 claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成了一个较为复杂的项目；而 claude-4-sonnet 和 claude-4-opus 直接使用最基础的前端三件套（HTML + CSS + JavaScript）完成了项目。
 
-![](https://pic.yupi.icu/1/1748055308007-48020e0f-3055-40b8-a9f4-2090cf8ec92c.png)
+![](/imgs/169fac4ef7d18247.png)
 
 单看项目结构我们很难评判谁做的更好，因为有时候高端的功能往往只需要简单的技术实现，less is more。
 
@@ -95,25 +92,25 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 每个模型生成的网站都很简洁，效果还不错。但我会更喜欢 claude-4-sonnet，因为它给出了更多的引导信息，比如支持的转换格式等。
 
-![](https://pic.yupi.icu/1/1748055697162-ea03506c-b109-475d-b15a-d9cc2a8f70d2.png)
+![](/imgs/1c2e0f9c823c86bb.png)
 
 选择一个文件后，claude-4-sonnet 和 claude-4-opus 生成的网站出现了动态交互效果，显示出了待转换的文件，并且提示用户要选择目标格式。而且我注意到一些小细节，比如文件大小的展示更精确了、选择格式的 UI 也更好看。
 
-![](https://pic.yupi.icu/1/1748055843229-9f4d4bb8-1395-4d8f-9ee8-77af572b6939.png)
+![](/imgs/b9a11ccd25ab14de.png)
 
 转换成功后，显然 claude-4-sonnet 和 claude-4-opus 的成功提示和下载按钮更明显，高下立判！
 
-![](https://pic.yupi.icu/1/1748056009117-e40e7bf9-bea8-41a3-aaa4-3d52c67d842b.png)
+![](/imgs/6579f7e1643a53c2.png)
 
 #### 网站功能对比
 
 比较遗憾的是，所有模型生成的网站都只是有个“壳”，虽然输出了 “文件转换成功”，但实际上只是改了文件的后缀名而已，并没有真的转换格式。看下代码就知道了：
 
-![](https://pic.yupi.icu/1/1748056469598-718d301b-da62-4fcc-b633-87b8b63f4534.png)
+![](/imgs/d4bb87cd4cf9d9e8.png)
 
 有意思的是，如果我上传一个不支持的格式，claude-3.7-sonnet 会给出弱弱的警告；claude-4-sonnet 会给出更强力的弹窗警告；而 claude-4-opus 可以说是死鸭子嘴硬，我可以继续选择转换格式，它也装作能处理的样子，还给我提示转换成功。
 
-![](https://pic.yupi.icu/1/1748056242227-9aa2dab7-41b1-437f-88b7-ccb74ae0bf99.png)
+![](/imgs/b8fe86095fd17652.png)
 
 毕竟只是改个后缀而已，这么玩当然什么格式都能转换了！你们说 claude-4-opus 这样算是更智能么？
 
@@ -139,7 +136,7 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 跟生成文件格式转换工具类似，claude-3.7-sonnet 使用了 React 前端框架技术来生成代码，生成了一个较为复杂的项目；而 claude-4-sonnet 和 claude-4-opus 直接使用最基础的前端三件套（HTML + CSS + JavaScript）完成了项目。
 
-![](https://pic.yupi.icu/1/1748056960115-744a9731-0049-41c5-9e6b-616c6aca6c00.png)
+![](/imgs/c4a85abdc6edd788.png)
 
 看到这里，我开始相信了：高端的功能往往只需要简单的技术实现，less is more！
 
@@ -148,14 +145,14 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 每个模型都理解了任务，生成出了经典连连看游戏的页面，都显示了得分、时间和道具。但是界面美观度高下立判啊！claude-3.7-sonnet 生成的游戏带着一股土味儿，而 claude-4-sonnet 和 claude-4-opus 界面都很软萌 Q 弹，风格也比较接近，不愧是同系列的模型。
 
-![](https://pic.yupi.icu/1/1748057128402-f6b13ee2-4092-453c-bffe-e82b34e50f4e.png)
+![](/imgs/94eccd9ffaba0e19.png)
 
 
 #### 网站功能对比
 
 所有模型生成的游戏都是能正常操作的，可以消除图案相同的方块，也可以使用提示、洗牌、停止计时、炸弹等道具。但是 AI 对连连看游戏的理解好像有点问题，比如下面这种情况，我记得是能消除的吧？但是生成的游戏无法顺利消除。。。
 
-![](https://pic.yupi.icu/1/1748057414393-615b510b-8aec-436c-ae84-cc1d31f2b341.png)
+![](/imgs/8858d65c83410ffa.png)
 
 所以功能上算是 3 个大模型打平了。但说真的，能通过一个 Prompt 提示词、花几分钟就生成出这种效果，已经很强了。这哪怕让一个精通前端的大佬来写，最少也得花几个小时吧？
 
@@ -182,7 +179,7 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 这次的生成结果可就有意思了，claude-3.7-sonnet 和 claude-4-sonnet 直接使用最基础的前端三件套（HTML + CSS + JavaScript）完成了项目，而 claude-4-opus 却使用了 React 前端框架技术来生成代码，并且把一个简单的页面拆分成了很多个小组件。
 
-![](https://pic.yupi.icu/1/1748057919666-0a068e65-a264-481a-bb53-f8c8027733cc.png)
+![](/imgs/79cff20de60aeba5.png)
 
 出现这种情况也很正常，毕竟 AI 生成是具有一定随机性的，我们还是来看看效果如何。
 
@@ -191,11 +188,11 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 所有大模型生成的界面都是支持响应式的，从移动端小屏来看没有明显的差别：
 
-![](https://pic.yupi.icu/1/1748058152472-9afdd0b3-58f1-458c-a3f0-e6d7a0faefda.png)
+![](/imgs/c6aad0e11aaa0c2c.png)
 
 但是 PC 端大屏的区别就很明显了，从 “关于我们” 板块就能看出，claude-4-sonnet 和 claude-4-opus 生成的页面明显具有更多的细节，让网站内容更充实。这波又是新模型的胜利~
 
-![](https://pic.yupi.icu/1/1748058338558-466e055c-d08d-4b0d-bb98-e5107a30184e.png)
+![](/imgs/865fcede992e06cd.png)
 
 
 ## 总结
@@ -206,7 +203,7 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 对了，还得提醒一下，目前使用 claude 4 系列模型是按照 token 计费的，Claude 官方给出的价格是 Opus 4 每百万 token 15/75美元（输入/输出），Sonnet 4 为 3/15 美元。而在 Cursor 中使用 Opus 4 是按 token 计费，使用 Sonnet 4（非 MAX 版本）是按照请求数计费，目前还有 75 折，一个请求大概是 0.04 美元。
 
-![](https://pic.yupi.icu/1/1748059004335-70d84599-d7c6-4b3c-b682-7fa32f15a05c.png)
+![](/imgs/aa58a6d4f45c0f24.png)
 
 帮大家粗略估算一下价格，还是有点小贵的：
 
@@ -220,4 +217,4 @@ claude-3.7-sonnet 使用了 Next.js 前端框架技术来生成代码，生成�
 
 欢迎加入我们的 AI 交流群，获得更多最新资讯、AI 玩法等内容～
 
-![AI交流群](https://pic.yupi.icu/yuyi/640-20250530155801513.png)
+![AI交流群](/imgs/1fc2fecca33b6ed5.png)

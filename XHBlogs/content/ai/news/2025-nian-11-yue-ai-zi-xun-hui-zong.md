@@ -3,15 +3,12 @@ title: "2025 年 11 月 AI 资讯汇总"
 summary: "2025 年 11 月共收录 430 条 AI 行业资讯，如专家：会聊天≠会思考，大语言模型造不出通用人工智能；海外博主吐槽 AI 食谱泛滥：菜做出来没法吃，还抢了我们的饭碗等。"
 order: 105
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-12-24"
 readingTime: 22
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《2025 年 11 月 AI 资讯汇总》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 11 月 30 日
 - [专家：会聊天≠会思考，大语言模型造不出通用人工智能](https://ai.codefather.cn/news/1994987264475783170)

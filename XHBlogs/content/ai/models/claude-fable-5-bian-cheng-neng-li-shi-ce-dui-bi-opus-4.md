@@ -3,21 +3,18 @@ title: "Claude Fable 5 编程能力实测 - 对比 Opus 4.8 和 GPT-5.5"
 summary: "全球最贵 AI 模型实测对比：Fable 5 vs Opus 4.8 vs GPT-5.5"
 order: 3
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-09-11"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Fable 5 编程能力实测 - 对比 Opus 4.8 和 GPT-5.5》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 就在刚刚，Anthropic 发布了新一代模型 **Claude Fable 5**，同时还放出了一个面向专业安全人员的「解限版」叫 Claude Mythos 5。
 
-![](https://pic.yupi.icu/1/1781053123369-84164e0d-6682-48a1-bf69-98300e8ade11.png)
+![](/imgs/1ce49c69106ec084.png)
 
 官方把它称为「神话级」模型，能力凌驾于之前的 Opus 系列之上。据说 Stripe 公司在自己 5000 万行的 Ruby 代码库里测了一圈，一天就搞定了团队原本要两个月才能完成的迁移工作。
 
@@ -42,7 +39,7 @@ Mythos 5 是把护栏拆掉的「完全体」，只发给 Anthropic 审核过的
 
 不是哥们，写个文章哪里不安全了？！
 
-![](https://pic.yupi.icu/1/1781053278660-299797cf-fc94-41d3-8418-c2d5b0c19a89-20260610123536602.png)
+![](/imgs/36d4ffa29e64cf94.png)
 
 肯定有朋友好奇，为什么这次更新不延续 Opus 系列，来个 Opus 4.9，而是直接跳到第 5 代？
 
@@ -81,7 +78,7 @@ Fable 5 的总成本直接是 Opus 4.8 的两倍、DeepSeek V4 的 50 倍，稳�
 
 但这次 Fable 5 的成绩，确实配得上「炸裂」两个字。
 
-![](https://pic.yupi.icu/1/1781053155639-63c73b4b-f732-44e8-bf48-7efaeb314e11.png)
+![](/imgs/2da3b5d4832ac560.png)
 
 挑几个亮眼的数据说说：
 
@@ -95,11 +92,11 @@ Fable 5 的总成本直接是 Opus 4.8 的两倍、DeepSeek V4 的 50 倍，稳�
 
 正好 Cursor 第一时间就接入了 Fable 5，每次出新模型都能直接测试，方便得很。
 
-![](https://pic.yupi.icu/1/image-20260610114528179.png)
+![](/imgs/e24e89dbd3545f82.png)
 
 我之前写过一套免费开源的 [《AI 编程零基础入门教程》](https://ai.codefather.cn/vibe)，里面有 Cursor 的保姆级实战教程，感兴趣的同学可以看看。
 
-![](https://pic.yupi.icu/1/image-20260610121356925.png)
+![](/imgs/81ec9ad679ba78a5.png)
 
 接下来我准备了两轮实测。第一轮是让 3 个模型一把梭同一个全栈项目；第二轮更硬核，让它们重构 Claude Code 泄露的 50 多万行源码。
 
@@ -122,49 +119,49 @@ Fable 5 的总成本直接是 Opus 4.8 的两倍、DeepSeek V4 的 50 倍，稳�
 
 Opus 4.8 的登录页是经典的居中卡片式，可以切换注册和登录 Tab，还贴心地把演示账号密码标在了页面底部：
 
-![Opus 4.8 登录页](https://pic.yupi.icu/1/1780029273042-d3f331eb-d1ed-47ec-8365-35cac284364d-20260610123536894.png)
+![Opus 4.8 登录页](/imgs/e1f482eb5630982f.png)
 
 GPT-5.5 的风格就完全不同了，左边一大块全是文案宣传，右边才是登录表单。符合我对 GPT 的刻板印象，喜欢在页面上堆信息：
 
-![GPT-5.5 登录页](https://pic.yupi.icu/1/1780029293656-2648ba99-dd96-41e2-bc9a-0e46458b0b17-20260610123536970.png)
+![GPT-5.5 登录页](/imgs/790537b1664e4308.png)
 
 Fable 5 的登录页简洁干净，和 Opus 4.8 风格一致：
 
-![Fable 5 登录页](https://pic.yupi.icu/1/1781056255673-6848d90c-1ddf-4f57-90e6-9e62ac0f4662.png)
+![Fable 5 登录页](/imgs/765a5d2a7f2ab4c7.png)
 
 再来看看任务看板页面。
 
 Opus 4.8 的看板有点素，排版整齐，但没什么背景色：
 
-![Opus 4.8 看板页](https://pic.yupi.icu/1/1780029463336-ac3e9396-e39c-4dd2-86bd-79f570dd7300-20260610123537119.png)
+![Opus 4.8 看板页](/imgs/2212bf64c7bfab99.png)
 
 GPT-5.5 直接把看板和数据面板合到了一个页面，用最少的页面完成最多的事。但是任务列的标题直接用了英文，细节上差了点儿意思：
 
-![GPT-5.5 看板+数据面板](https://pic.yupi.icu/1/1780029520120-9b73316b-cebd-4587-967e-36ccc7fb2e7f-20260610123537167.png)
+![GPT-5.5 看板+数据面板](/imgs/6a6481118dd33414.png)
 
 Fable 5 的看板页面中，状态区分得很清晰，颜色比较丰富生动，任务卡片上的信息排布也更合理：
 
-![Fable 5 看板页](https://pic.yupi.icu/1/1781056330256-6c82e2b1-269a-4984-a302-555e6d99e3aa.png)
+![Fable 5 看板页](/imgs/be3b9cbfbfd7a893.png)
 
 再看看数据面板，Fable 5 做了环形图、柱状图、折线图，任务卡片通过圆弧元素增加了点缀感：
 
-![Fable 5 数据面板](https://pic.yupi.icu/1/1781056402506-6aba930b-6237-4d6f-b4e1-adb82a2b435c.png)
+![Fable 5 数据面板](/imgs/6984ad1c8615b31d.png)
 
 Opus 4.8 的数据面板则比较朴素：
 
-![Opus 4.8 数据面板](https://pic.yupi.icu/1/1780029479354-a9c39f80-abe6-4353-8240-b29bf884b672-20260610123537430.png)
+![Opus 4.8 数据面板](/imgs/26cb4b0e554e5d2c.png)
 
 深色模式下，Fable 5 的图表配色很协调，整体效果是三个里最好的：
 
-![Fable 5 深色模式](https://pic.yupi.icu/1/1781056514528-855b0bda-9019-4201-9266-ad6b95abed74.png)
+![Fable 5 深色模式](/imgs/74eb64d5cfa2e493.png)
 
 Opus 4.8 的深色模式则中规中矩，没什么硬伤，但也没什么惊喜：
 
-![Opus 4.8 深色模式](https://pic.yupi.icu/1/1780029730688-20d35b84-c419-49ae-85a6-7a9ce47260b7-20260610123537573.png)
+![Opus 4.8 深色模式](/imgs/aacfc499ae648a98.png)
 
 GPT-5.5 的深色模式就差点儿意思了，一大片灰色：
 
-![GPT-5.5 深色模式](https://pic.yupi.icu/1/1780029756025-7259116f-f01b-45b9-9921-53a024d16f2e-20260610123537621.png)
+![GPT-5.5 深色模式](/imgs/7e04190991527fe9.png)
 
 看完了 UI 效果，再来说说真正拉开差距的地方。
 
@@ -172,7 +169,7 @@ Fable 5 是三个里面唯一做到「零修改跑通」的。虽然三个模型
 
 而且它的验证方式是最硬核的，不仅用 curl 测了 API，还通过 CDP（Chrome DevTools Protocol）合成了真实的鼠标拖拽事件，在浏览器里实测了看板拖拽的持久化效果，验证深度远超其他模型。
 
-![](https://pic.yupi.icu/1/1781056605971-0891725a-797f-4ee9-b0c7-395bd7227eff.png)
+![](/imgs/5ec73cadc74885a6.png)
 
 综合来看，Opus 4.8 架构分层最规范、UI 设计感也不错，但有几个小 Bug 需要修复才能跑起来。GPT-5.5 则是老样子，做得快但做得糙，界面偏简陋。Fable 5 的优势主要体现在工程可靠性上，零缺陷、hooks 封装干净、验证深度到位。这种「交付确定性」对效率的影响其实非常大，少一次来回调试可能就省了半小时。
 
@@ -208,11 +205,11 @@ claude-code-origin 目录下是 Claude Code 泄露的部分源码，包含完整
 
 Opus 4.8 通过模拟 Mock Server 跑通了测试流程，自主验证的层次最多。
 
-![](https://pic.yupi.icu/1/1781057084425-5ece0ecc-8b84-4ede-899a-fd1f0b75c045.png)
+![](/imgs/b1203910056bb959.png)
 
 但实际运行时需要 Anthropic 的 API Key，没有 Key 就没法使用：
 
-![](https://pic.yupi.icu/1/1781057061510-ed76e62d-a3e4-43cf-a9cc-df430920c174.png)
+![](/imgs/946c48a453cbd74e.png)
 
 不好意思，我没有 Key。所以只能让 AI 帮我复用本地 Claude Code 的配置，再修复一遍。
 
@@ -220,7 +217,7 @@ Opus 4.8 通过模拟 Mock Server 跑通了测试流程，自主验证的层次�
 
 且不说界面风格跟原装 Claude Code 有明显区别（注意看那个输入框），AI 输出的内容都不能正确显示，拉了：
 
-![](https://pic.yupi.icu/1/1781057348163-1ee80041-c8c7-419b-ac78-0994d4e7a268.png)
+![](/imgs/3883ec13d0ec81ae.png)
 
 
 ### GPT-5.5 偷懒大师
@@ -229,28 +226,28 @@ GPT-5.5 完成任务的速度是 3 个模型里面最快的。
 
 但问题来了，它生成完之后同样需要 Anthropic 的 API Key 才能运行。哼，就这小子最会偷懒了，输出信息都比 Claude 精简很多：
 
-![](https://pic.yupi.icu/1/1781057204520-212741e2-5a43-4159-9da4-8f97cc4e1004.png)
+![](/imgs/84e85bed358c524d.png)
 
 没有 Key 运行不了，所以我让 AI 复用本地 Claude Code 的配置再试试。
 
 虽然能够正常对话，但是这个界面也太简陋了吧，不愧是偷懒大师：
 
-![](https://pic.yupi.icu/1/1781057756980-b68eabdf-4202-4371-bef7-d238db440a6d.png)
+![](/imgs/e6d4a684abb506a1.png)
 
 让它读取个本地文件，结果直接报错了，GG：
 
-![](https://pic.yupi.icu/1/1781057791133-49ef87e2-d098-48e4-a3c0-97e5c942ab11.png)
+![](/imgs/8284831b58186aac.png)
 
 
 ### Fable 5 开箱即用
 
 Fable 5 直接读取到了我本地的 Claude 配置，使用了我之前配置好的 DeepSeek 国产模型，不需要 Anthropic 的 API Key。
 
-![](https://pic.yupi.icu/1/1781056994142-6c07d9ec-a80d-4a7c-9e88-ddd0f215d311.png)
+![](/imgs/0c6908d879e1b518.png)
 
 试了一下，体验跟 Claude Code 几乎一模一样！能够普通对话、Agent 模式和工具调用，功能全部正常，**一次交付就能用**，不需要任何二次修复。
 
-![](https://pic.yupi.icu/1/1781056792310-48d8afe0-128a-4e65-905d-23136cdc61a9.png)
+![](/imgs/f045f5eddef2aae9.png)
 
 哈哈，咱也是开发过 Claude Code 的人了，简历上又多了浓墨重彩的一笔~
 
@@ -261,7 +258,7 @@ Fable 5 直接读取到了我本地的 Claude 配置，使用了我之前配置�
 
 最关键的发现是，**Claude Fable 5 是唯一做了 PTY 终端交互式测试的模型**。
 
-![](https://pic.yupi.icu/1/1781058521904-b1f23509-52e4-4407-afaf-1105e49ed3e4.png)
+![](/imgs/72cbcea877c33bd3.png)
 
 Opus 4.8 虽然写了最多的测试，但所有验证都在非交互环境下进行，从来没有在真实终端里验证过交互效果。结果到用户手里，输出显示就出了问题。
 
@@ -276,7 +273,7 @@ Fable 5 虽然没有写 mock 测试套件，但它做了 Opus 没做的事情，
 
 打开 Cursor 后台一看，我的心在滴血啊！
 
-![](https://pic.yupi.icu/1/1781058408651-6e0971c1-72f8-459b-b10f-fb5d07aec864.png)
+![](/imgs/3ed5c6c4991bd3e8.png)
 
 三个模型的费用和 token 消耗明细如下：
 
@@ -295,23 +292,23 @@ Fable 5 的费用竟然是 Opus 的 3 倍、GPT-5.5 的 8 倍？！光这一个�
 
 两轮测评做完了，我让 AI 帮我根据三个模型完成任务的全过程对话记录和代码产出，做了综合的可视化分析。
 
-![](https://pic.yupi.icu/1/image-20260610115144315.png)
+![](/imgs/6a41bcb2cc9f1c28.png)
 
 先看几个核心能力指标的柱状图。可以看到 Fable 5 在验证深度和实测可用性上遥遥领先，Opus 4.8 在工程质量上略胜一筹，GPT-5.5 则全面垫底：
 
-![](https://pic.yupi.icu/1/1781059070475-27a525ba-ff55-46c1-a47b-d25c7d0e18e9.png)
+![](/imgs/ac23568b176274e3.png)
 
 通过功能覆盖矩阵，可以更直观地看到差距。Fable 5 做了完整的 Ink TUI、上下文压缩、自动复用本地配置这些其他模型都没做的功能，而 GPT-5.5 连最基本的 Read 工具都报错，功能严重缺失：
 
-![](https://pic.yupi.icu/1/1781059044766-2644ca30-1003-4c6d-a559-c9453a649b34.png)
+![](/imgs/fcc5bebd5d7c4b5e.png)
 
 从架构理解、工程执行、验证与可用性、开箱即用和性价比这五个维度来打分。Opus 4.8 在架构理解上最强，但 Fable 5 在验证和开箱即用两个维度上直接拉满，形成了明显的差异化优势：
 
-![](https://pic.yupi.icu/1/1781059103060-40d41546-5c2f-4158-b0b6-2507246b7735.png)
+![](/imgs/3a121a744fd85f58.png)
 
 最终综合评分，Claude Fable 5 以 8.3 分排名第一。它不是每项都最强，但光是「唯一能交付可用产品」这一条就压过了其他模型。毕竟我们用 AI 编程，最终目的就是想省心地直接拿到能用的成果，而不是拿到一堆还需要自己修的半成品。
 
-![](https://pic.yupi.icu/1/1781059149037-63336958-f848-42f7-a1fb-853d830f5c21.png)
+![](/imgs/1ce2f34aeac0fbd0.png)
 
 回头看这三个模型的策略，其实很像一个经典的不可能三角。
 

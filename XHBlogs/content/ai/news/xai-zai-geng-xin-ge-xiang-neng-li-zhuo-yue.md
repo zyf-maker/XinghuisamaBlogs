@@ -3,15 +3,12 @@ title: "xAI 再更新，各项能力卓越"
 summary: "xAI 再更新，各项能力卓越，由程序员鱼皮整理。"
 order: 70
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《xAI 再更新，各项能力卓越》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 xAI 首席执行官 (CEO) 埃隆·马斯克自信地表示"世界上最聪明的人工智能 (AI)",推出的"Grok"的增长势头非常可怕。这是因为，自今年 2 月推出推论型新机型"grock3"仅一个月内，全球日用户就突破了 1600 万人，确保了与中国代表性 AI deep seek 相同水平的流量。
 

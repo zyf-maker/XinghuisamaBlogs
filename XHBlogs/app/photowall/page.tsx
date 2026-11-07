@@ -1,4 +1,7 @@
 import { siteConfig } from "../../siteConfig";
+import Navbar from "../../components/Navbar";
+import PageTransition from "../../components/PageTransition";
+import ContentLayout from "../../components/ContentLayout";
 import PhotoWallClient from "./PhotoWallClient";
 
 export const metadata = {
@@ -6,5 +9,14 @@ export const metadata = {
 };
 
 export default function PhotoWallPage() {
-  return <PhotoWallClient />;
+  return (
+    <div className="min-h-screen relative">
+      <Navbar />
+      <PageTransition>
+        <ContentLayout>
+          <PhotoWallClient />
+        </ContentLayout>
+      </PageTransition>
+    </div>
+  );
 }

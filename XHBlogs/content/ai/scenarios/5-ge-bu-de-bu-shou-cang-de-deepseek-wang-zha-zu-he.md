@@ -3,15 +3,12 @@ title: "5 个不得不收藏的 Deepseek 王炸组合！"
 summary: "昨天写了一篇文章，让大家多多注意元能力和软实力的培养，特别是提问的能力。但现在的社会毕竟节奏越来越快了，大部分人更喜欢的是能快速上手的实操方法，立竿见影的反馈效果，甚至拿来即用的模版套路..."
 order: 16
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《5 个不得不收藏的 Deepseek 王炸组合！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 昨天写了一篇文章，让大家多多注意元能力和软实力的培养，特别是提问的能力。但现在的社会毕竟节奏越来越快了，大部分人更喜欢的是能快速上手的实操方法，立竿见影的反馈效果，甚至拿来即用的模版套路...
 
@@ -31,7 +28,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 Deepseek 会直接给出 markdown 格式的大纲
 
-![img](https://pic.yupi.icu/yuyi/v2-7603458c549f1ce95b3d46ad25909af0_1440w.jpg)
+![img](/imgs/50fa99b01bdb3f73.jpg)
 
 打开 gamma（需科学上网）
 
@@ -39,13 +36,13 @@ https://gamma.app/
 
 选择“新建”，然后“粘贴文本”
 
-![img](https://pic.yupi.icu/yuyi/v2-4e0b0d371c7dbe240c4b9a961a547dd1_1440w.jpg)
+![img](/imgs/a4b1af4d039eb39a.jpg)
 
-![img](https://pic.yupi.icu/yuyi/v2-e2c08c35aeac1c5e148f6a7c045eb3ab_1440w.jpg)
+![img](/imgs/d8dd6b8954d00a45.jpg)
 
 选择一个主题，点击生成，就可以快速做出一个炫酷的 PPT 啦
 
-![img](https://pic.yupi.icu/yuyi/v2-22ba9c65c98aecfa5119f3c2253e1bdb_1440w.jpg)
+![img](/imgs/537c2ed5ba5591a0.jpg)
 
 下次做汇报之前，再也不用通宵了！
 
@@ -59,19 +56,19 @@ https://gamma.app/
 
 Deepseek 的返回结果如下
 
-![img](https://pic.yupi.icu/yuyi/v2-04fa7b1c69c66c014822d0907b6a0aeb_1440w.jpg)
+![img](/imgs/fcdef659aa6f759e.jpg)
 
 把文案复制下来，打开剪映，选择“AI 图文成片”，
 
-![img](https://pic.yupi.icu/yuyi/v2-c170bd11d0d786ce92e7808f01de49a3_1440w.jpg)
+![img](/imgs/8387f4c8e7657ec1.jpg)
 
 再把文案复制进来就可以了
 
-![img](https://pic.yupi.icu/yuyi/v2-ef33bb7f47508b707312af86bd85d644_1440w.jpg)
+![img](/imgs/7694b07ba8f77c4a.jpg)
 
 稍等片刻，一条全自动生成的视频就生成好了！
 
-![img](https://pic.yupi.icu/yuyi/v2-9df270d3efc52b8166caae421373a279_1440w.jpg)
+![img](/imgs/ca87589f04055849.jpg)
 
 按照这样的工作流，一天做 100 条视频也不是不可能呀！
 
@@ -81,7 +78,7 @@ Deepseek 的返回结果如下
 
 毕竟有些好看的图，它的提示词，真的太长了！自己写的话，累死都写不出来好吧。
 
-![img](https://pic.yupi.icu/yuyi/v2-5b6c97accd242f74e12b946a9b4385c5_1440w.jpg)
+![img](/imgs/2ff7b0bcbe13c18e.jpg)
 
 借助 AI，轻轻松松就可以拿到上百条提示词，何乐而不为呢？
 
@@ -91,15 +88,15 @@ Deepseek 的返回结果如下
 
 Deepseek 返回的结果非常详细
 
-![img](https://pic.yupi.icu/yuyi/v2-8bd8208e263f82e2a61960ec4b63f472_1440w.jpg)
+![img](/imgs/85ef4eeff457ef5a.jpg)
 
 我们把英文提示词粘贴到 midjourney 中，马上就能生成一幅精美的作品
 
-![img](https://pic.yupi.icu/yuyi/v2-416fa08f5d9692700da34cb35dc1cb10_1440w.jpg)
+![img](/imgs/e20fd1959cbb8f86.jpg)
 
 如果你没办法使用 MJ，也可以把中文提示词丢给即梦，效果也很可以的，水墨效果很有中国特色
 
-![img](https://pic.yupi.icu/yuyi/v2-2fb19d5d6bd29672788f27eb2835a1b5_1440w.jpg)
+![img](/imgs/541751af25a1aac0.jpg)
 
 ## 四、Deepseek + 飞书
 
@@ -107,11 +104,11 @@ Deepseek 返回的结果非常详细
 
 下次公司开会的时候，先打开飞书妙记，把会议内容录下来
 
-![img](https://pic.yupi.icu/yuyi/v2-eee1247bbb46dc89c4763652fe716161_1440w.jpg)
+![img](/imgs/0d962aa20acae3e7.jpg)
 
 然后导出文字记录，另存为 pdf 或者 word 格式。比如阿杰这里有一个之前洋哥直播分享的内容：
 
-![img](https://pic.yupi.icu/yuyi/v2-b1a4fcd24aba188c4bd59a2a940d24e7_1440w.jpg)
+![img](/imgs/a78f21646de01487.jpg)
 
 打开 deepseek，把会议的文字记录上传，然后输入以下的提示词
 
@@ -119,7 +116,7 @@ Deepseek 返回的结果非常详细
 
 Deepseek 马上就能给我一份整理好的、清晰美观的会议总结
 
-![img](https://pic.yupi.icu/yuyi/v2-88d04bc497fbb75a34252a74c52c8f57_1440w.jpg)
+![img](/imgs/8a74cf4e51a542eb.jpg)
 
 最后直接发到群里，让老板对你刮目相看吧！
 
@@ -133,27 +130,27 @@ Deepseek 马上就能给我一份整理好的、清晰美观的会议总结
 
 Deepseek 生成的结果如下
 
-![img](https://pic.yupi.icu/yuyi/v2-303abb1e56186513a2ebc7fc1c05b117_1440w.jpg)
+![img](/imgs/de50f6f7fbefb6cf.jpg)
 
 把提示词复制进 midjourney 中，就可以生成 2D 版的形象了
 
-![img](https://pic.yupi.icu/yuyi/v2-251385afeca97b03dc8cd1272845fcac_1440w.jpg)
+![img](/imgs/9b9a89cc93700ace.jpg)
 
 最后，我们打开“腾讯混元3D”这个网站
 
 https://3d.hunyuan.tencent.com/
 
-![img](https://pic.yupi.icu/yuyi/v2-b39cdf2a4d1da27ccfd187c9b1ea98d5_1440w.jpg)
+![img](/imgs/7e48bdbba9a3c41c.jpg)
 
 选择“图生3D”，上传图片
 
-![img](https://pic.yupi.icu/yuyi/v2-ff9060e1332547fadcc0e8b8d71ab974_1440w.jpg)
+![img](/imgs/497b8f710830c075.jpg)
 
 稍等片刻，我们的 3D 模型就生成啦
 
-![img](https://pic.yupi.icu/yuyi/v2-04a159f46a2171d8116a675c35e18f75_1440w.jpg)
+![img](/imgs/9aebbd6cda042c38.jpg)
 
-![动图封面](https://pic.yupi.icu/yuyi/v2-b7cc6a9aa7396a534d978032fea2072e_b.jpg)
+![动图封面](/imgs/b0b2dc423d91b155.jpg)
 
 牛逼！
 

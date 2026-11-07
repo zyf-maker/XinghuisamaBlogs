@@ -3,15 +3,12 @@ title: "Vibe Coding 概念大全"
 summary: "一文搞懂 AI 编程的所有核心术语"
 order: 101
 level: "入门"
-tags: ["概念大全", "转载", "AI"]
+tags: ["概念大全"]
 updated: "2026-10-22"
 readingTime: 49
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 概念大全》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -38,7 +35,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你可以把大语言模型理解成一个读过海量书籍和代码的超级学霸，它见过无数的编程案例，所以能帮你写代码、解释代码、修复 Bug。
 
-![](https://pic.yupi.icu/1/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%98%AF%E4%BB%80%E4%B9%88%E5%A4%A7.jpeg)
+![](/imgs/5122a44a24208e1b.jpg)
 
 除了文本大语言模型之外，AI 领域还有专门处理图片的视觉模型（比如 Stable Diffusion）、处理语音的音频模型（比如 Whisper）、以及能同时处理文字、图片、音频的多模态模型（如 GPT-4o、Gemini）。在 AI 编程时，我们主要和文本大语言模型打交道。
 
@@ -58,7 +55,7 @@ Token 是你必须掌握的核心概念，因为 AI 服务通常按照 Token 收
 - "Hello World" 大约是 2 个 Token
 - “你好世界” 大约是 4 ~ 6 个 Token
 
-![](https://pic.yupi.icu/1/image-20260112112612434.png)
+![](/imgs/75aec8339232473a.png)
 
 目前很多 AI 编程工具（比如 Cursor、Claude Code）都自带了 Token 消耗量的实时统计和展示，方便你随时掌握用量和成本。
 
@@ -84,7 +81,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 - 缓存写入 Token：AI 第一次处理你的上下文时，会把计算结果存起来，比普通输入略贵一点
 - 缓存读取 Token：后续再用相同的上下文时，直接复用缓存，**价格甚至可以低到普通输入的 1/10**，非常便宜
 
-![](https://pic.yupi.icu/1/Token%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6%E5%A4%A7.jpeg)
+![](/imgs/9d629f7055f5240e.jpg)
 
 所以在对话时，尽量保持上下文稳定，比如引用的文件、规则文件不要频繁改动，这样能持续享受缓存优惠。有时候你会发现连续对话比开新对话更省钱，就是因为缓存在起作用。
 
@@ -111,7 +108,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 
 值得一提的是，即使是同一系列的大模型，厂商也会提供不同参数量的版本供你选择。
 
-![](https://pic.yupi.icu/1/image-20260302162302260.png)
+![](/imgs/55861e966f545f54.png)
 
 
 ### 模型训练和推理
@@ -122,7 +119,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 
 打个比方，训练就像学生上学读书，推理就像学生参加考试答题。
 
-![](https://pic.yupi.icu/1/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E5%92%8C%E6%8E%A8%E7%90%86%E5%A4%A7.jpeg)
+![](/imgs/510082d349a87fed.jpg)
 
 
 ### 模型微调（Fine-tuning）
@@ -133,7 +130,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 
 对于普通用户来说，微调成本较高，一般不需要自己做，直接使用现成的模型就够了。不过，很多大模型应用开发平台（比如阿里云百炼、火山引擎等）都提供了模型微调的能力，降低了微调的门槛。
 
-![](https://pic.yupi.icu/1/image-20260302163159965.png)
+![](/imgs/602e4e58d84955e7.png)
 
 
 ### 模型蒸馏
@@ -190,7 +187,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 
 理解这 3 种角色有助于你更好地使用 AI。比如很多 AI 编程工具允许你设置系统提示词来定义 AI 的行为规则，而你在对话框中发送的内容就是用户提示词。
 
-![](https://pic.yupi.icu/1/1745462990451-6f2b5727-d47b-436c-9da2-50dac64fb790.png)
+![](/imgs/87afe77ada477607.png)
 
 
 ### 系统提示词
@@ -203,7 +200,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 
 还记得前几年 AI 刚流行的时候，市面上冒出了一大堆 AI 助手网站么？其实很多就是 “套壳”，底层调用的是同一个大模型，只不过给不同的 AI 助手设定了不同的系统提示词，比如 “你是一个翻译专家”、“你是一个法律顾问” 等。
 
-![](https://pic.yupi.icu/1/%E4%B8%BB%E9%A1%B5.png)
+![](/imgs/79d245b468dbf5a0.png)
 
 
 ### 提示词工程
@@ -214,7 +211,7 @@ Token 缓存是一个能帮你省大钱的机制。简单来说，大模型在�
 
 想学习编写提示词的实战技巧，可以看看鱼皮的免费《AI 编程教程》：[提示词编写技巧](https://ai.codefather.cn/library/2010974716125712386)
 
-![](https://pic.yupi.icu/1/image-20260302164120604.png)
+![](/imgs/6e173cee1886292d.png)
 
 
 ### 零样本提示（Zero-shot）
@@ -243,7 +240,7 @@ AI 会根据自己的训练知识来完成任务。
 
 通过提供示例，AI 能更准确地理解你的需求，输出更一致的结果。
 
-![](https://pic.yupi.icu/1/image-20260302164402338.png)
+![](/imgs/0a933402fbae1e66.png)
 
 
 ### 思维链提示（Chain-of-Thought）
@@ -254,14 +251,14 @@ AI 会根据自己的训练知识来完成任务。
 
 在 AI 编程中，涉及复杂业务逻辑、多模块交互、或者需要权衡多种技术方案的项目，特别适合利用推理模型和思维链提示能力，让 AI 想清楚再动手。
 
-![](https://pic.yupi.icu/1/chainofthought.png)
+![](/imgs/93b9aeb5a3f9f9c1.png)
 
 
 ### Markdown 语言
 
 Markdown 是一种轻量级的文本标记语言，用简单的符号来表示格式。比如用 `#` 表示标题，用 `**文字**` 表示加粗，用 `-` 表示列表。
 
-![](https://pic.yupi.icu/1/image-20260302164811601.png)
+![](/imgs/08569679a8298130.png)
 
 在 AI 编程中，Markdown 非常重要，因为：
 
@@ -298,7 +295,7 @@ Vibe Coding 就是跟着感觉写代码：你给 AI 一句话，AI 吐出代码�
 
 当然，不是说 Vibe Coding 已经过时了。Vibe Coding 负责让你看到可能性，Agentic Engineering 负责把可能性变成真正能用的东西。二者适用于不同的场景，做小工具时可以用 Vibe Coding，做企业级项目就需要 Agentic Engineering 的思维。
 
-![](https://pic.yupi.icu/1/agentic%20engineering.jpeg)
+![](/imgs/4ae53a1a3ae5fd63.jpg)
 
 
 ### Agentic Coding 智能体编程
@@ -317,7 +314,7 @@ Agentic Coding 智能体编程是指让 AI 像一个自主的 “智能体”（
 
 这比传统的问答式 AI 更强大，因为它能自主完成复杂的多步骤任务。可以说，AI 不再只是辅助编程的配角，而是正在成为项目开发的核心驱动力。
 
-![](https://pic.yupi.icu/1/agent-in-cursor.png)
+![](/imgs/3cdb1f93261af4ea.png)
 
 
 ### Harness Engineering 驾驭工程
@@ -326,17 +323,17 @@ Harness Engineering（驾驭工程）是 2026 年兴起的 AI 工程新范式，
 
 Harness 这个词本意是 “马具”，就像缰绳和马鞍用来引导强大但难以预测的马匹一样，Harness Engineering 就是围绕 AI 编程智能体搭建的整套 “运行环境”，确保 AI 能按照你的预期工作。
 
-![](https://pic.yupi.icu/1/2_harness_horse.png)
+![](/imgs/877b7b1f6f1adb88.png)
 
 为什么这个概念越来越重要呢？
 
 因为在 AI 编程时代，**模型本身已经是通用商品，真正的竞争力在于你围绕模型搭建的工程体系**。同一个大模型，在不同的 Harness 环境下，代码质量可能天差地别。程序员的角色正在从 “自己写代码” 转变为 “设计让 AI 可靠写代码的系统”。
 
-![](https://pic.yupi.icu/1/8_agent_queals.png)
+![](/imgs/f529a8276a9795fe.png)
 
 从发展路径来看，Harness Engineering 是在提示词工程和上下文工程基础上的进一步演进。提示词工程关注「怎么给 AI 下指令」，上下文工程关注「怎么给 AI 提供信息」，而 Harness Engineering 关注的是「怎么让 AI 持续靠谱地干完一整件事」，三者是层层包含的关系。
 
-![](https://pic.yupi.icu/1/7_harness_layers.png)
+![](/imgs/7bf939a62d6213bf.png)
 
 Harness 的核心模块包括：
 
@@ -346,7 +343,7 @@ Harness 的核心模块包括：
 - 反馈机制（Linter、自动化测试、Browser Use）
 - 架构护栏（防止代码越改越乱）
 
-![](https://pic.yupi.icu/1/20_harness_modules.png)
+![](/imgs/bff20002eb5d13b9.png)
 
 
 ### Loop Engineering 循环工程
@@ -355,7 +352,7 @@ Loop Engineering（循环工程）是 2026 年中期兴起的 AI 编程新范式
 
 以前的 AI 编程模式就像开手动挡的车，每一步都靠你自己操作。Loop Engineering 更像自动驾驶，你提前设定好目的地和安全规则，AI 自己执行、自己检查、自己修复，直到任务完成。
 
-![](https://pic.yupi.icu/1/01_Loop_Engineering%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%EF%BC%9A%E4%BD%A0%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E8%AE%A9%E5%AE%83%E4%BB%A3%E6%9B%BF%E4%BD%A0%E7%BB%99AI%E4%B8%8B%E6%8C%87%E4%BB%A4_compressed_v1.png)
+![](/imgs/885c24aa297b075a.png)
 
 一个靠谱的 Loop 需要 3 样核心的东西：
 
@@ -363,11 +360,11 @@ Loop Engineering（循环工程）是 2026 年中期兴起的 AI 编程新范式
 - **反馈闭环**：每轮循环结束后自动检查结果，判断是继续还是停止
 - **状态记忆**：用外部文件（如 PROGRESS.md）记录进度，断了重启不会从零开始
 
-![](https://pic.yupi.icu/1/03_Loop%E7%9A%843%E5%A4%A7%E6%A0%B8%E5%BF%83%E8%A6%81%E7%B4%A0%EF%BC%9A%E7%9B%AE%E6%A0%87%E5%81%9C%E6%AD%A2%E6%9D%A1%E4%BB%B6%E3%80%81%E5%8F%8D%E9%A6%88%E9%97%AD%E7%8E%AF%E3%80%81%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BF%86_compressed_v2.png)
+![](/imgs/e1e5a82a01cef8f9.png)
 
 从发展路径来看，Loop Engineering 是在提示词工程、上下文工程和 Harness Engineering 基础上的进一步演进。前面几步让 AI 能在靠谱的环境里干活，Loop 则在这些基础上多加了一层「自动循环 + 反馈闭环」的机制，让你从「一句一句手动提示 AI」的操作者变成「设计循环规则」的管理者。
 
-![](https://pic.yupi.icu/1/04_AI%E7%BC%96%E7%A8%8B%E8%BF%9B%E5%8C%964%E9%98%B6%E6%AE%B5%EF%BC%9APrompt%E2%86%92Context%E2%86%92Harness%E2%86%92Loop_compressed_v3.png)
+![](/imgs/13e669072990a535.png)
 
 
 ### 多智能体协作
@@ -378,7 +375,7 @@ Loop Engineering（循环工程）是 2026 年中期兴起的 AI 编程新范式
 
 这两年，多智能体系统正在成为 AI 编程的重要趋势。它的优势不仅仅是能处理更复杂的项目，还能通过并行工作大幅提升效率，让原本需要几小时的任务在几分钟内完成。
 
-![](https://pic.yupi.icu/1/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E5%8D%8F%E4%BD%9C%E5%A4%A7.jpeg)
+![](/imgs/c1cec061982543ca.jpg)
 
 
 ### 智能体编排
@@ -389,7 +386,7 @@ Loop Engineering（循环工程）是 2026 年中期兴起的 AI 编程新范式
 
 就像乐队指挥一样，编排器决定哪个智能体在什么时候做什么事情、如何传递信息、如何汇总结果。
 
-![](https://pic.yupi.icu/1/image-20260112112854174.png)
+![](/imgs/ec676b87d5168b98.png)
 
 
 ### Subagents 子代理
@@ -406,7 +403,7 @@ Subagents 的好处是：
 
 比如你可以让几个子代理同时审查代码库的不同模块，速度会快很多。
 
-![](https://pic.yupi.icu/1/%E5%AD%90%E4%BB%A3%E7%90%86%E6%BC%AB%E7%94%BB%E5%A4%A7.jpeg)
+![](/imgs/f7f342cd37c97be2.jpg)
 
 在 Claude Code 中，AI 会通过内置的 Task 工具自动生成子代理来处理子任务，你不需要做额外配置。你也可以在 `.claude/agents/` 目录下创建自定义的子代理（用 Markdown 文件定义），给它指定专属的角色描述、工具权限和行为规则。
 
@@ -419,7 +416,7 @@ Subagents 的好处是：
 
 和传统的单 AI 对话不同，Agent Teams 中有一个 Team Lead（队长）负责拆解任务和协调工作，其他 Teammates（队员）各自领取任务独立执行，还能通过消息系统互相沟通。
 
-![](https://pic.yupi.icu/1/subagents-vs-agent-teams-light.png)
+![](/imgs/907c520ee466b88e.png)
 
 打个比方，以前用 AI 编程就像你一个人带一个实习生干活，现在 Agent Teams 相当于你直接管了一个小团队，前端、后端、测试同时干，效率翻了好几倍。Anthropic 的工程团队曾用 16 个 Agent 同时工作，产出了 10 万行 Rust 代码！把原本需要数天的工作压缩到了几小时。
 
@@ -427,11 +424,11 @@ Subagents 的好处是：
 
 在实际操作中，Agent Teams 的多个智能体通常需要物理隔离来避免代码冲突。目前最主流的做法是利用 Git WorkTree 给每个智能体分配独立的工作目录，各自在独立的分支上开发。
 
-![](https://pic.yupi.icu/1/image-20260410145744619.png)
+![](/imgs/22a8d0e73a1c72f9.png)
 
 Cursor 已经内置了这种能力，通过 Parallel Agents 模式自动创建和管理 WorkTree，让多个 AI 并行工作后一键合并代码。
 
-![](https://pic.yupi.icu/1/image-20260410150251832.png)
+![](/imgs/67c3aea65eba8d8e.png)
 
 
 ### Hermes Agent
@@ -459,7 +456,7 @@ Hermes Agent 采用三层记忆系统：会话记忆（当前对话上下文）�
 
 目前 Claude Code、Cursor 等工具都已经支持后台 Agent 能力。以后 AI 编程可能就像发微信一样，你在手机上把需求发过去，该干嘛干嘛，等 AI 做完了来找你验收就行。
 
-![](https://pic.yupi.icu/1/cursor%20agent%E5%90%8E%E5%8F%B0%E8%83%BD%E5%8A%9B_%E5%89%AF%E6%9C%AC.jpg)
+![](/imgs/c3a12cf5036b4a8d.jpg)
 
 
 ### Personal Agent 个人智能体
@@ -491,7 +488,7 @@ Agent Loop（智能体循环）是 AI 智能体的核心工作机制，简单来
 
 Claude Code 的源码就是 Agent Loop 最好的工程实现案例。它的核心对话循环其实就是一个朴素的 while(true) 无限循环：每一轮迭代里，先做上下文压缩、再调用大模型拿到响应，如果模型说 “我要用某个工具” 就去执行，把结果追加到对话历史里，然后进入下一轮。
 
-![](https://pic.yupi.icu/1/image-20260401140913171.png)
+![](/imgs/7927356951a162e7.png)
 
 
 ### Ralph Wiggum Loop
@@ -526,7 +523,7 @@ ReAct（Reasoning and Acting）是一种让 AI 智能体交替进行推理和行
 
 这种 “思考 - 行动 - 观察” 的循环让 AI 能更可靠地完成复杂任务，是现代 AI 编程工具的核心技术之一。
 
-![](https://pic.yupi.icu/1/ReAct%E6%8E%A8%E7%90%86%E4%B8%8E%E8%A1%8C%E5%8A%A8%E5%A4%A7.jpeg)
+![](/imgs/e19bef42f07c90a0.jpg)
 
 
 ### 深度思考
@@ -539,7 +536,7 @@ ReAct（Reasoning and Acting）是一种让 AI 智能体交替进行推理和行
 
 普通模式下，AI 收到问题后会直接生成回答。而开启深度思考后，AI 会先在内部进行一系列推理步骤，比如分析问题、考虑多种方案、评估利弊，然后才输出最终答案。你有时能在 AI 的回复中看到一个 “思考中...” 的过程，那就是深度思考在工作。
 
-![](https://pic.yupi.icu/1/image-20260215104649777.png)
+![](/imgs/19c345d174c0d006.png)
 
 深度思考特别适合复杂的编程任务，比如设计系统架构、排查难以定位的 Bug、优化算法等。代价是速度更慢、Token 消耗更多。
 
@@ -554,7 +551,7 @@ ReAct（Reasoning and Acting）是一种让 AI 智能体交替进行推理和行
 
 AI 有了自适应思考能力后，可以做到简单问题秒回，复杂问题会自动进入深度思考模式。这样既保证了质量，又节省了时间和成本。
 
-![](https://pic.yupi.icu/1/%E8%87%AA%E9%80%82%E5%BA%94%E6%80%9D%E8%80%83%E6%BC%AB%E7%94%BB%E5%A4%A7.jpeg)
+![](/imgs/8e8c1832beca23b7.jpg)
 
 Anthropic 在 Claude Opus 4.6 中率先引入了自适应思考能力，并在 Opus 4.8 中进一步优化。开发者可以设置不同的思考力度级别来平衡质量和成本。
 
@@ -565,7 +562,7 @@ Anthropic 在 Claude Opus 4.6 中率先引入了自适应思考能力，并在 O
 
 AI 本身只能生成文字，但通过工具调用，它可以读写文件、搜索网页、执行命令和脚本、调用 API、操作数据库等等。
 
-![](https://pic.yupi.icu/1/1746590338968-0240c12b-2956-47f4-b8ff-5b5f831221f6.png)
+![](/imgs/4a97181211d5f82c.png)
 
 工具调用的工作流程分为 4 步：
 
@@ -576,7 +573,7 @@ AI 本身只能生成文字，但通过工具调用，它可以读写文件、�
 
 举个例子，用户想要获取 [编程导航网站](https://www.codefather.cn) 的热门文章，下面这张图清晰地展示了工具调用的完整流程：
 
-![](https://pic.yupi.icu/1/%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8%E6%B5%81%E7%A8%8B.png)
+![](/imgs/fc160e1a5fc32f31.png)
 
 需要注意的是，AI 模型本身并不直接执行工具，而是生成 “我想调用这个工具，参数是这些” 的指令，由外部系统执行后把结果返回给 AI。
 
@@ -589,15 +586,15 @@ MCP（Model Context Protocol）是 Anthropic 在 2024 年底推出的开放标�
 
 你可以把 MCP 理解成 AI 世界的 “USB 接口”。就像 USB 接口让各种设备（键盘、鼠标、U 盘）都能用同一种方式连接电脑一样，MCP 让各种外部工具（文件管理、数据库、搜索引擎等）都能用同一种方式连接 AI，不用为每个工具单独写一套对接代码。
 
-![](https://pic.yupi.icu/1/1746710765234-c974bda8-666e-45b3-adc4-ace97cbb8c0a.png)
+![](/imgs/9f67a0874ce68848.png)
 
 MCP 的核心价值在于 **标准化**。开发者不需要为每个 AI 工具单独开发连接器，只需要按照 MCP 标准开发一次，就能被所有支持 MCP 的 AI 工具使用。目前 Claude Code、Cursor、Windsurf 等主流 AI 编程工具，以及各种网页 AI Agent 应用都已经支持 MCP 协议。
 
-![](https://pic.yupi.icu/1/1746677838632-9278e62b-c850-4d3c-a835-297ccbe2061a.png)
+![](/imgs/49f0922b023f7ccf.png)
 
 在 Vibe Coding 中，MCP 让 AI 能够连接更多外部工具和数据源，大大扩展了 AI 的能力边界。比如通过 Figma MCP，AI 可以直接读取设计稿并生成对应的网页代码；通过 GitHub MCP，AI 可以直接操作代码仓库、创建 PR；通过数据库 MCP，AI 可以查询和分析业务数据。
 
-![](https://pic.yupi.icu/1/image-20260116123701822.png)
+![](/imgs/68ce011c1224074f.png)
 
 💡 想要发现更多好用的 MCP 服务？可以访问 [鱼皮 AI 导航 - MCP 大全](https://ai.codefather.cn/mcp)，持续更新优质 MCP，帮你重塑 AI 工作流。
 
@@ -608,19 +605,19 @@ Agent Skills（智能体技能）是 Anthropic 在 2025 年 10 月推出的 [一
 
 简单来说，Agent Skills 就是给 AI 准备的 **技能包**。技能包里有精心设计的提示词、代码脚本、还有各种资源文件。
 
-![](https://pic.yupi.icu/1/1769306811193-2ee3acbc-5e36-46c2-8d08-b2682494fb56.png)
+![](/imgs/f0f1a9289ea4d3de.png)
 
 把 AI 想象成一个职场小白，给他装上 `文档处理技能`，它就立刻知道怎么生成 PPT、处理 Excel 表格；装上 `代码规范技能`，它就知道怎么按照公司标准写代码。
 
-![](https://pic.yupi.icu/1/1769306900359-2a2b73da-a366-411d-ad3b-2ae61f6b5bc4.png)
+![](/imgs/509fb4cdb720f120.png)
 
 Skill 的本质是一个包含 `SKILL.md` 文件的文件夹，里面可以放置指令说明、脚本代码、参考资料等。当 AI 遇到相关任务时，会自动加载对应的 Skill 来增强自己的能力。
 
-![](https://pic.yupi.icu/1/agent%2520skills.jpeg)
+![](/imgs/7d2ac98cbe4cf24c.jpg)
 
 Skills 的核心设计是 **渐进式披露**，AI 只在需要时才加载相关内容，不会一次性把所有信息都塞进上下文，既节省 Token 又保持灵活性。
 
-![](https://pic.yupi.icu/1/agent%20skills%20bundling.jpeg)
+![](/imgs/1f974394ab50687d.jpg)
 
 💡 想要发现更多好用的 Agent Skills？可以访问 [鱼皮 AI 导航 - Skills 大全](https://ai.codefather.cn/skills)，持续更新优质技能，让 AI 帮你干更多活。
 
@@ -636,7 +633,7 @@ Hooks（钩子）是 AI 编程工具中的一种自动化触发器。当 AI 完�
 - 权限请求时自动判断是否安全并批准
 - 提交代码前自动检查代码规范
 
-![](https://pic.yupi.icu/1/image-20260215105006734.png)
+![](/imgs/535f31e461f7319b.png)
 
 Hooks 让你的 AI 工作流更加自动化，减少手动操作。但是要注意，Hooks 配置不当可能会阻塞 AI 的正常工作流程，建议先在小范围测试，确认没问题再推广到整个项目。
 
@@ -652,13 +649,13 @@ Hooks 让你的 AI 工作流更加自动化，减少手动操作。但是要注�
 - `/config`：修改配置
 - `/skills`：查看已安装的技能
 
-![](https://pic.yupi.icu/1/image-20260215105146492.png)
+![](/imgs/27c8e00deb6b104b.png)
 
 你可以自定义斜杠命令，把常用的工作流封装起来复用。比如创建一个 `/commit-push-pr` 命令，一次性完成代码提交、推送和创建 PR；或者搞个 `/techdebt` 命令，每次会话结束跑一下清理重复代码。
 
 自定义命令的本质其实就是一个 Markdown 文件，在 Cursor 中，只需要在项目的 `.cursor/commands/` 目录下创建 `.md` 文件，里面写上你想要 AI 执行的指令，这个文件名就会变成一个斜杠命令。还可以用 Git 版本控制工具来管理自定义命令的文件，跨项目复用。
 
-![](https://pic.yupi.icu/1/image-20260302171806320.png)
+![](/imgs/14c41395aecea93a.png)
 
 
 ### A2A（Agent-to-Agent）
@@ -669,7 +666,7 @@ A2A（Agent-to-Agent）是指 AI 智能体之间相互通信和协作的协议�
 
 A2A 协议让不同的 AI 智能体能够组成团队，分工合作完成复杂任务。这个协议由 Google 在 2025 年推出，目前已有超过 150 家企业加入支持。
 
-![](https://pic.yupi.icu/1/a2a-agent.png)
+![](/imgs/da14f5c12d8e6f4a.png)
 
 不要把 A2A 和 MCP 搞混！二者是互补关系，MCP 解决的是 AI 连接工具的问题，A2A 解决的是 AI 之间沟通协作的问题。
 
@@ -682,7 +679,7 @@ ACP 这个缩写在 AI 领域其实有两个含义，容易搞混，这里一起
 
 它基于轻量级的 HTTP REST 接口设计，支持文本、代码、文件、图片等多种内容格式，不挑编程语言，上手很简单。
 
-![](https://pic.yupi.icu/1/%E6%99%BA%E8%83%BD%E4%BD%93ACP%E5%8D%8F%E8%AE%AE%E5%A4%A7.jpeg)
+![](/imgs/512b4879c83fdf6c.jpg)
 
 需要注意的是，ACP 和前面提到的 A2A 是两个独立的协议。它们都在解决智能体跨框架交流的问题，但具体的通信格式和能力发现机制还是两套不同的体系。这些协议主要面向做 AI 应用开发的程序员，帮助他们构建多个智能体协作的系统。
 
@@ -692,7 +689,7 @@ ACP 这个缩写在 AI 领域其实有两个含义，容易搞混，这里一起
 
 此外，JetBrains 还上线了 ACP Agent Registry，一键就能安装各种 AI 编程智能体，越来越方便了~
 
-![](https://pic.yupi.icu/1/image-20260328131101270.png)
+![](/imgs/d39ea72a21ca8cb6.png)
 
 
 ### BMAD 敏捷 AI 开发方法
@@ -712,11 +709,11 @@ BMAD 中的智能体分为两种类型：
 
 每个智能体都有标准化的组成部分，包括人设（角色、身份、沟通风格、原则）、能力列表、交互菜单，以及可选的关键行动。
 
-![](https://pic.yupi.icu/1/BMAD%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E5%A4%A7.jpeg)
+![](/imgs/6b7d16ca6ae8be99.jpg)
 
 BMAD 在 GitHub 上获得了几万+ Star，说明这种结构化的 AI 开发方法正在被越来越多的开发者认可。
 
-![](https://pic.yupi.icu/1/image-20260201143945594.png)
+![](/imgs/ac2ea1000e5ebcde.png)
 
 
 ### Browser Use 浏览器使用
@@ -732,7 +729,7 @@ Browser Use 的典型应用场景：
 
 比较知名的开源项目是 [Browser-Use](https://github.com/browser-use/browser-use)，支持通过 Python 调用多种大模型来控制浏览器。此外，Cursor、Claude Code 等主流 AI 编程工具也内置了 Browser Use 能力，可以在开发过程中自动打开浏览器预览效果、执行测试等操作。
 
-![](https://pic.yupi.icu/1/image-20251030220841383.png)
+![](/imgs/edf7f23b73fde888.png)
 
 Browser Use 的一个关键优势是，AI 可以利用你现有的浏览器会话和登录状态，无需为每个网站单独开发 API 集成。也就是说，AI 能够访问那些没有公开 API 的网站，大大扩展了自动化的应用范围。
 
@@ -761,7 +758,7 @@ Computer Use 代表了 AI 从 “只能生成文字” 到 “能够操作软件
 
 基于 Computer Use 技术，Anthropic 在 2026 年推出了 [Claude Cowork](https://claude.com/product/cowork)，这是一个桌面端 AI 助手，可以直接访问你电脑上的文件和文件夹，帮你整理下载目录、从截图中提取数据到表格、准备品牌报告等日常办公任务。
 
-![](https://pic.yupi.icu/1/975b77da-9bb4-436e-bdf4-cd6318fd593c.png)
+![](/imgs/31ad76fbc4834ca0.png)
 
 
 ## 上下文管理
@@ -780,7 +777,7 @@ Computer Use 代表了 AI 从 “只能生成文字” 到 “能够操作软件
 
 在 Cursor 中，你可以通过对话框附近的 Token 用量指示器来大致了解当前上下文的大小；在 Claude Code 中，可以使用 `/context` 命令查看上下文占用情况。
 
-![](https://pic.yupi.icu/1/image-20260302172312528.png)
+![](/imgs/0319868aa62ec50a.png)
 
 
 ### 上下文工程
@@ -807,7 +804,7 @@ Claude Code 的三层记忆架构是上下文工程的典型实践：
 - 第二层是话题文件（温数据），存着你的编码偏好、项目约定等，新对话开始时 AI 只挑选最相关的 5 个文件加载
 - 第三层是历史对话（冷数据），存成文件，需要时用 Grep 搜索。不同温度的数据用不同方式管理 —— 热的常驻、温的按需、冷的搜索。
 
-![](https://pic.yupi.icu/1/image-20260401141550843.png)
+![](/imgs/4c92e5cd47568915.png)
 
 一个有意思的设计是，Claude Code 的记忆不记代码，只记人的偏好和判断。因为代码会变化但记忆不会自动更新，如果记忆里说 “函数 X 在第 30 行”，你重构后这条记忆就变成了误导。代码的事实永远去源码里实时读取，这种设计从根源上消灭了缓存和数据不一致的可能性。
 
@@ -820,7 +817,7 @@ Claude Code 的三层记忆架构是上下文工程的典型实践：
 
 你可以把它想象成项目经理写会议纪要。已经开了 3 小时的会，不可能把每句话都记下来，但关键决策、待办事项、重要结论都会被记录。AI 的上下文压缩也是类似的思路，把冗长的对话历史浓缩成关键信息。
 
-![](https://pic.yupi.icu/1/%25E4%25B8%258A%25E4%25B8%258B%25E6%2596%2587%25E5%258E%258B%25E7%25BC%25A9%25E6%25BC%25AB%25E7%2594%25BB%25E5%25A4%25A7.jpeg)
+![](/imgs/aa5c064074a30dcf.jpg)
 
 Claude Opus 4.8 已经内置了上下文压缩能力，搭配它的 100 万 token 上下文窗口，可以让长时间运行的编程任务更加稳定。
 
@@ -834,7 +831,7 @@ Claude Code 在源码中实现了一套精妙的五级压缩策略，像漏斗�
 
 这五级从轻到重依次触发，能裁的先裁，实在不够了再上更重的方案。
 
-![](https://pic.yupi.icu/1/image-20260401142212163.png)
+![](/imgs/c0d36f59db759d3f.png)
 
 
 ### 规则文件
@@ -876,7 +873,7 @@ alwaysApply: false
 
 [AGENTS.md](https://agents.md/) 是一种开放的文件格式，专门用于给 AI 编程智能体提供项目指令。它本质上也是一种规则文件，只不过是跨工具通用的开放标准。
 
-![](https://pic.yupi.icu/1/image-20260201145003244.png)
+![](/imgs/4bf33154e018cad8.png)
 
 传统的 README.md 是写给人看的，主要介绍项目是什么、怎么用。而 AGENTS.md 是写给 AI 看的，包含 AI 工作时需要的技术细节：
 
@@ -912,7 +909,7 @@ SDD（Spec-Driven Development，规范驱动开发）是 AI 时代的一种新�
 
 你可以把规范文档理解为 “项目宪法”，它包含了详细的需求描述、系统设计和接口定义。AI 必须严格遵守这些条文来生成代码，确保产出完全符合预期。
 
-![](https://pic.yupi.icu/1/%25E6%25BC%25AB%25E7%2594%25BB%25E5%259B%25BE4%25E5%25A4%25A7.jpeg)
+![](/imgs/732a7521f0a675ae.jpg)
 
 为什么 SDD 越来越受重视？
 
@@ -929,11 +926,11 @@ SDD 的典型工作流程如下：
 
 其实这和程序员在企业中开发项目的标准流程非常相似，只不过执行者从人变成了 AI。
 
-![](https://pic.yupi.icu/1/%2525E6%2525BC%2525AB%2525E7%252594%2525BB%2525E5%25259B%2525BE5%2525E5%2525A4%2525A7.jpeg)
+![](/imgs/cd91a7e90e4a39c3.jpg)
 
 2025 年 9 月，GitHub 发布了开源的 [Spec Kit](https://github.com/github/spec-kit) 工具包，帮助开发者在 AI 编程中实践 SDD 方法论。它支持 Claude Code、GitHub Copilot 等主流编程工具，通过一套斜杠命令引导你完成上述流程。即使你不是软件开发专家，也能在 AI 的引导下轻松地走完规范的项目开发流程。
 
-![](https://pic.yupi.icu/1/image-20260116164612533.png)
+![](/imgs/e7cd863ca7a6dff5.png)
 
 
 ### RAG 检索增强生成
@@ -942,17 +939,17 @@ RAG（Retrieval-Augmented Generation 检索增强生成）是一种让 AI 能够
 
 普通的 AI 只能依赖训练时学到的知识，而这些知识可能已经过时了。RAG 能让 AI 在回答问题时，先从你的文档、代码库、知识库中检索相关信息，然后基于这些信息生成回答。
 
-![](https://pic.yupi.icu/1/1776650476421-3bfb3c26-575d-4cc4-9538-f74a4589b42d-20260430230436685.png)
+![](/imgs/5ac68f4bec70f7d0.png)
 
 这对于企业中的 Vibe Coding 特别有用，因为 AI 可以参考你项目中的已有代码，生成风格一致的新代码。
 
 RAG 检索增强生成的工作流程如下图所示，做 AI 应用开发的程序员朋友们可以深入了解一下：
 
-![](https://pic.yupi.icu/1/1745810809620-15c36bc0-5130-47fc-aaca-7d2a6ce6e3ce.png)
+![](/imgs/dd7cc42d845ff856.png)
 
 在实际工程中，RAG 已经演化出了很多进阶方案。
 
-![](https://pic.yupi.icu/1/1776651602499-afc9fc4b-6105-4b96-a3cd-a6681bf69480-20260430230542027.png)
+![](/imgs/85152327ac4cd98e.png)
 
 比如：
 
@@ -965,7 +962,7 @@ RAG 检索增强生成的工作流程如下图所示，做 AI 应用开发的程
 
 还有很多，不同的方案适用于不同场景，可以根据实际需求组合使用。
 
-![](https://pic.yupi.icu/1/1776652755436-d1f52895-b98a-4e33-8c86-6ce0322ace05-20260430230713947.png)
+![](/imgs/db1572328b9eb9c2.png)
 
 对 RAG 感兴趣的程序员朋友，可以阅读本教程编程学习板块的《AI 编程技术入门指南》，里面有更详细的 RAG 实现方案和选型建议。
 
@@ -978,7 +975,7 @@ Agentic RAG（智能体检索增强生成）是传统 RAG 的进化版，它把�
 
 而 Agentic RAG 更像一个资深的研究员：它会先思考应该从哪里找信息，找到后会判断信息是否相关，如果不够好就换个角度重新搜索，甚至同时查多个数据源，反复验证直到满意为止。
 
-![](https://pic.yupi.icu/1/1776652755436-d1f52895-b98a-4e33-8c86-6ce0322ace05.png)
+![](/imgs/a6ca0be14dc25548.png)
 
 Agentic RAG 的核心能力包括：
 
@@ -1002,13 +999,13 @@ Agentic RAG 的核心能力包括：
 
 当你把代码或文档存入向量数据库后，AI 就能快速找到语义相似的内容，即使搜索词和原文不完全一样。
 
-![](https://pic.yupi.icu/1/1769047066536-0ef08cd3-b86b-4c97-9016-7add32a710b8.png)
+![](/imgs/0901323279a023ca.png)
 
 比如，你搜 “用户登录”，它能找到叫 "handleAuth" 的函数，因为它们在语义上是相关的。
 
 随着 AI 的爆发，市面上涌现了非常多支持向量存储的数据库：
 
-![](https://pic.yupi.icu/1/1745813546910-9b39355a-85ab-4673-b52b-7f11349a55d7.jpeg)
+![](/imgs/18f566c483da7fc6.jpg)
 
 
 ### 嵌入 Embedding
@@ -1017,7 +1014,7 @@ Agentic RAG 的核心能力包括：
 
 在向量空间中，语义相似的内容会靠得更近。这就是为什么向量数据库能进行语义搜索的原理。
 
-![](https://pic.yupi.icu/1/1745812543781-8ef377d0-2dac-4d17-a504-35de13fbaad0.png)
+![](/imgs/24a97d65ea894379.png)
 
 你不需要深入理解嵌入的技术细节，只需要知道它是 RAG 和代码语义搜索的基础技术就好。
 
@@ -1031,7 +1028,7 @@ AI 幻觉（Hallucination）是指 AI 输出了不符合事实的内容，可能
 
 比如下面这段对话，我让 AI 介绍一下程序员鱼皮，结果它一本正经地胡说八道，我的本名可不是这个……
 
-![](https://pic.yupi.icu/1/image-20260104184328898.png)
+![](/imgs/c7904531855fa1f5.png)
 
 这是大语言模型的固有问题，因为它们是基于概率生成内容的，有时会 “脑补” 不存在的东西。
 
@@ -1057,7 +1054,7 @@ AI 幻觉（Hallucination）是指 AI 输出了不符合事实的内容，可能
 
 比如下图，我把温度调高，输出的结构可能完全不同：
 
-![](https://pic.yupi.icu/1/image-20260302173616073.png)
+![](/imgs/3a01dee18702a726.png)
 
 
 ### 流式输出
@@ -1070,7 +1067,7 @@ AI 幻觉（Hallucination）是指 AI 输出了不符合事实的内容，可能
 
 在技术实现上，流式输出一般基于 SSE（Server-Sent Events，服务器推送事件）技术，服务端通过持续推送数据片段给客户端，做到实时展示。
 
-![](https://pic.yupi.icu/1/image-20260302173858827.png)
+![](/imgs/6ec1e1229d52e7df.png)
 
 
 ### 系统一模型（决策模型）
@@ -1079,7 +1076,7 @@ AI 幻觉（Hallucination）是指 AI 输出了不符合事实的内容，可能
 
 你问它「这封邮件紧急吗」，它不会先写一大段分析，而是直接返回一个 JSON，比如「是，概率 95%」。它支持 3 种问题：是或否（返回概率）、多选一（返回每个选项的概率）、在自定义量表上打分。因为不用一个字一个字地写回答，速度能到毫秒级，价格也比传统大模型低很多，而且输出格式在数学上就是确定的，不会出现 JSON 解析失败的情况。
 
-![传统大模型和决策模型对比](https://pic.yupi.icu/1/01_%E4%BC%A0%E7%BB%9FLLM_vs_Jev%E5%AF%B9%E6%AF%94%E5%9B%BE%EF%BC%9A%E5%90%8C%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%E7%9A%84%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%84%E3%80%81%E9%80%9F%E5%BA%A6%E3%80%81%E4%BB%B7%E6%A0%BC%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![传统大模型和决策模型对比](/imgs/02bb7cb85a465622.png)
 
 它适合当程序里的「智能 if 语句」，比如工单分类、内容审核、给 AI Agent 做每一步的快速决策；需要生成文字、做算术推理的场景还是得交给传统大模型。想看实际效果，可以阅读本教程模型动态板块中的《Jev 决策模型实测 - 从入门到实战》。
 
@@ -1093,7 +1090,7 @@ IDE（Integrated Development Environment 集成开发环境）是程序员用来
 
 VS Code 是目前最流行的轻量级 IDE，由微软开发并开源。Cursor 和 Windsurf 都是基于 VS Code 开发的 AI 代码编辑器，继承了 VS Code 的界面风格和功能，同时大幅扩展了 AI 能力。
 
-![](https://pic.yupi.icu/1/image-20260112113710320.png)
+![](/imgs/2c8d7420ab4e225d.png)
 
 
 ### 代码编辑器
@@ -1102,7 +1099,7 @@ VS Code 是目前最流行的轻量级 IDE，由微软开发并开源。Cursor �
 
 常见的代码编辑器有 Sublime Text、Vim 等。区别于 IDE 集成开发环境，它们相对轻量、启动快速，适合快速编辑单个文件；而 IDE 的功能更全面，集成了调试器、终端、版本控制等工具，适合专业开发者和大型项目开发。
 
-![](https://pic.yupi.icu/1/image-20260302174013740.png)
+![](/imgs/fa3a14557c168f11.png)
 
 在 Vibe Coding 时代，代码编辑器集成了 AI 能力，可以根据你的提示词自动生成代码、解释代码、修复错误。比如早期的 Cursor 虽然功能强大，但它的核心还是一个 AI 增强的代码编辑器。
 
@@ -1111,7 +1108,7 @@ VS Code 是目前最流行的轻量级 IDE，由微软开发并开源。Cursor �
 
 CLI（Command Line Interface）全称命令行界面，就是你在一个小黑框里敲文字命令来操作电脑。和它对应的是 GUI（Graphical User Interface 图形界面），也就是我们日常看到的图标、按钮和窗口。
 
-![](https://pic.yupi.icu/1/image-20260407150349886.png)
+![](/imgs/1513fa80830312e9.png)
 
 在 AI 时代，CLI 正在迎来一波复兴，它不再只是程序员的专属技能，而是 AI 与工具交互的天然接口。
 
@@ -1119,7 +1116,7 @@ CLI（Command Line Interface）全称命令行界面，就是你在一个小黑�
 
 因为 AI 大模型从诞生那天起，就在学习海量的代码和命令行操作，让它读一行命令、执行一个操作，跟喝水一样自然。反过来，让 AI 去操作图形界面就难多了，要截图分析、找元素、模拟点击，整个过程又慢又容易出错。有人测试过，AI 通过浏览器完成任务的成功率只有 35.8%，换成 CLI 就接近 100%。
 
-![](https://pic.yupi.icu/1/image-20260407123223554.png)
+![](/imgs/e911edc372e37ba3.png)
 
 所以现在大厂们纷纷开源自己产品的 CLI 工具（Google、飞书、钉钉、企业微信等），本质上就是在给 AI 提供操作自己产品的接口。
 
@@ -1136,7 +1133,7 @@ CLI（Command Line Interface）全称命令行界面，就是你在一个小黑�
 
 零代码平台特别适合完全没有编程经验的新手，或者想快速做原型的场景。不过缺点也很明显，出了问题不好调试，也很难深度定制，项目做大了容易遇到瓶颈。
 
-![](https://pic.yupi.icu/1/image-20260104141512389.png)
+![](/imgs/79e914e4b2d4f73e.png)
 
 
 ### 代码补全
@@ -1145,7 +1142,7 @@ CLI（Command Line Interface）全称命令行界面，就是你在一个小黑�
 
 当你写代码时，AI 会根据上下文推测你的意图，提供代码片段供你选择。按下 Tab 键就能接受建议，大大提高编码速度。
 
-![](https://pic.yupi.icu/1/image-20260302174238835.png)
+![](/imgs/fc607a6239914b75.png)
 
 早在 2021 年，GitHub 就推出了 Copilot，开创了 AI 代码补全的先河。但谁也没想到，短短几年后 AI 已经从 “补全几行代码” 进化到了 “自主开发整个项目”。如今各大 AI 编程工具都支持代码补全，但越来越多的开发者已经不满足于逐行补全了，而是直接用 Agent 模式让 AI 一口气写完整个功能。
 
@@ -1158,7 +1155,7 @@ CLI（Command Line Interface）全称命令行界面，就是你在一个小黑�
 
 在传统开发中，代码审查一般由同事或上级来做。在 Vibe Coding 中，你可以让 AI 帮你审查代码，它会指出潜在的 bug、安全问题、性能问题，并提供修改建议。
 
-![](https://pic.yupi.icu/1/image-20260112114023226.png)
+![](/imgs/99587749a13b47a2.png)
 
 但要注意，AI 的审查不能完全替代人工审查！特别是对于重要的生产代码。
 
@@ -1171,7 +1168,7 @@ Linter 是自动检查代码问题的工具，能发现语法错误、风格问�
 
 在 Vibe Coding 中，Linter 能帮你快速发现 AI 生成代码中的问题。而且很多时候，AI 在帮你创建前端项目时会自动整合 ESLint 等 Linter 工具，省去了你手动配置的麻烦。
 
-![](https://pic.yupi.icu/1/image-20260116131356553.png)
+![](/imgs/69d4326707829c58.png)
 
 
 ### Debug 调试
@@ -1185,7 +1182,7 @@ Linter 是自动检查代码问题的工具，能发现语法错误、风格问�
 - 阅读错误信息和堆栈跟踪
 - 添加日志输出
 
-![](https://pic.yupi.icu/1/image-20251027214825243.png)
+![](/imgs/e8aab669c399f0da.png)
 
 在 AI 编程时，你可以直接把错误信息发给 AI，让它帮你分析原因并提供修复方案，甚至是自主修复。
 
@@ -1196,7 +1193,7 @@ Linter 是自动检查代码问题的工具，能发现语法错误、风格问�
 
 你可以把它理解为一个能操控你电脑的 AI 数字员工。它不只是一个聊天机器人，而是真的能帮你打开软件、操作浏览器、处理文件、执行代码的全能助手。更关键的是，你可以通过手机聊天软件（比如飞书、QQ、微信）随时随地给它下达任务，AI 会在你的电脑上自动完成。
 
-![](https://pic.yupi.icu/1/1773231001520-f08121d8-de2c-4586-9af2-42cb0c728961-20260311204057246.png)
+![](/imgs/57ca7aff30274340.png)
 
 OpenClaw 的特点包括：
 
@@ -1231,7 +1228,7 @@ MVP（Minimum Viable Product 最小可行产品）是指用最少的功能满足
 
 顺便提一下，迭代开发是敏捷开发（Agile Development）方法论的核心实践之一。敏捷开发强调小步快跑、快速反馈、拥抱变化，非常适合 AI 编程的工作节奏。
 
-![](https://pic.yupi.icu/1/%E8%BF%AD%E4%BB%A3%E5%BC%80%E5%8F%91%E5%A4%A7.jpeg)
+![](/imgs/c4b1b7027cc64818.jpg)
 
 
 ### 重构
@@ -1258,7 +1255,7 @@ MVP（Minimum Viable Product 最小可行产品）是指用最少的功能满足
 
 在 Vibe Coding 中，AI 生成的代码可能不是最优方案，积累太多技术债会让项目越来越难维护。定期重构是偿还技术债的有效方法，防止出现屎山代码。
 
-![](https://pic.yupi.icu/1/v2-806707f0f72072f1db481c237fc035ea_1440w-20260112114757928.png)
+![](/imgs/a29ddc33c80e2cc3.png)
 
 
 ### 版本控制
@@ -1269,7 +1266,7 @@ Git 是最流行的版本控制工具，注意别把它和 GitHub 搞混了，Gi
 
 在 Vibe Coding 中，版本控制特别重要。因为 AI 可能会生成有问题的代码，有了版本控制，你随时可以回退到之前正常的版本。
 
-![](https://pic.yupi.icu/1/image-20260112114940228.png)
+![](/imgs/e76682782f17a615.png)
 
 
 ### Git WorkTree 工作树
@@ -1278,15 +1275,15 @@ Git WorkTree（工作树）是 Git 的一个隐藏技能，它可以让一个仓
 
 正常情况下，一个 Git 仓库只有一个工作目录，你同一时间只能在一个分支上干活。想切换分支，就得先保存手头的代码，来回折腾。但用了 WorkTree，你可以开启分身术，同时在不同的分支上干活，互不干扰。
 
-![](https://pic.yupi.icu/1/image-20260410143507942.png)
+![](/imgs/c2d8318f225bdf8e.png)
 
 和手动复制项目文件夹的区别在于：手动复制会复制完整的 .git 目录和历史记录，占用空间大而且合并代码很麻烦。而 WorkTree 创建的工作目录只是链接到同一个 .git 目录，共享同一套提交历史，省空间、合并也方便。
 
-![](https://pic.yupi.icu/1/image-20260410143527245.png)
+![](/imgs/f346afc2f83fc8f4.png)
 
 在 AI 编程时代，WorkTree 最香的用法就是让多个 AI 并行开发。比如你有首页、搜索、个人中心三个功能要做，就创建三个工作树，每个分配给一个 AI，各干各的互不打扰，开发完再用 Git 合并代码。
 
-![三个 AI 同时干活](https://pic.yupi.icu/1/vscode%E4%B8%89%E4%B8%AA%E5%90%8C%E6%97%B6%E5%B9%B2%E6%B4%BB.png)
+![三个 AI 同时干活](/imgs/52d823793f16fc96.png)
 
 像 Cursor 这样的 AI 编程工具已经内置了 WorkTree 支持，可以直接开启 Parallel Agents 模式，自动创建和管理工作树。
 
@@ -1303,13 +1300,13 @@ Git WorkTree（工作树）是 Git 的一个隐藏技能，它可以让一个仓
 - Netlify：适合静态网站和前端应用
 - Railway、Render：适合后端服务
 
-![](https://pic.yupi.icu/1/image-20260302175217005.png)
+![](/imgs/6119f98a2863c7af.png)
 
 很多零代码平台（如 Bolt.new）都支持一键部署，点个按钮就能上线。
 
 此外，还可以利用 MCP 来实现更智能的部署。比如通过 EdgeOne Pages MCP，你只需要跟 AI 对话，AI 就能帮你自动完成网站的打包和部署，连部署平台都不用自己登录~
 
-![](https://pic.yupi.icu/1/1752212029384-16cfba8f-babb-49c0-9d41-3b76ee78eecf.png)
+![](/imgs/e91ab1d66052640f.png)
 
 
 ### GEO 生成式引擎优化
@@ -1318,11 +1315,11 @@ GEO 全称为 Generative Engine Optimization 生成式引擎优化，你可以�
 
 传统的 SEO 关注的是 “怎么让网页在百度、Google 搜索结果中排名靠前”，而 GEO 关注的是 “怎么让你的内容被 ChatGPT、DeepSeek、豆包这些 AI 大模型引用和推荐”。
 
-![](https://pic.yupi.icu/1/image-20260327155157265-20260328131543764.png)
+![](/imgs/7831494e05513e6a.png)
 
 打个比方，SEO 像是在超市货架上抢黄金位置，GEO 像是让导购员在顾客询问时主动把你的产品推荐出去。
 
-![](https://pic.yupi.icu/1/image-20260327163145093.png)
+![](/imgs/7dec0687cd9be4ff.png)
 
 随着越来越多人用 AI 搜索代替传统搜索引擎，GEO 正在变得越来越重要。有数据显示，AI 搜索带来的流量转化率可以达到传统搜索的 5 倍以上！
 
@@ -1370,7 +1367,7 @@ GEO 的核心策略包括：
 
 后端比前端更复杂，需要考虑安全性、性能、数据一致性等问题。因此 AI 生成的后端代码需要更仔细地审查。
 
-![](https://pic.yupi.icu/1/%E5%89%8D%E7%AB%AF%E5%92%8C%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E5%A4%A7.jpeg)
+![](/imgs/d18693a7b5207f61.jpg)
 
 
 ### 全栈
@@ -1390,7 +1387,7 @@ API（Application Programming Interface）是不同程序之间通信的接口�
 
 在 Web 开发中，前端通过 API 和后端通信，获取数据或提交操作。
 
-![](https://pic.yupi.icu/1/1766718929375-35cd24d6-077e-4a5e-8cbb-7725edf8098f-20260112120508019.png)
+![](/imgs/c80fcde3e521105a.png)
 
 想进一步了解 API 接口和标准的 API 接口设计规范，可以观看 [鱼皮的 API 动画科普视频](https://www.bilibili.com/video/BV1WFBXBmExs)。
 
@@ -1405,9 +1402,9 @@ API（Application Programming Interface）是不同程序之间通信的接口�
 - 文档数据库（MongoDB）：数据以 JSON 文档形式存储
 - 键值数据库（Redis）：适合缓存和快速查找
 
-![](https://pic.yupi.icu/1/1764309581505-2ff17977-695f-4d7c-a779-b5d35ad99d6b.png)
+![](/imgs/270f80682dcd12fa.png)
 
-![](https://pic.yupi.icu/1/1764309606178-1af81d82-b320-4bed-9c97-5dfe3847d8d3.png)
+![](/imgs/057108a1cf8a4efa.png)
 
 在 Vibe Coding 中，你可以用 Supabase、Firebase 等现成的云数据库服务，不用自己搭建和管理数据库。
 
@@ -1426,7 +1423,7 @@ BaaS（Backend as a Service 后端即服务）是提供现成后端功能的云�
 - Firebase：Google 的 BaaS 平台
 - PlanetScale：托管的 MySQL 服务
 
-![](https://pic.yupi.icu/1/image-20260302175641346.png)
+![](/imgs/94e85be1e318aed1.png)
 
 
 ## 写在最后

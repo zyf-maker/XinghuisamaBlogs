@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek Harness Agent 预设详解》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 DeepSeek Harness 是 DeepSeek 官方最新开源的 AI Agent 运行环境，你可以把它理解成一个高度可定制的 AI 编程工具，对标 Claude Code 和 Codex，核心理念是「一切皆插件」。
 
-![](https://pic.yupi.icu/1/image-20260814133452050.png)
+![](/imgs/eceef0e558e2ccff.png)
 
 在可以阅读本教程编程工具板块 DeepSeek Harness 目录中的《DeepSeek Harness 保姆级入门教程》中，我已经带大家从零上手了 DeepSeek Harness，覆盖了安装、实战、社区插件和自己写插件的基础用法。
 
@@ -31,7 +28,7 @@ DeepSeek Harness 是 DeepSeek 官方最新开源的 AI Agent 运行环境，你�
 
 很多 AI 编程工具都有模式切换功能，比如用过 Cursor 的同学应该对 Agent、Ask、Plan 这几种模式不陌生：
 
-![](https://pic.yupi.icu/1/image-20260819094426555.png)
+![](/imgs/2bbda21288a5c9d8.png)
 
 DeepSeek Harness 同样有模式切换功能，官方把它叫做 Agent 预设。
 
@@ -39,7 +36,7 @@ DeepSeek Harness 同样有模式切换功能，官方把它叫做 Agent 预设�
 
 DeepSeek Harness 内置了四种预设，对应四种运行模式，你可以在对话框上方的模式选择器里直接切换。
 
-![](https://pic.yupi.icu/1/image-20260814145323400.png)
+![](/imgs/048380260d14db05.png)
 
 选对预设很重要，写代码、做测试、修 Bug，不同类型的任务适合不同的模式，选错了可能事倍功半。
 
@@ -57,13 +54,13 @@ DeepSeek Harness 内置了四种预设，对应四种运行模式，你可以在
 
 它加载了一个 AI 编程工具应有的全部能力，包括文件读写、终端命令、联网搜索、任务规划、Skills 技能、子 Agent、待办管理等等，加起来有 20 多个工具。
 
-![](https://pic.yupi.icu/1/image-20260818210034485.png)
+![](/imgs/764507f11be7a8a1.png)
 
 绝大多数场景下用标准模式就够了，它的覆盖面足够广，遇到什么任务都能应对。
 
 你看，标准模式下的 DeepSeek Harness 是不是跟 Codex 这种 AI 编程工具很像？
 
-![](https://pic.yupi.icu/1/image-20260814143812878.png)
+![](/imgs/5670b4ffd525fd92.png)
 
 没错，你就把标准模式当成国产版的 Codex 来用就好了，AI 编程、自动化办公等任务，都能搞定。
 
@@ -71,7 +68,7 @@ DeepSeek Harness 内置了四种预设，对应四种运行模式，你可以在
 
 标准模式下，光是跟 AI 说个「你好」，就要占用 1 万多 tokens 上下文！
 
-![](https://pic.yupi.icu/1/image-20260818210415241.png)
+![](/imgs/3d315f26525e372a.png)
 
 
 
@@ -79,7 +76,7 @@ DeepSeek Harness 内置了四种预设，对应四种运行模式，你可以在
 
 极简模式就朴素多了，官方只保留了两个工具，一个能持续运行的终端和一个文件编辑器，其他能力全部关掉。
 
-![](https://pic.yupi.icu/1/image-20260818210623289.png)
+![](/imgs/49e2693cb83e57ef.png)
 
 不只是工具少了，极简模式的系统提示词也被锁成了一句「You are a helpful software engineer assistant」，上下文压缩、任务规划、Skills 技能、子 Agent 这些统统没有。
 
@@ -87,17 +84,17 @@ DeepSeek Harness 内置了四种预设，对应四种运行模式，你可以在
 
 工具说明书少了，模型能分给任务本身的注意力自然就多了。
 
-![](https://pic.yupi.icu/1/image-20260818210911159.png)
+![](/imgs/366bf6d9dbaf639f.png)
 
 在这个模式下，AI 就像个闷头干活的老师傅，不跟你汇报进度、不做花哨的规划，拿到活儿直接动手嘎嘎写。
 
-![](https://pic.yupi.icu/1/image-20260815122619221.png)
+![](/imgs/934db16acccf588c.png)
 
 官方对它的定位很明确，是专门拿来跑模型基准测试的。把环境削到最干净，让不同模型在同一个标准下公平比较。
 
 DeepSeek V4 Pro 的跑分成绩用的就是极简模式，你仔细看跑分图最下方的小字：V4-Pro 使用 DeepSeek Harness 极简模式作为框架进行测试。
 
-![](https://pic.yupi.icu/1/HPmOJZlbUAAOgVt-20260818211001128.jpeg)
+![](/imgs/d0d2cbcbe14047c6.jpg)
 
 那把「考试」模式拿来干活，效果会怎么样呢？想了解极简模式的详细实测对比，可以阅读本教程编程工具板块 DeepSeek Harness 目录中的《DeepSeek Harness 极简模式实测》。
 
@@ -115,13 +112,13 @@ PTC 模式换了一种思路。模型不再一步步调用工具，而是直接�
 
 > 注意，实际情况标准模式应该也不会这么干，这里只是举个例子便于大家理解区别
 
-![](https://pic.yupi.icu/1/image-20260818211153120.png)
+![](/imgs/c968d85a50b856fb.png)
 
 PTC 模式适合那种步骤很多但逻辑清晰的任务，比如批量重命名文件、跑一整套自动化流程，效率比一步步确认要高得多。
 
 有意思的是，PTC 模式和标准模式在配置上其实只差一行，就是把工具呈现模式从默认的 `native` 切换成了 `code`。本质上它拥有标准模式的全部工具能力，只是模型调用工具的方式不同。
 
-![](https://pic.yupi.icu/1/image-20260818214210342.png)
+![](/imgs/4fcd93b9735d0fbd.png)
 
 
 
@@ -131,13 +128,13 @@ PTC 模式适合那种步骤很多但逻辑清晰的任务，比如批量重命�
 
 它继承了标准模式的全部能力，在此基础上还额外提供了一组用于操作 Cordis 插件系统的专属工具，让 AI 可以检查当前运行时有哪些插件在跑、在内存里试验新的插件组合、甚至自己创作出一个全新的模式预设。
 
-![](https://pic.yupi.icu/1/image-20260819102346095.png)
+![](/imgs/fac01504167231ac.png)
 
 简单来说，这个模式就是用来改造 DeepSeek Harness 自身的。
 
 在入门教程中，我就是使用创造模式来开发了一个 Harness 桌宠插件。
 
-![](https://pic.yupi.icu/1/image-20260814135037195.png)
+![](/imgs/06c9df7b71d2c1e0.png)
 
 不过创造模式的权限非常高，按官方的话来说，你要像对待 Shell 访问一样对待它的权限范围。
 
@@ -153,17 +150,17 @@ PTC 模式适合那种步骤很多但逻辑清晰的任务，比如批量重命�
 
 极简模式只留两个工具，标准模式配齐全套能力，PTC 模式换了一种工具调用方式，创造模式还能让 AI 自己查看和改装当前的插件配置。
 
-![](https://pic.yupi.icu/1/image-20260814150646065.png)
+![](/imgs/5185425ffe0b313f.png)
 
 之前有社区的大佬发现，切换到极简模式之后，模型在纯编码任务上的速度和表现反而更好了。于是我专门做了一期实测，用同一个 3D 射击游戏的任务在标准模式和极简模式下各跑了一遍。
 
 先看看标准模式的成品效果：
 
-![](https://pic.yupi.icu/1/image-20260815123745988.png)
+![](/imgs/22d29384787ed38e.png)
 
 再看看极简模式下的成品效果，差别不大。
 
-![](https://pic.yupi.icu/1/image-202608151243407956.png)
+![](/imgs/3f8e8b07a9a0f6d8.png)
 
 但是，标准模式跑了 33 分钟，极简模式只用了 23 分钟，快了将近 10 分钟！
 
@@ -175,7 +172,7 @@ PTC 模式适合那种步骤很多但逻辑清晰的任务，比如批量重命�
 
 PTC 模式的成品效果也是我觉得三种模式里最好的：
 
-![](https://pic.yupi.icu/1/image-20260818215427583.png)
+![](/imgs/e2cae460921d1cb0.png)
 
 总结就一句话，图快就用极简模式，图稳就用标准模式，步骤多的自动化任务试试 PTC 模式。
 
@@ -187,7 +184,7 @@ PTC 模式的成品效果也是我觉得三种模式里最好的：
 
 举个例子，Cursor 有一个很受欢迎的 Debug 模式，它会让 AI 先生成假设、插入日志、让你复现 Bug、再根据运行时数据来定位根因，整个排查过程非常有章法。
 
-![](https://pic.yupi.icu/1/image-20260707183325681.png)
+![](/imgs/99cf3f152bd516c3.png)
 
 这套思路完全可以搬到 DeepSeek Harness 上来。
 
@@ -205,19 +202,19 @@ DeepSeek Harness 支持自定义预设，可以切换到 **创造模式**，让 
 
 提交任务后，可以看到 AI 自动加载了编辑预设的技能，然后通过终端抓取了 Cursor Debug 模式的官方文档页面，提取出了 Debug 模式的核心工作流程。
 
-![](https://pic.yupi.icu/1/image-20260819105013846.png)
+![](/imgs/80a53d9d0a7c679d.png)
 
 几分钟后，AI 完成了任务。它从标准模式复制了一份预设，然后修改了两个文件，一个是存放预设名称和描述的 `preset.yml`，另一个是定义 Agent 工具和角色人设的 `agent.cordis.yml`，把 Debug 模式的六步工作流和硬性规则都写了进去。
 
-![](https://pic.yupi.icu/1/image-20260819105116895.png)
+![](/imgs/a621ac99e0230650.png)
 
 创建完成后，你在模式选择器里就能看到这个自定义的「Debug 模式」了。
 
-![](https://pic.yupi.icu/1/image-20260819114556459.png)
+![](/imgs/22a893db2b4e6c3e.png)
 
 以后遇到那种能复现但是找不到原因的疑难 Bug，切换到这个模式修复就行，AI 会按照「假设 → 插桩 → 复现 → 分析 → 修复 → 清理」的流程来帮你排查，比直接让 AI 凭着经验来改要靠谱得多。
 
-![](https://pic.yupi.icu/1/image-20260819114746666.png)
+![](/imgs/2bf392b67a010da4.png)
 
 
 

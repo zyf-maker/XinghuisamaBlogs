@@ -3,19 +3,16 @@ title: "DeepSeek被封杀了"
 summary: "DeepSeek被封杀了，由程序员鱼皮整理。"
 order: 21
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek被封杀了》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 DeepSeek在全球范围内热度不减少，7天用户数破亿，而且还在快速增长。但是，一股封禁DeepSeek的风潮席卷而来，多个国家参与其中。
 
-![](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0211%2Fdd43d6e0j00sribvo0057d000ic00c7p.jpg&thumbnail=660x2147483647&quality=80&type=jpg)
+![](/imgs/9c4c6e76dcfe9330.jpg)
 
 本文聊聊，近期围绕DeepSeek以及AI产业的几个热议话题。
 

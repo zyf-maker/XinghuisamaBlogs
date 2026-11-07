@@ -3,15 +3,12 @@ title: "Loop Engineering 保姆级教程"
 summary: "从手动提示到自动循环，AI 编程的下一个范式"
 order: 20
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-07-21"
 readingTime: 18
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Loop Engineering 保姆级教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -21,13 +18,13 @@ AI 编程圈又又又出新概念了……
 
 > 我不再提示 Claude 了，我有一堆循环在运行，它们才是在提示 Claude 并判断接下来该做什么。我的工作变成了写循环。
 
-![](https://pic.yupi.icu/1/loop%20engineering.png)
+![](/imgs/d1295ad742fce27d.png)
 
 紧接着，OpenClaw 之父 Peter Steinberger 也发推表示：
 
 > 你不该再给编程 Agent 写提示词了。你应该设计一套循环机制，让这些循环去提示你的 Agent。
 
-![](https://pic.yupi.icu/1/peter%20loopengineering.png)
+![](/imgs/4c41b22319512d85.png)
 
 两家顶级 AI 公司 Anthropic 和 OpenAI 的重量级人物，同时在说一件事：**AI 编程的范式又要升级了，从手动写提示词，变成设计循环系统。**
 
@@ -37,7 +34,7 @@ AI 编程圈又又又出新概念了……
 
 学不完，真的学不完……
 
-![](https://pic.yupi.icu/1/image-20260616104758125.png)
+![](/imgs/818755e47078c1c0.png)
 
 不过别担心，这篇文章我会把 Loop Engineering 从头到尾给你讲明白。先告诉你它是什么、和之前的 AI 编程模式有什么关系，然后带你用 Claude Code、Codex、Cursor 三款工具实战体验 Loop 的效果，最后再聊聊它的方法论框架和踩坑经验。
 
@@ -46,7 +43,7 @@ AI 编程圈又又又出新概念了……
 
 Loop Engineering 这个词翻译过来就是「循环工程」。简单来说，就是你设计一套自动运转的系统，让它代替你去给 AI 下达指令、检查 AI 的输出、记录完成进度、决定下一步该做什么，然后不断循环执行，直到达成你预设的目标。
 
-![](https://pic.yupi.icu/1/01_Loop_Engineering%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%EF%BC%9A%E4%BD%A0%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E8%AE%A9%E5%AE%83%E4%BB%A3%E6%9B%BF%E4%BD%A0%E7%BB%99AI%E4%B8%8B%E6%8C%87%E4%BB%A4_compressed_v1.png)
+![](/imgs/885c24aa297b075a.png)
 
 以前的 AI 编程模式，就像开手动挡的车。踩油门、换挡、转弯，每一步都靠你自己操作。你给 AI 一句提示词，AI 回你一段代码，然后停下来等你下一条指令。**你不说话，它就不工作。**
 
@@ -54,7 +51,7 @@ Loop Engineering 的模式，更像是自动驾驶。你提前设定好目的地
 
 也就是说，你从「一句一句手动提示 AI」的操作者，变成了「设计循环规则」的管理者。
 
-![](https://pic.yupi.icu/1/02_%E6%89%8B%E5%8A%A8%E6%8F%90%E7%A4%BAAI_vs_%E8%AE%BE%E8%AE%A1%E5%BE%AA%E7%8E%AF%E8%A7%84%E5%88%99%E7%9A%84%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![](/imgs/bd1bae92402efb22.png)
 
 
 ### Loop 的 3 大核心
@@ -79,7 +76,7 @@ Loop Engineering 的模式，更像是自动驾驶。你提前设定好目的地
 
 AI 的对话窗口是有限的，关掉就没了。Loop 需要一个外部文件来记录当前进度，比如哪些任务做完了、哪些还没做、上一轮循环的结论是什么。这样即使中间断了重启，也不会从零开始。
 
-![](https://pic.yupi.icu/1/03_Loop%E7%9A%843%E5%A4%A7%E6%A0%B8%E5%BF%83%E8%A6%81%E7%B4%A0%EF%BC%9A%E7%9B%AE%E6%A0%87%E5%81%9C%E6%AD%A2%E6%9D%A1%E4%BB%B6%E3%80%81%E5%8F%8D%E9%A6%88%E9%97%AD%E7%8E%AF%E3%80%81%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BF%86_compressed_v2.png)
+![](/imgs/e1e5a82a01cef8f9.png)
 
 后面的实战部分你会反复看到这 3 样东西，先有个印象就行。
 
@@ -90,7 +87,7 @@ Loop 不是凭空冒出来的概念，它是从前几代 AI 编程方法论一�
 
 下面简单梳理一下这条进化路径：
 
-![](https://pic.yupi.icu/1/04_AI%E7%BC%96%E7%A8%8B%E8%BF%9B%E5%8C%964%E9%98%B6%E6%AE%B5%EF%BC%9APrompt%E2%86%92Context%E2%86%92Harness%E2%86%92Loop_compressed_v3.png)
+![](/imgs/13e669072990a535.png)
 
 
 **1、提示词工程 Prompt Engineering（2022 ~ 2024）**
@@ -99,7 +96,7 @@ Loop 不是凭空冒出来的概念，它是从前几代 AI 编程方法论一�
 
 提示词工程解决的核心问题是「AI 答非所问」，掌握了提示词的写法之后，输出质量能提升一大截。
 
-![](https://pic.yupi.icu/1/4_prompt_engineer.png)
+![](/imgs/320bd0a61226aa23.png)
 
 
 **2、上下文工程 Context Engineering（2025）**
@@ -112,7 +109,7 @@ Loop 不是凭空冒出来的概念，它是从前几代 AI 编程方法论一�
 
 上下文工程解决的核心问题是「AI 给出的回答脱离实际」，做好了上下文管理，AI 的输出才能贴合你的项目实际情况。
 
-![](https://pic.yupi.icu/1/5_context_engineering.png)
+![](/imgs/afa8dfd9840197ed.png)
 
 
 **3、Harness Engineering 驾驭工程（2026 年初）**
@@ -123,7 +120,7 @@ Loop 不是凭空冒出来的概念，它是从前几代 AI 编程方法论一�
 
 把 Harness 搭好之后，AI 才能在一个有工具、有测试、有约束的环境里稳定可靠地产出。
 
-![](https://pic.yupi.icu/1/6_harness_engineering.png)
+![](/imgs/6ce7754b3009a780.png)
 
 
 **4、Loop Engineering 循环工程（2026 年中）**
@@ -134,13 +131,13 @@ Loop 不是凭空冒出来的概念，它是从前几代 AI 编程方法论一�
 
 这四者是层层包含的关系。提示词技巧、上下文管理、Harness 搭建，这些能力在 Loop 里面全都要用上。Loop 只是在这些基础上，多加了一层「自动循环 + 反馈闭环」的机制。
 
-![](https://pic.yupi.icu/1/05_Loop%E5%9C%A8%E5%89%8D%E4%B8%89%E8%80%85%E5%9F%BA%E7%A1%80%E4%B8%8A%E5%8A%A0%E4%BA%86%E8%87%AA%E5%8A%A8%E5%BE%AA%E7%8E%AF+%E5%8F%8D%E9%A6%88%E9%97%AD%E7%8E%AF_compressed_v3.png)
+![](/imgs/58e850adcd0b8d0e.png)
 
 很多同学容易把 Harness 和 Loop 搞混。
 
 如果把 AI 比作一匹马，Harness 就是你给马装上的缰绳、马鞍和围栏，然后你骑在马上手动驾驭它。而 Loop 呢，是你设定好一条巡逻路线后，不用上马，让马自己按路线一圈一圈地跑。每跑完一圈它会自动检查有没有异常，发现问题就处理，处理完继续跑下一圈。你从骑马的人变成了设计路线的人。
 
-![](https://pic.yupi.icu/1/07_Harness_vs_Loop%E5%AF%B9%E6%AF%94%EF%BC%9A%E9%AA%91%E9%A9%AC_vs_%E8%AE%BE%E8%AE%A1%E5%B7%A1%E9%80%BB%E8%B7%AF%E7%BA%BF_compressed_v2.png)
+![](/imgs/d73f5b408c0a0a6e.png)
 
 不过 Loop Engineering 目前还是一个很早期的概念，业界还没有统一的标准和最佳实践。建议先把 Harness 那套基础打扎实，Loop 学起来就容易多了。
 
@@ -170,7 +167,7 @@ Claude Code 提供了两个 Loop 相关的斜杠命令 `/goal` 和 `/loop`，分
 /goal 修复整个项目的代码，直到全部测试通过且没有报错
 ```
 
-![](https://pic.yupi.icu/1/image-20260519191842661.png)
+![](/imgs/b0444006d740a4ce.png)
 
 执行后 Claude 会立刻开始工作，直到所有测试通过且没有报错为止，整个过程你完全不用干预。
 
@@ -180,12 +177,12 @@ Claude Code 提供了两个 Loop 相关的斜杠命令 `/goal` 和 `/loop`，分
 
 如果你想中途看看进度，直接输入 `/goal` 不带任何参数就行，能看到当前任务跑了多久、花了多少 token。
 
-![](https://pic.yupi.icu/1/image-20260519192117090.png)
+![](/imgs/a5941521a135ed95.png)
 
 
 想提前停止的话，用 `/goal clear` 即可：
 
-![](https://pic.yupi.icu/1/image-20260519192203259.png)
+![](/imgs/5cc919b5122ac91f.png)
 
 
 #### /loop 命令
@@ -198,13 +195,13 @@ Claude Code 提供了两个 Loop 相关的斜杠命令 `/goal` 和 `/loop`，分
 /loop 5m 检查项目前后端的部署状态
 ```
 
-![](https://pic.yupi.icu/1/image-20260519184353594.png)
+![](/imgs/df8f9a697b2a2592.png)
 
 `/loop` 适合那些需要定期盯着的事情，比如等部署完成后自动通知你、每隔一段时间检查线上服务有没有报错、定时扫描代码库里新增的安全漏洞。任务完成后记得停掉 Loop，否则它会一直在后台循环执行消耗资源。
 
 总结一下这两个命令的区别，`/goal` 是「跑到完成为止」，适合有明确终点的一次性任务；`/loop` 是「定时反复跑」，适合没有明确终点的持续监控。两者都是 Loop Engineering 的实现方式，只是适用场景不同。
 
-![](https://pic.yupi.icu/1/08_goal_vs_loop_%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94_compressed_v2.png)
+![](/imgs/c82b949b37348f28.png)
 
 
 #### /schedule 命令
@@ -239,7 +236,7 @@ Codex 桌面 APP 也有类似的 Loop 能力，主要通过两种方式实现。
 
 经过 15 分钟后，AI 完成了目标，并且输出了 token 使用量。相比直接让 AI 一把梭完成所有事情，设定目标后让它一步步开发、每步都自动校验，最终产出的质量会稳定得多。
 
-![](https://pic.yupi.icu/1/image-20260616135706979.png)
+![](/imgs/4f246bbf35f08b0d.png)
 
 
 #### Automations 定时自动化
@@ -248,23 +245,23 @@ Codex 桌面 APP 里还有一个「自动化」面板，类似于 Claude Code �
 
 进入左侧的自动化面板，能看到 Codex 已经内置了一些模板，比如定时总结代码变更、检查代码问题之类的。
 
-![](https://pic.yupi.icu/1/1779342339487-c3e44a10-f14c-4d56-aa29-6c34d0a732f5.png)
+![](/imgs/16ac4c501e3668c5.png)
 
 你也可以自己新建，比如让 AI 每天早上帮你搜集一次 AI 编程领域的热点资讯：
 
-![](https://pic.yupi.icu/1/1779342400695-dd591098-4926-41ee-8cc4-966ec17e5dd6.png)
+![](/imgs/289c4c4e97f88238.png)
 
 创建成功后，时间一到 Codex 就会自动开启一个对话来执行任务。你也可以手动执行一次先看看效果：
 
-![](https://pic.yupi.icu/1/1779327739060-7dcbe0b5-0671-4a3a-95d9-7110dde594b5.png)
+![](/imgs/05aad502f5666006.png)
 
 点击任务，能够查看详细信息：
 
-![](https://pic.yupi.icu/1/1779327610752-f322467e-2498-48c2-9ca0-09ee5534720b.png)
+![](/imgs/adf7903574e837f4.png)
 
 点击某个运行历史记录后，还能查看正在执行的任务对话，建议多观察任务的表现，持续迭代优化提示词：
 
-![](https://pic.yupi.icu/1/1779327672984-5d151560-bc4b-4143-b9f1-02e7f3b00b78.png)
+![](/imgs/360bf135ae1f08b4.png)
 
 
 ### Cursor 自主实现 Loop 思想
@@ -273,11 +270,11 @@ Cursor 目前还没有原生的 `/goal` 或 `/loop` 命令。但只要在提示�
 
 比如我要用 Cursor 从零开发一个叫「装了吗」的桌面 APP，帮学编程的同学一键安装各种开发环境。这个项目包含 Electron 桌面应用、Python 服务端、Web 管理后台三个模块，还是挺复杂的。
 
-![](https://pic.yupi.icu/1/01_%E8%A3%85%E4%BA%86%E5%90%97%E4%BA%A7%E5%93%81%E6%A6%82%E5%BF%B5%E5%9B%BE%EF%BC%9A%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E8%BD%AF%E4%BB%B6%E5%90%8D%E2%86%92AI%E7%94%9F%E6%88%90%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC%E2%86%92%E4%B8%80%E9%94%AE%E6%89%A7%E8%A1%8C_compressed_v1.png)
+![](/imgs/6eafabed43046a27.png)
 
 我特意在提示词里设计了一套自主开发循环，让 AI 不要停下来等我确认，自己跑起来直到整个系统能用为止。
 
-![](https://pic.yupi.icu/1/image-20260611162938865.png)
+![](/imgs/9e13c8d1334b6cea.png)
 
 提示词的关键部分是这样的：
 
@@ -300,23 +297,23 @@ Cursor 目前还没有原生的 `/goal` 或 `/loop` 命令。但只要在提示�
 
 执行之后，AI 就开始了它的自主循环。它先配置好环境，然后按顺序开发服务端、桌面端、管理后台。整个过程我基本没有干预，AI 自己维护着 PROGRESS.md 记录进度，开发完一个模块就自动跑测试，遇到报错就自己修复，修完继续推进。
 
-![](https://pic.yupi.icu/1/image-20260611160046322.png)
+![](/imgs/408022c50a68d643.png)
 
 最终 AI 花了将近 50 分钟，独立完成了整个系统的开发和验证，不需要我中间插手。三个服务全部能正常启动，核心功能都能跑通。
 
-![](https://pic.yupi.icu/1/1781159120778-312597e0-112b-432a-9973-cc829fcbe013.png)
+![](/imgs/15ba5c9d0c0547db.png)
 
 打开桌面 APP 看看效果。主界面有一个 AI 对话框，下面预置了常见开发环境的快捷入口：
 
-![](https://pic.yupi.icu/1/1781154426901-1d864350-c541-4d80-8b0b-f52265aeddb9.png)
+![](/imgs/2f3ee3e752e473e3.png)
 
 选择想安装的软件和版本后，AI 会自动生成完整的安装脚本和方案，包含中文注释、环境检测、验证命令，可以直接复制执行或者点击一键安装：
 
-![](https://pic.yupi.icu/1/1781155941607-2cdae4aa-c738-4f9d-976b-fe4572b6ecc5.png)
+![](/imgs/0ca57b30122b3233.png)
 
 Web 管理后台也能正常运行，可以查看安装数据统计、管理所有已经生成的安装方案、查看用户反馈数据：
 
-![](https://pic.yupi.icu/1/1781161686984-f1473317-8173-4ed6-bee0-e3f373aff1d3.png)
+![](/imgs/e8ccd8145a366fe0.png)
 
 效果还不错吧~
 
@@ -340,7 +337,7 @@ Claude Code 官方团队在博客 [Getting started with loops](https://claude.co
 
 从上到下，你管的事情越来越少，交给 AI 的越来越多。
 
-![](https://pic.yupi.icu/1/05_4%E7%A7%8D%E5%BE%AA%E7%8E%AF%E9%80%92%E8%BF%9B%E5%85%B3%E7%B3%BB%E5%8F%AF%E8%A7%86%E5%8C%96%E6%80%BB%E8%A7%88%E5%9B%BE_compressed_v1.png)
+![](/imgs/64489a0f4bb9fe48.png)
 
 最高级的「主动循环」是把前面所有能力组合起来，搭建一套完全自动化的流水线。比如处理用户反馈这个场景，你可以这样设计：
 
@@ -368,7 +365,7 @@ Claude Code 官方团队在博客 [Getting started with loops](https://claude.co
 
 目前业界对 Loop Engineering 比较主流的一种拆解方式，是把它分成 5 个核心模块，外加一个贯穿全程的状态记忆。
 
-![](https://pic.yupi.icu/1/09_Loop%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97%E6%9E%B6%E6%9E%84%E5%9B%BE%EF%BC%9A5%E6%A8%A1%E5%9D%97+%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BF%86_compressed_v2.png)
+![](/imgs/e1fbd47e4bb2e6e9.png)
 
 
 ### 1、自动调度
@@ -379,7 +376,7 @@ Claude Code 官方团队在博客 [Getting started with loops](https://claude.co
 
 举个例子，你可以设一个 `/goal` 让 AI 把项目里所有的报错修完，也可以设一个 `/loop` 让 AI 每小时检查一次代码仓库有没有新的 Issue 需要处理。前者是一次性任务，后者是持续性任务，但底层都是自动调度在驱动，不需要人工干预。
 
-![](https://pic.yupi.icu/1/10_%E8%87%AA%E5%8A%A8%E8%B0%83%E5%BA%A6%EF%BC%9ALoop%E7%9A%84%E5%BF%83%E8%B7%B3%EF%BC%8C%E5%AE%9A%E6%97%B6%E6%88%96%E7%9B%AE%E6%A0%87%E9%A9%B1%E5%8A%A8_compressed_v3.png)
+![](/imgs/de1503bd494f4f1a.png)
 
 
 ### 2、工作隔离
@@ -390,11 +387,11 @@ Claude Code 官方团队在博客 [Getting started with loops](https://claude.co
 
 解决办法是用 Git WorkTree，给每个 Agent 分配一个独立的工作目录，各自在自己的分支上开发，互不干扰，最后再合并回主干。
 
-![](https://pic.yupi.icu/1/11_%E5%B7%A5%E4%BD%9C%E9%9A%94%E7%A6%BB%EF%BC%9AGit_WorkTree%E8%AE%A9%E5%A4%9A%E4%B8%AAAgent%E4%BA%92%E4%B8%8D%E5%B9%B2%E6%89%B0_compressed_v2.png)
+![](/imgs/7147c896b2212129.png)
 
 像 Claude Code 可以通过 `--worktree` 参数启动独立工作树，Cursor 和 Codex 的 Agent 面板也都内置了 WorkTree 的支持，可以自动创建和管理工作树，让多个 AI 同时干活。
 
-![](https://pic.yupi.icu/1/image-20260410150251832.png)
+![](/imgs/67c3aea65eba8d8e.png)
 
 
 ### 3、技能沉淀
@@ -403,7 +400,7 @@ Claude Code 官方团队在博客 [Getting started with loops](https://claude.co
 
 Skills 就是把这些项目知识和工作流程写成可复用的 `SKILL.md` 文档，Loop 每次启动时自动加载。AI 不用每次都重新学习，直接根据文档快速上手干活。
 
-![](https://pic.yupi.icu/1/12_%E6%8A%80%E8%83%BD%E6%B2%89%E6%B7%80%EF%BC%9ASKILL.md%E8%AE%A9AI%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B_compressed_v2.png)
+![](/imgs/674494a2d374895f.png)
 
 这跟你在公司维护一份《项目开发文档》是一个道理，新来的人看完就能干活，只不过现在看文档的不是人，是 AI。
 
@@ -416,7 +413,7 @@ AI 大模型只是大脑，能思考、能规划，但如果不给它接上手�
 
 有了工具连接，Loop 才能从「只会改代码」变成「能发现问题、解决问题、通知你结果」的完整闭环。
 
-![](https://pic.yupi.icu/1/13_%E5%B7%A5%E5%85%B7%E8%BF%9E%E6%8E%A5%EF%BC%9A%E9%80%9A%E8%BF%87MCP%E8%AE%A9Loop%E8%BF%9E%E6%8E%A5%E5%A4%96%E9%83%A8%E5%B7%A5%E5%85%B7%E5%BD%A2%E6%88%90%E5%AE%8C%E6%95%B4%E9%97%AD%E7%8E%AF_compressed_v2.png)
+![](/imgs/1532df8c3b652a85.png)
 
 
 ### 5、子代理互审
@@ -425,7 +422,7 @@ AI 大模型只是大脑，能思考、能规划，但如果不给它接上手�
 
 所以在 Loop 里，一般会安排至少两个角色。一个 Agent 负责写代码，另一个 Agent 专门负责跑测试和代码审查。第二个 Agent 用的上下文和指令跟第一个完全不同，它只关心这段代码有没有 Bug、逻辑对不对，不会受到第一个 Agent 思路的影响。
 
-![](https://pic.yupi.icu/1/14_%E5%AD%90%E4%BB%A3%E7%90%86%E4%BA%92%E5%AE%A1%EF%BC%9A%E5%86%99%E4%BB%A3%E7%A0%81%E7%9A%84%E5%92%8C%E6%A3%80%E6%9F%A5%E4%BB%A3%E7%A0%81%E7%9A%84%E5%88%86%E5%BC%80_compressed_v1.png)
+![](/imgs/981ca4ea7f178e96.png)
 
 
 ### 状态记忆
@@ -436,7 +433,7 @@ Loop 在运行过程中会产生大量中间状态，比如哪些文件处理过
 
 可以把进度记录在外部文件里（比如 PROGRESS.md），Agent 每次新开一轮循环时先读取进度了解当前状态，干完活再更新它。中间断了重启也不会从零开始。
 
-![](https://pic.yupi.icu/1/15_%E7%8A%B6%E6%80%81%E8%AE%B0%E5%BF%86%EF%BC%9APROGRESS.md%E6%8C%81%E4%B9%85%E5%8C%96%E8%AE%B0%E5%BD%95%E8%BF%9B%E5%BA%A6_compressed_v3.png)
+![](/imgs/f33598757f2bec97.png)
 
 这 5 个模块里，**自动调度** 和 **状态记忆** 是最核心的，也是我们实战中已经接触过的东西。其他几个模块（工作隔离、技能沉淀、工具连接、子代理互审）更多是在基础循环跑起来之后的进阶优化，按需使用就好，不需要一上来就全部配齐。
 
@@ -508,7 +505,7 @@ Claude Code 官方也给了一些很实用的省钱方法：
 
 还有个很重要的原则：当某次循环的结果不达标时，不要只修这次的问题就完事了，要把这次踩的坑编码到系统里，比如更新 Skill 或规则文件，让以后每一轮循环都不再犯同样的错。长期下来质量会越来越稳。
 
-![](https://pic.yupi.icu/1/10_AI%E7%BA%A0%E9%94%99%E6%B2%89%E6%B7%80%E6%AD%A3%E5%90%91%E5%BE%AA%E7%8E%AF_compressed_v2.png)
+![](/imgs/bd6ec17712edfe5a.png)
 
 
 ### 学习路径

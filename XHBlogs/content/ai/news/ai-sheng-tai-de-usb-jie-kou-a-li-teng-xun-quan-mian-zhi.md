@@ -3,15 +3,12 @@ title: "AI 生态的 USB 接口？阿里、腾讯全面支持 MCP"
 summary: "AI 生态的 USB 接口？阿里、腾讯全面支持 MCP，由程序员鱼皮整理。"
 order: 63
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2026-10-22"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 生态的 USB 接口？阿里、腾讯全面支持 MCP》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 成为未来 AI 生态的“标准 USB 接口”
 

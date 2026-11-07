@@ -3,15 +3,12 @@ title: "绝绝子！用deepseek做AI视频，涨粉10W+（附保姆级教程）"
 summary: "今天分享用deepseek做AI视频，流量飞起，更让我们舒畅的是，deepseek竟然限制了除 86 开头的手机号之外的注册。国产 AI 的崛起！"
 order: 18
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《绝绝子！用deepseek做AI视频，涨粉10W+（附保姆级教程）》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 今天分享用deepseek做AI视频，流量飞起，更让我们舒畅的是，deepseek竟然限制了除 86 开头的手机号之外的注册。国产 AI 的崛起！
 
@@ -21,11 +18,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 直接打开深度思考模式，向 deepseek 提问
 
-![img](https://pic.yupi.icu/yuyi/1739501728876-22d9f946-7031-4583-906e-58ec4fb5e3a5.webp)
+![img](/imgs/5552fa416eddb1df.webp)
 
 输入提示词：我想做一个关于普洱茶叶的AI视频，帮我设计一下脚本、文案、画面，包含时间轴，以表格的形式输出，视频大约30秒
 
-![img](https://pic.yupi.icu/yuyi/1739501728895-8adbc2e1-c15c-437a-bff8-fe652e3a31c5.webp)
+![img](/imgs/16a71762ddfeec5f.webp)
 
 画面提示词有点简单，我想进一步描述
 
@@ -33,23 +30,23 @@ source: "https://github.com/liyupi/ai-guide"
 
 每一个画面描述写具体一些，主体、细节等都要包含，符合即梦生图的语法
 
-![img](https://pic.yupi.icu/yuyi/1739501728920-a87a6a50-f414-4640-b453-c1e6095a8f84.webp)
+![img](/imgs/23337e076d2b3d1d.webp)
 
 不得不说 deepseek 的理解力太强了，它的回复没有废话，直接生成画面描述词。作为一个专业玩 AI 绘画的玩家，这些提示词写的太好了，关键除了后面的参数，每个咒语还会添加一些环境、风格词，还不重复。
 
-![img](https://pic.yupi.icu/yuyi/1739501728914-69287f27-9d8a-43d3-bd39-f20125a73d94.webp)
+![img](/imgs/86e8a1b285bdd950.webp)
 
 
 30秒普洱茶视频分镜表
 
 0-5秒 ancient Pu'er tea leaf macro shot, glistening morning dew drops, visible trichomes on leaf surface, misty tea plantation in Yunnan, golden hour backlighting, volumetric fog, Fujifilm X-T4 56mm f/1.4, hyper-realistic, cinematic lighting, 8k resolution --v 5.2 --ar 16:9 强调茶叶天然质感与神秘氛围
 
-![img](https://pic.yupi.icu/yuyi/1739501729015-493b4133-fa9d-47a2-a885-0cdc6e11de9b.webp)
+![img](/imgs/eadb911995d25c2b.webp)
 
 
 细节强化 添加intricate water refraction in dewdrops, distant tea picker silhouette, hexagonal bokeh highlights
 
-![img](https://pic.yupi.icu/yuyi/1739501730096-223003c3-f462-455e-a448-241ca13dc1ca.webp)
+![img](/imgs/651a7ac01c812bc3.webp)
 
 ------
 
@@ -57,7 +54,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 | 动作扩展 | 增加dynamic hand movement blur, steam particles floating in air light beams |
 
-![img](https://pic.yupi.icu/yuyi/1739501730042-a1e54d47-9990-45ae-9b32-729624ad7936.webp)
+![img](/imgs/cc6e8e3c19301f0a.webp)
 
 
 ------
@@ -66,7 +63,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 | 物理模拟 | 指定viscosity 0.8, surface tension 72mN/m, Rayleigh scattering simulation |
 
-![img](https://pic.yupi.icu/yuyi/1739501737172-ad75ab65-687a-4ce4-8b4a-7be60af32c31.webp)
+![img](/imgs/b03a59c5ada743cc.webp)
 
 ------
 
@@ -74,7 +71,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 | 材质参数 | 设置ancient side: hemp fabric texture 8K, modern side: anodized aluminum PBR material |
 
-![img](https://pic.yupi.icu/yuyi/1739501730101-74b42701-bfce-4c93-95a1-bde68d939525.webp)
+![img](/imgs/bd5047210fa45d52.webp)
 
 ------
 
@@ -82,7 +79,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 | 动态参数 | 包含year transition animation 0.5s ease-out, particle emission rate 1200/s |
 
-![img](https://pic.yupi.icu/yuyi/1739501730275-aeb9cbbe-1a8a-4b31-aeb0-fd863e2d75f1.webp)
+![img](/imgs/1b58a19cfd2d1e76.webp)
 
 ------
 
@@ -90,7 +87,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 | 特效层 | 叠加procedural cloud simulation, AI-generated mandala pattern overlay |
 
-![img](https://pic.yupi.icu/yuyi/1739501730465-33a60e93-8d46-4fe5-9ae4-000916f66599.webp)
+![img](/imgs/9fe98de38a884b59.webp)
 
 有了 deepseek，以后做 AI 视频的效率得起飞啊！
 
@@ -100,13 +97,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 把图片逐步导入到可灵、VIDU、海螺制作生成视频。
 
-![img](https://pic.yupi.icu/yuyi/1739501730500-434e172f-2f51-4370-a494-f077724a59e8.webp)
+![img](/imgs/844defd298aa7e30.webp)
 
 3、剪映
 
 将视频导入剪映视频轨道中，添加字幕、音乐、转场等，导出视频。
 
-![img](https://pic.yupi.icu/yuyi/1739501730486-d048b989-3c2f-4908-95d9-f3fc5126fb8e.webp)
+![img](/imgs/531f40c8d9f9d249.webp)
 
 大家试试吧！deepseek 确实完胜！
 

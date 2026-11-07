@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek Harness 极简模式实测》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 这周 AI 圈儿又炸了，DeepSeek 同时放了两个大招，DeepSeek V4 Pro 模型正式发布 + DeepSeek Harness 工具开源。
 
-![](https://pic.yupi.icu/1/image-20260814125428438.png)
+![](/imgs/1f9a0d99b728b2f7.png)
 
 我第一时间发布了 DeepSeek V4 Pro 的实战测评和 DeepSeek Harness 的保姆级教程。
 
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 热点能不能不要连着来啊，我 Chovy！
 
-![](https://pic.yupi.icu/1/i2Q42-2h5cZaT3cSq4-po.jpg)
+![](/imgs/2890ff0eab5382c3.jpg)
 
 回归正题，测试完之后，我最大的感受是：**DeepSeek 接不接自家的 Harness，效果差距大到离谱。**
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 害得我成为了「变脸大师」！
 
-![](https://pic.yupi.icu/1/09bdf5c0e4b2738acfb6af05e7764e253461565210692083.jpg)
+![](/imgs/ed066142785c93ea.jpg)
 
 看来 Harness 就是 DeepSeek 的角色专武，不带专武的 DeepSeek 就是个白板儿角色。
 
@@ -43,7 +40,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 随着模型能力越来越强，给模型提供的 Harness 也越来越重要。
 
-![](https://pic.yupi.icu/1/8_agent_queals.png)
+![](/imgs/f529a8276a9795fe.png)
 
 这也是为什么 DeepSeek V4 Pro 会出现「神鬼二象性」，同一套模型到底行不行，很大程度上取决于你拿什么工具、配什么环境去跑它。
 
@@ -63,11 +60,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 当你安装完 DeepSeek Harness，默认使用的是「标准模式」，它把一个 AI 编程工具该有的能力全部配齐了，比如文件读写、终端命令、联网搜索、任务规划、Skills 技能、子 Agent，加起来一共 20 多个工具。
 
-![](https://pic.yupi.icu/1/image-20260814143734964.png)
+![](/imgs/bb48e4e167a62377.png)
 
 而极简模式就朴素多了，官方只留了两个工具，一个能持续运行的终端 + 一个文件编辑器，其他能力全部关掉。
 
-![](https://pic.yupi.icu/1/image-20260815154823126.png)
+![](/imgs/a45cb55218ae7ead.png)
 
 官方对它的定位很清楚，是专门拿来跑模型基准测试的，所以把环境削到最干净，好让不同模型能在同一个标准下公平比较。
 
@@ -98,25 +95,25 @@ source: "https://github.com/liyupi/ai-guide"
 
 同一套提示词，我先用标准模式跑了一遍，再用极简模式跑了一遍。
 
-![](https://pic.yupi.icu/1/image-20260815122357248.png)
+![](/imgs/99b48e2ca550dd8a.png)
 
 先看看两种模式执行记录的区别。
 
 标准模式调用了技能，中间有很多文字输出，会告诉你它在想什么、准备干什么，就是我们日常使用 AI 编程工具的那种感觉。
 
-![](https://pic.yupi.icu/1/image-20260815122503107.png)
+![](/imgs/84c2b64a6917c020.png)
 
 极简模式只有思考、终端、和字符串替换这个工具调用，中间没有任何多余的输出，AI 就像个哑巴一样，闷头干活。
 
-![](https://pic.yupi.icu/1/image-20260815122619221.png)
+![](/imgs/934db16acccf588c.png)
 
 标准模式跑完用了 50 步，AI 自己检测并修复了 Bug，模型推理花了 21 分钟，工具调用花了 12 分钟，加起来 33 分钟出头，输入 520 万 Tokens、输出 10.5 万 Tokens。
 
-![](https://pic.yupi.icu/1/image-20260815123130636.png)
+![](/imgs/69724a5221866c84.png)
 
 极简模式跑了 77 步，模型推理 17 分钟，工具调用只花了 6 分钟，总共 23 分钟多，比标准模式快了将近 10 分钟！连最后给我的总结都非常精简。
 
-![](https://pic.yupi.icu/1/image-20260815123106268.png)
+![](/imgs/6d2ef7d26ba1a743.png)
 
 不过这里有个反直觉的地方，极简模式的输入 Tokens 反而更多，达到了 590 万。
 
@@ -128,21 +125,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 但是敌人不能发射子弹，只能追着你跑，没啥压迫感。而且有个 Bug，敌人追着你跑一会儿之后，自己又走开了，我提示词里压根没这么要求，这合理吗？
 
-![](https://pic.yupi.icu/1/image-20260815123745988.png)
+![](/imgs/22d29384787ed38e.png)
 
 有个细节做的不错，如果你被人机给锤死了，会触发一个倒地的效果，视角跟真人倒在地上一模一样！
 
-![](https://pic.yupi.icu/1/image-20260815123510893.png)
+![](/imgs/bf48bc6f653dc5fa.png)
 
 再来看看极简模式的效果。界面比标准模式做得更简洁，背景墙也更真实，移动、跳跃、疾跑、射击、杀敌同样都正常。
 
 而且极简模式的敌人能够发射子弹，感觉更智能，游玩的压迫感更强。
 
-![](https://pic.yupi.icu/1/image-202608151243407956.png)
+![](/imgs/3f8e8b07a9a0f6d8.png)
 
 不过被击倒的时候，我整个角色的身体还是站立着的，跟标准模式那个倒地视角比就差点儿意思了。
 
-![](https://pic.yupi.icu/1/image-20260815124017407.png)
+![](/imgs/709f3949411ac1df.png)
 
 从成品效果来看，两者半斤八两吧，各有优缺。
 
@@ -162,15 +159,15 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 极简模式把这些能力统统砍掉，只留一个终端和一个文件编辑器。AI 能做的就是直接动手写代码，没有选择困难症，自然又快又准。
 
-![](https://pic.yupi.icu/1/image-20260814150646065.png)
+![](/imgs/5185425ffe0b313f.png)
 
 其实 DeepSeek 官方跑分用的就是极简模式，你看跑分图最下方的小字：V4-Pro 使用 DeepSeek Harness 极简模式作为框架进行测试。
 
-![](https://pic.yupi.icu/1/HPmOJZlbUAAOgVt.jpeg)
+![](/imgs/3a449ceea5746baa.jpg)
 
 而且有开发者做了一组很严格的对照实验。他用自己的一套工程维护评测题目，在同一台机器、同一个模型、同一个推理档位下只换 Harness 模式，结果标准模式跑了 91 分，PTC 模式 92 分，极简模式直接干到 99 分，还是有差距的。
 
-![](https://pic.yupi.icu/1/image-20260815140617668.png)
+![](/imgs/dab8e127330e53e4.png)
 
 
 
@@ -184,13 +181,13 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 还有一点很影响体验，就是它几乎不跟你汇报。你只能看到一连串的终端命令和文件替换，AI 到底在想什么、走到哪一步了、有没有遇到坎儿，你压根不知道。所以它其实更适合那种你只关心最终结果、不在意中间过程的任务。
 
-![](https://pic.yupi.icu/1/image-20260815122619221.png)
+![](/imgs/934db16acccf588c.png)
 
 你有没有发现，这个状态其实很像 23 ~ 24 年我们刚开始拿 AI 写代码的时候，AI 只能凭脑子里那点存货硬写，碰上没见过的框架就开始一本正经地编造代码写法。
 
 后来有了工具调用、MCP、Skills 技能、上下文管理，一直发展到今天的 Harness，才一步步把 AI 从一个只会聊天的模型，变成了能自己查资料、自己动手改代码、自己跑测试验证的「工程师」。
 
-![](https://pic.yupi.icu/1/2_harness_horse.png)
+![](/imgs/877b7b1f6f1adb88.png)
 
 极简模式相当于把这些年攒下来的装备又卸掉了一大半。
 
@@ -219,29 +216,29 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 关键是它成功找到了我本地的 `DEEPSEEK_API_KEY`，全程没让我插手，直接把成品交付了。
 
-![](https://pic.yupi.icu/1/image-20260815125822195.png)
+![](/imgs/b156213b32d51cc0.png)
 
 极简模式跑了 87 步，模型推理 11 分钟，工具调用只用了 16 分钟，总共不到 28 分钟，又比标准模式快了 21 分钟！Tokens 消耗也差不多。
 
 但是它没能从我电脑上读到 `DEEPSEEK_API_KEY`，最后还得我自己填，可交付性就差了一些。
 
-![](https://pic.yupi.icu/1/image-20260815125937243.png)
+![](/imgs/c59ce07d5fd7d09b.png)
 
 先看看标准模式的成果。整体布局还是不错的，宠物卡片的排版很舒服，但也没到惊艳的程度，而且右上方那行提示文字的位置没对齐。
 
-![](https://pic.yupi.icu/1/image-20260815130513161.png)
+![](/imgs/87fd04b7bdb71347.png)
 
 不过 AI 顺利完成了抓取鲸鱼娘图片、并且调用 AI 大模型来生成文案的任务：
 
-![](https://pic.yupi.icu/1/image-20260815130539711.png)
+![](/imgs/1c83abbd5e9daae3.png)
 
 点击就可以领养你想要的鲸鱼娘。
 
-![](https://pic.yupi.icu/1/image-20260815130623520.png)
+![](/imgs/e24e58f60ca751a0.png)
 
 筛选功能也是正常的，可以在「全部 / 待领养 / 已领养」之间切换，被领养走的小鲸卡片会置灰，还会标上领养人的名字，一眼就能看出哪些宠物已经有主了。
 
-![](https://pic.yupi.icu/1/image-20260815130727937.png)
+![](/imgs/c8ac38ef53058161.png)
 
 再来看看极简模式的效果。我得先手动获取 DeepSeek API Key，然后让 AI 帮我填写环境变量并运行程序。
 
@@ -251,21 +248,21 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 还有右上角那个「AI 文案：DeepSeek 已生成」的角标，怎么看都不像是给普通用户用的产品，倒像是自己调试用的。
 
-![](https://pic.yupi.icu/1/image-20260815131240270.png)
+![](/imgs/25f318af5537513b.png)
 
 极简模式同样是可以点击领养，并输入领养人昵称的：
 
-![](https://pic.yupi.icu/1/image-20260815131636284.png)
+![](/imgs/a92c330f056cd1f0.png)
 
 领养成功后，这只宠物不能再被别人领养，功能逻辑是正常的。但因为没有筛选功能，你看不到自己到底领养过哪些宠物，只能一个一个往下翻着找。
 
-![](https://pic.yupi.icu/1/image-20260815131748359.png)
+![](/imgs/b5db397f1950f136.png)
 
 对了，上面 4 次任务加起来，你猜猜总共花了多少钱？
 
 答案是 3.13 元，你觉得贵不贵？（涨价前最后的倔强）
 
-![](https://pic.yupi.icu/1/image-20260815131901668.png)
+![](/imgs/608ce604e519bada.png)
 
 
 
@@ -293,7 +290,7 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 他在完整保留标准模式那 20 多个工具的前提下，靠一个自己写的两阶段插件 `dsh-anchored-standard`，在自己那套工程维护评测题目上连跑两次，拿到了 98 分和 99 分，均值 98.5，不但追平了极简模式，甚至还略微反超。
 
-![](https://pic.yupi.icu/1/image-20260815172540939.png)
+![](/imgs/44e815dec29a4bed.png)
 
 绝了，他是怎么做到的？
 
@@ -301,13 +298,13 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 从模型的推理过程中更能看出区别。标准模式下，模型的推理过程里出现了 208 次「let me」，还有 55 次中间回复，说明它一直在犹豫、规划、自我确认。而在这个两阶段插件的引导下，模型开口就是「We need」，通篇都是「我们要干什么」的口吻，两轮加起来「we」出现了 300 多次。
 
-![](https://pic.yupi.icu/1/image-20260815185225654.png)
+![](/imgs/040e57e71f7c111d.png)
 
 同一个模型，思维方式完全不同。
 
 他还翻了 DeepSeek Harness 的官方源码，找到了铁证。仓库里有个测试文件，名字就叫「sends the exact RL prompt and schemas」，翻译过来就是「发送精确的强化学习提示词和工具定义」。这是 DeepSeek 官方自己承认的，极简模式用的就是模型训练时的那套格式。
 
-![](https://pic.yupi.icu/1/image-20260815184558652.png)
+![](/imgs/f51d0f1c7473ae57.png)
 
 所以你临时换一份它没怎么见过的工具清单，它就会有点儿找不着北。
 
@@ -319,7 +316,7 @@ AI 也是一样的。默认的标准模式给了模型 20 多个工具，模型�
 
 插件开源仓库：https://github.com/xiaobright/dsh-anchored-standard
 
-![](https://pic.yupi.icu/1/image-20260815172819422.png)
+![](/imgs/d2a6e87b49ccabc0.png)
 
 
 

@@ -3,15 +3,12 @@ title: "Anthropic 官方 - 大规模代码迁移方法"
 summary: "学习 Anthropic 官方的六步迁移法，用 AI 高效完成大规模代码迁移"
 order: 14
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-09-02"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Anthropic 官方 - 大规模代码迁移方法》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这篇文章的含金量非常高，因为里面的两个案例实在太炸裂了！
 
-![](https://pic.yupi.icu/1/image-20260720133130758.png)
+![](/imgs/98284bf4a7b99faf.png)
 
 第一个案例，前端圈很火的工具 Bun 的创始人 Jarred Sumner（目前也是 Anthropic 的技术员工），用 Claude Code 把 Bun 从 Zig 语言重写到 Rust。整整 53 万行代码，只用 11 天就完成了，而且 100% 测试通过后合并上线。
 
@@ -48,7 +45,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 当你发现 AI 在某类翻译上反复犯同样的错，不要一个一个去修那些错误的代码，而是去修复规则手册，让所有后续翻译都不再犯这个错。随着规则越来越完善，你需要人工干预的次数会越来越少。
 
-![](https://pic.yupi.icu/1/01_%E4%BF%AE%E6%B5%81%E7%A8%8B%E4%B8%8D%E4%BF%AE%E4%BB%A3%E7%A0%81%EF%BC%9A%E6%A0%B8%E5%BF%83%E6%80%9D%E8%B7%AF%E5%AF%B9%E6%AF%94_compressed_v1.png)
+![](/imgs/3615bc2b253c4f5e.png)
 
 我刚开始用 AI 编程的时候，经常是一个个修复 Bug。AI 犯了一个错，我纠正一次，下次又犯同样的错，我再纠正一次。反反复复，非常低效。
 
@@ -71,7 +68,7 @@ Anthropic 总结了一套完整的大规模代码迁移流程，总共六步。
 
 开局一张图，你就知道这套方法论大概有多 NB 了。
 
-![六步迁移流程总览](https://pic.yupi.icu/1/07_%E5%85%AD%E6%AD%A5%E8%BF%81%E7%A7%BB%E6%B5%81%E7%A8%8B%E6%80%BB%E8%A7%88%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89_compressed_v1.png)
+![六步迁移流程总览](/imgs/ee1bda2246cfbc68.png)
 
 
 ### 0、搞定验证机制
@@ -95,7 +92,7 @@ Anthropic 总结了一套完整的大规模代码迁移流程，总共六步。
 
 这一步是整个流程里人工投入最多的阶段。
 
-![](https://pic.yupi.icu/1/08_%E7%AC%AC1%E6%AD%A5%EF%BC%9A%E5%88%B6%E5%AE%9A%E8%A7%84%E5%88%99%E6%89%8B%E5%86%8C%E5%92%8C%E4%BE%9D%E8%B5%96%E5%9B%BE%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89_compressed_v2.png)
+![](/imgs/35aca9a46ec3e0fb.png)
 
 Bun 创始人 Jarred 光是跟 Claude 讨论怎么把 Zig 的模式映射到 Rust 就花了 3 个小时，最终产出了一份 576 行的规则手册，里面详细规定了每种类型怎么映射、每种惯用法怎么转换。
 
@@ -103,7 +100,7 @@ Bun 创始人 Jarred 光是跟 Claude 讨论怎么把 Zig 的模式映射到 Rus
 
 Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册主要是一个对照表。他还让 Claude 跑了一个工作流，分析代码库里每个 struct 字段的生命周期，输出成一个 `LIFETIMES.tsv` 文件给后续翻译参考。
 
-![](https://pic.yupi.icu/1/image-20260720171445547.png)
+![](/imgs/b6c7a8d6c1f735db.png)
 
 而 Mike 选择的是重新设计架构，所以他的规则手册更像是一份设计文档，描述新系统应该长什么样。
 
@@ -111,7 +108,7 @@ Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册�
 
 对于像 Python 这种依赖关系不显式声明的语言，可以让 Claude 写一个脚本去分析和生成依赖图。Anthropic 还开源了一个 [代码迁移工具包](https://github.com/anthropics/code-migration-kit-with-claude-code)，里面就包含了现成的依赖分析脚本，拿来直接用就行。
 
-![](https://pic.yupi.icu/1/image-20260720171538243.png)
+![](/imgs/a86f185707025158.png)
 
 此外，还要做一份「差异清单」，列出源语言和目标语言之间那些不能简单翻译的地方。
 
@@ -122,7 +119,7 @@ Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册�
 
 规则手册写好之后，不要急着全量执行，先拿 3 个文件试试水。
 
-![](https://pic.yupi.icu/1/09_%E7%AC%AC2%E6%AD%A5%EF%BC%9A%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E8%A7%84%E5%88%99%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89_compressed_v1.png)
+![](/imgs/de66aa4c7d9bba2c.png)
 
 我觉得 Bun 创始人 Jarred 的做法很机智。他让一个 Claude 实例按照规则手册翻译 3 个文件，同时让另一个 Claude 实例以「高级 Rust 工程师」的身份翻译同样的 3 个文件。然后再开一个全新的 Claude 对话，专门用来对比两个版本的差异，从差异中提取新的翻译规则。
 
@@ -132,7 +129,7 @@ Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册�
 
 有趣的是，他实际上跑了三次完整迁移，**前两次都丢弃产出，只保留对规则的改进，直到第三次才正式保留结果。**
 
-![](https://pic.yupi.icu/1/02_%E8%AF%95%E8%B7%91%E5%93%B2%E5%AD%A6%EF%BC%9A%E5%89%8D%E4%B8%A4%E6%AC%A1%E4%B8%A2%E5%BC%83%E5%8F%AA%E4%BF%9D%E7%95%99%E8%A7%84%E5%88%99%E6%94%B9%E8%BF%9B_compressed_v1.png)
+![](/imgs/8fff1944f10fe550.png)
 
 我看到这里，第一反应是：前两次直接丢弃，这不是浪费 Tokens 么？
 
@@ -147,11 +144,11 @@ Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册�
 
 这一步的核心架构可以理解为一个流水线，分为 3 个角色：负责翻译的 Agent、负责找茬的 Agent、负责修复的 Agent。
 
-![](https://pic.yupi.icu/1/10_%E7%AC%AC3%E6%AD%A5%EF%BC%9A%E5%85%A8%E9%87%8F%E7%BF%BB%E8%AF%91%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89_compressed_v1.png)
+![](/imgs/ed3aef9c9247a1a7.png)
 
 每个翻译好的文件由 2 个独立的「找茬 Agent」来检查，它们的唯一任务就是挑毛病。发现问题后交给「修复 Agent」来处理。
 
-![三角色 Agent 流水线](https://pic.yupi.icu/1/03_%E4%B8%89%E8%A7%92%E8%89%B2Agent%E6%B5%81%E6%B0%B4%E7%BA%BF%EF%BC%9A%E7%BF%BB%E8%AF%91%E3%80%81%E6%89%BE%E8%8C%AC%E3%80%81%E4%BF%AE%E5%A4%8D_compressed_v2.png)
+![三角色 Agent 流水线](/imgs/0a4de61b5ffb5780.png)
 
 这里的找茬 Agent 就是前面提到的「对抗性审查」。
 
@@ -161,7 +158,7 @@ Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册�
 
 这种心态跟人做代码审查是一个道理，审查者不能先入为主觉得「他写的应该没问题吧」？而是要带着怀疑的态度去看，才能发现问题。
 
-![对抗性审查](https://pic.yupi.icu/1/04_%E5%AF%B9%E6%8A%97%E6%80%A7%E5%AE%A1%E6%9F%A5%EF%BC%9A%E6%80%80%E7%96%91%E5%BF%83%E6%80%81_vs_%E4%BF%A1%E4%BB%BB%E5%BF%83%E6%80%81_compressed_v3.png)
+![对抗性审查](/imgs/05a3e642c142e1f7.png)
 
 听起来很简单，但是要注意几个实操细节。
 
@@ -178,7 +175,7 @@ Jarred 选择的是保持架构不变的机械翻译，所以他的规则手册�
 
 接下来的 3 步套路都一样：先跑一遍得到错误列表，然后让一批修复 Agent 并行处理这些错误，修完了再跑一遍，循环往复直到没有错误为止。人工介入的程度越来越低。
 
-![错误驱动修复循环](https://pic.yupi.icu/1/05_%E9%94%99%E8%AF%AF%E9%A9%B1%E5%8A%A8%E4%BF%AE%E5%A4%8D%E5%BE%AA%E7%8E%AF_compressed_v3.png)
+![错误驱动修复循环](/imgs/b7e175a4eb4fe187.png)
 
 1）编译阶段，把编译器报出的所有错误整理成一份待修复清单，然后让 AI 按照这份清单逐个修复。
 
@@ -198,13 +195,13 @@ Jarred 的做法是让编排脚本对整个工作区跑一次编译器，把错�
 
 把测试套件分片跑，每个失败的测试交给一个修复 Agent，修复之后由对抗性审查者检查。
 
-![](https://pic.yupi.icu/1/11_%E7%AC%AC4-6%E6%AD%A5%EF%BC%9A%E7%BC%96%E8%AF%91%E3%80%81%E8%BF%90%E8%A1%8C%E3%80%81%E8%A1%8C%E4%B8%BA%E5%AF%B9%E9%BD%90%EF%BC%88%E4%B8%AD%E6%96%87%E7%89%88%EF%BC%89_compressed_v1.png)
+![](/imgs/751b4a86e2dceee5.png)
 
 Jarred 还有一个巧妙的设计，只允许一个专门的构建守护进程来编译整个项目。修复 Agent 只提交代码，守护进程定期把所有补丁批量编译、跑受影响的测试、把结果反馈回去。这样避免了多个 Agent 各自触发编译导致的资源冲突和重复工作。
 
 整个过程中，Bun 的 CI 从 972 个测试文件失败到全部通过，花了大约 4 天。Linux 最先变绿，Windows 是最后一个。合并之后一共出现了 19 个回归 Bug，全部已修复。
 
-![](https://pic.yupi.icu/1/image-20260720165511010.png)
+![](/imgs/16200ed256b5f6f1.png)
 
 其实 Airbnb 之前也做过类似的事情。他们用 AI 把 3500 个 React 组件测试从 Enzyme 迁移到 React Testing Library，原本估计要一年半，最终 6 周就完成了，用的也是类似的方法。
 
@@ -217,7 +214,7 @@ Jarred 还有一个巧妙的设计，只允许一个专门的构建守护进程�
 
 然后是 AI 的成本问题。你敢信？Bun 的迁移花了 **16.5 万美元**的 API 费用！
 
-![](https://pic.yupi.icu/1/image-20260720182903395.png)
+![](/imgs/1b11a90210a3a955.png)
 
 这个数字乍一听很吓人，但对比 3 个高级工程师干一年的薪资加机会成本，便宜太多了。
 

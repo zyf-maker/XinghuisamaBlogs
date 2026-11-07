@@ -3,17 +3,14 @@ title: "高校，为何最快拥抱 DeepSeek？"
 summary: "高校，为何最快拥抱 DeepSeek？，由程序员鱼皮整理。"
 order: 33
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《高校，为何最快拥抱 DeepSeek？》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![](https://imgpai.thepaper.cn/pph/newpai/image/20250314/96934c52-8704-483a-949a-110c43a04a64.jpg)
+![](/imgs/58d38cf766430601.png)
 
 
 DeepSeek 开年扔下的一块巨石，砸起了各行各业的水波荡漾。
@@ -24,7 +21,7 @@ DeepSeek 开年扔下的一块巨石，砸起了各行各业的水波荡漾。
 
 北京大学计算中心也在 3 月 13 日发布通知，除了为全校师生提供基于公有云的 DeepSeek 对话服务，北大本地化部署的 DeepSeek 满血版 R1 和 V3 也已深度适配教学应用场景，向校内多项人工智能应用北大问学、AIMD(北大人工智能医学博士）、化小北、金融 AI 助教提供服务，成为又一家官宣引入 DeepSeek 服务的高校。
 
-![](https://imgpai.thepaper.cn/pph/newpai/image/20250314/6877ed49-203a-4466-8f59-34cbf19a30bc.jpg)
+![](/imgs/2a49c21cb9b200fb.png)
 
 “DeepSeek 出来后，校内很多业务部门的相关负责人希望能让他们的应用也使用上，一直在催着我们上线 DeepSeek。”樊春说。
 
@@ -86,7 +83,7 @@ DeepSeek 带动下，高校领域的大模型应用场景正在快速扩大。
 
 在高校学生培养计划中，存在大量评测维度，如果按照传统做法，依靠编程，针对上万乃至数万学生，则只能进行一些通用评测，很难实现个性化定制。但有了大模型后，众数信科针对课堂环节，通过多个智能体协同合作，实现了突破。如有的智能体负责转录授课语音，有的进行授课水平的分析对比；有的生成随堂小测试卷，有的现场批改试卷；还有的针对每个学生的薄弱点，进一步推荐学习材料，在个性化、规模化和高质量教学上实现突破。
 
-![](https://imgpai.thepaper.cn/pph/newpai/image/20250314/6e796ab2-1bf2-4154-a972-bcc65b9ac3d5.jpg)
+![](/imgs/a0b3016f43b86b9e.png)
 
 一些此前难以实现的更为复杂的教学辅助场景也在加速被探索。
 

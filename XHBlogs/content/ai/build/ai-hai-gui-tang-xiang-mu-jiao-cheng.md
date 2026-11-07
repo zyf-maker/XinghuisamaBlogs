@@ -3,15 +3,12 @@ title: "AI 海龟汤项目教程"
 summary: "点击查看（共 1 条资讯链接）"
 order: 105
 level: "进阶"
-tags: ["AI 项目教程", "转载", "AI"]
+tags: ["AI 项目教程"]
 updated: "2025-03-28"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 海龟汤项目教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 教程地址
 
@@ -25,7 +22,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 可以让 AI 代替传统海龟汤的主持人，玩家只需要向 AI 对话，就能够自己进行海龟汤的游戏。
 
-![img](https://pic.yupi.icu/yuyi/511KVxpdc4Gydtcj.webp)
+![img](/imgs/c45210a281b8acd4.webp)
 
 本项目的核心功能点：
 
@@ -75,17 +72,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 如图：
 
-![img](https://pic.yupi.icu/yuyi/F2NmpSDxwhEDKxXH.webp)
+![img](/imgs/1e66740d77970a7c.webp)
 
 ## 部分教程截图
 
 1）快速初始化后端项目、运行接口文档来调试接口
 
-![img](https://pic.yupi.icu/yuyi/GzKjYDxDOKlCXJit.webp)
+![img](/imgs/3db635244d98a51c.webp)
 
 2）接入 AI 并调试优化 Prompt 提示词
 
-![img](https://pic.yupi.icu/yuyi/1KlC2eIOKtHs45g5.webp)
+![img](/imgs/10b89515fa51ac4a.webp)
 
 ---
 

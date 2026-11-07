@@ -3,15 +3,12 @@ title: "Cursor + Claude Fable 5 - 装了吗桌面 APP 项目实战"
 summary: "用 Cursor + Claude Fable 5 + Loop Engineering，一次搞定 Electron 应用 + 管理后台"
 order: 21
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-10-22"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor + Claude Fable 5 - 装了吗桌面 APP 项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -19,11 +16,11 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 我试着用它来重构了下 Claude Code 泄露的源码，结果完美运行，强到离谱！
 
-![](https://pic.yupi.icu/1/1781056792310-48d8afe0-128a-4e65-905d-23136cdc61a9-20260611164929073.png)
+![](/imgs/19720d6e999b3560.png)
 
 但，它也是最贵的模型之一，输入 $10 / 输出 $50 每百万 token，是 Opus 4.8 的两倍，DeepSeek V4 的 50 倍！
 
-![](https://pic.yupi.icu/1/01_%25E4%25B8%25BB%25E6%25B5%2581AI%25E6%25A8%25A1%25E5%259E%258B%25E5%25AE%259A%25E4%25BB%25B7%25E5%25AF%25B9%25E6%25AF%2594%25E8%25A1%25A8%25E6%25A0%25BC_compressed_v2.png)
+![](/imgs/2852995c5b623f2a.png)
 
 既然模型的能力上来了，我曾经的一些想法，也可以开始慢慢实现了，嘿嘿嘿……
 
@@ -35,7 +32,7 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 而且这次我还融合了最近很火的 **Loop Engineering** 思想。Claude Code 之父 Boris 和 OpenClaw 之父 Peter 都在力推这个概念，核心就是不再一句一句地手动提示 AI，而是设计一套循环机制，让 AI 自主执行、自主验证、自主修复，直到达成目标。
 
-![](https://pic.yupi.icu/1/01_Loop_Engineering%25E6%25A0%25B8%25E5%25BF%2583%25E6%25A6%2582%25E5%25BF%25B5%25E5%25BE%25AA%25E7%258E%25AF%25E5%259B%25BE_compressed_v2.png)
+![](/imgs/04442372f886a308.png)
 
 下面就带大家走一遍完整的实战流程，全程在 Cursor 中使用 Claude Fable 5 完成。
 
@@ -59,7 +56,7 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 @需求描述
 ```
 
-![](https://pic.yupi.icu/1/1781162074833-0d4935e4-fc59-4aee-b226-81220132a1ef.png)
+![](/imgs/aa039d1cdb5ccaab.png)
 
 为了让 AI 开发时能够自主测试 AI 相关的功能，我还需要提前把大模型的 API Key 提供给它。但我不想直接把 Key 写在提示词里，万一泄露就麻烦了。
 
@@ -70,7 +67,7 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 经过几轮对话，AI 帮我生成了一段完整的提示词，结构非常清晰：
 
-![](https://pic.yupi.icu/1/image-20260611162938865.png)
+![](/imgs/9e13c8d1334b6cea.png)
 
 下面简单讲解一下这段提示词的结构。
 
@@ -99,7 +96,7 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 > 开源指路：https://github.com/liyupi/ai-guide
 
-![](https://pic.yupi.icu/1/image-20260610121356925-20260611164929915.png)
+![](/imgs/f83284dc6a0551c8.png)
 
 
 ## 二、环境准备
@@ -112,11 +109,11 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 2. Firecrawl MCP：联网搜索能力，让 AI 能获取最新的技术信息
 3. Frontend Design 技能：前端美化技能包，让生成的界面更有设计感
 
-![](https://pic.yupi.icu/1/image-20260611155828400.png)
+![](/imgs/4e516677ef462263.png)
 
 准备就绪，模型选择 Claude Fable 5，开到 High Thinking 档位。记得执行前再检查一遍提示词，毕竟这一个回车下去，上百块钱就没了……
 
-![](https://pic.yupi.icu/1/image-20260611155724141.png)
+![](/imgs/bceafd4508e614b8.png)
 
 
 ## 三、AI 自主开发
@@ -125,13 +122,13 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 它先读取了我本地的 Claude Code 配置文件，拿到 API Key 和 Base URL，写进了服务端的 `.env` 文件。
 
-![](https://pic.yupi.icu/1/image-20260611155938897.png)
+![](/imgs/bdeb3fff501ded56.png)
 
 然后开始按顺序开发服务端、桌面端、管理后台。
 
 整个过程我基本没有干预，AI 自己维护着 PROGRESS.md 记录进度，开发完一个模块就自动跑测试，遇到报错就自己修，修完继续推进。它甚至自己打开了桌面 APP 和浏览器，模拟用户操作来做端到端验证。
 
-![](https://pic.yupi.icu/1/image-20260611160046322.png)
+![](/imgs/408022c50a68d643.png)
 
 就是速度有点慢，我一顿饭都吃完了回来，它竟然还在干活。
 
@@ -142,7 +139,7 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 开发完成后，我让 AI 帮忙启动后端服务器、桌面端程序和 Web 管理页面：
 
-![](https://pic.yupi.icu/1/1781159120778-312597e0-112b-432a-9973-cc829fcbe013.png)
+![](/imgs/15ba5c9d0c0547db.png)
 
 三个服务全部拉起来了，一起看看效果吧~
 
@@ -151,29 +148,29 @@ Anthropic 刚刚发布了 Claude Fable 5 神话级模型，AI 编程的跑分直
 
 打开桌面 APP，有一个大大的 AI 输入框，自动识别出了当前操作系统。整体走的是活泼有趣的风格，口号起的还不错：
 
-![](https://pic.yupi.icu/1/1781154426901-1d864350-c541-4d80-8b0b-f52265aeddb9.png)
+![](/imgs/2f3ee3e752e473e3.png)
 
 
 ### 预置常见软件
 
 在主界面的「大家都在装」板块，你可以看到非常多主流的环境和依赖，都是我们 AI 编程时经常会用到的，看看有没有眼熟的？
 
-![](https://pic.yupi.icu/1/1781154509574-873c06ea-1b60-404e-8ead-77461d9da544.png)
+![](/imgs/04f00ed4d74d15d3.png)
 
 
 ### 版本选择 + 生成安装方案
 
 比如我要装个 MySQL 数据库，点进去之后，能看到版本号列表和操作系统选择：
 
-![](https://pic.yupi.icu/1/1781155910167-23be4d63-aaa5-4f92-92b5-2a90ebb3d105.png)
+![](/imgs/a2407904985dbbdf.png)
 
 选好之后点击「生成安装方案」，因为已有缓存方案，秒出结果。可以看到 AI 生成了一份完整的安装脚本，包含中文注释、环境检测、安装步骤、验证命令。可以直接复制脚本到终端执行安装：
 
-![](https://pic.yupi.icu/1/1781155941607-2cdae4aa-c738-4f9d-976b-fe4572b6ecc5.png)
+![](/imgs/0ca57b30122b3233.png)
 
 AI 还很贴心地提供了脚本说明，以及安装完成后怎么运行、怎么配置开机自启等等：
 
-![](https://pic.yupi.icu/1/1781155971044-5438c73f-7613-46b0-9f9a-11382ed1abab.png)
+![](/imgs/bf09cd483b14208f.png)
 
 
 ### 一键安装
@@ -182,57 +179,57 @@ AI 还很贴心地提供了脚本说明，以及安装完成后怎么运行、�
 
 我这里检测出已经安装过 MySQL 了，就不会重复安装：
 
-![](https://pic.yupi.icu/1/1781156016550-50eee8c1-17bc-47a4-bfb7-a30c00e41d37.png)
+![](/imgs/e8541be6e91a9aa7.png)
 
 再让它装个 PostgreSQL 数据库：
 
-![](https://pic.yupi.icu/1/1781155852519-e4e36097-6e93-42cc-971f-a2b37a6c9e62.png)
+![](/imgs/3a5d002018710dfb.png)
 
 同样的操作，这次新安装成功了，体验很不错~
 
-![](https://pic.yupi.icu/1/1781156068861-ccdfcd5f-2837-4fc8-b15c-6f005112cb23.png)
+![](/imgs/23629e59d0bbf377.png)
 
 在终端运行 `psql` 命令验证一下，数据库确实装好了：
 
-![](https://pic.yupi.icu/1/1781156128628-7e58c83d-bc6d-4923-b123-519127ba10fc.png)
+![](/imgs/8ad58adcb4367ab7.png)
 
 
 ### AI 推荐能力
 
 这个 APP 不光能选已有的软件，还有 AI 推荐能力。假设我什么都不懂，就在对话框里输入自己遇到的问题，比如：我想更方便地查看 PHP 文件。
 
-![](https://pic.yupi.icu/1/1781158124727-14b31295-09c8-4282-a126-7d932675c63a.png)
+![](/imgs/bff52237ea353b1d.png)
 
 AI 就会推荐安装 PHP 环境，可以自由选择版本和操作系统：
 
-![](https://pic.yupi.icu/1/1781158148427-c70c8c7d-4085-4fb4-922f-14398cf96185.png)
+![](/imgs/c2e61cbe7e37d3ab.png)
 
 然后 AI 快速生成了安装脚本：
 
-![](https://pic.yupi.icu/1/1781158164398-ef99afc4-9868-4296-9258-02f753eef9f1.png)
+![](/imgs/ef889a3650981320.png)
 
 点击一键安装，等待一段时间后，也顺利安装成功了：
 
-![](https://pic.yupi.icu/1/1781160624363-e90ae369-d72d-4c0a-ad32-fb616488b640.png)
+![](/imgs/3db94751b4710698.png)
 
 
 ### Web 管理后台
 
 再来看看 Web 管理后台。用默认管理员密码登录后，可以清晰地看到数据统计，包括软件安装排行和版本选择排行：
 
-![](https://pic.yupi.icu/1/1781161686984-f1473317-8173-4ed6-bee0-e3f373aff1d3.png)
+![](/imgs/e8ccd8145a366fe0.png)
 
 还能管理所有已经生成的软件安装方案：
 
-![](https://pic.yupi.icu/1/1781161721881-2af8af96-8cb8-4688-a9fa-e65060475868.png)
+![](/imgs/07352d76bf56d5c1.png)
 
 点击编辑，可以对有问题的安装脚本进行人工调整，或者让 AI 重新生成：
 
-![](https://pic.yupi.icu/1/1781161740467-a89719ca-933a-4073-bf13-6370d1f20d39.png)
+![](/imgs/007c3cd40fe6b2b1.png)
 
 还可以看到用户的反馈，比如哪些安装有效、哪些无效，方便人工对无效的方案进行调整和优化：
 
-![](https://pic.yupi.icu/1/1781161764424-9529c563-b2d1-4cee-8700-cf5e7ddda345.png)
+![](/imgs/7ff85ae085110d5c.png)
 
 到这里，所有核心功能都能顺利使用了，以后再有人问我怎么装环境，我直接把这个 APP 甩过去就完事了，夯不夯？
 
@@ -247,7 +244,7 @@ AI 就会推荐安装 PHP 环境，可以自由选择版本和操作系统：
 
 2）Mac 系统过度依赖 homebrew 这个软件包管理工具。homebrew 源的版本不一定全面，比如 Scala 确实有 3.4.2 版本，但通过 homebrew 来安装会失败。
 
-![](https://pic.yupi.icu/1/1781160489542-c6aafe61-8aa7-4f35-8744-d775009ebe48.png)
+![](/imgs/2a46217f08e21a58.png)
 
 于是我给 AI 下了一条修复指令，让它自主修复这两个问题并进行测试验证。
 
@@ -261,19 +258,19 @@ AI 就会推荐安装 PHP 环境，可以自由选择版本和操作系统：
 
 对于版本号问题，它设计了一套四级降级链路：
 
-![](https://pic.yupi.icu/1/1781160384730-8666f951-40c9-4d0c-ac1a-6cb5334002f3.png)
+![](/imgs/63eb6b7eb66489ba.png)
 
 对于 macOS 安装问题，它重写了安装策略：
 
-![](https://pic.yupi.icu/1/1781160436753-3b383f87-5bd9-46eb-a866-fa9411e7f792.png)
+![](/imgs/ca0205140a21cb5c.png)
 
 修复后重启服务，再次测试，安装 Codex 命令行工具。这次给出来的版本号是正确的，跟 npm 官方包的版本对上了：
 
-![](https://pic.yupi.icu/1/1781161517802-901203e0-ecc1-4251-a691-15748dd066e2.png)
+![](/imgs/5555565c1f1a3b79.png)
 
 安装脚本也详细了很多，先走官方 GitHub Release 下载，再降级到 homebrew：
 
-![](https://pic.yupi.icu/1/1781161497577-8ca853ea-c6d1-4b97-9d1a-d11bc5d61210.png)
+![](/imgs/517f6d6f8d2241dc.png)
 
 当然，可能还有一些边角 case 没有覆盖到，但目前这个效果已经完全够用了，后续在实际使用中再慢慢打磨就好。
 
@@ -284,7 +281,7 @@ AI 就会推荐安装 PHP 环境，可以自由选择版本和操作系统：
 
 打开 Cursor 后台，看看这次烧了多少米：
 
-![](https://pic.yupi.icu/1/1781161895686-954a36ff-0669-49c5-aca0-ac0a01e435e2.png)
+![](/imgs/35e2203437de0c13.png)
 
 第一波完整开发花了 27 刀（约 200 元），Bug 修复那一轮花了 14 刀（约 100 元），总共 300 元左右。
 
@@ -302,11 +299,11 @@ AI 就会推荐安装 PHP 环境，可以自由选择版本和操作系统：
 帮我开源整个项目到 GitHub，注意忽略敏感信息的提交
 ```
 
-![](https://pic.yupi.icu/1/image-20260611162129698.png)
+![](/imgs/3a851ec5b4b9dfb2.png)
 
 项目已经开源了，感兴趣的同学可以把代码拉下来二次开发，顺手帮我点个 Star 呗~
 
-![](https://pic.yupi.icu/1/image-20260611162417346.png)
+![](/imgs/3a970f45c95f6128.png)
 
 
 ## 最后哔哔

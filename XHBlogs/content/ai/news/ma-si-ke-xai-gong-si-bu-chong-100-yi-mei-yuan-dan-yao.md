@@ -3,17 +3,13 @@ title: "马斯克 xAI 公司补充 100 亿美元“弹药”，火力聚焦打�
 summary: "共收录 3 条 AI 行业资讯，如马斯克 xAI 公司补充 100 亿美元“弹药”，火力聚焦打造地表最强 AI；IT之家等。"
 order: 86
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《马斯克 xAI 公司补充 100 亿美元“弹药”，火力聚焦打造地表最强 AI》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [马斯克 xAI 公司补充 100 亿美元“弹药”，火力聚焦打造地表最强 AI](https://www.ithome.com/0/865/157.htm)
 
 [IT之家](https://www.ithome.com/) 7 月 2 日消息，CNBC 昨日（7 月 1 日）发布博文，报道称埃隆・马斯克（Elon Musk）为增强同 OpenAI 的竞争，通过 50 亿美元债务和 50 亿美元股权的方式，**成功筹集了 100 亿美元（IT之家注：现汇率约合 716.35 亿元人民币），继续烧钱推进 AI 发展。**
 

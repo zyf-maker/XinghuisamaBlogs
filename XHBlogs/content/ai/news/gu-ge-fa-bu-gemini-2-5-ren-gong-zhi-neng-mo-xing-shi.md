@@ -3,15 +3,12 @@ title: "谷歌发布 Gemini 2.5 人工智能模型，实现复杂思维"
 summary: "谷歌发布 Gemini 2.5 人工智能模型，实现复杂思维，由程序员鱼皮整理。"
 order: 35
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《谷歌发布 Gemini 2.5 人工智能模型，实现复杂思维》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 周二，谷歌发布了 Gemini 2.5，这是一系列新的人工智能推理模型，可以在回答问题之前停下来思考。
 

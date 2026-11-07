@@ -3,23 +3,19 @@ title: "OpenAI 迄今最大交易落地，65 亿美元完成收购前苹果首�
 summary: "共收录 4 条 AI 行业资讯，如OpenAI 迄今最大交易落地，65 亿美元完成收购前苹果首席设计师 Jony Ive 的初创公司 io；風見暉一等。"
 order: 82
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenAI 迄今最大交易落地，65 亿美元完成收购前苹果首席设计师 Jony Ive 的初创公司 io》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [OpenAI 迄今最大交易落地，65 亿美元完成收购前苹果首席设计师 Jony Ive 的初创公司 io](https://www.ithome.com/0/867/057.htm)
 
 感谢IT之家网友 [風見暉一](https://m.ithome.com/html/app/open.html?url=ithome%3A%2F%2Fuserpage%3Fid%3D795776)、[咩咩洋](https://m.ithome.com/html/app/open.html?url=ithome%3A%2F%2Fuserpage%3Fid%3D1520790) 的线索投递！
 
 [IT之家](https://www.ithome.com/) 7 月 10 日消息，OpenAI 公司昨日（7 月 9 日）发布公告，**宣布已完成收购前苹果首席设计师 Jony Ive 创立的初创公司 io Products, Inc.。**
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/Da1e3NXf6ivKIDsT.webp "OpenAI 迄今最大交易落地，65 亿美元完成收购前苹果首席设计师 Jony Ive 的初创公司 io")
+![](/imgs/08645999918b60e7.webp "OpenAI 迄今最大交易落地，65 亿美元完成收购前苹果首席设计师 Jony Ive 的初创公司 io")
 
 IT之家曾于今年 5 月报道，OpenAI 公司以近 65 亿美元（IT之家注：现汇率约合 469.31 亿元人民币）的全股票交易，收购前苹果首席设计官 Jony Ive 联合创立的 AI 设备初创公司 io，这也是 OpenAI 公司历史上最大规模的收购。
 

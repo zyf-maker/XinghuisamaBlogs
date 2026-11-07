@@ -3,15 +3,12 @@ title: "雷军：钦佩DeepSeek取得的成就，每个人可能都要学习AI�
 summary: "雷军：钦佩DeepSeek取得的成就，每个人可能都要学习AI知识，由程序员鱼皮整理。"
 order: 9
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《雷军：钦佩DeepSeek取得的成就，每个人可能都要学习AI知识》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 互联网顶流“劳模”企业家雷军直播聊起了DeepSeek和小米股价。
 

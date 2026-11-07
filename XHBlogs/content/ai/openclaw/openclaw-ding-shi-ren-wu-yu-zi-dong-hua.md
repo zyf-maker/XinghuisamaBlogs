@@ -3,15 +3,12 @@ title: "OpenClaw 定时任务与自动化"
 summary: "让小龙虾定时帮你巡检、汇报、备份"
 order: 12
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-03-20"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw 定时任务与自动化》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。前面我们学了怎么跟小龙虾对话让它干活，但每次都要手动发消息未免太累了。OpenClaw 提供了多种自动化机制，让小龙虾自己按时干活，你只需要定好规则就行。
 
@@ -30,11 +27,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 相当于给我的网站增加了一个 24 小时值班的巡检员：
 
-![](https://pic.yupi.icu/1/1773914794167-a54098af-b73b-474d-acf5-d807644fda9d.png)
+![](/imgs/a75b3430d44c9c44.png)
 
 可以在 OpenClaw 网页控制台查看和管理已创建的定时任务：
 
-![](https://pic.yupi.icu/1/1773914857729-162eab56-8c92-41f0-8ae3-e75eef18d5d7.png)
+![](/imgs/93281737b6f103df.png)
 
 定时任务的执行日志也能在 Web 控制台查看，出了问题方便排查。
 

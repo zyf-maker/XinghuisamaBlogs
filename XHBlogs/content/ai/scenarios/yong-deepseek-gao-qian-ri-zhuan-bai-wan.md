@@ -3,19 +3,16 @@ title: "用DeepSeek搞钱，日赚百万"
 summary: "5类中间商赚差价，第一批搞钱者已经富起来了。"
 order: 24
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 11
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《用DeepSeek搞钱，日赚百万》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 5类中间商赚差价，第一批搞钱者已经富起来了。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1.jpeg)
+![img](/imgs/7435a8c30ed5ea58.jpg)
 
 智东西2月10日报道，一夜暴富的神话正在DeepSeek时代轮番上演！ 
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 另一边是社交平台上的泼天流量：B站上DeepSeek相关破百万播放量的视频比比皆是…… 
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943050.jpeg)
+![img](/imgs/ce2d0574306c5869.jpg)
 
 ▲B站上DeepSeek相关视频
 
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 抖音博主售价1999元的课程“一人公司方法论+deepseek”，在2月5日3小时直播中卖出超**5万元**。小红书上98元的AI办公应用培训课程卖出2000+份，狂赚**21万元**；付费知识社区知识星球的“高效赚小钱”课程，7天7700人用62元，撑起了约**48万元**；咪鼠科技搭载DeepSeek的鼠标、键盘销量超过23万个，2月6日销售额飙升至**75万元**至**100万元**…… 
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943060.jpeg)
+![img](/imgs/ea437d7b0cbdae61.jpg)
 
 ▲“一人公司方法论+deepseek”直播销售额（图源：蓝鲸新闻）
 
@@ -55,19 +52,19 @@ source: "https://github.com/liyupi/ai-guide"
 
 大部分售卖产品的内容都大同小异，售价不同或许取决于商家是否一对一、手把手教学。售价最高的1599元，其面向的是企业知识库开发私有化部署，帮企业构建基于知识库的问答系统，0.01元的详情页提到会更新DeepSeek本地部署的相关文档。 
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943074.jpeg)
+![img](/imgs/59e5462f0c251439.jpg)
 
 ▲闲鱼（左）、淘宝（右）页面检索DeepSeek出现的商品
 
 在页面下方买家评论中可以看到，其售卖产品包含Mac和Windows版本的Chatbox和ollama安装文件、视频教程以及使用指南、安装和运行Ollama的文字教程。其中Chatbox是支持模型和API使用的AI应用和智能助手，拥有适用于所有平台的AI聊天界面。Ollama是一个开源框架，专为在本地机器上便捷部署和运行大型语言模型而设计。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943084.jpeg)
+![img](/imgs/7eddfc6945a9bfa9.jpg)
 
 ▲淘宝买家评论附图（图源：淘宝）
 
 **账号代注册**相应产品的价格在10元以下，分共享和独享账号两种，共享账号售价为2.99元，独享为9.99元。客服称，共享账号是多人一起使用。该产品销量已经超过100个。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943095.jpeg)
+![img](/imgs/9440681fd46b87a1.jpg)
 
 ▲淘宝DeepSeek代注册账号商品主页
 
@@ -79,25 +76,25 @@ source: "https://github.com/liyupi/ai-guide"
 
 咪鼠科技主页的鼠标和键盘标注了“DeepSeek”字样，前三大产品均已销量过万。销量最高的是399元的咪鼠M4AI鼠标销量达到13万个，第二是咪鼠MK17 AI小键盘，售价399元销量2.8万个。这些产品都搭载了包含DeepSeek的6大通用模型和3大专业模型，支持AI问答、AI写作、制作PPT、图片生成、音频撰写等。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943108.jpeg)
+![img](/imgs/f2da0ba67023b2f5.jpg)
 
 ▲抖音平台咪鼠科技的直播主页、店铺主页、功能详情（图源：抖音）
 
 很多卖**服务器、工作站**的商家也在商品标题上标注了DeepSeek字样。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943120.jpeg)
+![img](/imgs/58e45690b51b196b.jpg)
 
 ▲淘宝DeepSeek相关服务器商家（图源：淘宝）
 
 在抖音平台上检索DeepSeek还发现售价699元**李未可智能AI眼镜**，但其详情页未出现DeepSeek相关功能，只有主播在讲解时提到智能眼镜接入了DeepSeek大模型。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943135.jpeg)
+![img](/imgs/020fd0bc9bfc26c9.jpg)
 
 ▲抖音平台李未可直播间、商品页面（图源：抖音）
 
 还有接入DeepSeek的宇航员DODO智能儿童玩具，其主要功能是基于不同模型和用户进行交流，售价为188元，总销量超过300个。评论区买家的截图可以看到，DODO功能页面可选择的模型中已经包含DeepSeek。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943148.jpeg)
+![img](/imgs/055d36399a88691b.jpg)
 
 ▲淘宝DeepSeek相关儿童玩具（图源：淘宝）
 
@@ -111,7 +108,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这类课程的内容大多为教用户生成爆款文案、如何选择定位等方向，与自媒体平台的性质相关，与办公相关的应用课程为DeepSeek的提示词技巧以及AI绘画、AI视频相关内容。 
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943161.jpeg)
+![img](/imgs/3c978b2f5c417504.jpg)
 
 ▲小红书平台DeepSeek相关培训课
 
@@ -119,7 +116,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 其中一个标题为“用DeepSeek实战高效赚小钱”的星球2月3日上线，截至2月10日下午其成员数已经超过7700个，入群的费用为每人62元，合计超**47万元**，其配套的服务有图文内容、微信群答疑、专属直播答疑和实操分享。 
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943171.jpeg)
+![img](/imgs/514e134cb7cbdca6.jpg)
 
 ▲知识星球DeepSeek相关星球（图源：知识星球）
 
@@ -129,13 +126,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 黑猫社区投诉平台上DeepSeek相关帖子有92条，有用户投诉称，在苹果应用商店搜索下载DeepSeek，第一个出现的是DreamDesk的广告，误以为是DeepSeek下载了，下载完成后使用需购买会员费为**28.8美元（折合约198人民币）**。这种情况可能是该公司向苹果应用商店购买了推广位，目前，苹果应用商店已经无法检索到DreamDesk。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943181.jpeg)
+![img](/imgs/12a58bdae7241677.jpg)
 
 ▲黑猫投诉平台DeepSeek相关帖子
 
 DeepSeed仍然在应用商店中，其详情页提到该App是基于DeepSeek的DeepSeed应用，需要每周6.99美元的灵活订阅费用。 
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943192.jpeg)
+![img](/imgs/9036d08f47ffb868.jpg)
 
 ▲苹果应用商店山寨DeepSeek详情页（图源：苹果应用商店）
 
@@ -153,7 +150,7 @@ DeepSeed仍然在应用商店中，其详情页提到该App是基于DeepSeek的D
 
 这类商品的主页往往会标注万字、最全指南、全网首发等字样。在小红书平台中售价最高的为包含入门指南、提示词合集等全部课程的打包产品，售价为**168元**，商品页面还有最便宜的**19.99元**入门指南，这一购买链接下的销量为**2026人**，但因价格不一无法确认其合计收入。不过，大部分出售提示词合集的商品销量为0或者1、2个。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943204.jpeg)
+![img](/imgs/33afd39abce7776a.jpg)
 
 ▲淘宝DeepSeek提示词合集（图源：淘宝）
 
@@ -165,13 +162,13 @@ DeepSeed仍然在应用商店中，其详情页提到该App是基于DeepSeek的D
 
 首先最为直观的证据就是，检索DeepSeek出现商家后，智东西进入店铺主页会发现其之前所售产品与AI、大模型都毫无关系，甚至有此前**卖手机壳、饰品**的店铺，摇身一变做起了“DeepSeek”的生意。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943226.jpeg)
+![img](/imgs/6239fe26e0f6a3f4.jpg)
 
 ▲DeepSeek相关店铺主页（图源：淘宝）
 
 还有商家的店铺主页，售卖的唯一商品就是“DeepSeek本地部署服务”。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943240.jpeg)
+![img](/imgs/4ba4ad68704c194d.jpg)
 
 ▲只售卖DeepSeek相关产品的商家（图源：淘宝）
 
@@ -179,7 +176,7 @@ DeepSeed仍然在应用商店中，其详情页提到该App是基于DeepSeek的D
 
 其次，其售卖产品中大多数都是开源、免费的，相关的使用教程、提示词合集等，在社交平台上都可以查到公开的版本。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943251.jpeg)
+![img](/imgs/a394137b0b4ff9ae.jpg)
 
 ▲Chatbox下载页面（图源：Chatbox官网）
 
@@ -189,7 +186,7 @@ DeepSeek的聊天功能是免费且开源的，用户只要在网页搜索DeepSe
 
 最后，上述售卖的课程、产品，有很多博主、自媒体平台内容创作者，已经通过录制短视频、开直播的方式公开发布，如DeepSeek的使用指南、如何写提示词、如何不卡顿使用等视频和文章。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943264.jpeg)
+![img](/imgs/a52d517e6e0cffb9.jpg)
 
 ▲DeepSeek相关直播（图源：抖音）
 
@@ -203,13 +200,13 @@ DeepSeek的聊天功能是免费且开源的，用户只要在网页搜索DeepSe
 
 2月6日，DeepSeek紧急发布声明，获取DeepSeek模型服务，请认准官方网站，通过正规渠道下载，并指出DeepSeek官方网页端与官方正版App内不包含任何广告和付费项目。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943274.jpeg)
+![img](/imgs/5cf404d9954199ba.jpg)
 
 ▲DeepSeek《关于DeepSeek官方信息发布及服务渠道的说明》（图源：DeepSeek公众号）
 
 在DeepSeek发布声明之前，售卖相关本地部署产品的价格达到了上万元，不过现在在相关平台检索已经看不到高价的产品了。有商家在接受采访时提到，因为本地部署DeepSeek对用户的电脑配置有要求，所以上万元的定价中包含了配套的硬件设施。
 
-![img](https://pic.yupi.icu/yuyi/interlace,1-20250314170943287.jpeg)
+![img](/imgs/ce10d3fb04fc19b3.jpg)
 
 ▲电商平台上本地部署服务（图源：澎湃新闻）
 

@@ -3,15 +3,12 @@ title: "DeepSeek-V3 模型更新，各项能力全面进阶"
 summary: "共收录 8 条 AI 行业资讯，如https://modelscope.cn/models/deepseek-ai/DeepSeek-V3-0324；https://huggingface.co/deepseek-ai/DeepSeek-V3-0324等。"
 order: 44
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek-V3 模型更新，各项能力全面进阶》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 DeepSeek V3 模型已完成小版本升级，目前版本号 DeepSeek-V3-0324，用户登录官方网页、APP、小程序进入对话界面后， **关闭深度思考** 即可体验。API 接口和使用方式保持不变。
 
@@ -25,27 +22,27 @@ DeepSeek V3 模型已完成小版本升级，目前版本号 DeepSeek-V3-0324，
 
 新版 V3 模型借鉴 DeepSeek-R1 模型训练过程中所使用的强化学习技术，大幅提高了在推理类任务上的表现水平，在数学、代码类相关评测集上取得了超过 GPT-4.5 的得分成绩。
 
-![](https://cdn.deepseek.com/api-docs/v3_0324_benchmark.webp)
+![](/imgs/9d688a24f5b11a81.webp)
 
 ### 前端开发能力增强
 
 在 HTML 等代码前端任务上，新版 V3 模型生成的代码可用性更高，视觉效果也更加美观、富有设计感。
 
-![](https://cdn.deepseek.com/api-docs/v3_0324_gif.gif)
+![](/imgs/906546aa73a0dfa9.gif)
 
 ### 中文写作升级
 
 在中文写作任务方面，新版 V3 模型基于 R1 的写作水平进行了进一步优化，同时特别提升了中长篇文本创作的内容质量。
 
-![](https://cdn.deepseek.com/api-docs/v3_0324_example_1.webp)
+![](/imgs/549fa3aa454132e3.webp)
 
-![](https://cdn.deepseek.com/api-docs/v3_0324_example_2.webp)
+![](/imgs/8c415a3af74d9e88.webp)
 
 ### 中文搜索能力优化
 
 新版 V3 模型可以在联网搜索场景下，对于报告生成类指令输出内容更为详实准确、排版更加清晰美观的结果。
 
-![](https://cdn.deepseek.com/api-docs/v3_0324_example_3.webp)
+![](/imgs/3a6ddf08cf513e03.webp)
 
 此外，新版 V3 模型在 **工具调用、角色扮演、问答闲聊** 等方面也得到了一定幅度的能力提升。
 

@@ -3,15 +3,12 @@ title: "快速上手 Vibe Coding"
 summary: "10 分钟做出你的第一个网页应用并部署上线"
 order: 202
 level: "入门"
-tags: ["入门导读", "转载", "AI"]
+tags: ["入门导读"]
 updated: "2026-09-02"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《快速上手 Vibe Coding》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -61,7 +58,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 登录成功后，准备工作就完成了。接下来你就可以在对话框中输入需求来生成项目了。
 
-![](https://pic.yupi.icu/1/image-20260104140815455.png)
+![](/imgs/23113a4c4815efb6.png)
 
 
 ## 二、选择你的第一个项目
@@ -112,7 +109,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 你还可以选择大模型、使用计划模式、添加附件、增强提示词等等，但是我建议刚开始不用关注这些，直接点击发送，然后等待 AI 的回应即可。
 
-![](https://pic.yupi.icu/1/image-20260104141314370.png)
+![](/imgs/f5547337d224e7bb.png)
 
 
 ### AI 在做什么？
@@ -121,13 +118,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 AI 理解了你的需求，然后创建项目文件结构，再自动生成网页代码，整个过程大约需要 2 分钟。
 
-![](https://pic.yupi.icu/1/image-20260104141512389.png)
+![](/imgs/79e914e4b2d4f73e.png)
 
 代码生成完成后，右侧会自动显示预览效果。你会看到一个输入框、一个添加按钮、任务列表区域。
 
 试着在输入框里输入 "跟鱼皮学习 Vibe Coding"，然后点击添加按钮，看看效果。
 
-![](https://pic.yupi.icu/1/image-20260104141637255.png)
+![](/imgs/809a5da78cf7914f.png)
 
 
 ### 第 2 轮对话：优化细节
@@ -146,11 +143,11 @@ AI 理解了你的需求，然后创建项目文件结构，再自动生成网�
 
 还可以开启可视化修改功能，选中你想要修改的元素，哪里不爽点哪里~
 
-![](https://pic.yupi.icu/1/image-20260104141819294.png)
+![](/imgs/174601d30f1ed152.png)
 
 AI 会根据你的要求修改代码，很快你就能看到新效果。
 
-![](https://pic.yupi.icu/1/image-20260104142026165.png)
+![](/imgs/42e9a30beab4e1fc.png)
 
 
 ### 第 3 轮对话：添加新功能
@@ -168,7 +165,7 @@ AI 会根据你的要求修改代码，很快你就能看到新效果。
 
 AI 会继续帮你实现这些功能。
 
-![](https://pic.yupi.icu/1/image-20260104142238907.png)
+![](/imgs/ca8342100ee10508.png)
 
 
 ### 对话技巧
@@ -191,7 +188,7 @@ AI 会继续帮你实现这些功能。
 
 最后点击预览窗口上方的设备图标，看看在手机和不同屏幕上的效果。
 
-![](https://pic.yupi.icu/1/image-20260104142538383.png)
+![](/imgs/eacf66901e3f2f73.png)
 
 如果发现某个功能无法正常使用，不要慌。把问题详细描述给 AI，比如 "我点击删除按钮后，任务没有被删除"，AI 会帮你修复 Bug，然后重新测试就好了。
 
@@ -206,11 +203,11 @@ AI 会继续帮你实现这些功能。
 
 Bolt.new 提供了最简单的部署方式，只需要点击右上角的 "Publish" 按钮，点击发布：
 
-![](https://pic.yupi.icu/1/image-20260104142853639.png)
+![](/imgs/445d62fb60c916f3.png)
 
 然后稍等片刻，就能在聊天框中看到发布后的可访问地址了：
 
-![](https://pic.yupi.icu/1/image-20260104142912318.png)
+![](/imgs/746f4ca0620fdf49.png)
 
 部署成功后，你应该能在任何浏览器访问你的应用，或者把地址分享给朋友让他们也能访问。
 
@@ -257,7 +254,7 @@ Bolt.new 提供了最简单的部署方式，只需要点击右上角的 "Publis
 
 所以你会在项目文件中看到 `.tsx` 后缀的文件，这些就是 React 组件文件。但本质上，它们最终还是会被转换成浏览器能理解的 HTML、CSS 和 JavaScript。
 
-![](https://pic.yupi.icu/1/image-20260104162356144.png)
+![](/imgs/4d2336953a29bb0d.png)
 
 没事，现在不理解也完全没关系。如果对前端开发感兴趣的同学，可以看 [鱼皮最新的保姆级前端学习路线](https://www.codefather.cn/course/1789189862986850306/section/1789190394078011393) 快速入门。
 
@@ -276,7 +273,7 @@ Bolt.new 提供了最简单的部署方式，只需要点击右上角的 "Publis
 
 这是因为数据保存在浏览器的本地存储（localStorage）里。每次你修改任务，程序都会把最新的数据保存到 localStorage；当你重新打开页面时，程序会从 localStorage 读取之前保存的数据。这样即使关闭浏览器，数据也不会丢失。就像你把待办清单写在了一个不会丢的小本子上。
 
-![](https://pic.yupi.icu/1/theoryofworksoftware%E5%A4%A7.jpeg)
+![](/imgs/2ae3ebcb9111f1e1.jpg)
 
 
 ### 向 AI 请教

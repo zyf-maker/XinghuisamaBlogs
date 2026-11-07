@@ -3,21 +3,18 @@ title: "DeepSeek的“服务器繁忙”让所有人抓狂，背后究竟是怎�
 summary: "DeepSeek的“服务器繁忙”让所有人抓狂，背后究竟是怎么回事，由程序员鱼皮整理。"
 order: 23
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 9
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek的“服务器繁忙”让所有人抓狂，背后究竟是怎么回事》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 此前不太被大众所知的DeepSeek，因2024年12月26日推出对标GPT 4o的语言模型V3而声名鹊起。在1月20日DeepSeek又发布对标OpenAI o1的语言模型R1，之后因为“深度思考”模式生成的答案优质度高，以及其创新揭示出模型训练前期成本可能骤降的积极信号，令该公司和应用彻底出圈。之后，DeepSeek R1就一直在经历拥堵，它的联网搜索功能间歇性瘫痪，深度思考模式则高频率提示“服务器繁忙”，此类现象让大量用户倍感困扰。
 
 十几日前，DeepSeek开始经历服务器中断，1月27日中午，DeepSeek官网已数次显示“deepseek网页/api不可用”，当日，DeepSeek成为周末期间iPhone下载量最高的应用程序，在美区下载榜超越了ChatGPT。
 
-![](https://img.huxiucdn.com/article/content/202502/13/103644776598.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85)
+![](/imgs/f01acf4c0c2a2cec.webp)
 
 2月5日，DeepSeek移动端上线26天，日活突破4000万，ChatGPT移动端日活为5495万，DeepSeek为ChatGPT的74.3%。几乎在DeepSeek走出陡峭增长曲线的同时，关于其服务器繁忙的吐槽纷至沓来，全世界用户都开始遭遇问几个问题就发生宕机的不便，各类替代访问也开始出现，比如DeepSeek的平替网站，各大云服务商、芯片厂商和基础设施公司都纷纷上线，个人部署教程也到处都是。但人们的抓狂却没有缓解：全球几乎所有重要厂商都宣称支持部署了DeepSeek，但各地用户却依然在吐槽服务的不稳定。
 
@@ -29,7 +26,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 自OpenAI服务推出以来，ChatGPT虽然也经历了几次P0级别宕机事故，但总体来说，它相对可靠，已然在创新和稳定性之间找到平衡，并逐步成为类似传统云服务的关键组成部分。
 
-![](https://img.huxiucdn.com/article/content/202502/13/110738617305.jpg?imageView2/2/w/1000/format/webp/interlace/1/q/85)
+![](/imgs/20c977c47f463121.webp)
 
 ChatGPT大范围宕机次数并不算多
 

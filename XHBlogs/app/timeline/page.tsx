@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Navbar from '../../components/Navbar';
 import PageTransition from '../../components/PageTransition';
+import ContentLayout from '../../components/ContentLayout';
 import { siteConfig } from '../../siteConfig';
 import TimelineClient from '../../components/TimelineClient';
 // ToastProvider
@@ -60,10 +61,12 @@ export default function Timeline() {
   return (
     // 🌟 2. 在最外层用 ToastProvider 包裹整个页面
     <ToastProvider>
-      <div className="min-h-screen relative pb-32">
+      <div className="min-h-screen relative">
         <Navbar />
         <PageTransition>
-          <TimelineClient posts={posts} tags={tagsArray} />
+          <ContentLayout meta={{ '/timeline': `${posts.length} 篇` }}>
+            <TimelineClient posts={posts} tags={tagsArray} />
+          </ContentLayout>
         </PageTransition>
       </div>
     </ToastProvider>

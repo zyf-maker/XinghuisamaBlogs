@@ -3,15 +3,12 @@ title: "更多企业级 AI 编程实战项目"
 summary: "在前面的文章中，我们学习了 Vibe Coding 的项目开发流程，也实战了很多个人项目。这些项目可以帮你入门 AI 编程，掌握基本的开发技能。"
 order: 9
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-09-28"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《更多企业级 AI 编程实战项目》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 作为国内顶级的 [编程学习网站 - 编程导航](https://codefather.cn/) 的创始人，我已经坚持带大家做了好几年的项目，很多同学通过学习这些项目，成功拿到了大厂 Offer！
 
-![](https://pic.yupi.icu/1/de62f4cc-32cb-4814-aca7-03c232d0e2d2.png)
+![](/imgs/ddd92842b36deb6f.png)
 
 这篇文章，我会介绍我在 [编程导航平台](https://codefather.cn/) 上的企业级 AI 项目教程。这些项目都是我精心设计的，对标真实的企业业务场景，涵盖了 AI 应用开发的各个方面。项目资料包括完整的视频教程 / 文字教程、可运行的完整源码、简历写法、面试题解、答疑解惑，真正做到一条龙服务。
 
@@ -74,7 +71,7 @@ source: "https://github.com/liyupi/ai-guide"
 - SEO 和 GEO 搜索优化
 
 
-![鱼皮 AI 万能视频下载总结器项目](https://pic.yupi.icu/1/AI%E4%B8%87%E8%83%BD%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%99%A8%E4%B8%BB%E9%A1%B5.png)
+![鱼皮 AI 万能视频下载总结器项目](/imgs/01fba89ac3bde273.png)
 
 
 ### AI 热点监控工具
@@ -97,7 +94,7 @@ source: "https://github.com/liyupi/ai-guide"
 - Aceternity UI 科技感前端
 
 
-![鱼皮 AI 热点监控工具项目](https://pic.yupi.icu/1/image-20260304102630302.png)
+![鱼皮 AI 热点监控工具项目](/imgs/dcc89c314844d356.png)
 
 
 ### AI 闯关学习小程序
@@ -121,7 +118,7 @@ source: "https://github.com/liyupi/ai-guide"
 - Docker 容器化 + 微信云托管部署
 
 
-![鱼皮 AI 闯关学习小程序项目](https://pic.yupi.icu/1/1-project-demo-overview.png)
+![鱼皮 AI 闯关学习小程序项目](/imgs/e895fd805fe063d2.png)
 
 
 ### GitHub 文档翻译工具
@@ -144,7 +141,7 @@ source: "https://github.com/liyupi/ai-guide"
 - Vercel 一键部署上线
 
 
-![鱼皮 GitHub 文档翻译工具项目](https://pic.yupi.icu/1/1769079926879-90640105-2d23-418c-b4b5-e962eab31299-20260225144931498.png)
+![鱼皮 GitHub 文档翻译工具项目](/imgs/1fbb538f21344b5a.png)
 
 
 ### AI 零代码应用生成平台
@@ -167,7 +164,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 企业级监控体系
 
 
-![鱼皮 AI 零代码应用生成平台项目](https://pic.yupi.icu/1/1753332293578-0ccc2a53-6d98-41a7-b714-16fa6a7f095f-20250814154720271.png)
+![鱼皮 AI 零代码应用生成平台项目](/imgs/331f0df08635fdcf.png)
 
 
 ### AI 智能 PPT 生成器
@@ -190,7 +187,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 布局树 + solver 灵活排版引擎
 
 
-![鱼皮 AI 智能 PPT 生成器项目](https://pic.yupi.icu/1/image-20260820140224805.png)
+![鱼皮 AI 智能 PPT 生成器项目](/imgs/24724a305222fee5.png)
 
 
 ### 全能 AI 修图智能体
@@ -213,7 +210,7 @@ source: "https://github.com/liyupi/ai-guide"
 - Docker 多阶段构建一键部署
 
 
-![鱼皮全能 AI 修图智能体项目](https://pic.yupi.icu/pine/image-20260901150955859.png)
+![鱼皮全能 AI 修图智能体项目](/imgs/ad593415252eb422.png)
 
 
 ### 智能协同云图库
@@ -235,7 +232,7 @@ source: "https://github.com/liyupi/ai-guide"
 - DDD 领域驱动设计
 
 
-![鱼皮智能协同云图库项目](https://pic.yupi.icu/1/image-yupic.png)
+![鱼皮智能协同云图库项目](/imgs/890921d01408c3cc.png)
 
 
 ### AI 答题应用平台
@@ -257,7 +254,7 @@ source: "https://github.com/liyupi/ai-guide"
 - AI 题目生成
 
 
-![鱼皮 AI 答题应用平台项目](https://pic.yupi.icu/1/20240604145229177.png)
+![鱼皮 AI 答题应用平台项目](/imgs/56bd5b20d35220c0.png)
 
 
 ### 智能面试刷题平台
@@ -279,7 +276,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 反爬虫设计
 
 
-![鱼皮智能面试刷题平台项目](https://pic.yupi.icu/1/image-20240928131639783.png)
+![鱼皮智能面试刷题平台项目](/imgs/6b753e3d7f4d2355.png)
 
 
 ### 多公众号智能管理系统
@@ -300,7 +297,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 虚拟线程
 
 
-![鱼皮多公众号智能管理系统项目](https://pic.yupi.icu/1/1743665084072-ce18bc93-e711-40d3-9111-14e5cae8587e.png)
+![鱼皮多公众号智能管理系统项目](/imgs/758c1c1757f9f5a2.png)
 
 
 ### AI 编程助手
@@ -320,7 +317,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 工具调用和 MCP 集成
 - SSE 流式输出
 
-![鱼皮 AI 编程助手项目](https://pic.yupi.icu/1/1752027043776-cd6d17ed-175f-4c7e-8b25-aee81a5296b2-20250710114302208.png)
+![鱼皮 AI 编程助手项目](/imgs/cfa7dddae052468a.png)
 
 
 ### AI 程序员技术练兵场
@@ -340,7 +337,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 游戏化学习设计
 
 
-![鱼皮 AI 程序员技术练兵场项目](https://pic.yupi.icu/1/1760438722374-4e8edebc-d975-4873-8f06-9e9856733694.png)
+![鱼皮 AI 程序员技术练兵场项目](/imgs/7503ec0604b82612.png)
 
 
 ### 智能 BI 平台
@@ -360,7 +357,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 图表生成
 
 
-![鱼皮智能 BI 平台项目](https://pic.yupi.icu/1/bi-20231026151929666.png)
+![鱼皮智能 BI 平台项目](/imgs/f0be9ce074285be6.png)
 
 
 ### AI 自动回复工具
@@ -380,7 +377,7 @@ source: "https://github.com/liyupi/ai-guide"
 - Docker 容器化部署
 
 
-![鱼皮 AI 自动回复工具项目](https://pic.yupi.icu/1/1756260059900-8be2cc5d-0cfc-4b7f-b99d-47c82af1925c.png)
+![鱼皮 AI 自动回复工具项目](/imgs/1f506a6e7fc5ab23.png)
 
 
 加油，未来的 AI 工程师！💪

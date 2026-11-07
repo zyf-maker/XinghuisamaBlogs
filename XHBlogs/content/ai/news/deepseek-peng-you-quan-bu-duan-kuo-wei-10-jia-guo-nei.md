@@ -3,15 +3,12 @@ title: "DeepSeek“朋友圈”不断扩围：10家国内外云厂商宣布接�
 summary: "DeepSeek“朋友圈”不断扩围：10家国内外云厂商宣布接入，由程序员鱼皮整理。"
 order: 20
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 4
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek“朋友圈”不断扩围：10家国内外云厂商宣布接入》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 1月20日，中国AI初创公司深度求索（DeepSeek）推出大模型DeepSeek-R1。作为一款开源模型，R1在数学、代码、自然语言推理等任务上的性能能够比肩OpenAI o1模型正式版，并采用MIT许可协议，支持免费商用、任意修改和衍生开发等。截至2月5日，国内外已有众多云平台宣布上线DeepSeek- R1大模型。
 

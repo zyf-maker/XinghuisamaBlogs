@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Spec-kit：规范驱动开发框架》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是程序员鱼皮。
 
 在前面的文章中，我们学习了如何用 AI 快速生成代码。但你可能会发现，AI 有时候会 “想到哪写到哪”，生成的代码可能不符合预期，或者项目做到一半就乱套了。
@@ -35,7 +32,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 而规范驱动开发的思路正好相反：**先把需求写成规范文档，并且把规范文档当作代码的唯一真相来源**。你可以把规范文档理解为 "法律条文"，它包含了详细的需求描述、系统设计和接口定义。AI 必须严格遵守这些条文来生成代码，确保产出完全符合预期。
 
-![](https://pic.yupi.icu/1/%E6%BC%AB%E7%94%BB%E5%9B%BE4%E5%A4%A7.jpeg)
+![](/imgs/b80cd552f1d6f59c.jpg)
 
 
 
@@ -51,19 +48,19 @@ source: "https://github.com/liyupi/ai-guide"
 uvx --from git+https://github.com/github/spec-kit.git specify init my-project
 ```
 
-![](https://pic.yupi.icu/1/image-20260116141308958.png)
+![](/imgs/38c63f5da67e08cc.png)
 
 选择你使用的 AI 编程工具，Spec-kit 支持 Claude Code、GitHub Copilot 等几乎所有主流编程工具。这里我选 Claude Code：
 
-![](https://pic.yupi.icu/1/image-20260116141507190.png)
+![](/imgs/6688bcf01597e8d2.png)
 
 根据操作系统选择脚本类型，Windows 选下面的，其他选上面的：
 
-![](https://pic.yupi.icu/1/image-20260116141537030.png)
+![](/imgs/7b315006f63e479f.png)
 
 执行完这个命令后，会在当前目录下创建一个 `my-project` 文件夹：
 
-![](https://pic.yupi.icu/1/image-20260116141613246.png)
+![](/imgs/63067707e899bc68.png)
 
 文件夹里面包含了这些核心文件：
 
@@ -72,15 +69,15 @@ uvx --from git+https://github.com/github/spec-kit.git specify init my-project
 - `.specify/templates/`：模板文件
 - `.claude/commands/`：定义了一套内置的斜杠命令，让你在 AI 编程工具中可以直接调用
 
-![](https://pic.yupi.icu/1/image-20260116142528820.png)
+![](/imgs/c625bfbb870777b4.png)
 
 初始化程序还给了我们一些指引，告诉我们接下来如何运用这些命令来开发项目。
 
-![](https://pic.yupi.icu/1/image-20260116141715310.png)
+![](/imgs/3584df880f11b29e.png)
 
 用 Claude Code 打开这个项目文件夹，就可以在对话中使用定义好的命令了。
 
-![](https://pic.yupi.icu/1/image-20260116142740271.png)
+![](/imgs/83c1c5c0482705cf.png)
 
 
 
@@ -100,15 +97,15 @@ uvx --from git+https://github.com/github/spec-kit.git specify init my-project
 
 💡 如果你要做中文项目，最好在制定项目准则时就明确告诉 AI “整个网站使用中文”。
 
-![](https://pic.yupi.icu/1/image-20260116160508054.png)
+![](/imgs/58fda21f393ba5b5.png)
 
 AI 更新了项目准则文档：
 
-![](https://pic.yupi.icu/1/image-20260116160610169.png)
+![](/imgs/d1f97a3728ecd621.png)
 
 建议每一步我们都用 Git 提交一个版本，这样出了问题后能及时回滚，也便于我们看到每一步改动的文件。
 
-![](https://pic.yupi.icu/1/image-20260116160745548.png)
+![](/imgs/abf834390790d104.png)
 
 
 
@@ -120,19 +117,19 @@ AI 更新了项目准则文档：
 /speckit.specify 我想做个【自动提醒我喝水的网站】
 ```
 
-![](https://pic.yupi.icu/1/image-20260116161231223.png)
+![](/imgs/940bba8ee640c030.png)
 
 AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目。在这个分支下创建了一个需求规格文档（spec.md） + 一个需求检查文档（requirements.md）。
 
-![](https://pic.yupi.icu/1/image-20260116161307642.png)
+![](/imgs/9b99982fcd94e4df.png)
 
 需求规格文档非常详细，还包含了边缘测试用例，针对用户各种可能的操作进行处理。
 
-![](https://pic.yupi.icu/1/image-20260116161926017.png)
+![](/imgs/7dae71f40717f83b.png)
 
 需求检查文档中记录了 AI 对于需求的理解，打钩表示 AI 理解并确认了：
 
-![](https://pic.yupi.icu/1/image-20260116161500358.png)
+![](/imgs/3dcd2ac7c9310b74.png)
 
 
 
@@ -142,7 +139,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.clarify` 命令，AI 会提出结构化的问题，让你来回答。从而帮你填补需求中的空白，比如边界情况、错误处理等。
 
-![](https://pic.yupi.icu/1/image-20260116162702812.png)
+![](/imgs/98a8399770caa7a7.png)
 
 
 
@@ -150,7 +147,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.plan` 命令，让 AI 决定用什么技术栈、系统架构、数据模型、API 接口等。
 
-![](https://pic.yupi.icu/1/image-20260116163506902.png)
+![](/imgs/d55d5f07edf068c2.png)
 
 制定技术方案完成，这次生成了一大堆文档，简单了解一下：
 
@@ -161,11 +158,11 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 - research.md 技术研究文档，记录了 8 项关键技术决策
 - contracts/api-contract.md API 接口文档
 
-![](https://pic.yupi.icu/1/image-20260116164021646.png)
+![](/imgs/3b72d51f05a6ef9e.png)
 
 接下来，我们就可以准备开发实现了。
 
-![](https://pic.yupi.icu/1/image-20260116163553725.png)
+![](/imgs/c3a3382704ebcfe2.png)
 
 
 
@@ -173,11 +170,11 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.tasks` 命令，把计划拆解成可执行的任务列表，并标注依赖关系和优先级。
 
-![](https://pic.yupi.icu/1/image-20260116164537006.png)
+![](/imgs/9c15e0b80fdc9cc2.png)
 
 生成了一个任务列表文档，每一步要做什么都非常清晰：
 
-![](https://pic.yupi.icu/1/image-20260116164612533.png)
+![](/imgs/e7cd863ca7a6dff5.png)
 
 
 
@@ -185,7 +182,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 运行 `/speckit.analyze` 命令，检查规范、计划、任务是否完整一致，提前发现设计缺陷。
 
-![](https://pic.yupi.icu/1/image-20260116164936733.png)
+![](/imgs/9aceca87b337beca.png)
 
 可以看到，AI 没有检查出问题，还让我自信地进行下一步，真爽死了！
 
@@ -195,11 +192,11 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 最后，运行 `/speckit.implement` 命令，让 AI 按照任务列表生成代码。
 
-![](https://pic.yupi.icu/1/image-20260116170006815.png)
+![](/imgs/634c11104f8832f4.png)
 
 大功告成，看一下效果~
 
-![](https://pic.yupi.icu/1/image-20260116170146827.png)
+![](/imgs/4ed1216778521dec.png)
 
 因为我这里始终没有提到使用中文输出，所以网站内容都是英文的，不过我感觉效果还可以。
 
@@ -209,7 +206,7 @@ AI 为这次的需求创建了一个新的 Git 分支，防止污染现有项目
 
 到这里，我们已经学会了如何用 Spec-kit 开发完整项目，再复习一下完整流程：
 
-![](https://pic.yupi.icu/1/%25E6%25BC%25AB%25E7%2594%25BB%25E5%259B%25BE5%25E5%25A4%25A7.jpeg)
+![](/imgs/7e18f1fc9a8d6319.jpg)
 
 即使不用 Spec-kit，我们开发完整项目时也可以人工遵循这些步骤。
 

@@ -3,15 +3,12 @@ title: "编程知识百科"
 summary: "AI 编程博主；AI 导航（共 2 条资讯链接）"
 order: 2
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《编程知识百科》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 为了解决这个问题，我在 [编程导航](https://www.codefather.cn) 和 [B 站](https://space.bilibili.com/12890453/lists/6264323) 上做了一个 **编程知识百科** 系列，用动漫的方式来讲解编程知识，通俗易懂，零基础也能看懂。
 
-![](https://pic.yupi.icu/1/1767663460999-837c637c-9f61-4b21-95a2-5e218ad36a58.png)
+![](/imgs/55594d51de49b09a.png)
 
 
 ## 编程知识百科包含什么？
@@ -33,7 +30,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 目前已经更新了几十个知识点，而且还在持续更新中。
 
-![](https://pic.yupi.icu/1/image-20260113145432074.png)
+![](/imgs/09d29fb8402616be.png)
 
 
 ## 编程知识百科的特点
@@ -44,7 +41,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 实战导向：不只讲理论，还会告诉你怎么用、什么场景用。
 - 持续更新：紧跟技术发展，及时补充新的内容。
 
-![](https://pic.yupi.icu/1/1767663646677-8c6cbd95-9a06-4447-a276-83d3a505e957-20260113145631574.png)
+![](/imgs/89edf7b0d81840b7.png)
 
 
 ## 如何学习编程知识百科？
@@ -74,7 +71,7 @@ B 站地址：https://space.bilibili.com/12890453/lists/6264323
 
 欢迎关注鱼皮的微信公众号《程序员鱼皮》，第一时间获取鱼皮的每日分享：
 
-![](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E7%9A%84%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7.png)
+![](/imgs/31560cfe35ceb8d9.png)
 
 
 ## 推荐资源

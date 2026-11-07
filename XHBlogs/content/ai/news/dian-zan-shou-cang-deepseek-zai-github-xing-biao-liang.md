@@ -3,15 +3,12 @@ title: "点赞收藏！DeepSeek在GitHub星标量已超OpenAI"
 summary: "点赞收藏！DeepSeek在GitHub星标量已超OpenAI，由程序员鱼皮整理。"
 order: 5
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《点赞收藏！DeepSeek在GitHub星标量已超OpenAI》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 国产大模型深度求索（DeepSeek）正在与大洋彼岸的人工智能巨头OpenAI“掰手腕”。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 不过，有业内人士向澎湃新闻记者分析，由于DeepSeek是开源大模型，OpenAI未开源，最热门的是API案例和使用指南，在一定程度上会影响星标数量。星标数量不能完全代表两个大模型在能力上的区别，但是代表了AI行业整体的认可程度。
 
-![](https://imgpai.thepaper.cn/newpai/image/1738924182784_e6i3DB_1738924189481.png?x-oss-process=image/resize,w_1024)
+![](/imgs/f42297a2eabfeba7.png)
 
 据研究公司SimilarWeb估计，在短短一周内，DeepSeek网站的用户数量就超过了谷歌的Gemini聊天AI，后者已经存在了近两年。DeepSeek.com上周二的访问量达到了创纪录的4900万次，比前一周增长了614%。
 

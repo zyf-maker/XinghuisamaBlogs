@@ -3,21 +3,18 @@ title: "GLM-5.3 三模型横评 - DeepSeek Harness 统一评测"
 summary: "用 DeepSeek Harness 统一工具链环境，让 GLM-5.3、DeepSeek V4 Pro、Kimi K3 公平比拼编程能力"
 order: 13
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-08-21"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《GLM-5.3 三模型横评 - DeepSeek Harness 统一评测》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近 AI 圈儿真是过年了，前脚 DeepSeek V4 Pro 正式版和 DeepSeek Harness 同时发布，后脚智谱就放出了全新的 GLM-5.3 模型。
 
-![](https://pic.yupi.icu/1/image-20260817145539750.png)
+![](/imgs/117242c47f16c525.png)
 
 听说 GLM-5.3 模型的基座跟 GLM-5.2 完全一样，还是 743B 参数，单纯通过后训练把性能提升了 50%。
 
@@ -27,11 +24,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 我相信你们肯定也想看对吧~
 
-![](https://pic.yupi.icu/1/Gemini_Generated_Image_t1h6xtt1h6xtt1h6.jpg)
+![](/imgs/0830735b3bbb8c9e.jpg)
 
 刚好最近大火的 DeepSeek Harness（DSH）支持接入第三方模型，于是我决定把 DSH 当做一个统一的评测工具，把这三家的最新模型放在完全一致的工具链环境下测试，只有模型本身不同，尽量做到公平对比。
 
-![DeepSeek Harness 工具](https://pic.yupi.icu/1/image-20260814133452050.png)
+![DeepSeek Harness 工具](/imgs/eceef0e558e2ccff.png)
 
 
 ## 模型接入 DeepSeek Harness
@@ -46,25 +43,25 @@ source: "https://github.com/liyupi/ai-guide"
 
 1）打开 DSH 的 Web 界面，点击左下角的「设置」按钮。
 
-![](https://pic.yupi.icu/1/1786932507970-41599bc0-493b-43be-b23a-06167310714e.png)
+![](/imgs/a0f3d9f3517c5898.png)
 
 2）进入「模型」标签页，点击「添加提供方」。
 
-![](https://pic.yupi.icu/1/1786932573401-dc4b2cba-6e89-490e-986e-45b62c49258a.png)
+![](/imgs/622bb08d632cffb1.png)
 
 3）选择模型提供方为 `zai-coding-cn`，然后到 [智谱开放平台](https://bigmodel.cn/coding-plan/personal/overview) 获取你的 API Key 填进去就行。
 
-![](https://pic.yupi.icu/1/1786932690701-74c2d894-8922-40f3-ac8d-43b0cb3d3b07.png)
+![](/imgs/9e3e9840302926be.png)
 
 4）展开自定义设置，点击「获取可用模型」。不过因为 GLM-5.3 太新了，默认不会被自动拉取到。
 
 所以需要手动点击「添加模型」，填入 `glm-5.3`，然后保存。
 
-![](https://pic.yupi.icu/1/1786933645912-f2d165ea-cef1-41d1-b34f-9e244e85c6cb.png)
+![](/imgs/fb77fab295b4c592.png)
 
 搞定！现在就可以在对话框中选择并使用 GLM-5.3 模型了~
 
-![](https://pic.yupi.icu/1/1786933520324-c3de8492-bfb7-4b9e-bd5a-47af4ac36add.png)
+![](/imgs/d9120f3d2f0f8ec4.png)
 
 用同样的方法把 Kimi K3 也添加进来。DeepSeek V4 Pro 是 DSH 安装成功后默认接入的，不需要额外配置。
 
@@ -77,7 +74,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 DSH 会自动扫描我本地安装的技能目录，比如我这里装了 Firecrawl 联网搜索技能、Context7 文档查询技能等，三个模型跑任务时都可以使用这些技能来搜索资料。
 
-![](https://pic.yupi.icu/1/image-20260817151814146.png)
+![](/imgs/5a3edf259c7a40d6.png)
 
 
 ## 实战 1、致敬《牛来》的 3D 跑酷游戏
@@ -91,13 +88,13 @@ DSH 会自动扫描我本地安装的技能目录，比如我这里装了 Firecr
 - 如果你花一个多小时去了解这个电影，你就浪费了人生的一个小时。
 - 但如果你花了 30 块去看了《牛来》，那说明你真的有 30 块钱。
 
-![](https://pic.yupi.icu/1/%25E7%2589%259B%25E6%259D%25A5%25E5%259B%25BE%25E7%2589%2587.jpg)
+![](/imgs/bf877e566fad8247.jpg)
 
 我决定让 3 个模型致敬这部电影，做一个《3D 网页跑酷游戏》。
 
 提示词里我故意不做太多功能约束和技术限制，就是想看看模型自己能发挥到什么程度，能不能把电影里的元素还原出来。值得一提的是，我让 AI 用 Loop Engineering 的方式推进，做完一步就自己验证一步，出了问题自己修复。
 
-![](https://pic.yupi.icu/1/1786934842850-22be3935-b9b6-43ad-8a7f-16c163795b57-20260817183037814.png)
+![](/imgs/a801dcae8fd8c938.png)
 
 OK，开跑！
 
@@ -110,33 +107,33 @@ OK，开跑！
 
 有看过《牛来》的朋友吗？这个描述跟电影剧情还挺贴的，草原上的小牛犊牛来，跟随云雀坠入一场大梦，穿过迷雾、狼群与轰鸣的伐木场，唯有向前奔跑才能学会勇敢…… 还挺励志。
 
-![](https://pic.yupi.icu/1/1786941444587-f86f52c2-2cbc-48c7-a543-2dfefb190781.png)
+![](/imgs/839bf74b6f75e133.png)
 
 进入第一关「晨曦草原」，你别说，这个牛的建模真的挺抽象的，尤其是牛脸竟然还直勾勾地对着你……
 
 旁边还有个云雀好友陪着牛牛向前奔跑，有点还原电影那个味儿了。
 
-![](https://pic.yupi.icu/1/1786941685678-78fab2ee-5643-4d9d-aa62-19bbde4742d4.png)
+![](/imgs/cc136b2bc29c13a9.png)
 
 游戏操作支持左右移动、跳跃和滑铲，手感还挺流畅的，可玩性不错。
 
-![](https://pic.yupi.icu/1/1786941720452-1e3d231b-975d-4682-b613-32d40bdd4531.png)
+![](/imgs/76e1a2dd6a7890bc.png)
 
 吃到一定数量的幸运草之后，可以释放大招，进入「豹拉疾冲」状态，全屏加速 + 无敌。
 
 解释一下，豹拉是电影里牛来的好朋友，这个大招名字起得挺有意思的。
 
-![](https://pic.yupi.icu/1/1786941781966-0fbbe03c-8818-4c9e-afbf-7e0b64374624.png)
+![](/imgs/850ba193ac8222a4.png)
 
 游戏有好几个关卡，而且每一关的主题和机制都不一样。比如「狼群夜袭」这关，你身后真的有狼在追你，还有一个贴合剧情的技能叫「妈妈的守护」，我直接一个泪目。
 
-![](https://pic.yupi.icu/1/1786942149069-541e5b46-b1e2-4f9e-99af-a8f765149284.png)
+![](/imgs/8c9cfd85a0851ab2.png)
 
 可惜，最终牛牛我倒在了第四关。
 
 看看这个死亡结算画面，我真的没绷住，怎么还喷出一团血花了呢？
 
-![](https://pic.yupi.icu/1/1786942206513-b212f83e-7e25-4c03-b008-b527f827d264.png)
+![](/imgs/2709f7f86c22fd75.png)
 
 细节，真的细节……
 
@@ -147,7 +144,7 @@ OK，开跑！
 
 主界面还挺像那么回事，也还原了云雀和牛来的故事背景。
 
-![](https://pic.yupi.icu/1/1786942470229-08dcb397-2b7f-458b-9f9c-2f32e476ec99.png)
+![](/imgs/a017ac82f6762244.png)
 
 进入游戏。
 
@@ -157,19 +154,19 @@ OK，开跑！
 
 不过还原了云雀和好友豹拉，它们会陪着牛牛一起奔跑。
 
-![](https://pic.yupi.icu/1/1786942537635-7e98120c-5761-42cf-be5e-a7ea370fa4e4.png)
+![](/imgs/0f7afe4dd491d0ed.png)
 
 移动、跳跃和滑铲功能都是正常的，不过看到这个滑铲效果我真没绷住…… 好家伙，眼珠子都给我铲出来了？
 
-![](https://pic.yupi.icu/1/1786942708594-261a7ca0-de4c-4cfe-9fa6-77a1b3b1b8bb.png)
+![](/imgs/7d7636e86a5b456a.png)
 
 仔细看的话，道路两侧的图标明显飘在了草坪上面。还有就是游戏节奏太慢了，刚开局跑了好久第一个障碍物才出现，也没什么技能和特殊的关卡机制，可玩性较差。
 
-![](https://pic.yupi.icu/1/1786942635722-bb121640-3419-4c5d-b542-3262a5059232.png)
+![](/imgs/2d69a6d2cca4bffb.png)
 
 牛牛只有一条命，撞到石头之后直接进入死亡结算画面：
 
-![](https://pic.yupi.icu/1/1786942990402-af6dc75b-652b-497c-b474-a2eff1526e3c.png)
+![](/imgs/5115474ac13d77b2.png)
 
 整体来看，中规中矩吧。
 
@@ -180,11 +177,11 @@ OK，开跑！
 
 主界面的配色平平无奇，跟其他模型一样，也把电影剧情概括了一下。
 
-![](https://pic.yupi.icu/1/1786943144669-112d3b61-a136-46aa-813b-d1b58050254c.png)
+![](/imgs/1ee7055f701be242.png)
 
 进入游戏，界面风格还可以，远处的大山绘制得不错。但是主角牛牛就平平无奇了，不够抽象，看起来就是一组普通的方块。
 
-![](https://pic.yupi.icu/1/1786943246265-ed550bfe-c9b2-4298-9a29-24daf04894fa.png)
+![](/imgs/530019a5235f30a8.png)
 
 虽然牛牛有 3 条命，也可以吃金币，但是没有什么技能和特殊机制，整个游戏就是单纯跑跑跑。
 
@@ -192,15 +189,15 @@ OK，开跑！
 
 还有这个下雨效果，直接来一个全屏网格？这就有点敷衍了吧……
 
-![](https://pic.yupi.icu/1/1786943334061-a01c90c7-5038-4c26-b4e8-60036ebadf20.png)
+![](/imgs/24babfe251befe09.png)
 
 而且最致命的问题是，整个游戏时不时会出现明显的卡顿，帧率不够稳定。
 
-![](https://pic.yupi.icu/1/1786943521676-4e775bcf-850c-4d1d-88f9-aa3ba08cbff8.png)
+![](/imgs/4be52b03e50f1469.png)
 
 最后是平平无奇的结算画面，一般。
 
-![](https://pic.yupi.icu/1/1786943584423-9095cd16-3916-445b-b6d7-ee30bb4c1f6d.png)
+![](/imgs/bf8c59c1cf82e214.png)
 
 
 ### 实战 1 对比
@@ -232,7 +229,7 @@ Kimi K3 虽然场景画面还行，但游戏机制太单一，还有卡顿问题
 
 为了方便测试，我直接在提示词里把 API Key 提供给了 AI，省去手动配置环境变量的步骤。
 
-![](https://pic.yupi.icu/1/1786935817947-28512ebd-63a7-45bf-9282-89bb4807bfbf.png)
+![](/imgs/a1a03ba90e014978.png)
 
 
 ### GLM-5.3 成品效果
@@ -243,19 +240,19 @@ Kimi K3 虽然场景画面还行，但游戏机制太单一，还有卡顿问题
 
 产品引导做得也很到位，告诉你可以用一句话画出专业图表，还给了几个示例类型。
 
-![](https://pic.yupi.icu/1/1786947000691-52c43b54-e03d-41bc-a419-2f9e0b150548.png)
+![](/imgs/d32a5de29ea19347.png)
 
 我让 AI 帮我画出 DeepSeek Harness 的架构图。可以实时看到 AI 深度思考和生成 XML 代码的过程，右侧显示了一个炫酷的 Loading 动画。
 
-![](https://pic.yupi.icu/1/1786946651555-aa4f9a37-59c0-4f66-b691-dfae0ba85280.png)
+![](/imgs/c8604a698c1d2dc4.png)
 
 生成完成后，右侧立刻渲染出了完整的架构图，分层很清晰，而且保留了 draw.io 原本的元素编辑能力，可以直接拖拽和修改。
 
-![](https://pic.yupi.icu/1/1786946757859-0ff24615-3e22-4fe9-8ebb-0d3a35f74d72.png)
+![](/imgs/99f81a063f13cd88.png)
 
 更强的是，它支持连续对话修改。比如我说「帮我把 DeepSeek Harness Core 这里变成红色」，AI 就能精准定位到对应的元素并修改样式，右侧画布实时更新。
 
-![](https://pic.yupi.icu/1/1786946921119-ae9fcde6-f3bb-4da2-8244-70652b4a71c7.png)
+![](/imgs/da7ff3decd1607a5.png)
 
 整体效果非常不错，图片导出功能也能正常使用。
 
@@ -270,11 +267,11 @@ Kimi K3 虽然场景画面还行，但游戏机制太单一，还有卡顿问题
 
 而且左下角的提示文字还出现了溢出，这把 DeepSeek V4 Pro 的前端确实拉了。
 
-![](https://pic.yupi.icu/1/1786947686035-f5dce2a4-5bc2-49b5-a4aa-ac592a06a214.png)
+![](/imgs/863594e1cc929080.png)
 
 AI 生成图表的功能是可以正常使用的，但是没有实时展示 AI 思考过程的能力，你只能等它全部生成完了，才能看到结果。
 
-![](https://pic.yupi.icu/1/1786947674690-a291172a-4f39-4db1-8e0f-4d6f867da64e.png)
+![](/imgs/9d4473d69ebbe56e.png)
 
 最关键的是，DeepSeek V4 Pro 很明显是直接把 draw.io 整个嵌入到了前端页面中，没有做任何深度集成。给人一种很生硬的感觉，跟 GLM 那种把 draw.io 能力自然融合到自己界面中的做法差距明显。
 
@@ -287,15 +284,15 @@ Kimi K3 这次生成的界面布局跟 GLM 类似，也把 draw.io 自然融合�
 
 不过 draw.io 的图标和菜单栏还是原封不动地保留了下来，融合度比 GLM 略逊一筹。
 
-![](https://pic.yupi.icu/1/1786947935320-b6974f42-7680-490d-9c86-c938007a0c42.png)
+![](/imgs/5a45b9f42e74917f.png)
 
 AI 生成图表的功能正常，同样支持连续对话修改。
 
-![](https://pic.yupi.icu/1/1786948128170-e63bfe84-3e37-48be-ad72-2c16099debce.png)
+![](/imgs/3fb53fdd1ad82447.png)
 
 但是，后端逻辑明显没做好提示词约束和工具校验，有时候 AI 生成的内容会翻车，直接把 XML 源码糊在界面上而不是渲染成图形。
 
-![](https://pic.yupi.icu/1/1786948418039-419ad351-70b1-4e5a-9e14-0378b904a7b9.png)
+![](/imgs/31b7e62f69fcef89.png)
 
 整体来看，Kimi K3 的前端设计能力跟 GLM-5.3 相当，但后端稳定性差了一截。
 
@@ -323,7 +320,7 @@ DeepSeek V4 Pro 虽然也正常实现了核心功能，但是界面粗糙，集�
 
 两个项目累计消耗了 1151 积分，由于我订的是 Pro 套餐（538 元/月），每周额度是 6 万积分，算下来这次的消耗只占了周额度不到 2%，折算成钱连 3 块都不到。
 
-![](https://pic.yupi.icu/1/image-20260817154109537.png)
+![](/imgs/e6cd1b9f9f10eb19.png)
 
 由于我的 Kimi K3 套餐过期了，新的抢不到，所以是直接用 API Key 接入的，总共消耗了 31.07 元；涨价之后的 DeepSeek V4 Pro 消耗了 13.99 元。
 
@@ -333,7 +330,7 @@ DeepSeek V4 Pro 虽然也正常实现了核心功能，但是界面粗糙，集�
 
 **在开源世界里，GLM-5.3 目前可以说是编程能力的天花板。**
 
-![](https://pic.yupi.icu/1/%25E6%25BB%2591%25E5%258A%25A8%25E5%258F%2598%25E5%2594%2590%25E5%2599%25A8%25E4%25B8%25AD.jpeg)
+![](/imgs/fe1f46ab36657528.jpg)
 
 而且智谱在发布文章中提到，Hugging Face 之前遭遇安全攻击的时候，Anthropic 的 Mythos 模型只面向约 150 家大型机构提供服务，更多的中小企业和开源项目在最需要帮助的时候，反而用不上最强的防御工具。
 

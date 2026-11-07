@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Gemini CLI：Google 的免费 AI 命令行工具实测》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 Google 推出了一个很有意思的 AI 命令行工具 —— Gemini CLI，直接把 AI 塞进了终端里。
 
-![](https://pic.yupi.icu/1/1750927083919-e42152fe-9df9-4686-b813-388ae261b738.png)
+![](/imgs/ebfe38030f57958d.png)
 
 根据 [官方介绍](https://github.com/google-gemini/gemini-cli)，这个工具能：
 
@@ -29,7 +26,7 @@ Google 推出了一个很有意思的 AI 命令行工具 —— Gemini CLI，直
 
 对标 Claude Code，现在还有免费使用额度、而且最好的是代码开源！
 
-![](https://pic.yupi.icu/1/image-20260112165459541.png)
+![](/imgs/68ff9447e8f024e6.png)
 
 截止到 2026 年 1 月，Gemini CLI 已经有 **9 万+ GitHub Stars**，火箭式涨星！
 
@@ -57,19 +54,19 @@ brew install gemini-cli
 
 安装完成后，输入 `gemini` 命令，做一些基础的设置：
 
-![](https://pic.yupi.icu/1/1750927215041-aef86c7f-90b6-41e1-8509-cb53809372dd.png)
+![](/imgs/ceb9f614f54c6dd9.png)
 
 接下来是关键了，需要经过一波账号验证，个人用户选第一项就好。
 
-![](https://pic.yupi.icu/1/1750927255279-3b2d860a-c514-492a-8b27-a8abe27b4b31.png)
+![](/imgs/9d6a10755378259a.png)
 
 这里大家可能会遇到 2 种验证失败的情况，第一种是网络原因（这个不好搞），第二种是说账号类型不符合要求，如图：
 
-![](https://pic.yupi.icu/1/1750927301003-4937f694-3fc9-493f-8309-e169439f59fa.png)
+![](/imgs/d0f084bec2ef1159.png)
 
 对于第二种情况，解决方案很简单。进入 [Google Cloud](https://console.cloud.google.com/) 控制台，新建一个项目得到 `project_id`：
 
-![](https://pic.yupi.icu/1/1750927486133-ecf76c02-ba82-4f85-adfe-4d168247bee6.png)
+![](/imgs/c8f05567b28bcff7.png)
 
 然后在终端输入下列命令设置环境变量，重试就能登录进去了：
 
@@ -85,7 +82,7 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 接下来我选了 8 个不同的场景来从多个方面验证它的能力，大家也可以感受下 Gemini CLI 的真实水平到底如何，大家说好才是真的好。
 
-![](https://pic.yupi.icu/1/1750928002955-c44764ed-abd4-4568-ad07-954d909aa360.png)
+![](/imgs/f1b8a8d1eb95004c.png)
 
 ### 1、基础问答
 
@@ -97,19 +94,19 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 结果没想到，一上来就报错了？而且各种胡言乱语。
 
-![](https://pic.yupi.icu/1/1750928093701-0a2cdf6c-483c-4198-8933-00268b7ca2af.png)
+![](/imgs/4ba516aafaa1dff0.png)
 
 过了一会儿，终于满屏飘红了，看报错的意思是我没开启 API 权限：
 
-![](https://pic.yupi.icu/1/1750928146165-9359e7e2-0dfa-4b7e-b3bb-31bfcf94b540.png)
+![](/imgs/0a88034d151f244c.png)
 
 直接访问错误信息中的网址，就能去控制台开启 API 权限了，开一下开一下：
 
-![](https://pic.yupi.icu/1/1750928172586-6ec6dd3b-db41-4fb3-b096-e933936e1e37.png)
+![](/imgs/5a7155cf9c2e7882.png)
 
 再来！这次 AI 的回复就对味儿了，他说自己是个AI软件工程师，确保操作的透明和安全。结果还可以，就是速度有点小慢啊，这么一个简单的问题花了 20 秒，这也是智能体的一个副作用吧。
 
-![](https://pic.yupi.icu/1/1750928224341-15221ba1-7dd2-462a-91f2-f9d832eda07c.png)
+![](/imgs/d5619144621b4b55.png)
 
 
 
@@ -123,17 +120,17 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 结果 AI 给我推荐了几个表情包网站，无法直接下载：
 
-![](https://pic.yupi.icu/1/1750928294365-8a9833e9-a05a-413f-8090-af944d2b4daf.png)
+![](/imgs/de324f865658b087.png)
 
 是不是不支持下载工具啊？
 
 我们输入下 `/` 键，就可以看到 Gemini CLI 支持的命令：
 
-![](https://pic.yupi.icu/1/1750928337773-c1fec292-a628-4b3d-93e4-a8846ab7b5b2.png)
+![](/imgs/1fb8c94cd81c44e6.png)
 
 进入查看工具列表，发现好像没有网页资源下载工具，也是难为 AI 了。但是它支持编写 Shell 脚本，所以我们不妨引导 AI 编写脚本来实现资源下载。
 
-![](https://pic.yupi.icu/1/1750928445912-9ba1f2bd-2262-499b-bec0-0f5caf967a47.png)
+![](/imgs/a1743872ceeb00e8.png)
 
 提示词：
 
@@ -143,19 +140,19 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 这次就可以看到智能体开始自主规划任务了，先创建了一个脚本，然后 “写文件” 操作需要我们确认，这里建议选择仅允许一次，安全一些：
 
-![](https://pic.yupi.icu/1/1750928484880-802fa820-8ebe-44d2-963e-34b4eeca590c.png)
+![](/imgs/483abb6da4a55f88.png)
 
 遇到问题它会尝试 **重新规划** 然后重试，这也是智能体的一个关键能力：
 
-![](https://pic.yupi.icu/1/1750928516938-edbd9bb5-1507-4835-a83f-fa64ab5bed4d.png)
+![](/imgs/f80a280e386b51f9.png)
 
 任务执行完后还记得清理脚本，这个很不错。
 
-![](https://pic.yupi.icu/1/1750928581541-3e1fdfc3-f18b-4202-9b74-b7e351cce7fd.png)
+![](/imgs/280d7e44350c3414.png)
 
 好了，大功告成，我们看看下载好的文件，这个尺寸是认真的么？果然翻车了，下载的图片根本不对！
 
-![](https://pic.yupi.icu/1/1750928679026-e945b956-7b1c-40ae-b941-5c41afbab70f.png)
+![](/imgs/00b96aba88d3c0a4.png)
 
 
 
@@ -171,27 +168,27 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 结果当我输入 `@` 键指定文件路径时，好家伙，输入框直接卡死了？该说不说，这个交互体验不够好，我每次选择文件都会卡，而且选择不了目录。
 
-![](https://pic.yupi.icu/1/1750928995135-adc3d93a-6afc-4c0e-b971-5ba627ec3fc5.png)
+![](/imgs/0f09dd8fe48182a4.png)
 
 经过一番折腾，我发现 得慢点选择，跟着程序列举出的目录树进行选择，就先选一个图片吧：
 
-![](https://pic.yupi.icu/1/1750929221785-9d4261ea-92e5-439e-b038-54ccb9bcfa33.png)
+![](/imgs/77e797f3af7ff14c.png)
 
 好，这次 AI 聪明了，问我是不是要处理多个文件，必须的：
 
-![](https://pic.yupi.icu/1/1750929281202-176c6599-3e3c-4b0c-93ba-2462c91bf375.png)
+![](/imgs/b5ede368112b53e4.png)
 
 然后 AI 发现无法处理图片，要下载一个图片处理工具，然后它说要利用 Mac 上的软件包管理工具来安装，同意即可：
 
-![](https://pic.yupi.icu/1/1750929456285-d75c4e55-2593-424c-8bf0-1e52222305eb.png)
+![](/imgs/1c70660ba0e44d52.png)
 
 经过漫长的等待，等了快 10 分钟竟然还没好？！
 
-![](https://pic.yupi.icu/1/1750929498503-93b9d475-97a3-4979-92b5-c1538dce9396.png)
+![](/imgs/454d95917ae41684.png)
 
 可能是我自己的网络原因吧，但我实在等不下去了。老实说测到这里，我心态都已经有点崩了，凌晨两点半隔这儿等软件安装？
 
-![](https://pic.yupi.icu/1/1750929564667-ba06cda8-cd5e-44b5-afac-28c62e3af961.png)
+![](/imgs/27daad0745ae1560.png)
 
 不是，这玩意你写个简单的 Python 脚本不就搞定了？
 
@@ -203,15 +200,15 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 可以看到 AI 安装了图像处理库，然后创建了一个虚拟环境，你别说它对安全性的考虑还是 ok 的：
 
-![](https://pic.yupi.icu/1/1750929702268-23a76696-f001-444f-8986-f28ad42d3b39.png)
+![](/imgs/488a1c9cb582ad54.png)
 
 然后编写脚本并执行：
 
-![](https://pic.yupi.icu/1/1750929740570-990bbe0f-f685-4e7d-be7f-ef53402882e5.png)
+![](/imgs/deb3087dbadc3cf9.png)
 
 任务成功完成，看下效果：
 
-![](https://pic.yupi.icu/1/1750929779663-14caecd9-ae80-4727-bc3f-0542fbdf71fe.png)
+![](/imgs/64f35f5d2308ba16.png)
 
 尺寸确实放大了，格式也转换成功了，GIF 也成功生成了。终于顺利完成了一次任务，还不戳。通过这种方式处理本地图片确实是要比网页端的 AI 应用方便很多。
 
@@ -227,15 +224,15 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 这次生成速度还是挺快的，就是过程中得多次进行人工确认：
 
-![](https://pic.yupi.icu/1/1750929959173-97f40707-bbcc-4cba-a021-4e3c9e7372d4.png)
+![](/imgs/57eb1ac8a8c2eade.png)
 
 我们来看下生成的网站效果：
 
-![](https://pic.yupi.icu/1/1750930213995-9ca12c77-e2f4-4626-9da4-8f2783d73eeb.png)
+![](/imgs/c5fb8950c05de59e.png)
 
 可以调整像素的密度，还可以一键下载照片，效果还是挺不错的，这次任务 AI 也顺利完成了~
 
-![](https://pic.yupi.icu/1/1750930254795-38b8adcb-3a87-44dd-99d4-0b37532ae1fc.png)
+![](/imgs/2079fa02f1678468.png)
 
 
 
@@ -249,19 +246,19 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 由于 AI 有上下文，它直接 get 到了我想让他分析哪个项目，然后很快生成了一个项目文档。
 
-![](https://pic.yupi.icu/1/1750930402860-d39c7707-0e3d-4cc8-aaeb-dbf9344589e4.png)
+![](/imgs/24ebb33bd1eb5984.png)
 
 然后我让 AI 帮我打开文档文件：
 
-![](https://pic.yupi.icu/1/1750930530481-8b8f0abf-30fd-48ff-b36c-61b168af2cde.png)
+![](/imgs/f1ec4914200a84d5.png)
 
 本来是想让 AI 直接打开 Markdown 阅读软件的，但没想到它直接给我输出了一堆无关的内容，我表示不理解。
 
-![](https://pic.yupi.icu/1/1750930702812-27e5e920-9e3c-48f7-8957-60025b80b773.png)
+![](/imgs/7dc25ff5d43629d8.png)
 
 那我自己打开好了吧，生成的文档内容还是过关的，标准的 GitHub 开源项目文档。
 
-![](https://pic.yupi.icu/1/1750930759557-f4b0a16f-d1c8-46fe-b0e5-21910a2bf752.png)
+![](/imgs/c638621116a06398.png)
 
 
 
@@ -275,11 +272,11 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 结果就有点乌龙了，AI 给我生成了一个架构设计文档：
 
-![](https://pic.yupi.icu/1/1750930929870-b368fc52-c779-42f0-9ad5-fb056b99ef84.png)
+![](/imgs/c6dbbc08cc1715a9.png)
 
 你管这纯英文文档叫做架构图？
 
-![](https://pic.yupi.icu/1/1750930979557-8ab249fe-727e-4041-99b7-9e154a742090.png)
+![](/imgs/f3aae85e93deee3f.png)
 
 那我再发挥一下仅存的专业性，让他帮我生成架构图的绘图代码：
 
@@ -289,23 +286,23 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 这次看着靠谱多了：
 
-![](https://pic.yupi.icu/1/1750931031112-0247644b-2626-459a-ae81-a240ad782400.png)
+![](/imgs/5affcc59f1a6db7c.png)
 
 来，我们把 AI 生成的架构图代码文件拖到 draw.io 中打开。
 
 不是哥们？你管这叫架构图？
 
-![](https://pic.yupi.icu/1/1750931055227-1e674680-468c-4c4d-b182-8bd3026c993e.png)
+![](/imgs/e3d33f17f335ac23.png)
 
 来，同样的任务，我们用 Cursor + Claude 4 试一试。
 
 哎，你看人家 Claude 很有自信，说 “我可以为您生成一个更完整和详细的分层架构图”：
 
-![](https://pic.yupi.icu/1/1750931203239-924cc09e-c80f-4acf-9855-66d6b4102cac.png)
+![](/imgs/3cd0f4f71d3ed35b.png)
 
 好，看下生成后的效果，是不是高下立判啊！
 
-![](https://pic.yupi.icu/1/1750931312134-a573f7ff-07ca-4852-830a-07d74bc21690.png)
+![](/imgs/c602b6c26adbd3e2.png)
 
 
 
@@ -319,7 +316,7 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 可以看到 AI 使用 git log 命令查看代码提交记录，然后开始生成图表。
 
-![](https://pic.yupi.icu/1/1750931424995-0e5cd8c2-1dfe-4f09-ac29-c08b1c1388b4.png)
+![](/imgs/ad6a7f7d98cc285f.png)
 
 等等？图表在哪儿呢？？？
 
@@ -339,7 +336,7 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 这次 AI 干脆直接拒绝了，不支持图片创作，你倒是写个脚本啊？！你不用 AI，用个图像处理也行对不对？
 
-![](https://pic.yupi.icu/1/1750931630520-47da3d4e-c55e-4b1c-9507-17dd0f08cb1e.png)
+![](/imgs/12df9ba87bb002e8.png)
 
 那再解释个图片试试，输入解释图片提示词：
 
@@ -349,7 +346,7 @@ export GOOGLE_CLOUD_PROJECT=<你的 project_id>
 
 这倒是解释出来了，吐槽一下，竟然还是英文输出，可能跟程序本身的语言设定有关吧，体验没有那么好。
 
-![](https://pic.yupi.icu/1/1750931670952-251c1eb3-487a-44ca-b217-194f92a5442a.png)
+![](/imgs/e963e1c551313302.png)
 
 Gemini CLI 背后用的应该是 Gemini 2.5 Pro 模型，是具有原生多模态输入能力的，也就是说能识图，但是并不能创作图片，包括创作音频和视频应该都是通过第三方大模型（或者 MCP 工具实现的）。
 
@@ -361,11 +358,11 @@ Gemini CLI 背后用的应该是 Gemini 2.5 Pro 模型，是具有原生多模�
 
 结果出乎我意料了，AI 提示输入超出了 token 限制？
 
-![](https://pic.yupi.icu/1/1750931736351-d36ac39e-23ce-42c1-af30-d1f56284d48a.png)
+![](/imgs/01f84ebb0ad222b5.png)
 
 不是号称 100 万 token 上下文么，怎么读个微型 PDF 就超出限制了呢？你无法生成 PDF 我都不觉得奇怪，我这个 PDF 文件就那几个字几张图，为什么？
 
-![](https://pic.yupi.icu/1/1750931817587-41d3c5ef-aca8-4ba6-b89a-a1d55c739c61.png)
+![](/imgs/adeb7ca156f1264b.png)
 
 本来还想让他生成音频和视频的，算了算了，我对这个工具已经有一些自己的判断了。
 

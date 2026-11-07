@@ -10,12 +10,9 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《盘点 32 个 AI 编程工具，一口气全部介绍！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 今天一口气盘点 32 个 AI 编程工具，全部介绍完！
 
-![](https://pic.yupi.icu/1/sprite_AI%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7%E5%9B%BE%E6%A0%87%E7%B2%BE%E7%81%B5%E5%9B%BE_original_v1.jpg)
+![](/imgs/48e68901ae207d1a.jpg)
 
 如今的 AI 编程工具实在太多了，很多同学问我到底该用哪个，所以我干脆做了一期「全网最全」的 AI 编程工具盘点。
 
@@ -39,7 +36,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 AI 编程能力加上可视化的开发体验，综合来看在同类工具里 **基本没有对手**。
 
-![](https://pic.yupi.icu/1/1_cursor.png)
+![](/imgs/6068a542d181069d.png)
 
 而且 Cursor 的更新迭代非常频繁，到现在已经有 Cloud Agents 云端并行、Browser Use 浏览器自动化测试、Design Mode 直接在界面上选中元素让 AI 改代码、内置 AI 生图等等能力了。还提供了命令行版本和网页版，手机上打开网页就能随时随地操作 Agent 干活。
 
@@ -69,11 +66,11 @@ AI 编程能力加上可视化的开发体验，综合来看在同类工具里 *
 
 Copilot 的产品形态非常丰富，有 VS Code 插件、GitHub 网页版、还有命令行终端，覆盖面是所有工具里最广的。毕竟是微软官方出品，和 VS Code 的集成是真的好，界面优雅、交互体验我觉得是所有工具里最舒服的。MCP 和 Skills 等插件扩展也可以可视化管理，能力也很齐全。
 
-![](https://pic.yupi.icu/1/2_copilot.png)
+![](/imgs/743fd2a970483259.png)
 
 我还带大家用 GitHub Copilot 网页版搭建过一个能自主开发、上线、修 Bug 的智能体。
 
-![](https://pic.yupi.icu/1/1774937381654-bde29eb7-3d0f-4869-a065-f7ddb09950dd-20260514180312605.png)
+![](/imgs/dff6832129182457.png)
 
 曾经 Copilot 的性价比巨高，每月 10 刀就能用上 Opus 模型，还有 30 天免费试用，那会儿真的是王者。但现在官方扛不住成本了，好日子到头了，使用门槛变高了不少。6 月 1 号开始还要切换到按 Token 计费的模式，上下文也有 20 万的限制。
 
@@ -96,7 +93,7 @@ OpenAI 的 Codex 最近更新速度嘎嘎快，奥特曼说它正在经历 ChatG
 
 Codex 的界面主打一个简洁，第一眼看上去甚至不像 AI 编程工具，更像个 AI 聊天助手。但实际上功能很全面，MCP 扩展、Skills 技能包、插件市场、自动化、Git 集成、Browser Use、Computer Use 这些工程能力基本都具备了。最近甚至还搞了个 AI 桌面宠物加情绪价值。。。
 
-![](https://pic.yupi.icu/1/3_codex.png)
+![](/imgs/e4d823c141c8d5b2.png)
 
 Codex 也独创了一些 AI 编程玩法，比如推出了 `/goal` 命令，可以设定一个持久目标让 AI 自主工作数小时，不需要人工干预。
 
@@ -128,7 +125,7 @@ Codex 的易用性也差一些，比如配置 MCP 服务要手写信息，不像
 
 Windsurf 核心的 Agent 叫 Cascade，能跨多个文件自主规划和执行多步编辑。被收购之后还集成了 Devin，可以一键把复杂任务委派给云端执行，本地和云端双路协作。它还有个 Memories 功能，Agent 会逐渐学习你的代码库架构和编码风格，用得越久建议越精准。
 
-![](https://pic.yupi.icu/1/4_windsurf.png)
+![](/imgs/5834e5805ce12c7d.png)
 
 Windsurf 的价格跟 Cursor 基本持平。不过跟 Cursor 比起来，模型灵活度和社区生态还是有差距的，国内同样有网络门槛。
 
@@ -147,7 +144,7 @@ Trae 是字节跳动的 AI IDE，分为国内版和国际版，二者在模型�
 
 国际版默认集成了 GPT、Gemini、DeepSeek 等多家主流模型，支持用自己的 API Key 使用 Claude。功能上主打的是 SOLO 模式，具备长期记忆，能全自动开发、测试、调试和部署项目。而且新上线了移动端 App，手机上也能操作。
 
-![](https://pic.yupi.icu/1/5_trae.png)
+![](/imgs/76f24cc1e6ed799e.png)
 
 不过国际版和其他国外工具一样有网络门槛。
 
@@ -171,7 +168,7 @@ Kiro 是 AWS 推出的 AI IDE，跟其他工具最大的不同是它主打「规
 
 有点像计划模式，但是比计划模式更严谨。所有设计意图都版本控制在仓库里，还有 Agent Hooks 功能，比如文件保存的时候能自动触发测试和文档更新。
 
-![](https://pic.yupi.icu/1/6_kiro.png)
+![](/imgs/8235eb1cb24cb5a1.png)
 
 但对于绝大多数刚上手 AI 编程的同学来说，改个小功能还得先走一遍规格审批，把简单的事搞麻烦了。
 
@@ -194,7 +191,7 @@ Zed 是轻量级的 AI 编辑器，刚发布 1.0 正式版。
 
 它还内置了 120fps 的实时多人协同编辑，不需要装任何插件就能多人同时写代码，AI 功能方面也有 Agent 面板和并行多 Agent。
 
-![](https://pic.yupi.icu/1/7_zed.png)
+![](/imgs/8317d028dc81111f.png)
 
 不过整体成熟度跟 Cursor 还是有差距的，扩展生态也比较小。说实话，现在用 AI 编程，大部分时间都在等 AI 思考和输出，编辑器本身快一点儿的优势感知不太明显。
 
@@ -212,7 +209,7 @@ Zed 的 Pro 版定价 $10/月，差不多是 Cursor 的一半价格，学生还�
 
 Antigravity 是 Google 推出的 Agent-first IDE，它集成了编辑器、终端和内置浏览器三个工作面，Agent 可以横跨这三个面自主执行任务，最多支持 5 个 Agent 并行。你只需要审批结果就行，Agent 还会生成截图、录屏、代码 diff 这些可验证的交付物，方便你确认质量。模型方面不仅支持 Google 自家的 Gemini，Claude Opus 也能用。
 
-![](https://pic.yupi.icu/1/8_antigravity.png)
+![](/imgs/fd9dc8f6997a8c3f.png)
 
 不过由于是 Google 的产品，国内使用嘛，你懂的。。
 
@@ -234,17 +231,17 @@ Antigravity 自从发布之后，更新节奏不如 Cursor 和 Codex 那么频�
 
 **Trae 国内版** 跟国际版有些差距，模型换成了豆包 Seed Code、DeepSeek、Kimi 等国产模型，但核心 AI 编程功能完全免费无限制（就是得排队）。
 
-![](https://pic.yupi.icu/1/9_trae_cn.png)
+![](/imgs/bb40db15bc1e4eb5.png)
 
 **Qoder** 底层用的自研 Qwen-Coder 模型，国内版也支持接入第三方模型。它有个 Repo Wiki 功能，可以自动生成项目知识图谱，适合理解大型代码库。
 
-![](https://pic.yupi.icu/1/9_qoder.png)
+![](/imgs/b16469a20be679ee.png)
 
 后来 Qoder 又推出了对标 Codex 的桌面版，编程、办公、电脑操控、定时自动化都能做，完整用法可以阅读本目录中的《Qoder：国产 AI 桌面应用保姆级教程》。
 
 **腾讯 CodeBuddy** 在产品形态上比较全面，有独立 IDE、VS Code/JetBrains 插件、还有命令行版本。CodeBuddy 最大的亮点是跟微信生态的深度集成，支持微信小程序开发和企业微信 Bot 集成，搞微信相关开发用它比较合适。
 
-![](https://pic.yupi.icu/1/9_codebuddy.png)
+![](/imgs/ac25680e23d1f641.png)
 
 三个工具的价格：
 
@@ -266,7 +263,7 @@ OpenCode 是开源的终端 AI 编程工具，GitHub 上有十几万 Star！
 
 OpenCode 的优势在于完全免费开源，支持非常多的模型提供商，提供了 Scout Agent 代码库研究功能，对代码库的理解和导航比较方便。而且还出了桌面应用和 VS Code 扩展。
 
-![](https://pic.yupi.icu/1/10_opencode.png)
+![](/imgs/a236e6fcf3234414.png)
 
 我在它刚火的时候就试过了，当时印象最深的是前端界面做的非常漂亮，用户体验上碾压 Claude Code。但后端工程能力跟 Claude Code 还是有差距的。
 
@@ -282,7 +279,7 @@ Warp 是定位比较特殊的 AI 终端工具，最近刚刚开源了。
 
 它跟 Claude Code、OpenCode 这类终端 AI 编程工具有个本质区别，其他工具是你在终端里运行一个 AI 程序，而 Warp 本身就是一个终端软件，给整个终端增加了智能化，像是终端和桌面端的混合体。
 
-![](https://pic.yupi.icu/1/11_warp.png)
+![](/imgs/be6272a63c7dfc1e.png)
 
 不过实际体验下来，我觉得有点儿不上不下。既然要用 AI 编程，我不如直接去用 Cursor 这种有完整界面的工具，效率更高。而且 Warp 缺少新用户的引导，小白上手会有点儿懵。
 
@@ -305,7 +302,7 @@ Goose 是一个开源 AI Agent，目前已经捐给了 Linux 基金会。
 
 它有个 Recipes 功能，可以把扩展、提示词和设置打包成可复用的工作流模板分享出去，MCP 扩展生态也很丰富，但没什么其他的亮点了。
 
-![](https://pic.yupi.icu/1/12_goose.png)
+![](/imgs/24d4feaeb1e54d72.png)
 
 不过 Goose 的知名度太低了，整体生态过于小众。
 
@@ -319,7 +316,7 @@ Aider 是开源的终端 AI 编程工具，GitHub 上有好几万 Star。
 
 但是我试了一下，使用体验一言难尽，连调用工具都能失败，给我一种 23 年 AI 刚出时的感觉，怪不得生态那么小众。。
 
-![](https://pic.yupi.icu/1/13_aider.png)
+![](/imgs/c4a74d5e9fa64ea3.png)
 
 
 
@@ -331,7 +328,7 @@ Claude Code 是 Anthropic 推出的终端编程 Agent，处理复杂任务的能
 
 它还是很多 AI 编程新能力和规范的引领者。比如 CLAUDE.md 持久记忆文件，最早就是在 Claude Code 中推出的，后来被行业标准化为 AGENTS.md，其他工具纷纷跟进。还有 Hooks 事件驱动系统、Subagents 子智能体架构、Agent Teams 多 Agent 协作这些机制，也都是通过 Claude Code 率先落地的。
 
-![](https://pic.yupi.icu/1/14_claudecode.png)
+![](/imgs/5df007b6edf955f4.png)
 
 对了，前段时间 Claude Code 不是还把源码送给大家学习了？这是推动整个行业进步啊！
 
@@ -380,7 +377,7 @@ Claude Code 作为命令行 AI 编程的绝对标杆，AI 编程能力最强、�
 
 这三家的核心能力都差不多，代码补全、代码解释、单元测试生成、多语言支持这些。国内可以直连使用，中文体验很好。
 
-![](https://pic.yupi.icu/1/%E9%80%9A%E4%B9%89%E7%81%B5%E7%A0%81.png)
+![](/imgs/1b4fa368810c47c8.png)
 
 不过 25 年之后，这几个产品就没有太大的风浪了，在 Cursor、Claude Code 这些工具面前存在感越来越弱。
 
@@ -392,7 +389,7 @@ Cline 是开源 AI Agent 插件里的标杆，GitHub 上有 6 万多 Star。
 
 相比前面那三家国产插件，Cline 最大的优势在于 Agent 能力更强，支持 Plan & Act 双模式和 Checkpoints 回滚机制，改坏了可以一键回到之前的状态。
 
-![](https://pic.yupi.icu/1/cline.png)
+![](/imgs/73bf64295e7bc005.png)
 
 Cline 在 VS Code 插件市场的安装量有几百万，在全球开发者中口碑不错，社区活跃度也一直在线。
 
@@ -404,7 +401,7 @@ Cline 在 VS Code 插件市场的安装量有几百万，在全球开发者中�
 
 **JetBrains Junie** 是 JetBrains 自家的 AI Agent，它可以完全委派任务自主执行，利用 IDE 的语法树做编译器级别的纠错。但是只支持 JetBrains 系 IDE，不支持 VS Code，而且需要改账号地区才能用。
 
-![](https://pic.yupi.icu/1/junie.png)
+![](/imgs/d1600429e57ced43.png)
 
 **Kilo Code** 本质上是 Cline 的一个 fork 分支，走了商业化路线。支持的模型和平台很多，覆盖 VS Code、JetBrains、CLI、移动端等，还有 Memory Bank 持久化项目上下文的功能。
 
@@ -420,7 +417,7 @@ Cline 在 VS Code 插件市场的安装量有几百万，在全球开发者中�
 
 我记得 Tabnine 应该是我上大学那会儿很火的代码补全插件，但现在已经全面转向企业市场了。免费版停了，个人付费版也在下架，目前只剩企业套餐，普通开发者基本用不了。
 
-![](https://pic.yupi.icu/1/tabnine.png)
+![](/imgs/adc6b7a389108311.png)
 
 
 
@@ -442,7 +439,7 @@ Cline 在 VS Code 插件市场的安装量有几百万，在全球开发者中�
 
 Manus 耗时最长，花了 15 分钟左右，但 **还原度是最高的**，把我网站的风格抓得很准。
 
-![](https://pic.yupi.icu/1/manus.png)
+![](/imgs/adbbae8d2caa214e.png)
 
 我之前对 Manus 的印象其实是不好的，因为有一次我做视频给大家演示 Manus 结果被骂的很惨。。。
 
@@ -460,15 +457,15 @@ Manus 耗时最长，花了 15 分钟左右，但 **还原度是最高的**，�
 
 它最擅长的还是前端 UI 生成，虽然官方已经支持通过 Next.js Server Actions 和 API Routes 做一些后端逻辑了，但实际生成的后端代码质量还不太行，适合做原型不适合直接上生产。
 
-![](https://pic.yupi.icu/1/v0dev.png)
+![](/imgs/38cba63e870e320c.png)
 
 **Lovable** 生成速度最快，3 分 08 秒就搞定了，但 **没有还原我网站的样式**。它更擅长从零开始生成 MVP，深度捆绑了 Supabase 做认证和数据库，还有 Stripe 支付脚手架，对非技术背景的同学比较友好。
 
-![](https://pic.yupi.icu/1/lovable.png)
+![](/imgs/81f6ae6065cb8a5c.png)
 
 **Replit Agent** 花了 6 分钟，**也没有还原我网站的样式**。相比其他两个产品，也没有什么独特的功能。
 
-![](https://pic.yupi.icu/1/replit.png)
+![](/imgs/acf46a9ecc486046.png)
 
 价格上几个平台都差不多：
 
@@ -486,7 +483,7 @@ Manus 耗时最长，花了 15 分钟左右，但 **还原度是最高的**，�
 
 结果这次实测下来，翻车了。。。它把需求想复杂了，直接进入了 Plan 模式，结果把我免费账号的 Tokens 都烧完了，却一行代码都没写出来。
 
-![](https://pic.yupi.icu/1/boltnew.png)
+![](/imgs/3fcc8a56d23cb7f8.png)
 
 赣！你让新手怎么用啊？
 
@@ -506,15 +503,15 @@ AI Agent 是一种能自主完成复杂任务的智能助手，你给它一个�
 
 OpenClaw 是一个开源的全能 AI 助手，它最大的优势是可以接入微信、钉钉、飞书等各种平台，随时随地给 AI 派活，做个 Demo 确实很方便。
 
-![](https://pic.yupi.icu/1/openclaw.png)
+![](/imgs/01ce5710980cbfc8.png)
 
 我在它爆火的时候给大家出过很多篇教程，从保姆级安装、到高阶玩法、再到项目实战全都有。
 
-![](https://pic.yupi.icu/1/OpenClaw%E6%95%99%E7%A8%8B%E6%BC%94%E7%A4%BA-%E6%8A%80%E8%83%BD%E7%B3%BB%E7%BB%9F.png)
+![](/imgs/f142574680ed59d8.png)
 
 Hermes Agent 也是现在最流行的 Agent 产品之一，跟 OpenClaw 属于同一类产品。但是它跟 OpenClaw 最大的区别在于它有「自进化能力」，每次解决问题后会自动生成可复用的技能，越用越聪明。
 
-![](https://pic.yupi.icu/1/hermes.jpg)
+![](/imgs/a8395b4c68893621.jpg)
 
 我自己拿它们做过一些 Demo，只能说「能用」，但真要做正儿八经的项目，稳定性远不如专业 AI 编程工具。要做完整项目的话，大概率还是得用 Cursor 或者 Claude Code 来接管。而且 tokens 烧麻了！普通人要么不会玩，要么玩不起。
 

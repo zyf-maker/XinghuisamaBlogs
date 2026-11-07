@@ -3,15 +3,12 @@ title: "Vibe Coding 个人工具开发"
 summary: "在上一篇文章中，我们学习了完整的 5 步开发流程。现在，是时候把这套流程真正用起来了！"
 order: 3
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 14
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 个人工具开发》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -34,7 +31,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 技术选型上，我们使用 React + TypeScript + Vite 作为前端框架，Tailwind CSS 来写样式，最后部署到 Vercel 上线。这套技术栈很现代，也是目前最流行的前端开发方案。
 
-![](https://pic.yupi.icu/1/demoweb1.png)
+![](/imgs/c1daa850db93c835.png)
 
 
 ### 开发步骤
@@ -183,7 +180,7 @@ Vercel 会自动检测你的项目类型，配置构建命令，非常智能。�
 
 技术选型上，前端用 React + TypeScript + Vite，状态管理用 Zustand（一个轻量级的状态管理库，比 Redux 简单很多），样式用 Tailwind CSS，日期处理用 date-fns，数据存储用 LocalStorage。
 
-![](https://pic.yupi.icu/1/demoweb2.png)
+![](/imgs/f9bd10067f18371f.png)
 
 
 ### 开发步骤
@@ -241,7 +238,7 @@ AI 会实现添加功能的界面和逻辑，包括输入框、下拉选择、�
 
 技术选型上，前端用 React + TypeScript + Vite，Markdown 解析用 react-markdown，代码高亮用 react-syntax-highlighter，样式用 Tailwind CSS，数据存储用 LocalStorage。
 
-![](https://pic.yupi.icu/1/demoweb3.png)
+![](/imgs/8c94fb2551403fcf.png)
 
 
 ### 开发步骤
@@ -328,7 +325,7 @@ AI 会配置 react-syntax-highlighter，当 Markdown 中有代码块时，会用
 
 技术选型上，前端用 React + TypeScript + Vite，样式用 Tailwind CSS，通知用浏览器自带的 Notification API，数据存储用 LocalStorage。
 
-![](https://pic.yupi.icu/1/demoweb4.png)
+![](/imgs/a2b09fd31af4b409.png)
 
 
 ### 开发步骤
@@ -404,11 +401,11 @@ AI 会用 Audio 对象来播放音频文件。
 
 这个项目要实现天气查询功能。用户输入城市名称，查询当前天气，显示温度、天气状况、湿度、风速等信息。还要显示未来几天的天气预报。可以自动获取用户位置并显示天气。常用的城市可以收藏起来，方便下次查询。
 
-![](https://pic.yupi.icu/1/demoweb5.png)
+![](/imgs/787b1bfe12a94196.png)
 
 技术选型上，前端用 React + TypeScript + Vite，样式用 Tailwind CSS，天气数据通过 [OpenWeatherMap API](https://openweathermap.org/api) 获取（免费），收藏的城市用 LocalStorage 保存。
 
-![](https://pic.yupi.icu/1/image-20260112141920735.png)
+![](/imgs/dadad0c31f940131.png)
 
 
 ### 开发步骤

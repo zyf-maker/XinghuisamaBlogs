@@ -3,21 +3,18 @@ title: "爆冷！DeepSeek出局，苹果AI国行版将与阿里合作"
 summary: "爆冷！DeepSeek出局，苹果AI国行版将与阿里合作，由程序员鱼皮整理。"
 order: 2
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 2
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《爆冷！DeepSeek出局，苹果AI国行版将与阿里合作》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 苹果AI国行版确定了！
 
 据路透社最新消息，知情人透露，**苹果将与阿里巴巴合作为中国iPhone用户开发AI功能。**
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_3492cd18e2da4aeda68a8fb6d8622e5f@000000_oswg73838oswg1080oswg828_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/6f2dbf0c108a21d9.jpg)
 
 苹果AI的中国合作商终于确定了？
 
@@ -33,17 +30,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 此前， 苹果公司向开发者发送邮件，宣布将于**3月25日10:00-12:00**，在上海举行名为“**利用Apple智能的力量**”的开发者活动。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_02283f40797d4fb481ed7eec3875f843@000000_oswg376228oswg632oswg891_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/6654e309bde10c9c.jpg)
 
 活动主题将围绕Apple智能和机器学习来展开，这也暗示着，国行版苹果AI功能可能真的要来了。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_91040ba1ae3f46498fffd4de241f24f8@000000_oswg158117oswg1080oswg710_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/27a5d181bf475da9.jpg)
 
 ## **三星、苹果都没选DeepSeek**
 
 11日，**三星Galaxy AI的Galaxy S25发布会上，三星宣布嵌入智谱Agentic GLM**，让Galaxy具备了处理多模态数据的能力、使用工具、自主行动能力 。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_ac72f4a2b3424e58925506276b6e1f38@000000_oswg43917oswg1080oswg624_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/3065cd1d6fb1c21c.jpg)
 
 刚从三星选 智谱AI的消息中震惊地走出来，结果晚上苹果AI就爆出了“惊天大雷”。
 
@@ -51,7 +48,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 怪不得马云这么高兴，在阿里巴巴园区露面跟员工微笑打招呼。真是 春风得意马蹄疾啊！
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_12c26fd2583b4738ac20ea73804ee80f@000000_oswg55519oswg720oswg1258_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/47f58d14b01aa1c8.jpg)
 
 ## **DeepSeek成国产手机标配**
 
@@ -61,11 +58,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 **华为**率先宣布小艺助手App接入DeepSeek-R1，紧接着**荣耀**称YOYO智能体商店已上线DeepSeek-R1初体验版本，**OPPO**官宣其最新旗舰Find N5将直接接入DeepSeek-R1，**魅族**确认旗下手机产品及AI生态产品都将陆续集成DeepSeek技术，**努比亚**宣布将深度内嵌满血版DeepSeek-R1。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_2cfd0f0255f44e01ba3d7d7153d431ff@000000_oswg94676oswg631oswg315_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/301ed855c6c20cb4.jpg)
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_2390a6cf4ef94eeda9f0aa7f6f2c481a@000000_oswg88849oswg628oswg346_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/7e14e4acfd8d5d6f.jpg)
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_3bf49d3a51844e798decd30517e8304a@000000_oswg85257oswg629oswg340_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/ae14ee9b6e13bf93.jpg)
 
 另有消息称，小米和vivo也将接入DeepSeek-R1，但尚未公布具体的接入计划。
 
@@ -75,13 +72,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 之前苹果AI国行版还未传出确切消息时，网友对于DeepSeek的呼声最高。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_2eb7863ad8804847b186033a2843a45e@000000_oswg10164oswg400oswg122_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/2a081a789452d162.jpg)
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_bc0367de9446401190f37008c8046d03@000000_oswg9182oswg393oswg119_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/61ba3af33b2484e8.jpg)
 
 有网友直言，想让iPhone在大中华地区重回增长，没有比跟DeepSeek谈合作更好的办法了。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_2cd564af60fb4afe9c9b09f9f5c5db64@000000_oswg13769oswg385oswg140_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/cd1b688a64e8b775.jpg)
 
 苹果2024年总营收和净利润都有所增长，唯有大中华区业绩不尽人意，2024年全年营收同比下降7.73%，2025年第一季度营收同比下降11%。
 
@@ -95,12 +92,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 去年年底，苹果接入ChatGPT，成为第一家接入大语言模型的手机厂商，有网友为了体验苹果AI专门买了澳版和港版。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_f86a5e9a649b4287bc392a36571702ba@000000_oswg12013oswg325oswg120_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/671d4b251637f79d.jpg)
 
 听说国行版苹果AI有可能会接入DeepSeek，刚买完澳版的网友都觉得后悔了。
 
-![](https://img.36krcdn.com/hsossms/20250212/v2_378f0380d9714ac29fffbd69c98d3a42@000000_oswg14512oswg382oswg131_img_000?x-oss-process=image/format,jpg/interlace,1)
+![](/imgs/1aba0f3bffcb8c99.jpg)
 
 ---
 
-本文来自微信公众号[“科技每日推送”（ID：apptoday）](https://mp.weixin.qq.com/s?__biz=MjM5NzAwNzMyMA==&mid=2660165858&idx=1&sn=f1bd8e2c246ee31a1cfb2ba0caaa3e98&chksm=bcd82020a757eb7142ee70e48a376a4796aafe5bf1be419f1c9355022aa37dd3c13942c08f97&scene=0&xtrack=1#rd)

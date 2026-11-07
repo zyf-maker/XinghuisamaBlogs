@@ -3,19 +3,15 @@ title: "ChatExcel获近千万天使轮融资，全链路AI DataAgent从数据获
 summary: "共收录 4 条 AI 行业资讯，如ChatExcel获近千万天使轮融资，全链路AI DataAgent从数据获取到价值交易打造商业闭环平台；【ChatExcel·企业版】正式上线，一站式AI 数据解决方案，打造企业数据大脑！等。"
 order: 99
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-09-02"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《ChatExcel获近千万天使轮融资，全链路AI DataAgent从数据获取到价值交易打造商业闭环平台》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
-本文转载自： [ChatExcel获近千万天使轮融资，全链路AI DataAgent从数据获取到价值交易打造商业闭环平台](https://mp.weixin.qq.com/s/1SX6jKO-nfzJKiFxsgIJxQ)
-
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/fwwJ5QK6mmE3cTp8.webp)
+![](/imgs/0381eff1b366f215.webp)
 
 **ChatExcel **团队近日已完成近千万天使轮融资。此次融资由上海常垒资本、武汉东湖天使基金投资。本轮资金主要用于加速产品研发迭代，以及全球化市场运营推广，进一步提升ChatExcel在数据智能体（DataAgent）领域的领先地位。
 
@@ -27,11 +23,11 @@ ChatExcel定义AI DataAgent，打造数据全链路商业闭环平台
 
 ChatExcel凭借其深厚的学术背景与卓越的技术研发能力，在AI 表格处理与DataAgent 技术上取得了突破性进展。用户仅通过对话，即可处理Excel和数据分析，将用户从繁琐的公式与运算中解放出来，有效降低了Excel和数据使用门槛。
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/7vRSL9YwKeLq9tPD.webp)
+![](/imgs/4f69d9a0589c205a.webp)
 
 “我们很高兴能够获得这笔天使轮融资，这不仅是对 ChatExcel 团队技术实力和创新理念的认可，更为我们的未来注入了强大的发展动力。” ChatExcel 创始人逄大嵬表示，“我们将利用这笔资金，围绕数据全链路（数据获取、数据准备、分析洞察、数据可视化、决策应用、价值交换）构建AI DataAgent，让数据流通起来，打造商业闭环。”
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/EoTeHsrRX71CvZsd.webp)
+![](/imgs/c1d52689f02eca96.webp)
 
 目前，ChatExcel支持不同数据源处理与分析应用 ，从Excel文件到数据库数据、互联网网页、第三方数据，并且训练出全球首款适配AIPC级端侧部署的数据垂直模型。同时，ChatExcel 团队正在积极推进产品的迭代升级，计划在未来几个月内推出更多新功能，进一步提升产品的智能化水平和用户体验。随着融资的到位， ChatExcel也将加速开拓海外市场，推动 Data Agent在世界范围内的广泛应用。
 
@@ -61,24 +57,24 @@ ChatExcel融资啦~先给大家来波福利，🎁口说无凭，宠粉还是要
 
 **相关文章推荐**
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/PdCuSx5Zi76bDXAc.png)
+![](/imgs/c9ad1ca8aa639c86.png)
 
 01
 
 [【ChatExcel·企业版】正式上线，一站式AI 数据解决方案，打造企业数据大脑！](https://mp.weixin.qq.com/s?__biz=MzkzNDYwNDM3Mg==&mid=2247488351&idx=1&sn=d4b71436d60290875879911a8c36549a&scene=21#wechat_redirect)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/3iUTxaEpC3HZtzUv.png)
+![](/imgs/14f4ce477aa06f97.png)
 
 02
 
 [ChatExcel·桌面版全新上线、AI提示词优化、常用提示词保存功能上线|AiExcel更新](https://mp.weixin.qq.com/s?__biz=MzkzNDYwNDM3Mg==&mid=2247488329&idx=1&sn=82797957abd6ceae1df9798f1c8fcbf0&scene=21#wechat_redirect)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/zYJ8RwUHfbXyQ51d.png)
+![](/imgs/93857dc8a2f1883b.png)
 
 03
 
 [ChatExcel又又又迎来重大升级！处理速度提升300%，全球最快！](https://mp.weixin.qq.com/s?__biz=MzkzNDYwNDM3Mg==&mid=2247488254&idx=1&sn=04fb46bee37837fb5887a09e6e933bac&scene=21#wechat_redirect)
 
-![](https://pic.code-nav.cn/post_picture/1610518142000300034/StiCcBbFFnjz3gUO.webp)
+![](/imgs/96b1a456b1a66297.webp)
 
 点击阅读原文，开始处理Excel👉👉👉

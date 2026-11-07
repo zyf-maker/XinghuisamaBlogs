@@ -3,15 +3,12 @@ title: "如何利用DeepSeek翻身？抓住AI红利，普通人也能逆袭的3�
 summary: "如何利用DeepSeek翻身？抓住AI红利，普通人也能逆袭的3个方向，由程序员鱼皮整理。"
 order: 12
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《如何利用DeepSeek翻身？抓住AI红利，普通人也能逆袭的3个方向》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 最近，一个名叫DeepSeek的国产AI工具突然“火出圈”。无论是自媒体博主用它一天生成10条爆款视频脚本，还是职场人用它5分钟完成PPT大纲、数据分析，甚至学生党用它写论文查资料，社交平台上关于“AI改变生活”的讨论越来越热。
 

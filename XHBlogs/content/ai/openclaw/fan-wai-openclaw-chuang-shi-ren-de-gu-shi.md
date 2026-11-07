@@ -3,15 +3,12 @@ title: "番外 | OpenClaw 创始人的故事"
 summary: "从财富自由到重新创业，Peter Steinberger 的传奇经历"
 order: 17
 level: "入门"
-tags: ["OpenClaw", "转载", "AI"]
+tags: ["OpenClaw"]
 updated: "2026-06-04"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《番外 | OpenClaw 创始人的故事》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -26,45 +23,45 @@ OpenClaw（最初叫 ClawdBot）刚发布就引爆了全网。
 
 看看这涨星趋势，跟坐了火箭似的，我还是第一次见到 Star History 涨星图上添加 Emoji 图标的。
 
-![](https://pic.yupi.icu/1/1769786420068-71fecd13-68a7-4d8f-b62a-42476cfee440.jpeg)
+![](/imgs/b73592b0632e5cf5.jpg)
 
 ClawdBot 就像你的 24 小时专属员工，可以持续运行、完成你的需求和任务。并随着时间推移，通过长期接收的指令，记住你的个人偏好；还可以通过手机聊天进行交互，借助你的电脑，完成你的所有指令。
 
 比如有老板睡觉前给 AI 布置任务，第二天早上醒来就收到了 AI 发的邮件，说是任务完成了：
 
-![](https://pic.yupi.icu/1/1769771801445-772cb7f4-30da-4001-8db5-4b82393451c8.png)
+![](/imgs/4bbe8b4766bd30fd.png)
 
 还有网友成功用 ClawdBot 抢到了高铁车票，有点儿东西……
 
-![](https://pic.yupi.icu/1/1769787147424-a18c9870-08a0-4540-aa64-a5730fde09d7.png)
+![](/imgs/963ee0ef56acb7a9.png)
 
 有老板给 ClawdBot 发消息，希望它能够帮忙预定餐厅座位。当 ClawdBot 在网上预订失败时，它没有选择告知人类 “预定失败”，而是提出可以致电餐厅，并在最后真的为他完成了预订。
 
-![](https://pic.yupi.icu/1/1769775201595-8a04204c-94cf-46a9-8aaf-3d6c9e8799a6.png)
+![](/imgs/8c335aa91965a158.png)
 
 也就是说，只要你下达了任务，AI 助手使命必达，会尝试各种不同的办法来完成任务，否则绝不罢休。
 
-![](https://pic.yupi.icu/1/1769787787591-ee03056b-27e7-4a76-b853-4cac9d07bb1e.png)
+![](/imgs/b1244f9ead68a201.png)
 
 于是很多追求新鲜事物的人开始购买 Mac mini 作为运行载体，甚至一个人买很多台，看上去就像是组建了一个 AI 员工组成的公司，是有点儿霸气的。
 
-![](https://pic.yupi.icu/1/1769787905203-6959e978-c81e-40dd-b86d-1043896faf20.png)
+![](/imgs/f992b3a5fdbf1f84.png)
 
 这也导致 Mac mini 的销量一路飙升，一些地区的 Mac mini 甚至因此卖断了货！
 
-![Clawbot 油管搜索指数和 Mac mini 维基浏览量趋势对比](https://pic.yupi.icu/1/1769754592062-f74111bf-4d6f-42a2-a8a7-29812240f854.png)
+![Clawbot 油管搜索指数和 Mac mini 维基浏览量趋势对比](/imgs/679465edb975b504.png)
 
 一些网友开始怀疑这是苹果的消费陷阱，这波苹果简直赢麻了：
 
-![](https://pic.yupi.icu/1/1769754390721-59df09ec-1fbe-4ade-98ce-a2550faa277c.png)
+![](/imgs/595c3d80c5182efd.png)
 
 不过 ClawdBot 的发展也遇到了一些小阻力，由于被 Anthropic 指控侵权，ClawdBot 先是短暂改名为 `moltbot`，然后又改名为 `OpenClaw`。
 
-![](https://pic.yupi.icu/1/1769755515591-317ed4b0-e540-4038-b713-8dce04ca8c3e.png)
+![](/imgs/dd7fba716496770e.png)
 
 想到之前爆火的 Claude Code 开源版 —— OpenCode，我要忍不住吐槽一下：我算是明白了，以后只要做个闭源项目的开源版，就叫 `OpenXXX`，火的概率应该能提升不少。
 
-![](https://pic.yupi.icu/1/1769788473316-144627e9-eaf7-4ca6-9215-eab5dadab025.png)
+![](/imgs/e907e8f2b0c488b6.png)
 
 
 ## 财富自由的程序员
@@ -77,13 +74,13 @@ Peter Steinberger，奥地利人，毕业于维也纳科技大学，一个典型
 
 在大家因为 ClawdBot 关注到他之前，他已经是一位依靠代码创业，**身家上亿欧元**，达成财富自由的退休程序员了。
 
-![](https://pic.yupi.icu/1/1769829392174-1385c65a-cce7-4928-844f-a0aad73289c4.png)
+![](/imgs/bcad937ae38a729b.png)
 
 早在大学期间，他就成为了 Mac/IOS 开发者，并已经能为多个 IOS 项目提供技术咨询服务。
 
 他的第一个创业项目是一个文档处理 SDK 的项目 `PSPDFKit`。
 
-![](https://pic.yupi.icu/1/1769789437376-38bef2d2-4a5e-4ce4-9aa7-e0656fce118d.png)
+![](/imgs/f971a692448ecc3d.png)
 
 这个项目的灵感源于他过去曾帮客户做的一个基于 PDF 格式的杂志类 APP。他从这个 APP 项目中发现，市场对于这类工具存在着巨大的需求。
 
@@ -99,7 +96,7 @@ Peter Steinberger，奥地利人，毕业于维也纳科技大学，一个典型
 
 直到 2021 年，风投公司 Insight Partners 宣布以 **1 亿欧元** 投资 PSPDFKit，Peter 和另一位联合创始人套现退出，此时他已经财富自由了。
 
-![](https://pic.yupi.icu/1/1769773026982-19b6d34a-4098-4963-bde0-588e2b7a2e28.png)
+![](/imgs/6c424f2d146953ed.png)
 
 
 ## 有钱有闲的再次创业
@@ -118,7 +115,7 @@ Peter Steinberger，奥地利人，毕业于维也纳科技大学，一个典型
 
 最早他只是想做一个生活助手，2024 年 11 月，他的 AI 助手 `V Relay` 正式发布。这是一个 WhatsApp 消息中继工具，能够将用户消息转发到 Claude Code 进行处理，并实时返回结果。这是一个非常简单的项目，只花了 Peter 一个小时的时间。
 
-![](https://pic.yupi.icu/1/1769763520786-7d083d31-395c-45dc-90fe-91fc2f9ecfc6.png)
+![](/imgs/b9d0341b50c135ed.png)
 
 但在后续开发和使用过程中，Peter 发现了这个项目的潜力：这不仅仅是一个中继工具，它完全可以进化成一个更强大的 AI 智能体。
 
@@ -135,7 +132,7 @@ ClawdBot 的诞生背后，Peter 着实没少准备。
 
 打开 Peter 的 GitHub，会发现他有大量开源、并且还在维护更新中的项目。单看这密密麻麻的 GitHub 主页，你就已经知道此人必是大佬。而且同时搞这么多项目竟然还有头发？你只能感叹这人简直恐怖如斯！
 
-![](https://pic.yupi.icu/1/1769789889184-69889f4e-4092-4fc6-8c4c-0626adc1330c.png)
+![](/imgs/4263d5cee2078de1.png)
 
 ClawdBot 的出现，绝对跟他开发的各种工具和他本人超神的技术经验密不可分。
 
@@ -143,11 +140,11 @@ ClawdBot 不仅是一个产品，它更像是 Peter 个人工作流的具象化�
 
 除了在开源社区发布 ClawdBot，Peter 还创立了一家公司 `Amantus Machina`，从公司的域名 `amantus.ai` 来看肯定还是主攻 AI 产品的。
 
-![](https://pic.yupi.icu/1/1769790278169-0ea32ba9-3ee1-4e35-b3c2-d59e1ea734f9.png)
+![](/imgs/9862f4c266c6173b.png)
 
 Peter 确实是像他的博客中所说的，重拾对人生的热情，找回了目标。
 
-![](https://pic.yupi.icu/1/1769771476839-8c65b030-ee83-433b-b322-825c67eaeba2.png)
+![](/imgs/c722c584cc069f26.png)
 
 Peter 的两次创业，都称得上成功。但和第一次不同，这一次的他，显然更享受技术创造本身带来的纯粹乐趣。
 

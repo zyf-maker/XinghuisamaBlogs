@@ -3,7 +3,7 @@ title: "推理模型与思维链：那些「想一下」的模型到底在算什
 summary: "区分思维链提示与原生推理模型，讲清推理 token 的成本结构，以及在什么任务上值得为思考付费。"
 order: 3
 level: "进阶"
-tags: ["推理模型", "思维链", "test-time compute", "成本"]
+tags: ["推理模型", "思维链", "test-time compute"]
 updated: "2026-11-05"
 readingTime: 4
 ---

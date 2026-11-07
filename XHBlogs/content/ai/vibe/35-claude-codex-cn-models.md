@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude Code 和 Codex 对接国内模型教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 很多人想学 AI 编程，想耍一耍目前最流行的 Claude Code 和 Codex 编程工具，结果一上手就卡在了第一步。
 
 要么没有国外的订阅账号，登录都登录不上；要么好不容易开通了，发现官方额度死贵，对话一会儿额度就耗光了；再加上时不时还有封号的风险，整的提心吊胆。
@@ -37,11 +34,11 @@ DeepSeek 的 Flash 模型主打性价比，写这篇文章时 V4-Flash 输入 1 
 
 > 注：DeepSeek 现在的 Flash 模型已经升级为 V4.1 Flash（模型名 `deepseek-flash`），改成了峰谷计价：空闲时段输入 1 元、输出 4 元，高峰时段翻倍（每百万 token，缓存未命中），大约是 V4-Pro 的三分之一到四分之一。最新价格以 DeepSeek 官方价格页为准。
 
-![](https://pic.yupi.icu/1/image-20260803152949072.png)
+![](/imgs/df832bac7f758278.png)
 
 重点是它在 Agent 能力上做了大幅强化，在专门测试 AI 自主执行终端任务的 Terminal-Bench 上拿到了 82.7 分，竟然反超了当时还是预览版的 V4-Pro（72.1 分），写代码、调工具、自主执行任务都很能打。
 
-![](https://pic.yupi.icu/1/HOiZba2aYAAozFz.jpeg)
+![](/imgs/09256fffac579cba.jpg)
 
 Agent 能力强、价格又便宜，用来驱动 Claude Code 和 Codex 学习 AI 编程，性价比是最高的。
 
@@ -59,11 +56,11 @@ CC Switch 就是来解决这个痛点的。它是一个免费开源的跨平台�
 
 > 开源指路：[https://github.com/farion1231/cc-switch](https://github.com/farion1231/cc-switch)
 
-![](https://pic.yupi.icu/1/1780312934749-a570e124-074c-40fe-924b-5f9719e45e56.png)
+![](/imgs/8283b9d21b6425ab.png)
 
 CC Switch 内置了 50 多个供应商预设，DeepSeek、Qwen、Kimi、智谱 GLM、MiniMax 这些都有，你不用自己手动改配置文件，点几下就能一键切换模型，还能从系统托盘里快速切换。
 
-![](https://pic.yupi.icu/1/image-20260601193909067.png)
+![](/imgs/d4a8387e3c38c73d.png)
 
 下面我就用它来带大家实操一遍。
 
@@ -73,7 +70,7 @@ CC Switch 内置了 50 多个供应商预设，DeepSeek、Qwen、Kimi、智谱 G
 
 到 [CC Switch 官网](https://ccswitch.io) 或者 [GitHub Releases 页面](https://github.com/farion1231/cc-switch/releases/latest)，根据你的操作系统选择对应的安装方式。
 
-![](https://pic.yupi.icu/1/1780310254037-fb0cd631-17e9-45cf-b1c2-963d18cbf99d.png)
+![](/imgs/100e6634a3c60512.png)
 
 Mac 用户推荐直接用 Homebrew 一行命令安装，装完直接就能用：
 
@@ -81,7 +78,7 @@ Mac 用户推荐直接用 Homebrew 一行命令安装，装完直接就能用：
 brew install --cask cc-switch
 ```
 
-![](https://pic.yupi.icu/1/1780310254160-ed387f10-f656-429f-a41d-8e288b8e3be2.png)
+![](/imgs/e0c97ba1a3d62764.png)
 
 Windows 用户从 Releases 页面下载 `.msi` 安装包，双击运行即可；Linux 用户根据发行版选择 `.deb`、`.rpm` 或 `.AppImage`。
 
@@ -97,7 +94,7 @@ Windows 用户从 Releases 页面下载 `.msi` 安装包，双击运行即可；
 
 到 [DeepSeek 开放平台](https://platform.deepseek.com) 注册登录，进入 API keys 页面，点击创建一个新的 key。
 
-![](https://pic.yupi.icu/1/image-20260601194058029.png)
+![](/imgs/45797a52165d620c.png)
 
 注意，key 只会在创建时完整显示这一次，记得当场复制保存好，后面在 CC Switch 里要用到它。
 
@@ -113,7 +110,7 @@ Windows 用户从 Releases 页面下载 `.msi` 安装包，双击运行即可；
 
 简单介绍一下 Claude Code。它是 Anthropic 推出的 AI 编程工具，直接在终端里运行，你跟它聊天描述需求，它就能自主分析项目、写代码、跑命令、修 Bug，全程自主执行。
 
-![](https://pic.yupi.icu/1/1780310254072-69c9a86c-ede2-40e7-807c-13684461d4c2.png)
+![](/imgs/190e5371f16372ce.png)
 
 安装 Claude Code 很简单，先确保电脑里有 Node.js 环境，没有的话去 [Node 官网](https://nodejs.org/en/download) 下个傻瓜式安装包。然后一行命令搞定：
 
@@ -131,15 +128,15 @@ npm install -g @anthropic-ai/claude-code
 
 打开 CC Switch，在顶部应用栏选择 **Claude**，然后点击「添加供应商」：
 
-![](https://pic.yupi.icu/1/1780310658228-ffa4ff69-342c-4244-82e3-2204dad61e97.png)
+![](/imgs/ab5ad5191a7e5e1f.png)
 
 在预设的模型供应商列表里选择 **DeepSeek**：
 
-![](https://pic.yupi.icu/1/1780310679329-e280982b-da09-4f4e-8861-d943f39f17ed.png)
+![](/imgs/f27c4f9e7b5136bf.png)
 
 接下来填写刚才在 DeepSeek 开放平台创建好的 API Key：
 
-![](https://pic.yupi.icu/1/1780310750547-43515207-6f23-45b7-a62f-56370070da4f.png)
+![](/imgs/b49cc052b038c22f.png)
 
 其余字段基本不用动，CC Switch 的 DeepSeek 预设已经帮你把模型都配好了，里面内置了 DeepSeek-V4-Pro 和 DeepSeek-V4-Flash 两个版本。主模型默认是 Pro（对应 Claude Code 里的 Opus 位），小模型是 Flash（对应 Haiku 位）。
 
@@ -147,21 +144,21 @@ npm install -g @anthropic-ai/claude-code
 
 如果你想用上 DeepSeek V4 的百万 tokens 超长上下文，还能在这里直接勾选开启 1M 模式，告诉 Claude Code 这个模型能吃下这么长的上下文，不用自己去改配置。
 
-![](https://pic.yupi.icu/1/1780310818585-ecfe1960-f1cd-4a31-a1e7-f1da199c17d9.png)
+![](/imgs/c0ca4a3492e13f2a.png)
 
 填完点右下角的「添加」按钮。这里能看到 Claude Code 的 JSON 配置文件，CC Switch 干的活儿就是帮你可视化地修改它，省去手动编辑的麻烦。
 
-![](https://pic.yupi.icu/1/1780310894533-0153954b-e19f-4e96-93a5-de8208e08c01.png)
+![](/imgs/9dec2e137f4aeac7.png)
 
 最后点击启用 DeepSeek 模型：
 
-![](https://pic.yupi.icu/1/1780310914775-338bbb35-872d-46ad-9cbf-5731341a3942.png)
+![](/imgs/6f6c66c6f1900515.png)
 
 重新进入 Claude Code，左上角能看到当前用的模型。我们让它自报家门，输入一句：你是什么模型？
 
 AI 能正常给出回复，就说明切换成功了：
 
-![](https://pic.yupi.icu/1/1780311048597-711eca09-fe5c-4d0a-bb01-7c9bbfcb033c.png)
+![](/imgs/9b1a8a3dfe655e4e.png)
 
 你可能会发现，用 CC Switch 给 Claude Code 接 DeepSeek，整套流程格外简单。这是因为 DeepSeek 提供了兼容 Anthropic 协议的接口，而 Claude Code 本身就是按这个协议来通信的，CC Switch 直接把配置写进 `settings.json` 就能用了。
 
@@ -171,7 +168,7 @@ AI 能正常给出回复，就说明切换成功了：
 
 搞定 Claude Code，我们再来看 Codex。它是 OpenAI 推出的 AI 编程工具，最近的热度堪称炸裂，经常赠送重置额度，使劲蹬都蹬不完。
 
-![](https://pic.yupi.icu/1/1780311345253-521a8636-47ec-4d53-bb1a-e350748e2085-20260601194352039.png)
+![](/imgs/e3d9ce0d78d62a13.png)
 
 Codex 有两种形态，一种是在终端里跑的命令行版 Codex CLI，一种是带图形界面的桌面 APP。
 
@@ -183,11 +180,11 @@ npm install -g @openai/codex
 
 装好后在终端输入 `codex` 就能进入对话界面，首次使用同样需要登录 OpenAI 账号。没有账号的话，就要自己折腾一下切换个模型。
 
-![](https://pic.yupi.icu/1/1780311431037-8b655299-d1f1-4ff5-a845-988c0980c4ca.png)
+![](/imgs/d95472bdbd18c366.png)
 
 至于 Codex 桌面 APP 的安装和基础玩法，前段时间我刚出过一套《保姆级的视频 + 图文教程》，需要的同学直接到我的 [鱼皮 AI 导航](https://ai.codefather.cn/library/2058749249474023425) 自取：
 
-![](https://pic.yupi.icu/1/image-20260601194545597.png)
+![](/imgs/2afa9f3d558805d6.png)
 
 给 Codex 接 DeepSeek 有 3 种方法，我按推荐程度依次介绍。
 
@@ -215,15 +212,15 @@ bash <(curl -fsSL https://cdn.deepseek.com/api-docs/codex-deepseek-setup.sh)
 
 脚本启动后会让你选择要用的模型，目前 DeepSeek-V4-Flash 已经可以直接选了，输入「1」就好：
 
-![](https://pic.yupi.icu/1/image-20260803114529569.png)
+![](/imgs/3cfeebca4d25d754.png)
 
 首次运行时，它还会让你输入 API Key：
 
-![](https://pic.yupi.icu/1/image-20260803114842807.png)
+![](/imgs/070e756d45cbd15d.png)
 
 然后按回车键执行，唰唰唰，脚本就帮我们把 DeepSeek 接入到 Codex 中了。
 
-![](https://pic.yupi.icu/1/image-20260803114928055.png)
+![](/imgs/1b65114a7c5a5386.png)
 
 多说几句，这个脚本会自动完成下面几件事：
 
@@ -234,15 +231,15 @@ bash <(curl -fsSL https://cdn.deepseek.com/api-docs/codex-deepseek-setup.sh)
 
 配置完成后，重新打开 Codex，启动横幅如果显示 `deepseek-v4-flash`，就说明配好了：
 
-![](https://pic.yupi.icu/1/image-20260803120531949.png)
+![](/imgs/7336e6488724355b.png)
 
 如果你用的是 ChatGPT 桌面 APP 或者 Codex 的 VS Code 插件，不用单独配置，直接打开就能用 DeepSeek 模型了，因为它们和 CLI 版共用同一套配置文件。
 
-![](https://pic.yupi.icu/1/image-20260803141956962.png)
+![](/imgs/eec40a0167b7df7a.png)
 
 想切换回官方模型的话，重新跑一遍脚本，在菜单里选恢复选项就行。
 
-![](https://pic.yupi.icu/1/image-20260803115518337.png)
+![](/imgs/515557caedf9c2b5.png)
 
 
 
@@ -252,7 +249,7 @@ bash <(curl -fsSL https://cdn.deepseek.com/api-docs/codex-deepseek-setup.sh)
 
 第一步，在电脑的用户目录下找到 `.codex` 文件夹（Mac / Linux 路径是 `~/.codex/`，Windows 是 `%USERPROFILE%\.codex\`），创建一个 `models.json` 文件，文件中的内容可以到 [DeepSeek 官方文档](https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/codex/) 复制。
 
-![](https://pic.yupi.icu/1/image-20260803113859064.png)
+![](/imgs/6dde94ae309afbf2.png)
 
 这个文件的作用是告诉 Codex 关于 DeepSeek 模型的各种参数信息，比如支持 100 万 token 的上下文窗口、支持 low / high / max 三档推理深度等。
 
@@ -287,7 +284,7 @@ experimental_bearer_token = "<你的 DeepSeek API Key>"
 
 问题出在协议上。Codex 用的是 OpenAI 的 **Responses API**，而大多数国内模型走的是 **Chat Completions API**，这俩压根儿不是一套东西。就好比你打电话，号码是拨通了，可你说中文、对方只懂法语，照样聊不到一块儿去。
 
-![](https://pic.yupi.icu/1/01_%E7%94%B5%E8%AF%9D%E6%AF%94%E5%96%BB-%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F%E4%B8%8D%E9%80%9A_compressed_v2.png)
+![](/imgs/782ade50c03666d9.png)
 
 所以这种情况下，关键在于中间得有个「翻译」，把 Codex 发出的请求转换成模型能听懂的格式。
 
@@ -299,7 +296,7 @@ Codex → CC Switch → 大模型 → CC Switch → Codex
 
 整个转发对 Codex 完全透明，它自己还以为在访问 OpenAI 官方接口呢。这样既保留了 Codex 的原汁原味体验，又能用上便宜的国内模型，岂不美哉？
 
-![](https://pic.yupi.icu/1/02_CC_Switch%E6%9C%AC%E5%9C%B0%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E8%BD%AC%E6%8D%A2%E6%B5%81%E7%A8%8B_compressed_v3.png)
+![](/imgs/a434aeb238b9a693.png)
 
 下面还是用 DeepSeek 来演示这个流程（截图现成），你换成其他供应商的操作步骤完全一样。
 
@@ -309,29 +306,29 @@ Codex → CC Switch → 大模型 → CC Switch → Codex
 
 打开 CC Switch，在顶部应用栏切换到 **Codex**，点击「添加供应商」：
 
-![](https://pic.yupi.icu/1/1780311605982-1c994d40-c7f4-48df-817c-bed2b6c31fab.png)
+![](/imgs/0a864fbf01f44b6b.png)
 
 在预设里搜索并选择 **DeepSeek**，跟前面给 Claude Code 配置时的步骤一样：
 
-![](https://pic.yupi.icu/1/1780311659008-be813d0f-d761-435f-a7cb-a74899214864.png)
+![](/imgs/4a059d647a63b27a.png)
 
 填入你的 DeepSeek API Key，其余字段保持默认：
 
-![](https://pic.yupi.icu/1/1780311678381-5d244f5c-6943-43ba-a6c3-a2a29960d907.png)
+![](/imgs/72b5f4862f8b4b20.png)
 
 跟 Claude Code 一样，模型这些 CC Switch 都已经预设好了，其他字段不用动。
 
 要特别注意的是，这一步的关键是得 **开启「本地路由映射」**，然后点右下角的「添加」按钮保存就好。
 
-![](https://pic.yupi.icu/1/1780311713574-2317e9a2-ece4-4c4d-a188-4d6735402c6a.png)
+![](/imgs/e3acad18880fcc07.png)
 
 回到主页后，选择启用 DeepSeek：
 
-![](https://pic.yupi.icu/1/1780311910051-908552fe-d168-4df1-9a08-3c9e6f1e4d0d.png)
+![](/imgs/c82f99e01573c3db.png)
 
 但是到目前为止，我们还不能在 Codex 中正常使用 DeepSeek，对话会直接报前面说的 404 错误：
 
-![](https://pic.yupi.icu/1/1780311879234-642050c1-2333-4d8e-866d-1abc9197d7dd.png)
+![](/imgs/bb11493e1ead28f3.png)
 
 
 
@@ -339,11 +336,11 @@ Codex → CC Switch → 大模型 → CC Switch → Codex
 
 切换到 DeepSeek 后，系统会提示你开启路由。点击左上角的「设置」按钮进入设置页面：
 
-![](https://pic.yupi.icu/1/1780311968017-bf4e43f6-736e-4ba7-9ce9-5a9ca2763910.png)
+![](/imgs/3716471a6c7411af.png)
 
 找到路由设置菜单，把本地路由的「路由总开关」打开，然后选择启用 Codex 路由：
 
-![](https://pic.yupi.icu/1/1780312030888-cdfafb55-0a3f-4fd7-bdc5-785eb3cd9bc8.png)
+![](/imgs/86b393516ab97038.png)
 
 这一步就是让 CC Switch 的本地代理正式接管 Codex 的请求，前面说的协议转换全靠它。
 
@@ -351,17 +348,17 @@ Codex → CC Switch → 大模型 → CC Switch → Codex
 
 重新打开 Codex CLI，就能看到已经切换为 DeepSeek 模型了。同样让它自报家门，能正常对话就说明切换成功了：
 
-![](https://pic.yupi.icu/1/1780312108872-2c760023-290a-4e7a-b8d0-be36159900da.png)
+![](/imgs/c18d5a067a18486f.png)
 
 你会发现，AI 嘴上还说自己是基于 GPT-5 的 Codex。这是因为 Codex 会给模型注入一套自己的系统提示词，让它默认以为自己是官方模型，但实际干活的底层已经换成 DeepSeek 了。
 
 再来试试 Codex 桌面 APP。因为它和命令行版共用 `~/.codex` 这套配置，CC Switch 切换之后直接打开就能用，同样问它是什么模型，底层跑的也是 DeepSeek：
 
-![](https://pic.yupi.icu/1/1780312248394-f117f7bb-1372-4a73-91e7-2b6c171cef6f.png)
+![](/imgs/39fff78ed315253a.png)
 
 如果想改回来，反向操作即可，把路由关掉、再启用默认配置就行：
 
-![](https://pic.yupi.icu/1/1780312343473-b43668a4-cb80-4f60-8fce-e7aa93e7753e.png)
+![](/imgs/52fd4b7171de34f0.png)
 
 怎么样，是不是比想象中简单多了？
 
@@ -381,7 +378,7 @@ DeepSeek-V4-Flash 虽然 Agent 能力很强，但它是纯文本模型，不能�
 
 你需要先准备一个支持图片理解的视觉模型，比如通义千问的 Qwen3.8-Max，并且到对应的大模型平台获取到 API Key。
 
-![](https://pic.yupi.icu/1/image-20260803154236012.png)
+![](/imgs/e258f6ac5236fbe3.png)
 
 然后直接在 AI 编程工具中发一段提示词，让 AI 帮你完成 Skill 的安装和配置：
 
@@ -391,11 +388,11 @@ DeepSeek-V4-Flash 虽然 Agent 能力很强，但它是纯文本模型，不能�
 - API Key 为 <改为你自己的 API Key>
 ```
 
-![](https://pic.yupi.icu/1/image-20260803155552049.png)
+![](/imgs/035b199c0445d0cb.png)
 
 安装好之后，当 AI 遇到需要看图的任务时，Vision Skill 就会自动把图片发给视觉模型，让它把图片内容转成文字描述，再交给 DeepSeek 继续推理。
 
-![](https://pic.yupi.icu/1/image-20260803155836402.png)
+![](/imgs/408c5121368fa7bb.png)
 
 如果你平时写代码不怎么需要 AI 看图，这一步可以先跳过，等用到的时候再装也来得及。想深入了解 Skills 的用法，可以阅读本教程编程工具板块「工具实战」目录中的《Agent Skills：通用 AI 技能库》。
 

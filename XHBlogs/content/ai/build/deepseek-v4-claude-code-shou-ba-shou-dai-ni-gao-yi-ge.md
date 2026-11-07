@@ -3,15 +3,12 @@ title: "DeepSeek V4 + Claude Code 手把手带你搞一个 API 中转站"
 summary: "AI 编程时代，人类对 Tokens 的需求量越来越大，供不应求。"
 order: 38
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 17
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek V4 + Claude Code 手把手带你搞一个 API 中转站》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 AI 编程时代，人类对 Tokens 的需求量越来越大，供不应求。
 
@@ -21,17 +18,17 @@ AI 编程时代，人类对 Tokens 的需求量越来越大，供不应求。
 
 但你看看都是谁在做，猎豹移动 CEO 傅盛搞了个 EasyRouter；币圈知名人物孙宇晨搞了个 B.AI，据说已经突破百万用户；甚至连特朗普家族都下场做了个 WorldClaw，四档套餐最贵的卖 9999 美元，买了还有机会抽海湖庄园的私人晚宴门票。。。
 
-![](https://pic.yupi.icu/1/%2525E5%2525A5%252597%2525E9%2525A4%252590.png)
+![](/imgs/5fef9c683cb1183e.png)
 
 之前懂王就卖 Crypto Token 割了一波，现在 AI 火了又来卖 API Token。果然没有人比他更懂 Token！
 
-![](https://pic.yupi.icu/1/image-20260509145553218.png)
+![](/imgs/a10cec5dd8ef57d1.png)
 
 看着他们一个个赚得盆满钵满，一般人很难不心动啊。
 
 咳咳，其实 23 年我就做过类似的产品了，不知道有多少朋友还记得「鱼聪明 AI」，当时我还开发了调用中转站的 SDK 来着。后来网站因为成本原因倒闭了，往事不堪回首啊。。。
 
-![](https://pic.yupi.icu/1/1687152503823-a9d100de-06b0-4c65-ad73-92f5703f186d-20230702140036995.png)
+![](/imgs/1a7dd9cd4d1a87dd.png)
 
 有了失败经验之后，我不打算自己闷头做了，干脆写篇教程，带大家一起从零搞一个！
 
@@ -48,7 +45,7 @@ API 中转站干的就是代购的活。
 
 你平时用 AI 聊天、写代码、做应用，不直接对接 AI 模型厂商（比如 OpenAI、DeepSeek、智谱等），而是通过中转站这个「中间商」来调用。中转站把各家 AI 模型的 API 聚合到一个平台上，你注册一个中转站的账号就能调用所有模型，不用到处注册，能方便不少。
 
-![](https://pic.yupi.icu/1/Gemini_Generated_Image_w1vnohw1vnohw1vn-20260509174715470.jpg)
+![](/imgs/ce5dd4424f855d56.jpg)
 
 为什么中转站那么火呢？得看它解决了什么问题。
 
@@ -56,7 +53,7 @@ API 中转站干的就是代购的活。
 
 目前最知名的中转站应该是 **OpenRouter**，聚合了几百个大模型，据说年流水已经过亿美元了。
 
-![](https://pic.yupi.icu/1/image-20260509161936710.png)
+![](/imgs/d3196d6304ea871e.png)
 
 一个中转站就能赚这么多钱，难怪连懂王都来分一杯羹了。
 
@@ -84,7 +81,7 @@ client = OpenAI(
 
 中转站的服务器收到请求后，会根据你指定的模型名称，把请求路由到对应的 AI 厂商。如果配置了多个 API Key，还会自动轮换，避免单个 Key 被限流。同时记录每次调用的 Token 消耗，用于计费。
 
-![](https://pic.yupi.icu/1/Gemini_Generated_Image_vjaih0vjaih0vjai-20260509174715559.jpg)
+![](/imgs/5f538a87f0476839.jpg)
 
 但有个问题，你的所有请求都要经过中转站的服务器，这一层对用户来说完全是个「黑盒」。中转站那边具体做了什么，你根本不知道！
 
@@ -92,7 +89,7 @@ client = OpenAI(
 
 最近 CISPA 亥姆霍兹信息安全中心发了一篇论文，揭露了一个触目惊心的事实：**近一半的第三方 API 中转站在进行系统性欺诈**！
 
-![](https://pic.yupi.icu/1/image-20260509133411306.png)
+![](/imgs/185750183687912d.png)
 
 常见的黑心操作有这么几种：
 
@@ -127,7 +124,7 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 
 元祖级项目，GitHub 上几万 Star。它用 Go 语言开发，把所有主流大模型的 API 统一成 OpenAI 格式，支持几十种模型，而且只需要一个文件就能跑起来，还支持 Docker 部署。
 
-![](https://pic.yupi.icu/1/image-20260509160501101.png)
+![](/imgs/798d05e9280fd3e8.png)
 
 不夸张地说，市面上 80% 以上的商业中转站底层都是 one-api 或者它的衍生版本，只是套了个壳。
 
@@ -135,7 +132,7 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 
 在 one-api 基础上二次开发，新增了 Prometheus 监控、OpenTelemetry 可观测性等企业级特性，也是很多商业中转站的底层框架。
 
-![](https://pic.yupi.icu/1/new-api-dashboard.jpeg)
+![](/imgs/1e93ac30112b1dd8.jpg)
 
 顺便提一嘴，傅盛的 EasyRouter 就被 new-api 原作者扒出来是套壳的，前端代码中有 98 处指向 new-api 的关键词匹配，而且移除了版权信息，涉嫌违反 AGPL v3 开源协议。
 
@@ -143,23 +140,23 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 
 这个项目厉害了，能把 Claude、OpenAI 的网页版订阅账号逆向转化成标准的 API 接口，相当于多个人拼车共享一个 Plus 会员，一个账号的额度分给好几个人用。
 
-![](https://pic.yupi.icu/1/image-20260509161048654.png)
+![](/imgs/70c002f216d3d52f.png)
 
 4）[metapi](https://github.com/cita-777/metapi)
 
 号称「中转站的中转站」，把你在多个 one-api / new-api / sub2api 上注册的账号聚合成一个统一网关，基于成本、余额、使用率三维加权来分配流量。
 
-![](https://pic.yupi.icu/1/dashboard-20260509174717717.png)
+![](/imgs/71f65db8a51cc32c.png)
 
 5）[all-api-hub](https://github.com/qixing-jk/all-api-hub)
 
 这是一个浏览器扩展，专门用来管理你在各个中转站上的账号。装上之后，可以在一个面板里看到所有中转站的余额和用量，还支持自动签到、价格横向对比，对于同时用好几个中转站的人来说挺方便的。
 
-![](https://pic.yupi.icu/1/model-list-20260509174717782.png)
+![](/imgs/19390bcac29be1d6.png)
 
 除了这些中转站项目，企业级场景下还有像 [LiteLLM](https://github.com/BerriAI/litellm)、[Higress AI](https://higress.ai/)、[Kong AI Gateway](https://konghq.com/products/kong-ai-gateway) 这些更正经的开源 AI 网关。不过这类项目有一定的技术门槛，非程序员朋友不用深入了解。
 
-![](https://pic.yupi.icu/1/image-20251019163817976-20251028181254777.png)
+![](/imgs/12ce88ab325fc3e1.png)
 
 接下来，我们自己动手做一个简易版的 API 中转站。
 
@@ -180,7 +177,7 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 
 6）管理面板包含仪表盘、渠道管理、Key 管理、调用日志，支持管理员密码登录。
 
-![](https://pic.yupi.icu/1/Gemini_Generated_Image_2i8fq32i8fq32i8f.jpg)
+![](/imgs/045e8400206100be.jpg)
 
 
 ## 方案设计
@@ -195,13 +192,13 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 
 如果想学完整的带用户注册、在线支付、监控告警的企业级 AI 网关，可以看看我们团队之前出过的 [保姆级的 AI 网关项目实战教程](https://www.codefather.cn/course/2029830328322994177)，基于 Spring Boot 3 + Spring AI + Vue 3 从零搭建，感兴趣的同学可以到 [编程导航](https://www.codefather.cn) 学习。
 
-![](https://pic.yupi.icu/1/202601291444803.png)
+![](/imgs/965ada7bcea9f4e1.png)
 
 由于某些原因，你懂的，我没办法真带大家搞一个对接国外大模型的中转站，**也强烈不建议大家去搞**！这里我们就拿 DeepSeek、GLM 和 Qwen 三个国产模型做演示，项目在本地运行和测试。
 
 开发技术上，我选择主流的 Next.js + TypeScript，前端 + 后端一把梭。数据库选择 SQLite，数据直接存在本地文件里，不用搭 MySQL 和 Redis 之类的，降低门槛。
 
-![](https://pic.yupi.icu/1/Gemini_Generated_Image_m65e4mm65e4mm65e.jpg)
+![](/imgs/12be715c867a65b8.jpg)
 
 
 ## 环境准备
@@ -217,13 +214,13 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 
 除了基础的代码生成，还能使用工具和 Skills 技能包、连接 MCP 外部服务、用 Plugins 插件扩展能力，甚至搞多智能体协作，扩展性很强。
 
-![](https://pic.yupi.icu/1/image-20260429110454017-20260509174718125.png)
+![](/imgs/790ecb1103cebd7d.png)
 
 安装 Claude Code 很简单。
 
 首先确保你的电脑有 Node.js 环境和 npm 软件依赖安装工具，没有的话，直接到 [Node 官网](https://nodejs.org/en/download) 下载傻瓜式安装包就好：
 
-![](https://pic.yupi.icu/1/1777341714221-67b76f0e-c816-410b-adc0-e445074efc46-20260509174718164.png)
+![](/imgs/2ce72da227109337.png)
 
 无论使用什么操作系统，都可以通过 npm，一行命令来安装 Claude Code：
 
@@ -231,11 +228,11 @@ GitHub 上中转站相关的开源项目非常多，可以说是无奇不有。�
 npm install -g @anthropic-ai/claude-code
 ```
 
-![](https://pic.yupi.icu/1/1777341807032-be0f1d99-4e97-4be6-80de-de7c32846d41-20260509174718202.png)
+![](/imgs/9eaf1b428e2d4e4d.png)
 
 安装完成后，输入 `claude` 命令进入对话界面，首次需要登录才能正常使用：
 
-![](https://pic.yupi.icu/1/1777341971646-93bcacc7-143d-4f86-8d2a-bf17d288db9f-20260509174718233.png)
+![](/imgs/fe7bb885a8e2ce79.png)
 
 但估计很多同学没有 Anthropic 的国外订阅账号，所以我们要切换为国产模型。
 
@@ -248,7 +245,7 @@ Claude Code 本身是支持切换模型的，你可以通过「修改环境变�
 
 比如 [DeepSeek 的 API 文档](https://api-docs.deepseek.com/zh-cn/guides/coding_agents) 里就有现成的接入方法：
 
-![](https://pic.yupi.icu/1/1777342329147-99094795-9da9-40b7-aa25-a566fc762c54-20260509174718284.png)
+![](/imgs/af8faa390c1cdacf.png)
 
 不过我更推荐用一个开源工具 **CC Switch**，能够可视化地管理 Claude Code、Codex、Gemini CLI 等 AI 编程工具的配置，一键切换不同的模型供应商。内置了 50 多个供应商预设，不用自己手动改配置文件。
 
@@ -256,7 +253,7 @@ Claude Code 本身是支持切换模型的，你可以通过「修改环境变�
 
 按照官方中文文档，根据操作系统选择对应的安装方式：
 
-![](https://pic.yupi.icu/1/1777342571992-7b055f5f-3d27-4463-8247-4fe9bc315690-20260509174718321.png)
+![](/imgs/798cc04e9175c65d.png)
 
 Mac 用户可以通过命令行安装：
 
@@ -265,19 +262,19 @@ brew tap farion1231/ccswitch
 brew install --cask cc-switch
 ```
 
-![](https://pic.yupi.icu/1/1777342701813-0dc223c6-8c13-49ce-8434-aa00bfc6d08e-20260509174718366.png)
+![](/imgs/cd096b1b369933e6.png)
 
 安装完成后，运行软件进入主界面，添加模型供应商：
 
-![](https://pic.yupi.icu/1/1777342816975-d7e89ce3-3b26-4237-a728-5478fbe86a47-20260509174718431.png)
+![](/imgs/ba0d8b78d17c6d89.png)
 
 选择 DeepSeek：
 
-![](https://pic.yupi.icu/1/1777342881212-d0591f6e-c88e-4912-8cf5-62b7f1bfac17-20260509174718485.png)
+![](/imgs/9df6d7e006f10bd8.png)
 
 填写 API Key，需要从 [DeepSeek 开放平台](https://platform.deepseek.com) 获取。
 
-![](https://pic.yupi.icu/1/1777342981319-1e6c85a9-5063-42e2-bae9-0406886578d9-20260509174718516.png)
+![](/imgs/3ce8cc3ecd82bcd3.png)
 
 我这里把主模型设置为 DeepSeek-V4-Pro，相比 DeepSeek-V4-Flash 模型，Agent 能力和复杂推理更强。
 
@@ -285,17 +282,17 @@ brew install --cask cc-switch
 
 然后点右下角保存：
 
-![](https://pic.yupi.icu/1/1777343299981-c370c8ff-b24a-460a-891e-e08bc1efcf54-20260509174718549.png)
+![](/imgs/3b022d914ba36d5a.png)
 
 可以在上图中看到 Claude Code 的 JSON 配置文件，其实 CC Switch 就是帮你可视化地修改各 AI 工具的配置文件，省去手动编辑 JSON 的麻烦。
 
 最后，启用 DeepSeek 模型：
 
-![](https://pic.yupi.icu/1/1777343334412-73a61961-5d7e-4fbb-a0e0-691f5d867b48-20260509174718583.png)
+![](/imgs/0d5a93a0ac6086f1.png)
 
 然后重新进入 Claude Code，随便输入一句话，AI 能给出回复，说明切换模型成功：
 
-![](https://pic.yupi.icu/1/1777343427500-46c84648-4f92-4ed4-85ab-4af0b34f465e-20260509174718616.png)
+![](/imgs/9205d454d4228ed3.png)
 
 
 ### 安装扩展
@@ -321,19 +318,19 @@ Frontend Design 是 Anthropic 官方的前端美化技能，可以让 AI 生成�
 /plugin marketplace add anthropics/skills
 ```
 
-![](https://pic.yupi.icu/1/1777344066799-72c95f99-82bc-46ff-92f5-02cf6d21b1b9-20260429113524910-20260509174718645.png)
+![](/imgs/6732057656c740f7.png)
 
 输入 `/plugins`，在 Discover 菜单栏中，选中 `example-skills` 并按回车，安装官方的示例技能合集：
 
-![](https://pic.yupi.icu/1/1777344221815-19f8cc7d-e608-4cf6-a8a9-05fa3dafab04-20260509174718679.png)
+![](/imgs/2c651a7a8b7e0bd9.png)
 
 输入 `/reload-plugins` 重载一下插件：
 
-![](https://pic.yupi.icu/1/1777344303461-6af1d179-4328-4892-83b4-a48f1af3c32d-20260509174718707.png)
+![](/imgs/430387ac65aa9ab0.png)
 
 输入 `/skills` 查看已安装的技能，可以看到 `frontend-design` 已经就位了：
 
-![](https://pic.yupi.icu/1/1777344408094-9d8e06b5-a216-443e-a7ec-70dd78cb80d0-20260509174718748.png)
+![](/imgs/ef40099e1084876c.png)
 
 之后在对话框中输入 `/frontend-design` 就能主动触发这个技能，让 AI 美化前端页面。同时还自动装上了 `webapp-testing` 自动化测试技能，后面也用得上。
 
@@ -348,19 +345,19 @@ Firecrawl 是联网搜索和网页抓取工具，让 AI 开发前先搜索最新
 npx -y firecrawl-cli@latest init --all --browser
 ```
 
-![](https://pic.yupi.icu/1/1777258212308-8c83d23e-338e-4ec2-b1c0-05f54a22a36e-20260429113525121-20260509174718777.png)
+![](/imgs/1d5ef7caee3c85de.png)
 
 执行后，会自动打开浏览器，要在弹出的页面中点击授权：
 
-![](https://pic.yupi.icu/1/1777258069152-2d7fdb02-64e2-440b-bcbd-6254b07fb74e-20260429113525154-20260509174718801.png)
+![](/imgs/2d9206133967d9ad.png)
 
 安装完成后，会自动注册 12 个 Firecrawl 相关技能：
 
-![](https://pic.yupi.icu/1/1777258235867-0f6f08f5-4791-4b66-84b7-50936912540d-20260429113525186-20260509174718841.png)
+![](/imgs/adc880d688b38f98.png)
 
 在 Claude Code 的技能管理中，就能看到新添加的 Firecrawl 相关技能了：
 
-![](https://pic.yupi.icu/1/1777344739629-f15409cf-6a43-4f96-a9bd-be72f7c0f795-20260509174718872.png)
+![](/imgs/9310a24d5e789572.png)
 
 
 #### 3、安装 Context7
@@ -375,27 +372,27 @@ npx ctx7@latest setup
 
 它会问是安装 MCP 服务还是 CLI + Skills，这里我选择 CLI + Skills。你会发现，现在越来越多工具已经从 MCP 转向 CLI + Skills 的方式了：
 
-![](https://pic.yupi.icu/1/1777258448310-41f86ec3-26e1-476e-aed5-4913c8116d21-20260429113525253-20260509174718912.png)
+![](/imgs/8279eb50c91e0c1f.png)
 
 同样在弹出的网页中授权，不用自己获取和输入 API Key，太方便了！
 
-![](https://pic.yupi.icu/1/1777258547209-dc872280-09eb-4bd9-ad45-2e412382002d-20260429113525305-20260509174718957.png)
+![](/imgs/c64026d31dbecd59.png)
 
 然后选择要给哪个 AI 编程工具安装，我选择为 Claude Code 安装：
 
-![](https://pic.yupi.icu/1/1777344820438-9397de28-5658-4f0c-8cbe-8ed350beb84a-20260509174719029.png)
+![](/imgs/a6b115f0422a7820.png)
 
 安装成功后，可以在技能管理中看到 `find-docs` 技能：
 
-![](https://pic.yupi.icu/1/1777344978229-17483cf7-a0fd-4a5f-93cf-5865f96eab41-20260509174719298.png)
+![](/imgs/44239f20cedbfd6b.png)
 
 当然，你也可以选择安装 MCP Server 的方式：
 
-![](https://pic.yupi.icu/1/1777345106455-e31fd005-3cc6-45ac-a9d5-7dfafd30c7f4-20260509174719599.png)
+![](/imgs/10e3faeb6e809956.png)
 
 安装后，在 Claude Code 中输入 `/mcp` 命令，就能看到安装好的 MCP 了，比自己手动配置方便太多了！
 
-![](https://pic.yupi.icu/1/1777345145401-72377bd2-2388-4f3b-bd8f-a31a76ecc676-20260509174719673.png)
+![](/imgs/e172ff0dc05cc791.png)
 
 至此，环境准备完成！下次开发项目时，就不用再重复准备了~
 
@@ -404,7 +401,7 @@ npx ctx7@latest setup
 
 新建一个 `yupi-ai-relay` 项目文件夹，打开终端并输入 `cd` 命令进入目录，然后输入 `claude` 打开 Claude Code：
 
-![](https://pic.yupi.icu/1/1778231327727-283f3279-57b8-4ca8-9694-1a4d15a2edff.png)
+![](/imgs/76c8e3dfce9e7dda.png)
 
 接下来输入提示词。这段提示词也是我利用 AI 编程工具，根据我的需求描述生成的，给大家参考：
 
@@ -438,35 +435,35 @@ npx ctx7@latest setup
 
 给 AI 发送提示词前，我按 Shift + Tab 进入了自动接受编辑模式，AI 创建、修改、删除文件和执行命令都不用我逐一确认了，更省事儿。但有一定风险，大家按需使用：
 
-![](https://pic.yupi.icu/1/1778231457775-29f354b1-53bd-46e1-b96d-920c0c91b5ec.png)
+![](/imgs/f8d90f3cf6a2fcd0.png)
 
 把提示词发送给 AI，接下来就是漫长的等待了。
 
 过程中 AI 可能需要确认工具调用，比如它想通过 Firecrawl 搜索最新的大模型 API 信息，可以选择「Yes, and don't ask again」，以后就不用反复确认了：
 
-![](https://pic.yupi.icu/1/1778231847088-583d81d1-294c-47a4-a839-f8ce64c91b22.png)
+![](/imgs/df363f37f90381e8.png)
 
 注意，DeepSeek 的发挥不是很稳定，有时候不会触发技能，而是使用内置的搜索工具。你可以在提示词中加强引导，或者用斜杠命令主动触发技能。
 
 开发完成后，AI 自动使用 webapp-testing 技能进行自动化测试：
 
-![](https://pic.yupi.icu/1/1778237385286-ac72c6e6-c2f2-4ac4-a5ac-edf4c5fb0271-20260509174719871.png)
+![](/imgs/81200ab620e1e359.png)
 
 等了将近半小时，AI 终于开发完成了。从 AI 的总结可以看到，OpenAI 兼容接口、流式/非流式、多模型路由、API Key 管理、Token 计费、健康检查、管理后台、Recharts 图表这些功能全给整上了，一把梭~
 
-![](https://pic.yupi.icu/1/1778238659517-51bb2401-ceb3-4622-845a-9e1d8e980a1b-20260509174719909.png)
+![](/imgs/3ede63fdc2e42dfd.png)
 
 然后需要我们人工操作，分别从 DeepSeek 开放平台、智谱 AI 开放平台、阿里云百炼平台获取到大模型的 API Key，根据 AI 的指引填到环境变量文件中：
 
-![](https://pic.yupi.icu/1/1778238774781-00601ed0-6713-4f60-8743-e4c73dc22eb9.png)
+![](/imgs/f5c42334bd2812ee.png)
 
 然后让 AI 帮我运行。它不仅启动了项目，还很贴心地又进行了一轮测试：
 
-![](https://pic.yupi.icu/1/1778239393938-0d758f7d-3856-4270-97b6-a4cd66ffc2a9.png)
+![](/imgs/3d1588cac666edb8.png)
 
 测试过程中 AI 还自主发现并修复了一个问题，很八错！
 
-![](https://pic.yupi.icu/1/1778254400168-39ddef9f-321f-4773-96c8-0522454aeffc.png)
+![](/imgs/83ff421be766ae3e.png)
 
 
 ### 测试验证
@@ -475,77 +472,77 @@ npx ctx7@latest setup
 
 打开网站主页。你别说，干净又卫生啊！重点一目了然。可惜还是没逃出蓝紫色渐变的魔掌。。。
 
-![](https://pic.yupi.icu/1/1778290068775-5a0c33a1-a12f-4e73-8408-9bfb76f8e057.png)
+![](/imgs/d43b964b2523fd35.png)
 
 跟 OpenRouter 官网的风格还挺像的吧？大概吧。。。
 
-![OpenRouter 的风格](https://pic.yupi.icu/1/1778290147309-8a9853e6-df02-46c9-a3d9-39bea1c4b28c.png)
+![OpenRouter 的风格](/imgs/c67b1c5a3cc211db.png)
 
 登录管理员账号，进入管理后台，能看到 AI 大模型的调用情况、总费用消耗等数据：
 
-![](https://pic.yupi.icu/1/1778290268274-9408fbd7-9aa2-468c-8cf4-45798aad938e.png)
+![](/imgs/7cee30e3b0f49911.png)
 
 进入渠道管理，可以看到已经对接的各种大模型，你还可以给每个模型设置单独的计费倍率，比如调整 DeepSeek V4 Pro 的价格为 Flash 的 2 倍：
 
-![](https://pic.yupi.icu/1/1778290321828-4bf6726d-ac94-4f54-b450-0a01fbf5e9bb.png)
+![](/imgs/98f854380ee7976e.png)
 
 还可以一键检查各模型的健康状态：
 
-![](https://pic.yupi.icu/1/1778290484603-59f4d4f7-4db6-4f5d-826e-e6ff56a74d29.png)
+![](/imgs/289125beb8083db1.png)
 
 诶，等等？我不是在提示词中让 AI 对接 GLM-5 么？怎么给我搞了个 GLM-4.5？？？
 
-![](https://pic.yupi.icu/1/image-20260509152345969.png)
+![](/imgs/cd794def92718c6e.png)
 
 进入 API Key 管理，你可以给每个付费用户生成一个 API Key，设置对应的余额上限，然后把 Key 发给用户：
 
-![](https://pic.yupi.icu/1/1778290665569-9a830074-b6a7-4f84-9483-bcdcd774635a.png)
+![](/imgs/bac444f2f74349d1.png)
 
 进入调用日志，可以查看每一次具体的模型调用情况，包括调用的模型、Token 消耗、耗时、费用、请求类型等：
 
-![](https://pic.yupi.icu/1/1778290698789-1ca164b6-c057-4f46-bc20-6c20303b093f-20260509174720320.png)
+![](/imgs/9f4b36a65ce0e67f.png)
 
 但目前这个界面连最基本的筛选功能都没有，我以后要做个日活百万的中转站，怎么可能人工从这里面查日志呢？
 
 等等，难道 AI 觉得我不敢真的上线嘛？
 
-![](https://pic.yupi.icu/1/image-20260509152545677.png)
+![](/imgs/3263321fc8c12124.png)
 
 接下来，以用户的视角来使用中转站。进入网站主页查看文档，有各种调用方式的介绍：
 
-![](https://pic.yupi.icu/1/1778290861950-d3642553-8003-460a-8f34-65dfe33ec9bb.png)
+![](/imgs/e4ca833c4b53c4d5.png)
 
 先直接打开终端，通过命令行的 HTTP 请求工具 curl 来调用。注意网站文档上的端口号写错了，应该跟后端服务器保持一致，我这里是 3333 端口。
 
 模型选择 auto 自动路由，可以看到成功调用了 Qwen 模型：
 
-![](https://pic.yupi.icu/1/1778290994022-d650d981-9d34-44ce-a95e-0037c136a267.png)
+![](/imgs/2f603bb476e15a1f.png)
 
 既然是兼容 OpenAI 格式的，那我们不妨尝试在 Claude Code 中使用。
 
 进入 CC Switch 工具，添加一个新供应商，选择自定义配置：
 
-![](https://pic.yupi.icu/1/1778291083736-bc72e594-d724-4f28-a658-0e0fd3aa34a4.png)
+![](/imgs/94e2fabd0f058de9.png)
 
 填写信息，请求地址改成中转站服务器的地址，API 格式选择 OpenAI 格式，模型名称我选 auto，让中转站帮我路由：
 
-![](https://pic.yupi.icu/1/1778292737353-5de539b4-cf80-4304-a0f3-c9033d7dbbac-20260509174720503.png)
+![](/imgs/9d68698bad822016.png)
 
 然后一定要注意！因为 Claude Code 原生使用 Anthropic 格式，而中转站是 OpenAI 兼容格式，必须先进入设置，开启 CC Switch 的路由模式。
 
-![](https://pic.yupi.icu/1/1778292850572-5cb1710f-8a20-4f6e-8adf-2ac4c7968a57.png)
+![](/imgs/f6e45879cef07e93.png)
 
 开启路由模式后，路由会自动将 Anthropic 格式请求转换为 OpenAI 格式，再转发到中转站。
 
-![](https://pic.yupi.icu/1/1778292879648-8b5dca94-15da-4542-9974-0b2db0c35568.png)
+![](/imgs/c2aab7cef81a010f.png)
 
 配置完成后，在 Claude Code 中发消息，AI 成功回复了！同时中转站后端的日志打印了请求信息，说明请求确实经过了我们的中转站：
 
-![](https://pic.yupi.icu/1/1778292522264-315da998-d2d9-46dd-950f-fcaa64aa539e.png)
+![](/imgs/75a83e8367c89b47.png)
 
 不过让 AI 做复杂任务的时候，会频繁出现调用失败的情况。估计是一些请求格式没有兼容到位，毕竟 Anthropic 转 OpenAI 的过程中有很多细节差异，比如 Tool Use 的参数格式等。这也是做中转站的一个重点，需要持续测试各种场景，及时更新适配各家大模型的协议和规范。
 
-![](https://pic.yupi.icu/1/1778293138016-036af70d-9bf1-4918-844f-d4c7396496d4.png)
+![](/imgs/c9eec16ce7879490.png)
 
 总结一下，咱们用 DeepSeek V4 一把梭出了一个五脏俱全的中转站，核心功能基本可用，能正常路由、计费、管理 Key。
 
@@ -553,13 +550,13 @@ npx ctx7@latest setup
 
 我在 Claude Code 中，用 `/context` 命令看了一下上下文，只占用了 63%，还有不少富余，开发到上线程度肯定是没问题的。
 
-![](https://pic.yupi.icu/1/1778293568121-0869b39a-b69e-4f88-a753-220b5639fc23.png)
+![](/imgs/d71c7163b5257f5f.png)
 
 你肯定会好奇花了多少钱？
 
 来来来，到 DeepSeek 开放平台上看看费用消耗，开发这个项目实际只花了 **2 块多**，你觉得是便宜还是贵呢？
 
-![](https://pic.yupi.icu/1/1778293527995-ea530826-b752-48fe-9015-24c8740f73d2.png)
+![](/imgs/2898011a8235399e.png)
 
 
 ## GPT-5.5 + Cursor 开发
@@ -570,63 +567,63 @@ npx ctx7@latest setup
 
 需要先在 Cursor 中配好 Firecrawl 和 Context7 的 MCP 扩展。Cursor 的使用和扩展配置教程在我的 [AI 编程零基础教程](https://ai.codefather.cn/vibe) 中可以获取，这里不多说了：
 
-![](https://pic.yupi.icu/1/1778235649472-784ab808-bdeb-4ef1-9589-ba9d36ec542f.png)
+![](/imgs/40e0957be70fdfda.png)
 
 选择 GPT-5.5 模型，发送同样的提示词：
 
-![](https://pic.yupi.icu/1/1778235701557-d13d8832-6b36-4aaf-8a39-230030910d06-20260509174720752.png)
+![](/imgs/f01a667fa8a3449e.png)
 
 AI 自动切换到了计划模式，先调用 MCP 获取各家模型的最新 API 信息，然后生成了项目实施计划：
 
-![](https://pic.yupi.icu/1/1778235810536-ce5ee807-6bd1-4ba4-8041-5c42a7aa4e8c.png)
+![](/imgs/ce80546250ab17d7.png)
 
 简单看一遍方案，没啥问题，直接开始构建：
 
-![](https://pic.yupi.icu/1/1778235847647-a1d1d79a-53e0-424f-a8c3-baac3715db1d.png)
+![](/imgs/3fbd0589b2d27435.png)
 
 等代码生成完成后，AI 还会自主打开浏览器进行测试，全程不需要我们人工操作，这期间我又做了 1 组提肛。
 
 **整体耗时 14 分钟，比 DeepSeek 快了一倍多**，消耗了 87.5K tokens：
 
-![](https://pic.yupi.icu/1/1778236785434-c6d647d0-c55d-42d1-8736-26d44fcbda23.png)
+![](/imgs/f94d5841502df0db.png)
 
 同样根据 AI 的指引，分别获取各平台的 API Key，填入环境变量文件：
 
-![](https://pic.yupi.icu/1/1778239874507-d5e42c3e-acd5-47d2-8087-15ca1a5dafed.png)
+![](/imgs/b76a826515fb3d27.png)
 
 最后，让 AI 测试并运行，各种测试全部通过：
 
-![](https://pic.yupi.icu/1/1778239913730-09168b8d-313c-4176-abb5-3f400831141c.png)
+![](/imgs/d071216f48949776.png)
 
 接下来让我们人工测试一下。
 
 打开网站，整体看着还不错，除了有部分文字颜色不太合适。
 
-![](https://pic.yupi.icu/1/1778294307923-1589b548-bb1f-4815-9bbc-94a681618555.png)
+![](/imgs/f60f27259a7fcfac.png)
 
 跟 DeepSeek 开发出来的一样，没有完全复刻 OpenRouter 主页的风格。应该是我提示词写的不够精确，下次应该说 100% 复刻。
 
 进入到管理面板中，成功对接了 GLM-5 等大模型，其他功能和前面 DeepSeek 开发的中转站类似：
 
-![](https://pic.yupi.icu/1/1778294386096-e18e0b10-c33b-4072-8f55-707326246669.png)
+![](/imgs/b640ad8b6927494b.png)
 
 区别在于，GPT-5.5 选择把所有管理功能全部塞到了一个页面，而不是像 DeepSeek 那样分成多个 Tab。布局太紧凑了，我个人觉得 DeepSeek 的分 Tab 体验更好。
 
 创建一个 API Key，准备试试调用效果：
 
-![](https://pic.yupi.icu/1/1778294492011-ee828f75-c1db-4820-a46a-8671f4b12f29.png)
+![](/imgs/b2f5ae0105e67763.png)
 
 进入调用文档，好家伙这是啥玩意啊？感觉新用户来了根本看不懂怎么调用，也没有 curl 调用示例。。。
 
-![](https://pic.yupi.icu/1/1778294634874-bad33150-7767-4c44-ab21-a05b2e9dd467.png)
+![](/imgs/fe9d8d194b6ef785.png)
 
 没关系，咱们先用跟之前一样的方式，通过 curl 测试，成功调用了 GLM-5 模型：
 
-![](https://pic.yupi.icu/1/1778294808815-6b71507e-9ed2-4817-a0bf-47b1d9c2484d.png)
+![](/imgs/af23cc8ac2f7f3e9.png)
 
 通过 Claude Code 测试也是一样的结果，简单对话能顺利完成，复杂任务还是会报错：
 
-![](https://pic.yupi.icu/1/1778294961477-8409d9a7-3c52-403a-924c-5ae6f36dba38.png)
+![](/imgs/8caa2821358d7bda.png)
 
 这就是没有兼容好各种请求格式的问题。如果你要正儿八经地做中转站，提示词里一定要强调多模型协议的兼容性，让 AI 多编写单元测试，充分验证各种边界情况。
 

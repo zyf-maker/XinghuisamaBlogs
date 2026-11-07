@@ -3,15 +3,12 @@ title: "Vibe Coding 代码重构技巧"
 summary: "避免 AI 生成混乱的意大利面代码"
 order: 8
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-01-13"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 代码重构技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -382,7 +379,7 @@ function ProfilePage() {
 
 从玩具到商业产品，需要你有意识地提升代码质量和重构。
 
-![](https://pic.yupi.icu/1/projectpk%E5%A4%A7.jpeg)
+![](/imgs/78faaa5ae99f870c.jpg)
 
 
 ### 重构的步骤

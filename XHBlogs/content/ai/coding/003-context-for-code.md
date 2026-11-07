@@ -3,7 +3,7 @@ title: "给 AI 读代码：上下文该怎么组织"
 summary: "把整个仓库塞给模型通常更差而不是更好。这篇讲选文件的流程、AGENTS.md 该写什么不该写什么，以及为什么接口签名比实现更值得进上下文。"
 order: 3
 level: "进阶"
-tags: ["上下文工程", "AI 编程", "AGENTS.md", "代码阅读"]
+tags: ["上下文工程", "AI 编程", "AGENTS.md"]
 updated: "2026-11-06"
 readingTime: 6
 ---

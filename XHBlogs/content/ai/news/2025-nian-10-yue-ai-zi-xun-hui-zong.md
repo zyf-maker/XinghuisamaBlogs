@@ -3,15 +3,12 @@ title: "2025 年 10 月 AI 资讯汇总"
 summary: "2025 年 10 月共收录 116 条 AI 行业资讯，如澳大利亚警方借助 AI 解码犯罪分子常用 emoji“弦外之音”，遏制网络犯罪；【视频】全球首款 100% BT.2020 电视，TCL X11L 评测：SQD-Mini LED 万级亮度视觉革命等。"
 order: 104
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-11-28"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《2025 年 10 月 AI 资讯汇总》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 10 月 31 日
 

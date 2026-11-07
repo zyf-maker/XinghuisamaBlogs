@@ -3,15 +3,12 @@ title: "完整攻略：如何用好DeepSeek，一文汇总！"
 summary: "本文从DeepSeek的独特优势出发，全面分享了DeepSeek的使用方法，包括：扔掉提示词模板的正确方式、让其 “说人话” 的方法、深度思考技能、强大文风转换器运用，以及使用禁区。"
 order: 7
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《完整攻略：如何用好DeepSeek，一文汇总！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本文从DeepSeek的独特优势出发，全面分享了DeepSeek的使用方法，包括：扔掉提示词模板的正确方式、让其 “说人话” 的方法、深度思考技能、强大文风转换器运用，以及使用禁区。
 
@@ -51,7 +48,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 结果：得到一份干巴巴的报告，一眼AI。
 
-![图片](https://pic.yupi.icu/yuyi/640)一眼AI，除了正确毛用没有。
+![图片](/imgs/a7cc0770a2f96b50.bin)一眼AI，除了正确毛用没有。
 
 **正确方式：**
 
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 结果：DeepSeek直接给出接地气的分析，还附带谈判话术。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220163516065)
+![图片](/imgs/b87dc7589c570c54.bin)
 
 **这就是最大的区别：**
 
@@ -88,7 +85,7 @@ DeepSeek不需要你写"专业提示词"，
 
 很多人抱怨DeepSeek的回复太抽象，像是在读天书。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170404398)
+![图片](/imgs/bb99492c0408869e.bin)
 
 但你可能不知道，只要一个简单的提示词，就能彻底改变这个问题。
 
@@ -102,17 +99,17 @@ DeepSeek不需要你写"专业提示词"，
 
 *原始回答：*
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170404505)
+![图片](/imgs/9f48cac86b306340.bin)
 
 *加上"说人话"后的回答：*
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170404605)
+![图片](/imgs/c5416268ce6d77ae.bin)
 
 **瞬间就接地气了，对吧？**
 
 因为deepseek对“说人话”这个词语很敏感。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170404682)
+![图片](/imgs/1ba211a4cf571371.bin)
 
 当然，有时候这三个字不够用，还可以用这个详尽版提示词，直接复制过去即可：
 
@@ -134,11 +131,11 @@ DeepSeek不需要你写"专业提示词"，
 
 *GPT-o1的回答：*
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170517819)
+![图片](/imgs/a796ff39ba01b8a2.bin)
 
 *DeepSeek的回答：*
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170517879)
+![图片](/imgs/86b8f10308a7cd09.bin)
 
 **这就是最大的区别：**
 
@@ -157,7 +154,7 @@ DeepSeek不需要你写"专业提示词"，
 - 回答深度明显下降
 - 反思能力受限
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170517911)
+![图片](/imgs/2275ae53ca40753e.bin)
 
 这是可以理解的临时措施，毕竟算力就是烧钱。
 
@@ -175,7 +172,7 @@ DeepSeek不需要你写"专业提示词"，
 
 但核心是**反思**。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170517968)
+![图片](/imgs/da56e36a2a2cbfa5.bin)
 
 ## **四、最强大的文风转换器** 
 
@@ -183,19 +180,19 @@ DeepSeek不需要你写"专业提示词"，
 
 赞扬一下王星有情有义、智勇双全的女友。王星就是前阵子被卖到缅北的演员。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518017)
+![图片](/imgs/dc5ae8c7bab72879.bin)
 
 这用典，这骈文，真的没谁了。
 
 发在群里后,直接炸出了三个语文老师...
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518060)
+![图片](/imgs/9e3495184f84d9ae.bin)
 
 还有的朋友，写出的文字连专业编剧都说老到。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518119)
+![图片](/imgs/79b2ec7be929e17e.bin)
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518162)
+![图片](/imgs/66b6cfffb03270c4.bin)
 
 事实上,这正是DeepSeek的第四个秘密武器:**文风转换器**
 
@@ -213,7 +210,7 @@ DeepSeek不需要你写"专业提示词"，
 
 比如鲁迅、莫言，都是惟妙惟肖。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518231)
+![图片](/imgs/bd9e82aedde9e98a.bin)
 
 **记住那个万能公式：**
 
@@ -225,11 +222,11 @@ DeepSeek不需要你写"专业提示词"，
 
 类似的风格迁移，也可以放在当代作家上，比如我们模仿刘润老师的跨年演讲：
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518291)
+![图片](/imgs/36b49483a60f0e1e.bin)
 
 注意要先提供内容原文（尽量详尽，一般不少于8000字），然后直接要求其模仿即可。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518338)
+![图片](/imgs/d53ee82b64c8dd10.bin)
 
 当然，为了更好的效果，最好用上**万能公式**。
 
@@ -245,13 +242,13 @@ DeepSeek不需要你写"专业提示词"，
 
 因为deepseek默认是64k，长文不够用。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518364)
+![图片](/imgs/6da9fed2b7afe5ce.bin)
 
 ### 2. 敏感内容
 
 毕竟是国产AI，内置审核尺度丧心病狂。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518405)
+![图片](/imgs/e5d076b9eae2f19e.bin)
 
 很多时候你不知道哪句话就触发审核了。
 
@@ -261,11 +258,11 @@ DeepSeek不需要你写"专业提示词"，
 
 1.在你的提问处点击修改，再提交几次，总有一次是不触发审核的。
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518444)
+![图片](/imgs/838c266fae45b7a2.bin)
 
 2.在生成回答的时候，狂点复制回答按钮。这样确保触发审核的时候，你的剪贴板上面拥有前面回答的内容
 
-![图片](https://pic.yupi.icu/yuyi/640-20250220170518482)
+![图片](/imgs/f7b9595b48ae9ff3.bin)
 
 3.一劳永逸，换御三家。（GPT，claude，gemini）
 

@@ -3,15 +3,12 @@ title: "实测 Manus：首个真干活 AI，中国造（附 50 个用例 + 拆�
 summary: "实测 Manus：首个真干活 AI，中国造（附 50 个用例 + 拆解），由程序员鱼皮整理。"
 order: 39
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《实测 Manus：首个真干活 AI，中国造（附 50 个用例 + 拆解）》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本以为 DeepSeek 已是天下无敌，没想到有人比他还猛．．．
 
@@ -23,7 +20,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这东西，在 GAIA 基准测试中远远甩开了 OpenAI。
 
-![](https://n.sinaimg.cn/finance/crawl/69/w550h319/20250306/d400-545dec6702cd360938e4119a4637f1a9.png)
+![](/imgs/46ec612ad9e4cc24.png)
 
 Peak，作为 Manus 的首席科学家，放送了原声。
 
@@ -33,7 +30,7 @@ Manus 的产品名，意思为“手”，来自拉丁文“mens et manus” —
 
 没想到，直接整了个刷爆全网的：真叫一个一码难求
 
-![](https://n.sinaimg.cn/finance/crawl/256/w489h567/20250306/2b91-cd6c58f71af506f528e9f56b9dba7dbb.png)
+![](/imgs/848d8b2a7eb6112a.png)
 
 我先放几个例子，这些来自于官方
 
@@ -61,7 +58,7 @@ Manues 的创始团队，是很久的朋友了，各个顶呱呱。
 
 顺道着，摸了点独家消息。
 
-![](https://n.sinaimg.cn/finance/crawl/307/w550h557/20250306/8585-2bd3ed79485966c5eb85d78815ccca6d.png)
+![](/imgs/d992220de2361dbe.png)
 
 我先随便跑了个．．．非常离谱的任务：
 
@@ -69,15 +66,15 @@ Manues 的创始团队，是很久的朋友了，各个顶呱呱。
 
 然后．．．迎来了我的一声声“卧槽“，首先．．他清晰的去规划任务
 
-![](https://n.sinaimg.cn/finance/crawl/272/w550h522/20250306/44e4-31ba2edc194a4d0a40701c5747de3914.png)
+![](/imgs/c67f19bfdf1dab7c.png)
 
 然后，开着浏览器导出去吧啦信息．．．
 
-![](https://n.sinaimg.cn/finance/crawl/156/w550h406/20250306/370a-3da2edd88ad4365c937266a3060d78a0.png)
+![](/imgs/87ae08918f344d21.png)
 
 还会不断的回顾矫正。。。
 
-![](https://n.sinaimg.cn/finance/crawl/156/w550h406/20250306/370a-3da2edd88ad4365c937266a3060d78a0.png)
+![](/imgs/87ae08918f344d21.png)
 
 没错，是我想要的 Agent 了！
 
@@ -91,7 +88,7 @@ Manues 的创始团队，是很久的朋友了，各个顶呱呱。
 
 在我把需求给到 Manus 之后，就看着他一阵捣鼓。
 
-![](https://n.sinaimg.cn/finance/crawl/420/w550h670/20250306/1a61-41f75522e0b61a04c11d17bbc387da24.png)
+![](/imgs/4c67bf061a694032.png)
 
 而最终呢，不但完成了任务，甚至帮我部署好了
 
@@ -99,217 +96,217 @@ https://etuswgwm.manus.space/
 
 顺道还给我留了个手册
 
-![](https://n.sinaimg.cn/finance/crawl/513/w550h763/20250306/59e3-73d153f11f4630bc91be9c26fad33f5b.png)
+![](/imgs/17d1bfc3fb8546ea.png)
 
 当然了，这里还有茫茫多的 case，来自官方
 
 Manus 通过资料研究、数据分析捕捉了过去四个季度市场对 Amazon 的情绪变化。
 
-![](https://n.sinaimg.cn/finance/crawl/171/w550h421/20250306/04ed-221b4e48fd8005cdf6e9e7fdfbc10c22.png)
+![](/imgs/37701f5ffaff52cc.png)
 
 Manus 全网深入调研找到最符合需求的货源
 
-![](https://n.sinaimg.cn/finance/crawl/129/w550h379/20250306/4a84-e5f5808a8c03681b40d83fa172f12119.png)
+![](/imgs/be8dc3b665b259de.png)
 
 让 Manus 根据你的个人主页或简历制作一个有设计感的名片。
 
-![](https://n.sinaimg.cn/finance/crawl/187/w550h437/20250306/744d-77a93de4c7f7c361cc1149ea84d84264.png)
+![](/imgs/ef2d3c4672fc8dfc.png)
 
 Manus 将深入理解和分析你的家庭情况和需求，并去专业的房产销售网站为你筛选最符合需求的标的。
 
-![](https://n.sinaimg.cn/finance/crawl/231/w550h481/20250306/e569-cf7ea9b640de10623ec6bd50a2625b0b.png)
+![](/imgs/29aee6ccc7c1f28c.png)
 
 来看看 Manus 是高效合理的安排 40 位候选人的时间
 
-![](https://n.sinaimg.cn/finance/crawl/152/w550h402/20250306/7048-571bd9c7df21d0604858efd8fa87ae69.png)
+![](/imgs/aad8e5d776aee936.png)
 
 上传你的课堂录音，让 manus 为你做一个图文并茂的课堂笔记
 
-![](https://n.sinaimg.cn/finance/crawl/246/w550h496/20250306/a5b8-cd0edcc4f58bc683263427ea8855c266.png)
+![](/imgs/5f1a94b1ee8fa385.png)
 
 Manus 为你全面个性化整理高质量的强化学习学习资源。
 
-![](https://n.sinaimg.cn/finance/crawl/211/w550h461/20250306/0cf9-cc5d9c776f136eda00da0898889c14af.png)
+![](/imgs/04cb4361b7d4857f.png)
 
 Manus 可以为你从各个渠道收集你关心的某个事件关键人物的公开观点
 
-![](https://n.sinaimg.cn/finance/crawl/152/w550h402/20250306/7d73-dfb93587d12fcadf5c23e11cfe9b833f.png)
+![](/imgs/3d5f8b97e20e0282.png)
 
 买保险的时候要对比太多 Policy 条款？交给 Manus 为你制作清晰的关键信息对比表，给出你最佳决策建议
 
-![](https://n.sinaimg.cn/finance/crawl/167/w550h417/20250306/5bb8-6b340552a837d092eb1fb59bdf84d51b.png)
+![](/imgs/c105c5f5df6a9f82.png)
 
 枯燥但需要打起十二分精神来完成的繁琐的合同审查工作，也是 Manus 非常擅长的。Manus 将会根据你的合同先去研究和学习相关的法律法规，再有理有据的告诉你的合同目前存在的纰漏。
 
-![](https://n.sinaimg.cn/finance/crawl/159/w550h409/20250306/46ea-3106edacfcbe6eda44171f7138e49810.png)
+![](/imgs/ffef285dcff9723c.png)
 
 把你的 API excel 文档交给 Manus，让他为你转换成一个详尽的 doc 版本的 API 文档。
 
-![](https://n.sinaimg.cn/finance/crawl/181/w550h431/20250306/d4f9-b4de45eadc15f4265d7fcd9fac988fc5.png)
+![](/imgs/ed054e2072873cd6.png)
 
 Manus 深入文献研究 Pitera 这种化妆品成分，并撰写了 Youtube 视频讲解脚本。
 
-![](https://n.sinaimg.cn/finance/crawl/163/w550h413/20250306/c75b-bc72796955f7b78640029fb81f1a57d8.png)
+![](/imgs/9e9d8f9af513d2a2.png)
 
 Manus 通过公开信息的深入搜集和分析，绘制一份公司组织关系图。
 
-![](https://n.sinaimg.cn/finance/crawl/273/w550h523/20250306/b6a1-b6e71f1cca3b56ec707d4cbd25bcd499.png)
+![](/imgs/00895edc68a3434a.png)
 
 我们让 Manus 看 Techcrunch 的官网设计风格，并根据这个风格设计了一套 Slide 可用的 icon 图表库
 
-![](https://n.sinaimg.cn/finance/crawl/184/w550h434/20250306/6dee-3ae5b610e648248f7412e89478ff79dc.png)
+![](/imgs/d24dc92652a0285d.png)
 
 Manus 根据你的喜好为你定制一段任意长度的冥想引导音频
 
-![](https://n.sinaimg.cn/finance/crawl/181/w550h431/20250306/1913-21344bb194032e78882b95addf1c19ea.png)
+![](/imgs/d0b69f27ccd348d3.png)
 
 Manus 深入进行股票分析，并制作惊艳的 Dashboard 为你展示股票的详细信息
 
-![](https://n.sinaimg.cn/finance/crawl/184/w550h434/20250306/7c94-445ec0761e1a0fdc96c49879bb9f4076.png)
+![](/imgs/637cc944ab4f30d0.png)
 
 Manus 可以为你定制化你想要的各种奇怪的音效，来听听 Manus 为我们做的鸟鸣混合蒸汽的音效
 
-![](https://n.sinaimg.cn/finance/crawl/141/w550h391/20250306/5c7a-e75141a1fa9f4147cb139802c7f54790.png)
+![](/imgs/7c7ef4265fdcae00.png)
 
 Manus 可以深入分析地区 POI 数据，交叉验证官方统计数据，深入分析某地病患人口统计
 
-![](https://n.sinaimg.cn/finance/crawl/346/w550h596/20250306/1498-9e42b5d71444ba70cd15896874e570d7.png)
+![](/imgs/bf413918292864e9.png)
 
 Manus 深入搜集了洛克菲勒家族并将家族关系整理成了清晰的关系图表
 
-![](https://n.sinaimg.cn/finance/crawl/163/w550h413/20250306/d3ce-d8fa434c9a67ee3a5df7354837e925ed.png)
+![](/imgs/8e0a713127c643a2.png)
 
 Manus 通过资料搜集、分析并发挥想象力为编剧创作者提供资料支持和灵感启发
 
-![](https://n.sinaimg.cn/finance/crawl/180/w550h430/20250306/8f38-de80289b455349657880c0f4ec9fd85f.png)
+![](/imgs/6c100e3004c3c4a9.png)
 
 根据财务记录文件审核公司的财务报表
 
-![](https://n.sinaimg.cn/finance/crawl/177/w550h427/20250306/a6bd-0d683a216de6041ee937ba0b5b0cbec2.png)
+![](/imgs/d97de5d08252b1bb.png)
 
 描述你公司的业务和你期待的潜在 B 端客户画像，Manus 将为你深入 Mapping
 
-![](https://n.sinaimg.cn/finance/crawl/230/w550h480/20250306/4454-5882e741dbe55f83d9a2a169e75be344.png)
+![](/imgs/cfd8780eb7a00654.png)
 
 Manus 为一家得克萨斯州的 BBQ 门店深入进行门店周边的数据估算和分析并提供销售额提升策略报告
 
-![](https://n.sinaimg.cn/finance/crawl/197/w550h447/20250306/65cd-765c92c0214d1f9c6b28f40f0182d35f.png)
+![](/imgs/c147c0242cc5b389.png)
 
 当你需要学习某个开源项目时，manus 会深入代码库理解代码，绘制系统结构图，并为你深入讲解项目细节
 
-![](https://n.sinaimg.cn/finance/crawl/115/w550h365/20250306/ed89-8e998600b3ecf3f4fbb982cf08dbd4d5.png)
+![](/imgs/b6f9cae04e32876e.png)
 
 上传室内平面图，Manus 学习室内灯光设计科学后为你设计室内灯光
 
-![](https://n.sinaimg.cn/finance/crawl/158/w550h408/20250306/1277-cad41710d1731d93e1f2ab77dfed6a79.png)
+![](/imgs/99ecf8aa74f176cc.png)
 
 Manus 为你制作宇宙大小测量的互动课程网页
 
-![](https://n.sinaimg.cn/finance/crawl/141/w550h391/20250306/11c3-1c371de7744d87023932b72188f41674.png)
+![](/imgs/44540b1c8db0ca32.png)
 
 为中学教师制作动量定理讲解的视频展示课件
 
-![](https://n.sinaimg.cn/finance/crawl/244/w550h494/20250306/1d7e-159cee491ac1377c75821ef52bcc0ad4.png)
+![](/imgs/7b54598e6e9bf973.png)
 
 Manus 为你清晰、惊艳的制作 Transformer 架构的互动讲解网页
 
-![](https://n.sinaimg.cn/finance/crawl/170/w550h420/20250306/2130-e9ece3a69264a90b153910c348b69420.png)
+![](/imgs/10d3aa3e506e1483.png)
 
 Manus 可以代理你深入体验某个网站的功能并作为一个产品专家为你写详尽的产品体验报告
 
-![](https://n.sinaimg.cn/finance/crawl/166/w550h416/20250306/5281-f1ad329d348c8b0db0cad859726d12c8.png)
+![](/imgs/fc4073827254248c.png)
 
 Manus 可以为记者或投资人深入整理待访谈人的全面信息并准备访谈所需的所有材料
 
-![](https://n.sinaimg.cn/finance/crawl/143/w550h393/20250306/b293-293b1393f27b408bc045363fa36c51c0.png)
+![](/imgs/706bf8f705e1e0c6.png)
 
 为你的复杂租赁合同制作一份关键信息表格
 
-![](https://n.sinaimg.cn/finance/crawl/240/w550h490/20250306/c480-d99c443cdd7220e0c82b1a8c3912c41f.png)
+![](/imgs/248b5632332b3dbc.png)
 
 我们想要 YC w25 batch 中所有的 B2B 公司的名单，Manus 自己操作 YC 官网筛选出符合要求的公司，并高效完成任务
 
-![](https://n.sinaimg.cn/finance/crawl/253/w550h503/20250306/6585-d75e8f877085a5a6f75df97fd03a7161.png)
+![](/imgs/83443da0a06f0d54.png)
 
 Manus 为我们讲解莱克星顿第一枪的战役过程时，配上了自己画的可视化地图
 
-![](https://n.sinaimg.cn/finance/crawl/250/w550h500/20250306/0a01-1b2858001737fde64a88c170b06eb0e7.png)
+![](/imgs/4884ce9659068d9b.png)
 
 你下一场的演讲需要个逐字稿提词器？Manus 将贴心地为你制作一个可控制速度、可控制字体大小、阅读清晰的 presentattion 文件
 
-![](https://n.sinaimg.cn/finance/crawl/193/w550h443/20250306/7364-7b417b608c83ab9bc3146c8a18d8fa31.png)
+![](/imgs/67d0a8847a62a10f.png)
 
 让 Manus 深入研究美国在感恩节期间的各州移动互联网流量消费情况并制作丰富的可视化图表
 
-![](https://n.sinaimg.cn/finance/crawl/64/w550h314/20250306/f638-2837731e2263f2d869625bd06b9afb71.png)
+![](/imgs/e4fdf4dddde7e010.png)
 
 按照要求深入分析英伟达的财报
 
-![](https://n.sinaimg.cn/finance/crawl/139/w550h389/20250306/baa6-69445b3ea2b4f06a00eef1a4db8385e0.png)
+![](/imgs/7ed884efbe8bffe9.png)
 
 上传你的 Amzon 网店销售数据表格，Manus 为你深入分析、可视化并提供销售提升建议
 
-![](https://n.sinaimg.cn/finance/crawl/208/w550h458/20250306/aeea-5cc2b208b0e56ac500f7dc07303a7ae7.png)
+![](/imgs/df168ec3249fbad8.png)
 
 给 Manus 一个 Kaggle 竞赛网址，Manus 自己完成了代码编写，预测结果输出。一次打到了前 10% 的成绩
 
-![](https://n.sinaimg.cn/finance/crawl/138/w550h388/20250306/d30b-4a234989dc53cbd60f9523a257b0c637.png)
+![](/imgs/68d8a925b07a05a3.png)
 
 Manus 为你定制个性化的小游戏。来试试泽连斯基白宫论战模拟器
 
-![](https://n.sinaimg.cn/finance/crawl/394/w550h644/20250306/15bf-761ef7aa08a2b687b2c5bb9464564c00.png)
+![](/imgs/777fd6424b61aaa3.png)
 
 让 Manus 为你的播客节目剪个两分钟的金句合集吧！
 
-![](https://n.sinaimg.cn/finance/crawl/173/w550h423/20250306/89d8-b98abf5be858bd0d583c4f250ef9ea2d.png)
+![](/imgs/fbdcadddf3bd4bee.png)
 
 Manus 不仅会润色你的文章，还能贴心地让美化文章的排版
 
-![](https://n.sinaimg.cn/finance/crawl/149/w550h399/20250306/600f-b9e436796dc2064b8f4145afb106891a.png)
+![](/imgs/59a36bd0f5909dba.png)
 
 Manus 深入研究整理了服装行业的 AI 搜索产品，并进行详尽的产品分析
 
-![](https://n.sinaimg.cn/finance/crawl/152/w550h402/20250306/27a5-d1f757e772008b716a06ee1803d2b256.png)
+![](/imgs/e91e5035bcc1f257.png)
 
 如果你需要了解某个产品真实的市场反馈，Manus 会为你详细整理分析电商平台对该产品的客户评论
 
-![](https://n.sinaimg.cn/finance/crawl/184/w550h434/20250306/ab43-c9b3b435928fc4fbcafcf10b66a4111a.png)
+![](/imgs/7eef23ff1d06ded2.png)
 
 Manus 通过深度研究和数据分析详尽论证 AWS 未来千亿市值的可能性
 
-![](https://n.sinaimg.cn/finance/crawl/170/w550h420/20250306/1c27-6b073b6628e446799c1cbd137e1ce7cc.png)
+![](/imgs/3b1e046205454d74.png)
 
 Manus 自己找到并研究了 24 年所有重要的 AR/AI 产品和行业动态
 
-![](https://n.sinaimg.cn/finance/crawl/150/w550h400/20250306/0476-a9f98c76ebcd9664a1831601a6cc2102.png)
+![](/imgs/313b524094632ed2.png)
 
 Manus 通过一手信息源的追踪整理，深入细节研究了过去十年美国 AI 产业政策
 
-![](https://n.sinaimg.cn/finance/crawl/118/w550h368/20250306/2fe0-bde82021c849ebe3455f70d2aefd4c77.png)
+![](/imgs/8b8ef71ad8ecad16.png)
 
 一次性上传 25 份候选人简历，manus 会按要求制作候选人信息表格，甚至能为你评估潜在候选人
 
-![](https://n.sinaimg.cn/finance/crawl/153/w550h403/20250306/f355-112374f3aa5ac73517950037a3a0273f.png)
+![](/imgs/496dfd53170adf72.png)
 
 Manus 可以让你轻松知道某个话题在 Twitter\\youtube 等社交媒体上的舆论情况
 
-![](https://n.sinaimg.cn/finance/crawl/145/w550h395/20250306/9e79-4d39cd0da623efea852f7367ecd79919.png)
+![](/imgs/e6b8240a53deea92.png)
 
 Manus 调研市场上 Top 20 的 CRM 机构，并整理出了各自的 Slogan 与品牌故事。
 
-![](https://n.sinaimg.cn/finance/crawl/172/w550h422/20250306/10ac-fc8e33cc8f16f65a31712b0631bf6b7a.png)
+![](/imgs/d59e2e8f0e7fa710.png)
 
 Manus 不仅能整合各类信息为你提供详尽的个性化旅行定制，还能为做一个专属你这次旅行的 handbook。
 
-![](https://n.sinaimg.cn/finance/crawl/173/w550h423/20250306/21f4-f8db900c6c41e02df28274ad40b9e421.png)
+![](/imgs/d6b9d7d752df1f2e.png)
 
 我们让 Manus 完成了对 Andrej Karpathy 的个人网站的 SEO 优化报告，只需要甩给 Manus 一个网址即可
 
-![](https://n.sinaimg.cn/finance/crawl/168/w550h418/20250306/3f83-8f2494d31d4fa3801190e5211dcb2649.png)
+![](/imgs/94240a48c86f8de0.png)
 
 Manus 通过深入的公开资料研究，为你撰写一份 Adobe 的公司传记。Manus 可以真正为你关心的主题写一本书，你再也不用担心读不到你喜欢的名人或公司的传记了。
 
-![](https://n.sinaimg.cn/finance/crawl/138/w550h388/20250306/4898-b3adfb9ea49581f867e8022a3718c911.png)
+![](/imgs/54f763d899fe615f.png)
 
 通过上面的例子，你会发现  Manus 与 ChatGPT、Claude 这类传统聊天[机器人](https://finance.sina.com.cn/realstock/company/sz300024/nc.shtml)有本质区别。
 
@@ -336,11 +333,11 @@ Manus 通过深入的公开资料研究，为你撰写一份 Adobe 的公司传�
 - 在部份需要扫描、过验证的网站，可能会被卡死：尤其是知乎
 - 在任务执行时，可能会卡在某一环节
 
-![](https://n.sinaimg.cn/finance/crawl/793/w550h243/20250306/e144-ea5749c3c867e1a612d119e917952a41.png)
+![](/imgs/1c4d394319284f61.png)
 
 - 如果任务过长（超出上下文），可能会宣告失败
 
-![](https://n.sinaimg.cn/finance/crawl/367/w550h617/20250306/8cf9-fe945839717f6c196dd896a03188a51b.png)
+![](/imgs/412384739dfaec61.png)
 
 对此，朋友也坦言正在持续优化，毕竟，这还只是最开始。
 

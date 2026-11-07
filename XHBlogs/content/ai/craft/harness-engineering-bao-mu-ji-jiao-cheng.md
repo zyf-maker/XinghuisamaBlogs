@@ -3,15 +3,12 @@ title: "Harness Engineering 保姆级教程"
 summary: "给 AI 搭建一整套靠谱的工作环境，让它持续靠谱地完成项目"
 order: 19
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-07-01"
 readingTime: 12
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Harness Engineering 保姆级教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -21,7 +18,7 @@ source: "https://github.com/liyupi/ai-guide"
 - 你前面明明要求单文件的代码不超过 200 行，结果聊了十几轮之后，AI 把前面的约束给忘了，写了个 1000 行代码的大文件。
 - 还有更头疼的，你让 AI 修一个项目里的 Bug，结果又出了 3 个新 Bug，项目都跑不起来了，代码越改越乱。
 
-![](https://pic.yupi.icu/1/1_harness_problem.png)
+![](/imgs/8856ad079b8df69d.png)
 
 前两个问题已经有了不少解决办法，比如写好提示词、给 AI 提供充足的信息，但第三个问题就比较棘手了。
 
@@ -29,7 +26,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这就是最近在 AI 圈很火的 Harness Engineering。
 
-![](https://pic.yupi.icu/1/17_harness_concept.png)
+![](/imgs/a3754bccbe788be9.png)
 
 写这期内容前，我看了不少国内外讲 Harness 的教程，很多都花了大量篇幅讲 AI 发展史和枯燥的理论，看完就忘了。所以我换了个思路，先通俗易懂地讲清楚 Harness 是什么，然后带你实战怎么用 Harness 做出完整大项目，还会告诉你怎么最快上手 Harness。
 
@@ -46,14 +43,14 @@ Harness 这个词翻译过来就是「马具」。如果把 AI 模型比作一�
 
 具体来说，Harness 就是围绕 AI 模型搭建的一整套工作环境和工作流程。你给 AI 写的项目规则文件、配置的各种工具、安排的任务拆分和执行顺序、设计的测试检查流程，这些统统都算 Harness。
 
-![](https://pic.yupi.icu/1/2_harness_horse.png)
+![](/imgs/877b7b1f6f1adb88.png)
 
 
 ### 为什么它突然火了？
 
 知名的 AI 框架 LangChain 做了个实验，使用同一个 AI 模型，只优化围绕模型搭建的 Harness 部分，编码基准测试的排名直接从 30 名开外冲到了前 5！
 
-![](https://pic.yupi.icu/1/3_langchain_exp.png)
+![](/imgs/cf2057d1281ba637.png)
 
 OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness 引导 AI 生成了上百万行代码，最终做出的产品已经在内部正式上线使用了。
 
@@ -61,7 +58,7 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 
 有了这些知名公司和大佬的背书，现在行业达成了一个共识：**AI 编程的瓶颈不在模型有多聪明，而在你围绕模型搭的这套环境和流程够不够好。**
 
-![](https://pic.yupi.icu/1/18_model_and_harness.png)
+![](/imgs/62c08d40b6ecbebd.png)
 
 
 ### Harness 的发展过程
@@ -70,7 +67,7 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 
 为了让你更好地理解 Harness，我先带你简单回顾一下这几年 AI 工程的发展。
 
-![](https://pic.yupi.icu/1/19_harness_develop.png)
+![](/imgs/1a540f64978379c5.png)
 
 
 #### 1、提示词工程（2022 ~ 2024）
@@ -79,7 +76,7 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 
 我们学着给 AI 设定角色、约束输出格式、用思维链让它一步步思考、给几个示例让它模仿。这些技巧虽然简单，但确实能让 AI 的输出质量提升一大截。
 
-![](https://pic.yupi.icu/1/4_prompt_engineer.png)
+![](/imgs/320bd0a61226aa23.png)
 
 #### 2、上下文工程（2025）
 
@@ -87,13 +84,13 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 
 比如写 AGENTS.md 规则文件让 AI 了解项目背景，用 RAG 让 AI 能检索到相关资料，对过长的上下文做压缩和摘要，甚至给 AI 建立跨对话的记忆机制，让它不会聊着聊着就断片儿。
 
-![](https://pic.yupi.icu/1/5_context_engineering.png)
+![](/imgs/afa8dfd9840197ed.png)
 
 #### 3、Harness Engineering（2026）
 
 在上下文工程的基础上又往前走了一步。除了关注给 AI 提供什么信息，还要关注给它配什么工具、大任务怎么拆分成小步骤分批完成、出了问题怎么自己检查和修复、怎么防止代码质量随着迭代慢慢下滑。让 AI 不只是回答问题，而是 **持续靠谱地完成整个任务**。
 
-![](https://pic.yupi.icu/1/6_harness_engineering.png)
+![](/imgs/6ce7754b3009a780.png)
 
 你会发现，三者是层层包含的关系。
 
@@ -101,13 +98,13 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 - 上下文包裹着提示词，关注的是「怎么给 AI 提供信息」
 - Harness 把它们全部包在里面，关注的是「怎么让 AI 持续靠谱地干完一整件事」
 
-![](https://pic.yupi.icu/1/7_harness_layers.png)
+![](/imgs/7bf939a62d6213bf.png)
 
 业界总结了一个公式：**Agent = 模型 + Harness**。
 
 也就是说，围绕 AI 模型搭建的工具、规则、流程、检查机制，全都属于 Harness 的范畴。
 
-![](https://pic.yupi.icu/1/8_agent_queals.png)
+![](/imgs/f529a8276a9795fe.png)
 
 
 ## 二、Harness 的五个核心模块
@@ -118,7 +115,7 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 
 接下来我一个个给大家讲解。如果你是程序员，或者有做过项目的经验，你会发现这些方法其实都不陌生。
 
-![](https://pic.yupi.icu/1/20_harness_modules.png)
+![](/imgs/bff20002eb5d13b9.png)
 
 
 ### 1、上下文架构：让 AI 了解项目背景和规矩
@@ -133,7 +130,7 @@ OpenAI 团队也做了类似的尝试。3 个人的小团队，全靠 Harness �
 
 不过要注意，AI 能处理的上下文空间是有限的。OpenAI 团队就踩过一个坑，他们试过把几千行的规则塞进一个大文件，结果 AI 反而更容易忽略里面的关键信息。后来他们改成把 AGENTS.md 当成一个 **目录** 来用，只写大概 100 行的摘要和索引，然后在 `docs/` 目录下放详细的设计文档。AGENTS.md 里面写清楚「前端规范看 `docs/FRONTEND.md`、安全相关看 `docs/SECURITY.md`」这样的指引，AI 需要什么就去读对应的文件。这种 **按需加载** 的思路，就是上下文架构的核心。
 
-![](https://pic.yupi.icu/1/9_agents_ondemand.png)
+![](/imgs/77270571291f1ac2.png)
 
 
 ### 2、执行能力：给 AI 装上手脚和工具
@@ -146,7 +143,7 @@ AI 模型本身只能输出文本。如果你想让 AI 真正帮你开发项目�
 
 还有 Agent Skills，把一整套复杂的工作流封装成技能包， 让 AI 能够快速学会各种专业技能，比如自动生成 PPT、处理 Excel 表格之类的。总之就是让 AI 能用的工具越多，它能帮你干的活就越多。
 
-![](https://pic.yupi.icu/1/10_harness_execute.png)
+![](/imgs/319a3e78ef546f50.png)
 
 
 ### 3、任务编排：给 AI 安排好工作计划
@@ -155,7 +152,7 @@ AI 模型本身只能输出文本。如果你想让 AI 真正帮你开发项目�
 
 如果你丢给 AI 一个大需求，它可能会尝试一把梭全部搞定。但 AI 的上下文空间是有限的，可能开发到一半信息就装不下了，前面定好的方案和约束慢慢被冲淡，最后留下一堆跑不起来的渣渣代码。
 
-![](https://pic.yupi.icu/1/21_context_full.png)
+![](/imgs/ec11bb046618b99b.png)
 
 怎么解决这个问题呢？
 
@@ -165,7 +162,7 @@ AI 模型本身只能输出文本。如果你想让 AI 真正帮你开发项目�
 
 如果有多个互不依赖的小任务，还可以用 SubAgents 让它们并行执行，效率更高。我们传统开发项目时的任务拆分、前后端并行开发，也是同样的思路。
 
-![](https://pic.yupi.icu/1/11_harness_task_split.png)
+![](/imgs/35776a079ef9969a.png)
 
 
 ### 4、反馈机制：让 AI 自己检查自己的工作
@@ -180,7 +177,7 @@ AI 写完代码之后，可能会自信满满地跟你说任务已经完成了�
 
 甚至还可以让另一个 AI 来审查代码，搞一个「多 Agent 互审」的机制，跟我们传统做项目时多个同事一起 Code Review 是一样的。
 
-![](https://pic.yupi.icu/1/12_auto_fix.png)
+![](/imgs/7d633665afb80545.png)
 
 
 ### 5、架构护栏：防止代码越改越乱
@@ -189,7 +186,7 @@ AI 写完代码之后，可能会自信满满地跟你说任务已经完成了�
 
 AI 生成代码有个特点，就是它会模仿仓库里已有的代码风格，哪怕是烂代码。比如同样的页面代码写了好几遍，也不知道要拆分成可复用的组件，会导致改了一个地方其他重复的地方就漏改了。时间一长，技术债就越滚越大。
 
-![](https://pic.yupi.icu/1/22_tech_debt.png)
+![](/imgs/03f11c0d421235e4.png)
 
 怎么防止这个问题呢？
 
@@ -199,7 +196,7 @@ OpenAI 还搞了一套叫「垃圾回收」的机制，定期让 AI 扫描代码
 
 另外建议每完成一个功能就用 Git 提交一次代码。Git 是一个版本控制工具，能记录代码的每个历史版本，相当于给项目打了一个存档点，万一后面改出了问题，可以随时恢复到之前的状态。
 
-![](https://pic.yupi.icu/1/13_arch_safety.png)
+![](/imgs/d261a007b3e5f5d0.png)
 
 
 ---
@@ -207,7 +204,7 @@ OpenAI 还搞了一套叫「垃圾回收」的机制，定期让 AI 扫描代码
 
 看到这里你会发现，写规则文件、配备工具、拆分任务、执行测试、定架构规范…… 这些其实都是程序员做项目时常用的方法，换到 AI 编程场景里，就是 Harness。
 
-![](https://pic.yupi.icu/1/14_harness_arch.png)
+![](/imgs/01561bdd04e79b0b.png)
 
 **Harness 不是什么新技术，它本质上是把我们已有的工程经验，系统地应用到 AI 上。**
 
@@ -220,7 +217,7 @@ OpenAI 还搞了一套叫「垃圾回收」的机制，定期让 AI 扫描代码
 
 这个项目是我在 [编程导航](https://www.codefather.cn) 全程直播带做的 AI 编程全栈项目「万能视频下载总结器」。我用 AI 从零开发了一个能从各大平台下载视频、并用 AI 总结视频内容的网站，还做了 SEO / GEO 优化和 Stripe 国际支付。
 
-![](https://pic.yupi.icu/1/image-20260414185727869.png)
+![](/imgs/46821a4f1671326a.png)
 
 回过头看，整个开发过程其实就是一套完整的 Harness 实践。
 
@@ -237,13 +234,13 @@ OpenAI 还搞了一套叫「垃圾回收」的机制，定期让 AI 扫描代码
 
 然后我把这些思考写成文档，关联给 AI，让它在我的方案基础上补充细节。
 
-![](https://pic.yupi.icu/1/1772104502180-1c03c0ee-e122-45f9-ab57-b6f80ba68769.png)
+![](/imgs/3dc018267fe2da49.png)
 
 注意，我特意 **开启了 Plan Mode**，让 AI 先出方案找我确认，而不是上来就直接写代码。
 
 AI 生成了一个技术方案文档，我仔细看了一遍，发现它把一些后续才做的功能也纳入计划了，于是我就跟它说「先完成核心的视频下载功能」，一步步来。
 
-![](https://pic.yupi.icu/1/1772105641205-3b10ce44-984a-4a0a-8164-e6bf9238008b-20260414190723769.png)
+![](/imgs/50175d3ddf32aaea.png)
 
 这就是 **任务编排** 和 **上下文架构** 在方案阶段的应用。先规划再执行，给 AI 提供充足的背景信息，约束它不要一上来就一把梭。
 
@@ -254,19 +251,19 @@ AI 生成了一个技术方案文档，我仔细看了一遍，发现它把一�
 
 首先是 **给 AI 装上联网能力**。我配置了 Firecrawl MCP 让 AI 能抓取网页内容，又配置了 Context7 MCP 让 AI 能获取最新的技术文档。
 
-![](https://pic.yupi.icu/1/1772104408697-5266b0fe-962d-4f1c-9651-f6f23e178881.png)
+![](/imgs/dae20f3ee9a436b7.png)
 
 这样 AI 在开发过程中遇到不确定的 API 用法，就可以自己去查最新文档，而不是用过时的写法。
 
-![](https://pic.yupi.icu/1/1772102457113-a31b056a-bfd8-4458-a8b1-194e3a8ca648.png)
+![](/imgs/1c752ef61a91094a.png)
 
 核心的视频下载功能做完后，我 **让 AI 沉淀了一总结文档**，记录当前的功能、架构和实现细节，然后提交到 Git。
 
-![](https://pic.yupi.icu/1/1772528547362-5763b40e-ef99-4abb-96c3-a21411c6456f.png)
+![](/imgs/43aea0ff319e7a36.png)
 
 这一步很关键，因为后面要做新功能的时候，我会新开一个对话窗口，把这些文档关联给 AI，它就能快速找回记忆，不用从头再来。
 
-![](https://pic.yupi.icu/1/1772528792609-cc1739e6-21eb-4909-8967-80f03d3e8a99.png)
+![](/imgs/ff425c622e0bf1ac.png)
 
 为什么新功能要新开对话呢？
 
@@ -281,29 +278,29 @@ AI 不仅能写代码，还能 **自己打开浏览器测试**。
 
 在这个项目里，AI 通过 Cursor 内置的 Browser Use 功能，自己启动浏览器、输入视频链接、点击解析按钮，然后检查结果是否正常显示，比人工测试方便太多了。
 
-![](https://pic.yupi.icu/1/1772182233654-f0155f39-9a20-475c-b6ab-65144ae88add.png)
+![](/imgs/2ad61c750f9573db.png)
 
 不过 AI 的自测也不是万能的，遇到解决不了的问题，还是要人工出马。
 
 比如我通过人工测试发现 B 站视频下载报了 403 错误，就把报错信息直接贴给 AI，让它自主分析和修复。AI 很快发现是防盗链的问题，然后自己搞定了。
 
-![](https://pic.yupi.icu/1/1772183079662-6a6c95ea-a666-4ff5-98aa-c28640cfde72.png)
+![](/imgs/f1fa4cdb0e43fbea.png)
 
 有时候 AI 会卡在同一个问题上反复修不好。比如 Markdown 渲染出了问题，我跟 AI 说了好几轮都没修对。
 
-![](https://pic.yupi.icu/1/1772620145879-c410ef48-e0b5-4a1a-b72c-9abb3d5ec292.png)
+![](/imgs/26c08bc8abd3f364.png)
 
 后来我换了个角度去描述这个问题，跟它说：你不应该改后端 Python 代码么？如果后端 SSE 返回的内容丢失了，前端解析出来肯定是错的吧？
 
-![](https://pic.yupi.icu/1/1772621509450-1b167ee7-e8c6-4aa2-a0d7-08b645d39df3.png)
+![](/imgs/d71d20b1fbe7507e.png)
 
 AI 这才恍然大悟，改了后端逻辑就修好了。
 
-![](https://pic.yupi.icu/1/1772621492366-d5a020a8-290f-4c84-82ac-c92a27c6be0c.png)
+![](/imgs/3b0cb6c6bcbdb073.png)
 
 还有个小技巧，就是不要每次测试都走完整的「输入链接、解析、总结」流程，太慢了。我让 AI 自己模拟一段 Markdown 数据直接测试渲染效果，这样反馈要快得多。
 
-![](https://pic.yupi.icu/1/1772618934073-fac1cb70-5793-4c56-a353-1893483b231a.png)
+![](/imgs/4e637f72fc122048.png)
 
 这些都是 **反馈机制** 的体现，给 AI 提供反馈信号让它自我修复，AI 搞不定的时候人工介入纠偏。
 
@@ -316,19 +313,19 @@ Harness 不是完全放手不管，而是把人的精力用在最关键的地方
 
 这三个需求相互独立，所以我在提示词里引导 AI 合理规划任务 **并行开发**，AI 用了 SubAgents 同时执行多个子任务。
 
-![](https://pic.yupi.icu/1/1772616016270-9d4e5537-e7da-4f7c-8242-5b4db2e5d79b.png)
+![](/imgs/bbb381e2267b91df.png)
 
 每完成一个功能，我就让 AI 提交代码并更新文档，作为检查点。万一后面改出了问题，可以随时回滚。
 
-![](https://pic.yupi.icu/1/1772613546285-f7291f45-8f72-49aa-b501-09169cb13aa5.png)
+![](/imgs/00aad61337724e81.png)
 
 后来给项目做 SEO 优化的时候，我还用了一个 SEO Audit 技能，让 AI 自动分析网站并生成优化方案。
 
-![](https://pic.yupi.icu/1/1773740490974-4416b5e7-79bf-472f-bae5-b54cc7ea0b20.png)
+![](/imgs/2818d9809bb04652.png)
 
 做完 SEO 之后，还要做 GEO 优化，我直接复用了 SEO 的对话上下文，这样 AI 已经了解了项目背景和代码，不用重新再读一遍，省了不少时间。
 
-![](https://pic.yupi.icu/1/1773744551802-fff25d1e-bccd-475d-a7b8-2510566221d7.png)
+![](/imgs/133aef49d90cb55d.png)
 
 上面这些操作涵盖了 **任务编排**（并行开发）、**架构护栏**（Git 检查点）和 **执行能力**（Skills 扩展）几个方面，都是 Harness 的重要实践。
 
@@ -349,7 +346,7 @@ Harness 本身并不复杂，也没什么需要专门去啃的理论。上面项
 
 5）每完成一个功能就让 AI 沉淀文档并提交代码，作为 AI 的「存档点」
 
-![](https://pic.yupi.icu/1/23_harness_tips.png)
+![](/imgs/9e9d10f28b79728e.png)
 
 
 ### Harness 工具
@@ -358,11 +355,11 @@ Harness 本身并不复杂，也没什么需要专门去啃的理论。上面项
 
 比如 Spec Kit 工具使用的是 SDD（Spec-Driven Development）规范驱动开发的思路，它会先引导你把需求拆解成详细的规范文档，然后让 AI 按照文档一步步开发，每个阶段都有明确的验收标准。
 
-![](https://pic.yupi.icu/1/15_sdd.png)
+![](/imgs/d67f03dd67219089.png)
 
 还有 Superpowers 这种 Agent Skills 框架，它内置了一整套开发工作流，包括强制 TDD（Test-Driven Development）测试驱动开发，就是先写测试再写代码，还有两阶段代码审查、子代理协作等，相当于直接给 AI 装了一套完整的项目管理流程。
 
-![](https://pic.yupi.icu/1/16_superpowers.png)
+![](/imgs/c4fb0592778d1172.png)
 
 虽然这些工具可以帮你快速起步，但从长远来看，**理解 Harness 的思路比掌握某个工具更重要**。
 
@@ -370,7 +367,7 @@ Harness 本身并不复杂，也没什么需要专门去啃的理论。上面项
 
 我在 [编程导航](https://www.codefather.cn) 带大家做过几套 AI 编程全栈项目，除了上面提到的万能视频下载总结器，还有 AI 热点监控工具、GitHub 文档翻译器、AI 闯关学习小程序等，其实都是 Harness Engineering 的完整实战。每个项目都是从需求分析开始，到方案设计、AI 编码开发、测试验证、功能扩展，走完一整套流程。如果你想跟着实战项目边做边学 AI 编程和 Harness，可以来看看。
 
-![](https://pic.yupi.icu/1/image-20260414172537171.png)
+![](/imgs/bc155fb9f748e1a7.png)
 
 
 ## 最后哔哔

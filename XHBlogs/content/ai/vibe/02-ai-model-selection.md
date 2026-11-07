@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 模型选择指南》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 我们已经了解了 AI 编程工具的 3 大类型。但无论你选择零代码平台、代码编辑器还是命令行工具，它们背后都有一个共同的核心 —— **AI 模型**。
@@ -44,7 +41,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 所以，同样是用 Cursor，选择 Claude 和选择 ChatGPT，就像请了 2 个不同风格的程序员来帮你写代码，最终的效果自然会不一样。
 
-![](https://pic.yupi.icu/1/whatisaimodel%E5%A4%A7.jpeg)
+![](/imgs/151ed19d6166a2a2.jpg)
 
 
 
@@ -58,7 +55,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 对于我们学习 Vibe Coding 来说，主要关注前两类就够了。开源模型虽然灵活，但配置和使用门槛较高，不太适合新手。
 
-![](https://pic.yupi.icu/1/image-20260106202328517.png)
+![](/imgs/f10e7f62026b5f5e.png)
 
 接下来，我会逐一介绍这些主流模型的特点，帮你找到最适合自己的那一个。
 
@@ -113,13 +110,13 @@ Claude 主要有 3 种使用方式：
 - 通过 Cursor：订阅 Cursor Premium（每月 30 美元）及以上套餐，Claude 等第三方模型按 API 原价从用量里另外计费
 - API 调用：按 Token 计费，用多少付多少，比较灵活
 
-![Claude 官方定价](https://pic.yupi.icu/1/image-20260106203330977.png)
+![Claude 官方定价](/imgs/53e749ede4b2ab98.png)
 
 如果你是认真想学 Vibe Coding、想要手搓一个商业级产品，推荐用 Cursor。因为在一个工具里，你不仅能用 Claude，还能随时切换其他模型，开发体验最好。
 
 要注意的是，2026 年下半年 Cursor 调整了套餐：现在分为 Free、Plus（每月 8 美元）、Premium（每月 30 美元）、Super（每月 100 美元）、Ultra（每月 200 美元）几档，原来的 Pro 套餐已经下架。其中 Plus 只能用 Grok 系列模型，想用 Claude、GPT 等第三方模型至少要开 Premium，而且第三方模型不包含在月费里，会按 API 原价单独计费，用得越多花得越多。给你们看看我的账单：
 
-![](https://pic.yupi.icu/1/image-20260106202855849.png)
+![](/imgs/be5ef25f2de11caf.png)
 
 另外推荐一个学习资源 [Claude Cookbooks](https://github.com/anthropics/claude-cookbooks)，这是 Anthropic 官方提供的 Claude 使用技巧和代码示例集合，包含工具调用、RAG、分类、摘要、多模态等各种实用场景的教程，非常值得学习。
 
@@ -139,7 +136,7 @@ ChatGPT 是 OpenAI 公司的产品，也是最早让 AI 聊天火遍全球的工
 
 9 月 29 日，OpenAI 又推出了 **GPT-6.1 Sol**，性能接近 Astra、成本更低，现在是 Codex 里主推的编程模型。要注意的是，Sol 和 Luna 目前只在 ChatGPT Work 和 Codex 里能用，普通的聊天界面暂时用不了。另外老的 GPT-5.5 已经在 2026 年 10 月 14 日从 ChatGPT 和 Codex 里退役（API 还能继续调用），如果你的配置里还写着 `gpt-5.5`，记得换成新模型。
 
-![](https://pic.yupi.icu/1/image-20260106221446611.png)
+![](/imgs/8c184a7ee241c784.png)
 
 虽然在纯编程能力的比拼上，ChatGPT 稍微逊色于 Claude，但它有自己的独特优势。
 
@@ -159,7 +156,7 @@ ChatGPT 的价格和获取方式：
 - ChatGPT Pro：每月 100 美元（5 倍用量）或每月 200 美元（20 倍用量）
 - API 调用：按 Token 计费（每百万 token 输入 / 输出），GPT-6 Astra 为 $10 / $50，GPT-6 Sol 为 $2 / $10，GPT-6 Luna 为 $0.10 / $0.50
 
-![](https://pic.yupi.icu/1/image-20260106203501181.png)
+![](/imgs/fe03a3bda8bf6dd8.png)
 
 用 API 的话有个坑一定要知道：**GPT-6 系列的上下文窗口虽然有 105 万 token，但单次请求的输入一旦超过 27.2 万 token，整次请求的输入费率翻倍、输出费率涨 1.5 倍**。所以别看窗口大就往里猛塞，超过那条线账单是阶梯往上跳的。另外 Batch 和 Flex 是标准价的一半，追求低延迟的 Fast 模式是标准价的两倍。
 
@@ -171,7 +168,7 @@ ChatGPT 的价格和获取方式：
 
 接下来是 Gemini，Google 推出的 AI 模型。Gemini 3 系列有两条线：顶配的 Gemini 3 Pro 各方面能力都很全面，轻量的 Flash 线速度快、价格便宜。
 
-![](https://pic.yupi.icu/1/image-20260106221514964.png)
+![](/imgs/aaaaaee775271a7f.png)
 
 Google 在 Flash 这条线上迭代得非常猛，2026 年 7 月到 9 月的六周里连发了 3.6、3.7、3.8 三个版本。最新的 **Gemini 3.8 Flash** 发布于 2026 年 9 月 2 日，模型 ID 是 `gemini-3.8-flash`，1M 上下文窗口，输出上限 64K。
 
@@ -183,7 +180,7 @@ Gemini 最厉害的地方是它的超长上下文窗口，Gemini 3 Pro 和 Flash
 
 而且在 UI 构建方面，Gemini 3 Pro 的表现也特别出色。根据实测，它在前端 UI 设计、3D 模型构建等方面的能力很强，在某些场景下甚至超过了 Claude 和 GPT-5。
 
-![一句话开发 3D 动画网站](https://pic.yupi.icu/1/1763785739331-b643bd7d-85d6-42d9-8462-f842a8a790e6.png)
+![一句话开发 3D 动画网站](/imgs/907fe56098a8e4c4.png)
 
 所以如果你需要处理大型项目、需要分析大量代码、做 UI / 前端开发、或者预算有限但需要强大能力，Gemini 会是很好的选择。
 
@@ -241,7 +238,7 @@ Grok 4.7 发布当天就上线了 Cursor 和 GitHub Copilot，想试试的话直
 
 而且我相信，国产模型是有机会超越国际模型的，我相信开源的力量！
 
-![开源模型排行榜](https://pic.yupi.icu/1/image-20260106215413048.png)
+![开源模型排行榜](/imgs/0f5aa16e059e83c0.png)
 
 
 
@@ -316,7 +313,7 @@ Grok 4.7 发布当天就上线了 Cursor 和 GitHub Copilot，想试试的话直
 
 让我们继续前进吧，冲冲冲！
 
-![](https://pic.yupi.icu/1/image-20260106220555209.png)
+![](/imgs/9a015874f6af9717.png)
 
 
 

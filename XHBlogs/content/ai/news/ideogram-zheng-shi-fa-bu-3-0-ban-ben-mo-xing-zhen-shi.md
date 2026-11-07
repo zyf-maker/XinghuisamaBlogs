@@ -3,15 +3,12 @@ title: "Ideogram 正式发布 3.0 版本模型：真实感与创意表现再突�
 summary: "共收录 4 条 AI 行业资讯，如Ideogram3.0；图像生成模型等。"
 order: 47
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Ideogram 正式发布 3.0 版本模型：真实感与创意表现再突破》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 Ideogram 官方宣布推出其最新图像生成模型——Ideogram3.0。这一版本在真实感、创意表现力和风格一致性上实现了显著突破，被认为是图像生成领域的一次重要里程碑。新模型不仅对标 GPT-4o 等顶级 AI 系统，还以其高效性能和创新功能吸引了广泛关注。
 

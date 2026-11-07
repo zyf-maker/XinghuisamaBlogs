@@ -10,9 +10,6 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《TRAE SOLO：AI 主导的全栈开发工具》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 在前面的文章中，我们学习了各种 AI 编程工具。无论是 Cursor 还是 Claude Code，都是 **人类主导 + AI 辅助** 的模式，你需要不断地和 AI 对话、确认、修改。
@@ -32,7 +29,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 所谓 SOLO 模式，是让 **AI 主导任务并自动执行开发**。你只需要有一个想法，然后配合 AI 就能让想法真正落地。
 
-![](https://pic.yupi.icu/1/image-20250928220322788.png)
+![](/imgs/6f3b09b51c3a280b.png)
 
 TRAE SOLO 和 Cursor 的区别是什么？
 
@@ -68,7 +65,7 @@ TRAE 提供了强大的集成能力，可以傻瓜式接入各种服务：
 
 不用看官方文档，直接在 TRAE 中点几下就能完成集成。
 
-![](https://pic.yupi.icu/1/image-20250928222329915.png)
+![](/imgs/63a8c21e0dde309f.png)
 
 
 
@@ -106,7 +103,7 @@ TRAE 提供了 DiffView 代码变更工具，可以清晰地看到每次修改�
 - 安装 [Node.js 环境](https://nodejs.org/zh-cn/download)
 - 如果要开发小程序，还需要 [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
 
-![](https://pic.yupi.icu/1/%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E6%8B%BC%E5%9B%BE.png)
+![](/imgs/39880d44d35acaa0.png)
 
 
 
@@ -114,7 +111,7 @@ TRAE 提供了 DiffView 代码变更工具，可以清晰地看到每次修改�
 
 准备好工具后，进入 TRAE 的 SOLO 模式，打开一个空白的项目文件夹。
 
-![](https://pic.yupi.icu/1/image-20250928220647365.png)
+![](/imgs/c7b845f5a6661610.png)
 
 首先我们要进行需求分析。别想的太复杂，只需要把自己的想法用自然语言告诉 AI 就好。
 
@@ -126,27 +123,27 @@ TRAE 提供了 DiffView 代码变更工具，可以清晰地看到每次修改�
 用户可以自主设置一个想学习（或测验）的主题，由 AI 围绕主题生成若干个有趣的知识问答卡片，通过闯关答题的形式引导用户更轻松愉快地掌握知识。
 ```
 
-![](https://pic.yupi.icu/1/image-20250928221154635.png)
+![](/imgs/51f6ea9e22246fc5.png)
 
 AI 很快生成了详细的产品需求文档和技术架构文档，很符合企业规范的开发流程。
 
-![](https://pic.yupi.icu/1/image-20250928221128338.png)
+![](/imgs/594f0fec0c2f6e54.png)
 
 看得出来 AI 已经有些迫不及待想写代码了，但是千万别急，一定要先 **仔细确认需求文档**。
 
 AI 写的还是不错的，但不一定完全符合我们的预期。因此我们要人工重点关注要实现的核心功能，移除掉不需要的附加功能，先确保核心业务流程（P0 级需求）跑通。
 
-![](https://pic.yupi.icu/1/image-20250928221334652.png)
+![](/imgs/ccde1e505b710f0d.png)
 
 **不要嫌这一步麻烦，现在多花 1 分钟，以后节约 1 小时！** 一定要明确需求，防止 AI 做了不该做的功能。
 
 这里有个小技巧，可以利用 TRAE 集成的 Figma 设计工具，在这里获取到一些免费的产品 UI 原型图。
 
-![](https://pic.yupi.icu/1/image-20250928221519374.png)
+![](/imgs/f8fd80b9d42269ab.png)
 
 可以点击查看某个原型具体的设计，只需要选中你看上的原型图，点击添加到对话，TRAE 就会自动把原型图关联到发给 AI 的对话中。
 
-![](https://pic.yupi.icu/1/image-20250928221618668.png)
+![](/imgs/b2b567255d3f00e7.png)
 
 
 
@@ -165,11 +162,11 @@ AI 写的还是不错的，但不一定完全符合我们的预期。因此我�
 
 很快 AI 生成了完整的技术架构文档，包括用什么前端和后端技术、接口怎么设计、数据表怎么设计等等。
 
-![](https://pic.yupi.icu/1/image-20250928221924096.png)
+![](/imgs/c4339ebea96a3084.png)
 
 这里我建议能看懂文档的同学还是多发挥一些专业性，明确具体的技术选型，让 AI 生成的代码在自己的可控范围内。比如我明确项目使用 Supabase 数据库、使用 OpenRouter 对接 Gemini 大模型提供 AI 服务。
 
-![](https://pic.yupi.icu/1/image-20250928221952548.png)
+![](/imgs/80ccec1b4e1e3988.png)
 
 看不懂文档的同学也不用担心，你就把自己想象成老板或者产品经理，程序员同事吭哧吭哧拿了份技术方案给你，你就说 "怎么实现我不管，这个需求明天上线！" 让他放手干就完了。
 
@@ -185,25 +182,25 @@ AI 写的还是不错的，但不一定完全符合我们的预期。因此我�
 
 相比于自己手动安装服务，可以直接使用 TRAE 提供的集成能力，不用专门去看官方文档对接服务，直接傻瓜式安装。
 
-![](https://pic.yupi.icu/1/image-20250928222329915.png)
+![](/imgs/63a8c21e0dde309f.png)
 
 #### 集成 Supabase
 
 [Supabase](https://supabase.com/) 是开源的后端即服务（BaaS）平台，提供数据库存储、用户身份验证、即时 API 等功能。
 
-![](https://pic.yupi.icu/1/image-20250928222457606.png)
+![](/imgs/6111daefebc593be.png)
 
 点击连接按钮，在弹出的页面中完成创建 Supabase 账号、创建组织、以及认证授权。
 
-![](https://pic.yupi.icu/1/image-20250928222520491.png)
+![](/imgs/9845231497d9d951.png)
 
 然后进入到 TRAE，看到组织成功显示后，点击创建一个新项目，填写一些项目配置信息，然后点击创建。
 
-![](https://pic.yupi.icu/1/image-20250928222545479.png)
+![](/imgs/c4da74864c5d1b4d.png)
 
 创建项目后回到 TRAE 刷新一下，点击连接就可以了，就这么简单。
 
-![](https://pic.yupi.icu/1/image-20250928222608471.png)
+![](/imgs/f05472e1db6b8f5f.png)
 
 如果说之前 AI Vibe Coding 让后端开发者爽翻了，那这波可以说是前端开发者赢麻了，简单的项目都不用自己搭建后端了。
 
@@ -213,15 +210,15 @@ AI 写的还是不错的，但不一定完全符合我们的预期。因此我�
 
 TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://openrouter.ai/)，它的优点是可以通过统一的 API 对接各家大模型，比如 Gemini、GPT、Claude 等等。
 
-![](https://pic.yupi.icu/1/image-20250928222649319.png)
+![](/imgs/df067daec1abe94b.png)
 
 首先到官网注册登录账号，然后进入 API Keys 页面创建一个调用 AI 的密钥，然后在 TRAE 中配置并填写密钥，AI 服务就已经集成完毕了。
 
-![](https://pic.yupi.icu/1/image-20250928222833273.png)
+![](/imgs/fae35a2dad0a5721.png)
 
 但是注意，要确保你有足够的用量，否则可能调用失败，或者报错调用频率太频繁。
 
-![](https://pic.yupi.icu/1/image-20250928222853247.png)
+![](/imgs/2390728e89921eba.png)
 
 
 
@@ -239,15 +236,15 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 我们可以使用 TRAE 提供的 Prompt 优化功能来一键优化提示词。
 
-![](https://pic.yupi.icu/1/%E4%BC%98%E5%8C%96%E6%8F%90%E7%A4%BA%E8%AF%8D.png)
+![](/imgs/0e7659e710ac4485.png)
 
 点击执行，请开始你的 SOLO。AI 会先给出任务计划：
 
-![](https://pic.yupi.icu/1/image-20250928224232897.png)
+![](/imgs/a2b7213bf354c490.png)
 
 然后自主操作终端执行命令、编写后端配置文件和业务逻辑代码、编写数据库建表语句等等，重要操作还会找我们主动确认，非常严谨。
 
-![](https://pic.yupi.icu/1/image-20250928224300188.png)
+![](/imgs/6f298ae717275083.png)
 
 看不懂也没关系，让它放手干吧。
 
@@ -255,11 +252,11 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 我感觉 TRAE 调教 AI 还是有一套的，它会自己验证程序是否正常。
 
-![](https://pic.yupi.icu/1/image-20250928224350332.png)
+![](/imgs/d0e64456f0b8ec2b.png)
 
 一段时间后，AI 生成完毕，不仅生成了代码，还很贴心地生成了后端的接口文档。
 
-![](https://pic.yupi.icu/1/image-20250928224437599.png)
+![](/imgs/f6183f1c4a37e265.png)
 
 
 
@@ -271,7 +268,7 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 为什么呢？因为 AI 大模型的上下文是有限的，前面的操作已经消耗了不少上下文。为了防止 AI 上下文不足或者记忆混乱，我们生成前端时，重新开一个干净的对话来编写提示词。
 
-![](https://pic.yupi.icu/1/image-20250928224735250.png)
+![](/imgs/19f98487cc4efd9d.png)
 
 提示词中提供给 AI 产品需求文档、技术架构文档和后端接口文档，就可以让 AI 专注于前端代码生成。
 
@@ -292,7 +289,7 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 一段时间后，AI 生成完毕，一次性 SOLO 出了 20 多个文件！
 
-![](https://pic.yupi.icu/1/image-20250928224830751.png)
+![](/imgs/aa49f259e47cabef.png)
 
 虽然看着很爽，但老实说我是有点慌的，不知道能不能正常运行。
 
@@ -304,25 +301,25 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 首先需要打开微信开发者工具，导入已有项目文件夹，先选择使用测试号开发调试项目。
 
-![](https://pic.yupi.icu/1/image-20250928225118198.png)
+![](/imgs/0311e17150e3bae4.png)
 
 打开项目后，我们先点击右上角的 "测试号"，按照 [文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/sandbox.html) 的指引获取到测试号的 AppID 和 AppSecret 密钥：
 
-![](https://pic.yupi.icu/1/image-20250928225220066.png)
+![](/imgs/b16e194015e92f84.png)
 
 然后手动填入到后端配置文件中，否则将无法正常微信登录。
 
-![](https://pic.yupi.icu/1/image-20250928225304614.png)
+![](/imgs/aca331f259c9d82c.png)
 
 然后我们就可以编译运行项目了。
 
 结果，果然报错了！
 
-![](https://pic.yupi.icu/1/image-20250928225522618.png)
+![](/imgs/bff944295ac0556c.png)
 
 意料之中，意料之中。小程序开发比网页开发还是更难一些的，毕竟微信开发者工具和文档一直在更新。
 
-![](https://pic.yupi.icu/1/image-20250928225618743.png)
+![](/imgs/05aa309a96804338.png)
 
 不过没关系，开发过程中难免遇到问题。解决方法很简单，一句话：**报什么错误，就把报错信息发给 AI，让 AI 来修复！**
 
@@ -330,29 +327,29 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 1）图片路径问题：利用 TRAE 的提示词优化功能，能更好地指引 AI 按照指定的步骤修复 Bug
 
-![](https://pic.yupi.icu/1/image-20250928225717687.png)
+![](/imgs/bb141a4d80b9f61c.png)
 
 2）登录失败问题：点击开发者工具右上角的 “详情”，进入到本地设置中，勾选 “不校验合法域名”
 
-![](https://pic.yupi.icu/1/image-20250928225825654.png)
+![](/imgs/86ad58afda966ccf.png)
 
 3）接口路径问题：这可能是由于上下文过长导致的，让 AI 整体修复前端调用后端接口的路径和参数就好
 
-![](https://pic.yupi.icu/1/image-20250928225903118.png)
+![](/imgs/77ce9af638dd8a59.png)
 
 4）环境配置问题：代码中读取的环境变量名称和配置文件中的不一致，这个问题比较简单，我们可以手动修改。
 
 当我敲了一个字符后，编辑器会自动提示我要修改哪些代码，还支持跨行修改。
 
-![](https://pic.yupi.icu/1/image-20250928225955681.png)
+![](/imgs/277309e59efb46df.png)
 
 这是 TRAE 提供的 **CUE 功能**，不仅可以帮你自动补全代码、还可以多行修改代码、自动预测未来可能的修改点，尤其适合重构代码的场景，效率起飞。
 
-![](https://pic.yupi.icu/1/%E5%A4%9A%E8%A1%8C%E4%BF%AE%E6%94%B9.gif)
+![](/imgs/6b92c8c7435ec4d8.gif)
 
 经过一段时间的修复，我们的小程序已经可以正常运行了。虽然现在页面丑丑的，但只要跑通了核心业务流程，用户能正常使用，后续的优化都很简单了。
 
-![](https://pic.yupi.icu/1/image-20250928230045861.png)
+![](/imgs/94ff1830e02f0971.png)
 
 
 
@@ -362,7 +359,7 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 记住，优化前先把现有代码利用 Git 版本控制工具进行托管，并且提交一个基础版本。这样之后优化出了任何问题，都可以一键回滚到老版本。
 
-![](https://pic.yupi.icu/1/image-20250928230154447.png)
+![](/imgs/feb1d0853d38c075.png)
 
 像我重点让 AI 帮忙优化了整个小程序的样式风格，只要写一段简单的提示词：
 
@@ -374,7 +371,7 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 然后利用 TRAE 的提示词优化功能，就能得到一个更详细的优化方案。
 
-![](https://pic.yupi.icu/1/image-20250928230225960.png)
+![](/imgs/116eb660c9edfaea.png)
 
 你可以按需调整，也可以让 AI 放手干。
 
@@ -382,7 +379,7 @@ TRAE 能够和多种 AI 服务集成，这里我选择 [OpenRouter](https://open
 
 最终，你看到的这个小程序，就是我优化后的成品，效果还不错吧。
 
-![](https://pic.yupi.icu/1/image-20250928230316272.png)
+![](/imgs/ae0ff93259f62220.png)
 
 
 
@@ -455,7 +452,7 @@ AI 生成的代码可能有 Bug，这很正常。发现问题就立刻让 AI 修
 
 **TRAE SOLO 是 AI 编程工具的一次重要进化**，从 “将 AI 集成到工具中”，进化为 “将开发工具集成到 AI 中”。
 
-![](https://pic.yupi.icu/1/image-20250928220158367.png)
+![](/imgs/251025c44da77924.png)
 
 感觉开发工具只是 AI 的一个玩物，它可以自由地操作编辑器、终端、浏览器、文档、集成服务等等来自主完成任务，确实比以前更高效智能了，也能完成包含后端的完整项目。
 

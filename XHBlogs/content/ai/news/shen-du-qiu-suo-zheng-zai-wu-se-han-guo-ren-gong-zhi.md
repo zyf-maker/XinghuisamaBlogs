@@ -3,17 +3,14 @@ title: "深度求索正在物色韩国人工智能人才，展开确保人才的
 summary: "深度求索正在物色韩国人工智能人才，展开确保人才的战争，由程序员鱼皮整理。"
 order: 13
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《深度求索正在物色韩国人工智能人才，展开确保人才的战争》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-![](https://dimg.donga.com/i/620/0/90/ugc/CDB/CHINESE/Article/67/ae/74/fb/67ae74fb048bd273823e.jpg)
+![](/imgs/ec34e9c000d59f25.jpg)
 
 据悉，中国人工智能创业公司“深度求索（DeepSeek）”为了引进人才，最近正在韩国物色有能力的开发人才。主要国家之间旨在确保人工智能人才的战争正在全面展开。
 

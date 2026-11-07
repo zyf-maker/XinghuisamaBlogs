@@ -3,15 +3,12 @@ title: "1 分钟生成架构图？程序员 AI 绘图保姆级教程"
 summary: "大家好，我是鱼皮。作为一名程序员，画图可以说是工作中的家常便饭了。无论是给领导汇报时画架构图、还是写文档时画流程图、或者头脑风暴时画思维导图，画图能力直接体现出我们的专业水平。"
 order: 11
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《1 分钟生成架构图？程序员 AI 绘图保姆级教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。作为一名程序员，画图可以说是工作中的家常便饭了。无论是给领导汇报时画架构图、还是写文档时画流程图、或者头脑风暴时画思维导图，画图能力直接体现出我们的专业水平。
 
@@ -28,7 +25,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在开始之前，我们先了解一下 AI 画图的本质：**其实就是让 AI 生成各种绘图工具能够理解的文本代码**，然后将这些代码导入到对应的工具中进行渲染。这样就能够借助 AI 的创意和工具的能力自由地生成图片。
 
-![](https://pic.yupi.icu/1/1748414656182-9580e13e-97bd-4013-8361-ee19b200c0f7.png)
+![](/imgs/cdc4f65a17bbc6c8.png)
 
 下面来介绍几类 AI 画图方法：
 
@@ -55,7 +52,7 @@ Mermaid 是目前最流行的文本绘图工具，语法简单直观，被 GitHu
 
 放到 Cursor 等 AI 工具中执行：
 
-![](https://pic.yupi.icu/1/1748415863293-79af3d1d-153d-462c-9dd7-ec63eaf6a3dd.png)
+![](/imgs/f6e605403dc13269.png)
 
 AI 会生成这样的代码：
 
@@ -77,23 +74,23 @@ flowchart TD
 
 然后你就可以把代码复制到 Mermaid 渲染工具中，比如写作工具语雀支持添加文本绘图组件：
 
-![](https://pic.yupi.icu/1/1748414852734-6d3b6a1c-c2e8-4454-8e1b-57415f204bab.png)
+![](/imgs/24c2c6903af15f65.png)
 
 然后就会出现一个绘图框，在左侧粘贴文本代码，右侧选择对应的绘图语言，就能看到效果了：
 
-![](https://pic.yupi.icu/1/1748414916480-1151faa7-a03d-49b0-82b0-ba321211456e.png)
+![](/imgs/9f32df4ae790cea0.png)
 
 很多 Markdown 编辑器也天然支持 Mermaid 绘图的渲染，比如 Typora：
 
-![](https://pic.yupi.icu/1/1748415033938-862e8c79-5e83-40ae-a50a-ddd1a56033cd.png)
+![](/imgs/1ba4ec1d7014ab39.png)
 
 有很多支持 [Mermaid 渲染的网站](https://mermaid-live.nodejs.cn/edit)，还可以导出为 PNG 等格式的图片：
 
-![](https://pic.yupi.icu/1/1748415174077-04b9d2a2-c655-4a9b-95d9-78f10fb19859.png)
+![](/imgs/396e44a05aec37f4.png)
 
 此外，现在很多 AI 聊天助手内置了 Mermaid 渲染工具，能直接看到效果并下载：
 
-![](https://pic.yupi.icu/1/1748415298510-f1389787-6859-4cf6-b0c7-fe6712acf57a.png)
+![](/imgs/920d00b0307e3719.png)
 
 如果你对 AI 生成的效果不满意，只需手动修改文本即可，会自动重新渲染图片。
 
@@ -105,7 +102,7 @@ Mermaid 还支持多种图表类型，比如时序图：
 
 AI 生成的效果如图：
 
-![](https://pic.yupi.icu/1/image-20250530125722186.png)
+![](/imgs/00c1adc92819fae6.png)
 
 Mermaid 还能画甘特图、饼图、Git 分支图等，这里再让 AI 生成一个架构图：
 
@@ -115,7 +112,7 @@ Mermaid 还能画甘特图、饼图、Git 分支图等，这里再让 AI 生成�
 
 AI 生成的效果如图：
 
-![](https://pic.yupi.icu/1/image-20250530125556460.png)
+![](/imgs/181ca12cca30622c.png)
 
 
 #### 2、PlantUML - 专业的 UML 绘图工具
@@ -135,11 +132,11 @@ PlantUML 是另一个强大的文本绘图工具，特别擅长绘制 UML 图、
 
 AI 会生成专业的 PlantUML 代码，同样放到语雀的文本绘图、或者 [PlantUML 渲染网站](https://www.plantuml.com/plantuml/uml/) 中，都可以看到效果：
 
-![](https://pic.yupi.icu/1/image-20250530125534018.png)
+![](/imgs/b1b32899e79d1309.png)
 
 PlantUML 还特别适合画复杂的时序图和系统架构图。比如一个完整的登录时序图：
 
-![](https://pic.yupi.icu/1/image-20250530125546237.png)
+![](/imgs/292c7dba956f8f66.png)
 
 
 #### 其他文本绘图工具
@@ -159,7 +156,7 @@ PlantUML 还特别适合画复杂的时序图和系统架构图。比如一个�
 
 比如鱼皮给自己的野鱼网吧生成了一份网络拓扑图：
 
-![](https://pic.yupi.icu/1/image-20250530125744125.png)
+![](/imgs/427cabb9f4a37981.png)
 
 
 ### 二、网页绘图
@@ -187,11 +184,11 @@ PlantUML 还特别适合画复杂的时序图和系统架构图。比如一个�
 
 AI 会生成完整的网站，包含各种图表，还是挺炫酷的吧~
 
-![](https://pic.yupi.icu/1/1748417511003-49c81cc8-618e-4810-b94d-ebcfbb48885d.png)
+![](/imgs/31b55948f2f32ad1.png)
 
 你可以直接按需截图，得到图片；还可以通过 [Codepen](https://codepen.io/) 等网站运行工具将生成的网站快速分享给其他人。
 
-![](https://pic.yupi.icu/1/1748417620327-fb4d8e79-c9f1-4b4d-a362-4c85437b8d02.png)
+![](/imgs/3be777fbf064aba5.png)
 
 同理，AI 还能快速生成产品原型图，特别适合快速验证想法。给 AI 的提示词如下：
 
@@ -205,7 +202,7 @@ AI 会生成完整的网站，包含各种图表，还是挺炫酷的吧~
 
 查看 AI 生成的原型图效果，我着实替 UI 设计师朋友们也捏了一把汗。。。
 
-![](https://pic.yupi.icu/1/1748419658065-db5639fd-0609-431e-a135-0ff6b74e7e2b.png)
+![](/imgs/60e556139e219006.png)
 
 
 #### 2、SVG 矢量图绘制
@@ -229,7 +226,7 @@ SVG 文件本质上是 XML 格式的文本代码，可以直接嵌入网页或�
 
 AI 生成的 SVG 代码可以直接嵌入网页或导入设计工具，也可以保存为 SVG 文件直接双击在浏览器内打开。效果还不错吧~
 
-![](https://pic.yupi.icu/1/1748419703308-c3e3ab06-bfd0-4d3e-8bd9-6315fe9e3dde.png)
+![](/imgs/7e2d428d245570c9.png)
 
 使用 SVG 的另一个优点是可以精确控制每个元素的位置、大小和样式，甚至能添加动画效果，让图片更加生动。
 
@@ -253,7 +250,7 @@ Canvas 是 HTML5 提供的一个画布元素，通过 JavaScript 可以在上面
 
 生成的效果如图，我感觉还不错，而且还顺便生成了下载海报图片的按钮：
 
-![](https://pic.yupi.icu/1/1748421121147-cec5fbe9-c304-42af-add2-c7986fdec704.png)
+![](/imgs/9ecc5b486d64e9ff.png)
 
 再来绘制一个高大上的网络性能监控仪表板，给 AI 的提示词如下：
 
@@ -271,7 +268,7 @@ Canvas 是 HTML5 提供的一个画布元素，通过 JavaScript 可以在上面
 
 生成的效果很炫酷，非常适合拿来做技术演示（PPT）：
 
-![](https://pic.yupi.icu/1/1748420915939-7aca595e-7ad4-4cbf-b09d-1e66448fb67d.png)
+![](/imgs/c57d38bf0e42a9ab.png)
 
 
 ### 三、思维导图
@@ -302,7 +299,7 @@ AI 可以帮我们快速生成精美的思维导图，并且能够导出为专�
 
 生成的效果还不错，还可以在软件中进一步美化思维导图的样式，图片太长了就给大家看一部分吧~
 
-![](https://pic.yupi.icu/1/1748421899721-db05c840-44ac-439e-bfd3-a012a3631298.png)
+![](/imgs/11d2b4c3b7136f10.png)
 
 不过我更建议让 AI 生成 Markdown 格式的思维导图，因为 Markdown 格式更通用，方便在各种文档工具中使用。给 AI 提供下面这段提示词：
 
@@ -327,7 +324,7 @@ AI 会生成这样的 Markdown 格式：
 
 将这个 Markdown 文件直接导入 XMind，就能生成结构清晰的思维导图啦！
 
-![](https://pic.yupi.icu/1/1748422118001-752df2f4-d369-46b8-8e16-cd96191d554f.png)
+![](/imgs/bf9e46440e5826f7.png)
 
 
 ### 四、专业绘图工具
@@ -348,15 +345,15 @@ AI 会生成这样的 Markdown 格式：
 
 然后直接复制 AI 生成的 XML 代码：
 
-![](https://pic.yupi.icu/1/1748422690362-20c40630-acce-47ea-b35a-09a61f121840.png)
+![](/imgs/04ab34b8223f30d8.png)
 
 并粘贴到 draw.io 中，就得到了下面这张图，效果还挺不错的吧！
 
-![](https://pic.yupi.icu/1/1748422763122-ee6bcc1a-64cf-4d4d-ad19-6add7ee0706d.png)
+![](/imgs/433664365da0373a.png)
 
 然后你可以将绘图导出为各种主流图片格式，甚至是 PDF 文档和 HTML 网页：
 
-![](https://pic.yupi.icu/1/1748423134756-9f5481bc-71a0-4969-96e1-eafdc4855399.png)
+![](/imgs/81340994582e878c.png)
 
 再来画一个复杂的架构图吧。让 AI 根据我的《亿级流量点赞系统项目教程》生成对应的架构图，提示词如下：
 
@@ -370,7 +367,7 @@ AI 会生成这样的 Markdown 格式：
 
 AI 生成的绘图如下：
 
-![](https://pic.yupi.icu/1/1748423409326-80e0f322-2b6b-434a-8c8e-217008b9124c.png)
+![](/imgs/004f6857b8978850.png)
 
 是不是挺震撼的？如果人工来画这张图，半条命估计就下去了。
 
@@ -463,11 +460,11 @@ AI 会生成这样的效果，抽象，太抽象了！
 
 在 Cursor 中执行：
 
-![](https://pic.yupi.icu/1/1748424661404-2d3fbd7d-a563-4ef7-97c1-3bf82bc6fbf1.png)
+![](/imgs/06fcdba782be9803.png)
 
 生成结果如图，是不是很像？
 
-![](https://pic.yupi.icu/1/1748424880583-92c573bc-fdb2-45d0-b4e0-d2590ea069c5.png)
+![](/imgs/f7c1811ee20efab4.png)
 
 
 ### 技巧 2、截图标注，精准修改
@@ -476,7 +473,7 @@ AI 会生成这样的效果，抽象，太抽象了！
 
 举个例子，先对生成的架构图进行标注，利用截图工具就可以完成了：
 
-![](https://pic.yupi.icu/1/1748424987920-e61af63a-b688-4cf8-8cd5-e05df1d412c9.png)
+![](/imgs/188503eac6fcc63c.png)
 
 然后将标注过的图片和下列 Prompt 一起发送给 AI：
 
@@ -490,7 +487,7 @@ AI 会生成这样的效果，抽象，太抽象了！
 
 生成结果如图：
 
-![](https://pic.yupi.icu/1/1748425471345-3f67f7ee-9de7-4c61-85f6-8b9619631f28.png)
+![](/imgs/c5f6912620de7d19.png)
 
 可以发现大多数问题都已经修复了，但缺点是 AI 会重新生成一遍图片，每次都要等一段时间。运气不好的话要浪费好多时间在和 AI 斗智斗勇上。。。
 
@@ -533,19 +530,19 @@ AI 生成的效果很大程度上取决于输入的提示词，所以要让 AI �
 
 进入 Cursor 的 Rules 设置界面，添加一个规则：
 
-![](https://pic.yupi.icu/1/1748425980420-a63384ed-9e6a-4b2c-b736-d8ff2e6ca6ba.png)
+![](/imgs/2a75d9cba53103b3.png)
 
 将这个预设配置到规则中，可以设置为每次对话都生效，也可以人工按需使用，我这里设置为人工按需使用：
 
-![](https://pic.yupi.icu/1/1748426020674-a7e0a142-5667-4cdc-a263-2789b395edb6.png)
+![](/imgs/b9a89c1af6f1f9e4.png)
 
 在 AI 对话时指定 Cursor Rules，AI 就会按照规则来生成图片，确保输出的一致性和专业性：
 
-![](https://pic.yupi.icu/1/1748426169737-c9f1fcfd-ec03-4a82-9c02-7874762671f4.png)
+![](/imgs/f061d710eab0eeef.png)
 
 生成效果如图，是不是有内味儿了~
 
-![](https://pic.yupi.icu/1/1748426344742-b36e2f36-e4a0-47b2-82ca-52c92c38a0b0.png)
+![](/imgs/02e47a5c4cb4f2b8.png)
 
 
 ### 技巧 4、组合生成
@@ -570,8 +567,8 @@ AI 生成的效果很大程度上取决于输入的提示词，所以要让 AI �
 
 最后，如果你觉得本期内容对你有帮助，别忘了点赞收藏，分享给更多需要的朋友。学编程、对 AI 感兴趣的朋友欢迎关注鱼皮，在我免费开源的 [AI 知识库](https://ai.codefather.cn) 中也汇总了大量 AI 知识和教程干货，希望对大家有帮助。
 
-![](https://pic.yupi.icu/1/1748059604435-448a391d-74b0-49f0-a7c5-bc72ac56e374-20250530125350228.png)
+![](/imgs/4c3a3fc57be9e76c.png)
 
 也欢迎加入我们的 AI 交流群，获得更多最新资讯、AI 玩法等内容～
 
-![AI交流群](https://pic.yupi.icu/yuyi/640-20250530155801513-20250530155847492.png)
+![AI交流群](/imgs/e0b2d095274c83b4.png)

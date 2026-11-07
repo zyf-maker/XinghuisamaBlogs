@@ -3,15 +3,12 @@ title: "产品付费策略设计"
 summary: "让用户愿意为你的产品买单"
 order: 9
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-13"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《产品付费策略设计》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是鱼皮。先问大家一个问题，如果你花了大量时间做出了一款面向用户的产品，接下来你会选择哪种方式来向用户收取费用呢？
 
@@ -32,7 +29,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 相信大家对这种付费机制并不陌生吧，我们玩手游时充值的钻石、金币、点券，都是典型的点数机制。
 
-![](https://pic.yupi.icu/1/image-20230719131457025.png)
+![](/imgs/a79d337a05c04c53.png)
 
 而且毫不夸张地说，现在绝大多数国产手游，都会采用这种机制。
 
@@ -55,7 +52,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我们的 AI 产品支持用户直接购买点数，并且提供了多种不同的点数套餐，用户可以灵活地使用这些点数来进行 AI 对话、AI 绘画等不同服务。
 
-![](https://pic.yupi.icu/1/image-20230719144924694.png)
+![](/imgs/5735c5a68a36a014.png)
 
 
 #### 2、降低试错成本
@@ -86,7 +83,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 在我们的 AI 产品中，为了留存用户、培养使用习惯，支持让用户每日免费领取一定点数，这种做法对产品前期尤为重要。
 
-![](https://pic.yupi.icu/1/image-20230719145440147.png)
+![](/imgs/bfa85e5f8f74c49d.png)
 
 
 #### 5、适应多样化的业务

@@ -3,15 +3,12 @@ title: "Vibe Coding 代码质量保障"
 summary: "如何确保 AI 生成的代码质量"
 order: 7
 level: "进阶"
-tags: ["经验技巧", "转载", "AI"]
+tags: ["经验技巧"]
 updated: "2026-01-13"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 代码质量保障》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -35,7 +32,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 当然，这些都要建立在 **功能正确** 的前提下，代码能正确实现需求，没有 Bug。同时，**性能要合理**，在可接受的时间内完成任务，不浪费资源。此外，代码还要 **安全可靠**，没有安全漏洞、能处理异常情况。
 
-![](https://pic.yupi.icu/1/goodcode%E5%A4%A7.jpeg)
+![](/imgs/a5f4d922cafcadeb.jpg)
 
 
 ### AI 生成代码的常见问题
@@ -81,7 +78,7 @@ AI 生成的代码还经常出现 **重复代码** 的问题。特别是在前�
 
 另外，AI 可能只关注当前功能，不考虑未来的扩展性。今天能跑的代码，明天可能就成了技术债。而且，审查代码也是一个学习的机会，能帮你理解代码的工作原理，提升自己的技术水平。所以，审查 AI 代码是必不可少的，尤其是对于有编程基础的同学。
 
-![](https://pic.yupi.icu/1/whyreviewcode%E5%A4%A7.jpeg)
+![](/imgs/5bf3b839c197f3e9.jpg)
 
 
 ### 审查的重点
@@ -253,7 +250,7 @@ db.execute(query, [userName]);
 
 如果你对 Web 安全感兴趣，可以利用鱼皮 [免费的网络安全自学网](https://github.com/liyupi/ceshiya) 来学习这些知识：
 
-![](https://pic.yupi.icu/1/%E6%B5%8B%E8%AF%95%E9%B8%AD%E7%BD%91%E7%AB%99.png)
+![](/imgs/4732e7f789a86973.png)
 
 
 ### 审查流程
@@ -300,7 +297,7 @@ db.execute(query, [userName]);
 
 所以，写测试是值得的。
 
-![](https://pic.yupi.icu/1/testpk%E5%A4%A7.jpeg)
+![](/imgs/4286962f655a0bed.jpg)
 
 
 ### 测试的类型
@@ -392,11 +389,11 @@ describe('calculateTotal', () => {
 
 其实断点调试要高效得多。在 VS Code 或 Cursor 中，你只需要在代码行号左边点击设置断点，然后按 F5 开始调试。
 
-![](https://pic.yupi.icu/1/image-20260105092822939.png)
+![](/imgs/9a889961096c4614.png)
 
 代码会在断点处暂停，这时你可以查看所有变量的值：
 
-![](https://pic.yupi.icu/1/image-20260105092855154.png)
+![](/imgs/4714fb7ca377f897.png)
 
 还可以单步执行代码，看看每一步发生了什么。这比到处加 `console.log` 然后再删掉要方便多了。
 
@@ -412,7 +409,7 @@ describe('calculateTotal', () => {
 - Network（网络）面板可以查看 API 请求，检查请求和响应，分析加载时间。
 - Performance（性能）面板可以分析性能瓶颈，查看渲染时间，找出慢的操作。
 
-![](https://pic.yupi.icu/1/image-20260105093342746.png)
+![](/imgs/8566c722af32f7d4.png)
 
 掌握这些工具，你的调试效率会大大提高。
 
@@ -436,7 +433,7 @@ describe('calculateTotal', () => {
 
 哪个程序员没有一只小黄鸭呢？
 
-![](https://pic.yupi.icu/1/smallyellowduck%E4%B8%AD.jpeg)
+![](/imgs/d4cb9a7c924a7520.jpg)
 
 
 ### 5、让 AI 帮你调试

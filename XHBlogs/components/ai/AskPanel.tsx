@@ -49,7 +49,7 @@ export default function AskPanel() {
       });
 
     try {
-      const res = await fetch("/api/ask", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/api/ask`, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({

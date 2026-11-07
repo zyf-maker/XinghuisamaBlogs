@@ -3,15 +3,12 @@ title: "Vibe Coding 简介"
 summary: "AI 编程博主；AI 导航（共 2 条资讯链接）"
 order: 201
 level: "入门"
-tags: ["入门导读", "转载", "AI"]
+tags: ["入门导读"]
 updated: "2026-09-02"
 readingTime: 14
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 简介》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮，前腾讯全栈开发，全网 200 万粉的 [AI 编程博主](https://space.bilibili.com/12890453)，也是 [AI 导航](https://ai.codefather.cn) 和 [编程导航](https://www.codefather.cn) 等 10+ 自研产品的创造者。
 
@@ -51,7 +48,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 **Vibe Coding = 用人话和 AI 聊天 + AI 帮你写代码 + 你们一起迭代优化**
 
-![](https://pic.yupi.icu/1/whatisvibecoding%E5%A4%A7.jpeg)
+![](/imgs/e0b6be1fd17b048e.jpg)
 
 
 ### 为什么叫 "Vibe" Coding？
@@ -165,7 +162,7 @@ AI：好的，我来实现这个功能
 6. AI 帮你调整
 7. 半小时搞定！
 
-![](https://pic.yupi.icu/1/codingway%25E5%25A4%25A7.jpeg)
+![](/imgs/5c0d79480bce67db.jpg)
 
 看到区别了吗？传统编程关注 “怎么做”，Vibe Coding 关注 “做什么”。**把需求讲清楚很重要。**
 
@@ -186,7 +183,7 @@ AI：好的，我来实现这个功能
 
 我打开 Cursor（一个主流的 AI 代码编辑器），进入一个空的目录（用来装生成的项目代码），然后准备和 AI 对话：
 
-![](https://pic.yupi.icu/1/image-20260104123610886.png)
+![](/imgs/bb71db365284d8f5.png)
 
 第 1 轮对话：
 ```
@@ -199,7 +196,7 @@ AI：好的，我来实现这个功能
 
 AI 立刻给我生成了一个初版页面，包含表单输入框和按钮。
 
-![](https://pic.yupi.icu/1/image-20260104123951214.png)
+![](/imgs/94bc83558cea7b43.png)
 
 第 2 轮对话：
 ```
@@ -210,7 +207,7 @@ AI 立刻给我生成了一个初版页面，包含表单输入框和按钮。
 
 AI 修改了代码，加上了智能评价功能（虽然没有特别智能）。
 
-![](https://pic.yupi.icu/1/image-20260104124115828.png)
+![](/imgs/7efc78cca9a0b3ec.png)
 
 第 3 轮对话：
 ```
@@ -219,7 +216,7 @@ AI 修改了代码，加上了智能评价功能（虽然没有特别智能）�
 
 AI 美化了界面。
 
-![](https://pic.yupi.icu/1/image-20260104124230581.png)
+![](/imgs/82e823509665937c.png)
 
 第 4 轮对话：
 ```
@@ -228,7 +225,7 @@ AI 美化了界面。
 
 AI 加上了历史记录。
 
-![](https://pic.yupi.icu/1/image-20260104124459035.png)
+![](/imgs/bb5900f0fc85825e.png)
 
 从开始到完成，一共花了不到 **10 分钟**。我朋友现在每周用这个工具，省下来的时间够陪我玩一把狼人杀了。
 
@@ -269,11 +266,11 @@ AI 加上了历史记录。
 
 1）帮用户通过提问的方式学知识的小程序 [《学习英雄》](https://bilibili.com/video/BV1yMn3zuE7L)
 
-![](https://pic.yupi.icu/1/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%BC%94%E7%A4%BA%E6%8B%BC%E5%9B%BE.png)
+![](/imgs/728ae81c5ca6191d.png)
 
 2）帮程序员提升需求分析和技术选型能力的网站 [《程序员技术练兵场》](https://bilibili.com/video/BV1dW4tz9E5M)
 
-![](https://pic.yupi.icu/1/1760438722374-4e8edebc-d975-4873-8f06-9e9856733694.png)
+![](/imgs/7503ec0604b82612.png)
 
 还有各种图片处理工具、数据处理工具、数据分析工具等等。这些项目中，绝大多数代码都是和 AI 对话生成的，我可以一边喝可乐，一边看着 AI 干活~
 
@@ -353,7 +350,7 @@ AI 加上了历史记录。
 
 且不说网上天花乱坠地说什么独立用 AI 开发商业变现项目，就拿鱼皮自己的团队来说，我们的 [编程导航小程序](https://codefather.cn/) 就是用 Vibe Coding 在一周时间内开发完成的。鱼皮也全程直播带大家用 AI 开发过一个包含完整前端和后端的 [《AI 程序员技术练兵场》](https://bilibili.com/video/BV1dW4tz9E5M) 项目。
 
-![](https://pic.yupi.icu/1/1760439049424-532d6ad1-0600-4654-bd9b-311d48cfdc2f.png)
+![](/imgs/a621f11e3c39add3.png)
 
 关键不是 AI 的能力，而是你的需求表达和迭代能力。
 
@@ -367,7 +364,7 @@ AI 加上了历史记录。
 
 你可能会发现，很多用 AI 生成的网站界面都长得很像，特别是颜色 —— 经常是淡紫色或蓝紫渐变色。这是因为 AI 的训练数据中，这类设计（或者引用的样式代码）比较常见，所以它会倾向于生成类似的风格。
 
-![](https://pic.yupi.icu/1/1752744100231-3dc376f3-7571-45c6-8f7c-6098ddde35cf.png)
+![](/imgs/e11739a437177b12.png)
 
 如果你想要独特的设计，需要在提示词中明确说明颜色、风格、参考案例，或者提供设计稿让 AI 参考。
 
@@ -376,7 +373,7 @@ AI 加上了历史记录。
 
 还有个更麻烦的问题，就是 AI 生成的代码不可控。AI 目前更多地还是用来生成小项目，如果你在有点儿体量的代码库下使用 AI，出 Bug 时，就很可能出现调试困难的 **死局** —— 你既看不懂 AI 生成的代码，又舍不得放弃这些代码。之前在 AI 社群里，就看到有开发者吐槽同事用 AI 把项目改崩了：
 
-![](https://pic.yupi.icu/1/1752736716516-a86b3751-7c1f-42ad-b15a-b5721614f023.png)
+![](/imgs/b2504b71d1d867a8.png)
 
 这就是为什么我建议：
 - 尽量让 AI 生成简单、清晰的代码
@@ -407,7 +404,7 @@ AI 加上了历史记录。
 
 我为你准备了一个完整的学习路径图：
 
-![](https://pic.yupi.icu/1/vibecodingroadmap%E5%A4%A7.jpeg)
+![](/imgs/1dff2886177dc40a.jpg)
 
 如果你是完全零基础，我建议你这样学，时间安排得非常宽松。
 

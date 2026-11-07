@@ -3,15 +3,12 @@ title: "【汇总】满血版 DeepSeek 第三方使用渠道"
 summary: "收集汇总全网 DeepSeek 第三方访问渠道，告别不稳定和服务繁忙，轻松驾驭DeepSeek！"
 order: 1
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2026-10-22"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《【汇总】满血版 DeepSeek 第三方使用渠道》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 收集汇总全网 DeepSeek 第三方访问渠道，告别不稳定和服务繁忙，轻松驾驭DeepSeek！
 
@@ -19,22 +16,22 @@ source: "https://github.com/liyupi/ai-guide"
 
 |     | 渠道            | 访问链接                                                                    | 备注                                                                                                                         |
 | --- | --------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1   | 超算互联网      | https://chat.scnet.cn/#/home                                                | 在线访问✅  提供 DeepSeek 系列模型✅![img](https://pic.yupi.icu/yuyi/1739955229294-c712cd9f-8b8f-4455-842c-be8f3fc09d67.png)   |
-| 2   | 腾讯元宝        | [https://yuanbao.tencent.com/](https://yuanbao.tencent.com/chat/naQivTmsDa) | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739955337058-aa1958ba-3eb3-4b41-b86a-385f78f71ed4.png)               |
-| 3   | 纳米AI搜索      | https://bot.n.cn/                                                           | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739955356761-514496ba-ba24-42bf-878f-5b6056a27788.png)               |
-| 4   | 秘塔AI搜索      | https://metaso.cn/                                                          | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739955365497-7fe978b4-268e-4d1b-85b8-bd87409f9f2f.png)               |
-| 5   | QQ 浏览器       | https://aisearch.qq.com/search                                              | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739955380468-4296b5c6-11e6-4004-9625-a7732014bc36.png)               |
-| 6   | 硅基流动        | https://siliconflow.cn/zh-cn/models                                         | 深度思考 R1✅  注册即送2000 万 Tokens![img](https://pic.yupi.icu/yuyi/1739956550812-e55c2268-062f-4fb2-bf73-1f883a15791e.png) |
-| 7   | 知乎直答        | https://zhida.zhihu.com/                                                    | 深度思考 R1✅ ![img](https://pic.yupi.icu/yuyi/1739955686037-8035c748-cef4-444e-85cc-8b30dff788c6.png)                        |
-| 8   | flowith         | https://flowith.io/blank                                                    | 深度思考 R1✅ ![img](https://pic.yupi.icu/yuyi/1739955749211-b892283b-b203-4432-94d2-ed08e1f4d4a8.png)                        |
-| 9   | 问小白          | https://www.wenxiaobai.com/                                                 | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739955798027-003d7a9f-68e9-4787-98dc-ff4af50536b2.png)               |
-| 10  | 支付宝百宝箱    | https://tbox.alipay.com/pro-about                                           | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739955969498-e27e5da9-31ca-4ea6-b85f-e4a26795a1f4.png)               |
-| 11  | 华为小艺        | https://xiaoyi.huawei.com/chat/                                             | 深度思考 R1✅![img](https://pic.yupi.icu/yuyi/1739956038191-d00e183e-b54b-4e2d-8d84-5d388adc892d.png)                         |
-| 12  | 腾讯 ima        | https://ima.qq.com/                                                         | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739956136715-5d8e6997-0521-4ad2-8e21-a09ac1686b18.png)               |
-| 13  | 腾讯云          | https://lke.cloud.tencent.com/webim_exp/?from=25533#/chat/wQrAwR            | API 调用✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739956244262-39241e14-b0d5-4ec7-bf90-aa0200792ed0.png)                  |
-| 14  | 阿里云          | [https://bailian.console.aliyun.com/]                          | 需要领取后选择![img](https://pic.yupi.icu/yuyi/1739956308718-3a138cc4-5033-4294-a930-6263c3e15b0c.png)                       |
-| 15  | AskManyAI       | https://askmanyai.cn/login?i=e2eb3aee                                       | 深度思考 R1✅ 联网搜索✅![img](https://pic.yupi.icu/yuyi/1739956456206-eccba759-e3b8-4820-82bc-85c820853446.png)               |
-| 16  | 百度搜索（APP） | 百度搜索一个内容 => tab 栏选择 AI =>点击底部 满血版 deepseek 即可体验       | ![img](https://pic.yupi.icu/yuyi/1739956486552-4e404b8e-8454-4990-9546-5f3cc93d3598.png)                                     |
+| 1   | 超算互联网      | https://chat.scnet.cn/#/home                                                | 在线访问✅  提供 DeepSeek 系列模型✅![img](/imgs/4613e70e6f082716.png)   |
+| 2   | 腾讯元宝        | [https://yuanbao.tencent.com/](https://yuanbao.tencent.com/chat/naQivTmsDa) | 深度思考 R1✅ 联网搜索✅![img](/imgs/e31300f728d2505e.png)               |
+| 3   | 纳米AI搜索      | https://bot.n.cn/                                                           | 深度思考 R1✅ 联网搜索✅![img](/imgs/43b80ff9a3fec5de.png)               |
+| 4   | 秘塔AI搜索      | https://metaso.cn/                                                          | 深度思考 R1✅ 联网搜索✅![img](/imgs/d2c98ba6bf3cb985.png)               |
+| 5   | QQ 浏览器       | https://aisearch.qq.com/search                                              | 深度思考 R1✅ 联网搜索✅![img](/imgs/28bd3d6823b059af.png)               |
+| 6   | 硅基流动        | https://siliconflow.cn/zh-cn/models                                         | 深度思考 R1✅  注册即送2000 万 Tokens![img](/imgs/0810d2ffd83202ed.png) |
+| 7   | 知乎直答        | https://zhida.zhihu.com/                                                    | 深度思考 R1✅ ![img](/imgs/0a03c581ec8788df.png)                        |
+| 8   | flowith         | https://flowith.io/blank                                                    | 深度思考 R1✅ ![img](/imgs/f8ab65aae8cd45ef.png)                        |
+| 9   | 问小白          | https://www.wenxiaobai.com/                                                 | 深度思考 R1✅ 联网搜索✅![img](/imgs/6a20009df3dde2e8.png)               |
+| 10  | 支付宝百宝箱    | https://tbox.alipay.com/pro-about                                           | 深度思考 R1✅ 联网搜索✅![img](/imgs/75ea78b6b3ed27f7.png)               |
+| 11  | 华为小艺        | https://xiaoyi.huawei.com/chat/                                             | 深度思考 R1✅![img](/imgs/dfd1c319c5bdff80.png)                         |
+| 12  | 腾讯 ima        | https://ima.qq.com/                                                         | 深度思考 R1✅ 联网搜索✅![img](/imgs/b0d900898da80944.png)               |
+| 13  | 腾讯云          | https://lke.cloud.tencent.com/webim_exp/?from=25533#/chat/wQrAwR            | API 调用✅ 联网搜索✅![img](/imgs/ea53c6d82ae3d2cb.png)                  |
+| 14  | 阿里云          | [https://bailian.console.aliyun.com/]                          | 需要领取后选择![img](/imgs/fca3c298093089d4.png)                       |
+| 15  | AskManyAI       | https://askmanyai.cn/login?i=e2eb3aee                                       | 深度思考 R1✅ 联网搜索✅![img](/imgs/5cc4fa24836ce6d9.png)               |
+| 16  | 百度搜索（APP） | 百度搜索一个内容 => tab 栏选择 AI =>点击底部 满血版 deepseek 即可体验       | ![img](/imgs/a2637132c654cfe7.png)                                     |
 
 ## 其他渠道
 

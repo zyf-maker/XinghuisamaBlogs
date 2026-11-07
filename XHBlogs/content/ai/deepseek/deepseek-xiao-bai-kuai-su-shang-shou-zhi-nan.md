@@ -3,15 +3,12 @@ title: "DeepSeek 小白快速上手指南"
 summary: "DeepSeek官方提供的是满血版的AI，虽然它是开源的，但是官方在开源版本上对于使用进行优化，相比起来效果最好，所以这也是最推荐的使用方法。"
 order: 2
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2026-10-22"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《🔥DeepSeek 小白快速上手指南》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 第一章：准备篇
 
@@ -27,25 +24,25 @@ DeepSeek官方提供的是满血版的AI，虽然它是开源的，但是官方�
 
 之前从未登录过的用户需要进行登陆，使用手机号、微信或者邮箱登陆即可。
 
-![img](https://pic.yupi.icu/yuyi/1739498392384-e7484fdb-d7bb-4b43-b7f4-30354cad446a.png)
+![img](/imgs/7efd0b3f7546aebe.png)
 
 然后点击“开始对话”就可以使用。    
 
-![img](https://pic.yupi.icu/yuyi/1739498467461-a1cc8752-0769-48c5-b6ce-5058f26b6bfa.png)
+![img](/imgs/6cf81d6f5229dc42.png)
 
 不过需要注意一点儿，那就是如何选择V3还是R1模型，可以参考下图。
 
-![img](https://pic.yupi.icu/yuyi/1739498992024-711c13f6-11a1-4ee1-a836-54c5268fac31.png)
+![img](/imgs/c335119c7b3fb075.png)
 
 也可以在手机自带的应用商城中，搜索DeepSeek，点击下载安装即可。    
 
-![img](https://pic.yupi.icu/yuyi/1739499875545-fafd7d86-3809-4406-a76f-d264618d1f95.png)    
+![img](/imgs/2348c44f060fa89c.png)    
 
  
 
 手机版的使用和电脑版基本一样，根据需要是否激活R1即可。
 
-![img](https://pic.yupi.icu/yuyi/1739433741847-5f557647-62a8-45a2-8845-943d43ae86c6.jpeg)
+![img](/imgs/e393f2ad5d09cadd.jpg)
 
 ### 1.2 认识你的AI控制台
 

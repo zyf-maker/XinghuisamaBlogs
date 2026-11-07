@@ -10,20 +10,17 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek Harness 服务器部署教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 最近 DeepSeek Harness（简称 DSH）真是火得一塌糊涂，有种今年春节那会儿 OpenClaw 时刻的感觉。
 
 截止发文，DSH 刚好发布一个星期，GitHub Stars 已达 160k，插件生态也是出奇的热闹。社区自发整理的 `awesome-dsh-plugin` 精选列表收录的插件已经超过上千个了。
 
-![](https://pic.yupi.icu/1/image-20260820120154956.png)
+![](/imgs/d398e15f7fc3de4e.png)
 
 多模型接入、定时任务、代码审查、桌面宠物、摸鱼小游戏、股票看盘等等，各种实用和娱乐插件应有尽有。
 
-![](https://pic.yupi.icu/chengfang/02.png)
+![](/imgs/e0d8000ef851d0a7.png)
 
 真应了官方的口号「一切皆插件」，自由度高得离谱。
 
@@ -57,7 +54,7 @@ DSH 默认情况下只有你自己能够访问。你精心装了一堆插件、�
 
 比如阿里云服务器，支持通过 Workbench 远程连接：
 
-![](https://pic.yupi.icu/hackdeacon/62199223013191388358370042eb5134.png?imageSlim)
+![](/imgs/70b19fb4fc2c4031.png)
 
 除了网页登录，你也可以通过 SSH 连接到服务器，大家可以查阅对应云服务商的官方文档了解具体操作。
 
@@ -69,7 +66,7 @@ DSH 默认情况下只有你自己能够访问。你精心装了一堆插件、�
 
 这里我们以 1Panel 为例。1Panel 是一款现代化的开源 Linux 服务器运维管理面板，界面简洁好用，而且内置了应用商店，可以一键安装各种服务。
 
-![](https://pic.yupi.icu/hackdeacon/20260819093905184.png?imageSlim)
+![](/imgs/ce934827b762f221.png)
 
 在服务器的终端中，运行 1 行命令就能安装 1Panel：
 
@@ -79,17 +76,17 @@ bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_star
 
 安装的第一步需要选择语言，我们输入 `2` 并按回车键来选择中文。
 
-![](https://pic.yupi.icu/hackdeacon/install.png?imageSlim)
+![](/imgs/502c3658cdab845a.png)
 
 接下来要选择安装目录，直接回车，使用默认路径 `/opt` 就行。
 
 然后系统会问你是否安装 Docker，输入 `y` 确认。这一步可能会因为网络环境稍慢一些，耐心等待几分钟就好。
 
-![](https://pic.yupi.icu/hackdeacon/opt.png?imageSlim)
+![](/imgs/3e2b04d031f2b6f1.png)
 
 Docker 安装完成之后，来到安装面板的最后一个环节，配置面板信息。
 
-![](https://pic.yupi.icu/hackdeacon/b4db65d99ef2a93454da26d7dd84af97.png?imageSlim)
+![](/imgs/4046eee95f7e4704.png)
 
 先是 **配置镜像加速**。国内网络访问 GitHub、Docker 等资源会比较慢，所以有必要开启镜像加速，输入 `y` 并回车即可。
 
@@ -97,7 +94,7 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 
 你可以直接回车使用 1Panel 随机生成的端口号，也可以自己设置一个好记的数字。不过要注意避开一些常用服务已经占用的端口号，我给大家整理成了一张图片方便参考：
 
-![](https://pic.yupi.icu/hackdeacon/20260817171536312.png?imageSlim)
+![](/imgs/5174222b7b65618b.png)
 
 接下来是 **设置 1Panel 安全入口**，相当于访问管理面板时额外需要的一个口令，也是拼接在地址后面的。比如你设置成 `ikun`，那根据上面的例子，访问管理面板的完整地址就是 `114.51.41.91:9810/ikun`。这样一来，就算别人知道了你服务器的 IP 和端口，没有安全入口也进不去。
 
@@ -105,7 +102,7 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 
 最后是 **设置面板的用户名和密码**，这一步就不用多说了，设置完之后就算有人知道了安全入口，也会被用户名和密码挡在外面。三重防护，安全拉满。
 
-![](https://pic.yupi.icu/hackdeacon/20260818094731552.png?imageSlim)
+![](/imgs/7104f9e8cae35fa6.png)
 
 
 
@@ -115,7 +112,7 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 
 以阿里云为例，我们进入云服务器 ECS 的管理后台，找到「安全组」，在「入方向」里点击「增加规则」。如果你用的是其他厂商的服务器，也是找到类似「防火墙」或「安全组」的设置页面。
 
-![](https://pic.yupi.icu/hackdeacon/f3f0b07035f44fb2cd0c9e7efcdd81ce.png?imageSlim)
+![](/imgs/c10dd264c0eee970.png)
 
 访问来源选择 `0.0.0.0/0（任何位置）`，然后在访问目的端口中填入刚才为 1Panel 设置的端口号。
 
@@ -125,7 +122,7 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 
 恭喜你，看到这里你已经打败了 66.66% 的同学！
 
-![](https://pic.yupi.icu/1/image-20260820122944494.png)
+![](/imgs/993408b0a2e97610.png)
 
 前置工作全部完成，接下来我们正式安装 DeepSeek Harness。
 
@@ -137,11 +134,11 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 
 进入首页后，你可以看到服务器当前的运行状态和内存占用。
 
-![](https://pic.yupi.icu/hackdeacon/6516be4bd4254146759ac9538ffbeef3.png?imageSlim)
+![](/imgs/a39b6392f6a4be11.png)
 
 点击左侧菜单进入应用商店，搜索 DeepSeek Harness，能看到 1Panel 已经内置了这个应用，直接点击安装。
 
-![](https://pic.yupi.icu/hackdeacon/9f10e076076ef37cb62b3bcbe74c0629.png?imageSlim)
+![](/imgs/2fe958a12285a1c8.png)
 
 安装界面中有几个需要注意的配置项。
 
@@ -149,35 +146,35 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 - 访问地址：填你服务器的公网 IP 地址
 - Web 用户名和密码：就是之后访问 DSH 时需要的登录凭证
 
-![](https://pic.yupi.icu/hackdeacon/ad4e2451202feae6ad4b7b9e685ab400.png?imageSlim)
+![](/imgs/5c0ee3799321c5f3.png)
 
 这里科普一下，DSH 本身其实是没有内置登录认证的，它的 Web 服务器甚至故意拒绝绑定到 `0.0.0.0`（也就是公网可访问的地址），就是为了防止被未经授权的人访问。而 1Panel 应用商店里的这个版本集成了 Caddy 反向代理来提供 HTTPS 加密和用户名密码认证，所有外部访问都必须先通过 Caddy 鉴权才会转发给 DSH，安全性有了保障。
 
 最后，勾选高级设置，打开端口外部访问，然后点击右下角的确认按钮开始安装。
 
-![](https://pic.yupi.icu/hackdeacon/20260817183203204.png?imageSlim)
+![](/imgs/e5f741b137d1473b.png)
 
 耐心等待安装完成后，我们就可以通过 `IP:10443` 来访问 DeepSeek Harness 了。
 
 由于我们还没有配置自己的域名和正式的 HTTPS 证书（1Panel 用的是自签名证书），浏览器会提示安全性问题，这是正常现象，无视风险继续访问就行。
 
-![](https://pic.yupi.icu/hackdeacon/20260817184102752.png?imageSlim)
+![](/imgs/8b58e188f079b293.png)
 
 输入刚才设置好的 Web 用户名和密码就可以登录了：
 
-![](https://pic.yupi.icu/hackdeacon/20260817182501027.png?imageSlim)
+![](/imgs/d0d5a5a13f355125.png)
 
 进入 DSH 之后，第一件事就是配置模型。你可以直接填入 DeepSeek 的 API Key，也可以在设置里切换到其他模型提供商。DSH 兼容 OpenAI 接口格式，所以市面上大多数兼容 OpenAI API 的模型服务都能直接接入。
 
 > 到 DeepSeek 开放平台获取 API Key：https://platform.deepseek.com/api_keys
 
-![](https://pic.yupi.icu/1/image-20260814130304526.png)
+![](/imgs/dead0b176d553d97.png)
 
 还有一点需要注意。因为 DSH 是运行在云端服务器上的，所以无法像在本地一样直接打开你电脑上的项目文件夹。你需要在工作区里手动创建项目目录，也可以让 DSH 用 `git clone` 把 GitHub 上的项目拉取到服务器上。
 
 首次体验的话，建议大家先用一个测试项目，不要直接指向生产环境的代码仓库，毕竟 Agent 是有文件读写和命令执行权限的。
 
-![](https://pic.yupi.icu/hackdeacon/20260817185045890.png?imageSlim)
+![](/imgs/a63036f9845fc342.png)
 
 到这里，所有准备工作就完成了，可以开始体验多设备访问了。
 
@@ -189,13 +186,13 @@ Docker 安装完成之后，来到安装面板的最后一个环节，配置面�
 
 这里我装了坤坤的主题皮肤，可以看到不管是手机还是电脑，打开 DSH 之后皮肤都是同步的。
 
-![](https://pic.yupi.icu/hackdeacon/20260817192624023.png?imageSlim)
+![](/imgs/632d2292a0699d72.png)
 
 文本的流式输出也是完全同步的，一台设备上正在生成的内容，另一台设备同步就能看到。
 
 手机端体验的话，推荐装一个移动端 UI 适配插件 `mexiaosqwq/dsh-web-mobile`，它会在窄屏下自动把侧边栏收成抽屉、会话区铺满全宽，交互体验会好很多。
 
-![](https://pic.yupi.icu/hackdeacon/20260819173700357.jpg?imageSlim)
+![](/imgs/05dabbe6b65f42b7.jpg)
 
 一行命令就能安装：
 
@@ -213,33 +210,33 @@ dsh plugin --profile web add github:mexiaosqwq/dsh-web-mobile
 
 操作起来并不难，首先进入 1Panel 左侧菜单的「网站」页面，1Panel 会提示你安装 OpenResty，点击去商店安装即可。
 
-![](https://pic.yupi.icu/hackdeacon/20260818104728584.png?imageSlim)
+![](/imgs/bec7c21a805f8e07.png)
 
 所有设置保持默认即可，直接点击安装。
 
-![](https://pic.yupi.icu/hackdeacon/20260818105003532.png?imageSlim)
+![](/imgs/52db88fc0b619361.png)
 
 安装完成后，再次回到左侧菜单的「网站」页面，点击创建。
 
-![](https://pic.yupi.icu/hackdeacon/20260819155642959.png?imageSlim)
+![](/imgs/fdf6659d62d44626.png)
 
 这里可以选择「一键部署」或「反向代理」来完成域名绑定。
 
-![](https://pic.yupi.icu/hackdeacon/20260818105639844.png?imageSlim)
+![](/imgs/aa1c5fb1958a9197.png)
 
-![](https://pic.yupi.icu/hackdeacon/20260818105710699.png?imageSlim)
+![](/imgs/5b642c276df552d4.png)
 
 光在 1Panel 里配置还不够，你还需要到云服务商的域名控制台，给服务器 IP 配置 DNS 域名解析。
 
 在域名解析设置里添加一条记录，记录类型选择 `A`，主机记录（名称）填 `dsh`，记录值填你的服务器公网 IP。
 
-![](https://pic.yupi.icu/hackdeacon/20260818170549641.png?imageSlim)
+![](/imgs/f773637153009efa.png)
 
 保存之后等待解析生效，再用完整的域名地址访问就能看到 DeepSeek Harness 了。
 
 需要注意的是，如果 DSH 是部署在国内的服务器上，需要先完成 ICP 备案，才能正常进行域名访问。没有备案的话，运营商会拦截请求，页面是打不开的。
 
-![](https://pic.yupi.icu/hackdeacon/20260818110235684.png?imageSlim)
+![](/imgs/2b3d3fe77220af86.png)
 
 
 
@@ -251,7 +248,7 @@ dsh plugin --profile web add github:mexiaosqwq/dsh-web-mobile
 
 而 Vercel、Cloudflare、Netlify 这些平台主打的是 Serverless 无服务器架构。
 
-![](https://pic.yupi.icu/1/image-20260526190516543.png)
+![](/imgs/867432fb1ed8e9b9.png)
 
 注意，Serverless 并不是真的没有服务器，而是你只有服务器的临时使用权，服务器由平台统一管理和调度，让你用起来几乎不需要自己通过命令行来操作服务器，更方便。
 
@@ -281,13 +278,13 @@ DSH 需要持久的文件系统来保存项目代码和会话记录，需要真�
 
 社区里有一个很火的全家桶插件 [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)，不仅内置了局域网远程访问功能，还提供了任务看板、Git 图谱、移动端远程控制、皮肤中心等一整套功能增强。这个项目在 GitHub 上已经有几千 Stars，大家有兴趣可以去体验一下。想了解更多 DSH 插件，可以阅读本教程编程工具板块 DeepSeek Harness 目录中的《DeepSeek Harness 精选插件推荐》。
 
-![](https://pic.yupi.icu/1/13-hero-main.png?imageSlim)
+![](/imgs/5a5e8f6e2ccb0dc6.png)
 
 如果你不想装全家桶，只需要局域网访问功能的话，也可以单独安装对应的插件。
 
 我根据不同的使用场景，把相关的插件整理成了一张图片，大家按需选择就好：
 
-![](https://pic.yupi.icu/hackdeacon/20260818150215666.png?imageSlim)
+![](/imgs/b558389341e01235.png)
 
 这里补充一个技术细节。DSH 默认只监听 `127.0.0.1` 本机回环地址，官方在 CLI 层面故意拒绝了 `--host 0.0.0.0` 的绑定请求，就是为了防止把 Agent 的命令执行能力直接暴露到网络上。
 

@@ -3,15 +3,12 @@ title: "百度推出两款 AI 大模型"
 summary: "百度推出两款 AI 大模型，由程序员鱼皮整理。"
 order: 30
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《百度推出两款 AI 大模型》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 中国互联网巨头百度推出两款新人工智能（AI）大模型，并免费向用户开放。
 

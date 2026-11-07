@@ -1,4 +1,7 @@
 import { siteConfig } from "@/siteConfig";
+import Navbar from "../../components/Navbar";
+import PageTransition from "../../components/PageTransition";
+import ContentLayout from "../../components/ContentLayout";
 import MusicClient from "./MusicClient";
 
 // 🌟 这里是服务端渲染，完美支持 metadata
@@ -7,5 +10,14 @@ export const metadata = {
 };
 
 export default function MusicPage() {
-  return <MusicClient />;
+  return (
+    <div className="min-h-screen relative">
+      <Navbar />
+      <PageTransition>
+        <ContentLayout>
+          <MusicClient />
+        </ContentLayout>
+      </PageTransition>
+    </div>
+  );
 }

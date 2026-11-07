@@ -3,17 +3,13 @@ title: "奖励模型也能Scaling！上海AI Lab突破强化学习短板，提�
 summary: "共收录 8 条 AI 行业资讯，如奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式；奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式等。"
 order: 76
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-07-11"
 readingTime: 8
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
-本文转载自： [奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://www.qbitai.com/2025/07/307570.html)
 
 POLAR：与绝对偏好解耦的策略判别学习
 
@@ -26,7 +22,7 @@ POLAR：与绝对偏好解耦的策略判别学习
 
 如何解决？
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/nWVwhFqFR8G5aNY7.webp)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/8796ed3af3e16b94.webp)
 
 现在，来自上海人工智能实验室的研究团队提出了一种新的思路：
 
@@ -132,7 +128,7 @@ LLM的成功就在于用Next Token Prediction的形式统一了所有任务，�
 
 正是基于这样的思路，上海AI Lab提出了预训练奖励模型**POLAR**。
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/F8ssbqxQ0f30MJyN.png)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/96cb08956c8c7b12.png)
 
 △POLAR的两阶段训练（预训练和偏好微调）以及在RFT中的使用方法
 
@@ -146,7 +142,7 @@ LLM的成功就在于用Next Token Prediction的形式统一了所有任务，�
 
 具体而言，研究人员从LLM预训练语料中采样出大量的文本前缀，并从策略模型池（由开源的**131**个Base LLM和**53**个Chat LLM组成）中随机取模型进行轨迹采样。预训练目标使用Bradley-Terry Loss：
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/D4PUs646vCkxTrK9.png)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/f84c4a0d98023665.png)
 
 其中，A1和A2代表相同策略模型生成的轨迹（正样本对）；B1代表不同策略模型生成的轨迹（负样本）。
 
@@ -156,13 +152,13 @@ POLAR使RM学会为相近策略产生的轨迹赋予更高奖励，从而隐式�
 
 在预训练阶段之后，POLAR可以使用少量的偏好数据对齐人类偏好。具体来说，对于同一个Prompt，采样三条轨迹，由人工标注偏好顺序。同样使用Bradley-Terry Loss进行微调：
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/EDkK1X5U4yREOI3P.png)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/f2190bdfca1bf77b.png)
 
 其中，A > B > C，分别代表偏好最优、次优、最差的轨迹。这种偏好排序隐式定义了一种“策略差异”，例如A可以视为从最佳策略分布中采样得到，而C可以视为从一个与最佳策略相差较远的策略分布中采样得到。
 
 **POLAR具有Scaling效应吗？**
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/ok0fQMrr1hFsmCMw.png)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/26b4058bd44ef007.png)
 
 △POLAR的Scaling Laws
 
@@ -180,7 +176,7 @@ POLAR使RM学会为相近策略产生的轨迹赋予更高奖励，从而隐式�
 
 研究人员通过一系列实验证明，POLAR能做到对性能和泛化的双重保证。
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/VRrzEKCEO4RjZGTY.webp)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/79f6703ee01c0ab4.webp)
 
 △偏好评估实验结果
 
@@ -190,7 +186,7 @@ POLAR使RM学会为相近策略产生的轨迹赋予更高奖励，从而隐式�
 
 值得注意的是，POLAR-1.8B仅有1.8B参数，就可取得与Skywork-Reward-27B和WorldPM-72B-UltraFeedback（参数量分别为其15倍和40倍）相当的结果，凸显了POLAR的强大潜力。
 
-![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](https://pic.code-nav.cn/post_picture/1610518142000300034/9bhXtrJWCfOID4lj.webp)
+![奖励模型也能Scaling！上海AI Lab突破强化学习短板，提出策略判别学习新范式](/imgs/374af9c0a44fc50f.webp)
 
 △强化微调实验结果
 
@@ -210,4 +206,3 @@ POLAR能够从预训练阶段学习策略模型之间的细微区别，而不仅
 
 — 完 —
 
-*版权所有，未经授权不得以任何形式转载及使用，违者必究。*

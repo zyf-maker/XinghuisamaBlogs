@@ -3,15 +3,12 @@ title: "Gemini 3.8 Flash 编程能力实测 - 3 个项目案例"
 summary: "单价只有 Claude Opus 5 的七分之一，跑分却咬得很紧，实际用起来如何"
 order: 11
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-09-11"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Gemini 3.8 Flash 编程能力实测 - 3 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 大家好，我是程序员鱼皮。
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这已经是他们六周之内发的第三个 Flash 模型了，从 3.6 到 3.7 再到现在的 3.8，差不多每三周就来一版，我真的已经写不过来了……
 
-![](https://pic.yupi.icu/1/gemini38flash-%E5%AE%98%E6%96%B9-%E5%8F%91%E5%B8%83%E5%A4%B4%E5%9B%BE-bfb7b8c2.png)
+![](/imgs/f592effe7bb46b4a.png)
 
 每次新模型发布，大家最关心的无非就是两件事，**能力怎么样** 和 **价格贵不贵**。
 
@@ -35,11 +32,11 @@ Claude Opus 5 是输入 5 刀、输出 25 刀，也就是说 3.8 Flash 的单价
 
 3.8 Flash 拿了 73.7%，上一代 3.7 Flash 只有 65.3%，而贵了七倍的 Claude Opus 5 是 74.0%，两者只差 0.3 个百分点！
 
-![DeepSWE 长周期软件工程跑分](https://pic.yupi.icu/1/gemini38flash-%E5%AE%98%E6%96%B9-DeepSWE%E9%95%BF%E5%91%A8%E6%9C%9F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B-d0156fa7.png)
+![DeepSWE 长周期软件工程跑分](/imgs/d4879fb0614049e5.png)
 
 考察 Agent 终端编码能力的 Terminal-bench 2.1 测评上，它拿了 89.4%，是全场第一，超过了 Opus 5 的 89.1%！
 
-![官方总跑分表](https://pic.yupi.icu/1/gemini38flash-%E5%AE%98%E6%96%B9-%E6%80%BB%E8%B7%91%E5%88%86%E8%A1%A8-04135dc5.png)
+![官方总跑分表](/imgs/78de9b6e4a843f32.png)
 
 单价只有七分之一，跑分却跟顶级旗舰模型不分上下，光看这些数字，我对这个模型还是有点期待的。
 
@@ -51,7 +48,7 @@ Google 一直在强调 3.8 Flash 跟上一代 **同价同速**，可第三方评
 
 所以有网友制作了这样一张梗图：
 
-![](https://pic.yupi.icu/1/2fc88665551b2176437236888343e209.jpg)
+![](/imgs/d8e267e06228b4d2.jpg)
 
 官方自己在博客里交代了原因，说 3.8 Flash 会「works harder」，遇到复杂任务会在背后反复推理、多次调用工具、自己纠错。
 
@@ -69,7 +66,7 @@ Google 一直在强调 3.8 Flash 跟上一代 **同价同速**，可第三方评
 
 测试方法很简单，我在 Cursor 里同时起了 3 个子 Agent，每个 Agent 负责一个独立项目、一个独立目录，全程不需要人工干预，让 AI 自己跑到底。
 
-![](https://pic.yupi.icu/1/image-20260903163646774.png)
+![](/imgs/0fc1679d463538f7.png)
 
 大家可以猜猜看，跑完这 3 个项目要花多少钱？答案在结尾揭晓。
 
@@ -82,7 +79,7 @@ Google 一直在强调 3.8 Flash 跟上一代 **同价同速**，可第三方评
 
 提示词里我把片长卡在 40 到 60 秒、分成四段，其余的全部放开，不指定任何技术栈，只要求它用 Context7 查所用 3D 库的最新文档，而且片子里所有的模型和场景必须用代码生成，不许用任何外部的图片或者模型文件，其他的全部留给 AI 自己编排。
 
-![CASE 1 提示词原文](https://pic.yupi.icu/1/gemini38flash-prompt-01-case1-3D%E5%8A%A8%E7%94%BB%E7%9F%AD%E7%89%87-2ff7f52b.png)
+![CASE 1 提示词原文](/imgs/b67e83b1c47502c3.png)
 
 拿到任务之后，AI 先用 Context7 查了 Three.js 里三维样条曲线和管道几何体的最新用法，然后花了大约 14 分钟做完。
 
@@ -92,31 +89,31 @@ Google 一直在强调 3.8 Flash 跟上一代 **同价同速**，可第三方评
 
 短片开场是一台发光的显示器，模拟用户在地址栏敲入网址然后按下回车的瞬间。
 
-![输入网址敲下回车](https://pic.yupi.icu/1/gemini38flash-case1-01-%E8%BE%93%E5%85%A5%E7%BD%91%E5%9D%80%E5%9B%9E%E8%BD%A6-95775c6a.png)
+![输入网址敲下回车](/imgs/f63f862ae3ed7c68.png)
 
 回车按下去，镜头立刻拉进微观电路，第一幕 DNS 递归查询开始，发光的数据包沿着光纤在根域和顶级域名服务器之间穿梭。
 
-![DNS 递归查询](https://pic.yupi.icu/1/gemini38flash-case1-02-DNS%E9%80%92%E5%BD%92%E6%9F%A5%E8%AF%A2-d4503b45.png)
+![DNS 递归查询](/imgs/8ead1fcddf926ae0.png)
 
 镜头再推近权威域名服务器，芯片亮起并返回解析出来的 IP 地址，第一幕的动画流畅度还不错。
 
-![权威 DNS 返回 IP](https://pic.yupi.icu/1/gemini38flash-case1-03-%E6%9D%83%E5%A8%81DNS%E8%BF%94%E5%9B%9EIP-22789acd.png)
+![权威 DNS 返回 IP](/imgs/e5dfffdbfe0d095d.png)
 
 第二幕切换到 TCP 三次握手，数据包变成金色脉冲在客户端和服务端之间往返，先是发起 SYN 报文。
 
-![TCP SYN 握手](https://pic.yupi.icu/1/gemini38flash-case1-04-TCP-SYN%E6%8F%A1%E6%89%8B-aca5e016.png)
+![TCP SYN 握手](/imgs/41df8645f4aafa12.png)
 
 服务端收到之后回复了 SYN+ACK，画面上两端的节点跟着闪烁确认。
 
-![TCP SYN+ACK 握手](https://pic.yupi.icu/1/gemini38flash-case1-05-TCP-SYNACK%E6%8F%A1%E6%89%8B-acb47530.png)
+![TCP SYN+ACK 握手](/imgs/00c3417ec0388088.png)
 
 客户端再回传 ACK，三维世界里立刻贯通出一条双向的数据光纤隧道，这个连通感做得挺到位。
 
-![TCP 建立双向通道](https://pic.yupi.icu/1/gemini38flash-case1-06-TCP%E5%BB%BA%E7%AB%8B%E5%8F%8C%E5%90%91%E9%80%9A%E9%81%93-3d0d7dbe.png)
+![TCP 建立双向通道](/imgs/4b743415190d6c28.png)
 
 其他镜头我就不挨个儿介绍了，最终完整的网页呈现在屏幕中央，天上还放起了烟花。
 
-![网页渲染完成的结尾特效](https://pic.yupi.icu/1/gemini38flash-case1-12-%E7%BD%91%E9%A1%B5%E6%B8%B2%E6%9F%93%E5%AE%8C%E7%BB%93%E7%89%B9%E6%95%88-385c3343.png)
+![网页渲染完成的结尾特效](/imgs/23254da7b6fb20e6.png)
 
 通过这个任务，我发现确实如 Google 官方所说，AI 主动做了不少事情。
 
@@ -133,29 +130,29 @@ Google 一直在强调 3.8 Flash 跟上一代 **同价同速**，可第三方评
 
 我让 AI 做一个 3D 烟花燃放的仿真网页，做球形、牡丹、柳条三种形态，升空和炸开都要按真实的重力和空气阻力来算，不许用预先做好的动画糊弄，爆炸的时候还要有声音。技术栈依然完全放开，让 AI 自己想办法。
 
-![CASE 2 提示词原文](https://pic.yupi.icu/1/gemini38flash-prompt-02-case2-%E7%83%9F%E8%8A%B1%E4%BB%BF%E7%9C%9F-562a24d1.png)
+![CASE 2 提示词原文](/imgs/f1240e4f74f72ced.png)
 
 AI 这次花了大约 11 分钟，用 Context7 插件查了 Three.js 动态缓冲顶点属性的用法，然后自己写了一套着色器。
 
 先看初始场景，夜幕下是城市天际线的剪影，下方水面还有微光在荡。
 
-![夜空天际线初始场景](https://pic.yupi.icu/1/gemini38flash-case2-01-%E5%A4%9C%E7%A9%BA%E5%A4%A9%E9%99%85%E7%BA%BF%E5%88%9D%E5%A7%8B%E6%80%81-ed590784.png)
+![夜空天际线初始场景](/imgs/0a0512b8c6c05015.png)
 
 第一种是经典的金色球形烟花，它用斐波那契球面算法算初速度，炸开之后是一个非常规整对称的球壳。
 
-![](https://pic.yupi.icu/1/image-20260903164700882.png)
+![](/imgs/8f44f39657ec44ef.png)
 
 第二种是牡丹，它做成了双层结构，外层是主花瓣、内层是星蕊，炸开的一瞬间花团锦簇。
 
-![](https://pic.yupi.icu/1/image-20260903164804672.png)
+![](/imgs/3df6240b61951d0d.png)
 
 第三种柳条烟花最考验 AI 的物理建模能力，火星受重力和空气阻力双重作用往下垂，燃烧时间长达 3.5 秒以上，拖出一挂金色的瀑布。
 
-![](https://pic.yupi.icu/1/image-20260903164853877.png)
+![](/imgs/2b236844e031db9b.png)
 
 接下来是这道题的重头戏，验帧率。我要求的是上万颗粒子维持 60 帧，AI 在压测模式里直接把同屏活跃粒子拉到了 40000 颗，是我要求的 4 倍，画面依然稳稳跑在 120 帧上。
 
-![4 万粒子 120 帧极限压测](https://pic.yupi.icu/1/gemini38flash-case2-05-4%E4%B8%87%E7%B2%92%E5%AD%90120%E5%B8%A7%E6%9E%81%E9%99%90%E5%8E%8B%E6%B5%8B-273c5f45.png)
+![4 万粒子 120 帧极限压测](/imgs/57d3698d51ce8066.png)
 
 总体来说，AI 完成的还是不错的，但还是老问题，整个前端 AI 味儿太足了，用了很多 Emoji 图标，没有什么让人惊喜的地方。
 
@@ -168,7 +165,7 @@ AI 这次花了大约 11 分钟，用 Context7 插件查了 Three.js 动态缓�
 
 所以我打算让 AI 做一个自用的图床，截图拖进去或者直接粘贴进去，它自动把图片转成 WebP 格式压缩，然后返回一条能直接贴进 Markdown 的链接。
 
-![CASE 3 提示词原文](https://pic.yupi.icu/1/gemini38flash-prompt-03-case3-%E5%9B%BE%E5%BA%8A%E5%B7%A5%E4%BD%9C%E5%8F%B0-12a7c9fa.png)
+![CASE 3 提示词原文](/imgs/38e9070424e28262.png)
 
 大约 5 分钟，AI 就完成开发并且跑通测试了。它选的是 Express 配 Sharp 做图像处理，数据库用了轻量的 better-sqlite3 并开了 WAL 模式。
 
@@ -176,27 +173,27 @@ AI 这次花了大约 11 分钟，用 Context7 插件查了 Three.js 动态缓�
 
 界面是暗色玻璃拟态的风格，顶部是已存图片、节省体积和压缩比率三个统计，中间是拖拽上传区。
 
-![图床大盘与图片墙](https://pic.yupi.icu/1/gemini38flash-case3-01-%E5%9B%BE%E5%BA%8A%E5%A4%A7%E7%9B%98%E4%B8%8E%E5%9B%BE%E7%89%87%E5%A2%99-6789befa.png)
+![图床大盘与图片墙](/imgs/3bb07604e1051cbe.png)
 
 传一张图上去，它自动转成了 WebP，体积从 87.87 KB 压到了 12.13 KB，压缩了 86.2%，同时给出了可以直接复制的 Markdown 代码。
 
-![上传图片与 WebP 压缩率](https://pic.yupi.icu/1/gemini38flash-case3-02-%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E4%B8%8EWebP%E5%8E%8B%E7%BC%A9%E7%8E%87-3b217ae2.png)
+![上传图片与 WebP 压缩率](/imgs/3bc7940984c71651.png)
 
 把同一张图再传一遍，它立刻通过 SHA-256 认了出来，弹出黄色提示，并且直接把上次的链接还给我，没有额外占用磁盘空间。
 
-![智能秒传去重识别提示](https://pic.yupi.icu/1/gemini38flash-case3-03-%E6%99%BA%E8%83%BD%E7%A7%92%E4%BC%A0%E5%8E%BB%E9%87%8D%E8%AF%86%E5%88%AB%E6%8F%90%E7%A4%BA-ab53f39d.png)
+![智能秒传去重识别提示](/imgs/b648ffcfe5343be3.png)
 
 点击图片卡片，可以打开大图详情弹窗，能看到原图和 WebP 的体积对比、分辨率，还能一键复制不同格式的链接。
 
-![大图详情与尺寸对比](https://pic.yupi.icu/1/gemini38flash-case3-04-%E5%A4%A7%E5%9B%BE%E8%AF%A6%E6%83%85%E4%B8%8E%E5%B0%BA%E5%AF%B8%E5%AF%B9%E6%AF%94-83b34d54.png)
+![大图详情与尺寸对比](/imgs/8fed31e4a63e2242.png)
 
 支持按照文件名称实时搜索图片，也能按照时间和体积正反序排列。
 
-![搜索过滤与排序](https://pic.yupi.icu/1/gemini38flash-case3-05-%E6%90%9C%E7%B4%A2%E8%BF%87%E6%BB%A4%E4%B8%8E%E6%8E%92%E5%BA%8F-7f2cb6c5.png)
+![搜索过滤与排序](/imgs/10b44f8b0f61f4f9.png)
 
 勾选卡片左上角的复选框就进入批量管理模式，支持全选，删除前还有二次确认。
 
-![多选与批量删除模式](https://pic.yupi.icu/1/gemini38flash-case3-06-%E5%A4%9A%E9%80%89%E4%B8%8E%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%A8%A1%E5%BC%8F-3a050adc.png)
+![多选与批量删除模式](/imgs/a038307ae8609855.png)
 
 整个系统的功能还是很完整的，美中不足的是，如果我传一张特别长的代码截图进去，图片墙在算瀑布流高度的时候卡片底部偶尔会错位。
 
@@ -213,7 +210,7 @@ AI 这次花了大约 11 分钟，用 Context7 插件查了 Three.js 动态缓�
 
 答案是 30 块钱左右，如果直接用官方的 API 可能会更便宜一些，你觉得这个价格怎么样？
 
-![](https://pic.yupi.icu/1/Cursor%20%E5%90%8E%E5%8F%B0%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E4%BB%BB%E5%8A%A1%E6%80%BB%E6%B6%88%E8%80%97.png)
+![](/imgs/c72425ca5414c367.png)
 
 虽然肯定比 Claude Opus 5 这种顶级模型便宜，但是跟 GLM、Kimi 等国产模型相比，基本上没有什么价格优势。而且同样的任务，交给 GLM-5.3、Kimi K3 来做，效果可能更好。
 
@@ -221,7 +218,7 @@ AI 这次花了大约 11 分钟，用 Context7 插件查了 Three.js 动态缓�
 
 怎么回事，谷歌那么强大的公司，怎么在大模型领域被其他公司按在地板上反复摩擦呢？
 
-![](https://pic.yupi.icu/1/remember-memes-like-these-geminis-come-a-long-way-v0-jbcgu9lt4a8f1.png)
+![](/imgs/b17943ae6fbf50d3.png)
 
 
 ## 写在最后

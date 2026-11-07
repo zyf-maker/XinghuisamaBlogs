@@ -3,27 +3,24 @@ title: "DeepSeek V4 Pro 编程能力实测 - 7 个项目案例"
 summary: "从前端动画到全栈产品，用 7 个真实项目实测 DeepSeek V4 Pro 正式版的编程能力"
 order: 8
 level: "进阶"
-tags: ["模型动态", "转载", "AI"]
+tags: ["模型动态"]
 updated: "2026-10-22"
 readingTime: 13
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek V4 Pro 编程能力实测 - 7 个项目案例》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 刚刚，DeepSeek 悄悄发布了 DeepSeek V4 Pro 模型的正式版，已经可以通过 API 接口调用了。
 
-![DeepSeek 官方群发布消息](https://pic.yupi.icu/1/deepseek%20v4%20pro%20%E5%8F%91%E5%B8%83%E7%BE%A4%E8%81%8A.jpg)
+![DeepSeek 官方群发布消息](/imgs/61acf3aa87787628.jpg)
 
 新版本支持 1M 上下文、384K 最大输出，进一步增强了 Agent 能力，并且支持 Responses API，能够轻松接入到 Codex 中。
 
 来看一看 DeepSeek 官方放出的跑分表：
 
-![DeepSeek V4 Pro 正式版跑分对比](https://pic.yupi.icu/1/deepseek%20v4%20pro%20%E8%B7%91%E5%88%86%E5%9B%BE.jpeg)
+![DeepSeek V4 Pro 正式版跑分对比](/imgs/86a256f0936fcfc4.jpg)
 
 最亮眼的是 Terminal Bench 2.1 这一项，它考察的是模型能不能在终端里独立把一整套编程任务干完。
 
@@ -31,7 +28,7 @@ DeepSeek V4 Pro 正式版拿了 87.9，而国外顶级模型 Claude Fable 5 是 
 
 **就差 0.1 ！**
 
-![](https://pic.yupi.icu/1/image-20260813145727335.png)
+![](/imgs/935641a76c4dbec8.png)
 
 相比之前放出的 DeepSeek V4 Preview 版，其他几项测试指标的涨幅也很夸张，DeepSWE 从 12.8 涨到 62.7，Cybergym 从 52.7 涨到 83.3，NL2Repo 从 38.5 涨到 61.5。这几个基准考的其实是同一件事，模型能不能带着工具进到真实环境里，把一个多步骤的活儿从头做到尾。
 
@@ -41,11 +38,11 @@ DeepSeek V4 Pro 正式版拿了 87.9，而国外顶级模型 Claude Fable 5 是 
 
 这次我准备了 **7 个不同类型的项目**，从简单的前端动画、再到复杂的全栈产品，全方面测评 DeepSeek V4 Pro 的编程能力。
 
-![7 个测评项目汇总图（由浅入深）](https://pic.yupi.icu/1/01_7%25E4%25B8%25AA%25E6%25B5%258B%25E8%25AF%2584%25E9%25A1%25B9%25E7%259B%25AE%25E6%25B1%2587%25E6%2580%25BB%25E5%259B%25BE%25EF%25BC%2588%25E7%2594%25B1%25E6%25B5%2585%25E5%2585%25A5%25E6%25B7%25B1%25EF%25BC%2589_compressed_v1.png)
+![7 个测评项目汇总图（由浅入深）](/imgs/01b4cdb1c428b7c1.png)
 
 值得一提的是，为了这次测试，我特地往 DeepSeek 账户里充了 300 块。
 
-![](https://pic.yupi.icu/1/9b1f5e5fa70dc82f190bf0d3818a92ad.jpg)
+![](/imgs/72ffa7f0eb5d89ff.jpg)
 
 大家可以猜猜看，这 300 块够不够花？
 
@@ -60,7 +57,7 @@ DeepSeek V4 Pro 正式版拿了 87.9，而国外顶级模型 Claude Fable 5 是 
 
 把 DeepSeek V4 Pro 接进 Codex CLI 没什么难度，官方这次专门适配了 Responses API 和 Codex，改改配置文件就能跑。具体步骤可以阅读本教程编程工具板块「Claude Code」目录中的《Claude Code 和 Codex 对接国内模型教程》，照着做就行。
 
-![](https://pic.yupi.icu/1/image-20260803114842807.png)
+![](/imgs/070e756d45cbd15d.png)
 
 真正麻烦的是另外两件事。
 
@@ -83,7 +80,7 @@ Harness 指的是把模型能力落到真实环境里的那层工程，负责调
 
 准备工作做完，我在 Cursor 里把 8 次执行一次性并行丢了出去，全程不需要人工干预，跑完我再一个一个验收。
 
-![Cursor 并行调度 8 个子任务](https://pic.yupi.icu/1/image-20260813150439721.png)
+![Cursor 并行调度 8 个子任务](/imgs/165bfb6f101c0abc.png)
 
 
 ## 项目实战测评
@@ -107,31 +104,31 @@ Harness 指的是把模型能力落到真实环境里的那层工程，负责调
 
 提示词里我要求它先用 Firecrawl 联网搜索技术细节，确保讲解内容准确，做完之后自己验证效果，不满意就自主调整，改到满意再交付。
 
-![](https://pic.yupi.icu/1/1786602835584-bcee4f23-f247-4daf-825e-b3fede5336e8.png)
+![](/imgs/ceb1af585ec657ff.png)
 
 先来看看首屏效果。
 
 已经能看出问题了，不仅动画做得很简单，而且动画块中的文字已经溢出边框了……
 
-![](https://pic.yupi.icu/1/1786598739739-3e7bd75c-7b0a-4b70-90c7-df48b6352442.png)
+![](/imgs/0d5235ff245e2f4c.png)
 
 再往下看 AI 对核心机制的讲解，中间那个示意图的线条连接明显不对，节点之间错位了。
 
-![](https://pic.yupi.icu/1/1786598800323-d83866da-24d8-4d07-9de8-72468e9102e8.png)
+![](/imgs/51627884ce21b80b.png)
 
 再往下看交互演示的部分，文字溢出和连线错位的问题更加明显，而且动画过于敷衍，没什么交互性可言。
 
-![](https://pic.yupi.icu/1/1786598853316-6b7bf7aa-79df-447d-8e02-8f69f75fa79b.png)
+![](/imgs/e6fa9d95f2377eb8.png)
 
 对比一下之前同样的提示词、其他模型做出来的效果。
 
 Kimi K3 的版本用「100 个厨师接力加调料」的类比把问题讲清楚了，动画流畅、审美在线：
 
-![Kimi K3 开发的交互动画](https://pic.yupi.icu/1/1784181755536-d293e9bf-8eb5-4ad8-af7f-4eef6da47067-20260717144614356-20260813162823259.png)
+![Kimi K3 开发的交互动画](/imgs/337d0d563bef3c1a.png)
 
 Claude Opus 5 做得更全面，背景有漂浮的光点，还自己加了几道随堂测验题，检查用户学习知识的效果，更像是一个系统化的知识讲解网站。
 
-![Claude Opus 5 开发的交互动画](https://pic.yupi.icu/1/1785144666553-66077ab6-a75d-4730-84d7-963dc05f8a50-20260813162823373.png)
+![Claude Opus 5 开发的交互动画](/imgs/2adb859628ab68b6.png)
 
 回看 DeepSeek V4 Pro 这个版本，文字溢出、连线错位、动画敷衍，前端效果明显拉胯了。
 
@@ -144,25 +141,25 @@ Claude Opus 5 做得更全面，背景有漂浮的光点，还自己加了几道
 
 提示词里除了联网搜索，我还要求它用 Context7 查一下所用 3D 库的最新文档，别拿过时的 API 来写。
 
-![](https://pic.yupi.icu/1/1786602849416-8d6307ed-32b5-49ae-8558-340cc5a4c6c0.png)
+![](/imgs/050e7b0f8439f872.png)
 
 看下效果，整体网站的配色是科技风，背景有飞舞的粒子效果。布局很清晰，通过左下角的面板学习知识、控制动画步骤。
 
-![](https://pic.yupi.icu/1/1786599058417-3f7f71fc-de84-4beb-acf3-8873ddaf0deb.png)
+![](/imgs/e30d00e75671f0fe.png)
 
 3D 动画能够正常旋转缩放，没有明显的错位问题，也没有任何的卡顿。工程上的分块注意力残差也用金色连线做了可视化。
 
-![](https://pic.yupi.icu/1/1786599132799-f2c6662c-1def-4f3a-9a32-07b68602dfc6.png)
+![](/imgs/7c95b76afdf3c3be.png)
 
 不过跟之前的模型比，差距还是有的。
 
 Kimi K3 的版本干净利落，重点全在 3D 动画演示上，3D 的效果更生动：
 
-![Kimi K3 的 3D 版本](https://pic.yupi.icu/1/1784181948833-d092b7b8-abc2-42c4-9c8c-bfcd38cef470-20260717144616007-20260813162823984.png)
+![Kimi K3 的 3D 版本](/imgs/64223a03a5b83379.png)
 
 再看看 Claude Opus 5 的版本，我刚打开网页就被惊艳到了，科技感爆棚，还能并排对比多种残差模式：
 
-![Claude Opus 5 的 3D 版本](https://pic.yupi.icu/1/1785145067089-c8c05cfb-e1a3-4f3c-abe8-e3c30aa1390e-20260813162824079.png)
+![Claude Opus 5 的 3D 版本](/imgs/44ba7690fcff17c5.png)
 
 相比之下，DeepSeek V4 Pro 的 3D 动画简单了不少，没有让我眼前一亮的感觉。我的评价是「NPC」。
 
@@ -171,23 +168,23 @@ Kimi K3 的版本干净利落，重点全在 3D 动画演示上，3D 的效果�
 
 竹知了是中国传统的竹制玩具，一根竹签上串着一片薄竹片，用手搓动竹签让竹片高速旋转，竹片切割空气产生振动，发出类似夏天蝉鸣的「哇呜哇呜」声。
 
-![](https://pic.yupi.icu/1/1786602860735-55ee064d-1521-4501-847d-c12a0cfe9fc4.png)
+![](/imgs/7510326fb8ca1643.png)
 
 这道题同时考察了前端效果、物理引擎和实时声音合成，而且效果好不好只能靠耳朵听、凭自己的手感来玩，代码写得再漂亮也没用。
 
 先看 DeepSeek V4 Pro 做的效果。界面中规中矩，象征性地画了几颗小竹子，但没什么氛围感。
 
-![](https://pic.yupi.icu/1/1786599373401-a561d583-aeca-46c3-9895-d55c9356e731.png)
+![](/imgs/f19360e98dee6acb.png)
 
 游戏的操作方式很简单，用鼠标拖拽让竹知了旋转起来。页面上还支持开启体感模式，摇一摇手机或转动手腕就能驱动竹片旋转。
 
-![](https://pic.yupi.icu/1/1786599484181-ade4c638-69c4-443a-8f04-d579cbf4562d.png)
+![](/imgs/2debf90270170922.png)
 
 不过发出的声音竟然是《嗡嗡嗡》的，跟我想要的那种《哇哇哇》的蝉鸣声完全不搭，配不上 1000 万以内最好的玩具！
 
 这道题我还额外用 DeepSeek V4 Flash 拿同样的提示词跑了一遍，结果还挺意外的。竹知了的结构变了，声音也更接近我想要的那种哇哇声。
 
-![](https://pic.yupi.icu/1/1786599660114-de1a0f89-2070-41ae-a3a8-5894c88dd2a2.png)
+![](/imgs/c110c77208f0a556.png)
 
 怎么回事，感觉这版的前端效果居然比 Pro 版更好了？？？
 
@@ -200,41 +197,41 @@ Kimi K3 的版本干净利落，重点全在 3D 动画演示上，3D 的效果�
 
 用户在网页上粘贴一段长文案，后端调用大模型把文案拆解成多页 PPT 结构，前端渲染成可以全屏演示、键盘翻页的网页 PPT，还要支持切换配色主题和导出 HTML 文件，后端用流式输出，前端实时显示生成进度。
 
-![](https://pic.yupi.icu/1/1786602871186-1801d617-e049-4a66-93d9-a37a3b25367f.png)
+![](/imgs/4a097f457571caf9.png)
 
 这道题相当于对 DeepSeek V4 Pro 的双重验证。项目代码是它写的，项目里内置的那个大模型接口填的也是它自己，一举两得，同时测试了它的编码能力和内容生成能力。
 
 来看看效果，整体界面布局和风格还算中规中矩，左侧输入生成 PPT 的长文案，右侧预览 PPT 成品效果。
 
-![](https://pic.yupi.icu/1/1786600053816-123fed97-aac5-4e5f-9fa0-f65682ff1978.png)
+![](/imgs/a77469dd63a0e185.png)
 
 输入一段长文案，点击生成，左下角可以看到生成进度和 AI 大模型的实时输出。
 
-![](https://pic.yupi.icu/1/1786600127701-07016adb-59dc-4db9-8fe1-ee167bedd00a.png)
+![](/imgs/4c6022d8bb2fe936.png)
 
 但这个「实时输出」其实不是实时的…… 等了很长一段时间之后，好像是 AI 全部生成完了，才开始流式输出的。这算是一个明显的 Bug。
 
-![](https://pic.yupi.icu/1/1786600231061-4224dcb2-ee36-4916-be4d-ee66de73f18c.png)
+![](/imgs/918be3b9e95c476d.png)
 
 再看看最终生成的 PPT 效果吧，额，很难评……
 
-![](https://pic.yupi.icu/1/1786600257499-75fdc7f7-740c-4c27-8979-34683f66afcd.png)
+![](/imgs/4c9a5d97f7ef876d.png)
 
 文字内容基本都堆在左边，右侧那么多空白留着干嘛？
 
 可以切换 PPT 的主题配色，也能导出为独立的 HTML 文件，这些功能是正常可用的。
 
-![](https://pic.yupi.icu/1/1786600293676-689e0378-6c3d-4bb5-8e4d-b19437d8ab23.png)
+![](/imgs/ae15b173facd54ec.png)
 
 对比一下之前的模型。
 
 Kimi K3 做出来的版本比较简陋：
 
-![Kimi K3 的 PPT 工具](https://pic.yupi.icu/1/1784182758933-6b75a1c9-f922-437b-8c85-0115cdea665e-20260717144619030-20260813162825827.png)
+![Kimi K3 的 PPT 工具](/imgs/93e6ea60d48b1f76.png)
 
 Claude Opus 5 做出来的更像一个成熟的工具产品，配色主题起了极光、象牙这种很形象的名字，还自己加了「填写额外生成要求」的功能：
 
-![Claude Opus 5 的 PPT 工具](https://pic.yupi.icu/1/1785146087244-153c15ee-6ffe-4f7b-8c8d-8224fe272074-20260813162825918.png)
+![Claude Opus 5 的 PPT 工具](/imgs/78b50378c17593de.png)
 
 相比之下，DeepSeek V4 Pro 做的前端效果就比较一般了，离可交付有距离。
 
@@ -247,7 +244,7 @@ Claude Opus 5 做出来的更像一个成熟的工具产品，配色主题起了
 
 管理员可以创建一场抽奖活动，配置好每档奖品的名额，生成参与链接和二维码；参与者打开链接填昵称报名；到点管理员点击开奖，大屏上滚动出中奖名单。
 
-![](https://pic.yupi.icu/1/1786602887504-679a0212-cd94-43e3-983c-6d1503d5b705.png)
+![](/imgs/80a3186850ae0c07.png)
 
 前面几道题拼的是审美和创意，这道题拼的是工程严谨度。
 
@@ -259,19 +256,19 @@ Claude Opus 5 做出来的更像一个成熟的工具产品，配色主题起了
 
 光看到这个界面，我已经没什么期待了，这也太丑了叭！我以为高低得整个转盘呢。
 
-![](https://pic.yupi.icu/1/1786600763380-af0f9dd5-7cb5-4046-9669-8b356f720298.png)
+![](/imgs/e1ac46c87ff047c3.png)
 
 试试功能，能够在管理后台正常新建活动、配置奖品名额。
 
-![](https://pic.yupi.icu/1/1786600802250-6f303738-7f6f-4b0c-8520-6e4279033d1c.png)
+![](/imgs/5d1598420561e626.png)
 
 参与者可以通过扫描二维码报名参与抽奖，这个流程还挺方便的。
 
-![](https://pic.yupi.icu/1/1786600853785-67afb787-6fb6-4554-8122-96b87d8d4029.png)
+![](/imgs/a9132766c9838b89.png)
 
 管理员开奖后，参与者可以实时看到中奖结果：
 
-![](https://pic.yupi.icu/1/1786600931033-5aae5f42-04bd-4311-b977-7efc6ce97fa9.png)
+![](/imgs/884e2bd56c21a54f.png)
 
 我让其他 AI 帮忙验证了后端逻辑，1000 人抢 100 个名额，中奖总人数正好 100，没有超发，也没有重复中奖。后端的幂等和并发控制是做到位了的。
 
@@ -284,39 +281,39 @@ Claude Opus 5 做出来的更像一个成熟的工具产品，配色主题起了
 
 以撒的结合是我小孩儿时代很爱玩的一款肉鸽游戏，玩家在随机生成的房间里探索，用射击消灭敌人，清完一个房间开门进下一个，每层有若干房间和一个 Boss 房。
 
-![](https://pic.yupi.icu/1/image-20260730215626570.png)
+![](/imgs/d835a5911976b355.png)
 
 我让 AI 复刻核心玩法，包括随机地牢生成、射击战斗、道具系统、属性系统，至少 3 种普通敌人和 1 个 Boss，图形素材全部用代码绘制。
 
-![](https://pic.yupi.icu/1/1786602896622-3e913641-85d9-4515-8ae9-cb36a6077af9.png)
+![](/imgs/1142efddae96b0e8.png)
 
 这道题的图形素材全部靠代码一笔一笔画出来，画成什么样模型自己心里其实是没数的，所以这道题最能看出不同模型之间的水平差距。
 
 来看看 DeepSeek V4 Pro 的版本。游戏名叫「地下室：泪之回廊」，好家伙，游戏名称都一股 AI 味儿。
 
-![](https://pic.yupi.icu/1/1786601275633-79bedc9a-a388-4038-b489-12cf0c8f3656.png)
+![](/imgs/bb4ed31dd2228547.png)
 
 进入游戏，开屏暴击。来看看这个人物形象，带着个面罩，我是小偷啊我是？不过小人的眼泪标志还是致敬了原版。
 
-![](https://pic.yupi.icu/1/1786601311551-f9bc962b-ab7c-45cf-be16-c325ab7295b2-20260813162826909.png)
+![](/imgs/99bef95fee896e3b.png)
 
 你别说，游戏是真的能正常玩耍的，而且体验竟然还不错。怪物也有点儿以撒的结合原版的味道，数值系统和宝箱机制都还原了。
 
-![](https://pic.yupi.icu/1/1786601335883-7af4e7a2-4a73-4074-b96d-e8633d02561e.png)
+![](/imgs/8a051b71277c1f01.png)
 
 还能打 Boss，难度适中：
 
-![](https://pic.yupi.icu/1/1786601561806-b4b73523-93f7-4bbe-81c6-161fa903ee25.png)
+![](/imgs/bcb264ef363c14fb.png)
 
 不过游戏只有 1 层，打完 Boss 就结束了，非常单调，离成品还差得远。
 
 对比一下之前其他模型做出来的效果。Kimi K3 那次做出来的界面看着简陋，但玩法链路是完全跑通的，能发子弹、能杀怪、能吃道具：
 
-![Kimi K3 开发的以撒游戏](https://pic.yupi.icu/1/1784184823083-d46122a9-8b45-4719-a69d-c8eeda7906aa-20260717144631052-20260813162826980.png)
+![Kimi K3 开发的以撒游戏](/imgs/fa4a53f65c5fcdf6.png)
 
 再看看 Claude Opus 5 做出的游戏。我一打开游戏主页 DNA 就动了，小怪很多都是原版里有的，Boss 机制也跟原版神似：
 
-![Claude Opus 5 开发的以撒游戏](https://pic.yupi.icu/1/image-20260801105325549.png)
+![Claude Opus 5 开发的以撒游戏](/imgs/255e50f499d3d0cb.png)
 
 可以发现，DeepSeek V4 Pro 的效果比 Kimi K3 好不少，怪物的行为逻辑和战斗手感都上了一个台阶。但跟 Claude Opus 5 的差距不是一点半点。
 
@@ -329,29 +326,29 @@ Claude Opus 5 做出来的更像一个成熟的工具产品，配色主题起了
 
 我让它克隆 VS Code 的开源代码，在这个基础上开发一个复刻 Cursor 核心体验的 Web AI 编程工具，要支持 Editor Window 代码编辑器和 Agents Window 对话工作台两种模式，两个窗口之间能自由切换，Agent 还得能自主读文件、改代码、执行终端命令。
 
-![](https://pic.yupi.icu/1/1786602907526-9df019bc-5fc8-480b-a26f-abfdcdb50f0c.png)
+![](/imgs/4556bec427d96306.png)
 
 这是 7 道题里唯一的长程任务，考察模型能不能在一个几十万行的代码库面前稳定运行、不跑偏。
 
 来看看成品，虽然跟真实的 Cursor 差距甚大，但整体布局还是合理的。在 Editor Window 编辑器模式中，能够顺利打开和编辑文件，还有代码提示和高亮。
 
-![](https://pic.yupi.icu/1/1786602228169-31beaebe-3162-4d6a-a34f-7e2aef9399c9.png)
+![](/imgs/d937801778f8bb43.png)
 
 切换到 Agents Window，创建一个新的 AI 对话，让它帮我开发一个推箱子游戏。
 
-![](https://pic.yupi.icu/1/1786602275433-113cbb01-223b-4e62-bfa2-da1448889741.png)
+![](/imgs/61d5b9689539b174.png)
 
 可以看到 AI 能够执行命令、调用工具来查看文件，然后自己编写代码。等了一会儿，AI 完成了开发。
 
-![](https://pic.yupi.icu/1/1786602317068-9b7a7666-1f0e-4465-a4b4-a1b3ed8391ad.png)
+![](/imgs/b3ca0d84def3d9de.png)
 
 开发完成后，直接让 AI 把网站跑起来。
 
-![](https://pic.yupi.icu/1/1786602366637-0640c8f9-d1b1-4c4b-916b-ba5fdae4d289.png)
+![](/imgs/2910694251f8eb18.png)
 
 来看下我用 AI 做的 AI 编程工具开发出的推箱子游戏，效果还不错，能够正常玩耍：
 
-![](https://pic.yupi.icu/1/1786602398632-5f0f7f2d-3722-4732-b1cd-75b7e082af65.png)
+![](/imgs/fcd0aeb5aaf4faaa.png)
 
 有个细节值得说一下。虽然提示词要求 AI 在 VS Code 源码基础上开发，AI 也确实克隆了 40 多万行 VS Code 代码，但实际上 AI 转头用 `monaco-editor` 这个 npm 包另起炉灶写了个独立的 React 应用。
 
@@ -361,11 +358,11 @@ Claude Opus 5 做出来的更像一个成熟的工具产品，配色主题起了
 
 先看看 Kimi K3 做的 Cursor，双窗口的核心能力也是跑通了的：
 
-![Kimi K3 开发的 AI 编程工具](https://pic.yupi.icu/1/1784190810038-c3d24d7d-f500-46ff-bb62-b2c9205005f2-20260717144633410-20260813162827309.png)
+![Kimi K3 开发的 AI 编程工具](/imgs/f2acd9a1c6eebfa1.png)
 
 Claude Opus 5 做的版本几乎完整保留了 VS Code 的精髓，代码高亮、代码小地图、管理面板都在，妥妥的降维打击！
 
-![Claude Opus 5 开发的 AI 编程工具](https://pic.yupi.icu/1/1785147362813-894c3d8b-cb1b-48cf-96ca-9eefd572b4c3-20260813162827347.png)
+![Claude Opus 5 开发的 AI 编程工具](/imgs/18fb6b3bbd7d5460.png)
 
 DeepSeek V4 Pro 的版本 Editor 和 Agent 双窗口都能用，交互体验也没有明显的问题。
 
@@ -388,7 +385,7 @@ DeepSeek V4 Pro 还有一个对 AI 编程影响极大的短板，就是没有视
 
 比如开发《以撒的结合》游戏时，地板的配色代码逻辑是对的，颜色确实画了，但是选了一个跟纯黑几乎分不出来的暗色，人眼看上去就是一片漆黑。模型自己完全发现不了这个问题。
 
-![](https://pic.yupi.icu/1/1786601311551-f9bc962b-ab7c-45cf-be16-c325ab7295b2-20260813162827387.png)
+![](/imgs/5c15c85294121017.png)
 
 然后揭晓本次测试花费的总金额。
 
@@ -396,7 +393,7 @@ DeepSeek V4 Pro 还有一个对 AI 编程影响极大的短板，就是没有视
 
 该说不说，DeepSeek 的性价比是真的高。
 
-![DeepSeek 消费面板](https://pic.yupi.icu/1/1786602606582-f5c74b1b-aeaa-4a42-a491-a3d624856ec6.png)
+![DeepSeek 消费面板](/imgs/b85b6b7526939af9.png)
 
 这么便宜主要是因为 DeepSeek 的缓存命中率实在太高了，平均达到 99%，绝大部分输入 Token 的计费几乎可以忽略不计。
 
@@ -404,7 +401,7 @@ DeepSeek V4 Pro 还有一个对 AI 编程影响极大的短板，就是没有视
 
 不过 DeepSeek 官方说近期会整体上调 API 的价格，而且涨幅较大，所以珍惜现在这个价格吧，先多蹬 AI 一会儿。
 
-![](https://pic.yupi.icu/1/image-20260813154806089.png)
+![](/imgs/ee339e981ba52c4e.png)
 
 另外简单对比一下 DeepSeek V4 Pro 和 V4 Flash。开发竹知了游戏时，Flash 跑了 15 分钟、花了 7 毛，Pro 跑了 11 分钟、花了 4 毛，两个版本的完成度和效果差别不大。
 
@@ -416,14 +413,14 @@ DeepSeek V4 Pro 还有一个对 AI 编程影响极大的短板，就是没有视
 
 我的建议是，在学习 AI 编程阶段，或者对于一些日常小工具、内部系统、快速验证想法这类不太在意前端精细度的任务，用 DeepSeek 完全没问题，节省成本。如果你要做面向用户的产品，可以先用 DeepSeek 跑一遍 Demo，调通提示词、明确功能和业务流程，再切换到 Claude 这个级别的模型去系统开发，这样既省钱又高效。
 
-![](https://pic.yupi.icu/1/woquandouyao.jpeg)
+![](/imgs/ab89c1747b3b6406.jpg)
 
 
 ## 写在最后
 
 至少 DeepSeek V4 Pro 是不及我的预期的，毕竟等了这么久，结果正式版在 AI 编程上的体验并没有给我惊喜。
 
-![](https://pic.yupi.icu/1/620cb309a8d1aaeda1364a6f34c90f25.jpg)
+![](/imgs/4da9c6b0e4a07f85.jpg)
 
 不过 DeepSeek 应该还有大招没有发。
 

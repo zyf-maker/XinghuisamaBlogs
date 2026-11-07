@@ -3,15 +3,12 @@ title: "程序员高效工作技巧"
 summary: "提升工作效率，轻松应对职场挑战"
 order: 9
 level: "入门"
-tags: ["编程学习", "转载", "AI"]
+tags: ["编程学习"]
 updated: "2026-01-13"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《程序员高效工作技巧》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -52,7 +49,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 千万记住，不要接受一句话需求、需求信息一定不能只通过口头描述！否则今后产品经理抵赖，你也没办法。
 
-![需求文档](https://pic.yupi.icu/1/1696339052753-853d6116-984f-4f94-8bdf-9cf40c61109a.png)
+![需求文档](/imgs/2a8ba0baeefe951b.png)
 
 
 ### 2、上游没有确定前，不要急着开发
@@ -65,7 +62,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 如果是以前，我可能已经心态爆炸了吧哈哈。
 
-![心态爆炸](https://pic.yupi.icu/1/1696339052793-e3154265-d287-48e8-851c-86c43a831b75.png)
+![心态爆炸](/imgs/5fb8c2595ad584e3.png)
 
 所以这一点还是很有用的，也为我节省了不少时间。
 
@@ -82,7 +79,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 所以之后做需求的时候我都会给自己多预留一些时间，防止一些自己前期没有考虑到的问题出现，毕竟大家也知道，有时候一个 Bug 可能就要排查一天。。。
 
-![预留时间](https://pic.yupi.icu/1/1696339052824-38062959-00d7-4c9c-a00f-3583376a4737.png)
+![预留时间](/imgs/f75150c6643dcf5c.png)
 
 哪怕我很清楚自己 2 天能完成需求，可能也会多给自己一些时间。毕竟你如果能提前完成，对方会觉得超出预期了；如果你准时完成，对方会觉得这是正常的；而如果你因为一些 Bug 导致没有按时完成，对方会觉得 "你不太行"。
 
@@ -167,7 +164,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我的工作微信中，文件传输助手始终是置顶的，我不在电脑前面的时候，只要想到或者收到一些工作事项，都会发给文件传输助手，然后标为未读，以后每次打开微信，都会有一个醒目的红点提醒了。
 
-![文件传输助手](https://pic.yupi.icu/1/image-20240804144855349.png)
+![文件传输助手](/imgs/ac6d13705fc2d4bb.png)
 
 如果收到暂时无法处理的工作消息，我在阅读之后也会标为未读并且置顶聊天，提醒自己之后要处理。大家在工作中遇到已读不回的情况，其实是很正常的，有可能对方只是暂时不方便回复、或者没想好怎么回。
 
@@ -184,7 +181,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 以下是我的工作记录表示例：
 
-![工作记录表](https://pic.yupi.icu/1/image-20240804143618230.png)
+![工作记录表](/imgs/63cfc6d2a5ab9e56.png)
 
 像我带了团队之后，还有一个习惯，在每个周末提前做好下周整体的个人和团队计划，便于提前做好准备、更好地把控进度，让工作井然有序。
 
@@ -195,7 +192,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 但是我每天睡觉前都会过一遍微信 / 企业微信中的 "红点"，确认下有没有漏掉的消息，这可能也是导致我睡眠时间不固定的一个主要原因。
 
-![过红点](https://pic.yupi.icu/1/image-20240804144027111.png)
+![过红点](/imgs/90f775d4ba8f6caa.png)
 
 
 ## 四、日常记录总结

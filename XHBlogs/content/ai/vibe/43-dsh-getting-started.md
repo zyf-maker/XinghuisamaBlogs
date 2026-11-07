@@ -10,18 +10,15 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek Harness 保姆级入门教程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 DeepSeek 在发布 V4 Pro 正式版的同时，还开源了万众瞩目的 DeepSeek Harness。
 
-![](https://pic.yupi.icu/1/image-20260814125428438.png)
+![](/imgs/1f9a0d99b728b2f7.png)
 
 DeepSeek Harness 开源的 [GitHub 仓库](https://github.com/deepseek-ai/deepseek-harness) 上线不到 1 天，就冲到了 7 万多 Star，AI 届的顶流果然名不虚传。
 
-![](https://pic.yupi.icu/1/image-20260814142939760.png)
+![](/imgs/44a1f84eefe3d561.png)
 
 这篇文章我会从安装开始，手把手带你体验 DeepSeek Harness 的核心玩法，小白可懂，建议收藏~
 
@@ -37,13 +34,13 @@ Harness 这个词翻译过来就是「驾驭」，如果把 AI 模型比作一�
 
 你给 AI 写的项目规则文件、配置的各种工具、安排的任务拆分和执行顺序、设计的测试检查流程，这‌些统统都算 Harness。
 
-![](https://pic.yupi.icu/1/2_harness_horse.png)
+![](/imgs/877b7b1f6f1adb88.png)
 
 有一个很精妙的公式：**Agent = Model + Harness**
 
 模型负责思考和生成，Harness 负责把这些能力接入文件系统、终端、网页、工具链，让 AI 真正能在现实环境里干活。
 
-![](https://pic.yupi.icu/1/8_agent_queals.png)
+![](/imgs/f529a8276a9795fe.png)
 
 之前 DeepSeek 只开源了模型这一半，Harness 一直没动静，这次终于补齐了。
 
@@ -51,7 +48,7 @@ Harness 这个词翻译过来就是「驾驭」，如果把 AI 模型比作一�
 
 但它的野心比这些工具更大，不只是一个编程 Agent，而是一套可配置、可重组的 Agent 运行环境，官方口号是「一切皆插件」。
 
-![](https://pic.yupi.icu/1/image-20260814130507825.png)
+![](/imgs/d9ac00563bd86f4f.png)
 
 看到这里，你已经超过了 50% 的同学。
 
@@ -65,11 +62,11 @@ Harness 这个词翻译过来就是「驾驭」，如果把 AI 模型比作一�
 
 你会看到一行安装命令：
 
-![](https://pic.yupi.icu/1/image-20260814094053180.png)
+![](/imgs/ecd33981a4f57067.png)
 
 在执行这行命令之前，首先要确保你的电脑已经安装了 Node.js 环境，没有的话去 [Node 官网](https://nodejs.org/zh-cn) 下载安装包，傻瓜式安装就行。
 
-![](https://pic.yupi.icu/1/image-20260814095005547.png)
+![](/imgs/e94e50ddb58c2ca3.png)
 
 有了环境后，复制这行命令，然后打开你电脑上的终端，输入这行命令并执行：
 
@@ -79,19 +76,19 @@ npx @deepseek-ai/dsh web
 
 稍等一会儿，你会看到终端输出了一个网址，打开它就能进入到 DeepSeek Harness 的 Web 界面。
 
-![](https://pic.yupi.icu/1/image-20260814095037727.png)
+![](/imgs/2f90db19298933f3.png)
 
 第一次使用时，需要填入 DeepSeek 的 API Key：
 
-![](https://pic.yupi.icu/1/image-20260814130304526.png)
+![](/imgs/dead0b176d553d97.png)
 
 到 [DeepSeek 开放平台](https://platform.deepseek.com) 创建一个 API Key，注意不要泄露，把得到的 Key 复制粘贴过来就行。
 
-![](https://pic.yupi.icu/1/image-20260814130139004.png)
+![](/imgs/dcc69cf1c2930744.png)
 
 到这里，DeepSeek Harness 就安装成功了，是不是很简单？
 
-![](https://pic.yupi.icu/1/image-20260814130332224.png)
+![](/imgs/f41d6759561e4ba6.png)
 
 如果你连 Node.js 都不想装，现在还可以直接下载 DSH 桌面端安装包，双击就能用，运行环境全都打包好了。具体下载方式和注意事项可以阅读本教程编程工具板块 DeepSeek Harness 目录中的《DeepSeek Harness 桌面端上手教程》。
 
@@ -105,13 +102,13 @@ npx @deepseek-ai/dsh web
 
 可以在对话框中选择模型、以及模型的推理等级，还能设置 Agent 对文件系统和终端的操作权限，按需调整就好。
 
-![](https://pic.yupi.icu/1/image-20260814143734964.png)
+![](/imgs/bb48e4e167a62377.png)
 
 默认使用的是「标准模式」，它具备了一个 AI 编程工具应有的全部能力，大多数情况下用这个就够了，后面我会详细介绍各种模式的区别。
 
 你看，是不是跟 Codex 这种 AI 编程工具很像？
 
-![](https://pic.yupi.icu/1/image-20260814143812878.png)
+![](/imgs/5670b4ffd525fd92.png)
 
 没错，你就把它当成国产版的 Codex 来用就好了，AI 编程、自动化办公等任务，都能搞定。
 
@@ -125,7 +122,7 @@ npx @deepseek-ai/dsh web
 
 DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试 AI 的代码理解能力刚好合适。
 
-![](https://pic.yupi.icu/1/image-20260814143958846.png)
+![](/imgs/6516c074612a7a0f.png)
 
 给 AI 发送下列提示词：
 
@@ -136,23 +133,23 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 可以看到 AI 开始自动读取文件、分析项目结构，执行速度非常快，而且每一步在做什么都清晰地展示在界面上。
 
-![](https://pic.yupi.icu/1/image-20260814135407082.png)
+![](/imgs/2cadcd587680603b.png)
 
 很快任务完成了，能够看到 AI 输出了 Mermaid 文本绘图语法，不过 DeepSeek Harness 默认是不会把这块渲染成图形的。
 
-![](https://pic.yupi.icu/1/image-20260814135445191.png)
+![](/imgs/eb4c645b2d457f1e.png)
 
 我要把这段代码复制到 Mermaid 渲染工具中，可以看到完整的架构图，虽然效果中规中矩吧，但内容还是比较完整的。
 
-![](https://pic.yupi.icu/1/image-20260814135528564.png)
+![](/imgs/3be745e286dcdfae.png)
 
 你可以在下方看到任务消耗的 Tokens、当前的上下文占用、以及整个对话的 Tokens 消耗信息。
 
-![](https://pic.yupi.icu/1/image-20260814135615629.png)
+![](/imgs/9d8e155c1c606706.png)
 
 你还可以进入上方的「轨迹」面板，清晰地查看到整个对话中每一次的对话和工具调用记录。
 
-![](https://pic.yupi.icu/1/image-20260814135652086.png)
+![](/imgs/74ef9fd93169a150.png)
 
 这是 DeepSeek Harness 的特色，让每一次运行都有迹可循。
 
@@ -164,31 +161,31 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 要讲解的知识点是「注意力残差」，跟我之前测评 Codex + DeepSeek V4 Pro 的时候用的是一模一样的提示词。
 
-![](https://pic.yupi.icu/1/image-20260814125730242.png)
+![](/imgs/a45cb24247a7069f.png)
 
 大概过了 20 分钟，AI 完成了任务，这个速度确实不算快，主要的时间花在了 AI 的自检上。
 
 值得关注的是，本次任务的缓存命中率达到了 99%，也就是说绝大多数的费用都按缓存来计算，实际花费极低，这点很厉害啊！
 
-![](https://pic.yupi.icu/1/image-20260814111941126.png)
+![](/imgs/aa8e54f5ea3d6860.png)
 
 看下效果，不错，动画还是很生动的：
 
-![](https://pic.yupi.icu/1/image-20260814112144980.png)
+![](/imgs/3f21dfd69918dfbd.png)
 
 而且点线之间的连接非常准确：
 
-![](https://pic.yupi.icu/1/image-20260814112210801.png)
+![](/imgs/161d9f3e73e49d50.png)
 
 更让我惊喜的是，跟之前 Claude Opus 5 开发的效果一样，这次 DeepSeek 开发的版本也提供了总结和小测验功能，让整个知识讲解更加全面了：
 
-![](https://pic.yupi.icu/1/image-20260814112320399.png)
+![](/imgs/259f4fc056f136ba.png)
 
 整体来看，相比于我之前用 DeepSeek V4 Pro + Codex 跑的效果要好多了！
 
 之前的版本连线都对不齐，相信你们能明显感受到区别。
 
-![DeepSeek V4 Pro + Codex 的版本](https://pic.yupi.icu/1/1786598800323-d83866da-24d8-4d07-9de8-72468e9102e8.png)
+![DeepSeek V4 Pro + Codex 的版本](/imgs/51627884ce21b80b.png)
 
 单看这一个例子，我真有种感觉 DeepSeek V4 Pro 可以对标 Claude 了，看来 Harness 真的很重要。
 
@@ -200,33 +197,33 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 这次做的是千万元以内最好的玩具「竹知了」，不过这次比之前测评的 2D 版本复杂多了，还要支持摄像头识别手势来控制竹知了旋转。
 
-![](https://pic.yupi.icu/1/image-20260814125744391.png)
+![](/imgs/f7ee9525d66a0a88.png)
 
 可以看到 AI 在开发过程中，会自己检查验证程序是否正常：
 
-![](https://pic.yupi.icu/1/image-20260814125858778.png)
+![](/imgs/2ab753ff9b244443.png)
 
 这次跑了将近 40 分钟，AI 完成了任务，缓存命中率竟然接近 100%！
 
-![](https://pic.yupi.icu/1/image-20260814124010293.png)
+![](/imgs/4ce73a0d6b4753a3.png)
 
 看下成品效果，还是不错的吧，可以通过鼠标拖拽来旋转角度：
 
-![](https://pic.yupi.icu/1/image-20260814124039419.png)
+![](/imgs/bb9306092d80076f.png)
 
 按住竹签来回移动鼠标就可以控制竹知了旋转，注意看图片中的影子，细节做的非常好！
 
-![](https://pic.yupi.icu/1/image-20260814124144273.png)
+![](/imgs/8302da3aa2363e2d.png)
 
 而且还可以开启摄像头，通过搓手来控制竹知了旋转，这个交互体验非常有趣：
 
-![](https://pic.yupi.icu/1/image-20260814124348140.png)
+![](/imgs/2bfc88ca337831df.png)
 
 整体来说，功能都是正常的，程序没有明显的问题，细节做的也很到位，我的评价是非常优秀。
 
 相比之前用 DeepSeek V4 Pro + Codex 搓的 2D 版本强了太多了：
 
-![之前 DeepSeek V4 Pro + Codex 做的 2D 版本](https://pic.yupi.icu/1/1786599373401-a561d583-aeca-46c3-9895-d55c9356e731.png)
+![之前 DeepSeek V4 Pro + Codex 做的 2D 版本](/imgs/f19360e98dee6acb.png)
 
 
 
@@ -238,11 +235,11 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 这次我特意在提示词里让 AI 自己从我电脑上获取 DeepSeek 的 API Key，看看它能不能自己搞定。
 
-![](https://pic.yupi.icu/1/image-20260814125805219.png)
+![](/imgs/6737852d24fe0208.png)
 
 执行过程中，AI 可能会向你确认权限，比如要不要允许读取某个文件、要不要执行某条命令，安全性这块还是挺到位的。
 
-![](https://pic.yupi.icu/1/image-20260814124930962.png)
+![](/imgs/47e93461ffe589a9.png)
 
 大概半小时左右，AI 完成了任务，来看下效果。
 
@@ -250,31 +247,31 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 这里有惊喜！我们可以自己定义生成 PPT 的风格，还可以选择是否开启推理模式。
 
-![](https://pic.yupi.icu/1/image-20260814145140404.png)
+![](/imgs/10cb0c97cff17d8b.png)
 
 然后点击生成 PPT。
 
 生成过程中，是可以实时查看到生成进度和输出信息的，这个交互感比之前的老版本好太多了。
 
-![](https://pic.yupi.icu/1/image-20260814145225002.png)
+![](/imgs/1bc137d77a5c412f.png)
 
 而且生成速度很快，看起来效果不错，点击全屏查看。
 
 这次生成的 PPT 充满了科技感，而且布局也挺合理的，主次分明。
 
-![](https://pic.yupi.icu/1/image-20260814145103287.png)
+![](/imgs/7497dd53dff9778e.png)
 
 相比之前用 DeepSeek V4 Pro + Codex 做出来的版本好多了，布局更加合理，配色也更优雅。
 
-![之前 DeepSeek V4 Pro + Codex 做的 PPT](https://pic.yupi.icu/1/1786600257499-75fdc7f7-740c-4c27-8979-34683f66afcd.png)
+![之前 DeepSeek V4 Pro + Codex 做的 PPT](/imgs/4c9a5d97f7ef876d.png)
 
 你还可以切换几种主题配色，也都是比较经典的风格了。
 
-![](https://pic.yupi.icu/1/image-20260814145015136.png)
+![](/imgs/1c8e07d8bbd3911c.png)
 
 看到这次做出来的版本，我觉得真的可以和 Claude Opus 5 媲美了，给到顶级。
 
-![Claude Opus 5 做的 PPT 工具](https://pic.yupi.icu/1/1785146087244-153c15ee-6ffe-4f7b-8c8d-8224fe272074-20260813162825918.png)
+![Claude Opus 5 做的 PPT 工具](/imgs/78b50378c17593de.png)
 
 
 
@@ -286,7 +283,7 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 **看来用 DeepSeek 模型，还是得用自家的 Harness 工具啊。**
 
-![deepseek v4 pro 跑分图](https://pic.yupi.icu/1/deepseek%20v4%20pro%20%E8%B7%91%E5%88%86%E5%9B%BE.jpeg)
+![deepseek v4 pro 跑分图](/imgs/86a256f0936fcfc4.jpg)
 
 再说下费用，大家猜猜这几个任务跑下来花了多少钱？
 
@@ -294,17 +291,17 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 因为缓存命中率基本都在 99% 以上，实际花费极低。
 
-![](https://pic.yupi.icu/1/image-20260814131247833.png)
+![](/imgs/3864ac0422f4c00d.png)
 
 不过要提醒大家的是，DeepSeek 已经宣布 8 月 17 日起涨价，而且涨了好几倍。
 
-![DeepSeek 涨价](https://pic.yupi.icu/1/DeepSeek%E6%B6%A8%E4%BB%B7%E5%9B%BE.jpeg)
+![DeepSeek 涨价](/imgs/8157dcb4d53e6ca3.jpg)
 
 但即便是涨价之后，跟 Claude 比起来还是便宜很多的，而且缓存命中的价格依然非常低。
 
 总的来说，自己的模型配自己的 Harness 工具，真的强。
 
-![](https://pic.yupi.icu/1/image-20260814144904693.png)
+![](/imgs/1a6daa3f6015a16a.png)
 
 看到这里，你已经超过了 70% 的同学。
 
@@ -316,7 +313,7 @@ DeepSeek Harness 的代码仓库还挺大的，里面模块也多，用来测试
 
 DeepSeek Harness 提供了四种运行模式，适配不同的使用场景。
 
-![](https://pic.yupi.icu/1/image-20260814145323400.png)
+![](/imgs/048380260d14db05.png)
 
 **标准模式** 就是我们前面实战一直在用的那个。它加载了完整的工具组合，包括文件编辑、Shell 命令、网页搜索、子 Agent、Skills 技能等等，覆盖了日常开发的所有需求。绝大多数情况下用它就好了。
 
@@ -328,7 +325,7 @@ DeepSeek Harness 提供了四种运行模式，适配不同的使用场景。
 
 总结一下，这四种模式的本质区别就是「当前会话加载了哪些工具插件」。极简模式只留两件工具，标准模式叠满全套能力，创造模式还能让 AI 自己查看和改装当前的插件配置。
 
-![](https://pic.yupi.icu/1/image-20260814150646065.png)
+![](/imgs/5185425ffe0b313f.png)
 
 看到这里，你已经超过了 80% 的同学，但 DeepSeek Harness 真正让我兴奋的地方才刚刚开始。
 
@@ -346,13 +343,13 @@ DeepSeek Harness 中的一切皆插件。
 
 模型、工具、技能、会话、沙箱、UI，甚至 Agent 的运行循环本身，都是插件，都可以拔掉换成别的。
 
-![](https://pic.yupi.icu/1/image-20260814135129452.png)
+![](/imgs/f8494704bf604dcf.png)
 
 也就是说，如果你对这个工具哪个地方不满意，随时可以自己替换或者安装插件来扩展，不需要改框架源码。
 
 Codex 和 Claude Code 虽然也有一定的扩展能力，但远没有做到这种级别的开放，DeepSeek Harness 的定制化能力要强得多。
 
-![](https://pic.yupi.icu/1/image-20260814135203770.png)
+![](/imgs/b4b9a870822df689.png)
 
 接下来我先带大家使用社区插件，再带大家开发属于自己的插件。
 
@@ -364,15 +361,15 @@ Codex 和 Claude Code 虽然也有一定的扩展能力，但远没有做到这�
 
 其实就是 GitHub 上打了 `dsh-plugin` 这个主题标签的项目：
 
-![](https://pic.yupi.icu/1/image-20260814131851843.png)
+![](/imgs/5d266401adf233c0.png)
 
 不过这个页面的插件又多又杂，我更建议直接去看 GitHub 上的 [Awesome 仓库](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)，里面有分类整理好的精选插件列表，每个插件都经过了验证，目前已经收录了 300 多个可安装插件，上线一天就这么多，生态起飞的速度确实夸张。
 
-![](https://pic.yupi.icu/1/image-20260814132201186.png)
+![](/imgs/18b7491696cc938c.png)
 
 安装一个社区插件也非常简单，比如我看上了这个鲸鱼娘皮肤美化插件：
 
-![](https://pic.yupi.icu/1/image-20260814133548484.png)
+![](/imgs/1227c860d0ac10c3.png)
 
 我只需要进入 DeepSeek Harness 网页中，随便选一个工作目录，然后把插件开源地址提供给 AI，让它帮我装就好了。
 
@@ -382,7 +379,7 @@ Codex 和 Claude Code 虽然也有一定的扩展能力，但远没有做到这�
 帮我安装插件 https://github.com/Small-tailqwq/dsh-deep-whale
 ```
 
-![](https://pic.yupi.icu/1/image-20260814145412556.png)
+![](/imgs/0ba583e1fa6c86d1.png)
 
 很快，AI 完成了安装。我们按它说的，打开终端输入命令，重新启动一下 DeepSeek Harness 网页：
 
@@ -392,7 +389,7 @@ npx @deepseek-ai/dsh web
 
 刷新，怎么样？！
 
-![](https://pic.yupi.icu/1/image-20260814133452050.png)
+![](/imgs/eceef0e558e2ccff.png)
 
 效果不错吧，是不是使用 AI 的念头更强了呢？
 
@@ -402,19 +399,19 @@ npx @deepseek-ai/dsh web
 帮我取消掉这个插件，回到最开始的设置
 ```
 
-![](https://pic.yupi.icu/1/image-20260814133846899.png)
+![](/imgs/a5c494f30032694c.png)
 
 还有一些比较有意思的皮肤类插件，比如 [dsh-deepcel](https://github.com/Small-tailqwq/dsh-deepcel) 把界面做成了 Excel 表格的样子，摸鱼神器啊这不是？
 
-![Excel 风格的 deepseek harness](https://pic.yupi.icu/1/Excel%20%E9%A3%8E%E6%A0%BC%E7%9A%84%20deepseek%20harness.jpeg)
+![Excel 风格的 deepseek harness](/imgs/8469e243bab803e1.jpg)
 
 还有 [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) 直接把 Web 界面换成了 TUI 终端风格：
 
-![](https://pic.yupi.icu/1/tui-screenshot.jpg)
+![](/imgs/433c19e0aa1b2fb1.jpg)
 
 最离谱的是 [dsh-ads](https://github.com/dsh-external/dsh-ads) 这个插件，它给你的 Web 界面加上了 2005 年中文网站风格的侧栏广告、对话内信息流和角落弹窗，纯粹的抽象艺术。。。
 
-![](https://pic.yupi.icu/1/deepseek%20ads.jpeg)
+![](/imgs/cf264d12c5fe3561.jpg)
 
 因为 DeepSeek Harness 本质上就是个跑在浏览器里的 Web 应用嘛，所以定制皮肤这件事非常简单。
 
@@ -422,11 +419,11 @@ npx @deepseek-ai/dsh web
 
 比如 [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) 优化了侧边栏的交互体验，[dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) 让你可以用 @ 符号快速引用文件。
 
-![](https://pic.yupi.icu/1/dsh-better-sidebar.png)
+![](/imgs/2433625939d19ed5.png)
 
 我个人最看好的是 [modlens](https://github.com/liustack/modlens) 这个插件，它是 DeepSeek Harness 的第一个视觉插件，你把图片粘贴进去，它会帮模型把图片解析成结构化的 JSON 文字信息，包括 OCR 文本、页面布局、语义内容。
 
-![](https://pic.yupi.icu/1/demo-dsh-paste.jpg)
+![](/imgs/0b14d59078ce8d4c.jpg)
 
 这个插件解决的正是 DeepSeek V4 Pro 纯文本模型看不了图的痛点。写完页面没办法自己截图检查效果对不对，前端布局有没有错位它全都判断不了。现在社区直接用一个插件把这个短板给补上了。
 
@@ -440,11 +437,11 @@ npx @deepseek-ai/dsh web
 
 切换到「创造模式」，在这个模式下 AI 可以帮你检查当前插件树、试验新插件、最终打包发布。
 
-![](https://pic.yupi.icu/1/image-20260814150335461.png)
+![](/imgs/4e8cbdf291e46058.png)
 
 比如我之前给 Codex 装了一个桌宠插件，现在想搬到 DeepSeek Harness 上来。
 
-![](https://pic.yupi.icu/1/image-20260814134128295.png)
+![](/imgs/76c89f8888b87d07.png)
 
 直接在创造模式下跟 AI 提需求：
 
@@ -456,37 +453,37 @@ npx @deepseek-ai/dsh web
 音频文件路径在：/Users/yupi/Downloads/你干嘛哎呦.mp3
 ```
 
-![](https://pic.yupi.icu/1/image-20260814135037195.png)
+![](/imgs/06c9df7b71d2c1e0.png)
 
 AI 开发好插件之后，会先找你人工审批，确认没问题之后才会正式安装，安全性很有保障。
 
-![](https://pic.yupi.icu/1/image-20260814150406161.png)
+![](/imgs/2102b105e946bf02.png)
 
 很快开发完成，打篮球的小鸡就出现在屏幕上啦！
 
 随便跟 AI 对话一次，就能听到「你干嘛~哎哟」的声音，可谓提神醒脑、如听仙乐耳暂明~
 
-![](https://pic.yupi.icu/1/image-20260814143216935.png)
+![](/imgs/c2a077db9790fdaf.png)
 
 除了桌宠之外，你还可以发挥想象力做各种有意思的插件，比如提醒你定时喝水的健康助手、实时展示模型账户余额的悬浮窗、定制你自己的主题皮肤等等。
 
 如果想把插件分享给其他人，只需要让 AI 通过 GitHub MCP 插件，把代码推送到 GitHub：
 
-![](https://pic.yupi.icu/1/image-20260814143547057.png)
+![](/imgs/b3959f9e100fdd20.png)
 
 很快就开源完成了：
 
-![](https://pic.yupi.icu/1/image-20260814145634209.png)
+![](/imgs/d5d2692769e775d7.png)
 
 然后给仓库打上 `dsh-plugin` 的 topic 标签就行了：
 
-![](https://pic.yupi.icu/1/image-20260814145913770.png)
+![](/imgs/be8544da94337647.png)
 
 AI 甚至帮我给 README 项目介绍文档中添加了效果截图，太贴心了吧！这下大家都可以一起来做小黑子了~
 
 > 开源指路：https://github.com/liyupi/dsh-kun-like-pet
 
-![](https://pic.yupi.icu/1/image-20260814145958050.png)
+![](/imgs/35d69810b3d8e82d.png)
 
 
 

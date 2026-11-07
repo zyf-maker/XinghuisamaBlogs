@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《在 IDEA 中使用 AI 编程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 ## 1、在终端里运行 AI
 
 打开 IDEA 内置的终端，你会发现终端右侧直接就有 Claude Code、Codex 等 AI 工具的快捷入口（前提是你已经提前安装好了这些工具）。除此之外，JetBrains 自家的 Junie CLI 也可以在终端里运行。
 
-![](https://pic.yupi.icu/1/image-20260515124926235.png)
+![](/imgs/6620059ddcb9db71.png)
 
 本质上就是帮你在终端里执行了运行这些工具的命令，跟你在外部终端用没什么区别，只是不用来回切窗口了。
 
@@ -27,11 +24,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 虽然现在独立的 AI 编程工具发展很快，但 JetBrains Marketplace 上的 AI 插件也一直在更新迭代，选择很多。
 
-![](https://pic.yupi.icu/1/image-20260515125149230.png)
+![](/imgs/2201ee5aa8b1eb14.png)
 
 我个人比较推荐通义灵码和 Cline。通义灵码对国内用户比较友好，注册简单，免费额度也够用。Cline 的 Agent 能力强，适合喜欢折腾的同学。
 
-![](https://pic.yupi.icu/1/cline.png)
+![](/imgs/73bf64295e7bc005.png)
 
 
 
@@ -41,29 +38,29 @@ source: "https://github.com/liyupi/ai-guide"
 
 简单来说，ACP 就是一套标准规范，让各种 AI 编程 Agent 能够统一接入不同的 IDE，不管是 Claude Code 还是 Gemini CLI，只要支持 ACP 协议，就能在 JetBrains IDE 里一键安装使用。
 
-![](https://pic.yupi.icu/1/01_ACP%E5%8D%8F%E8%AE%AE%E7%BB%9F%E4%B8%80%E8%BF%9E%E6%8E%A5AI_Agent%E5%92%8CIDE_compressed_v2.png)
+![](/imgs/c918eba4501a493a.png)
 
 他们还配套上线了一个 ACP Agent Registry，目前已经有 40 多个 AI Agent 可以一键安装。
 
 操作也很简单，先安装好 JetBrains 官方提供的 AI Assistant 插件：
 
-![](https://pic.yupi.icu/1/image-20260515125439230.png)
+![](/imgs/4aa915208fdfce78.png)
 
 然后打开 AI Chat 面板，第一次使用的话你可以免费试用：
 
-![](https://pic.yupi.icu/1/image-20260515125540920.png)
+![](/imgs/a24d3d877fb192b8.png)
 
 或者点击「Add ACP Agents」自主添加智能体，点击后就能看到 Claude Agent、Gemini CLI、Codex、Cursor、GitHub Copilot、Cline 等一堆 Agent，选择你需要的，点击安装就行了。
 
-![](https://pic.yupi.icu/1/image-20260515125748615.png)
+![](/imgs/0a92475bd6da16a0.png)
 
 通过自主选择 Agent，不需要 JetBrains AI 订阅，装完就能用，美滋滋~
 
-![](https://pic.yupi.icu/1/image-20260515130149064.png)
+![](/imgs/0c14bd0c3ec7be0b.png)
 
 另外提一下，Claude Code 在 JetBrains 里还有一个 [专属插件](https://plugins.jetbrains.com/plugin/27310-claude-code-beta-) 叫 `Claude Code [Beta]`，比直接在终端跑多了几个功能，比如在 IDE 里直接看 diff 预览、自动把你选中的代码发给 Claude、自动共享 IDE 的报错信息等。不过目前这个插件还是以终端为基础的包装，整体体验不如 VS Code 的插件成熟，聊胜于无吧。
 
-![](https://pic.yupi.icu/1/image-20260515131157123.png)
+![](/imgs/b99f6619671ee953.png)
 
 
 

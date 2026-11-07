@@ -3,7 +3,7 @@ title: "先写验收标准，再让 AI 写代码"
 summary: "vibe coding 的难点不是让模型吐代码，而是控制改动范围。这篇记录一套实际流程：先写可执行的验收标准、按 diff 规模分步改动、每步都跑测试，以及哪些活最好由人完成。"
 order: 1
 level: "入门"
-tags: ["vibe coding", "工作流", "测试驱动", "AI 编程"]
+tags: ["vibe coding", "工作流", "测试驱动"]
 updated: "2026-11-06"
 readingTime: 6
 ---

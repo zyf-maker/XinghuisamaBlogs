@@ -10,16 +10,13 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor Debug 模式详解》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。
 
 有人说 Codex 香、Claude Code 夯，但是 Cursor 这个曾经的王者似乎已经过时了？
 
 其实不然，Cursor 作为有图形界面的 AI 编程工具，更专注编程开发的体验，不仅内置了代码编辑器，还针对编程场景提供了一些特色功能。
 
-![](https://pic.yupi.icu/1/image-20260707173645762.png)
+![](/imgs/86fdb386f5cd1ade.png)
 
 今天要分享的 Debug 模式就是 Cursor 的独家功能，我敢说大多数玩 AI 编程的人都不知道。
 
@@ -33,17 +30,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 这套流程足够对付大多数小 Bug 了。
 
-![](https://pic.yupi.icu/1/01_%E5%B8%B8%E8%A7%84AI%E8%B0%83%E8%AF%95%E6%B5%81%E7%A8%8B_compressed_v3.png)
+![](/imgs/8ce55dc684090110.png)
 
 但有些狗 Bug 比较刁钻，你按照常规方法排查，发现请求正常、日志也没报错、代码逻辑看起来也对，但运行结果就是不符合预期。
 
 举个例子，假设你做了个「AI 每日热点」应用，热点列表本来应该按发布时间从新到旧排列，但实际展示出来的顺序时对时错，刷新一下又变了。
 
-![](https://pic.yupi.icu/1/image-20260707174025120.png)
+![](/imgs/88ea2c550222d6ed.png)
 
 你看了下代码，发现明明写了按时间倒序排列，没毛病啊？？？
 
-![](https://pic.yupi.icu/1/image-20260707174149733.png)
+![](/imgs/688b9ff81ac218dc.png)
 
 这种 Bug 就很适合用 Cursor 的 Debug 模式来排查。
 
@@ -53,21 +50,21 @@ source: "https://github.com/liyupi/ai-guide"
 
 在 Cursor 的对话框里，把模式切换到 Debug，然后描述你遇到的 Bug。
 
-![](https://pic.yupi.icu/1/image-20260707183325681.png)
+![](/imgs/99cf3f152bd516c3.png)
 
 和普通的 Agent 模式不同，AI 不会一上来就改代码。
 
 它会先阅读你的项目代码，针对可能出问题的地方**生成多个假设**。
 
-![](https://pic.yupi.icu/1/image-20260707183429043.png)
+![](/imgs/721670628ddcd39e.png)
 
 然后 AI 自动在代码的关键位置插入日志探针。这些日志数据会发送到 Cursor 内置的本地调试服务器，用来采集运行时的真实数据，比如变量值、执行路径、时序信息等。
 
-![](https://pic.yupi.icu/1/image-20260707183500109.png)
+![](/imgs/500911640442d5b4.png)
 
 接下来 AI 会给你具体的复现步骤，让你去操作应用，把 Bug 触发出来。
 
-![](https://pic.yupi.icu/1/image-20260707183608207.png)
+![](/imgs/077f7c61e15a9e41.png)
 
 你按步骤操作的同时，Cursor 在后台收集运行时的日志数据，看到变量的实际值、代码的执行路径等等。
 
@@ -75,31 +72,31 @@ source: "https://github.com/liyupi/ai-guide"
 
 AI 通过运行时日志发现了 Bug 的导火索。部分热点数据的 time 字段是字符串类型，另一部分是数字时间戳。排序代码用的是 `b.time - a.time`，字符串减字符串得到的是 `NaN`，导致排序结果不确定。
 
-![](https://pic.yupi.icu/1/image-20260707183744622.png)
+![](/imgs/e9dfb6a85705857c.png)
 
 如果没有运行时日志，光看排序代码，你很难注意到是数据类型不一致导致的。
 
 定位到原因后，AI 给出了修复方案并自动改好了代码，统一把 time 转为时间戳再比较。
 
-![](https://pic.yupi.icu/1/image-20260707183850585.png)
+![](/imgs/512abe03fe7ecf5f.png)
 
 修好 Bug 之后，AI 会让你再复现一次来验证修复效果。
 
 如果你觉得还没修好，AI 就会加上更多日志探针，你再复现一次，它再分析，一直循环直到问题真正解决。
 
-![](https://pic.yupi.icu/1/image-20260707183947841.png)
+![](/imgs/04f22ab24c87049a.png)
 
 确认修复后，AI 会自动把之前插入的所有调试日志清理干净，只留下那几行真正的修复改动，非常精准。
 
-![](https://pic.yupi.icu/1/image-20260707184020203.png)
+![](/imgs/5d31c808159ac4c0.png)
 
 最后，AI 还会给出一段简洁的问题总结，便于你了解 Bug 根因和修复方案。
 
-![](https://pic.yupi.icu/1/image-20260707184103058.png)
+![](/imgs/e88335853c56ba83.png)
 
 总结一下，这套 Debug 模式的工作流程是：假设 → 埋点 → 复现 → 用数据验证 → 修复 → 再验证 → 清理。
 
-![Debug 模式完整工作流循环](https://pic.yupi.icu/1/02_Debug%E6%A8%A1%E5%BC%8F%E5%AE%8C%E6%95%B4%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BE%AA%E7%8E%AF_compressed_v3.png)
+![Debug 模式完整工作流循环](/imgs/77e1f59a73a8f597.png)
 
 Cursor 官方在设计这个功能时，研究了团队中最优秀的调试工程师的实践，把他们的工作方法封装成了这套模式。
 
@@ -107,7 +104,7 @@ Cursor 官方在设计这个功能时，研究了团队中最优秀的调试工�
 
 这也是 Debug 模式能搞定那些普通 Agent 模式解决不了的 Bug 的原因，它拿到了程序运行时的真实数据来做判断，而不是凭借着训练数据的经验值盲目猜测。
 
-![Agent 模式和 Debug 模式对比](https://pic.yupi.icu/1/03_Agent%E6%A8%A1%E5%BC%8Fvs_Debug%E6%A8%A1%E5%BC%8F%E5%AF%B9%E6%AF%94_compressed_v3.png)
+![Agent 模式和 Debug 模式对比](/imgs/60ab39bfaf056461.png)
 
 
 
@@ -127,7 +124,7 @@ Debug 模式最适合的是那种**运行时才暴露**的问题：
 
 这些问题光靠看代码很难发现，只有跑起来、拿到运行时的真实数据，才能找到根因。所以遇到这类 Bug 的时候，果断切换到 Debug 模式试试，会比在 Agent 模式里反复让 AI 猜高效很多。
 
-![](https://pic.yupi.icu/1/04_%E5%9B%9B%E7%B1%BB%E9%80%82%E7%94%A8%E8%BF%90%E8%A1%8C%E6%97%B6Bug%E5%9C%BA%E6%99%AF_compressed_v1.png)
+![](/imgs/175be14b7ff9c606.png)
 
 再分享几个使用 Debug 模式的技巧。
 

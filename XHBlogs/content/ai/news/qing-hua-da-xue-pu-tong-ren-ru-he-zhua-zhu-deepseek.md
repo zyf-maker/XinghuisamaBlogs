@@ -3,15 +3,12 @@ title: "清华大学：普通人如何抓住DeepSeek红利2025"
 summary: "清华大学：普通人如何抓住DeepSeek红利2025，由程序员鱼皮整理。"
 order: 10
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《清华大学：普通人如何抓住DeepSeek红利2025》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 该文档围绕 DeepSeek 在多方面的应用展开，核心是介绍 DeepSeek 的功能特点，并详细阐述其在工作、学习、生活和社交关系中的应用方法与策略，同时深入探讨了提示语相关知识及 AI 生成内容的边界与检验等问题，旨在帮助普通人了解和掌握如何利用 DeepSeek 提升效率与解决问题。
 
@@ -68,83 +65,83 @@ source: "https://github.com/liyupi/ai-guide"
 12.  **能力培养与应用进阶**：在人机共生时代，需培养 AI 思维、整合力、判断力、引导力和创造力等能力。具体在提示语设计上，要掌握进阶技能，如语境理解、抽象化能力等，避免常见陷阱，通过精准定义任务、合理设计提示语等策略提升效果，还可建立提示词体系、设计协作流程等实现 DeepSeek 的高效应用。
 
 
-![](https://q9.itc.cn/q_70/images03/20250212/696c0b7b393047139acc4a790abba58c.jpeg)
+![](/imgs/7f5df3999195c164.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/f564c47abc4a4d61937a5b3b9de293ba.jpeg)
+![](/imgs/090fca41ab16015b.jpg)
 
-![](https://q7.itc.cn/q_70/images03/20250212/4a926ea70ad74818a79cc7f387d3f627.jpeg)
+![](/imgs/25888f0ded46a9f3.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/74cf334fe5c340d9a48ea191c78b5e76.jpeg)
+![](/imgs/59f8f10e99978fba.jpg)
 
-![](https://q6.itc.cn/q_70/images03/20250212/2425977e6e8c46348547805f19be61e4.jpeg)
+![](/imgs/805d9ece755f7bcc.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/6f2a3029545d493a9aca7211e0202b69.jpeg)
+![](/imgs/e3b0648388416893.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/24dd4385a9764f8dbd44b6ef0b00b2fd.jpeg)
+![](/imgs/2244cdb60955194c.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/1f68c214dd114bb1b9321f8c20cb68eb.jpeg)
+![](/imgs/1d514e75c43bb807.jpg)
 
-![](https://q8.itc.cn/q_70/images03/20250212/630602f096da4678913cb74afa4ea72d.jpeg)
+![](/imgs/3f0acd23bc8fdf25.jpg)
 
-![](https://q5.itc.cn/q_70/images03/20250212/0647c2cd62e2498db183ae680c63639b.jpeg)
+![](/imgs/f9af085861279793.jpg)
 
-![](https://q0.itc.cn/q_70/images03/20250212/be40bf79cff9457d8e66a6247137df20.jpeg)
+![](/imgs/448440f8f417b9fe.jpg)
 
-![](https://q0.itc.cn/q_70/images03/20250212/d2779441767e4b07b78827c76a192442.jpeg)
+![](/imgs/6431a3f4918141a3.jpg)
 
-![](https://q7.itc.cn/q_70/images03/20250212/ad7eef498a5448ac8d5b3f4ab0d0529e.jpeg)
+![](/imgs/0df0cba421e705c6.jpg)
 
-![](https://q8.itc.cn/q_70/images03/20250212/faba3ae2fceb4a95982b23322fcfa410.jpeg)
+![](/imgs/6c7e1a0d2ab75c45.jpg)
 
-![](https://q5.itc.cn/q_70/images03/20250212/0fd6644632d342599e8ae959188755e1.jpeg)
+![](/imgs/01fd66f51240b353.jpg)
 
-![](https://q1.itc.cn/q_70/images03/20250212/f8bd246335a24ce8a2f1c0c988fd3662.jpeg)
+![](/imgs/f730b408c5dd6993.jpg)
 
-![](https://q1.itc.cn/q_70/images03/20250212/27cf001ea23542b18fa1aeaf04f4d40d.jpeg)
+![](/imgs/8c476e1dd2c59296.jpg)
 
-![](https://q1.itc.cn/q_70/images03/20250212/e650ac3bb0b84ca4a81dfe5b55942b6d.jpeg)
+![](/imgs/2f15c334c7fa0ca2.jpg)
 
-![](https://q8.itc.cn/q_70/images03/20250212/a58657b84a7d4c289c139857f8c61fdf.jpeg)
+![](/imgs/39cb2c4a9670f04b.jpg)
 
-![](https://q0.itc.cn/q_70/images03/20250212/27e68b4849624f539303f622e12e3c25.jpeg)
+![](/imgs/3df56c6923d0dcb7.jpg)
 
-![](https://q9.itc.cn/q_70/images03/20250212/c7972cf4b95c4adba4754decb5600a61.jpeg)
+![](/imgs/84f28a6b3f0ae22d.jpg)
 
-![](https://q3.itc.cn/q_70/images03/20250212/17d1470d30914c219334b82439285c3d.jpeg)
+![](/imgs/0db535c850bc956b.jpg)
 
-![](https://q9.itc.cn/q_70/images03/20250212/eb3f5cf0421a40f59afd0b35cfa8a183.jpeg)
+![](/imgs/904d743b5d7c0e46.jpg)
 
-![](https://q6.itc.cn/q_70/images03/20250212/f69b4e41ff2d45ac94ea785b7397aa4d.jpeg)
+![](/imgs/7dc461e6c38e947e.jpg)
 
-![](https://q7.itc.cn/q_70/images03/20250212/7f90089f13e54e538800497171d9fbbf.jpeg)
+![](/imgs/5e8f1710e5900e13.jpg)
 
-![](https://q1.itc.cn/q_70/images03/20250212/8114a99097264526819e28864ed5ea35.jpeg)
+![](/imgs/95de6bc0276dcb16.jpg)
 
-![](https://q7.itc.cn/q_70/images03/20250212/4e964acfb83b4c4e9a08dafb9b261408.jpeg)
+![](/imgs/f9511999b965efda.jpg)
 
-![](https://q6.itc.cn/q_70/images03/20250212/7dbc25cefae94be88428aa50edb9c8da.jpeg)
+![](/imgs/fe7647a0abc9b28c.jpg)
 
-![](https://q1.itc.cn/q_70/images03/20250212/604015394f484d23a0cfbdccf95346d5.jpeg)
+![](/imgs/75bc4364e2251553.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/0e5ae584ad354b2e90608ea3c842196d.jpeg)
+![](/imgs/9377dc511d3c3752.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/dcd4b7a7b24445b8a73223c562bb015a.jpeg)
+![](/imgs/ebb27deaa8308725.jpg)
 
-![](https://q3.itc.cn/q_70/images03/20250212/c93702dca11b4a188726525d39bbae76.jpeg)
+![](/imgs/aa3cdf4cb6dcd509.jpg)
 
-![](https://q0.itc.cn/q_70/images03/20250212/ff3b75e7f59e4643a75915a2eec45331.jpeg)
+![](/imgs/cbf92f07962387da.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/da92753a96314d14ae65d22a467c3d28.jpeg)
+![](/imgs/ac0f8647320700f9.jpg)
 
-![](https://q0.itc.cn/q_70/images03/20250212/ac8a765501e545f6b57e57e9807bd046.jpeg)
+![](/imgs/224ef222737680a0.jpg)
 
-![](https://q1.itc.cn/q_70/images03/20250212/b8dc79c6d7cf40839de9ffa48cbe2c2f.jpeg)
+![](/imgs/eadfacda981801c6.jpg)
 
-![](https://q6.itc.cn/q_70/images03/20250212/d6105e6c1383482e8ba1a7950e539ba7.jpeg)
+![](/imgs/f88371a1e1aa9f55.jpg)
 
-![](https://q8.itc.cn/q_70/images03/20250212/e67a2bd6b3504fca931c25f84f09aafd.jpeg)
+![](/imgs/18450247102df2a9.jpg)
 
-![](https://q4.itc.cn/q_70/images03/20250212/3172dbee547e4bcc8451efdad1ae0d86.jpeg)
+![](/imgs/99b08583928e2095.jpg)
 
 ---
 

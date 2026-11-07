@@ -84,7 +84,7 @@ export function MusicProvider({ children }: { children: ReactNode }) {
     let isMounted = true;
     const fetchMusicData = async () => {
       try {
-        const res = await fetch(`/api/music?ids=${siteConfig.cloudMusicIds.join(',')}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/api/music?ids=${siteConfig.cloudMusicIds.join(',')}`);
         const rawResults = await res.json();
 
         const mergedPlaylist = rawResults

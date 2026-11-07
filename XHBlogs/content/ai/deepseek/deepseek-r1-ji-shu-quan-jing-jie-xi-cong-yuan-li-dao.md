@@ -3,15 +3,12 @@ title: "DeepSeek-R1 技术全景解析：从原理到实践的“炼金术配方
 summary: "（调试着R1的API接口，看着控制台瀑布般流淌的思维链日志）此刻我仿佛看到AlphaGo的棋谱在代码世界重生——这是属于推理模型的AlphaZero时刻。"
 order: 104
 level: "进阶"
-tags: ["技术解析", "转载", "AI"]
+tags: ["技术解析"]
 updated: "2026-10-22"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《DeepSeek-R1 技术全景解析：从原理到实践的“炼金术配方”》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 （调试着R1的API接口，看着控制台瀑布般流淌的思维链日志）此刻我仿佛看到AlphaGo的棋谱在代码世界重生——**这是属于推理模型的AlphaZero时刻**。
 

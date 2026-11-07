@@ -3,15 +3,12 @@ title: "Vibe Coding 项目开发流程"
 summary: "从想法到产品的完整 Vibe Coding 工作流"
 order: 2
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-01-13"
 readingTime: 15
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Vibe Coding 项目开发流程》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是鱼皮。
 
@@ -57,7 +54,7 @@ AI 不是魔法，它只是一个非常强大的执行者。你告诉它做什�
 
 看起来好像很复杂？别担心，我会用最简单的方式 “喂饭” 给你。
 
-![](https://pic.yupi.icu/1/vibecodingworkflow%E5%A4%A7.jpeg)
+![](/imgs/7536dd682fc7a007.jpg)
 
 
 ## 步骤一、需求研究（Research）
@@ -264,7 +261,7 @@ PRD 和技术设计都准备好了，现在我们要创建一个专门给 AI 看
 
 [AGENTS.md](https://agents.md/) 是一个标准化的文件格式，用来指导 AI 编程工具如何工作。它就像是给 AI 的 “工作手册”。这个标准由 OpenAI、Anthropic、Google 等公司共同推动，目前已经有超过 8 万个开源项目在使用。主流的 AI 编程工具，比如 Cursor、Windsurf、Claude Code、Gemini CLI、GitHub Copilot 等都支持自动读取 AGENTS.md 文件。
 
-![](https://pic.yupi.icu/1/image-20260109161639565.png)
+![](/imgs/f06dd59601a42a26.png)
 
 那 AGENTS.md 应该包含什么内容呢？
 

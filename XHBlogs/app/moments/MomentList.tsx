@@ -1,5 +1,6 @@
 "use client";
 
+import { asset } from "../../lib/base";
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { MapPin, MessageSquare, Clock, Sparkles, Search, ArrowDownAZ, ArrowUpZA, ChevronLeft, ChevronRight, Ghost } from 'lucide-react';
@@ -102,7 +103,7 @@ export default function MomentList({ moments, authorName, avatarUrl }: any) {
     >
       <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-8 pb-4 md:pb-6 border-b border-[var(--line-strong)] relative">
         <div className="w-10 h-10 md:w-14 md:h-14 shrink-0 rounded-md md:rounded-lg overflow-hidden border-2 border-[var(--line)]">
-          <img src={avatarUrl} alt="avatar" className="w-full h-full object-cover" />
+          <img src={asset(avatarUrl)} alt="avatar" className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col">
           <h3 className="text-base md:text-lg font-black text-[#576b95] tracking-wide">{authorName}</h3>
@@ -143,7 +144,7 @@ export default function MomentList({ moments, authorName, avatarUrl }: any) {
   );
 
   return (
-    <div className="w-[95%] md:w-[90%] max-w-6xl mx-auto py-6 md:py-10 mt-24 md:mt-28 relative z-10 flex-1 flex flex-col min-h-[85vh]">
+    <div className="w-full relative z-10 flex-1 flex flex-col">
 
       <div className="mb-8 md:mb-10 border-b border-[var(--line)] pb-8 md:pb-9">
         <p className="eyebrow">Moments · {processedMoments.length} 条</p>

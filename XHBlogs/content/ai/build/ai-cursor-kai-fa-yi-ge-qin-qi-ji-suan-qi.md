@@ -3,15 +3,12 @@ title: "AI + Cursor 开发一个亲戚计算器"
 summary: "直播教程回放（共 1 条资讯链接）"
 order: 104
 level: "进阶"
-tags: ["AI 项目教程", "转载", "AI"]
+tags: ["AI 项目教程"]
 updated: "2025-03-28"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI + Cursor 开发一个亲戚计算器》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 开发过程直播回放
 
@@ -23,13 +20,13 @@ AI 的应用场景：增强传统应用 + 创新应用
 
 效果如图：
 
-![img](https://pic.yupi.icu/yuyi/4LjFFoKdD7eStAe4.webp)
+![img](/imgs/efe7a090445e25ed.webp)
 
 ## 一、需求分析
 
 亲戚计算器：可以任意输入亲戚关系、得到一个计算结果
 
-![img](https://pic.yupi.icu/yuyi/SSZhiv8c2hlFgbq1.webp)
+![img](/imgs/09a5814af9d8d6ee.webp)
 
 ### 需求分析 - AI 的思考
 
@@ -87,7 +84,7 @@ AI 的应用场景：增强传统应用 + 创新应用
 
 参考已有产品，可以让 AI 根据原型图来开发前端
 
-![img](https://pic.yupi.icu/yuyi/s88hP0jpmWk23LW8.png)
+![img](/imgs/7addd8e836dc640d.png)
 
 ### Cursor 介绍
 
@@ -143,7 +140,7 @@ AI Agent 可以基于不同的 AI 大模型去实现
 
 #### 利用 AI 优化 Prompt
 
-![img](https://pic.yupi.icu/yuyi/PNUEwBHWembedWBx.webp)
+![img](/imgs/5da8e5a13126b17e.webp)
 
 ```markdown
 ▼markdown
@@ -218,7 +215,7 @@ AI Agent 可以基于不同的 AI 大模型去实现
 
 ### 最终效果
 
-![img](https://pic.yupi.icu/yuyi/DDNYZn9XgE51yAdE.webp)
+![img](/imgs/86df21cdc4a14dc0.webp)
 
 ## 四、扩展知识
 
@@ -234,7 +231,7 @@ AI Agent 可以基于不同的 AI 大模型去实现
 
 通过 DevBox 挑选模板创建项目，然后可以利用 Cursor 连接服务器进行远程开发，开发完成后发版，最后通过 Sealos 的应用管理进行上线部署。
 
-![img](https://pic.yupi.icu/yuyi/lAEIdpSsHSeIXYUh.webp)
+![img](/imgs/816432e19daa7142.webp)
 
 ----
 

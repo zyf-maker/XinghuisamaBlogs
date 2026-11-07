@@ -10,14 +10,11 @@ author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《OpenClaw：部署你的 AI 数字员工》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 你好，我是鱼皮。
 
 OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它是一个能操作电脑干活的 AI 数字员工**。能帮你读写文件、编写程序、执行任务，7×24 小时不休息。而且你随时随地掏出手机就能操控它，让它帮你干活。
 
-![](https://pic.yupi.icu/1/image-20260209164642002.png)
+![](/imgs/7324a406b03acd59.png)
 
 网友也是把 OpenClaw 玩出花来了：
 
@@ -26,11 +23,11 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 - 有人躺在床上，通过手机遥控它把整个网站重写了一遍
 - 还有人让它同时跑多条自动化任务：一边盯盘、一边写日报、一边自动回群消息
 
-![](https://pic.yupi.icu/1/1769787147424-a18c9870-08a0-4540-aa64-a5730fde09d7-20260209164709778.png)
+![](/imgs/d65eef4c5f1c9a92.png)
 
 更离谱的是，苹果的 Mac Mini（就是那个巴掌大的小主机）竟然因为 OpenClaw **直接卖断货了**！因为很多人想买一台 24 小时不关机的小电脑跑 OpenClaw，让它当自己的 AI 打工人。
 
-![](https://pic.yupi.icu/1/1769787905203-6959e978-c81e-40dd-b86d-1043896faf20-20260209164722700.png)
+![](/imgs/93771b34c946be1f.png)
 
 这玩意刚出的时候，女朋友就问我：看起来好厉害啊，你能帮我也整一个吗？
 
@@ -40,7 +37,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 我一脸委屈：别整别整，再等等，一定会有更简单的安装方法出来的。
 
-![](https://pic.yupi.icu/1/image-20260209164815234.png)
+![](/imgs/975e774ad0143ab0.png)
 
 果然，没让我等太久，最快的、傻瓜式安装 OpenClaw 的方法来了！
 
@@ -52,7 +49,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 就在 2 月 8 日，百度智能云推出了 **OpenClaw 极速简易部署方案**。哪怕你完全没有编程基础，只需要点几下鼠标，几分钟内就能拥有自己的 AI 数字员工。还支持各种主流 AI 大模型一键切换，甚至能直接把 OpenClaw 接入 QQ、飞书、钉钉、企业微信，**在手机上发条消息就能指挥 AI 干活**。
 
-![](https://pic.yupi.icu/1/image-20260209170321021.png)
+![](/imgs/f9bb92410dffdd26.png)
 
 接下来我带大家实操一下，建议收藏备用 ⭐️。
 
@@ -68,15 +65,15 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 > 指路：https://cloud.baidu.com/product/BCC/moltbot.html
 
-![](https://pic.yupi.icu/1/image-20260209143722677.png)
+![](/imgs/fdf6b48a22202326.png)
 
 这个活动是每天限量的，新老用户都能参与，没想到我运气不错，羊毛被我薅到了哈哈：
 
-![](https://pic.yupi.icu/1/image-20260209143544557.png)
+![](/imgs/71df4a6126230a1e.png)
 
 稍等片刻，服务器就初始化完成了。
 
-![](https://pic.yupi.icu/1/image-20260209143600373.png)
+![](/imgs/a76df6bf738136c2.png)
 
 点击「一键部署OpenClaw」按钮，就能跳转到服务器管理页面。
 
@@ -86,7 +83,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 注意，镜像一定要选择 **OpenClaw** 应用镜像，套餐选择 **2 核 4GB** 就妥妥够用了。
 
-![](https://pic.yupi.icu/1/image-20260209144440798.png)
+![](/imgs/e0df8ae8fdfcde27.png)
 
 结算之后会自动创建服务器，然后跟前面一样，能够进入到服务器管理页面。
 
@@ -100,7 +97,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 页面会提示你需要开通千帆大模型、云助手等几个服务。不用一个个去找，直接点 **一键开通**，同意协议就搞定了。
 
-![](https://pic.yupi.icu/1/image-20260209144927875.png)
+![](/imgs/908c2668d662de2c.png)
 
 
 
@@ -110,7 +107,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 点击 **一键放行** 按钮就好：
 
-![](https://pic.yupi.icu/1/image-20260209145239379.png)
+![](/imgs/3118c80084e3d63e.png)
 
 
 
@@ -120,11 +117,11 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 可以直接在页面下拉选择你想要的模型，国产的主流大模型基本都支持（比如 DeepSeek），选完点击 **应用** 就行。
 
-![](https://pic.yupi.icu/1/image-20260209145623840.png)
+![](/imgs/0f932c58f667ee0e.png)
 
 系统会自动帮你创建调用大模型的 API 密钥，并且把配置全部搞定。
 
-![](https://pic.yupi.icu/1/image-20260209145857028.png)
+![](/imgs/d01f678da1ba841e.png)
 
 等执行成功，你的 OpenClaw 就可以正常使用了。
 
@@ -138,15 +135,15 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 点击页面下方的 **获取网站地址**：
 
-![](https://pic.yupi.icu/1/image-20260209150158108.png)
+![](/imgs/1db8c51c2633b6e2.png)
 
 然后打开链接进入 OpenClaw 网页端：
 
-![](https://pic.yupi.icu/1/image-20260209150316824.png)
+![](/imgs/eac8214cf7ab38b4.png)
 
 现在你就可以直接在网页上跟 OpenClaw 对话了，比如先给他取个名字吧，我这里叫他为「鱼皮的天苟」：
 
-![](https://pic.yupi.icu/1/image-20260209150631021.png)
+![](/imgs/3eab757459c292a9.png)
 
 可以看到，AI 自动更新了自己的身份，并且会一直保留这段记忆。之后，你可以通过不断地对话来训练 AI，让他成为你最得力的助手。
 
@@ -170,15 +167,15 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 > 指路：https://q.qq.com
 
-![](https://pic.yupi.icu/1/image-20260209151938145.png)
+![](/imgs/9d2ca88d589cb38e.png)
 
 登录成功后，点击 “机器人” Tab，创建一个新的机器人：
 
-![](https://pic.yupi.icu/1/image-20260209152043823.png)
+![](/imgs/b65d883c054a779e.png)
 
 给你的机器人设置一个爱称和可爱的头像吧，便于之后在 QQ 中找到他：
 
-![](https://pic.yupi.icu/1/image-20260209152207016.png)
+![](/imgs/a9662225b31358ae.png)
 
 
 
@@ -186,19 +183,19 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 创建完成后，进入机器人的开发管理页面：
 
-![](https://pic.yupi.icu/1/image-20260209152253262.png)
+![](/imgs/f3a9743ef7fe44f2.png)
 
 找到 **AppID** 和 **AppSecret**，复制保存好，等会要用。
 
-![](https://pic.yupi.icu/1/image-20260209152347726.png)
+![](/imgs/36909c596b569826.png)
 
 还要把你云服务器的 **公网 IP** 添加到 IP 白名单里，然后保存。
 
-![](https://pic.yupi.icu/1/image-20260209152537553.png)
+![](/imgs/b2b019e2c1ad27c2.png)
 
 云服务器的公网 IP 在百度智能云的服务器管理页面就能看到，注意不要暴露给别人哦！
 
-![](https://pic.yupi.icu/1/image-20260209152435791.png)
+![](/imgs/65a1ad5384325020.png)
 
 
 
@@ -206,7 +203,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 在百度智能云的服务器管理页面，找到 **消息平台配置**，下拉选择 **QQ**，把刚才的 AppID 和 AppSecret 填进去，点 **应用**，等它执行完就好了。
 
-![](https://pic.yupi.icu/1/image-20260209152729389.png)
+![](/imgs/5b9e79ce893fede7.png)
 
 
 
@@ -214,15 +211,15 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 回到 QQ 开放平台，在沙箱配置里给你的 QQ 账号（或者 QQ 群）添加访问机器人的权限：
 
-![](https://pic.yupi.icu/1/image-20260209152928094.png)
+![](/imgs/eb3bf440619376ba.png)
 
 然后用 QQ 扫码添加机器人就行了：
 
-![](https://pic.yupi.icu/1/image-20260209153102382.png)
+![](/imgs/0b1fb71668381181.png)
 
 现在，你可以直接在 QQ 上跟你的 AI 数字员工聊天了：
 
-![](https://pic.yupi.icu/1/image-20260209153537993.png)
+![](/imgs/ddab1234540f644c.png)
 
 之后，你只需要躺在床上打开 QQ，就能指挥远程服务器上的 AI 干活，巴适得板~
 
@@ -236,7 +233,7 @@ OpenClaw（由 ClawdBot 改名）是最近非常火的一个 AI 工具，**它�
 
 比如我问他一个非常简单的问题，他竟然先给我报了个错，然后说自己没有联网搜索功能？？？
 
-![](https://pic.yupi.icu/1/30d2456023e115b5aa37b5d0c34274fe.jpg)
+![](/imgs/a9f6a6c62d28944b.jpg)
 
 要想让 AI 变得更强，就需要用到 Skills 了。
 
@@ -258,23 +255,23 @@ Skills 的全称是 Agent Skills，也在 AI 圈儿火得一塌糊涂。
 
 直接进入到服务器管理页面的 Skills 配置，就能傻瓜式搜索和安装技能了：
 
-![](https://pic.yupi.icu/1/image-20260209154028274.png)
+![](/imgs/6663656b3188809e.png)
 
 比如我安装了百度搜索和百度百科 Skills，这两块都是百度的特长，适合用来搜索国内的信息源。
 
-![](https://pic.yupi.icu/1/image-20260209154152546.png)
+![](/imgs/375bb101207caeb0.png)
 
 添加 Skills 完成后，进入到 OpenClaw 管理页面的 Skills 配置中，可以看到技能安装成功：
 
-![](https://pic.yupi.icu/1/image-20260209160408078.png)
+![](/imgs/1623bf3db2c7c5c4.png)
 
 然后我让「鱼皮的天苟」帮我搜索 “程序员鱼皮”：
 
-![](https://pic.yupi.icu/1/8a535406f294c23379ee79b0a703b645.jpg)
+![](/imgs/8f7d5448bf5c02f7.jpg)
 
 这次的结果靠谱多了，在 OpenClaw 网页对话框中，可以看到 AI 调用了百度搜索技能：
 
-![](https://pic.yupi.icu/1/image-20260209160023370.png)
+![](/imgs/2833559bb40a46c1.png)
 
 除了上述安装技能的方式外，你还可以登录服务器，输入一行命令来手动安装技能：
 
@@ -288,13 +285,13 @@ npx clawhub@latest install [skill名称]
 
 > 帮我安装编程动画制作技能
 
-![](https://pic.yupi.icu/1/image-20260209160913210.png)
+![](/imgs/9ef159efd86b8743.png)
 
 它一开始可能会拒绝或者不太理解，没关系，稍微引导一下就行：
 
 > 我就要你来操作服务器帮我安装
 
-![](https://pic.yupi.icu/1/image-20260209161210072.png)
+![](/imgs/89a4b581b89cffe2.png)
 
 这次，他成功完成了任务。让 AI 自己给自己装技能，才是 AI 时代该有的操作方式。
 
@@ -302,11 +299,11 @@ npx clawhub@latest install [skill名称]
 
 > 指路：https://clawhub.ai
 
-![](https://pic.yupi.icu/1/image-20260209173015903.png)
+![](/imgs/28f04e643f57ee93.png)
 
 不过鱼皮建议大家谨慎安装 Skills，非必要不安装、非官方不安装，毕竟 Skills 是人为制作的，可能会存在安全隐患。
 
-![](https://pic.yupi.icu/1/c1eca273aeeaf86ff3d2a0e7daa55459.png)
+![](/imgs/cc645737444ad98a.png)
 
 
 
@@ -322,7 +319,7 @@ npx clawhub@latest install [skill名称]
 
 过了一会儿，它回了我一份整整齐齐的热点摘要：
 
-![](https://pic.yupi.icu/1/ce2501ffae6c213e1b07f570ac32464b.jpg)
+![](/imgs/b8d0e13d5d331eaa.jpg)
 
 以前我可能要到网上刷刷新闻，现在发条消息就搞定了~
 
@@ -338,13 +335,13 @@ npx clawhub@latest install [skill名称]
 
 现在，我可以直接把 OpenClaw 当做是我的超级备忘录，先给 AI 设定一个角色，比如告诉它 “你是一个灵感记录器”：
 
-![](https://pic.yupi.icu/1/image-20260209180148160.png)
+![](/imgs/b7605ddc155abc7a.png)
 
 之后有任何怕忘记的想法或事情，直接掏出手机在 QQ 上跟 AI 说一句就行了。
 
 OpenClaw 跟普通备忘录不一样，它不只是帮你记，还会帮你修正错别字和分类整理，而且永远不会忘事！
 
-![](https://pic.yupi.icu/1/image-20260209180446618.png)
+![](/imgs/095572ebdaf0fc5c.png)
 
 
 
@@ -360,19 +357,19 @@ OpenClaw 跟普通备忘录不一样，它不只是帮你记，还会帮你修�
 
 过了几分钟，AI 回复我：工具写好了，已经部署上线，直接访问 XX 地址就能用。
 
-![](https://pic.yupi.icu/1/image-20260209183510372.png)
+![](/imgs/ffbdcc29bff24776.png)
 
 没错，就发了条消息，一个能用的在线工具就出来了，跟变魔术似的。
 
 > 注意，如果无法访问，可能是因为没有给服务器的防火墙开放对应端口。
 
-![](https://pic.yupi.icu/1/image-20260209183750274.png)
+![](/imgs/0deb96303a10c80f.png)
 
 之后你有了任何灵感，甚至都不需要掏出电脑，全程通过手机跟 AI 对话，就能创造出可运行的项目。
 
 这种感觉，怎么说呢，有点钢铁侠内味儿了。
 
-![](https://pic.yupi.icu/1/image-20260209182902058.png)
+![](/imgs/1a5386374921037f.png)
 
 
 

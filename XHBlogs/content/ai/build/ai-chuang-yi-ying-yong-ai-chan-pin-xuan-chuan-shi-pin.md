@@ -3,15 +3,12 @@ title: "AI 创意应用 - AI 产品宣传视频制作器项目"
 summary: "本项目是一个有趣的 AI 创意应用，让 AI 用写代码的方式全自动制作产品宣传片。你只要跟 AI 说一句想给哪个产品做宣传视频，它就会自己调研产品、跟你确认需求、给出多种风格小样，然后自动完成写脚本、截图、配乐、剪辑的全流程，最后交付一支"
 order: 15
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-10-22"
 readingTime: 7
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《AI 创意应用 - AI 产品宣传视频制作器项目》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 本项目是一个有趣的 AI 创意应用，让 AI 用写代码的方式全自动制作产品宣传片。你只要跟 AI 说一句想给哪个产品做宣传视频，它就会自己调研产品、跟你确认需求、给出多种风格小样，然后自动完成写脚本、截图、配乐、剪辑的全流程，最后交付一支 4K 宣传片和一个可以直接部署的动画网站。
 
@@ -29,13 +26,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 你绝对想不到，以前要花几千块找人做的产品宣传片，现在只要一句话，AI 就能全自动帮我搞定。
 
-![AI 做的 6 支宣传片](https://pic.yupi.icu/1/promomaker-01-%E5%85%AD%E6%94%AF%E5%AE%A3%E4%BC%A0%E7%89%87%E5%90%88%E9%9B%86-d75d4c79.jpg)
+![AI 做的 6 支宣传片](/imgs/d90f2ffac3aa6722.jpg)
 
 上面这 6 支宣传片，风格从 3D 城市地图、黑白热血漫画、水下 Q 版，一路跨到电影预告片和泄密档案，全都是 AI 给我做的。
 
 而且你敢相信么，这些画面没有一帧是在剪辑软件里做的，**全部都是 AI 用写代码的方式「凑」出来的**！
 
-![左边是代码，右边是画面](https://pic.yupi.icu/1/promomaker-02-%E4%BB%A3%E7%A0%81%E5%8F%98%E7%94%BB%E9%9D%A2-f21d6efe.jpg)
+![左边是代码，右边是画面](/imgs/9bb2c191033257d4.jpg)
 
 下面我来教你这套全新的 AI 视频创作玩法。
 
@@ -44,7 +41,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 Claude Opus 5.5 模型出现之后，大家开始意识到，原来做视频除了用 Seedance 这种 AI 视频生成模型之外，还可以让 AI 文本模型通过编程来做。
 
-![两种用 AI 做视频的方式](https://pic.yupi.icu/1/promomaker-03-%E4%B8%A4%E7%A7%8D%E5%81%9A%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E5%BC%8F-49cbd1fd.jpg)
+![两种用 AI 做视频的方式](/imgs/111c993890890cf3.jpg)
 
 这是两种截然不同的方式。
 
@@ -54,7 +51,7 @@ Claude Opus 5.5 模型出现之后，大家开始意识到，原来做视频除�
 
 原理也很简单。AI 先写代码，把每个画面做成一个会动的网页；再一帧一帧地截图；最后把几千张截图拼起来、配上声音，就成了一支视频。
 
-![代码变视频的 4 个步骤](https://pic.yupi.icu/1/promomaker-04-%E5%8E%9F%E7%90%86%E5%9B%9B%E6%AD%A5-fb4b2acb.jpg)
+![代码变视频的 4 个步骤](/imgs/1996164acda4e942.jpg)
 
 比如一支 1 分钟、每秒 60 帧的视频，就要截 3600 张图。这套流程用到的是开源框架 Remotion，在它眼里视频就是一个 React 网页，所以会写前端代码的 AI，天生就会剪视频。
 
@@ -69,7 +66,7 @@ Claude Opus 5.5 模型出现之后，大家开始意识到，原来做视频除�
 
 我一边做一边踩坑，一边把踩过的坑总结成规则，最后打磨出了一套《AI 产品宣传视频制作器》，并且完全开源到了 GitHub 上。
 
-![开源到 GitHub](https://pic.yupi.icu/1/promomaker-05-%E5%BC%80%E6%BA%90%E5%88%B0GitHub-1470409a.jpg)
+![开源到 GitHub](/imgs/bd54fa3f3e77a605.jpg)
 
 这个项目里没有什么复杂的代码，核心是一份写给 AI 看的工作规范，外加一个 Remotion 视频工程模板和十几个辅助脚本。
 
@@ -92,35 +89,35 @@ git clone https://github.com/liyupi/ai-promo-video-maker.git
 我要给 laoyujianli.com 制作一个宣传视频
 ```
 
-![跟 AI 说一句话](https://pic.yupi.icu/1/promomaker-06-%E4%B8%80%E5%8F%A5%E8%AF%9D%E9%9C%80%E6%B1%82-f44c7414.jpg)
+![跟 AI 说一句话](/imgs/4a0a8db4790cbdbf.jpg)
 
 接下来 AI 会先自己去调研这个产品，搞清楚它是干嘛的、卖点有哪些、有哪些能拿出来证明的数据。然后像产品经理一样主动找你询问和确认需求，比如视频多长、给谁看、开头先讲痛点还是先秀亮点。
 
 问完之后，AI 会把所有结论整理成一份需求确认文档，你确认了它才开工。
 
-![AI 整理的需求确认文档](https://pic.yupi.icu/1/promomaker-07-%E9%9C%80%E6%B1%82%E7%A1%AE%E8%AE%A4-b185582e.jpg)
+![AI 整理的需求确认文档](/imgs/86fc85eeffa9f4e5.jpg)
 
 最让我惊喜的是，AI 还会给你的产品画出好几种不同风格的小样，任你挑选。
 
 比如给老鱼简历做宣传片的时候，AI 一口气给了纸张拼贴、像素通关、极简发布会、黏土 Q 版 4 个方向，我最后选了左上角的纸张拼贴风。
 
-![老鱼简历的 4 种风格小样](https://pic.yupi.icu/1/promomaker-08-%E9%A3%8E%E6%A0%BC%E6%A0%B7%E5%B8%A7-c9b61e69.jpg)
+![老鱼简历的 4 种风格小样](/imgs/2fc70e2a63659f7b.jpg)
 
 选完风格，你就可以去摸鱼了。
 
-![](https://pic.yupi.icu/1/fatfish_moyu%E5%B0%8F.jpeg)
+![](/imgs/8171408dae8f6de8.jpg)
 
 AI 会自动完成写脚本、截图、配乐、剪辑这一整套流程。
 
-![AI 全自动完成](https://pic.yupi.icu/1/promomaker-10-%E5%85%A8%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90-76c5da99.jpg)
+![AI 全自动完成](/imgs/b1d00b9e490d3e64.jpg)
 
 最后交给你一个直接可用的 4K 宣传片：
 
-![4K 宣传片](https://pic.yupi.icu/1/promomaker-11-4K%E5%AE%A3%E4%BC%A0%E7%89%87-9e9dd88c.jpg)
+![4K 宣传片](/imgs/ee3c46e194abfdf1.jpg)
 
 还附赠一个动画网站，部署上线就能直接分享给别人看：
 
-![动画网站](https://pic.yupi.icu/1/promomaker-12-%E5%8A%A8%E7%94%BB%E7%BD%91%E7%AB%99-a3a7b878.jpg)
+![动画网站](/imgs/d4644006ae4f93f3.jpg)
 
 想把动画网站部署上线的话，可以参考本板块中的《项目部署上线教程》。
 
@@ -138,7 +135,7 @@ npx skills add liyupi/ai-promo-video-maker -g
 
 不管是 APP、网站、开源项目、课程，甚至是任何你想宣传的东西，都能快速搞出宣传大片。
 
-![什么都能宣传](https://pic.yupi.icu/1/promomaker-21-%E4%BB%80%E4%B9%88%E9%83%BD%E8%83%BD%E5%AE%A3%E4%BC%A0-304025ad.jpg)
+![什么都能宣传](/imgs/8ce0acfd968c0f0a.jpg)
 
 对 Skill 还不熟悉的话，可以阅读本教程编程工具板块「工具实战」目录中的《Agent Skills：通用 AI 技能库》。
 
@@ -152,7 +149,7 @@ npx skills add liyupi/ai-promo-video-maker -g
 
 你会发现，这些宣传片里有很多真实的产品画面。
 
-![宣传片里的真实产品画面](https://pic.yupi.icu/1/promomaker-13-%E7%9C%9F%E5%AE%9E%E4%BA%A7%E5%93%81%E7%94%BB%E9%9D%A2-231bfa0d.jpg)
+![宣传片里的真实产品画面](/imgs/abfa4cc0be6191ff.jpg)
 
 这是因为我给 AI 定了一条铁律，**主角必须是真实产品，不能拿 AI 画的假界面来敷衍**。
 
@@ -163,7 +160,7 @@ npx skills add liyupi/ai-promo-video-maker -g
 
 配乐方面，AI 默认会从免费可商用的曲库里挑几首让你试听。
 
-![挑几首让你试听](https://pic.yupi.icu/1/promomaker-14-%E6%9B%B2%E5%BA%93%E8%AF%95%E5%90%AC-689d4ca6.jpg)
+![挑几首让你试听](/imgs/ee05caeece609fb2.jpg)
 
 之所以要你亲自试听，是因为 AI 压根儿听不到声音。。。它只能靠分析波形来判断节奏，曲子搭不搭、好不好听，还得你的耳朵来感受。
 
@@ -174,7 +171,7 @@ npx skills add liyupi/ai-promo-video-maker -g
 
 如果你想要真人配音，可以先到 ElevenLabs 上克隆自己的声音，然后把 API Key 提供给 AI。
 
-![ElevenLabs 克隆声音](https://pic.yupi.icu/1/promomaker-15-ElevenLabs-8e3ea786.jpg)
+![ElevenLabs 克隆声音](/imgs/826590ef40d336f1.jpg)
 
 AI 会用你的声音念旁白，念完还会把音频重新转成文字，跟稿子逐句比对，品牌名和网址错一个字都不放过。这样一条属于你风格的视频就做出来了。
 
@@ -185,7 +182,7 @@ AI 会用你的声音念旁白，念完还会把音频重新转成文字，跟�
 
 来，感受一下 AI 给面试鸭做的这支黑白热血漫画风宣传片：
 
-![面试鸭宣传片](https://pic.yupi.icu/1/promomaker-16-%E9%9D%A2%E8%AF%95%E9%B8%AD%E5%AE%A3%E4%BC%A0%E7%89%87-4e975092.jpg)
+![面试鸭宣传片](/imgs/54ca0e3de2b3a6a2.jpg)
 
 开场直接连发 4 道站内浏览量最高的真实面试题，然后小黄鸭闪亮登场，紧接着用真实的页面展示题库和题解。配乐是 AI 按分镜专门作的曲，有两次爆发和一段回落，旁白刚好落在回落段讲解答案。
 
@@ -193,7 +190,7 @@ AI 会用你的声音念旁白，念完还会把音频重新转成文字，跟�
 
 怎么样，溜不溜？
 
-![](https://pic.yupi.icu/1/fatfish_ok%E5%B0%8F.jpeg)
+![](/imgs/18bdfa00908031a6.jpg)
 
 
 ## 做一支要花多少钱？
@@ -202,7 +199,7 @@ AI 会用你的声音念旁白，念完还会把音频重新转成文字，跟�
 
 揭晓答案：**大概几十块钱。**
 
-![找人做 vs AI 做](https://pic.yupi.icu/1/promomaker-18-%E4%BB%B7%E6%A0%BC%E5%AF%B9%E6%AF%94-8fe136d3.jpg)
+![找人做 vs AI 做](/imgs/38f120ab2355a171.jpg)
 
 这个价格也是真心不便宜啊！
 
@@ -210,7 +207,7 @@ AI 会用你的声音念旁白，念完还会把音频重新转成文字，跟�
 
 我自己也是烧了很多 money，才打磨出了这套开源视频制作工具。
 
-![80 多条踩坑记录](https://pic.yupi.icu/1/promomaker-19-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95-6cc6e0c8.jpg)
+![80 多条踩坑记录](/imgs/90732c7d43bde099.jpg)
 
 现在规范里已经攒了 80 多条踩坑记录，像截图被横向压扁、开场铺垫太慢、配乐和画面不搭、旁白把品牌名念错，每一条都来自我真实收到过的修改意见。大家直接用这个工具，就能少让 AI 走弯路，节省很多 tokens。
 

@@ -3,15 +3,12 @@ title: "手把手教你在word中接入deepseek，秒生文档材料"
 summary: "将DeepSeek接入Word，实现无需切换即可进行材料续写的功能，具有显著的价值和广泛的应用前景。以下是其核心价值的详细描述："
 order: 5
 level: "入门"
-tags: ["应用场景", "转载", "AI"]
+tags: ["应用场景"]
 updated: "2025-05-30"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《手把手教你在word中接入deepseek，秒生文档材料》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 将DeepSeek接入Word，实现无需切换即可进行材料续写的功能，具有显著的价值和广泛的应用前景。以下是其核心价值的详细描述：
 
@@ -57,17 +54,17 @@ DeepSeek可以根据用户的使用习惯和写作风格进行个性化定制，
 1.登录www.deepseek.com，注册登录后点击左上角"API开放平台"
 
 
-![img](https://pic.yupi.icu/yuyi/1739501422379-4fac0028-94c7-4845-8dc4-beda4b58e8fa.webp)
+![img](/imgs/4da717ab2cd686e3.webp)
 
 2.充值后点击左侧"API keys"
 
-![img](https://pic.yupi.icu/yuyi/1739501422357-7a5a3cce-ecb5-4322-9c14-043175ff5129.webp)
+![img](/imgs/be7823f6e231b41a.webp)
 
 3.点击创建API key，填写名称，自动生成key，复制Key备用
 
-![img](https://pic.yupi.icu/yuyi/1739501422360-1ee09b18-eb94-43d2-acff-1db5a2e4f354.webp)
+![img](/imgs/4869672419289e4a.webp)
 
-![img](https://pic.yupi.icu/yuyi/1739501422392-c3d4b8ee-a5cd-4a9a-b3c3-cdaca4a155b7.webp)
+![img](/imgs/a3d69d148b39c9d1.webp)
 
 
 02
@@ -76,11 +73,11 @@ DeepSeek可以根据用户的使用习惯和写作风格进行个性化定制，
 
 1.在开发工具中天街vb脚本，如果没有开发工具，可在文件-选项-自定义功能区中设置
 
-![img](https://pic.yupi.icu/yuyi/1739501422415-baf0b991-78f8-4cc6-8d92-00533bea483d.webp)
+![img](/imgs/efaccf76c4dfab54.webp)
 
 2.在Normal的模块下右键新增模块，输入代码后保存
 
-![img](https://pic.yupi.icu/yuyi/1739501422854-02e2e8bb-0aa1-4fe0-8567-952930186f20.webp)
+![img](/imgs/429e20318d66009c.webp)
 
 输入代码如下，将前面保存的Key替换代码中的"你的APIKEY"
 
@@ -240,9 +237,9 @@ End Sub
 
 1.打开菜单文件-选项-自定义功能区，如下图进行设置
 
-![img](https://pic.yupi.icu/yuyi/1739501427865-71593a69-efd8-471d-b16d-bbf4c06aebec.webp)设置完成后，菜单如图所示
+![img](/imgs/03ab41c573a619a2.webp)设置完成后，菜单如图所示
 
-![img](https://pic.yupi.icu/yuyi/1739501422864-b0f9fe76-4754-40de-bbb5-d8a64d6c0574.webp)
+![img](/imgs/e002d3275c0f7243.webp)
 
 
 04
@@ -251,11 +248,11 @@ End Sub
 
 1.新建一个文档，输入如下内容，选择文字后，点击"对话"
 
-![img](https://pic.yupi.icu/yuyi/1739501424837-8ef6c3da-d01a-4d03-b489-55f8a9500e68.webp)
+![img](/imgs/bf92642bfa415ada.webp)
 
 2.效果如图
 
-![img](https://pic.yupi.icu/yuyi/1739501424819-347916b3-06e2-4d83-8b6f-85dab3cfe339.gif)
+![img](/imgs/abd0ce67d288492b.gif)
 
 
 > 来源：https://mp.weixin.qq.com/s/g6E-gNHZABMl6JUEWQtViQ

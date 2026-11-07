@@ -3,15 +3,12 @@ title: "吐血整理！DeepSeek神级指令，好用到爆！"
 summary: "“将以下会议录音整理成结构化纪要，包含议题、决策、待办事项和负责人。”"
 order: 13
 level: "入门"
-tags: ["使用指南", "转载", "AI"]
+tags: ["使用指南"]
 updated: "2025-03-28"
 readingTime: 3
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《吐血整理！DeepSeek神级指令，好用到爆！》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 一、职场打工人必备篇
 

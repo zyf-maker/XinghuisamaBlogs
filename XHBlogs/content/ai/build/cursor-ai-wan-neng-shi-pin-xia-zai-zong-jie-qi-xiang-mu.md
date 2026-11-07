@@ -3,15 +3,12 @@ title: "Cursor - AI 万能视频下载总结器项目实战"
 summary: "这是一套以 AI 编程实战为核心的项目教程，基于 Vue 3 + FastAPI + yt-dlp + DeepSeek + Stripe，用 AI 编程的方式从 0 到 1 开发一个《AI 万能视频下载总结器》，带你亲身体验 Vibe C"
 order: 28
 level: "进阶"
-tags: ["项目实战", "转载", "AI"]
+tags: ["项目实战"]
 updated: "2026-07-21"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Cursor - AI 万能视频下载总结器项目实战》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 这是一套以 AI 编程实战为核心的项目教程，基于 Vue 3 + FastAPI + yt-dlp + DeepSeek + Stripe，用 AI 编程的方式从 0 到 1 开发一个《AI 万能视频下载总结器》，带你亲身体验 Vibe Coding 的完整工作流，学会用 AI 快速做出一个能上线变现的实用工具！
 
@@ -19,7 +16,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 完整视频教程 + 文字教程（预计 3 ~ 7 天学完）：https://www.codefather.cn/course/2027618983506640897
 
-![](https://pic.yupi.icu/1/AI%E4%B8%87%E8%83%BD%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%99%A8%E4%B8%BB%E9%A1%B5.png)
+![](/imgs/01fba89ac3bde273.png)
 
 
 ## 项目介绍
@@ -34,7 +31,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 **一个链接搞定视频下载 + AI 总结，学习效率翻倍！**
 
-![](https://pic.yupi.icu/1/AI%25E8%25A7%2586%25E9%25A2%2591%25E4%25B8%258B%25E8%25BD%25BD+%25E6%2580%25BB%25E7%25BB%2593%25E5%258A%259F%25E8%2583%25BD.png)
+![](/imgs/2c3265db80472ea4.png)
 
 
 ## 项目功能演示
@@ -43,49 +40,49 @@ source: "https://github.com/liyupi/ai-guide"
 
 输入主流视频平台的视频链接，系统自动解析视频标题、封面、时长，并提供多种清晰度和格式供用户选择下载。基于 yt-dlp 开源项目，支持 **1800+** 网站，涵盖 B 站、YouTube、抖音等主流平台。针对抖音等需要特殊处理的平台，开发了专用解析模块，无需用户提供 Cookie 即可获取无水印视频。
 
-![](https://pic.yupi.icu/1/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90%E5%92%8C%E4%B8%8B%E8%BD%BD.png)
+![](/imgs/67d4ae92aea1de99.png)
 
 
 2）AI 视频总结摘要
 
 解析视频后，系统自动提取字幕并调用 DeepSeek 大模型进行内容分析，流式输出视频的总结摘要，Markdown 格式排版精美，帮助用户快速了解视频核心要点。
 
-![](https://pic.yupi.icu/1/AI%20%E8%A7%86%E9%A2%91%E6%80%BB%E7%BB%93%E6%91%98%E8%A6%81.png)
+![](/imgs/44cc638e8031eeb0.png)
 
 
 3）AI 生成思维导图
 
 基于视频内容自动生成交互式思维导图，帮助用户一目了然地掌握视频结构。支持全屏展示、缩放拖拽查看完整内容，还可以导出高清 PNG 和 SVG 格式图片。
 
-![](https://pic.yupi.icu/1/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png)
+![](/imgs/d97cd2fdaf509821.png)
 
 
 4）AI 视频问答
 
 用户可以基于视频内容进行自由问答，AI 会根据字幕文本给出针对性的回答，辅助深度学习。
 
-![](https://pic.yupi.icu/1/image-20260323173318104.png)
+![](/imgs/6f1bff4d4f2290db.png)
 
 
 5）字幕导出
 
 支持下载 SRT、VTT、TXT 等多种格式的字幕文件，方便用户自行整理和学习。
 
-![](https://pic.yupi.icu/1/%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E5%AD%97%E5%B9%95.png)
+![](/imgs/a97eaa690ee74561.png)
 
 
 6）用户注册登录 + 会员权限
 
 支持邮箱 + 密码注册登录，基于 JWT 实现无状态认证。免费用户每天可使用 3 次 AI 总结，VIP 会员不限次数。
 
-![](https://pic.yupi.icu/1/%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD.png)
+![](/imgs/7cc0a990ce35d0d5.png)
 
 
 7）Stripe 国际支付
 
 集成 Stripe 国际支付平台，支持信用卡等多种支付方式，用户可一键开通 VIP 会员，解锁无限 AI 总结次数。
 
-![](https://pic.yupi.icu/1/1773834225105-b40a00b3-6062-4345-abd8-38533ea57b1e.png)
+![](/imgs/0054a5f5282662f4.png)
 
 
 ## 项目收获
@@ -111,7 +108,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 该项目功能丰富，涵盖视频解析下载、AI 智能总结、用户认证、会员支付、SEO/GEO 优化 5 大模块，20+ 功能点，覆盖了从工具开发、AI 应用到商业变现的完整产品闭环。
 
-![](https://pic.yupi.icu/1/image-20260323163948750.png)
+![](/imgs/70394186911a9ee6.png)
 
 
 ## AI 编程开发流程
@@ -132,7 +129,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 建议每做完一个功能就用 Git 提交代码，防止 AI 后面改着改着搞崩了。如果上下文太长了，AI 容易断片儿，就新开一个对话窗口，把需求文档和方案文档丢给 AI，让它重新分析已有代码找回记忆。
 
-![](https://pic.yupi.icu/1/image-20260323170234617.png)
+![](/imgs/e22ba814041d78ea.png)
 
 
 ## 核心业务流程
@@ -190,7 +187,7 @@ sequenceDiagram
 
 本项目以 Python 后端 + Vue 前端为核心，前后端分离，涵盖多平台视频下载、AI 大模型内容总结、SSE 流式传输、JWT 认证、Stripe 国际支付、SEO/GEO 搜索优化等实用技术，一个项目即可掌握工具类产品从开发到变现的核心技术栈。
 
-![](https://pic.yupi.icu/1/image-20260323163735939.png)
+![](/imgs/6153d3d77ac29caa.png)
 
 后端：FastAPI（Python 异步 Web 框架）、yt-dlp（支持 1800+ 网站的视频下载引擎）、抖音专用解析模块（无 Cookie 方案）、DeepSeek API（AI 视频总结和问答）、SQLite、JWT（PyJWT）、bcrypt、Stripe、httpx、SSE（Server-Sent Events）
 
@@ -203,7 +200,7 @@ AI 编程工具：Cursor（含 Browser Use 浏览器操作）、MCP 插件（Fir
 
 本项目采用前后端分离架构，前端使用 Vue 3 + Vite，后端使用 FastAPI + SQLite，通过 REST API 和 SSE 通信。后端集成 yt-dlp 实现多平台视频下载，通过 DeepSeek API 实现 AI 总结，通过 Stripe 实现支付，整体架构轻量高效。
 
-![](https://pic.yupi.icu/1/image-20260323163917381.png)
+![](/imgs/93baccf97eafa1c6.png)
 
 
 完整视频教程 + 文字教程（预计 3 ~ 7 天学完）：https://www.codefather.cn/course/2027618983506640897

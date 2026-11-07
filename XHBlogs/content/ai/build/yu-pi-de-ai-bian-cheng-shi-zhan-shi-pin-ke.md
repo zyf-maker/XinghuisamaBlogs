@@ -3,15 +3,12 @@ title: "鱼皮的 AI 编程实战视频课"
 summary: "鱼皮录制的《小白都能学的 AI 编程实战》视频课程介绍"
 order: 205
 level: "入门"
-tags: ["入门导读", "转载", "AI"]
+tags: ["入门导读"]
 updated: "2026-09-02"
 readingTime: 6
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《鱼皮的 AI 编程实战视频课》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你之前有没有想过，把学习或工作中最烦的那件重复的事，用一个小工具自动搞定？
 
@@ -23,13 +20,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 一个 23 岁的小伙，用 AI 写了个图片处理工具挂到某宝，一个月收入五六千。一个 31 岁从北京辞职的前媒体人，用 AI 做了个打卡应用，两个月卖了 800 多单。
 
-![](https://pic.yupi.icu/yuyi/640-20260604192219470)
+![](/imgs/e41e4d270973473f.bin)
 
 **他们都不懂编程，却都用 AI 把想法变成了产品甚至变现**。那你呢，准备好开始了吗？
 
 我之前写了一套几十万字的 Vibe Coding 教程，帮助很多零基础的朋友上线了自己的第一个作品。
 
-![](https://pic.yupi.icu/yuyi/image-20260522183722130.png)
+![](/imgs/09aea17c91b290b1.png)
 
 但还是有很多小伙伴来问我：鱼皮，有没有那种连 Cursor 界面都看不懂、完全从 0 开始、小白也能跟着做出来的教程？
 
@@ -37,7 +34,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 哪怕没有任何基础，也能跟着我用 AI **从 0 跑通完整的项目流程，开发出能上线、能提效、能商用变现的作品**。
 
-![](https://pic.yupi.icu/yuyi/640-20260604191354571-20260604191522281)
+![](/imgs/ecf8352c96ed67be.bin)
 
 课程已经正式上线，想靠 AI 做点东西出来的，可以加入一起搞事～
 
@@ -56,7 +53,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 **完全面向零基础，带你从环境搭建到产品上线，全程保姆级演示，跟着做就行。**
 
-![](https://pic.yupi.icu/yuyi/ChatGPT%20Image%202026%E5%B9%B45%E6%9C%8822%E6%97%A5%2015_48_28.png)
+![](/imgs/4fba1fa514f65322.png)
 
 跟着这门课学完，你将获得：
 
@@ -89,11 +86,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 我会带你从最基本的环境搭建开始，先用浏览器就能打开的零代码平台，**几分钟做出一个可以访问的网站**，让你体验到「我真的能做出东西」的正反馈。
 
-![](https://pic.yupi.icu/yuyi/d1484f772ede3f4c3043cd86774f825c.webp)
+![](/imgs/67ff3ae3c9d4caa9.webp)
 
 然后再过渡到 Cursor、Codex、Claude Code 等主流工具，做出你的第一个完整项目并部署上线，分享给朋友随时随地访问，成就感再 + 1。
 
-![](https://pic.yupi.icu/yuyi/640-20260604191908805)
+![](/imgs/798086eec3a22423.bin)
 
 在实战中，我会一步步带你学会独立做项目需要的核心技能：**工具怎么选、需求怎么拆、Bug 怎么修、代码怎么管理，产品怎么测试、发布和推广**，真正掌握 AI 编程开发的完整流程。
 
@@ -107,23 +104,23 @@ source: "https://github.com/liyupi/ai-guide"
 
 1）[AI 热点监控工具](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247583063&idx=1&sn=fa26c138264b02189db4e24465d1af29&scene=21#wechat_redirect) 是一个自动化发现并推送 AI 领域前沿热点的全网监控工具，以 Vibe Coding 为核心，实战 MCP 和 Agent Skills 扩展 AI 编程能力，掌握 AI 编程全链路工作流。
 
-![AI 热点监控工具](https://pic.yupi.icu/yuyi/640-20260604191939401)
+![AI 热点监控工具](/imgs/b1b75d3253ba60d6.bin)
 
 2）[AI 万能视频下载总结器](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247584682&idx=1&sn=dba3a27d7abd07d744a6b29e4e6f7ca8&scene=21#wechat_redirect) 是纯 AI 编程开发的商业级万能视频下载网站，实战 Stripe 海外支付集成、SEO 优化，学会用 AI 编程打造能赚钱的产品。
 
-![AI 万能视频下载总结器](https://pic.yupi.icu/yuyi/640-20260604191939455)
+![AI 万能视频下载总结器](/imgs/fe20c1325a8a550f.bin)
 
 3）[AI 文档翻译 SaaS 平台](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247582739&idx=2&sn=13cb3c332605099cefc9797de9d9da4f&scene=21#wechat_redirect) 是以 Vibe Coding 为核心的 Next.js 全栈 SaaS 项目，实战 GitHub App 开发、OpenRouter 统一接入多种 AI 大模型，掌握 AI 编程的完整工作流。
 
-![GitHub 文档翻译工具](https://pic.yupi.icu/yuyi/640-20260604191939497)
+![GitHub 文档翻译工具](/imgs/da7b87218f7b479c.bin)
 
 4）[AI 程序员技术练兵场](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247577732&idx=1&sn=1580bf7e3562ca63b664e5be8dbfa1d6&scene=21#wechat_redirect) 是基于 Spring Boot + Vue 的闯关式技术练兵场，AI 模拟产品经理出题、用户拖拽选择技术方案、AI 智能评分，实战 LangChain4j AI 开发框架、结构化输出、对话记忆、工具调用等主流 AI 开发技术。
 
-![AI 程序员技术练兵场](https://pic.yupi.icu/yuyi/640-20260604191939537)
+![AI 程序员技术练兵场](/imgs/90606b6a740d5d2b.bin)
 
 5）[AI 闯关学习小程序](https://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&mid=2247586748&idx=1&sn=847a521830b1063b4c201d53c060286d&scene=21#wechat_redirect) 是用 AI 编程从 0 开发的微信小程序，用户输入想学的知识，AI 自动联网搜索并生成交互式闯关题目，答完生成学习报告。实战 Taro 跨端开发、Python FastAPI 后端、LangChain AI 应用开发、Tavily 联网搜索、RAG 知识库、Agentic RAG 和微信小程序上线全流程。
 
-![AI闯关学习小程序](https://pic.yupi.icu/yuyi/640-20260604191939579)
+![AI闯关学习小程序](/imgs/d43da39fe9feecf0.bin)
 
 ### **3、独家方法论，不只教操作，更教思维**
 
@@ -137,7 +134,7 @@ source: "https://github.com/liyupi/ai-guide"
 - **需求拆解四步法**：目标 → 功能列表 → 优先级排序 → 分步指令
 - **Bug 三步排查法**：发给 AI → 换模型/换描述 → 回退重来
 
-![](https://pic.yupi.icu/yuyi/640-20260604191939632)
+![](/imgs/47bb7c4dcc85546b.bin)
 
 学会方法，以后脱离课程你也能独立用 AI 做任何项目，把你的各种奇思妙想变成现实～
 
@@ -149,13 +146,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 能做哪些有商业价值的产品？怎么让产品被搜索引擎发现？我会通过这一系列的思考，帮助你理清如何用 AI 编程做出能赚钱的产品，并且分享一些真实的 AI 编程变现故事，给到你灵感。
 
-![](https://pic.yupi.icu/yuyi/640-20260604191939674)
+![](/imgs/0c25e1b56aed959d.bin)
 
 ### **5、三本配套实用手册，随用随查**
 
 不仅如此，我还把自己这几年 AI 编程踩过的坑、总结出的经验，整理成了三本可以随时翻阅的 PDF 手册，跟课程一起打包给你：
 
-![](https://pic.yupi.icu/yuyi/640-20260604191939722)
+![](/imgs/409eb82bffe2ecff.bin)
 
 相当于你身边随时有一本「AI 编程字典」，遇到不会的、报错的，查一查就有答案。
 
@@ -165,11 +162,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 买了这门课也相当于和我建立了连接，**遇到问题不用自己死磕，找我来提供解决思路和学习建议，比一个人闷头学快多了**。
 
-![](https://pic.yupi.icu/yuyi/640-20260604192124046)
+![](/imgs/34d162e773aa5b56.bin)
 
 另外还会赠送完整的 AI 编程学习路线图和 AI 大模型开发职业规划，如果以后你想在这个方向深入发展，也能有一条清晰的路可以走。
 
-![](https://pic.yupi.icu/yuyi/640-20260604192124097)
+![](/imgs/c0a4f78fb0cc77ab.bin)
 
 
 ## 最后
@@ -178,7 +175,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 这门课的目标只有一个：**让不会编程的你，也能用 AI 做出自己的产品。**
 
-![](https://pic.yupi.icu/yuyi/640-20260604192124160)
+![](/imgs/a135efe031ccbb01.bin)
 
 如果你也想赶上这波浪潮，用 AI 把自己的想法变成真实的作品，现在就来跟我一起开始吧！
 

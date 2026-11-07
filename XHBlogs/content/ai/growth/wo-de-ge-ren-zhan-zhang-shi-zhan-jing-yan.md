@@ -3,15 +3,12 @@ title: "我的个人站长实战经验"
 summary: "从开发到运营网站的完整流程"
 order: 15
 level: "进阶"
-tags: ["产品变现", "转载", "AI"]
+tags: ["产品变现"]
 updated: "2026-01-25"
 readingTime: 10
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《我的个人站长实战经验》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 你好，我是程序员鱼皮。
 
@@ -21,13 +18,13 @@ source: "https://github.com/liyupi/ai-guide"
 
 而做个人站长，最痛的事情莫过于：**用心做的网站没人用。** 我相信很多有自己网站的朋友，应该会感同身受吧。
 
-![](https://pic.yupi.icu/1/image-20240620114230530.png)
+![](/imgs/422dcba82e6d12eb.png)
 
 这段时间我也花费了大量的精力带团队开发优化编程导航网站，又增加了不少经验值。
 
 > 编程导航 - 学习交流社区：https://codefather.cn
 
-![](https://pic.yupi.icu/1/image-20240620114647840.png)
+![](/imgs/277d4a6c4adb0509.png)
 
 这篇文章，我会以编程导航网站为例，分享成为个人站长需要做的工作，以及我做个人站长的一些实战经验。希望对想成为独立开发者的朋友们有些帮助。
 
@@ -75,7 +72,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 我们编程导航的首页原型图，就是我自己画的，画图工具用语雀自带的画板或者 draw.io 就可以：
 
-![](https://pic.yupi.icu/1/image-20240620125043284.png)
+![](/imgs/56e32eb83ef38241.png)
 
 
 ### 3、需求分析
@@ -88,7 +85,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 需求排期表示例，这是我 6 月刚带大家做完的新项目：
 
-![](https://pic.yupi.icu/1/1718712573701-43a64ab8-b82f-4e47-b908-0e2b0fc97f49.png)
+![](/imgs/67d42e21c3442c56.png)
 
 
 ### 4、前期设计
@@ -99,7 +96,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 技术方案设计包括核心实现方案和细节确认、库表设计、接口设计等，比如我们编程导航交流板块的库表设计，就是通过方案文档进行确认后，才写代码开发的。
 
-![](https://pic.yupi.icu/1/image-20240620134404925.png)
+![](/imgs/a7e7b3d76cdde89b.png)
 
 
 ### 5、开发实现
@@ -115,7 +112,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 像我们编程导航的后端，就是用 Spring Boot 开发的，绝大多数功能用 MySQL 数据库就能搞定，有些功能还用到了 Redis、WebSocket 等技术。
 
-![](https://pic.yupi.icu/1/image-20240620142135649.png)
+![](/imgs/2a5f3eab5f912dad.png)
 
 
 #### 5.2 前端
@@ -124,7 +121,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 前端开发中，挑选一个好用的组件库可以大大提高开发效率，像我们用的是 Ant Design，优点是组件全面，基本每个页面都可以直接使用组件、像拼图一样完成开发。缺点就是这个库相对有点重，估计我们后面也会优化吧。
 
-![](https://pic.yupi.icu/1/image-20240620142519047.png)
+![](/imgs/fd8ff94961dc23dc.png)
 
 对于个人站长，前后端都要自己开发。我的建议是先做后端，明确了接口、数据和逻辑的定义后，再开发前端，会轻松很多。而且最好把复杂的计算逻辑放到后端，避免前后端维护 2 套逻辑，出现混淆和冲突。
 
@@ -156,14 +153,14 @@ source: "https://github.com/liyupi/ai-guide"
 
 平时可以多关注服务器的负载状态和资源利用率，像我自己很多网站占用的 CPU 和内存资源都非常低，所以我把部分网站放到了同一台服务器上，提高资源利用率。
 
-![](https://pic.yupi.icu/1/image-20240620140059240.png)
+![](/imgs/65132e8ef742bcd6.png)
 
 
 ### 8、运营分析
 
 上线只是一个新的开始，站长需要持续运营网站（比如发布内容、搞活动），并且监控和分析网站的流量和运营情况。可以使用 Google Analytics、51.La、百度统计等专业的工具进行数据统计和分析，一行代码即可接入。这些数据可以帮助你了解网站的 UV、PV、用户来源、各功能使用情况、广告的投放效果等，对于后续的产品改进和优化非常重要。
 
-![](https://pic.yupi.icu/1/image-20240620142703690.png)
+![](/imgs/67b64a2490a90b5d.png)
 
 
 ### 9、网站优化

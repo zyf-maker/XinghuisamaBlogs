@@ -3,15 +3,12 @@ title: "2025 年 9 月 AI 资讯汇总"
 summary: "2025 年 9 月共收录 99 条 AI 行业资讯，如Anthropic发布最新AI模型Claude Sonnet 4.5，可连续编程30小时；OpenAI密集落子算力帝国，千亿大单绑定英伟达甲骨文等。"
 order: 103
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-11-28"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《2025 年 9 月 AI 资讯汇总》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 ## 9 月 30 日
 - [Anthropic发布最新AI模型Claude Sonnet 4.5，可连续编程30小时](https://ai.codefather.cn/news/1972881648798248965)

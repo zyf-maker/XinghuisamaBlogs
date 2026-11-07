@@ -3,15 +3,12 @@ title: "阿里 Qwen 首个推理模型亮相！擅长数学和编程，支持联
 summary: "共收录 7 条 AI 行业资讯，如img；img等。"
 order: 1
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
-
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《阿里 Qwen 首个推理模型亮相！擅长数学和编程，支持联网搜索 | 附体验链接》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
 
 DeepSeek 爆火之后引发新一轮 AI 热，其他大模型厂商也有了动作。
 
@@ -33,19 +30,19 @@ Qwen团队表示，即将发布 QwQ-Max 的正式版，同步发布 Android 和 
 
 博客: https://qwenlm.github.io/blog/qwq-max-preview/
 
-![img](https://pic.yupi.icu/yuyi/8b34a6f9g00ss7usa00bbd000dw00e4c.gif)
+![img](/imgs/874c4719b012ed90.gif)
 
-![img](https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0225%2F5220ad03j00ss7usa003pd000zk00tec.jpg&thumbnail=660x2147483647&quality=80&type=jpg)
+![img](/imgs/9dde8183496b820e.jpg)
 
-![img](https://pic.yupi.icu/yuyi/8878cb41g00ss7usa00l2d000fm00e4c.gif)
+![img](/imgs/b7ae9e5955002668.gif)
 
-![img](https://pic.yupi.icu/yuyi/7ea5e69cg00ss7usa017sd000ke00dmc.gif)
+![img](/imgs/e70de7bc95930798.gif)
 
-![img](https://pic.yupi.icu/yuyi/8546ba9bg00ss7usa00wed000mw00dmc.gif)
+![img](/imgs/1cb67d78dd39edbb.gif)
 
-![img](https://pic.yupi.icu/yuyi/5604d7b5g00ss7usa00jdd000gk00dec.gif)
+![img](/imgs/c1e3302b6f5f920d.gif)
 
-![img](https://pic.yupi.icu/yuyi/d233a1c7g00ss7usa011yd000k200dec.gif)
+![img](/imgs/5a0b0667c87cd4fe.gif)
 
 
 > 来源：https://www.163.com/dy/article/JP81IHHP0511CSAO.html

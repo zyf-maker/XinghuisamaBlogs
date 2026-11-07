@@ -3,33 +3,30 @@ title: "企业级项目：开发 AI 恋爱大师应用 + 拥有自主规划能�
 summary: "大家好，我是程序员鱼皮。又经过了一段时间的爆肝，我在 编程导航 的保姆级新项目"
 order: 101
 level: "进阶"
-tags: ["AI 项目教程", "转载", "AI"]
+tags: ["AI 项目教程"]
 updated: "2026-10-22"
 readingTime: 5
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《🔥 企业级项目：开发 AI 恋爱大师应用 + 拥有自主规划能力的超级智能体》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 大家好，我是程序员鱼皮。又经过了一段时间的爆肝，我在 [编程导航](https://mp.weixin.qq.com/s/I1oD6pAaWBvGLyFDT9AgvA?token=1925632390&lang=zh_CN) 的保姆级新项目教程 ——  [AI 超级智能体](https://www.codefather.cn/course/1915010091721236482)，完结啦！
 
 这是一套以 AI 开发实战为核心的项目教程，一套教程带大家掌握新时代程序员必知必会的 AI 核心概念、AI 实用工具、AI 编程技术、AI 框架原理，大幅增加求职的竞争力！
 
-![](https://pic.yupi.icu/1/8052592c-97ce-4568-b82e-6153924a053c.png)
+![](/imgs/04d0aa0200134a87.png)
 
 除了全程直播讲解的、几十个小时的保姆级视频教程之外，我还写了整套文字教程（10 万多字），细致入微！
 
-![](https://pic.yupi.icu/1/image-20250529133214316.png)
+![](/imgs/13c6d658afbce9cb.png)
 
 这还不够，每个项目我都写了详细的简历写法和面试题解，做完项目直接写到简历上、准备面试，一条龙服务！
 
-![](https://pic.yupi.icu/1/image-20250529133336580.png)
+![](/imgs/d8745280724f908f.png)
 
 真心换真心，我做项目教程的付出也得到了大家的认可，也帮很多同学拿到了 offer~
 
-![](https://pic.yupi.icu/1/%E5%9B%BE7%20-%20%E7%9C%9F%E5%AE%9E%E8%AF%84%E4%BB%B7.png)
+![](/imgs/24c884c5cbb98155.png)
 
 接下来鱼皮给大家快速介绍这个项目，希望让更多需要它的同学看到，把它变成自己的项目。马上秋招提前批就要开始了，简历上写满前沿技术，不仅求职有底气，做项目的能力也会大幅提升！
 
@@ -42,11 +39,11 @@ source: "https://github.com/liyupi/ai-guide"
 
 `AI 恋爱大师应用` 可以依赖 AI 大模型解决用户的情感问题，支持多轮对话、基于自定义知识库进行问答、自主调用工具和 MCP 服务完成任务，比如调用地图服务获取附近地点并制定约会计划。
 
-![](https://pic.yupi.icu/1/1745225631067-44a111e1-1032-4f1c-bd69-9f08a59a654b.png)
+![](/imgs/58b718030dfbb9b5.png)
 
 此外，还会手把手带大家完成基于 ReAct 模式的 `自主规划智能体 YuManus` ，可以利用网页搜索、资源下载和 PDF 生成工具，帮用户制定完整的约会计划并生成文档：
 
-![](https://pic.yupi.icu/1/1745224663573-04af8f65-2da4-4ef9-8033-a179e703f9c4.png)
+![](/imgs/af071496920e808c.png)
 
 当然，学会这个项目后，你不仅能开发 AI 恋爱大师，而是能真正掌握 AI 核心概念和开发技巧，灵活开发各种复杂的 AI 应用，尽情发挥自己的想象力吧！
 
@@ -58,7 +55,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 > 开源仓库：https://github.com/liyupi/yu-ai-agent
 
-![](https://pic.yupi.icu/1/image-20250529133739433.png)
+![](/imgs/4bf97cc6945c910a.png)
 
 
 ### 2、项目收获
@@ -83,7 +80,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 举个例子，RAG 核心特性实战及全链路调优：
 
-![](https://pic.yupi.icu/1/1746250760306-3b545556-59df-43a9-b843-b73ec9b5a867.png)
+![](/imgs/eaab3d823c59e254.png)
 
 项目还有其他优势：
 
@@ -93,7 +90,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 鱼皮带你手撕开源框架 OpenManus 的源码：
 
-![](https://pic.yupi.icu/1/ae36dd94-e87e-4dfe-ae31-81a6cc32c9e8.png)
+![](/imgs/00e154e2fcd599c1.png)
 
 哪怕上面提到的这些技术没学过，也没有问题。鱼皮原创项目系列以实战为主，**从 0 到 1** 带大家学习技术知识，并立即实践运用到项目中，做到学以致用。
 
@@ -101,7 +98,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 满满的项目正反馈：
 
-![](https://pic.yupi.icu/1/20240604145231908.png)
+![](/imgs/af5ffee621e7c9c5.png)
 
 除视频教程外，鱼皮编程导航的项目还提供：
 
@@ -120,17 +117,17 @@ source: "https://github.com/liyupi/ai-guide"
 
 编程导航已有近 **20 套项目教程！** 每个项目的学习重点不同，几乎全都是前端 + 后端的 **全栈** 项目 。
 
-![](https://pic.yupi.icu/1/image-20250529134710424.png)
+![](/imgs/bf201683236ebcd4.png)
 
 欢迎加入 [编程导航](https://mp.weixin.qq.com/s/I1oD6pAaWBvGLyFDT9AgvA?token=1925632390&lang=zh_CN)，不仅能学习往期 **所有** 原创项目，还能享受更多原创资料、学习和求职指导、几百场面试视频，开启你的编程起飞之旅~
 
 🧧 新项目刚刚完结，给大家临时发放一波限时特惠，扫码即可领券加入。名额有限，速来学习：
 
-![](https://pic.yupi.icu/1/image-20250529134946243.png)
+![](/imgs/118291fcae03a2c4.png)
 
 1 天不到 1 块钱，绝对是对自己最值的投资！成为编程导航会员后，可以解锁近 20 套项目教程和海量资料，如图：
 
-![](https://pic.yupi.icu/1/image-20250120113756426.png)
+![](/imgs/a0139d19fc72dbf1.png)
 
 下面是更多关于本项目的介绍：
 
@@ -157,7 +154,7 @@ source: "https://github.com/liyupi/ai-guide"
 
 ### 架构设计图
 
-![](https://pic.yupi.icu/1/AI%E6%99%BA%E8%83%BD%E4%BD%93%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![](/imgs/2839356291b89733.png)
 
 
 ## 加入学习
@@ -166,10 +163,10 @@ source: "https://github.com/liyupi/ai-guide"
 
 🧧 新项目刚刚完结，给大家临时发放一波限时特惠，扫码即可领券加入。名额有限，速来学习：
 
-![](https://pic.yupi.icu/1/image-20250529134946243.png)
+![](/imgs/118291fcae03a2c4.png)
 
 已经有几万名小伙伴学起来了，还有很多大家自发整理的笔记。不得不说，做项目真的给了很多同学坚持学习的目标、也有了更多拿 Offer 的机会，大家的动力也更足了！冲冲冲！
 
-![](https://pic.yupi.icu/1/image-20250417125909538.png)
+![](/imgs/b45d42ad0f3709ab.png)
 
 更多往期项目可以阅读 [这篇文章](https://mp.weixin.qq.com/s/9dpRTZijzeG0OuMgEyQhEg) 来了解，免费获取鱼皮的项目学习指南哦~

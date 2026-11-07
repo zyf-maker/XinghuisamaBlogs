@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import SidebarNav from "../../../../components/ai/SidebarNav";
+import ModuleShell from "../../../../components/ModuleShell";
+import SideNav from "../../../../components/SideNav";
 import AiToc from "../../../../components/ai/AiToc";
 import { getAllCategoryBriefs, getCategoryWithDocs, getDoc, getNeighbours } from "../../../../lib/aiDocs";
+import { moduleLinks } from "../../../../lib/moduleNav";
 import { extractToc, renderMarkdown } from "../../../../lib/markdown";
 
 export function generateStaticParams() {
@@ -42,30 +44,46 @@ export default async function AiDocPage({
   const html = await renderMarkdown(doc.body);
   const toc = extractToc(doc.body);
 
+  const sections = [
+    {
+      title: cat.name,
+      items: cat.docs.map((d) => ({
+        label: d.title,
+        href: `/ai/${cat.slug}/${d.slug}`,
+      })),
+    },
+    {
+      title: "全部分组",
+      items: categories.map((c) => ({ label: c.name, href: `/ai/${c.slug}`, meta: String(c.docs.length) })),
+    },
+    {
+      title: "其他模块",
+      items: moduleLinks
+        .filter((m) => m.href !== "/ai")
+        .map((m) => ({ label: m.label, href: m.href })),
+    },
+  ];
+
   return (
-    <main className="mx-auto w-[92%] max-w-6xl pb-24 pt-12">
+    <>
       <nav
         aria-label="面包屑"
-        className="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]"
+        className="mx-auto mt-8 flex w-[92%] max-w-6xl flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]"
       >
         <Link href="/ai" className="transition-colors hover:text-[var(--accent)]">
-          KNOWLEDGE
+          知识库
         </Link>
         <span aria-hidden="true">/</span>
         <Link href={`/ai/${cat.slug}`} className="transition-colors hover:text-[var(--accent)]">
-          {cat.en.toUpperCase()}
+          {cat.name}
         </Link>
-        <span aria-hidden="true">/</span>
-        <span className="text-[var(--ink-soft)]">{doc.slug}</span>
       </nav>
 
-      <div className="mt-8 grid gap-12 lg:grid-cols-[220px_1fr_200px] lg:gap-10">
-        <aside className="hidden lg:block">
-          <div className="sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto pr-1">
-            <SidebarNav categories={categories} activeCategory={cat.slug} />
-          </div>
-        </aside>
-
+      <ModuleShell
+        wide
+        sidebar={<SideNav sections={sections} footer={{ label: "全部篇目 →", href: "/ai/all" }} />}
+        aside={toc.length > 0 ? <AiToc toc={toc} /> : undefined}
+      >
         <article className="min-w-0">
           <header className="border-b border-[var(--line)] pb-7">
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">
@@ -78,11 +96,15 @@ export default async function AiDocPage({
               <span>{doc.updated}</span>
             </div>
 
-            <h1 className="mt-4 font-serif text-[1.9rem] font-black leading-[1.2] tracking-tight text-[var(--ink)] sm:text-[2.4rem]">
+            <h1 className="mt-4 font-serif text-[1.85rem] font-black leading-[1.22] tracking-tight text-[var(--ink)] sm:text-[2.3rem]">
               {doc.title}
             </h1>
 
-            <p className="mt-4 max-w-2xl text-[13.5px] leading-[1.9] text-[var(--ink-soft)]">{doc.summary}</p>
+            {doc.summary ? (
+              <p className="mt-4 max-w-2xl text-[13.5px] leading-[1.9] text-[var(--ink-soft)]">
+                {doc.summary}
+              </p>
+            ) : null}
 
             {doc.tags.length > 0 ? (
               <div className="mt-5 flex flex-wrap gap-1.5">
@@ -90,7 +112,7 @@ export default async function AiDocPage({
                   <Link
                     key={tag}
                     href={`/ai/all?tag=${encodeURIComponent(tag)}`}
-                    className="tag transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                    className="rounded-sm border border-[var(--line)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--muted)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
                   >
                     {tag}
                   </Link>
@@ -139,8 +161,10 @@ export default async function AiDocPage({
             )}
           </nav>
 
-          <p className="mt-8 font-mono text-[10.5px] leading-[1.8] text-[var(--muted)]">
-            这一组共 {cat.docs.length} 篇 —
+          <p className="mt-6 font-mono text-[10.5px] leading-[1.9] text-[var(--muted)]">
+            {doc.author ? <>作者 {doc.author} · </>
+              : null}
+            这一组共 {cat.docs.length} 篇 ·
             <Link
               href={`/ai/${cat.slug}`}
               className="ml-1 text-[var(--accent)] underline decoration-[var(--accent-soft)] underline-offset-4"
@@ -149,13 +173,7 @@ export default async function AiDocPage({
             </Link>
           </p>
         </article>
-
-        <aside className="hidden lg:block">
-          <div className="sticky top-28">
-            <AiToc toc={toc} />
-          </div>
-        </aside>
-      </div>
-    </main>
+      </ModuleShell>
+    </>
   );
 }

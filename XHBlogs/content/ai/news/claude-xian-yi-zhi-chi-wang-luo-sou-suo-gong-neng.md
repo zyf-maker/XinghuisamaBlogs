@@ -3,19 +3,16 @@ title: "Claude 现已支持网络搜索功能"
 summary: "共收录 2 条 AI 行业资讯，如一只手持地球的插画；个人资料设置等。"
 order: 43
 level: "入门"
-tags: ["行业资讯", "转载", "AI"]
+tags: []
 updated: "2025-05-30"
 readingTime: 1
 author: "程序员鱼皮"
 source: "https://github.com/liyupi/ai-guide"
 ---
 
-> 本文转载自 **[程序员鱼皮 · AI 指南](https://github.com/liyupi/ai-guide)**，原文标题《Claude 现已支持网络搜索功能》，作者 程序员鱼皮。
-> 内容按 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可使用，本站仅作非商业性收录与排版适配。
-
 2025 年 3 月 20 日
 
-![一只手持地球的插画](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7046dcc04109d6ebd834c5109721387c974b5e14-2880x1620.png&w=3840&q=75)
+![一只手持地球的插画](/imgs/d6e5de01acda2a93.webp)
 
 您现在可以使用 Claude 进行互联网搜索，以提供更及时和相关的回答。借助网络搜索功能，Claude 能够获取最新的事件和信息，从而在需要最新数据的任务中提高准确性。
 
