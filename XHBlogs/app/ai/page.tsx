@@ -51,7 +51,14 @@ function CategoryGrid({ items, startIndex }: { items: Cat[]; startIndex: number 
 function SectionHead({ title, note, count }: { title: string; note: string; count: string }) {
   return (
     <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[var(--line)] pb-3">
-      <h2 className="font-serif text-lg font-bold text-[var(--ink)]">{title}</h2>
+      <h2 className="font-serif text-lg font-bold text-[var(--ink)]">
+        {title}
+        {note ? (
+          <span className="ml-3 font-mono text-[10px] font-normal tracking-[0.12em] text-[var(--muted)]">
+            {note}
+          </span>
+        ) : null}
+      </h2>
       <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">{count}</span>
     </div>
   );

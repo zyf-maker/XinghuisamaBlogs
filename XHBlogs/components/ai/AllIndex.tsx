@@ -11,11 +11,15 @@ type Props = {
   initialQuery?: string;
 };
 
-const LEVELS = ["全部", "入门", "进阶", "深入"];
-
 export default function AllIndex({ entries, categories, initialQuery = "" }: Props) {
   const [query, setQuery] = useState(initialQuery);
   const [activeCat, setActiveCat] = useState("all");
+
+  const countOf = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const e of entries) map.set(e.category, (map.get(e.category) ?? 0) + 1);
+    return map;
+  }, [entries]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -85,6 +89,7 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
             }`}
           >
             {c.name}
+            <span className="ml-1 opacity-55">{countOf.get(c.slug) ?? 0}</span>
           </button>
         ))}
       </div>

@@ -12,7 +12,7 @@ const outFile = path.join(root, "lib", "aiIndex.generated.json");
 const SKIP_CATEGORIES = new Set(["news"]);
 
 /** 每篇正文进索引的字符数。总数 330+ 篇，留 1200 字足够命中主题词 */
-const BODY_LIMIT = 700;
+const BODY_LIMIT = 1800;
 
 const CATEGORY_NAMES = {
   foundations: "模型基础",
@@ -75,4 +75,5 @@ function collect() {
 const docs = collect();
 fs.writeFileSync(outFile, JSON.stringify(docs), "utf8");
 console.log(`[ai-index] ${docs.length} docs -> ${path.relative(root, outFile)}`);
+
 

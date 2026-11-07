@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import BackButton from '../../components/BackButton'; // 注意层级路径
 import { projectsData } from '../../data/projects';
@@ -110,6 +111,15 @@ export default function ProjectsBoard() {
           </motion.div>
         )}
       </motion.div>
+
+      <p className="mt-8 max-w-2xl text-[12.5px] leading-[1.9] text-[var(--muted)]">
+        这里只放能公开的仓库。还有几个在内部跑的东西暂时没整理出来，
+        更实在的产出在
+        <Link href="/ai" className="link-accent mx-1">
+          知识库
+        </Link>
+        里。
+      </p>
 
     </div>
   );
