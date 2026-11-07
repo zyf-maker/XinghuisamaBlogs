@@ -16,12 +16,12 @@ type Props = {
  */
 export default function ModuleShell({ sidebar, children, aside, wide }: Props) {
   const cols = aside
-    ? "lg:grid-cols-[210px_minmax(0,1fr)_190px]"
+    ? "lg:grid-cols-[196px_minmax(0,1fr)_236px]"
     : "lg:grid-cols-[210px_minmax(0,1fr)]";
 
   return (
     <div className={`mx-auto w-[92%] ${wide ? "max-w-6xl" : "max-w-5xl"} pb-24`}>
-      <div className={`grid gap-10 pt-10 ${cols} lg:gap-12`}>
+      <div className={`grid gap-10 pt-10 ${cols} lg:gap-10`}>
         {/* 移动端：折叠的目录 */}
         <details className="border-y border-[var(--line)] py-3 lg:hidden">
           <summary className="flex cursor-pointer items-center justify-between text-[13px] text-[var(--ink-soft)]">

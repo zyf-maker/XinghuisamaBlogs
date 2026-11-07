@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar';
 import PageTransition from '../../components/PageTransition';
 import ContentLayout from '../../components/ContentLayout';
 import { siteConfig } from '../../siteConfig';
+import { asset } from '../../lib/base';
 import TimelineClient from '../../components/TimelineClient';
 // ToastProvider
 import { ToastProvider } from '../../components/ToastProvider';
@@ -41,7 +42,7 @@ export default function Timeline() {
           date: data.date || '1970-01-01',
           description: data.description || '',
           tags: postTags,
-          cover: data.cover || siteConfig.defaultPostCover,
+          cover: asset(data.cover || siteConfig.defaultPostCover),
         });
       });
 

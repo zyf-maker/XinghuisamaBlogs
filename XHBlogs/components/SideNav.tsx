@@ -46,13 +46,14 @@ export default function SideNav({ sections, footer }: Props) {
                   <Link
                     href={item.href}
                     aria-current={active ? "page" : undefined}
+                    title={item.label}
                     className={`-mx-2 flex items-baseline justify-between gap-2 px-2 py-2 transition-colors ${
                       active
                         ? "bg-[var(--accent-soft)] font-medium text-[var(--accent)] shadow-[inset_2px_0_0_var(--accent)]"
                         : "text-[var(--ink-soft)] hover:text-[var(--ink)]"
                     }`}
                   >
-                    <span className="min-w-0 truncate">{item.label}</span>
+                    <span className="min-w-0 leading-[1.45] line-clamp-2">{item.label}</span>
                     {item.meta ? (
                       <span
                         className={`shrink-0 font-mono text-[10px] ${

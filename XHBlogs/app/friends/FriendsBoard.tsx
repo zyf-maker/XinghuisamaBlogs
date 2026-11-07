@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import BackButton from '../../components/BackButton';
 import { friendsData } from '../../data/friends';
 import Comments from '../../components/Comments'; // 🌟 引入你的 Gitalk 组件
-import { siteConfig } from '../../siteConfig'; // 🌟 引入刚刚更新的全局配置文件
+import { siteConfig } from '../../siteConfig';
+import { asset } from '../../lib/base'; // 🌟 引入刚刚更新的全局配置文件
 
 // Framer Motion 动画变体：交错子元素
 const containerVariants = {
@@ -65,7 +66,7 @@ export default function FriendsBoard() {
             >
               <div className="flex items-start gap-3">
                 <img
-                  src={friend.avatar}
+                  src={asset(friend.avatar)}
                   alt={friend.name}
                   className="h-9 w-9 shrink-0 rounded-full border border-[var(--line)] bg-[var(--surface-alt)] object-cover"
                 />

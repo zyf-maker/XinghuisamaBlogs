@@ -57,7 +57,7 @@ export default function AiToc({ toc }: { toc: TocItem[] }) {
               <button
                 type="button"
                 onClick={(e) => jump(e, item.id)}
-                className={`-ml-px block w-full border-l-2 py-0.5 pl-3 text-left leading-[1.6] transition-colors ${
+                className={`-ml-px block w-full break-words border-l-2 py-0.5 pl-3 text-left leading-[1.6] transition-colors ${
                   isActive
                     ? "border-[var(--accent)] text-[var(--accent)]"
                     : "border-transparent text-[var(--muted)] hover:text-[var(--ink)]"

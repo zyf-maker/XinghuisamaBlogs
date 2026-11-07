@@ -12,7 +12,7 @@
   --surface-alt: #efeeea;
   --ink: #17161a;
   --ink-soft: #33323a;
-  --muted: #5f5e66;
+  --muted: #494851;
   --line: rgba(23, 22, 26, 0.1);
   --line-strong: rgba(23, 22, 26, 0.22);
   --accent: #95412c;
@@ -45,7 +45,7 @@
   --surface-alt: #1a1a1d;
   --ink: #f3f1ec;
   --ink-soft: #d7d3ca;
-  --muted: #9c978c;
+  --muted: #b6b1a6;
   --line: rgba(243, 241, 236, 0.12);
   --line-strong: rgba(243, 241, 236, 0.3);
   --accent: #d97757;
@@ -215,10 +215,10 @@
   /* 章节小标签：全大写 + 字距 */
   .eyebrow {
     font-family: var(--font-geist-mono), ui-monospace, monospace;
-    font-size: 0.6875rem;
+    font-size: 0.7rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--ink-soft);
   }
 
   /* 发丝分割线 */
@@ -274,7 +274,7 @@
     display: inline-flex;
     align-items: center;
     font-family: var(--font-geist-mono), ui-monospace, monospace;
-    font-size: 0.6875rem;
+    font-size: 0.7rem;
     letter-spacing: 0.04em;
     color: var(--muted);
     border: 1px solid var(--line);
@@ -308,6 +308,11 @@
   color: var(--ink-soft);
 }
 .prose h1, .prose h2, .prose h3, .prose h4 { color: var(--ink); }
+/* 正文行长与段距：长文一篇几千字，密排会累。 */
+.prose p { line-height: 1.95; margin-bottom: 1.15em; }
+.prose li { line-height: 1.8; margin-bottom: 0.35em; }
+.prose h2 { margin-top: 2.2em; margin-bottom: 0.75em; line-height: 1.45; }
+.prose h3 { margin-top: 1.7em; margin-bottom: 0.6em; line-height: 1.5; }
 .prose a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
 .prose a:hover { border-bottom-color: var(--accent); }
 .prose blockquote {
@@ -319,7 +324,7 @@
   font-style: normal;
 }
 .prose blockquote p::before, .prose blockquote p::after { content: none; }
-.prose img { border-radius: 8px; border: 1px solid var(--line); }
+.prose img { display: block; margin: 1.75em auto; border-radius: 8px; border: 1px solid var(--line); }
 .prose code {
   font-family: var(--font-code);
   background: var(--surface-alt);
