@@ -48,3 +48,6 @@ __pycache__/
 
 .vercel
 .env*
+
+# 迁移来的外部资料只作本地检索测试，不进仓库也不进正式构建
+/content/archive/

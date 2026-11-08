@@ -141,7 +141,7 @@ export default function AskPanel() {
         {messages.map((m, i) =>
           m.role === "user" ? (
             <div key={i} className="flex justify-end">
-              <p className="max-w-[85%] bg-[var(--surface-alt)] px-3.5 py-2 text-[13px] leading-[1.8] text-[var(--ink)]">
+              <p className="max-w-[85%] rounded-[var(--r-md)] bg-[var(--surface-alt)] px-3.5 py-2 text-[13px] leading-[1.8] text-[var(--ink)]">
                 {m.content}
               </p>
             </div>
@@ -149,7 +149,7 @@ export default function AskPanel() {
             <div key={i} className="border-l-2 border-[var(--accent)] pl-3.5">
               {m.sources && m.sources.length > 0 ? (
                 <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1">
-                  <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">参考</span>
+                  <span className="text-[11px] text-[var(--muted)]">参考</span>
                   {m.sources.map((s) => (
                     <Link
                       key={s.key}
@@ -170,7 +170,7 @@ export default function AskPanel() {
         )}
 
         {error ? (
-          <p className="border border-[var(--err)] px-3 py-2 text-[12px] text-[var(--err)]">{error}</p>
+          <p className="rounded-[var(--r-sm)] border border-[var(--err)] px-3 py-2 text-[12px] text-[var(--err)]">{error}</p>
         ) : null}
       </div>
 
@@ -185,12 +185,12 @@ export default function AskPanel() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="问点具体的，比如「块大小 512 够用吗」"
-          className="h-10 flex-1 border border-[var(--line)] bg-transparent px-3 text-[13px] text-[var(--ink)] outline-none placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
+          className="glass-inset h-10 flex-1 rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] px-4 text-[13px] text-[var(--ink)] outline-none placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
         />
         <button
           type="submit"
           disabled={busy || !input.trim()}
-          className="h-10 shrink-0 bg-[var(--accent)] px-4 text-[13px] font-semibold text-[var(--accent-ink)] transition-opacity hover:opacity-88 disabled:opacity-40"
+          className="h-10 shrink-0 rounded-full bg-[var(--accent)] px-5 text-[13px] font-semibold text-[var(--accent-ink)] transition-opacity hover:opacity-88 disabled:opacity-40"
         >
           提问
         </button>

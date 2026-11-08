@@ -23,12 +23,21 @@ export default function ModuleShell({ sidebar, children, aside, wide }: Props) {
     <div className={`mx-auto w-[92%] ${wide ? "max-w-6xl" : "max-w-5xl"} pb-24`}>
       <div className={`grid gap-10 pt-10 ${cols} lg:gap-10`}>
         {/* 移动端：折叠的目录 */}
-        <details className="border-y border-[var(--line)] py-3 lg:hidden">
-          <summary className="flex cursor-pointer items-center justify-between text-[13px] text-[var(--ink-soft)]">
-            <span className="eyebrow">目录</span>
-            <span className="font-mono text-[10px] text-[var(--muted)]">展开 / 收起</span>
+        <details className="group border-y border-[var(--line)] lg:hidden">
+          {/* 整条可点，不再只有几个小字是热区 */}
+          <summary className="flex cursor-pointer list-none items-center justify-between py-3.5 text-[13px] text-[var(--ink-soft)] marker:hidden">
+            <span>目录</span>
+            <svg
+              viewBox="0 0 24 24"
+              className="h-4 w-4 text-[var(--muted)] transition-transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
           </summary>
-          <div className="pt-4">{sidebar}</div>
+          <div className="pb-4">{sidebar}</div>
         </details>
 
         <aside className="hidden lg:block">

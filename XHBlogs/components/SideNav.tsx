@@ -34,7 +34,7 @@ export default function SideNav({ sections, footer }: Props) {
   return (
     <nav aria-label="模块导航" className="text-[13.5px]">
       {sections.map((section, si) => (
-        <div key={section.title} className={si === 0 ? "" : "mt-7"}>
+        <div key={section.title} className={si === 0 ? "" : "mt-6"}>
           <div className="border-b border-[var(--line)] pb-2">
             <span className="eyebrow">{section.title}</span>
           </div>
@@ -47,10 +47,10 @@ export default function SideNav({ sections, footer }: Props) {
                     href={item.href}
                     aria-current={active ? "page" : undefined}
                     title={item.label}
-                    className={`-mx-2 flex items-baseline justify-between gap-2 px-2 py-2 transition-colors ${
+                    className={`-mx-2 flex items-baseline justify-between gap-2 rounded-r-[var(--r-sm)] px-2 py-[7px] transition-colors ${
                       active
-                        ? "pl-2.5 font-medium text-[var(--accent)] shadow-[inset_2px_0_0_var(--accent)]"
-                        : "text-[var(--ink-soft)] hover:text-[var(--ink)]"
+                        ? "bg-[var(--accent-soft)] pl-2.5 font-medium text-[var(--accent)] shadow-[inset_2px_0_0_var(--accent)]"
+                        : "text-[var(--ink-soft)] hover:bg-[var(--surface-alt)]"
                     }`}
                   >
                     <span className="min-w-0 leading-[1.45] line-clamp-2">{item.label}</span>

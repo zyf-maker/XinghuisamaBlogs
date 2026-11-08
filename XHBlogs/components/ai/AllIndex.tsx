@@ -59,7 +59,7 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
           />
         </label>
 
-        <p className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">
+        <p className="text-[11.5px] text-[var(--muted)]">
           {filtered.length} / {entries.length} 篇
         </p>
       </div>
@@ -69,7 +69,7 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
         <button
           type="button"
           onClick={() => setActiveCat("all")}
-          className={`tag transition-colors ${
+          className={`tag glass-inset transition-colors ${
             activeCat === "all"
               ? "border-[var(--accent)] text-[var(--accent)]"
               : "hover:border-[var(--line-strong)]"
@@ -82,7 +82,7 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
             key={c.slug}
             type="button"
             onClick={() => setActiveCat(c.slug)}
-            className={`tag transition-colors ${
+            className={`tag glass-inset transition-colors ${
               activeCat === c.slug
                 ? "border-[var(--accent)] text-[var(--accent)]"
                 : "hover:border-[var(--line-strong)]"
@@ -105,7 +105,7 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
                 <h2 className="font-serif text-base font-bold text-[var(--ink)]">{group.name}</h2>
                 <Link
                   href={`/ai/${group.slug}`}
-                  className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                  className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
                 >
                   {group.items.length} →
                 </Link>
@@ -118,7 +118,7 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
                       <span className="min-w-0 text-[13.5px] text-[var(--ink-soft)] transition-colors group-hover:text-[var(--accent)]">
                         {item.title}
                       </span>
-                      <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">
+                      <span className="shrink-0 text-[11.5px] text-[var(--ink-soft)] opacity-80">
                         {item.tags.slice(0, 2).join(" / ")}
                       </span>
                     </Link>

@@ -14,7 +14,8 @@ const contentDir = path.join(root, "content", demo ? "archive/ai" : "notes");
 const outFile = path.join(root, "lib", "aiIndex.generated.json");
 
 /** 不进检索的分类：资讯只是链接列表，噪音大于信号 */
-const SKIP_CATEGORIES = new Set(["news"]);
+// 全部正式笔记都进检索索引；行业动态现在是原创内容，不再跳过
+const SKIP_CATEGORIES = new Set([]);
 
 /** 每篇正文进索引的字符数。edge 函数有体积上限，1800 字足够命中主题词。 */
 const BODY_LIMIT = 1800;

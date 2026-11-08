@@ -7,7 +7,6 @@ import SideNav from "../../components/SideNav";
 import { aiGroups } from "../../data/aiCategories";
 import { getAllCategories, getGroups, getRecentDocs } from "../../lib/aiDocs";
 import { asset } from "../../lib/base";
-import { moduleLinks } from "../../lib/moduleNav";
 
 export const metadata: Metadata = {
   title: "知识库",
@@ -25,7 +24,8 @@ export default function AiIndexPage() {
   const allCats = getAllCategories().filter((c) => c.docs.length > 0);
   const recent = getRecentDocs(6);
 
-  // 大类即使暂时没内容也保留，页面上显示空态，避免左栏跳来跳去
+  // 侧栏只放知识库自己的层级：六个主题。全站模块入口在顶部导航里已有，
+  // 这里再列一遍会让「这是站内跳转还是知识库子分类」分不清。
   const sidebar = [
     {
       title: "主题",
@@ -33,14 +33,6 @@ export default function AiIndexPage() {
         const hit = groups.find((x) => x.slug === g.slug);
         return { label: g.name, href: `/ai#${g.slug}`, meta: hit ? String(hit.docCount) : "0" };
       }),
-    },
-    {
-      title: "索引",
-      items: [{ label: "全部篇目", href: "/ai/all" }],
-    },
-    {
-      title: "其他模块",
-      items: moduleLinks.filter((m) => m.href !== "/ai").map((m) => ({ label: m.label, href: m.href })),
     },
   ];
 
@@ -54,7 +46,7 @@ export default function AiIndexPage() {
             actions={
               <Link
                 href="/ai/ask"
-                className="rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] px-3.5 py-1.5 text-[11.5px] text-[var(--ink-soft)] backdrop-blur-md transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                className="rounded-full border border-[var(--accent)] bg-[var(--accent-soft)] px-3.5 py-1.5 text-[11.5px] font-medium text-[var(--accent)] backdrop-blur-md transition-colors hover:bg-[var(--accent)] hover:text-[var(--accent-ink)]"
               >
                 直接提问 →
               </Link>
@@ -63,7 +55,7 @@ export default function AiIndexPage() {
         </div>
       </div>
 
-      <ModuleShell wide sidebar={<SideNav sections={sidebar} />}>
+      <ModuleShell wide sidebar={<SideNav sections={sidebar} footer={{ label: "全部篇目 →", href: "/ai/all" }} />}>
         {allCats.length === 0 ? (
           <div className="glass-card p-8">
             <p className="font-serif text-[1.05rem] font-bold text-[var(--ink)]">这里还是空的</p>
@@ -109,7 +101,7 @@ export default function AiIndexPage() {
                     </div>
                   </div>
 
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-3 grid auto-rows-fr gap-3 sm:grid-cols-2">
                     {cats.map((cat) => (
                       <div key={cat.slug} className="glass-flat p-5">
                           <div className="flex flex-wrap items-baseline justify-between gap-2">

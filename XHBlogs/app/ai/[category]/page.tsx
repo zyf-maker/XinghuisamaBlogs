@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import PageHeader from "../../../components/PageHeader";
 import ModuleShell from "../../../components/ModuleShell";
 import SideNav from "../../../components/SideNav";
 import { aiGroups, getCategory } from "../../../data/aiCategories";
 import { getAllCategoryBriefs, getCategoryWithDocs } from "../../../lib/aiDocs";
 import { asset } from "../../../lib/base";
-import { moduleLinks } from "../../../lib/moduleNav";
+
 
 export function generateStaticParams() {
   return getAllCategoryBriefs().map((c) => ({ category: c.slug }));
@@ -52,34 +51,36 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         .filter((c) => c.group === meta?.group)
         .map((c) => ({ label: c.name, href: `/ai/${c.slug}`, meta: String(c.docs.length) })),
     },
-    {
-      title: "其他模块",
-      items: moduleLinks.filter((m) => m.href !== "/ai").map((m) => ({ label: m.label, href: m.href })),
-    },
+
   ];
 
   return (
     <>
-      <div className="mx-auto w-[92%] max-w-6xl">
-        <div className="pt-14">
-          <PageHeader
-            title={cat.name}
-            description={cat.intro}
-            actions={
-              <Link href="/ai" className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]">
-                ← 知识库
-              </Link>
-            }
-          />
+      {/* 封面图直接铺在页首底下，文字压在图上，不再单独占一条横幅 */}
+      <div className="relative overflow-hidden">
+        <img
+          src={asset(`/covers/${cat.slug}.svg`)}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--paper)]/96 via-[var(--paper)]/80 to-[var(--paper)]/45" />
+        <div className="relative mx-auto w-[92%] max-w-6xl pt-12">
+          <header className="border-b border-[var(--line)] pb-6">
+            <Link
+              href="/ai"
+              className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+            >
+              ← 知识库
+            </Link>
+            <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.4rem]">
+              {cat.name}
+            </h1>
+            <p className="mt-2.5 max-w-xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">{cat.intro}</p>
+          </header>
         </div>
       </div>
 
-      <ModuleShell wide sidebar={<SideNav sections={sections} />}>
-        <div className="relative mb-2 overflow-hidden rounded-[var(--r-lg)] border border-[var(--glass-line)]">
-          <img src={asset(`/covers/${cat.slug}.svg`)} alt="" className="h-28 w-full object-cover sm:h-32" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--paper)]/80 to-transparent" />
-        </div>
-
+      <ModuleShell wide sidebar={<SideNav sections={sections} footer={{ label: "全部篇目 →", href: "/ai/all" }} />}>
         {cat.docs.length === 0 ? (
           <p className="py-16 text-[13px] text-[var(--muted)]">这一组还在整理。</p>
         ) : (
@@ -90,9 +91,9 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                   <h2 className="font-serif text-[1.1rem] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                     {doc.title}
                   </h2>
-                  <span className="shrink-0 text-[11px] text-[var(--muted)]">{doc.readingTime} 分钟</span>
+                  <span className="shrink-0 text-[11.5px] text-[var(--muted)]">{doc.readingTime} 分钟</span>
                 </div>
-                <p className="mt-2 text-[13px] leading-[1.85] text-[var(--ink-soft)]">{doc.summary}</p>
+                <p className="mt-2.5 text-[13px] leading-[1.9] text-[var(--ink-soft)]">{doc.summary}</p>
               </Link>
             ))}
           </div>

@@ -92,7 +92,7 @@ export default function Home() {
               </p>
 
               <div className="mt-8 max-w-2xl">
-                <SearchBox items={searchItems} limit={10} placeholder="搜笔记、工具、提示词，或者直接搜一个报错…" />
+                <SearchBox items={searchItems} limit={10} placeholder="搜笔记、工具或提示词" />
               </div>
 
               <div className="mt-8 flex flex-wrap gap-2">

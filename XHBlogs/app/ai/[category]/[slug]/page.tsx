@@ -6,7 +6,6 @@ import ModuleShell from "../../../../components/ModuleShell";
 import SideNav from "../../../../components/SideNav";
 import AiToc from "../../../../components/ai/AiToc";
 import { getAllCategoryBriefs, getCategoryWithDocs, getDoc, getNeighbours } from "../../../../lib/aiDocs";
-import { asset } from "../../../../lib/base";
 import { moduleLinks } from "../../../../lib/moduleNav";
 import { extractToc, renderMarkdown } from "../../../../lib/markdown";
 
@@ -73,7 +72,7 @@ export default async function AiDocPage({
     >
       <article className="min-w-0">
         {/* 页首只留标题与摘要，不摆分类 / 等级 / 时长 / 日期那一排小字 */}
-        <header className="pb-8 pt-10">
+        <header className="pb-7 pt-8">
           <Link
             href={`/ai/${cat.slug}`}
             className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
@@ -81,7 +80,7 @@ export default async function AiDocPage({
             ← {cat.name}
           </Link>
 
-          <h1 className="mt-3 font-serif text-[1.9rem] font-black leading-[1.2] tracking-tight text-[var(--ink)] sm:text-[2.35rem]">
+          <h1 className="mt-3 font-serif text-[1.7rem] font-black leading-[1.25] tracking-tight text-[var(--ink)] sm:text-[2.25rem]">
             {doc.title}
           </h1>
 
@@ -89,9 +88,7 @@ export default async function AiDocPage({
             <p className="mt-3.5 max-w-2xl text-[13.5px] leading-[1.9] text-[var(--ink-soft)]">{doc.summary}</p>
           ) : null}
 
-          <div className="mt-6 overflow-hidden rounded-[var(--r-lg)] border border-[var(--glass-line)]">
-            <img src={asset(`/covers/${cat.slug}.svg`)} alt="" className="h-32 w-full object-cover sm:h-40" />
-          </div>
+
         </header>
 
         <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
