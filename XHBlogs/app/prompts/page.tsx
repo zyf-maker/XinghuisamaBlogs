@@ -19,7 +19,6 @@ export default function PromptsPage() {
       items: promptGroups.map((g) => ({
         label: g.name,
         href: `/prompts/${g.slug}`,
-        meta: String(promptsData.filter((p) => p.group === g.slug).length),
       })),
     },
     {
@@ -35,9 +34,8 @@ export default function PromptsPage() {
       <div className="mx-auto w-[92%] max-w-6xl">
         <div className="pt-14">
           <PageHeader
-            eyebrow={`Prompts · ${promptsData.length} 条 · ${promptGroups.length} 组`}
             title="提示词"
-            description="尖括号里的是占位符，替换成你自己的内容。真要稳定，靠的是把要求写具体，不是堆技巧词。"
+            description="尖括号里是占位符，替换成你自己的内容。要靠把要求写具体，不是堆技巧词。"
           />
         </div>
       </div>
@@ -50,19 +48,9 @@ export default function PromptsPage() {
           const items = promptsData.filter((p) => p.group === g.slug);
           if (items.length === 0) return null;
           return (
-            <section key={g.slug} id={g.slug} className="mb-16 scroll-mt-24 last:mb-0">
-              <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[var(--line)] pb-3">
-                <h2 className="font-serif text-lg font-bold text-[var(--ink)]">
-                  {g.name}
-                  <span className="ml-3 font-mono text-[10px] font-normal tracking-[0.12em] text-[var(--muted)]">
-                    {g.en.toUpperCase()}
-                  </span>
-                </h2>
-                <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">
-                  {items.length} 条
-                </span>
-              </div>
-              <p className="mt-3 text-[12.5px] leading-[1.8] text-[var(--muted)]">{g.description}</p>
+            <section key={g.slug} id={g.slug} className="mb-12 scroll-mt-24 last:mb-0">
+              <h2 className="font-serif text-[1.35rem] font-bold text-[var(--ink)]">{g.name}</h2>
+              <p className="mt-2 max-w-2xl text-[12.5px] leading-[1.8] text-[var(--muted)]">{g.description}</p>
               <PromptList items={items} />
             </section>
           );

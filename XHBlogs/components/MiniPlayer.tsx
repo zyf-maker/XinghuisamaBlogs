@@ -31,7 +31,6 @@ export default function MiniPlayer() {
   if (isLoading) {
     return (
       <div className="glass glass-sheen p-5">
-        <p className="eyebrow">Stereo</p>
         <p className="mt-3 font-mono text-[11px] text-[var(--muted)]">连接中 …</p>
       </div>
     );
@@ -40,7 +39,6 @@ export default function MiniPlayer() {
   if (!playlist.length || !currentSong) {
     return (
       <div className="glass glass-sheen p-5">
-        <p className="eyebrow">Stereo</p>
         <p className="mt-3 text-[13px] text-[var(--muted)]">歌单尚未配置。</p>
       </div>
     );
@@ -58,11 +56,11 @@ export default function MiniPlayer() {
           }`}
         />
         <div className="min-w-0 flex-1">
-          <p className="eyebrow">Now Playing</p>
+          <p className="text-[11px] text-[var(--muted)]">正在播放</p>
           <p className="mt-1 truncate font-serif text-[15px] font-bold text-[var(--ink)]">{currentSong.title}</p>
           <p className="truncate text-[12px] text-[var(--muted)]">{currentSong.artist}</p>
         </div>
-        <Link href="/music" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
+        <Link href="/music" className="text-[11px] text-[var(--muted)] hover:text-[var(--accent)]">
           ALL →
         </Link>
       </div>

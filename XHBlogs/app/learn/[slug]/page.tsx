@@ -39,7 +39,6 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
       items: route.steps.map((s, i) => ({
         label: s.title,
         href: `#step-${i + 1}`,
-        meta: String(i + 1).padStart(2, "0"),
       })),
     },
     {
@@ -59,13 +58,12 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
       <div className="mx-auto w-[92%] max-w-6xl">
         <div className="pt-14">
           <PageHeader
-            eyebrow={`Route · ${route.en} · ${route.steps.length} 步`}
             title={route.name}
             description={route.outcome}
             actions={
               <Link
                 href="/learn"
-                className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
               >
                 ← 全部路线
               </Link>
@@ -75,19 +73,23 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
       </div>
 
       <ModuleShell wide sidebar={<SideNav sections={sections} />}>
-        <dl className="grid gap-2 border-y border-[var(--line)] py-5 text-[13px] leading-[1.85] sm:grid-cols-[80px_1fr] sm:gap-x-4">
-          <dt className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:pt-1">适合谁</dt>
+        <dl className="grid gap-2 border-y border-[var(--line)] py-5 text-[13px] leading-[1.85] sm:grid-cols-[72px_1fr] sm:gap-x-4">
+          <dt className="text-[11.5px] text-[var(--muted)] sm:pt-1">适合谁</dt>
           <dd className="text-[var(--ink-soft)]">{route.audience}</dd>
-          <dt className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:pt-1">前置要求</dt>
+          <dt className="text-[11.5px] text-[var(--muted)] sm:pt-1">前置要求</dt>
           <dd className="text-[var(--ink-soft)]">{route.prerequisite}</dd>
-          <dt className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:pt-1">学完能做</dt>
+          <dt className="text-[11.5px] text-[var(--muted)] sm:pt-1">学完能做</dt>
           <dd className="text-[var(--ink-soft)]">{route.outcome}</dd>
         </dl>
 
         <ol className="mt-10">
           {route.steps.map((s, i) => (
-            <li key={s.title} id={`step-${i + 1}`} className="scroll-mt-24 border-l border-[var(--line)] pl-6 pb-10 last:pb-0 relative">
-              <span className="absolute -left-[13px] top-1 flex h-[26px] w-[26px] items-center justify-center rounded-full border border-[var(--line-strong)] bg-[var(--paper)] font-mono text-[10px] text-[var(--accent)]">
+            <li
+              key={s.title}
+              id={`step-${i + 1}`}
+              className="relative scroll-mt-24 border-l border-[var(--line)] pb-10 pl-6 last:pb-0"
+            >
+              <span className="absolute -left-[13px] top-1 flex h-[26px] w-[26px] items-center justify-center rounded-full border border-[var(--line-strong)] bg-[var(--paper)] text-[10.5px] text-[var(--accent)]">
                 {String(i + 1).padStart(2, "0")}
               </span>
 
@@ -102,17 +104,13 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
                 ))}
               </ul>
 
-              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[10px] tracking-[0.1em] text-[var(--muted)]">
+              <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[11.5px] text-[var(--muted)]">
                 <span>约 {s.duration}</span>
                 {s.related.map((rel) => {
                   const cat = getCategory(rel);
                   if (!cat) return null;
                   return (
-                    <Link
-                      key={rel}
-                      href={`/ai/${rel}`}
-                      className="transition-colors hover:text-[var(--accent)]"
-                    >
+                    <Link key={rel} href={`/ai/${rel}`} className="transition-colors hover:text-[var(--accent)]">
                       对照阅读：{cat.name} →
                     </Link>
                   );
@@ -125,7 +123,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
         <nav className="mt-14 flex items-stretch justify-between gap-4 border-t border-[var(--line)] pt-6">
           {prev ? (
             <Link href={`/learn/${prev.slug}`} className="group max-w-[46%]">
-              <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">上一条</span>
+              <span className="text-[11px] text-[var(--muted)]">上一条</span>
               <p className="mt-1 font-serif text-[14px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                 {prev.name}
               </p>
@@ -135,7 +133,7 @@ export default async function RoutePage({ params }: { params: Promise<{ slug: st
           )}
           {next ? (
             <Link href={`/learn/${next.slug}`} className="group max-w-[46%] text-right">
-              <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">下一条</span>
+              <span className="text-[11px] text-[var(--muted)]">下一条</span>
               <p className="mt-1 font-serif text-[14px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                 {next.name}
               </p>

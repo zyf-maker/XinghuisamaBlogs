@@ -2,13 +2,24 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import { aiCategories, aiCategoryMap, type AiCategory } from "../data/aiCategories";
+import {
+  aiCategories,
+  aiGroups,
+  aiCategoryMap,
+  aiGroupMap,
+  getCategoriesOfGroup,
+  type AiCategory,
+  type AiGroup,
+  type AiGroupSlug,
+} from "../data/aiCategories";
 
 export type AiDoc = {
   /** 形如 "agent/002-react-loop"，全站唯一 */
   key: string;
   category: string;
   categoryName: string;
+  group: string;
+  groupName: string;
   slug: string;
   title: string;
   summary: string;
@@ -38,7 +49,8 @@ export type AiDocBrief = Omit<AiDoc, "body">;
 export type AiCategoryBrief = {
   slug: string;
   name: string;
-  en: string;
+  group: string;
+  groupName: string;
   docs: AiDocBrief[];
 };
 
@@ -46,7 +58,8 @@ export function toBrief(categories: AiCategoryWithDocs[]): AiCategoryBrief[] {
   return categories.map((c) => ({
     slug: c.slug,
     name: c.name,
-    en: c.en,
+    group: c.group,
+    groupName: aiGroupMap[c.group]?.name ?? c.group,
     docs: c.docs.map(({ body, ...rest }) => rest),
   }));
 }
@@ -56,7 +69,24 @@ export function getAllCategoryBriefs(): AiCategoryBrief[] {
   return toBrief(getAllCategories());
 }
 
-const CONTENT_ROOT = path.join(process.cwd(), "content", "ai");
+
+
+/**
+ * 正式内容目录：content/notes/<category>/
+ * 演示/测试内容目录：content/archive/ai/<category>/ —— 只有设置 SHOW_DEMO_CONTENT=1 时才读
+ *
+ * 这样正式发布永远不会带上测试文章，本地想验版式时再加环境变量。
+ */
+const NOTES_ROOT = path.join(process.cwd(), "content", "notes");
+const DEMO_ROOT = path.join(process.cwd(), "content", "archive", "ai");
+
+export function demoEnabled(): boolean {
+  return process.env.SHOW_DEMO_CONTENT === "1";
+}
+
+function contentRoot(): string {
+  return demoEnabled() ? DEMO_ROOT : NOTES_ROOT;
+}
 
 function toNumber(value: unknown, fallback: number): number {
   const n = typeof value === "number" ? value : Number(value);
@@ -76,10 +106,12 @@ function toStringArray(value: unknown): string[] {
 
 /** 读一个分类目录下的全部 md，按 order、文件名排序 */
 function readCategory(category: AiCategory): AiDoc[] {
-  const dir = path.join(CONTENT_ROOT, category.slug);
+  const dir = path.join(contentRoot(), category.slug);
   if (!fs.existsSync(dir)) return [];
 
+  const groupName = aiGroupMap[category.group]?.name ?? category.group;
   const docs: AiDoc[] = [];
+
   for (const fileName of fs.readdirSync(dir)) {
     if (!fileName.endsWith(".md")) continue;
 
@@ -99,6 +131,8 @@ function readCategory(category: AiCategory): AiDoc[] {
       key: `${category.slug}/${slug}`,
       category: category.slug,
       categoryName: category.name,
+      group: category.group,
+      groupName,
       slug,
       title: (data.title as string) || slug,
       summary: (data.summary as string) || content.trim().slice(0, 60),
@@ -116,11 +150,14 @@ function readCategory(category: AiCategory): AiDoc[] {
   return docs.sort((a, b) => (a.order !== b.order ? a.order - b.order : a.slug.localeCompare(b.slug)));
 }
 
+let cacheKey = "";
 let cache: AiCategoryWithDocs[] | null = null;
 
 /** 全站唯一的入口：所有分类 + 其下文章。构建期同步读盘，结果缓存。 */
 export function getAllCategories(): AiCategoryWithDocs[] {
-  if (cache) return cache;
+  const key = contentRoot();
+  if (cache && cacheKey === key) return cache;
+  cacheKey = key;
   cache = [...aiCategories]
     .sort((a, b) => a.order - b.order)
     .map((c) => ({ ...c, docs: readCategory(c) }));
@@ -164,6 +201,26 @@ export function getAllTags(): { tag: string; count: number }[] {
     .sort((a, b) => (b.count !== a.count ? b.count - a.count : a.tag.localeCompare(b.tag)));
 }
 
+/** 大类级的聚合，首页与左栏用 */
+export type GroupWithCategories = AiGroup & {
+  categories: AiCategoryWithDocs[];
+  docCount: number;
+};
+
+export function getGroups(): GroupWithCategories[] {
+  const all = getAllCategories();
+  return [...aiGroups]
+    .sort((a, b) => a.order - b.order)
+    .map((g) => {
+      const categories = getCategoriesOfGroup(g.slug)
+        .map((c) => all.find((x) => x.slug === c.slug))
+        .filter((x): x is AiCategoryWithDocs => Boolean(x))
+        .filter((x) => x.docs.length > 0);
+      return { ...g, categories, docCount: categories.reduce((n, c) => n + c.docs.length, 0) };
+    })
+    .filter((g) => g.docCount > 0);
+}
+
 /** 分类级别的统计，总览页顶部用 */
 export function getStats() {
   const all = getAllDocs();
@@ -172,6 +229,7 @@ export function getStats() {
 
   return {
     categories: getAllCategories().filter((c) => c.docs.length > 0).length,
+    groups: getGroups().length,
     docs: all.length,
     tags: new Set(all.flatMap((d) => d.tags)).size,
     minutes: all.reduce((n, d) => n + d.readingTime, 0),
@@ -179,17 +237,38 @@ export function getStats() {
   };
 }
 
-/** 给文章页做站内搜索用的轻量索引，只含标题 / 摘要 / 标签 */
+/** 给站内搜索用的轻量索引，只含标题 / 摘要 / 标签 */
 export type AiSearchEntry = {
   key: string;
   title: string;
   category: string;
   categoryName: string;
+  group: string;
+  groupName: string;
   slug: string;
   summary: string;
   tags: string[];
+  level: string;
+  readingTime: number;
+  updated: string;
   haystack: string;
 };
+
+/**
+ * 正文摘要参与检索：读者想搜的往往是文中出现过的词（报错串、参数名），
+ * 只查标题会让命中率低得离谱。截前 1400 字、去掉 Markdown 记号，
+ * 体积换命中率，45 篇量级下首屏 payload 只多几十 KB。
+ */
+function bodyHaystack(body: string): string {
+  return body
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[#>*`|~\-]{1,}/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 1400);
+}
 
 export function getSearchIndex(): AiSearchEntry[] {
   return getAllDocs().map((d) => ({
@@ -197,11 +276,18 @@ export function getSearchIndex(): AiSearchEntry[] {
     title: d.title,
     category: d.category,
     categoryName: d.categoryName,
+    group: d.group,
+    groupName: d.groupName,
     slug: d.slug,
     summary: d.summary,
     tags: d.tags,
-    haystack: [d.title, d.summary, d.categoryName, ...d.tags].join(" ").toLowerCase(),
+    level: d.level,
+    readingTime: d.readingTime,
+    updated: d.updated,
+    haystack: [d.title, d.summary, d.categoryName, d.groupName, ...d.tags, bodyHaystack(d.body)]
+      .join(" ")
+      .toLowerCase(),
   }));
 }
 
-export { aiCategoryMap };
+export { aiCategoryMap, aiGroupMap, type AiGroupSlug };

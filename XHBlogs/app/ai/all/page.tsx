@@ -21,7 +21,6 @@ export default async function AiAllPage({
   return (
     <main className="mx-auto w-[92%] max-w-4xl pb-24 pt-14">
       <PageHeader
-        eyebrow={`Index · ${entries.length} 篇`}
         title="全部篇目"
         description="按分类分组列出所有笔记。搜索只在这份索引里做，不发请求，所以很快。"
       />

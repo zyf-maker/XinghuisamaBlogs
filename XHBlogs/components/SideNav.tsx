@@ -32,7 +32,7 @@ export default function SideNav({ sections, footer }: Props) {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <nav aria-label="模块导航" className="text-[13px]">
+    <nav aria-label="模块导航" className="text-[13.5px]">
       {sections.map((section, si) => (
         <div key={section.title} className={si === 0 ? "" : "mt-7"}>
           <div className="border-b border-[var(--line)] pb-2">
@@ -49,7 +49,7 @@ export default function SideNav({ sections, footer }: Props) {
                     title={item.label}
                     className={`-mx-2 flex items-baseline justify-between gap-2 px-2 py-2 transition-colors ${
                       active
-                        ? "bg-[var(--accent-soft)] font-medium text-[var(--accent)] shadow-[inset_2px_0_0_var(--accent)]"
+                        ? "pl-2.5 font-medium text-[var(--accent)] shadow-[inset_2px_0_0_var(--accent)]"
                         : "text-[var(--ink-soft)] hover:text-[var(--ink)]"
                     }`}
                   >

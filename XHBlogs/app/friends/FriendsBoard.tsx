@@ -43,8 +43,7 @@ export default function FriendsBoard() {
         <div className="mb-5 flex justify-start">
           <BackButton />
         </div>
-        <p className="eyebrow">Links · {friendsData.length} 个</p>
-        <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">友链</h1>
+        <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">友链</h1>
         <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">
           一些常读的站、常开的工具，以及常联系的人。
         </p>
@@ -130,7 +129,6 @@ export default function FriendsBoard() {
           </div>
 
           <div className="rounded-md border border-[var(--line)] bg-[var(--surface)] p-5">
-            <p className="eyebrow">Rules</p>
             <ul className="mt-3 space-y-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">
               <li>站点内容以原创为主，能正常访问。</li>
               <li>不接受纯采集站、导航站与广告站。</li>

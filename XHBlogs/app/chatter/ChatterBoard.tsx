@@ -41,8 +41,7 @@ export default function ChatterBoard({ chatters }: { chatters: Chatter[] }) {
     <div className="w-full relative z-10">
 
       <div className="mb-8 md:mb-12 border-b border-[var(--line)] pb-8">
-        <p className="eyebrow">Notes · {chatters.length} 则</p>
-        <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">
+        <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">
           {siteConfig.chatterTitle || "随笔"}
         </h1>
         <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">

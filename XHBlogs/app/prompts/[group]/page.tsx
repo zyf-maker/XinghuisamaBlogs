@@ -6,7 +6,7 @@ import ModuleShell from "../../../components/ModuleShell";
 import SideNav from "../../../components/SideNav";
 import PageHeader from "../../../components/PageHeader";
 import PromptList from "./PromptList";
-import { promptGroups, promptsData, getPromptsByGroup } from "../../../data/prompts";
+import { promptGroups, getPromptsByGroup } from "../../../data/prompts";
 import { moduleLinks } from "../../../lib/moduleNav";
 
 export function generateStaticParams() {
@@ -41,7 +41,7 @@ export default async function PromptGroupPage({
       items: promptGroups.map((x) => ({
         label: x.name,
         href: `/prompts/${x.slug}`,
-        meta: String(promptsData.filter((p) => p.group === x.slug).length),
+        
       })),
     },
     {
@@ -57,13 +57,12 @@ export default async function PromptGroupPage({
       <div className="mx-auto w-[92%] max-w-6xl">
         <div className="pt-14">
           <PageHeader
-            eyebrow={`Prompts · ${g.en} · ${items.length} 条`}
             title={g.name}
             description={g.description}
             actions={
               <Link
                 href="/prompts"
-                className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
               >
                 ← 全部分组
               </Link>

@@ -15,7 +15,6 @@ export default function AskPage() {
   return (
     <main className="mx-auto w-[92%] max-w-3xl pb-24 pt-14">
       <PageHeader
-        eyebrow={`Ask · 索引 ${stats.docs} 篇`}
         title="问一问"
         description="答案来自站内笔记，不是通用模型知识。检索不到会直说检索不到，并且把命中过的篇目列在回答上方，方便自己核对。"
       />

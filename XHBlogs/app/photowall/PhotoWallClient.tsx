@@ -52,8 +52,7 @@ export default function PhotoWallClient() {
             <div className="animate-fade-in-up">
               <div className="flex flex-col gap-6 border-b border-[var(--line)] pb-9 mb-10 md:flex-row md:items-end md:justify-between">
                 <div>
-                  <p className="eyebrow">Gallery · {albums.length} 个相册</p>
-                  <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">相册</h1>
+                  <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">相册</h1>
                   <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">一些拍下来的、被留下来的时刻。</p>
                 </div>
 
@@ -167,8 +166,7 @@ export default function PhotoWallClient() {
                       返回相册列表
                     </button>
                   </div>
-                  <p className="eyebrow">{currentAlbum.date} · {currentAlbum.photos.length} 张</p>
-                  <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">{currentAlbum.title}</h1>
+                  <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">{currentAlbum.title}</h1>
                   <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">{currentAlbum.description}</p>
                 </div>
               </div>

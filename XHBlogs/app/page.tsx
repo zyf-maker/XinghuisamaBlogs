@@ -6,13 +6,17 @@ import matter from "gray-matter";
 
 import Navbar from "../components/Navbar";
 import PageTransition from "../components/PageTransition";
-import MiniPlayer from "../components/MiniPlayer";
+import SearchBox from "../components/SearchBox";
 import HomeClock from "../components/HomeClock";
 import { siteConfig } from "../siteConfig";
 import { friendsData } from "../data/friends";
 import { projectsData } from "../data/projects";
-import { aiCategories } from "../data/aiCategories";
-import { getStats } from "../lib/aiDocs";
+import { aiGroups } from "../data/aiCategories";
+import { getGroups, getRecentDocs } from "../lib/aiDocs";
+import { getSearchItems } from "../lib/siteSearch";
+import { moduleLinks } from "../lib/moduleNav";
+import { promptsData } from "../data/prompts";
+import { toolsData } from "../data/tools";
 
 type Post = {
   slug: string;
@@ -47,102 +51,134 @@ function short(date: string) {
   return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}`;
 }
 
-const sections = [
-  { href: "/ai", label: "知识库", desc: "AI 相关的工作笔记" },
-  { href: "/timeline", label: "文章", desc: "长文与笔记归档" },
-  { href: "/chatter", label: "随笔", desc: "短记录与即时判断" },
-  { href: "/projects", label: "项目", desc: "代码与工具" },
-  { href: "/about", label: "关于", desc: "我在做什么" },
-];
-
+/** 首页只做入口，不堆统计 */
 export default function Home() {
   const posts = readMarkdown("posts") as Post[];
   const chatters = readMarkdown("chatters") as Post[];
   const latest = posts.slice(0, 4);
   const latestChatter = chatters.slice(0, 3);
   const projects = projectsData.slice(0, 3);
-  const aiStats = getStats();
+
+  const groups = getGroups();
+  const recentDocs = getRecentDocs(5);
+  const searchItems = getSearchItems();
+
+  // 大类没内容时也要有入口，所以用静态定义兜底
+  const groupCards = aiGroups.map((g) => {
+    const hit = groups.find((x) => x.slug === g.slug);
+    return { ...g, docCount: hit?.docCount ?? 0 };
+  });
 
   return (
     <div className="min-h-screen">
       <Navbar />
 
       <PageTransition>
-        <main className="mx-auto w-[92%] max-w-5xl pb-24">
-          {/* ── 卷首 ── */}
-          <header className="border-b border-[var(--line)] pb-14 pt-16 sm:pt-20">
-            <div className="flex items-center justify-between">
-              <p className="eyebrow">Journal · {siteConfig.authorEn}</p>
-              <HomeClock since={siteConfig.buildDate} />
+        <main className="mx-auto w-[92%] max-w-6xl pb-24">
+          {/* ── 卷首：玻璃大卡，搜索框压在里面 ── */}
+          <section className="pt-12 sm:pt-16">
+            <div className="glass-card glass-sheen overflow-hidden p-7 sm:p-11">
+              <div className="flex items-start justify-between gap-4">
+                <p className="text-[11px] tracking-[0.2em] text-[var(--muted)]">{siteConfig.slogan}</p>
+                <HomeClock since={siteConfig.buildDate} />
+              </div>
+
+              <h1 className="mt-7 font-serif text-[2.35rem] font-black leading-[1.08] tracking-tight text-[var(--ink)] sm:text-[3.4rem]">
+                {siteConfig.title}
+              </h1>
+
+              <p className="mt-4 max-w-2xl text-[14.5px] leading-[1.9] text-[var(--ink-soft)] sm:text-[15.5px]">
+                {siteConfig.bio}
+              </p>
+
+              <div className="mt-8 max-w-2xl">
+                <SearchBox items={searchItems} limit={10} placeholder="搜笔记、工具、提示词，或者直接搜一个报错…" />
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-2">
+                {moduleLinks.map((m) => (
+                  <Link
+                    key={m.href}
+                    href={m.href}
+                    className="glass-pill px-3.5 py-1.5 text-[12.5px] text-[var(--ink-soft)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                  >
+                    {m.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* ── 大类：bento 网格，左栏是入口而不是再套一层分类 ── */}
+          <section className="mt-14">
+            <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+              <h2 className="font-serif text-lg font-bold text-[var(--ink)]">知识库</h2>
+              <Link href="/ai" className="text-[11px] text-[var(--muted)] hover:text-[var(--accent)]">
+                全部 →
+              </Link>
             </div>
 
-            <h1 className="mt-10 font-serif text-[2.6rem] font-black leading-[1.1] tracking-tight text-[var(--ink)] sm:text-[3.6rem]">
-              {siteConfig.title}
-            </h1>
-
-            <p className="mt-5 max-w-2xl font-serif text-[15px] leading-[1.9] text-[var(--ink-soft)] sm:text-base">
-              {siteConfig.bio}
-            </p>
-
-            <p className="mt-3 font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">{siteConfig.slogan}</p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-x-3 gap-y-3 text-[13px]">
-              {sections.map((s) => (
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {groupCards.map((g) => (
                 <Link
-                  key={s.href}
-                  href={s.href}
-                  className="glass-inset group inline-flex items-center gap-2 rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] px-3.5 py-1.5 text-[var(--ink-soft)] backdrop-blur-md transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                  key={g.slug}
+                  href={`/ai#${g.slug}`}
+                  className="glass-card glass-sheen group relative overflow-hidden"
                 >
-                  {s.label}
-                  <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">{s.desc}</span>
+                  <div className="relative h-24 w-full overflow-hidden">
+                    <img
+                      src={asset(`/covers/${g.slug}.svg`)}
+                      alt=""
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent" />
+                  </div>
+                  <div className="p-5 pt-3">
+                    <h3 className="font-serif text-[1.05rem] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                      {g.name}
+                    </h3>
+                    <p className="mt-1.5 text-[12.5px] leading-[1.8] text-[var(--ink-soft)]">{g.description}</p>
+                  </div>
                 </Link>
               ))}
             </div>
-          </header>
+          </section>
 
-          <div className="grid gap-12 pt-14 lg:grid-cols-[1fr_300px] lg:gap-14">
-            {/* ── 左栏 ── */}
+          {/* ── 最近更新 ── */}
+          {recentDocs.length > 0 && (
+            <section className="mt-14">
+              <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
+                <h2 className="font-serif text-lg font-bold text-[var(--ink)]">最近更新</h2>
+                <Link href="/ai/all" className="text-[11px] text-[var(--muted)] hover:text-[var(--accent)]">
+                  全部篇目 →
+                </Link>
+              </div>
+              <ol className="divide-y divide-[var(--line)]">
+                {recentDocs.map((doc) => (
+                  <li key={doc.key}>
+                    <Link href={`/ai/${doc.category}/${doc.slug}`} className="group block py-5">
+                      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                        <h3 className="font-serif text-[15.5px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                          {doc.title}
+                        </h3>
+                        <span className="shrink-0 text-[11.5px] text-[var(--muted)]">{doc.categoryName}</span>
+                      </div>
+                      <p className="mt-1.5 line-clamp-2 text-[13.5px] leading-[1.8] text-[var(--ink-soft)]">{doc.summary}</p>
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+
+          {/* ── 双栏：写作 / 侧栏 ── */}
+          <div className="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12">
             <div className="min-w-0">
-              {/* 知识库入口：这里是整个站的重心，放在最前 */}
               <section>
                 <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
-                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">AI 知识库</h2>
-                  <Link href="/ai" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
-                    {aiStats.docs} 篇 →
-                  </Link>
-                </div>
-
-                <Link href="/ai" className="glass glass-sheen group mt-5 block p-6 transition-transform duration-300 hover:-translate-y-0.5">
-                  <div className="flex items-baseline justify-between">
-                    <p className="font-mono text-[10px] tracking-[0.18em] text-[var(--muted)]">
-                      KNOWLEDGE BASE · {aiStats.categories} GROUPS
-                    </p>
-                    <span className="font-mono text-[10px] text-[var(--muted)] transition-colors group-hover:text-[var(--accent)]">
-                      进入 ↗
-                    </span>
-                  </div>
-                  <p className="mt-3 font-serif text-[17px] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                    从模型基础到产品变形的八组笔记
-                  </p>
-                  <p className="mt-2 text-[12.5px] leading-[1.85] text-[var(--ink-soft)]">
-                    分词、采样、上下文、提示词、工具调用、检索、评测、选型与变现。
-                    每篇都从一个具体问题出发，给出可执行的参数和踩过的坑。
-                  </p>
-                  <div className="mt-4 flex flex-wrap gap-1.5">
-                    {aiCategories.map((c) => (
-                      <span key={c.slug} className="tag">
-                        {c.name}
-                      </span>
-                    ))}
-                  </div>
-                </Link>
-              </section>
-
-              <section className="mt-14">
-                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
                   <h2 className="font-serif text-lg font-bold text-[var(--ink)]">最近文章</h2>
-                  <Link href="/timeline" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
-                    ALL {posts.length} →
+                  <Link href="/timeline" className="text-[11px] text-[var(--muted)] hover:text-[var(--accent)]">
+                    全部 →
                   </Link>
                 </div>
 
@@ -150,30 +186,18 @@ export default function Home() {
                   <p className="py-10 text-[13px] text-[var(--muted)]">还没有文章。</p>
                 ) : (
                   <ol className="divide-y divide-[var(--line)]">
-                    {latest.map((post, i) => (
+                    {latest.map((post) => (
                       <li key={post.slug}>
-                        <Link href={`/posts/${post.slug}`} className="group flex gap-4 py-6 sm:gap-6">
-                          <span className="w-6 shrink-0 pt-1 font-mono text-[11px] text-[var(--muted)]">
-                            {String(i + 1).padStart(2, "0")}
-                          </span>
-                          <div className="min-w-0 flex-1">
-                            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                              <h3 className="font-serif text-[17px] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                                {post.title}
-                              </h3>
-                              <span className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)]">{short(post.date)}</span>
-                            </div>
-                            <p className="mt-1.5 line-clamp-2 text-[13px] leading-relaxed text-[var(--ink-soft)]">{post.description}</p>
-                            {post.tags.length > 0 && (
-                              <div className="mt-2.5 flex flex-wrap gap-1.5">
-                                {post.tags.slice(0, 4).map((tag) => (
-                                  <span key={tag} className="tag">
-                                    {tag}
-                                  </span>
-                                ))}
-                              </div>
-                            )}
+                        <Link href={`/posts/${post.slug}`} className="group block py-6">
+                          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                            <h3 className="font-serif text-[17px] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                              {post.title}
+                            </h3>
+                            <span className="shrink-0 text-[11.5px] text-[var(--muted)]">{short(post.date)}</span>
                           </div>
+                          <p className="mt-1.5 line-clamp-2 text-[13.5px] leading-[1.8] text-[var(--ink-soft)]">
+                            {post.description}
+                          </p>
                         </Link>
                       </li>
                     ))}
@@ -181,11 +205,11 @@ export default function Home() {
                 )}
               </section>
 
-              <section className="mt-14">
+              <section className="mt-12">
                 <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
                   <h2 className="font-serif text-lg font-bold text-[var(--ink)]">{siteConfig.chatterTitle}</h2>
-                  <Link href="/chatter" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
-                    ALL →
+                  <Link href="/chatter" className="text-[11px] text-[var(--muted)] hover:text-[var(--accent)]">
+                    全部 →
                   </Link>
                 </div>
                 <ul className="divide-y divide-[var(--line)]">
@@ -196,7 +220,7 @@ export default function Home() {
                           <h3 className="font-serif text-[15px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                             {c.title}
                           </h3>
-                          <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">{short(c.date)}</span>
+                          <span className="shrink-0 text-[11px] text-[var(--muted)]">{short(c.date)}</span>
                         </div>
                         <p className="mt-1 line-clamp-1 text-[12.5px] text-[var(--ink-soft)]">{c.description}</p>
                       </Link>
@@ -206,11 +230,11 @@ export default function Home() {
                 </ul>
               </section>
 
-              <section className="mt-14">
+              <section className="mt-12">
                 <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
                   <h2 className="font-serif text-lg font-bold text-[var(--ink)]">项目</h2>
-                  <Link href="/projects" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
-                    ALL →
+                  <Link href="/projects" className="text-[11px] text-[var(--muted)] hover:text-[var(--accent)]">
+                    全部 →
                   </Link>
                 </div>
                 <ul className="divide-y divide-[var(--line)]">
@@ -221,45 +245,11 @@ export default function Home() {
                           <h3 className="font-serif text-[15px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                             {p.name}
                           </h3>
-                          <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">GITHUB ↗</span>
+                          <span className="shrink-0 text-[11px] text-[var(--muted)]">GitHub ↗</span>
                         </div>
-                        <p className="mt-1 line-clamp-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">{p.description}</p>
-                        <div className="mt-2 flex flex-wrap gap-1.5">
-                          {p.tags.map((t) => (
-                            <span key={t} className="tag">
-                              {t}
-                            </span>
-                          ))}
-                        </div>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-
-              <section className="mt-14">
-                <div className="flex items-baseline justify-between border-b border-[var(--line)] pb-3">
-                  <h2 className="font-serif text-lg font-bold text-[var(--ink)]">友链</h2>
-                  <Link href="/friends" className="font-mono text-[10px] tracking-[0.16em] text-[var(--muted)] hover:text-[var(--accent)]">
-                    ALL →
-                  </Link>
-                </div>
-                <ul className="divide-y divide-[var(--line)]">
-                  {friendsData.slice(0, 4).map((f) => (
-                    <li key={f.id}>
-                      <a
-                        href={f.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-baseline justify-between gap-4 py-4"
-                      >
-                        <div className="min-w-0">
-                          <span className="font-serif text-[14px] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                            {f.name}
-                          </span>
-                          <span className="ml-3 text-[12px] text-[var(--muted)]">{f.description}</span>
-                        </div>
-                        <span className="shrink-0 font-mono text-[10px] text-[var(--muted)]">↗</span>
+                        <p className="mt-1 line-clamp-2 text-[12.5px] leading-relaxed text-[var(--ink-soft)]">
+                          {p.description}
+                        </p>
                       </a>
                     </li>
                   ))}
@@ -268,37 +258,23 @@ export default function Home() {
             </div>
 
             {/* ── 右栏 ── */}
-            <aside className="space-y-6">
-              <MiniPlayer />
-
-              <div className="glass glass-sheen p-5">
-                <p className="eyebrow">Profile</p>
-                <div className="mt-3 flex items-center gap-3">
-                  <img src={asset(siteConfig.avatarUrl)} alt={siteConfig.authorName} className="h-12 w-12 rounded-full border border-[var(--line)]" />
-                  <div>
+            <aside className="space-y-3">
+              <div className="glass-flat p-5">
+                <div className="flex items-center gap-3">
+                  <img
+                    src={asset(siteConfig.avatarUrl)}
+                    alt={siteConfig.authorName}
+                    className="h-12 w-12 rounded-full border border-[var(--glass-border)]"
+                  />
+                  <div className="min-w-0">
                     <p className="font-serif text-[15px] font-bold text-[var(--ink)]">{siteConfig.authorName}</p>
                     <p className="mt-0.5 text-[11.5px] text-[var(--muted)]">{siteConfig.authorTitle}</p>
                   </div>
                 </div>
-                <div className="mt-4 hairline" />
-                <dl className="mt-4 space-y-2 font-mono text-[11px] text-[var(--muted)]">
-                  <div className="flex justify-between">
-                    <dt>文章</dt>
-                    <dd className="text-[var(--ink-soft)]">{posts.length}</dd>
-                  </div>
-                  <div className="flex justify-between">
-                    <dt>随笔</dt>
-                    <dd className="text-[var(--ink-soft)]">{chatters.length}</dd>
-                  </div>
-                  <div className="flex justify-between">
-                    <dt>项目</dt>
-                    <dd className="text-[var(--ink-soft)]">{projectsData.length}</dd>
-                  </div>
-                </dl>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {siteConfig.social?.github && (
                     <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" className="btn-ghost px-3 py-1.5 text-[12px]">
-                      GitHub ★
+                      GitHub
                     </a>
                   )}
                   <Link href="/about" className="btn-accent px-3 py-1.5 text-[12px]">
@@ -307,40 +283,53 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="glass glass-sheen p-5">
-                <p className="eyebrow">Bookmarks</p>
+              <div className="glass-flat p-5">
+                <p className="text-[12px] font-medium text-[var(--ink-soft)]">资料</p>
                 <ul className="mt-3 space-y-2.5">
                   <li>
-                    <a
-                      href="http://111.230.230.103/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex items-center justify-between text-[13px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]"
-                    >
-                      <span>简白 · 中文简历工具</span>
-                      <span className="font-mono text-[10px] text-[var(--muted)]">↗</span>
-                    </a>
-                  </li>
-                  <li>
-                    <Link href="/photowall" className="group flex items-center justify-between text-[13px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]">
-                      <span>相册</span>
-                      <span className="font-mono text-[10px] text-[var(--muted)]">↗</span>
+                    <Link href="/tools" className="flex items-center justify-between text-[13px] text-[var(--ink-soft)] hover:text-[var(--accent)]">
+                      <span>工具库</span>
+                      <span className="text-[11px] text-[var(--muted)]">{toolsData.length}</span>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/music" className="group flex items-center justify-between text-[13px] text-[var(--ink-soft)] transition-colors hover:text-[var(--accent)]">
-                      <span>音乐</span>
-                      <span className="font-mono text-[10px] text-[var(--muted)]">↗</span>
+                    <Link href="/prompts" className="flex items-center justify-between text-[13px] text-[var(--ink-soft)] hover:text-[var(--accent)]">
+                      <span>提示词</span>
+                      <span className="text-[11px] text-[var(--muted)]">{promptsData.length}</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/mcp" className="flex items-center justify-between text-[13px] text-[var(--ink-soft)] hover:text-[var(--accent)]">
+                      <span>MCP 与 Skills</span>
+                      <span className="text-[11px] text-[var(--muted)]">↗</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/learn" className="flex items-center justify-between text-[13px] text-[var(--ink-soft)] hover:text-[var(--accent)]">
+                      <span>学习路线</span>
+                      <span className="text-[11px] text-[var(--muted)]">↗</span>
                     </Link>
                   </li>
                 </ul>
               </div>
 
               <div className="glass-flat p-5">
-                <p className="eyebrow">Colophon</p>
-                <p className="mt-3 text-[12px] leading-relaxed text-[var(--muted)]">
-                  Next.js · React · Tailwind CSS。标题用思源宋体，正文用无衬线，单一朱砂色作为强调。
-                </p>
+                <p className="text-[12px] font-medium text-[var(--ink-soft)]">友链</p>
+                <ul className="mt-3 space-y-2.5">
+                  {friendsData.slice(0, 4).map((f) => (
+                    <li key={f.id}>
+                      <a
+                        href={f.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between text-[13px] text-[var(--ink-soft)] hover:text-[var(--accent)]"
+                      >
+                        <span className="min-w-0 truncate">{f.name}</span>
+                        <span className="shrink-0 text-[11px] text-[var(--muted)]">↗</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </aside>
           </div>
@@ -348,11 +337,11 @@ export default function Home() {
       </PageTransition>
 
       <footer className="border-t border-[var(--line)]">
-        <div className="mx-auto flex w-[92%] max-w-5xl flex-col items-start justify-between gap-3 py-8 sm:flex-row sm:items-center">
-          <p className="font-mono text-[10.5px] tracking-[0.16em] text-[var(--muted)]">
+        <div className="mx-auto flex w-[92%] max-w-6xl flex-col items-start justify-between gap-3 py-8 sm:flex-row sm:items-center">
+          <p className="text-[11px] tracking-[0.14em] text-[var(--muted)]">
             © {new Date().getFullYear()} {siteConfig.title} · {siteConfig.authorEn}
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2">
             {siteConfig.footerBadges?.map((b) => (
               <span key={b.name} className="tag">
                 {b.name}

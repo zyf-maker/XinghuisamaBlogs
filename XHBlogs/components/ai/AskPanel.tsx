@@ -109,10 +109,10 @@ export default function AskPanel() {
   };
 
   return (
-    <div className="border border-[var(--line)]">
+    <div className="glass-card overflow-hidden">
       <div className="flex items-center justify-between border-b border-[var(--line)] px-4 py-3">
-        <p className="eyebrow">Ask · 站内问答</p>
-        <p className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)]">
+        <p className="text-[12.5px] font-medium text-[var(--ink)]">站内问答</p>
+        <p className="text-[11px] text-[var(--muted)]">
           {busy ? "生成中" : "就绪"}
         </p>
       </div>

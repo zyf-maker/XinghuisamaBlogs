@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import ModuleShell from "../../components/ModuleShell";
 import SideNav from "../../components/SideNav";
@@ -15,7 +16,7 @@ export default function LearnPage() {
   const sections = [
     {
       title: "路线",
-      items: routes.map((r) => ({ label: r.name, href: `/learn/${r.slug}`, meta: `${r.steps.length} 步` })),
+      items: routes.map((r) => ({ label: r.name, href: `/learn/${r.slug}` })),
     },
     {
       title: "其他模块",
@@ -30,48 +31,43 @@ export default function LearnPage() {
       <div className="mx-auto w-[92%] max-w-6xl">
         <div className="pt-14">
           <PageHeader
-            eyebrow={`Routes · ${routes.length} 条`}
             title="学习路线"
-            description="不是课程表，是按目标倒推的顺序：每一步都该有能拿给别人的产出，否则就还没学会。"
+            description="不是课程表，是按目标倒推的顺序。每一步都该有能拿给别人的产出。"
           />
         </div>
       </div>
 
       <ModuleShell wide sidebar={<SideNav sections={sections} />}>
-        <ul className="divide-y divide-[var(--line)] border-t border-[var(--line)]">
+        <div className="grid gap-4">
           {routes.map((r) => (
-            <li key={r.slug} className="py-8">
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <a
-                  href={`/learn/${r.slug}`}
-                  className="font-serif text-[1.3rem] font-bold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
-                >
+            <Link
+              key={r.slug}
+              href={`/learn/${r.slug}`}
+              className="glass-card glass-sheen group p-6"
+            >
+              <div className="flex items-baseline justify-between gap-3">
+                <h2 className="font-serif text-[1.25rem] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                   {r.name}
-                </a>
-                <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">
-                  {r.en.toUpperCase()} · {r.steps.length} 步
-                </span>
+                </h2>
+                <span className="shrink-0 text-[11.5px] text-[var(--muted)]">{r.steps.length} 步</span>
               </div>
 
-              <dl className="mt-3 grid gap-2 text-[13px] leading-[1.85] sm:grid-cols-[72px_1fr] sm:gap-x-4">
-                <dt className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:pt-1">适合谁</dt>
-                <dd className="text-[var(--ink-soft)]">{r.audience}</dd>
-                <dt className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:pt-1">学完能做</dt>
-                <dd className="text-[var(--ink-soft)]">{r.outcome}</dd>
-                <dt className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:pt-1">前置</dt>
-                <dd className="text-[var(--muted)]">{r.prerequisite}</dd>
-              </dl>
+              <p className="mt-2 text-[13px] leading-[1.8] text-[var(--ink-soft)]">{r.outcome}</p>
 
-              <ol className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5">
+              <div className="mt-4 flex flex-wrap gap-1.5">
                 {r.steps.map((s, i) => (
-                  <li key={s.title} className="font-mono text-[10.5px] text-[var(--muted)]">
-                    <span className="text-[var(--accent)]">{String(i + 1).padStart(2, "0")}</span> {s.title}
-                  </li>
+                  <span
+                    key={s.title}
+                    className="glass-inset px-2.5 py-1 text-[11.5px] text-[var(--ink-soft)]"
+                  >
+                    <span className="mr-1 text-[var(--accent)]">{String(i + 1).padStart(2, "0")}</span>
+                    {s.title}
+                  </span>
                 ))}
-              </ol>
-            </li>
+              </div>
+            </Link>
           ))}
-        </ul>
+        </div>
       </ModuleShell>
     </>
   );

@@ -147,8 +147,7 @@ export default function MomentList({ moments, authorName, avatarUrl }: any) {
     <div className="w-full relative z-10 flex-1 flex flex-col">
 
       <div className="mb-8 md:mb-10 border-b border-[var(--line)] pb-8 md:pb-9">
-        <p className="eyebrow">Moments · {processedMoments.length} 条</p>
-        <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">手记</h1>
+        <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">手记</h1>
         <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">
           不成篇的片段：一行想法、一张图、一段没写完的话。
         </p>

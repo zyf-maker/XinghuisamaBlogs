@@ -29,8 +29,7 @@ export default function ProjectsBoard() {
         <div className="mb-5">
           <BackButton />
         </div>
-        <p className="eyebrow">Projects · {projectsData.length} 个</p>
-        <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">
+        <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">
           项目
         </h1>
         <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">

@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import ModuleShell from "../../../components/ModuleShell";
 import SideNav from "../../../components/SideNav";
 import PageHeader from "../../../components/PageHeader";
-import { toolCategories, toolsData, getToolsByCategory } from "../../../data/tools";
+import { toolCategories, getToolsByCategory } from "../../../data/tools";
 import { moduleLinks } from "../../../lib/moduleNav";
 
 export function generateStaticParams() {
@@ -40,7 +40,6 @@ export default async function ToolCategoryPage({
       items: toolCategories.map((c) => ({
         label: c.name,
         href: `/tools/${c.slug}`,
-        meta: String(toolsData.filter((t) => t.category === c.slug).length),
       })),
     },
     {
@@ -56,13 +55,12 @@ export default async function ToolCategoryPage({
       <div className="mx-auto w-[92%] max-w-6xl">
         <div className="pt-14">
           <PageHeader
-            eyebrow={`Tools · ${cat.en} · ${items.length} 个`}
             title={cat.name}
             description={cat.description}
             actions={
               <Link
                 href="/tools"
-                className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
               >
                 ← 全部工具
               </Link>
@@ -75,47 +73,34 @@ export default async function ToolCategoryPage({
         wide
         sidebar={<SideNav sections={sections} footer={{ label: "全部工具 →", href: "/tools" }} />}
       >
-        <ul className="divide-y divide-[var(--line)] border-t border-[var(--line)]">
-          {items.map((tool) => (
-            <li key={tool.id} className="py-7">
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <a
-                  href={tool.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group font-serif text-[1.15rem] font-bold text-[var(--ink)] transition-colors hover:text-[var(--accent)]"
-                >
+        <div className="grid gap-3 sm:grid-cols-2">
+          {items.map((tool, i) => (
+            <a
+              key={tool.id}
+              href={tool.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`glass-card glass-sheen group flex min-w-0 flex-col p-5 ${
+                i === items.length - 1 && items.length % 2 === 1 ? "sm:col-span-2" : ""
+              }`}
+            >
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-serif text-[1.05rem] font-bold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
                   {tool.name}
-                  <span className="ml-1.5 font-mono text-[10px] font-normal text-[var(--muted)] transition-colors group-hover:text-[var(--accent)]">
-                    ↗
-                  </span>
-                </a>
-                <span className="font-mono text-[10px] tracking-[0.1em] text-[var(--muted)]">
-                  {tool.pricing}
                 </span>
-                <span className="font-mono text-[10px] tracking-[0.1em] text-[var(--muted)]">
-                  {tool.platform.join(" / ")}
-                </span>
+                <span className="shrink-0 text-[11px] text-[var(--muted)]">{tool.pricing}</span>
               </div>
 
-              <p className="mt-2 text-[14px] leading-[1.85] text-[var(--ink-soft)]">{tool.tagline}</p>
-              <p className="mt-2 text-[12.5px] leading-[1.85] text-[var(--muted)]">{tool.detail}</p>
+              <p className="mt-2 text-[13px] leading-[1.75] text-[var(--ink-soft)]">{tool.tagline}</p>
+              <p className="mt-2 text-[12px] leading-[1.75] text-[var(--muted)]">{tool.detail}</p>
 
-              {tool.tags.length > 0 ? (
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {tool.tags.slice(0, 4).map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-sm border border-[var(--line)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--muted)]"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              ) : null}
-            </li>
+              <div className="mt-auto flex items-center justify-between gap-3 pt-3.5 text-[11px] text-[var(--muted)]">
+                <span className="truncate">{tool.platform.join(" · ")}</span>
+                <span className="shrink-0 transition-colors group-hover:text-[var(--accent)]">打开 ↗</span>
+              </div>
+            </a>
           ))}
-        </ul>
+        </div>
       </ModuleShell>
     </>
   );

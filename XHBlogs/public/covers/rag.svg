@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffefc" />
+      <stop offset="55%" stop-color="#e6e4f0" />
+      <stop offset="100%" stop-color="#c6c8e4" />
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.72">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#1c202e" stop-opacity="0.1" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)" />
+  <g filter="url(#soft)"><circle cx="577" cy="38" r="393" fill="#c6c8e4" opacity="0.414" /><circle cx="524" cy="176" r="301" fill="#e6e4f0" opacity="0.344" /><circle cx="88" cy="440" r="326" fill="#c6c8e4" opacity="0.355" /><circle cx="783" cy="339" r="294" fill="#e6e4f0" opacity="0.359" /></g>
+  <g><line x1="0" y1="0" x2="0" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="120" y1="0" x2="120" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="240" y1="0" x2="240" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="360" y1="0" x2="360" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="480" y1="0" x2="480" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="600" y1="0" x2="600" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="720" y1="0" x2="720" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="840" y1="0" x2="840" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="960" y1="0" x2="960" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="1080" y1="0" x2="1080" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /><line x1="1200" y1="0" x2="1200" y2="750" stroke="#6a6a92" stroke-opacity="0.05" stroke-width="1" /></g>
+  <g><circle cx="378" cy="188" r="333" fill="none" stroke="#6a6a92" stroke-opacity="0.14" stroke-width="1" /><circle cx="147" cy="375" r="430" fill="none" stroke="#6a6a92" stroke-opacity="0.14" stroke-width="1" /><circle cx="1166" cy="563" r="372" fill="none" stroke="#6a6a92" stroke-opacity="0.14" stroke-width="1" /></g>
+  <rect x="72" y="540" width="131" height="6" rx="3" fill="#95412c" opacity="0.85" />
+  <rect width="1200" height="750" fill="url(#vig)" />
+</svg>

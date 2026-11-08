@@ -47,38 +47,54 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="w-full overflow-x-hidden min-h-full flex flex-col relative bg-[var(--paper)] text-[var(--ink)]">
         <ThemeProvider>
           <MusicProvider>
-            {/* 背景层：一张近乎中性的纸面。
-                之前用五团高饱和光斑（朱砂/靛蓝/土黄）给玻璃做采样，
-                结果是整页底色偏暖偏艳，看久了累眼。现在只留：
-                一层极淡的暖灰渐变 + 两团几乎无色的柔光 + 细噪点。
-                玻璃靠边缘高光和背景的一点点明暗差就够了，
-                不需要把底色染成 advertisement 那种饱和度。 */}
+            {/* 背景层：mesh 渐变雾面。
+                玻璃要「像玻璃」，背后必须有东西可采样，所以这里刻意保留了
+                四团低饱和的有色光斑（青、蓝紫、赭、苔绿）——但都压在
+                0.2~0.3 的强度，叠在近白的纸面上只会显出很淡的色温偏移，
+                不会像早期那版高饱和广告底色。
+                最后压一层极细噪点，避免大面积渐变在低色深屏幕上出现色带。 */}
             <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(180deg, #faf9f7 0%, #f8f7f5 34%, #f7f6f4 66%, #fbfaf8 100%)",
+                    "linear-gradient(180deg, #fcfbf9 0%, #f8f8f7 38%, #f5f6f7 68%, #fbfaf8 100%)",
                 }}
               />
               <div
-                className="absolute -left-[18vw] -top-[20vh] h-[80vh] w-[80vw] rounded-full"
+                className="absolute -left-[16vw] -top-[22vh] h-[74vh] w-[74vw] rounded-full"
                 style={{
                   background:
-                    "radial-gradient(circle at 50% 50%, rgba(226,221,212,0.34) 0%, rgba(226,221,212,0.12) 42%, rgba(226,221,212,0) 72%)",
-                  filter: "blur(60px)",
+                    "radial-gradient(circle at 50% 50%, rgba(172,204,214,0.62) 0%, rgba(172,204,214,0.2) 44%, rgba(180,206,214,0) 72%)",
+                  filter: "blur(70px)",
                 }}
               />
               <div
-                className="absolute -right-[16vw] top-[42vh] h-[76vh] w-[70vw] rounded-full"
+                className="absolute -right-[14vw] -top-[8vh] h-[70vh] w-[62vw] rounded-full"
                 style={{
                   background:
-                    "radial-gradient(circle at 50% 50%, rgba(214,219,222,0.3) 0%, rgba(214,219,222,0.1) 44%, rgba(214,219,222,0) 74%)",
-                  filter: "blur(64px)",
+                    "radial-gradient(circle at 50% 50%, rgba(193,197,235,0.58) 0%, rgba(193,197,235,0.18) 46%, rgba(196,200,232,0) 74%)",
+                  filter: "blur(76px)",
                 }}
               />
               <div
-                className="absolute inset-0 opacity-[0.07] mix-blend-multiply"
+                className="absolute left-[6vw] top-[46vh] h-[62vh] w-[58vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(228,205,172,0.5) 0%, rgba(228,205,172,0.15) 46%, rgba(226,206,178,0) 74%)",
+                  filter: "blur(80px)",
+                }}
+              />
+              <div
+                className="absolute -right-[8vw] bottom-[-16vh] h-[66vh] w-[56vw] rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(circle at 50% 50%, rgba(180,214,192,0.52) 0%, rgba(180,214,192,0.16) 46%, rgba(186,214,196,0) 74%)",
+                  filter: "blur(78px)",
+                }}
+              />
+              <div
+                className="absolute inset-0 opacity-[0.055] mix-blend-multiply"
                 style={{
                   backgroundImage:
                     "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")",

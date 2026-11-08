@@ -141,8 +141,7 @@ export default function MusicClient() {
       <PageTransition>
         <div className="w-full relative z-10">
           <div className="animate-fade-in-up mb-8 md:mb-10 border-b border-[var(--line)] pb-8 md:pb-9">
-            <p className="eyebrow">Music · {playlist.length} 首</p>
-            <h1 className="mt-3 font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">音乐</h1>
+            <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">音乐</h1>
             <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">
               写东西的时候循环的那些曲子。歌词滚动，点一句可以跳过去。
             </p>

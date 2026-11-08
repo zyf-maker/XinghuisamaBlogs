@@ -4,68 +4,43 @@ import Link from "next/link";
 import PageHeader from "../../components/PageHeader";
 import ModuleShell from "../../components/ModuleShell";
 import SideNav from "../../components/SideNav";
-import { getAllCategories, getRecentDocs, getStats, getAllTags } from "../../lib/aiDocs";
+import { aiGroups } from "../../data/aiCategories";
+import { getAllCategories, getGroups, getRecentDocs } from "../../lib/aiDocs";
+import { asset } from "../../lib/base";
 import { moduleLinks } from "../../lib/moduleNav";
 
 export const metadata: Metadata = {
-  title: "AI 知识库",
-  description: "从模型基础到产品变现，19 组笔记与手册。",
+  title: "知识库",
+  description: "按主题分组的 AI 笔记：模型基础、工具、实战、部署。",
 };
 
-function shortDate(v: string) {
-  if (!v) return "";
-  return v.slice(0, 7).replace("-", ".");
-}
-
-type Cat = ReturnType<typeof getAllCategories>[number];
-
-function CategoryRow({ cat, index }: { cat: Cat; index: number }) {
-  return (
-    <Link
-      href={`/ai/${cat.slug}`}
-      className="group grid gap-2 border-b border-[var(--line)] py-6 transition-colors last:border-b-0 sm:grid-cols-[42px_minmax(0,1fr)_auto] sm:items-baseline sm:gap-5"
-    >
-      <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">
-        {String(index).padStart(2, "0")}
-      </span>
-
-      <div className="min-w-0">
-        <h3 className="font-serif text-[1.15rem] font-bold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-          {cat.name}
-          <span className="ml-3 font-mono text-[10px] font-normal tracking-[0.12em] text-[var(--muted)]">
-            {cat.en.toUpperCase()}
-          </span>
-        </h3>
-        <p className="mt-1.5 text-[12.5px] leading-[1.8] text-[var(--ink-soft)]">{cat.description}</p>
-        <p className="mt-2 truncate font-mono text-[10.5px] text-[var(--muted)]">
-          {cat.docs.slice(0, 3).map((d) => d.title).join(" · ")}
-        </p>
-      </div>
-
-      <span className="font-mono text-[10px] tracking-[0.12em] text-[var(--muted)] sm:text-right">
-        {cat.docs.length} 篇
-      </span>
-    </Link>
-  );
-}
-
+/**
+ * 知识库总览。
+ *
+ * 左栏只放「统一大类」（六个，固定），右栏放真实内容（大类下的分组与篇目），
+ * 这样点左栏是在切换主题域，而不是在分类里再套一层分类。
+ */
 export default function AiIndexPage() {
-  const all = getAllCategories().filter((c) => c.docs.length > 0);
-  const stats = getStats();
+  const groups = getGroups();
+  const allCats = getAllCategories().filter((c) => c.docs.length > 0);
   const recent = getRecentDocs(6);
-  const tags = getAllTags().slice(0, 14);
 
-  const sections = [
+  // 大类即使暂时没内容也保留，页面上显示空态，避免左栏跳来跳去
+  const sidebar = [
     {
-      title: "分组",
-      items: all.map((c) => ({ label: c.name, href: `/ai/${c.slug}`, meta: String(c.docs.length) })),
+      title: "主题",
+      items: aiGroups.map((g) => {
+        const hit = groups.find((x) => x.slug === g.slug);
+        return { label: g.name, href: `/ai#${g.slug}`, meta: hit ? String(hit.docCount) : "0" };
+      }),
     },
-    { title: "全部篇目", items: [{ label: "按分类与等级浏览", href: "/ai/all" }] },
+    {
+      title: "索引",
+      items: [{ label: "全部篇目", href: "/ai/all" }],
+    },
     {
       title: "其他模块",
-      items: moduleLinks
-        .filter((m) => m.href !== "/ai")
-        .map((m) => ({ label: m.label, href: m.href })),
+      items: moduleLinks.filter((m) => m.href !== "/ai").map((m) => ({ label: m.label, href: m.href })),
     },
   ];
 
@@ -74,13 +49,12 @@ export default function AiIndexPage() {
       <div className="mx-auto w-[92%] max-w-6xl">
         <div className="pt-14">
           <PageHeader
-            eyebrow={`Knowledge · ${stats.docs} 篇 · ${stats.categories} 组`}
-            title="AI 知识库"
-            description="从模型基础到产品变现，按组编排。多数篇目能直接落到一个具体动作上，不是概念罗列。"
+            title="知识库"
+            description="按主题分组的笔记。多数是动手之后写下来的，包含具体参数、命令和踩过的坑。"
             actions={
               <Link
                 href="/ai/ask"
-                className="rounded-md border border-[var(--line-strong)] px-3 py-1.5 font-mono text-[10px] tracking-[0.14em] text-[var(--ink-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                className="rounded-full border border-[var(--glass-border)] bg-[var(--glass-bg)] px-3.5 py-1.5 text-[11.5px] text-[var(--ink-soft)] backdrop-blur-md transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
               >
                 直接提问 →
               </Link>
@@ -89,129 +63,120 @@ export default function AiIndexPage() {
         </div>
       </div>
 
-      <ModuleShell wide sidebar={<SideNav sections={sections} footer={{ label: "全部篇目 →", href: "/ai/all" }} />}>
-        {/* 统计条 */}
-        <div className="grid grid-cols-2 divide-x divide-[var(--line)] border-y border-[var(--line)] sm:grid-cols-4">
-          {[
-            { label: "篇目", value: String(stats.docs), unit: "docs" },
-            { label: "分组", value: String(stats.categories), unit: "组" },
-            { label: "标签", value: String(stats.tags), unit: "tags" },
-            { label: "总阅读", value: String(stats.minutes), unit: "min" },
-          ].map((item) => (
-            <div key={item.label} className="px-4 py-4 first:pl-0">
-              <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--muted)]">
-                {item.label}
-              </p>
-              <p className="mt-1 font-serif text-[1.4rem] font-bold leading-none text-[var(--ink)]">
-                {item.value}
-                <span className="ml-1 font-mono text-[10px] font-normal tracking-[0.1em] text-[var(--muted)]">
-                  {item.unit}
-                </span>
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* 模块入口：工具、提示词、MCP、路线、动态 */}
-        <div className="mt-8 flex flex-wrap gap-2">
-          {moduleLinks
-            .filter((m) => m.href !== "/ai")
-            .map((m) => (
-              <Link
-                key={m.href}
-                href={m.href}
-                className="group inline-flex items-baseline gap-2 rounded-md border border-[var(--line)] px-3 py-1.5 transition-colors hover:border-[var(--accent)]"
-              >
-                <span className="text-[12.5px] text-[var(--ink-soft)] transition-colors group-hover:text-[var(--accent)]">
-                  {m.label}
-                </span>
-                <span className="font-mono text-[9.5px] tracking-[0.12em] text-[var(--muted)]">
-                  {m.en.toUpperCase()}
-                </span>
-              </Link>
-            ))}
-        </div>
-
-        {/* 分组列表 */}
-        <section className="mt-12">
-          <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[var(--line)] pb-3">
-            <h2 className="font-serif text-lg font-bold text-[var(--ink)]">全部分组</h2>
-            <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">
-              {stats.categories} 组 · {stats.docs} 篇
-            </span>
+      <ModuleShell wide sidebar={<SideNav sections={sidebar} />}>
+        {allCats.length === 0 ? (
+          <div className="glass-card p-8">
+            <p className="font-serif text-[1.05rem] font-bold text-[var(--ink)]">这里还是空的</p>
+            <p className="mt-2 max-w-md text-[13px] leading-[1.85] text-[var(--ink-soft)]">
+              笔记正在陆续整理。目录结构、检索与问答链路已经就绪，写入
+              <code className="mx-1 rounded bg-[var(--surface-alt)] px-1 py-0.5 font-mono text-[12px] text-[var(--ink)]">
+                content/notes/&lt;分组&gt;/
+              </code>
+              的 Markdown 会在下次构建时自动出现在这里。
+            </p>
+            <p className="mt-4 text-[12.5px] text-[var(--muted)]">
+              想先看看别的：<Link href="/tools" className="link-accent">工具库</Link> ·{" "}
+              <Link href="/prompts" className="link-accent">提示词</Link> ·{" "}
+              <Link href="/learn" className="link-accent">学习路线</Link>
+            </p>
           </div>
-          <div className="mt-1">
-            {all.map((cat, i) => (
-              <CategoryRow key={cat.slug} cat={cat} index={i + 1} />
-            ))}
-          </div>
-        </section>
+        ) : (
+          <div className="space-y-14">
+            {aiGroups.map((g) => {
+              const hit = groups.find((x) => x.slug === g.slug);
+              const cats = hit?.categories ?? [];
 
-        {/* 最近更新 + 标签 */}
-        <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_240px]">
-          <section>
-            <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-[var(--line)] pb-3">
-              <h2 className="font-serif text-lg font-bold text-[var(--ink)]">最近更新</h2>
-              <span className="font-mono text-[10px] tracking-[0.14em] text-[var(--muted)]">RECENT</span>
-            </div>
+              // 空的大类不在这里占位：左栏已标「待整理」，正文只列有内容的
+              if (cats.length === 0) return null;
 
-            {recent.length === 0 ? (
-              <p className="py-10 text-[13px] text-[var(--muted)]">还没有篇目。</p>
-            ) : (
-              <ol className="divide-y divide-[var(--line)]">
-                {recent.map((doc, i) => (
-                  <li key={doc.key}>
-                    <Link href={`/ai/${doc.category}/${doc.slug}`} className="group flex gap-4 py-5">
-                      <span className="w-6 shrink-0 pt-0.5 font-mono text-[11px] text-[var(--muted)]">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <h3 className="text-[14.5px] font-semibold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                          {doc.title}
-                        </h3>
-                        <p className="mt-1 line-clamp-2 text-[12.5px] leading-[1.75] text-[var(--ink-soft)]">
-                          {doc.summary}
-                        </p>
-                        <p className="mt-1.5 font-mono text-[10px] tracking-[0.1em] text-[var(--muted)]">
-                          {doc.categoryName} · {shortDate(doc.updated)} · {doc.readingTime} 分钟
-                        </p>
+              return (
+                <section key={g.slug} id={g.slug} className="scroll-mt-24">
+                  <div className="relative overflow-hidden rounded-[var(--r-lg)] border border-[var(--glass-line)]">
+                    <img
+                      src={asset(`/covers/${g.slug}.svg`)}
+                      alt=""
+                      className="h-24 w-full object-cover sm:h-28"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[var(--paper)]/95 via-[var(--paper)]/55 to-transparent" />
+                    <div className="absolute inset-0 flex flex-col justify-center px-6">
+                      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                        <h2 className="font-serif text-[1.5rem] font-bold text-[var(--ink)]">{g.name}</h2>
+                        <span className="text-[11.5px] text-[var(--muted)]">{hit ? `${hit.docCount} 篇` : ""}</span>
                       </div>
-                    </Link>
-                  </li>
-                ))}
-              </ol>
+                      <p className="mt-1 max-w-md text-[12.5px] leading-[1.7] text-[var(--ink-soft)]">
+                        {g.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                    {cats.map((cat) => (
+                      <div key={cat.slug} className="glass-flat p-5">
+                          <div className="flex flex-wrap items-baseline justify-between gap-2">
+                            <h3 className="text-[14.5px] font-semibold text-[var(--ink)]">
+                              <Link href={`/ai/${cat.slug}`} className="transition-colors hover:text-[var(--accent)]">
+                                {cat.name}
+                              </Link>
+                            </h3>
+                            <span className="text-[11px] text-[var(--muted)]">{cat.docs.length} 篇</span>
+                          </div>
+
+                          <ul className="mt-3 space-y-2">
+                            {cat.docs.slice(0, 4).map((doc) => (
+                              <li key={doc.key}>
+                                <Link
+                                  href={`/ai/${cat.slug}/${doc.slug}`}
+                                  className="group flex items-baseline gap-3 text-[13px]"
+                                >
+                                  <span className="shrink-0 font-mono text-[10.5px] text-[var(--ink-soft)] opacity-70">
+                                    {String(doc.order).padStart(2, "0")}
+                                  </span>
+                                  <span className="min-w-0 flex-1 text-[var(--ink-soft)] transition-colors group-hover:text-[var(--accent)]">
+                                    {doc.title}
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+
+                          {cat.docs.length > 4 && (
+                            <Link
+                              href={`/ai/${cat.slug}`}
+                              className="mt-3 inline-block text-[11.5px] text-[var(--muted)] hover:text-[var(--accent)]"
+                            >
+                              还有 {cat.docs.length - 4} 篇 →
+                            </Link>
+                          )}
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
+
+            {recent.length > 0 && (
+              <section className="glass-flat p-6">
+                <div className="border-b border-[var(--line)] pb-3">
+                  <h2 className="font-serif text-[1.35rem] font-bold text-[var(--ink)]">最近更新</h2>
+                </div>
+                <ol className="divide-y divide-[var(--line)]">
+                  {recent.map((doc) => (
+                    <li key={doc.key}>
+                      <Link href={`/ai/${doc.category}/${doc.slug}`} className="group block py-4">
+                        <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                          <h3 className="text-[14px] font-medium text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                            {doc.title}
+                          </h3>
+                          <span className="text-[11px] text-[var(--muted)]">{doc.categoryName}</span>
+                        </div>
+                      </Link>
+                    </li>
+                  ))}
+                </ol>
+              </section>
             )}
-          </section>
-
-          <aside className="space-y-8">
-            <div>
-              <div className="border-b border-[var(--line)] pb-3">
-                <p className="eyebrow">标签</p>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {tags.map((t) => (
-                  <Link
-                    key={t.tag}
-                    href={`/ai/all?tag=${encodeURIComponent(t.tag)}`}
-                    className="rounded-sm border border-[var(--line)] px-1.5 py-0.5 font-mono text-[10px] text-[var(--muted)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                  >
-                    {t.tag}
-                    <span className="ml-1 opacity-60">{t.count}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <div className="border-b border-[var(--line)] pb-3">
-                <p className="eyebrow">怎么读</p>
-              </div>
-              <p className="mt-3 text-[12.5px] leading-[1.85] text-[var(--ink-soft)]">
-                想建体系，照「模型基础 → 提示词 → 检索 → Agent」走一遍；想马上用起来，去工具库挑一个正在用的；在做产品，直接看工程化与变现两组。
-              </p>
-            </div>
-          </aside>
-        </div>
+          </div>
+        )}
       </ModuleShell>
     </>
   );
