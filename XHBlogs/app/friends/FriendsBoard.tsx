@@ -43,8 +43,8 @@ export default function FriendsBoard() {
         <div className="mb-5 flex justify-start">
           <BackButton />
         </div>
-        <h1 className="font-serif text-[2rem] font-black leading-[1.15] tracking-tight text-[var(--ink)] sm:text-[2.5rem]">友链</h1>
-        <p className="mt-3 max-w-2xl text-[13.5px] leading-[1.85] text-[var(--ink-soft)]">
+        <h1 className="text-[1.6rem] font-extrabold leading-[1.2] tracking-[-0.02em] sm:text-[1.95rem] text-[var(--ink)] sm:text-[2.5rem]">友链</h1>
+        <p className="mt-3 max-w-2xl text-[13px] leading-[1.8] text-[var(--muted)]">
           一些常读的站、常开的工具，以及常联系的人。
         </p>
       </div>

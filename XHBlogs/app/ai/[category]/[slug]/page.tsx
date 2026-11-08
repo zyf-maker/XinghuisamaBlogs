@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import ModuleShell from "../../../../components/ModuleShell";
-import SideNav from "../../../../components/SideNav";
+import Navbar from "../../../../components/Navbar";
+import PageTransition from "../../../../components/PageTransition";
 import AiToc from "../../../../components/ai/AiToc";
-import { getAllCategoryBriefs, getCategoryWithDocs, getDoc, getNeighbours } from "../../../../lib/aiDocs";
-import { moduleLinks } from "../../../../lib/moduleNav";
+import { RailCard, NumList } from "../../../../components/tpl/Template";
+import { aiGroups } from "../../../../data/aiCategories";
+import { getAllCategoryBriefs, getCategoryWithDocs, getDoc, getNeighbours, getRecentDocs } from "../../../../lib/aiDocs";
 import { extractToc, renderMarkdown } from "../../../../lib/markdown";
+import { toolsData } from "../../../../data/tools";
 
 export function generateStaticParams() {
   return getAllCategoryBriefs().flatMap((c) => c.docs.map((d) => ({ category: c.slug, slug: d.slug })));
@@ -21,7 +23,6 @@ export async function generateMetadata({
   const { category, slug } = await params;
   const doc = getDoc(category, slug);
   if (!doc) return { title: "篇目不存在" };
-
   return {
     title: doc.title,
     description: doc.summary,
@@ -29,6 +30,11 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * 篇目页模板（照参考站的资讯详情页）：
+ * 面包屑 → 大标题 1.7-2.1rem → 一行元信息（分组 / 等级 / 时长 / 更新）
+ * → 正文（约 720px 行宽）→ 上下篇；右栏是「本组目录 + 同主题 + 最近更新」。
+ */
 export default async function AiDocPage({
   params,
 }: {
@@ -39,94 +45,130 @@ export default async function AiDocPage({
   const cat = getCategoryWithDocs(category);
   if (!doc || !cat) notFound();
 
-  const categories = getAllCategoryBriefs();
   const { prev, next } = getNeighbours(category, slug);
   const html = await renderMarkdown(doc.body);
   const toc = extractToc(doc.body);
-
-  const sections = [
-    {
-      title: cat.name,
-      items: cat.docs.map((d) => ({
-        label: d.title,
-        href: `/ai/${cat.slug}/${d.slug}`,
-      })),
-    },
-    {
-      title: "其他主题",
-      items: categories
-        .filter((c) => c.group !== cat.group)
-        .map((c) => ({ label: c.name, href: `/ai/${c.slug}` })),
-    },
-    {
-      title: "其他模块",
-      items: moduleLinks.filter((m) => m.href !== "/ai").map((m) => ({ label: m.label, href: m.href })),
-    },
-  ];
+  const recent = getRecentDocs(10);
+  const groupName = aiGroups.find((g) => g.slug === cat.group)?.name ?? "";
 
   return (
-    <ModuleShell
-      wide
-      sidebar={<SideNav sections={sections} footer={{ label: "全部篇目 →", href: "/ai/all" }} />}
-      aside={toc.length > 0 ? <AiToc toc={toc} /> : undefined}
-    >
-      <article className="min-w-0">
-        {/* 页首只留标题与摘要，不摆分类 / 等级 / 时长 / 日期那一排小字 */}
-        <header className="pb-7 pt-8">
-          <Link
-            href={`/ai/${cat.slug}`}
-            className="text-[11.5px] text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
-          >
-            ← {cat.name}
-          </Link>
+    <div className="min-h-screen">
+      <Navbar />
+      <PageTransition>
+        <main className="wrap pb-20">
+          <div className="split">
+            <article className="min-w-0">
+              <nav className="flex flex-wrap items-center gap-2 pt-9 text-[12px] text-[var(--muted)]">
+                <Link href="/ai" className="hover:text-[var(--accent)]">知识库</Link>
+                <span>/</span>
+                <span>{groupName}</span>
+                <span>/</span>
+                <Link href={`/ai/${cat.slug}`} className="hover:text-[var(--accent)]">{cat.name}</Link>
+              </nav>
 
-          <h1 className="mt-3 font-serif text-[1.7rem] font-black leading-[1.25] tracking-tight text-[var(--ink)] sm:text-[2.25rem]">
-            {doc.title}
-          </h1>
+              <h1 className="mt-3 text-[1.7rem] font-extrabold leading-[1.25] tracking-[-0.02em] text-[var(--ink)] sm:text-[2.1rem]">
+                {doc.title}
+              </h1>
 
-          {doc.summary ? (
-            <p className="mt-3.5 max-w-2xl text-[13.5px] leading-[1.9] text-[var(--ink-soft)]">{doc.summary}</p>
-          ) : null}
-
-
-        </header>
-
-        <div className="prose prose-slate max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
-
-        <nav className="mt-16 grid gap-px border-y border-[var(--line)] bg-[var(--line)] sm:grid-cols-2">
-          {prev ? (
-            <Link
-              href={`/ai/${prev.category}/${prev.slug}`}
-              className="group bg-[var(--paper)] p-5 transition-colors hover:bg-[var(--surface)]"
-            >
-              <span className="text-[10.5px] text-[var(--muted)]">← 上一篇</span>
-              <p className="mt-1.5 line-clamp-2 text-[13.5px] font-semibold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                {prev.title}
+              <p className="mt-2.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-[var(--muted)]">
+                <span>{cat.name}</span>
+                <span className="opacity-40">·</span>
+                <span>{doc.level}</span>
+                <span className="opacity-40">·</span>
+                <span>{doc.readingTime} 分钟</span>
+                {doc.updated && (
+                  <>
+                    <span className="opacity-40">·</span>
+                    <span>{doc.updated}</span>
+                  </>
+                )}
               </p>
-            </Link>
-          ) : (
-            <div className="bg-[var(--paper)] p-5">
-              <span className="text-[10.5px] text-[var(--muted)]">已是第一篇</span>
-            </div>
-          )}
 
-          {next ? (
-            <Link
-              href={`/ai/${next.category}/${next.slug}`}
-              className="group bg-[var(--paper)] p-5 text-right transition-colors hover:bg-[var(--surface)]"
-            >
-              <span className="text-[10.5px] text-[var(--muted)]">下一篇 →</span>
-              <p className="mt-1.5 line-clamp-2 text-[13.5px] font-semibold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                {next.title}
-              </p>
-            </Link>
-          ) : (
-            <div className="bg-[var(--paper)] p-5 text-right">
-              <span className="text-[10.5px] text-[var(--muted)]">已是最后一篇</span>
-            </div>
-          )}
-        </nav>
-      </article>
-    </ModuleShell>
+              {doc.summary && (
+                <p className="mt-4 border-l-2 border-[var(--accent)] bg-[var(--accent-soft)] px-3.5 py-2.5 text-[13px] leading-[1.8] text-[var(--ink-soft)]">
+                  {doc.summary}
+                </p>
+              )}
+
+              <div className="prose prose-slate mt-7 max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
+
+              <nav className="mt-14 grid gap-3 sm:grid-cols-2">
+                {prev ? (
+                  <Link href={`/ai/${prev.category}/${prev.slug}`} className="pcard group p-4">
+                    <span className="text-[11px] text-[var(--muted)]">← 上一篇</span>
+                    <p className="mt-1.5 line-clamp-2 text-[13px] font-semibold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                      {prev.title}
+                    </p>
+                  </Link>
+                ) : (
+                  <div className="pcard p-4 opacity-60">
+                    <span className="text-[11px] text-[var(--muted)]">已是第一篇</span>
+                  </div>
+                )}
+                {next ? (
+                  <Link href={`/ai/${next.category}/${next.slug}`} className="pcard group p-4 sm:text-right">
+                    <span className="text-[11px] text-[var(--muted)]">下一篇 →</span>
+                    <p className="mt-1.5 line-clamp-2 text-[13px] font-semibold leading-snug text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                      {next.title}
+                    </p>
+                  </Link>
+                ) : (
+                  <div className="pcard p-4 opacity-60 sm:text-right">
+                    <span className="text-[11px] text-[var(--muted)]">已是最后一篇</span>
+                  </div>
+                )}
+              </nav>
+            </article>
+
+            <aside className="space-y-3">
+              {toc.length > 0 && (
+                <RailCard title="本页目录">
+                  <div className="max-h-[52vh] overflow-y-auto scroll-quiet">
+                    <AiToc toc={toc} />
+                  </div>
+                </RailCard>
+              )}
+
+              <RailCard title={cat.name} href={`/ai/${cat.slug}`} more="组内">
+                <NumList
+                  items={cat.docs.slice(0, 8).map((d) => ({
+                    title: d.title,
+                    href: `/ai/${cat.slug}/${d.slug}`,
+                  }))}
+                />
+              </RailCard>
+
+              <RailCard title="最近更新" href="/ai/all" more="更多">
+                <NumList
+                  items={recent.slice(0, 6).map((d) => ({
+                    title: d.title,
+                    href: `/ai/${d.category}/${d.slug}`,
+                  }))}
+                />
+              </RailCard>
+
+              <RailCard title="热门工具" href="/tools" more="更多">
+                <div className="grid grid-cols-2 gap-1.5">
+                  {toolsData.slice(0, 6).map((t) => (
+                    <a
+                      key={t.id}
+                      href={t.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 rounded-md px-1.5 py-1.5 text-[12px] text-[var(--ink-soft)] transition-colors hover:bg-[var(--surface-alt)] hover:text-[var(--ink)]"
+                    >
+                      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[var(--surface-alt)] text-[10px] font-semibold uppercase text-[var(--muted)]">
+                        {t.name.slice(0, 1)}
+                      </span>
+                      <span className="min-w-0 truncate">{t.name}</span>
+                    </a>
+                  ))}
+                </div>
+              </RailCard>
+            </aside>
+          </div>
+        </main>
+      </PageTransition>
+    </div>
   );
 }

@@ -164,6 +164,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "tdd",
     name: "tdd",
+    url: "https://github.com/anthropics/skills",
     what: "红-绿-重构的循环：先写失败测试，再写最小实现，最后清理。",
     trigger: "「用 TDD 做这个」「先写测试」",
     tags: ["测试", "开发流程"],
@@ -171,6 +172,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "diagnosing-bugs",
     name: "diagnosing-bugs",
+    url: "https://github.com/anthropics/skills",
     what: "面向难复现 bug 与性能回退的诊断循环：先建立可观测性，再二分定位。",
     trigger: "「debug 一下」「这个性能怎么掉这么多」",
     tags: ["调试", "性能"],
@@ -178,6 +180,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "domain-modeling",
     name: "domain-modeling",
+    url: "https://github.com/anthropics/skills",
     what: "梳理项目术语，产出 CONTEXT.md 或 ADR，避免团队各说各话。",
     trigger: "「整理一下这个项目的概念」「写个 ADR」",
     tags: ["领域模型", "文档"],
@@ -185,6 +188,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "writing-for-agents",
     name: "writing-for-agents",
+    url: "https://github.com/anthropics/skills",
     what: "写给人看的文档和写给 Agent 看的文档要求不同，这个 skill 讲后者。",
     trigger: "「写个 SKILL.md」「改 AGENTS.md」",
     tags: ["Agent", "文档", "提示"],
@@ -192,6 +196,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "find-docs",
     name: "find-docs",
+    url: "https://github.com/anthropics/skills",
     what: "查某个库的最新文档与 API 用法，避免模型用过时的写法。",
     trigger: "「这个 API 怎么用」「Next.js 16 有什么变化」",
     tags: ["文档", "检索"],
@@ -199,6 +204,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "frontend-design",
     name: "frontend-design",
+    url: "https://github.com/anthropics/skills",
     what: "给新界面定方向：字体、留白、配色、层级，避免做成模板感。",
     trigger: "「做个落地页」「这个页面太丑了」",
     tags: ["设计", "前端"],
@@ -206,6 +212,7 @@ export const skillsData: SkillEntry[] = [
   {
     id: "office",
     name: "office",
+    url: "https://github.com/anthropics/skills",
     what: "创建与编辑 docx / xlsx / pptx，并提供渲染校验。",
     trigger: "「生成一份 PPT」「改这个 Excel」",
     tags: ["Office", "文档"],

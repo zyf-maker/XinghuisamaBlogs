@@ -5,9 +5,10 @@ import { useState } from "react";
 import type { Prompt } from "../../../data/prompts";
 
 /**
- * 提示词列表。每条是一张玻璃卡，右上角复制按钮复制 body 原文。
+ * 提示词网格：竖向卡，标题 + 用途 + 正文预览 + 复制。
+ * 版式照参考站 /painting 的图卡网格——卡内信息层级只有三层，不堆标签。
  */
-export default function PromptList({ items }: { items: Prompt[] }) {
+export default function PromptList({ items, cols = 3 }: { items: Prompt[]; cols?: 2 | 3 }) {
   const [copied, setCopied] = useState<string | null>(null);
 
   const copy = async (p: Prompt) => {
@@ -21,36 +22,29 @@ export default function PromptList({ items }: { items: Prompt[] }) {
   };
 
   return (
-    <div className="mt-5 grid gap-3">
+    <div className={`grid gap-3 ${cols === 3 ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2"}`}>
       {items.map((p) => (
-        <article key={p.id} className="glass-card glass-sheen p-5">
-          <div className="flex flex-wrap items-start justify-between gap-3">
-            <div className="min-w-0">
-              <h3 className="font-serif text-[1.05rem] font-bold text-[var(--ink)]">{p.title}</h3>
-              <p className="mt-1 text-[12.5px] leading-[1.8] text-[var(--muted)]">{p.useCase}</p>
-            </div>
+        <article key={p.id} className="pcard flex flex-col p-4">
+          <div className="flex items-start justify-between gap-2">
+            <h3 className="min-w-0 text-[13.5px] font-semibold leading-snug text-[var(--ink)]">{p.title}</h3>
             <button
               type="button"
               onClick={() => copy(p)}
-              className="shrink-0 rounded-full border border-[var(--line-strong)] px-3 py-1 text-[11.5px] text-[var(--ink-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
+              className="shrink-0 rounded-md border border-[var(--card-line)] px-2 py-0.5 text-[11px] text-[var(--ink-soft)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
             >
               {copied === p.id ? "已复制" : "复制"}
             </button>
           </div>
 
-          <pre className="mt-3.5 overflow-x-auto whitespace-pre-wrap break-words rounded-[var(--r-sm)] border border-[var(--line)] bg-[var(--surface-alt)] p-3.5 font-mono text-[12px] leading-[1.85] text-[var(--ink-soft)]">
+          <p className="mt-1.5 line-clamp-2 text-[12px] leading-[1.7] text-[var(--muted)]">{p.useCase}</p>
+
+          <pre className="mt-3 max-h-[168px] flex-1 overflow-y-auto scroll-quiet whitespace-pre-wrap break-words rounded-md border border-[var(--card-line)] bg-[var(--surface-alt)] p-2.5 font-mono text-[11.5px] leading-[1.75] text-[var(--ink-soft)]">
             <code>{p.body}</code>
           </pre>
 
-          {p.notes.length > 0 ? (
-            <ul className="mt-3 space-y-1">
-              {p.notes.map((n) => (
-                <li key={n} className="text-[12px] leading-[1.8] text-[var(--muted)]">
-                  · {n}
-                </li>
-              ))}
-            </ul>
-          ) : null}
+          {p.notes.length > 0 && (
+            <p className="mt-2.5 line-clamp-2 text-[11.5px] leading-[1.7] text-[var(--muted)]">· {p.notes[0]}</p>
+          )}
         </article>
       ))}
     </div>

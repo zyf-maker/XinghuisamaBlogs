@@ -117,7 +117,7 @@ export default function AskPanel() {
         </p>
       </div>
 
-      <div className="min-h-[180px] space-y-4 px-4 py-5">
+      <div className="min-h-[132px] space-y-4 px-4 py-5">
         {messages.length === 0 ? (
           <div>
             <p className="text-[13px] leading-[1.9] text-[var(--ink-soft)]">

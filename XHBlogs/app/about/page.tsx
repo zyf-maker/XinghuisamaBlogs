@@ -100,10 +100,10 @@ export default async function AboutPage() {
   });
 
   return (
-    <div className="min-h-screen relative pb-20">
+    <div className="min-h-screen">
       <Navbar />
       <PageTransition>
-        <main className="w-[95%] md:w-[90%] max-w-4xl mx-auto mt-24 md:mt-28 relative z-10">
+        <main className="wrap pt-10 pb-20">
 
           
 

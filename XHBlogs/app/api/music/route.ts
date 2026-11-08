@@ -1,10 +1,9 @@
-﻿import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
-const NET_EASE_HEADERS = {
-  'User-Agent':
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-  Referer: 'https://music.163.com/',
-}
+const UA =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
+
+const HEADERS = { 'User-Agent': UA, Referer: 'https://music.163.com/' }
 
 type SongResult = {
   id: string
@@ -18,6 +17,54 @@ type SongResult = {
   error?: string
 }
 
+type Detail = {
+  name?: string
+  ar?: { name?: string }[]
+  al?: { picUrl?: string }
+}
+
+/** 详情：v3 接口比 v1 稳（v1 常被限流成 405） */
+async function fetchDetail(songId: string): Promise<Detail | null> {
+  const url = `https://music.163.com/api/v3/song/detail?c=${encodeURIComponent(
+    JSON.stringify([{ id: Number(songId) }]),
+  )}`
+  const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(6000) })
+  if (!res.ok) return null
+  const data = (await res.json()) as { songs?: Detail[] }
+  return data.songs?.[0] ?? null
+}
+
+async function fetchLyric(songId: string): Promise<string> {
+  try {
+    const res = await fetch(
+      `https://music.163.com/api/song/lyric?id=${songId}&lv=-1&kv=-1&tv=-1`,
+      { headers: HEADERS, signal: AbortSignal.timeout(6000) },
+    )
+    if (!res.ok) return ''
+    const data = (await res.json()) as { lrc?: { lyric?: string } }
+    return data.lrc?.lyric || ''
+  } catch {
+    return ''
+  }
+}
+
+/** 直链：官方 outer/url 现在经常 403，先用第三方解析拿真实 mp3 地址 */
+async function fetchUrl(songId: string): Promise<string> {
+  try {
+    const res = await fetch(
+      `https://music-api.gdstudio.xyz/api.php?types=url&source=netease&id=${songId}&br=320`,
+      { signal: AbortSignal.timeout(8000) },
+    )
+    if (res.ok) {
+      const data = (await res.json()) as { url?: string }
+      if (data.url) return data.url
+    }
+  } catch {
+    /* 落到官方外链 */
+  }
+  return `https://music.163.com/song/media/outer/url?id=${songId}.mp3`
+}
+
 export async function GET(request: NextRequest) {
   const ids = request.nextUrl.searchParams.get('ids')
   if (!ids) {
@@ -29,45 +76,26 @@ export async function GET(request: NextRequest) {
   const results: SongResult[] = await Promise.all(
     songIds.map(async (songId): Promise<SongResult> => {
       try {
-        const [detailRes, lrcRes] = await Promise.all([
-          fetch(
-            `https://music.163.com/api/song/detail/?id=${songId}&ids=[${songId}]`,
-            { headers: NET_EASE_HEADERS, signal: AbortSignal.timeout(6000) },
-          ),
-          fetch(
-            `https://music.163.com/api/song/lyric?id=${songId}&lv=-1&kv=-1&tv=-1`,
-            { headers: NET_EASE_HEADERS, signal: AbortSignal.timeout(6000) },
-          ).catch(() => null),
+        const [detail, lrc, url] = await Promise.all([
+          fetchDetail(songId),
+          fetchLyric(songId),
+          fetchUrl(songId),
         ])
 
-        const detail = await detailRes.json()
-        const song = detail.songs?.[0]
+        if (!detail) return { id: songId, error: 'not_found' }
 
-        if (!song) {
-          return { id: songId, error: 'not_found' }
-        }
-
-        let lrcText = ''
-        if (lrcRes && lrcRes.ok) {
-          try {
-            const lrcData = await lrcRes.json()
-            lrcText = lrcData.lrc?.lyric || ''
-          } catch {
-            /* 歌词可选，失败不影响主流程 */
-          }
-        }
-
-        const artistName = song.artists?.[0]?.name || '未知歌手'
+        const artistName = detail.ar?.[0]?.name || '未知歌手'
+        const cover = detail.al?.picUrl || ''
 
         return {
           id: songId,
-          name: song.name,
+          name: detail.name,
           artist: artistName,
           author: artistName,
-          cover: song.album?.picUrl || '',
-          pic: song.album?.picUrl || '',
-          url: `https://music.163.com/song/media/outer/url?id=${songId}.mp3`,
-          lrc: lrcText,
+          cover,
+          pic: cover,
+          url,
+          lrc,
         }
       } catch (error) {
         console.error(`[api/music] 获取歌曲 ${songId} 失败:`, error)

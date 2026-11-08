@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./template.css";
 
 /* 1. 暗黑模式变体 */
 @custom-variant dark (&:where(.dark, .dark *));

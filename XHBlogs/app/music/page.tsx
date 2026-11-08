@@ -6,12 +6,12 @@ import MusicClient from "./MusicClient";
 
 // 🌟 这里是服务端渲染，完美支持 metadata
 export const metadata = {
-  title: "音乐馆 | " + siteConfig.title,
+  title: "音乐",
 };
 
 export default function MusicPage() {
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen">
       <Navbar />
       <PageTransition>
         <ContentLayout>

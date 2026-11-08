@@ -93,6 +93,15 @@ function toNumber(value: unknown, fallback: number): number {
   return Number.isFinite(n) ? n : fallback;
 }
 
+/** frontmatter 里的 `2026-11-08` 会被 YAML 解析成 Date 对象，渲染进 JSX 会直接抛错，统一转成字符串 */
+function toDateString(value: unknown): string {
+  if (!value) return "";
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    return value.toISOString().slice(0, 10);
+  }
+  return String(value);
+}
+
 function toStringArray(value: unknown): string[] {
   if (Array.isArray(value)) return value.map((v) => String(v)).filter(Boolean);
   if (typeof value === "string" && value.trim()) {
@@ -139,7 +148,7 @@ function readCategory(category: AiCategory): AiDoc[] {
       order: toNumber(data.order, 999),
       level: (data.level as string) || "入门",
       tags: toStringArray(data.tags),
-      updated: (data.updated as string) || (data.date as string) || "",
+      updated: toDateString(data.updated) || toDateString(data.date),
       readingTime: toNumber(data.readingTime, Math.max(1, Math.round(content.length / 400))),
       author: (data.author as string) || "",
       source: (data.source as string) || "",

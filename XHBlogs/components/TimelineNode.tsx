@@ -3,72 +3,62 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function TimelineNode({ post, index }: { post: any, index: number }) {
-  // 判断是放在左边还是右边（偶数左，奇数右）
-  const isLeft = index % 2 === 0;
+/**
+ * 归档列表的一行：左侧日期栏 + 竖线节点，右侧白卡。
+ * 版式照参考站 /news 的时间轴（左圆点 + 日期，右侧标题 + 摘要），
+ * 不做左右交替——交替会逼出大片留白，也让阅读顺序变乱。
+ */
+export default function TimelineNode({ post, index }: { post: any; index: number }) {
+  const date = String(post.date || "").split(" ")[0];
+  const [y, m, d] = date.split("-");
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
+    <motion.article
+      initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`mb-12 flex justify-between items-center w-full ${isLeft ? 'md:flex-row-reverse' : 'flex-row'}`}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="relative flex gap-4 sm:gap-5"
     >
-      {/* 留出对面的一半空白 */}
-      <div className="order-1 w-5/12 hidden md:block"></div>
+      {/* 左侧：日期 + 节点 */}
+      <div className="relative flex w-[58px] shrink-0 flex-col items-end pt-[3px] sm:w-[74px]">
+        <span className="text-[12px] font-semibold tabular-nums text-[var(--ink)]">
+          {m && d ? `${Number(m)}月${Number(d)}日` : date}
+        </span>
+        <span className="mt-0.5 text-[11px] tabular-nums text-[var(--muted)]">{y}</span>
+      </div>
 
-      {/* 中间的圆形节点 */}
-      <div className="z-20 flex items-center justify-center order-1 bg-[var(--surface)] w-6 h-6 rounded-full border-4 border-[var(--line-strong)] ring-4 ring-[var(--accent)] transition-colors duration-1000"></div>
+      <div className="relative flex min-w-0 flex-1 gap-4 pb-4">
+        {/* 竖线与圆点 */}
+        <span className="absolute left-[3px] top-[9px] z-10 h-[7px] w-[7px] rounded-full bg-[var(--accent)] ring-4 ring-[var(--page-bg)]" aria-hidden />
+        <span className="absolute left-[6px] top-[20px] bottom-0 w-px bg-[var(--card-line)]" aria-hidden />
 
-      {/* 卡片实体 */}
-      <Link href={`/posts/${post.slug}`} className="order-1 w-full md:w-5/12 group">
-        <div className="bg-[var(--surface)] rounded-lg border border-[var(--line-strong)] transition-all duration-500 hover:scale-[1.03] hover:bg-[var(--surface)] overflow-hidden flex flex-col">
-
-          {/* 上半部分：封面图 */}
-          <div className="w-full h-40 sm:h-48 overflow-hidden relative bg-[var(--surface-alt)]">
-            <img
-              src={post.cover}
-              alt={post.title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 pointer-events-none"></div>
-          </div>
-
-          {/* 下半部分：文本信息 */}
-          <div className="p-6">
-            <div className="flex items-center justify-between mb-3">
-              <div className="text-[var(--accent)] font-bold text-[11px] flex items-center gap-1 uppercase tracking-wider">
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                {post.date}
-              </div>
-            </div>
-
-            <h3 className="font-bold text-lg text-[var(--ink)] mb-3 group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-tight">
-              {post.title}
+        <Link
+          href={`/posts/${post.slug}`}
+          className="pcard group ml-4 min-w-0 flex-1 px-4 py-3.5 sm:px-5 sm:py-4"
+        >
+          <div className="flex items-baseline justify-between gap-3">
+            <h3 className="min-w-0 text-[14.5px] font-semibold leading-[1.5] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+              #{index} {post.title}
             </h3>
-
-            {/* 【核心新增】：文章标签展示 */}
-            {post.tags && post.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mb-4">
-                {post.tags.map((tag: string) => (
-                  <span
-                    key={tag}
-                    className="px-2 py-0.5 rounded-md text-[10px] font-black bg-[var(--accent-soft)] text-[var(--accent)] border border-[var(--line-strong)]"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            )}
-
-            <p className="text-xs text-[var(--ink-soft)] leading-relaxed line-clamp-2 font-medium">
-              {post.description}
-            </p>
+            <span className="hidden shrink-0 text-[11.5px] text-[var(--muted)] sm:block">
+              {post.tags?.[0] ? `#${post.tags[0]}` : ""}
+            </span>
           </div>
-
-        </div>
-      </Link>
-    </motion.div>
+          {post.description && (
+            <p className="mt-1.5 line-clamp-2 text-[12.5px] leading-[1.8] text-[var(--muted)]">{post.description}</p>
+          )}
+          {post.tags?.length > 1 && (
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {post.tags.slice(1).map((tag: string) => (
+                <span key={tag} className="rounded bg-[var(--surface-alt)] px-1.5 py-0.5 text-[10.5px] text-[var(--muted)]">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </Link>
+      </div>
+    </motion.article>
   );
 }

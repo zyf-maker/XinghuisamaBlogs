@@ -1,0 +1,198 @@
+/* =========================================================
+   版式模板层 —— 按 ai.codefather.cn 的模板骨架重排
+   ---------------------------------------------------------
+   从参考站量出来的骨架：
+   · 导航 56px 通栏半透明，容器约 1140px 居中
+   · 首屏居中：H1 48px/800 + 副标题 + 672×56 胶囊搜索 + 热门搜索一行
+   · 主体「左宽右窄」：主栏 1fr + 右栏 300px，栅格 gap 24px
+   · 区块头：左标题 20px/700 + 右「更多 →」13px
+   · 卡片：白底、12px 圆角、1px 边、极淡阴影；工具小卡 5 列，纯文字卡 4 列，
+     竖向图卡 4 列（图占大半），列表卡「左缩略图 + 右文字」
+   · 侧栏模块：标题 + 数字榜（1-10）+ 两列小图标格 + 说明卡
+   ========================================================= */
+
+:root {
+  --page-bg: #f4f5f7;
+  --card-bg: rgba(255, 255, 255, 0.93);
+  --card-bg-solid: #ffffff;
+  --card-line: rgba(23, 22, 26, 0.13);
+  --card-shadow: 0 1px 2px rgba(23, 22, 26, 0.06), 0 10px 22px -16px rgba(23, 22, 26, 0.22);
+  --rail-w: 300px;
+  --wrap-w: 1140px;
+}
+
+.dark {
+  --page-bg: #0d0d0f;
+  --card-bg: rgba(26, 27, 31, 0.72);
+  --card-bg-solid: #15161a;
+  --card-line: rgba(255, 255, 255, 0.11);
+  --card-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@layer components {
+  .wrap {
+    width: 92%;
+    max-width: var(--wrap-w);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .split {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 1024px) {
+    .split { grid-template-columns: minmax(0, 1fr) var(--rail-w); }
+    /* 主栏比右栏长很多时，右栏跟着滚，避免页面下半部右侧空出一大块 */
+    .split > aside {
+      position: sticky;
+      top: 4.5rem;
+      align-self: start;
+      max-height: calc(100vh - 6rem);
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+    .split > aside::-webkit-scrollbar { width: 0; height: 0; }
+  }
+
+  /* 模板卡 */
+  .pcard {
+    position: relative;
+    background-color: var(--card-bg);
+    -webkit-backdrop-filter: blur(10px) saturate(140%);
+    backdrop-filter: blur(10px) saturate(140%);
+    border: 1px solid var(--card-line);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: background-color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  a.pcard:hover,
+  .pcard-hover:hover {
+    background-color: var(--card-bg-solid);
+    border-color: var(--line-strong);
+    box-shadow: 0 6px 18px -12px rgba(23, 22, 26, .35);
+  }
+
+  /* 区块头 */
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: .9rem;
+  }
+  .sec-title {
+    font-family: var(--font-serif-cn);
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: var(--ink);
+  }
+  .sec-more {
+    font-size: .78rem;
+    color: var(--muted);
+    white-space: nowrap;
+    transition: color .2s ease;
+  }
+  .sec-more:hover { color: var(--accent); }
+
+  /* 筛选胶囊 */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    padding: .3rem .7rem;
+    font-size: .78rem;
+    color: var(--ink-soft);
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-line);
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: all .18s ease;
+  }
+  .chip:hover { color: var(--ink); border-color: var(--line-strong); }
+  .chip-on,
+  .chip-on:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  /* 数字榜 */
+  .numlist { display: flex; flex-direction: column; }
+  .numlist > a {
+    display: flex;
+    align-items: flex-start;
+    gap: .55rem;
+    padding: .42rem 0;
+    font-size: .82rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    transition: color .18s ease;
+  }
+  .numlist > a:hover { color: var(--accent); }
+  .numlist > a > i {
+    flex: none;
+    width: 1rem;
+    font-style: normal;
+    font-family: var(--font-code);
+    font-size: .72rem;
+    line-height: 1.65;
+    color: var(--muted);
+    opacity: .75;
+  }
+  .numlist > a:nth-child(-n+3) > i { color: var(--accent); opacity: 1; }
+
+  /* 分页器 */
+  .pager {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+  }
+  .pager > * {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 .55rem;
+    font-size: .8rem;
+    color: var(--ink-soft);
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-line);
+    border-radius: 8px;
+  }
+  .pager > .on {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  .pager > .gap { background: transparent; border-color: transparent; color: var(--muted); }
+
+  /* 列表卡左缩略图 */
+  .thumb {
+    flex: none;
+    width: 168px;
+    aspect-ratio: 16 / 10;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--surface-alt);
+    border: 1px solid var(--card-line);
+  }
+  @media (max-width: 640px) {
+    .thumb { width: 104px; }
+  }
+
+  /* 竖向卡顶部图区 */
+  .card-figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 11px 11px 0 0;
+    aspect-ratio: 4 / 3;
+    background-color: var(--surface-alt);
+  }
+  .card-figure > img { width: 100%; height: 100%; object-fit: cover; }
+}

@@ -145,27 +145,27 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
           </AnimatePresence>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 bg-[var(--surface)] p-4 rounded-lg border border-[var(--line)]">
+        <div className="flex w-full flex-col items-start justify-between gap-3 md:flex-row md:items-center">
           <div className="flex flex-wrap justify-center md:justify-start gap-2 flex-1">
-            <button onClick={() => setSelectedTag('All')} className={`px-4 py-2 rounded-md text-xs font-bold transition-all duration-300 ${selectedTag === 'All' ? 'bg-[var(--accent)] text-[var(--accent-ink)] shadow-sm' : 'bg-[var(--surface-alt)] text-[var(--accent)] hover:bg-[var(--surface)]'}`}>
+            <button onClick={() => setSelectedTag('All')} className={`chip ${selectedTag === 'All' ? 'chip-on' : ''}`}>
               全部
             </button>
             {tags.map(tag => (
-              <button key={tag.name} onClick={() => setSelectedTag(tag.name)} className={`px-4 py-2 rounded-md text-xs font-bold transition-all duration-300 ${selectedTag === tag.name ? 'bg-[var(--accent)] text-[var(--accent-ink)] shadow-sm' : 'bg-[var(--surface-alt)] text-[var(--accent)] hover:bg-[var(--surface)]'}`}>
+              <button key={tag.name} onClick={() => setSelectedTag(tag.name)} className={`chip ${selectedTag === tag.name ? 'chip-on' : ''}`}>
                 {tag.name} <span className="opacity-50 ml-1">{tag.count}</span>
               </button>
             ))}
           </div>
 
           {/* 🌟 核心魔法 2：隐藏手机端的视图切换按钮 (hidden md:flex) */}
-          <div className="hidden md:flex bg-[var(--surface)] p-1 rounded-lg shrink-0">
-            <button onClick={() => setViewMode('timeline')} className={`flex items-center gap-2 px-4 py-2 rounded-md font-bold text-sm transition-all duration-300 ${viewMode === 'timeline' ? 'bg-[var(--surface)] text-[var(--accent)] shadow-sm' : 'text-[var(--accent)] hover:text-[var(--accent)]'}`}>
+          <div className="hidden shrink-0 items-center gap-1.5 md:flex">
+            <button onClick={() => setViewMode('timeline')} className={`chip ${viewMode === 'timeline' ? 'chip-on' : ''}`}>
               <ListTree size={16} />
-              <span>时间轴</span>
+              <span>列表</span>
             </button>
-            <button onClick={() => setViewMode('card')} className={`flex items-center gap-2 px-4 py-2 rounded-md font-bold text-sm transition-all duration-300 ${viewMode === 'card' ? 'bg-[var(--surface)] text-[var(--accent)] shadow-sm' : 'text-[var(--accent)] hover:text-[var(--accent)]'}`}>
+            <button onClick={() => setViewMode('card')} className={`chip ${viewMode === 'card' ? 'chip-on' : ''}`}>
               <LayoutGrid size={16} />
-              <span>卡片视图</span>
+              <span>卡片</span>
             </button>
           </div>
         </div>
@@ -258,11 +258,11 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="relative overflow-hidden p-2 md:p-10 min-h-[500px]"
+            className="relative min-h-[280px]"
           >
-            <div className="absolute border-opacity-20 border-[var(--line-strong)] h-full border-2 left-1/2 transform -translate-x-1/2 rounded-full transition-colors duration-1000"></div>
+            
 
-            <div className="relative z-10 flex flex-col gap-16">
+            <div className="relative z-10 flex flex-col gap-1">
               <AnimatePresence mode='popLayout'>
                 {timelinePosts.map((post, index) => (
                   <TimelineNode
@@ -274,9 +274,9 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
               </AnimatePresence>
 
               {timelinePosts.length === 0 && (
-                 <div className="text-center py-20 text-[var(--ink-soft)] font-bold uppercase tracking-widest text-sm">
+                 <p className="py-16 text-center text-[13px] text-[var(--muted)]">
                     没有匹配的文章。
-                 </div>
+                </p>
               )}
             </div>
           </motion.div>
