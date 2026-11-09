@@ -10,6 +10,7 @@ import { getSearchItems } from "../../lib/siteSearch";
 import { getRecentDocs } from "../../lib/aiDocs";
 import { toolsData } from "../../data/tools";
 import { asset } from "../../lib/base";
+import { cover } from "../../lib/cover";
 
 export const metadata: Metadata = {
   title: "学习路线",
@@ -51,7 +52,7 @@ export default function LearnPage() {
                     href={`/learn/${r.slug}`}
                     title={r.name}
                     desc={r.outcome}
-                    thumb={asset(`/covers/route-${r.slug}.svg`)}
+                    thumb={asset(cover("route", r.slug, "/covers/getting-started.svg"))}
                     meta={`${r.steps.length} 步 · 面向${r.audience} · 前置：${r.prerequisite}`}
                   />
                 ))}
@@ -79,12 +80,16 @@ export default function LearnPage() {
               </RailCard>
 
               <RailCard title="推荐教程" href="/ai/all" more="更多">
-                <NumList
-                  items={recent.slice(0, 6).map((d) => ({
-                    title: d.title,
-                    href: `/ai/${d.category}/${d.slug}`,
-                  }))}
-                />
+                {recent.length > 0 ? (
+                  <NumList
+                    items={recent.slice(0, 6).map((d) => ({
+                      title: d.title,
+                      href: `/ai/${d.category}/${d.slug}`,
+                    }))}
+                  />
+                ) : (
+                  <p className="py-2 text-[12.5px] leading-[1.8] text-[var(--muted)]">还没有发布笔记。</p>
+                )}
               </RailCard>
 
               <RailCard title="路线清单">

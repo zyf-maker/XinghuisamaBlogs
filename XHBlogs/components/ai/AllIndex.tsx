@@ -1,5 +1,7 @@
 "use client";
 
+import { EmptyState } from "../EmptyState";
+
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -84,7 +86,16 @@ export default function AllIndex({ entries, categories, initialQuery = "" }: Pro
       </div>
 
       {grouped.length === 0 ? (
-        <p className="py-16 text-[13px] text-[var(--muted)]">没有匹配的篇目。</p>
+        <div className="mt-8">
+          <EmptyState
+            title={entries.length === 0 ? "还没有篇目" : "没有匹配的篇目"}
+            hint={
+              entries.length === 0
+                ? "这里汇总站内全部笔记。目前一篇都没有。"
+                : "换个关键词，或者点「全部」清掉分类筛选。"
+            }
+          />
+        </div>
       ) : (
         <div className="mt-8 space-y-8">
           {grouped.map((group) => (

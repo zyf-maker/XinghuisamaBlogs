@@ -79,12 +79,16 @@ export default function PromptsPage() {
               </RailCard>
 
               <RailCard title="最近更新" href="/ai/all" more="更多">
-                <NumList
-                  items={recent.slice(0, 6).map((d) => ({
-                    title: d.title,
-                    href: `/ai/${d.category}/${d.slug}`,
-                  }))}
-                />
+                {recent.length > 0 ? (
+                  <NumList
+                    items={recent.slice(0, 6).map((d) => ({
+                      title: d.title,
+                      href: `/ai/${d.category}/${d.slug}`,
+                    }))}
+                  />
+                ) : (
+                  <p className="py-2 text-[12.5px] leading-[1.8] text-[var(--muted)]">还没有发布笔记。</p>
+                )}
               </RailCard>
 
               <RailCard title="怎么用">

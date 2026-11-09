@@ -3,8 +3,6 @@
 import { asset } from '../../lib/base';
 
 import { useState, useMemo, useEffect } from 'react';
-import Navbar from '../../components/Navbar';
-import PageTransition from '../../components/PageTransition';
 import { albums, Album } from '../../data/albums';
 
 export default function PhotoWallClient() {
@@ -42,11 +40,8 @@ export default function PhotoWallClient() {
   }, [activeQuery]);
 
   return (
-    <div className="min-h-screen relative pb-32">
-      <Navbar />
-
-      <PageTransition>
-        <div className="w-full relative z-10">
+    <div className="relative w-full pb-8">
+      <div className="w-full relative z-10">
 
           {!currentAlbum && (
             <div className="animate-fade-in-up">
@@ -193,7 +188,6 @@ export default function PhotoWallClient() {
           )}
 
         </div>
-      </PageTransition>
 
       {selectedImage && (
         <div

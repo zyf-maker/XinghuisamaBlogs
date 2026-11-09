@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EmptyState } from "../../../components/EmptyState";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -8,6 +9,7 @@ import { RailCard, NumList, SectionHead, ListCard } from "../../../components/tp
 import { aiGroups, getCategory } from "../../../data/aiCategories";
 import { getAllCategoryBriefs, getCategoryWithDocs, getRecentDocs } from "../../../lib/aiDocs";
 import { asset } from "../../../lib/base";
+import { cover } from "../../../lib/cover";
 
 export function generateStaticParams() {
   return getAllCategoryBriefs().map((c) => ({ category: c.slug }));
@@ -77,7 +79,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                 href="/ai/all"
               />
               {cat.docs.length === 0 ? (
-                <p className="py-16 text-[13px] text-[var(--muted)]">这一组还在整理。</p>
+                <EmptyState
+                  title="这一组还没有内容"
+                  hint="笔记按 topic 分组存放，写好的第一篇会出现在这里。可以先看同组的其他分类，或者去工具库翻点现成的东西。"
+                  action={<Link href="/tools" className="chip chip-on">工具库</Link>}
+                />
               ) : (
                 <div className="space-y-3">
                   {cat.docs.map((doc) => (
@@ -86,7 +92,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                       href={`/ai/${cat.slug}/${doc.slug}`}
                       title={doc.title}
                       desc={doc.summary}
-                      thumb={asset(`/covers/${cat.slug}.svg`)}
+                      thumb={asset(cover("topic", cat.slug))}
                       meta={`${doc.level} · ${doc.readingTime} 分钟${doc.updated ? ` · ${doc.updated}` : ""}`}
                     />
                   ))}

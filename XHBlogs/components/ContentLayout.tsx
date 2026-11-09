@@ -47,12 +47,18 @@ export default function ContentLayout({ children, meta, bottom = "pb-20" }: Prop
           </RailCard>
 
           <RailCard title="最近更新" href="/ai/all" more="更多">
-            <NumList
-              items={recent.map((d) => ({
-                title: d.title,
-                href: `/ai/${d.category}/${d.slug}`,
-              }))}
-            />
+            {recent.length > 0 ? (
+              <NumList
+                items={recent.map((d) => ({
+                  title: d.title,
+                  href: `/ai/${d.category}/${d.slug}`,
+                }))}
+              />
+            ) : (
+              <p className="py-2 text-[12.5px] leading-[1.8] text-[var(--muted)]">
+                还没有发布笔记。写好的第一篇会出现在这里。
+              </p>
+            )}
           </RailCard>
 
           <RailCard title="AI 模块">

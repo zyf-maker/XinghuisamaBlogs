@@ -5,6 +5,7 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import { MapPin, MessageSquare, Clock, Sparkles, Search, ArrowDownAZ, ArrowUpZA, ChevronLeft, ChevronRight, Ghost } from 'lucide-react';
 import MomentComments from '../../components/MomentComments';
+import { EmptyState } from '../../components/EmptyState';
 
 function timeAgo(dateStr: string) {
   const date = new Date(dateStr);
@@ -184,15 +185,15 @@ export default function MomentList({ moments, authorName, avatarUrl }: any) {
             </div>
           </div>
         ) : (
-          <div className="flex-1 flex flex-col items-center justify-center py-12 md:py-24 min-h-[300px] md:min-h-[450px]">
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="flex flex-col items-center text-center px-6 md:px-10 py-12 md:py-20 bg-[var(--surface)] rounded-lg md:rounded-[50px] border border-[var(--line)] max-w-lg w-full mx-auto">
-              <div className="w-16 h-16 md:w-24 md:h-24 bg-[var(--accent-soft)] rounded-lg md:rounded-lg flex items-center justify-center mb-6 md:mb-8 relative">
-                <div className="absolute inset-0 bg-[var(--accent-soft)] rounded-full animate-pulse"></div>
-                <Ghost size={32} className="md:w-12 md:h-12 text-[var(--accent)] relative z-10" strokeWidth={1.5} />
-              </div>
-              <h2 className="text-xl md:text-3xl font-black text-[var(--ink)] mb-2 md:mb-4 tracking-tight">{searchQuery ? "没找到相关记忆" : "朋友圈空空如也"}</h2>
-              <p className="text-[var(--ink-soft)] font-medium text-sm md:text-lg leading-relaxed px-2 md:px-4">{searchQuery ? `尝试精简你的搜索词，或者换个心情再次出发。` : `还没有记录下任何生活碎片呢。`}</p>
-            </motion.div>
+          <div className="flex-1 pt-2">
+            <EmptyState
+              title={searchQuery ? "没找到相关的记录" : "还没有记录"}
+              hint={
+                searchQuery
+                  ? "换个关键词试试，或者清空搜索看全部。"
+                  : "手记是不成篇的片段：一行想法、一张图、一段没写完的话。"
+              }
+            />
           </div>
         )}
       </LayoutGroup>

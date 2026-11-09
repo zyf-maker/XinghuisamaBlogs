@@ -170,7 +170,7 @@ export function ListCard({
       {thumb && (
         <div className="thumb">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={thumb} alt="" className="h-full w-full object-cover" loading="lazy" />
+          <img src={thumb} alt="" className="h-full w-full object-cover" loading="eager" decoding="async" />
         </div>
       )}
       <div className="min-w-0 flex-1 py-0.5">
@@ -203,7 +203,7 @@ export function FigureCard({
       <div className="card-figure" style={{ aspectRatio: ratio }}>
         {figure ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={figure} alt="" className="h-full w-full object-cover" loading="lazy" />
+          <img src={figure} alt="" className="h-full w-full object-cover" loading="eager" decoding="async" />
         ) : (
           <div className="h-full w-full bg-[var(--surface-alt)]" />
         )}

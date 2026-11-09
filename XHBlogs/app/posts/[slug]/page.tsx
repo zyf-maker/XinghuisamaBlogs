@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
@@ -67,6 +68,8 @@ function extractToc(content: string) {
 
 async function getPostData(slug: string) {
   const fullPath = path.join(process.cwd(), 'posts', `${slug}.md`);
+  // 文章目录可以是空的（正式发布前不引入内容），此时返回 404 而不是抛异常
+  if (!fs.existsSync(fullPath)) notFound();
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   let { data, content } = matter(fileContents);
 

@@ -7,6 +7,8 @@ import matter from "gray-matter";
 import Navbar from "../components/Navbar";
 import PageTransition from "../components/PageTransition";
 import SearchBox from "../components/SearchBox";
+import { cover } from "../lib/cover";
+import { EmptyState } from "../components/EmptyState";
 import { RailCard, NumList, SectionHead } from "../components/tpl/Template";
 import { siteConfig } from "../siteConfig";
 import { friendsData } from "../data/friends";
@@ -15,7 +17,7 @@ import { aiGroups } from "../data/aiCategories";
 import { getGroups, getRecentDocs } from "../lib/aiDocs";
 import { getSearchItems } from "../lib/siteSearch";
 import { toolsData, toolCategories } from "../data/tools";
-import { promptsData } from "../data/prompts";
+import { promptsData, promptGroups } from "../data/prompts";
 import { routes } from "../data/routes";
 
 type Post = {
@@ -72,7 +74,11 @@ export default function Home() {
   });
 
   const featuredTools = toolsData.slice(0, 10);
-  const featuredPrompts = promptsData.slice(0, 4);
+  // 每组各取一条，卡片封面才不会四张一样
+  const featuredPrompts = promptGroups
+    .map((g) => promptsData.find((p) => p.group === g.slug))
+    .filter(Boolean)
+    .slice(0, 4) as typeof promptsData;
   const hotTags = ["提示词", "Agent", "RAG", "微调", "上下文", "成本"];
 
   return (
@@ -115,7 +121,7 @@ export default function Home() {
                     <Link key={g.slug} href={`/ai#${g.slug}`} className="pcard group overflow-hidden">
                       <div className="card-figure" style={{ aspectRatio: "16 / 10" }}>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={asset(`/covers/${g.slug}.svg`)} alt="" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+                        <img src={asset(cover("topic", g.slug))} alt="" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
                       </div>
                       <div className="p-2.5">
                         <h3 className="line-clamp-1 text-[13px] font-semibold text-[var(--ink)]">{g.name}</h3>
@@ -136,19 +142,28 @@ export default function Home() {
                     </Link>
                   ))}
                 </div>
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {recentDocs.map((doc) => (
-                    <Link key={doc.key} href={`/ai/${doc.category}/${doc.slug}`} className="pcard group p-3.5">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <h3 className="line-clamp-1 text-[13.5px] font-semibold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
-                          {doc.title}
-                        </h3>
-                        <span className="shrink-0 text-[11px] text-[var(--muted)]">{doc.readingTime} 分钟</span>
-                      </div>
-                      <p className="mt-1.5 line-clamp-2 text-[12.5px] leading-[1.75] text-[var(--muted)]">{doc.summary}</p>
-                    </Link>
-                  ))}
-                </div>
+                {recentDocs.length === 0 ? (
+                  <EmptyState
+                    title="知识库还没有内容"
+                    hint="这里会按主题列出笔记。工具、提示词、学习路线与 MCP 已经可以先翻。"
+                    action={<Link href="/tools" className="chip chip-on">先看工具库</Link>}
+                    compact
+                  />
+                ) : (
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {recentDocs.map((doc) => (
+                      <Link key={doc.key} href={`/ai/${doc.category}/${doc.slug}`} className="pcard group p-3.5">
+                        <div className="flex items-baseline justify-between gap-2">
+                          <h3 className="line-clamp-1 text-[13.5px] font-semibold text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]">
+                            {doc.title}
+                          </h3>
+                          <span className="shrink-0 text-[11px] text-[var(--muted)]">{doc.readingTime} 分钟</span>
+                        </div>
+                        <p className="mt-1.5 line-clamp-2 text-[12.5px] leading-[1.75] text-[var(--muted)]">{doc.summary}</p>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </section>
 
               {/* 工具库：5 列纯文字小卡 */}
@@ -191,7 +206,14 @@ export default function Home() {
                       </div>
                     </Link>
                   ))}
-                  {chatters.length === 0 && <p className="text-[13px] text-[var(--muted)]">还没有随笔。</p>}
+                  {chatters.length === 0 && (
+                    <EmptyState
+                      title="还没有写过随笔"
+                      hint="随笔是短一些的现场记录，不必成篇。"
+                      action={<Link href="/tools" className="chip">先去工具库</Link>}
+                      compact
+                    />
+                  )}
                 </div>
               </section>
 
@@ -203,7 +225,7 @@ export default function Home() {
                     <Link key={p.id} href={`/prompts/${p.group}`} className="pcard group overflow-hidden">
                       <div className="card-figure" style={{ aspectRatio: "16 / 10" }}>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={asset(`/covers/${p.group === "coding" ? "coding" : p.group === "writing" ? "prompt" : "engineering"}.svg`)} alt="" className="h-full w-full object-cover" />
+                        <img src={asset(cover("topic", p.group, "/covers/prompt.svg"))} alt="" className="h-full w-full object-cover" />
                         <span className="absolute left-2 top-2 rounded-md bg-white px-1.5 py-0.5 text-[10px] font-medium text-[#17161a]">
                           模板
                         </span>
@@ -225,7 +247,7 @@ export default function Home() {
                     <Link key={r.slug} href={`/learn/${r.slug}`} className="pcard flex gap-4 p-3">
                       <div className="thumb">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={asset(`/covers/getting-started.svg`)} alt="" className="h-full w-full object-cover" />
+                        <img src={asset(cover("route", r.slug, "/covers/getting-started.svg"))} alt="" className="h-full w-full object-cover" />
                       </div>
                       <div className="min-w-0 flex-1 py-0.5">
                         <h3 className="line-clamp-1 text-[14px] font-semibold text-[var(--ink)]">{r.name}</h3>

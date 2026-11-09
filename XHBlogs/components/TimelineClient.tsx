@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect } from 'react';
 import TimelineNode from './TimelineNode';
+import EmptyState from './EmptyState';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, LayoutGrid, ListTree, Calendar, Hash, ArrowUp } from 'lucide-react';
 import Link from 'next/link';
@@ -274,9 +275,14 @@ export default function TimelineClient({ posts: initialPosts, tags }: { posts: a
               </AnimatePresence>
 
               {timelinePosts.length === 0 && (
-                 <p className="py-16 text-center text-[13px] text-[var(--muted)]">
-                    没有匹配的文章。
-                </p>
+                <EmptyState
+                  title={posts.length === 0 ? "还没有发布文章" : "没有匹配的文章"}
+                  hint={
+                    posts.length === 0
+                      ? "这里会按时间倒序列出长文。目前一篇都没有——内容准备好后放进 posts/ 目录即可。"
+                      : "换个关键词，或者点「全部」清掉标签筛选。"
+                  }
+                />
               )}
             </div>
           </motion.div>

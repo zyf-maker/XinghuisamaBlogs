@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "../../siteConfig";
 import { asset } from "../../lib/base";
+import { EmptyState } from "../../components/EmptyState";
 
 type Chatter = {
   slug: string;
@@ -138,7 +139,14 @@ export default function ChatterBoard({ chatters }: { chatters: Chatter[] }) {
         </AnimatePresence>
 
         {filteredChatters.length === 0 && (
-          <p className="py-16 text-center text-[13px] text-[var(--muted)]">没有匹配的随笔。</p>
+          <EmptyState
+            title={chatters.length === 0 ? "还没有写过随笔" : "没有匹配的随笔"}
+            hint={
+              chatters.length === 0
+                ? "随笔是短一些的现场记录，不必成篇。写下的第一则会出现在这里。"
+                : "换个关键词，或者点「全部」清掉标签筛选。"
+            }
+          />
         )}
       </div>
     </div>

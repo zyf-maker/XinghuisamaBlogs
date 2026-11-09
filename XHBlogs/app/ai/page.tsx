@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import PageTransition from "../../components/PageTransition";
 import SearchBox from "../../components/SearchBox";
+import { EmptyState } from "../../components/EmptyState";
 import { RailCard, NumList, SectionHead } from "../../components/tpl/Template";
 import { aiGroups } from "../../data/aiCategories";
 import { getAllCategories, getGroups, getRecentDocs } from "../../lib/aiDocs";
@@ -66,16 +67,17 @@ export default function AiIndexPage() {
           <div className="split">
             <div className="min-w-0 space-y-10">
               {allCats.length === 0 ? (
-                <div className="pcard p-6">
-                  <p className="text-[14px] font-semibold text-[var(--ink)]">这里还是空的</p>
-                  <p className="mt-2 max-w-md text-[13px] leading-[1.8] text-[var(--muted)]">
-                    写入
-                    <code className="mx-1 rounded bg-[var(--surface-alt)] px-1 py-0.5 font-mono text-[12px] text-[var(--ink)]">
-                      content/notes/&lt;分组&gt;/
-                    </code>
-                    的 Markdown 会在下次构建时自动出现在这里。
-                  </p>
-                </div>
+                <EmptyState
+                  title="知识库还没有内容"
+                  hint="笔记写在 content/notes/ 下，下次构建会自动出现在这里。工具库、提示词库、学习路线和 MCP 已经可以先翻。"
+                  action={
+                    <div className="flex flex-wrap justify-center gap-2">
+                      <Link href="/tools" className="chip chip-on">工具库</Link>
+                      <Link href="/prompts" className="chip">提示词</Link>
+                      <Link href="/learn" className="chip">学习路线</Link>
+                    </div>
+                  }
+                />
               ) : (
                 aiGroups.map((g) => {
                   const hit = groups.find((x) => x.slug === g.slug);
@@ -145,13 +147,17 @@ export default function AiIndexPage() {
               </RailCard>
 
               <RailCard title="最近更新" href="/ai/all" more="更多">
-                <NumList
-                  items={recent.slice(0, 8).map((d) => ({
-                    title: d.title,
-                    href: `/ai/${d.category}/${d.slug}`,
-                    meta: `${d.readingTime}′`,
-                  }))}
-                />
+                {recent.length > 0 ? (
+                  <NumList
+                    items={recent.slice(0, 8).map((d) => ({
+                      title: d.title,
+                      href: `/ai/${d.category}/${d.slug}`,
+                      meta: `${d.readingTime}′`,
+                    }))}
+                  />
+                ) : (
+                  <p className="py-2 text-[12.5px] leading-[1.8] text-[var(--muted)]">还没有发布笔记。</p>
+                )}
               </RailCard>
 
               <RailCard title="直接提问" href="/ai/ask" more="去问">
